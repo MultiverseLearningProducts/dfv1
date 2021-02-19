@@ -27,51 +27,51 @@
                                    <td style="text-align:left"><a href=#data_industry> Data Analysis in Industry </a></td>
                            </tr>
                            <tr>
-                                   <td style="text-align:left"> 1 </td> 
+                                   <td style="text-align:left"> 2 </td> 
                                    <td style="text-align:left"><a href=#database_fund> Database Fundamentals </a></td>
                            </tr>
                            <tr>
-                                   <td style="text-align:left"> 1 </td> 
+                                   <td style="text-align:left"> 3 </td> 
                                    <td style="text-align:left"><a href=#epa_1> EPA Prep 1 </a></td>
                            </tr>
                            <tr>
-                                   <td style="text-align:left"> 1 </td> 
+                                   <td style="text-align:left"> 4 </td> 
                                    <td style="text-align:left"><a href=#da_boot> Data Analytics Bootcamp </a></td>
                            </tr>
                            <tr>
-                                   <td style="text-align:left"> 1 </td> 
+                                   <td style="text-align:left"> 5 </td> 
                                    <td style="text-align:left"><a href=#km2> KM2 Data Analysis Concepts </a></td>
                            </tr>
                            <tr>
-                                   <td style="text-align:left"> 1 </td> 
+                                   <td style="text-align:left"> 6 </td> 
                                    <td style="text-align:left"><a href=#hack_1> Hackathon 1 </a></td>
                            </tr>
                            <tr>
-                                   <td style="text-align:left"> 1 </td> 
+                                   <td style="text-align:left"> 7 </td> 
                                    <td style="text-align:left"><a href=#epa_2> EPA Prep 2 </a></td>
                            </tr>
                            <tr>
-                                   <td style="text-align:left"> 1 </td> 
+                                   <td style="text-align:left"> 8 </td> 
                                    <td style="text-align:left"><a href=#ds_boot> Data Science Immersives </a></td>
                            </tr>
                            <tr>
-                                   <td style="text-align:left"> 1 </td> 
+                                   <td style="text-align:left"> 9 </td> 
                                    <td style="text-align:left"><a href=#hack_2> Hackathon 2 </a></td>
                            </tr>
                            <tr>
-                                   <td style="text-align:left"> 1 </td> 
+                                   <td style="text-align:left"> 10 </td> 
                                    <td style="text-align:left"><a href=#tools_of_trade> Tools of the Trade </a></td>
                            </tr>
                            <tr>
-                                   <td style="text-align:left"> 1 </td> 
+                                   <td style="text-align:left"> 11 </td> 
                                    <td style="text-align:left"><a href=#advanced_tech> Advanced Techniques </a></td>
                            </tr>
                            <tr>
-                                   <td style="text-align:left"> 1 </td> 
+                                   <td style="text-align:left"> 12 </td> 
                                    <td style="text-align:left"><a href=#km1> KM1 Data Analysis Tools </a></td>
                            </tr>
                            <tr>
-                                   <td style="text-align:left"> 1 </td> 
+                                   <td style="text-align:left"> 13 </td> 
                                    <td style="text-align:left"><a href=#gateway> Gateway </a></td>
                            </tr>
                   </table>              
@@ -127,10 +127,11 @@
                   <br>
                   <p> In the second part of the module we will be looking into the statistical programming language R, briefly looking at how many of the processes we learned in Python can be performed in R. </p>
                   <ul>
-                           <li> Lesson Plan </li>
+                           <li> <a href='https://docs.google.com/document/d/1M54bjYCQK7QK10RI6IZijKvG9-7rZLoxaa8of7Yab8U/edit?usp=sharing'>Lesson Plan </a></li>
                            <li> <a href='https://multiverselearningproducts.github.io/dfv1/Tools%20of%20the%20Trade/session_1.html'>Session 1 </a></li>
                            <li> <a href='https://drive.google.com/file/d/1o6bHmSgarwhRiMAJGvsDQsxRQO5_6m8o/view?usp=sharing'>Session 2  </a></li>
-                           <li> <a href='https://drive.google.com/drive/folders/1bOEr_xGVE7R41eLs_Klpr7LI0S751J-y?usp=sharing'> Assignment </a></li>
+                           <li> <a https://docs.google.com/document/d/1ZxGPM2Cm6Pg3Y3lNHzIJF_lylTUthL8ydk16-NKGrO8/edit?usp=sharing'> Assignment Part 1 </a></li>
+                           <li> <a href='https://drive.google.com/file/d/1Q55wtGlvTEChTPLpKTJx9o7DJhoZrvnQ/view?usp=sharing'> Assignment Part 2 </a></li>
                   </ul>
                   <a href=#contents> Top </a>
          </div>
