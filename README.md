@@ -15,16 +15,20 @@
 </div>
 <hr>
 <div id='overview'>
+         <h2><b> Curriculum Overview </b></h2>
          <div id='contents'>
                   <table>
                            <tr>
-                                    <th style="text-align:left; font-size:15px"><b>Operator</b></th>
-                                    <th style="text-align:left; font-size:15px"><b>Meaning</b></th>
+                                    <th style="text-align:left; font-size:15px"><b>Session</b></th>
+                                    <th style="text-align:left; font-size:15px"><b>Title</b></th>
+                           </tr>
+                           <tr>
+                                   <td style="text-align:left"> 1 </td> 
+                                   <td style="text-align:left"><a href=#data_industry> Data Analysis in Industry </a></td>
                            </tr>
                   </table>              
          </div>
-         <h2><b> Curriculum Overview </b></h2>
-         <div id= 'Data Analysis in Industry'>                
+         <div id= 'data_industry'>                
                   <h3> Data Analysis in Industry </h3>                                             
          </div>
          <hr>
