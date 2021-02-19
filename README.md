@@ -57,6 +57,12 @@
                   <p> In this module we will be covering various tools apprentices will need to enhance their analytics performance in their roles. In the first half of the session we will give an overview of Big Data, considering how it works and what the benefits and drawbacks are of using it. This is followed by a discussion around data analytics platforms and comparing their usage to coding it yourself. </p>
                   <br>
                   <p> In the second part of the module we will be looking into the statistical programming language R, briefly looking at how many of the processes we learned in Python can be performed in R. </p>
+                  <ul>
+                           <li> Lesson Plan </li>
+                           <li> <a href='https://multiverselearningproducts.github.io/dfv1/Tools%20of%20the%20Trade/session_1.html'>Session 1 </a></li>
+                           <li> Session 2 (R notebook, pull to your computer) </li>
+                           <li> <a href='https://drive.google.com/drive/folders/1bOEr_xGVE7R41eLs_Klpr7LI0S751J-y?usp=sharing'> Assignment </a></li>
+                  </ul>
          </div>
          <hr>
          <div id= 'Advanced Techniques'>
