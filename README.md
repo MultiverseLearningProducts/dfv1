@@ -1,1 +1,1 @@
-# dfv1
+Data Fellowship Curriculum (v1)
