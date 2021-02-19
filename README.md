@@ -21,8 +21,7 @@
                                     <th style="text-align:left; font-size:15px"><b>Operator</b></th>
                                     <th style="text-align:left; font-size:15px"><b>Meaning</b></th>
                            </tr>
-                  </table>
-                           
+                  </table>              
          </div>
          <h2><b> Curriculum Overview </b></h2>
          <div id= 'Data Analysis in Industry'>                
