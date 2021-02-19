@@ -13,4 +13,9 @@
          <p> In the latter stages of the course we will visit data science concepts such as machine learning and encourage apprentices to build their own predictive models to leverage better insights from their data. </p>
          
 </div>
+<hr>
+<div id='overview>
+         <h2><b> Curriculum Overview </b></h2>
+         
+</div>
          
