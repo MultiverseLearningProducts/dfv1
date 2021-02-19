@@ -127,7 +127,7 @@
                   <br>
                   <p> In the second part of the module we will be looking into the statistical programming language R, briefly looking at how many of the processes we learned in Python can be performed in R. </p>
                   <ul>
-                           <li> <a href='https://docs.google.com/document/d/1M54bjYCQK7QK10RI6IZijKvG9-7rZLoxaa8of7Yab8U/edit?usp=sharing'>Lesson Plan </a></li>
+                           <li> <a href='https://multiverselearningproducts.github.io/dfv1/Tools%20of%20the%20Trade/lesson_plan.html'>Lesson Plan </a></li>
                            <li> <a href='https://multiverselearningproducts.github.io/dfv1/Tools%20of%20the%20Trade/session_1.html'>Session 1 </a></li>
                            <li> <a href='https://drive.google.com/file/d/1o6bHmSgarwhRiMAJGvsDQsxRQO5_6m8o/view?usp=sharing'>Session 2  </a></li>
                            <li> <a href='https://docs.google.com/document/d/1ZxGPM2Cm6Pg3Y3lNHzIJF_lylTUthL8ydk16-NKGrO8/edit?usp=sharing'> Assignment Part 1 </a></li>
