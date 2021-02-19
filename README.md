@@ -15,6 +15,15 @@
 </div>
 <hr>
 <div id='overview'>
+         <div id='contents'>
+                  <table>
+                           <tr>
+                                    <th style="text-align:left; font-size:15px"><b>Operator</b></th>
+                                    <th style="text-align:left; font-size:15px"><b>Meaning</b></th>
+                           </tr>
+                  </table>
+                           
+         </div>
          <h2><b> Curriculum Overview </b></h2>
          <div id= 'Data Analysis in Industry'>                
                   <h3> Data Analysis in Industry </h3>                                             
