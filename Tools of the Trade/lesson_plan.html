@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tools of the Trade Session 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="/swe/favicon.ico">
+    <link rel="stylesheet" href="/swe/modest.css">
+    <link rel="stylesheet" href="/swe/prism.css">
+    <link rel="stylesheet" href="/swe/style.css">
+  </head>
+  <body style='font-family:Arial'>
+    <p id='top' style ='color:black; font-size: 60px; font-weight:bold'> Tools of the Trade: Lesson Plan </p>
+    <br>
+    <p><i> 6 Hours </i></p>
+    <hr>
+    <br>
+    <div id='contents'>
+        <p style ='color:black; font-size: 50px'> <i> Contents </i> </p>
+        <br>
+        <div id=table-wrap >
+            <table style='width:100%;border:1px solid black'>
+                <tr>
+                    <th style="text-align:left; font-size:15px; color:white" bgcolor=#1d98ff><b>Section</b></th>
+                </tr>
+                <tr>
+                    <td style="text-align:left; font-size:15px"><a href=#overview> Overview</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left; font-size:15px"><a href=#prereqs>Prerequisites</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left; font-size:15px"><a href=#learning_obs> Learning Objectives</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left; font-size:15px"><a href=#tcs> Technical Knowledge</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left; font-size:15px"><a href=#sabs> Skills, Attributes and Behaviours</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left; font-size:15px"><a href=#km1> KM1 Data Anlaysis Tools Syllabus</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left; font-size:15px"><a href=#recording> Recordings</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left; font-size:15px"><a href=#outine> Session Outline</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left; font-size:15px"><a href=#add_resource> Additional Resources</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left; font-size:15px"><a href=#coach_notes> Coach Notes</a></td>
+                </tr>
+            </table>
+            <br>
+            <hr>
+        </div>
+    </div>
+    <div id='overview'>
+        <p style ='color:black; font-size: 50px'> <i> Overview </i> </p> 
+        <br>
+        <p> In this module we will be covering various tools apprentices will need to enhance their analytics performance in their roles. In the first half of the session we will give an overview of Big Data, considering how it works and what the benefits and drawbacks are of using it. This is followed by a discussion around data analytics platforms and comparing their usage to coding it yourself. </p>
+        <br>
+        <p> In the second part of the module we will be looking into the statistical programming language R, briefly looking at how many of the processes we learned in Python can be performed in R. </p>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <div id='prereqs'>
+        <p style ='color:black; font-size: 50px'> <i> Prerequisites </i> </p>
+        <br>
+        <ul>
+            <li> Apprentices will need to have <a href='https://www.r-project.org/'>R</a> installed on their computer (should have come with Anaconda) </li>  
+            <li> Apprentice OTJT should be at 100% or above </li>
+            <li> Apprentice to have completed DS Immersives </li>
+        </ul>
+        <br>
+        <hr>
+    </div>
+    <br>
+    <div id= learning_obs>
+        <p style ='color:black; font-size: 50px'> <i> Learning Objectives </i> </p>
+        <br>
+        <ul>
+            <li> Understand the fundamental concepts of <b> Big Data </b></li>
+            <li> Justify the use (or lack of) Big Data technologies in <b> your role </b></li>
+            <li> Critically evaluate the difference in using a <b> data platform</b> and <b> coding it yourself </b></li>
+            <li> Understand how <b> R </b> can be utilised in your analysis </li>
+        </ul>
+        <br>
+        <hr>
+    </div>
+    <br>
+    <div id=assignment>
+        <p style ='color:black; font-size: 50px'> <i> Assignment </i> </p>
+        <br>
+        <h2 style ='color:black; font-size: 40px'> Part 1 </h2>
+        <br>
+        <p><b> Task </b></p>
+        <br>
+        <p> Justify the use (or lack of) Big Data technologies in your role </p>
+        <br>
+        <p><b> Things to Consider </b></p>
+        <br>
+        <ul>
+            <li> How does your company make use of Big Data technologies? </li>
+            <li> Do you have opportunities to use them in your role? </li>
+            <li> Do you think you could use these technologies effectively in your role? </li>
+            <li> Do you think your company uses them effectively? </li>
+            <li> What do you think the potential business impact of your companies attitude towards Big Data will be?</li>
+        </ul>
+        <br>
+        <h2 style ='color:black; font-size: 40px'> Part 2 </h2>
+        <br>
+        <p><b> Task </b></p>
+        <br>
+        <p> Embed R knowledge and skills by building a model to predict species of iris </p>
+        <br>
+        <p><b> Things to Consider </b></p>
+        <br>
+        <p> How can you use these skills in your role? Revisit a previous project and see if you can recreate it using these techniques </p>
+        <br>
+        <hr>
+    </div>
+    <br>
+    <div id=tcs>
+        <p style ='color:black; font-size: 50px'> <i> Technical Knowledge </i> </p>
+        <br>
+        <ul>
+            <li>Identify, collect and migrate data to/from a range of internal and external systems (TC1)</li>
+            <li>Interpret and apply the organisations data and information security standards, policies and procedures to data management activities (TC3)</li>
+            <li>Perform routine statistical analyses and ad-hoc queries (TC6)</li>
+            <li>Use a range of analytical techniques such as data mining, time series forecasting and modelling techniques to identify and predict trends and patterns in data (TC7)</li>
+            <li>Apply the tools and techniques for data analysis, data visualisation and presentation (TC8)</li>
+            <li>Works with organisation’s data architecture (TC11)</li>
+            <li>Assist with data quality checking and cleansing (TC12)</li>
+        </ul>
+        <br>
+        <hr>
+    </div>
+    <br>
+    <div id=sabs>
+        <p style ='color:black; font-size: 50px'> <i> Skills, Attributes and Behaviours </i> </p>
+        <br>
+        <ul>
+            <li>Logical and creative thinking skills (SAB1)</li>
+            <li>A thorough and organised approach (SAB5)</li>
+            <li>Maintain productive, professional and secure working environment (SAB8)</li>
+        </ul>
+        <br>
+        <hr>
+    </div>
+    <br>
+    <div id=km1>
+        <p style ='color:black; font-size: 50px'> <i> KM1 Data Analysis Tools Syllabus </i> </p>
+        <br>
+        <ul>
+            <li>Explain the nature and challenges of data volumes being process through integration activities and how a programming approach can improve this:
+            <ul>
+                <li> Big Data (1.5)</li>
+                </ul></li>
+            <li> Capabilities and functions of statistical programming language: R (2.1) </li>
+        </ul>
+        <br>
+        <hr>
+    </div>
+    <br>
+    <div id= recording>
+        <p style ='color:black; font-size: 50px'> <i> Recordings (coach use only) </i> </p>
+        <br>
+        <a href='https://drive.google.com/drive/folders/1uXw2RfTfzVR1QEMRoAiX6hvWiZn4xzR8?usp=sharing'> Link </a>
+        <br>
+        <hr>
+    </div>
+    <br>
+    <div id='outline'>
+        <p style ='color:black; font-size: 50px'> <i> Session Outline </i> </p>
+        <br>
+        <table style='width:100%;border:1px solid black;border-collapse:collapse;padding:5px'>
+            <tr>
+                <th style='width:70%;text-align:left;font-size:15px;color:white;border:1px solid black' bgcolor=#1d98ff> Section </th>
+                <th style='width:30%;text-align:left;font-size:15px;color:white;border:1px solid black' bgcolor=#2ee1a1> Approx. Timing </th>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#intro_1> Class Introduction</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#und_bd> Understanding Big Data</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#5v> Five V's</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 25 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#dev_fut> Developing the Future</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#how_work> How Does It Work?</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <i> Break </i> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#use_bd_role> Using Big Data in Your Role</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#ad_disad> Advantages and Disadvantages</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#bdp> Big Data Products</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 5 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#dat_plat> Data Platforms</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#pvc> Platforms vs Coding Yourself</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#r_set> Setting Up R</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 5 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#recap_1> Session 1 Recap</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 5 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#intro_2> Class Introduction</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#r_feat> Features of R</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 30 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#r_control> Control Flow in R</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 30 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#r_eda> EDA in R</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 35 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <i> Break </i> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 15 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#r_viz> Visualisation in R</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 35 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#r_lm> Linear Modelling in R</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 15 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#rstud> RStudio</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 5 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#recap_2> Session 2 Recap</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 5 Minutes </td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+    </div>
+    <br>
+    <div id=add_resource>
+        <p style ='color:black; font-size: 50px'> <i> Additional Resources </i> </p>
+        <br>
+        <ul>
+            <li><a href='https://www.statmethods.net/r-tutorial/index.html'> Basic R Tutorial </a></li>
+        </ul>
+        <br>
+        <hr>
+    </div>
+    <br>
+    <div id=coach_notes>
+        <p style ='color:black; font-size: 50px'> <i> Coach Notes </i> </p>
+        <br>
+        <table id='intro_1' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ince breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <hr>
+        <br>
+        <table id='und_bd' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 20 Minutes </td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Define what we mean by 'Big Data' </li></ul></td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> In this section we will be introducing the concept of Big Data and why it is important to both the apprentice and their employer.</p>
+                    <br>
+                    <p> Check for apprentice understanding of what Big Data is by asking them to annotate the screen. You can ask some follow up questions like:</p>
+                    <ul>
+                        <li> How would you use it in a working environment? </li>
+                        <li> What types of data do we mean by 'Big Data'? </li>
+                        <li> Does your organisation have a Big Data strategy?</li>
+                    </ul>
+                    <br>
+                    <p> Show apprentices the quote by McKinsey and ask for their opinion. State that organisations will need to continuously adapt to be competitive in their market due to the ever growing amount of data that is being generated. Not only storing this data (from social media, phones, imaging, etc) but analysing it too especially when it is not in usual structures. </p>    
+                    <br>
+                    <p> Lead a discussion around the fact that Big Data is not just about volume, but velocity too. Data is growing exponetially and companies need to keep up. Apart from storage there is no real limit to how big 'Big Data' can be but for it to be considered 'Big Data' it needs to be sufficiently big that traditional processors (like your computer) can not handle it. </p>
+                    <br>
+                    <p> Before showing the examples to apprentices, ask them to guess how much data twitter, NYSE and Facebook generate every day. You can show the apprentices the links (particularly with twitter) to see real time how it is growing.</p>
+                </td>                  
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <hr>
+        <br>
+        <table id='5v' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 25 Minutes </td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Understand the characteristics that make up 'Big Data' </li></ul></td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> 
+                    <p> In this section you will be guiding apprentices through five facets of Big Data that apprentices should consider. These are volume, velocity, variety, veracity and value. For each section explain what these terms mean and are a mental checklist that apprentices should use when evaluating their data</p>
+                    <br>
+                    <p> Most of the notes are on the screen for this section, but take time to ask apprentices to annotate/suggest meaning to each and how they might look in their business. For example, how voluminous is the data they use regularly? What difference would it make to a company if they considered the value of Big Data? Also get them to consider the challenges posed by Big Data against the 5 v's, such as how difficult it is to keep up with fast flowing data, or how agile a dashboard will be if it is using live Big Data. </p>
+                    <br>
+                    <p> Give apprentices 10 minutes to complete the activity- in breakout rooms they should discuss the data they use in their everyday role and evaluate it against the 5 v's- how volumious, how fast, how varied, the data quality and the value to the organisation. They should share these in their room and be prepared to say in front of the whole group. If an open cohort try to make the breakout rooms be employer specific if possible.</p>
+                </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <hr>
+        <br>
+        <table id='dev_fut' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ince breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <hr>
+        <br>
+        <table id='how_work' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ince breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <hr>
+        <br>
+        <table id='use_bd_role' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ince breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <hr>
+        <br>
+        <table id='ad_disad' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ince breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <hr>
+        <br>
+        <table id='bdp' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ince breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <hr>
+        <br>
+        <table id='dat_plat' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ince breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <hr>
+        <br>
+        <table id='pvc' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ince breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <hr>
+        <br>
+        <table id='r_set' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ince breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <hr>
+        <br>
+        <table id='recap_1' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ince breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <hr>
+        <br>
+        <table id='intro_2' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ince breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <hr>
+        <br>
+        <table id='r_feat' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ince breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <hr>
+        <br>
+        <table id='r_control' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ince breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <hr>
+        <br>
+        <table id='r_eda' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ince breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <hr>
+        <br>
+        <table id='r_viz' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ince breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <hr>
+        <br>
+        <table id='r_lm' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ince breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <hr>
+        <br>
+        <table id='rstud' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ince breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <hr>
+        <br>
+        <table id='recap_2' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px;color:white bgcolor=#1d98ff> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+            </tr>
+            <tr>
+                <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px;color:white> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ince breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <hr>
+    </div>
+</body>
