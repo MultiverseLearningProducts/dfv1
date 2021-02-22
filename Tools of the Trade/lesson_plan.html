@@ -668,26 +668,15 @@
             </tr>
             <tr>
                 <td colspan=4 style=text-align:center;font-size:15px>  
-                    <p> Explain that R is a language built for statistical analysis built in 1995. </p> 
-                    <br>
-                    <p>It carries much of the same functionality as python but has different syntax.</p>
-                    <br>
-                    <p>In this session you will be showing the R equivalents to different concepts learned previously. There will be chances to practice as well. </p> 
-                    <br>
-                    <p> In R repositories are called CRAN.
-                        Introduce the different data types and how they relate to those from python.
-                        Demonstrate how to use basic R functions like calling a variable.</p>
-                    <br>
-                    <p> Note that you can use = or &#60;- when assigning a variable. </p>
-                    <br>
-                    <p>Go through the different mathematical operators. Note how square root and mean are already built in, whereas in python you had to import a library. </p>
-                    <p>In the following section you will be explaining much of the different data structures in R.</p>
-                    <br>
-                    <p>Start with lists, note how these are more similar to dictionaries in python. They can hold a combination of data types and have tags. Demonstrate how to reference lists and manipulate them. Show vectors and highlight they are different to lists as they must contain the same data type. Demo basic functions. Introduce matrices as an extension of a vector. Introduce dataframes and link them to pandas. State how you will be using them a lot with data manipulation. 
-                        Demonstrate how you can columns or rows and how to reference a column. </p>
-                    <br>
-                    <p>Give them 5 minutes to complete this exercise</p>
-                </td>
+                    <p> R is a statistical language released in 1995 at the University of Auckland by Ross Ihaka and Robert Gentleman. Explain to apprentices that it is a language built for statistical analysis and is more optimised for tasks like hypothesis testing than python is. Python and R have many similarities, so use this as an introduction to the R syntax (and particularly note the differences). Throughout the session you will be showing different way of achieving what you could in python, so throughout stress how R is more suited to statistical analysis and many analysts do in fact prefer using it. </p>
+                  <br>
+                  <p> For this session you will be using Jupyter Notebook as apprentices will be familiar with it from the DS intensives. </p>
+                  <br>
+                  <p> Moving through this section you will be guiding apprentices through the R basics, such as how to declare variables. Note the use of &#60;- to define variables. You can use = (and they accomplish the same thing) but traditionally the former is used. Also note that R code can be written in one line, just use ; to seperate out the instructions. </p>
+                  <br>
+                  <p> You will spend a lot of time talking through the different types of structures (list, vector, matrix, dataframe). A list in R shares similarities with both lists and dictionaries in python, but the key takeaway is the difference between a list and a vector- draw attention to this. From there, matrices and dataframes are similar (again note the difference, dataframes are tables while matrices are an extension of vectors) and go through the various operations such as how to reference, add and subtract rows & columns. We will cover more advanced manipulation techniques in the following section </p>
+                  <br>
+                  <p> Don't give long for the exercise, 5 minutes max and breakout rooms shouldn't be necessary. This is a good opportunity for apprentices to share their screen and demo their code. </p>
             </tr>
         </table>
         <a href='#outline'> Contents </a>
@@ -713,15 +702,11 @@
             <tr>
                 <td colspan=4 style=text-align:center;font-size:15px> <p> Depending on the skill level of the group, this can be skipped. </p>
                     <br>
-                    <p> In python they learned how to write loops to parse data and automate processes. We will now show them how to do this in R </p>
-                    <br>
-                    <p> Show the different logic statements, note how similar they are to python.</p>
-                    <br>
-                    <p> Demonstrate if statements and build in else then else if. Note the difference from python (not elif) and the way the statement is called ({} instead of :) </p>
-                    <br>
-                    <p>Show how to build a for loop and how to add in a logic statement. Do the same with while loops. Show how to build a function, note the use of the return statement. </p>
-                    <br>
-                    <p> Give 10 minutes to do exercise. Solutions embedded to notebook </p>
+                    <p> In this section you will be demonstrating control flow which should be familiar from python (DS1). You are only introducing the syntax for R (as the concepts have been covered previously) so don't spend too much time on this section. Show apprentices the logic syntax (effectively same as python) and how to set up a statement. Note the difference from python, before they used a colon (:) to start a statement, but in python they use curved brackets ({}). Note that R is not as fussy as python when it comes to indenting our code, but we still should as it is best practice and makes our code more readable. </p>
+                  <br>
+                  <p> As you move through the rest of this section (for, while and functions) you should note that the format is similar each time and everything they can do in python, can be done in R.</p>
+                  <br>
+                  <p> For the exercise I would put apprentices in breakout rooms and give 10 minutes plus run through the solutions. Example solutions are embedded into the notebook, but encourage apprentices to give it a go before looking. </p>
                 </td>
             </tr>
         </table>
@@ -746,27 +731,16 @@
                 <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px> Notes </th>
             </tr>
             <tr>
-                <td colspan=4 style=text-align:center;font-size:15px> <p> Link back to previous lessons on EDA (python, SQL, tableau/PowerBI, Excel) and reiterate its importance.</p>
-                    <br>
-                    <p> R has many functions readily available to help with this which are easy to use. </p>
-                    <br>
-                    <p> Packages are the same as libraries in python (many packages in R can be used in python as well). Show how to install (only need to do once) and then how to call it up.</p>
-                    <br>
-                    <p> Show how to read in data and how to perform the basic checks we saw in python. </p>
-                    <br>
-                    <p> Introduce the common functions and state that you will be demonstrating them shortly. </p>
-                    <br>
-                    <p> Note the odd syntax of trying to apply more than one function. </p>
-                    <br>
-                    <p> As wrapping functions can be confusing, piping is a better way of adding in several layers to the same command. </p>
-                    <br>
-                    <p> Demonstrate how much simpler piping is compared to wrapping. </p>
-                    <br>
-                    <p> Show how to slice a dataframe, select and rename columns. </p>
-                    <br> 
-                    <p> Demonstrate how to add new columns or amend an existing one, how to group by and aggregate data frames.</p>
-                    <br>
-                    <p> Give 10 minutes for exercise. Solutions embedded </p>
+                <td colspan=4 style=text-align:center;font-size:15px> 
+                  <p> In this section you will be introducing the concepts of EDA in R. As we have covered the principles of EDA in Excel, SQL, Tableau and Python already there will be no need to go into too much detail here. However, it may be a good idea to ask apprentices what principles they can remember (cleaning data, gathering aggregates to summarise, identify which features will be useful for prediction, etc) </p>
+                  <br>
+                  <p> As many of the functions we will need are built into tidyverse, you are going to have to show apprentices how to install and call the library. Note the similarity with python and again how easy it is to do (and forget to do...). Tidyverse does quite a lot, so encourage apprentices to explore different functions and see how they can help them with their analysis. </p>
+                  <br>
+                  <p> The first thing you will do is show apprentices common functions, explain that each will be demonstrated and discussed shortly. Start with filter and arrange. You can demonstrate how to check for null values using is.na(). Note that to apply more than one function you will need to wrap each new one around the previous and that can get confusing. To counter this, introduce and demonstrate piping as a method to clean our code up and encourage apprentices to try using it. </p>
+                  <br>
+                  <p> Moving on from there demonstrate how to manipulate and rearrange dataframes as wel as how to create new columns and create aggregates. Link back to how they did this in python, its just the syntax that is different. Encourage apprentices to edit the sample code (give time for this) and allow them to ask questions. If time, you can set challenges, such as what is the average price for bottles with proof greater than 40 for example. </p>
+                  <br>
+                  <p> For the exercise I would give 10 or so minutes in breakout rooms before going through the solutions. Again, sample solutions are built into the notebook. </p>
                 </td>
             </tr>
         </table>
@@ -791,19 +765,12 @@
                 <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px> Notes </th>
             </tr>
             <tr>
-                <td colspan=4 style=text-align:center;font-size:15px> <p> Visualisation is an important part of EDA and presenting your findings. It is good for your portfolio to have a variety of methods, so consider building some in R. </p>
-                    <br>
-                    <p> The library we will be using is ggplot2 (comes with tidyverse). It is simple to use and has a wide array of functionality. While we will be keeping it simple, there are many ways you can build outstanding visualisations.</p>
-                    <br>
-                    <p> Note: plotly dash can also be run in R </p>
-                    <br> 
-                    <p>Show how to build a scatter plot, bar chart and box plot. Show how to add colour and other features to the plots.</p>
-                    <br>
-                    <p> Show facet_wrap as as a way of putting multiple plots on the page. </p>
-                    <br>
-                    <p> Note the structure of geom_graph and state that this is the general structure of ggplots. </p>
-                    <br>
-                    <p> Give 15 minutes for the exercise/ Solutions embedded, encourage those who are more confident to attempt the stretch questions.  </p> 
+                <td colspan=4 style=text-align:center;font-size:15px> 
+                  <p> In this section you will be introducing how to build visualisations using ggplot2 (built into tidyverse). There are other packages available, but we will stick to this one for now. The synatx for building a visualisation is different to python, so it may take apprentices a bit longer to pick this topic up. Encourage apprentices to code along with you and give them time to build the visualisations themselves and ask questions. </p>
+                  <br>
+                  <p> As you move through the section you will demonstrate how to build a scatter graph, bar chart and boxplot. The initial set up is the same each time ggplot(data=, aes=()) (draw attention to this) but show how the next statement changes depending on what you want. Show apprentices how to customise their visualisations by use of colours and sizes (e.g. size=continent). You can demonstrate a line graph by using geom_line(). </p>
+                  <br>
+                  <p> For this exercise I would give at least 15 minutes in breakout rooms. Apprentices may find this section more challenging, so beprepared to walk through code again. As a stretch challenge there is a further exercise where apprentices have to recreate a visualisation. Again solutions are built into notebook. </p>
                 </td>
             </tr>
         </table>
@@ -828,19 +795,14 @@
                 <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px> Notes </th>
             </tr>
             <tr>
-                <td colspan=4 style=text-align:center;font-size:15px> <p> This is a section that can be skipped if running out of time.</p> 
-                    <br>
-                    <p> Amongst R’s many applications is statistical analysis and machine learning. In fact, R is possibly better suited for it due to the wide range of built in statistical tests and models already built in. </p>
-                    <br>
-                    <p> In python we saw different types of hypothesis tests, R has more and the syntax is easier! It can also easily do ANOVA, chi-square test, f-test and more. We will look at a few now. </p>
-                    <br>
-                    <p> Demonstrate how to build a linear regression. Draw attention to the similarity to statsmodels and how much simpler it is than in python. </p>
-                    <br>
-                    <p> Walk through the summary and draw particular attention to p-values and r squared. Lead a discussion around the interpretations.</p>
-                    <br>
-                    <p>D o the same for logistic regression. Walk through the data engineering steps (not seen yet) and then how to build and interpret the model. Note that in R it is called a logit function. </p>
-                    <br>
-                    <p> Finally show a t-test. Stress the importance that normally you would do checks such as looking at distributions, summary statistics, etc but for today we are only going to look at how to run and interpret one. </p>
+                <td colspan=4 style=text-align:center;font-size:15px> 
+                  <p> In this section you will demonstrate how to build a linear model in R. This is a more advanced topic and can be skipped if running out of time. Explain to apprentices that R is built for this sort of programming and arguably is better suited than python for it. Python is a better all round language and has a much wider array of functionality, R is a narrower in scope but is more powerful in what it does (especially as much ML is prebuilt in). </p>
+                  <br>
+                  <p> Start with showing linear regression and show how it is similar to the statsmodels pakcage from python (funny that...). Show how to build and analyse a model. You can explore coefficients by typing summary(model)$coefficients. Explain that the principles of linear modelling are the exact same as with python (R-Squared, etc).</p>
+                  <br>
+                  <p> For logistic regression show that in R this is called logit and is accessed through generalised linear models. For the example in the notebook show how to build a binary feature using ifelse and then how to build the model. </p>
+                  <br>
+                  <p> Finally (if you have time) show how to perform a t-test. This was explored in DS2, so apprentices may need a refresher on how hypothesis testing works. Explain that normally you would check for assumptions (such as normality) and perform other EDA but for today you are just demonstrating the code. Walk through how to set up the t-test and how to analyse it. Explain that R has a wide array of models built in (chi square test, f tests, ANOVA, etc) and is much better suited for it than python. </p>
                 </td>
             </tr>
         </table>
@@ -865,7 +827,7 @@
                 <th bgcolor=#1d98ff colspan=4 style=text-align:center;font-size:15px> Notes </th>
             </tr>
             <tr>
-                <td colspan=4 style=text-align:center;font-size:15px> <p> We used Jupyter because apprentices are already familiar with it. In most industry cases they would use RStudio. If you have time, download and bring up RStudio to show how it works and although the GUI is different, the syntax is the same. </p> 
+                <td colspan=4 style=text-align:center;font-size:15px> <p> We used Jupyter because apprentices are already familiar with it. In most industry cases they would use RStudio. If you have time, download and bring up RStudio to show how it works and although the GUI is different, the syntax is the same. Otherwise, show the GUI screenshot and point out its differences and similarities to using Jupyter. </p> 
                 </td>
             </tr>
         </table>
