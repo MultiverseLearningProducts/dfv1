@@ -1,3 +1,5 @@
+<a href='mailto:alastair.tyson@multiverse.io?subject=Curriculum Resource Edit Request&body=<b>Edit%20to%20be%made.</b>%0A%0A<b>Why%20it%20is%20needed</b>%0A%0A<b>Potential%20impact</b>'> data curriculum lead </a>
+
 <h1> Data Fellowship Curriculum Level 4 (v1) </h1>
 <hr>
 <div id='intent'>
