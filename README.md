@@ -1,5 +1,4 @@
-<!doctype html>
-<html lang="en">
+
   <head>
     <meta charset="utf-8">
     <title>Tools of the Trade Session 1</title>
@@ -227,4 +226,4 @@
     <hr>
     <br>                             
   </body>
-</html>
+
