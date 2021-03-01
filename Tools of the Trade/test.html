@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tools of the Trade Session 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="/swe/favicon.ico">
+    <link rel="stylesheet" href="/swe/modest.css">
+    <link rel="stylesheet" href="/swe/prism.css">
+    <link rel="stylesheet" href="/swe/style.css">
+  </head>
+  <body>
+    <p style ='color:black; font-size: 50px; font-weight:bold'> Session 1: Tools of the Trade </p>
+    <hr>
+    <a id="outline"></a>
+
+    <h1> Session Outline </h1>
+
+    <ul>
+        <li><a href=#understanding_big_data> Understanding Big Data </a> </li>
+        <li><a href=#five_vs> The Five V's </a> </li>
+        <li><a href=#developing_the_future> Developing The Future </a> </li>
+        <li><a href=#how_it_works> How It Works </a> </li>
+        <li><a href=#ad_disad> Advantages and Disadvantages </a> </li>
+        <li><a href=#big_data_products> Big Data Products </a> </li>
+        <li><a href=#platforms> Data Platforms </a> </li>
+        <li><a href=#vs_coding> Platforms vs Coding Yourself </a> </li>
+        <li><a href=#setting_up_r> Setting Up R </a> </li>
+        <li><a href=#recap> Recap </a> </li>
+    </ul>
+
+
+    <h1> Learning Objectives </h1>
+
+    <ul>
+      <li> Understand fundamental concepts of Big Data </li>
+      <li> Justify the use (or lack of)  Big Data technologies in your analysis</li>
+      <li> Critically evaluate the differences in using a data platform and coding it yourself</li>
+    </ul>
+
+    <hr>
+    <a id="understanding_big_data"></a>
+    <div class='image' style='position:relative;width:100%;height:60%'>
+        <img src="./Assets/background.PNG" position=absolute>
+        <h2 style ='color:white; font-size: 70px; font-weight:bold; position:absolute; top:50px; left:100px; width:90%'> Understanding Big Data </h2>
+    </div>
+    <a href=#outline> Top </a>
+
+    <p><b> Aim:</b> Define what we mean by 'Big Data'</p>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <span style ='color:#2ee1a1;font-size:100px;font-weight:bold;text-align:center'> What is Big Data? </span>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p style='font-weight:bold;text-align:center;font-size:50px;line-height:90%;'> Big Data is data whose scale, distribution, diversity and or timeliness require the use of new technical architectures and analytics to enable insights that unlock new sources of business value. </p>
+    <p style='text-align:right'><i> McKinsey & Co.; Big Data: The Next Frontier for Innovation, Competition, and Productivity </i></p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <img src="./Assets/Session_1/big_data_cloud.PNG">
+    <p> 'Big Data' is data but in huge volume that is also growing exponentially with time. There is no (real) limit to how large a 'Big Data' set can be, except from storage...
+
+    There is no standard definition of how large a data set must be for it to be defined as ‘big data’, but typically it is so  large and complex that none of the traditional data management tools are able to store or process it efficiently. </p>
+    <hr>
+    <img src="./Assets/Session_1/big_data_block.PNG">
+    <p> Big Data is not just about size or scope but also the technology that supports it. Until recently analysing Big Data sets was impossible as the tools had not been invented!
+    <hr>
+    <img src="./Assets/Session_1/twitter.PNG">
+    <p> Source: <a href='https://www.internetlivestats.com/twitter-statistics/'> Internet Live Stats </a><p>
+    <hr>
+    <img src="./Assets/Session_1/NYSE.PNG">
+    <p> Source: <a href='https://www.nyse.com/data/transactions-statistics-data-library'> New York Stock Exchange </a><p>
+    <hr>
+    <img src="./Assets/Session_1/FB.PNG">
+    <p> Source: <a href='https://research.fb.com/blog/2014/10/facebook-s-top-open-data-problems/'> Facebook </a><p>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p style='font-weight:bold;text-align:center;font-size:50px;line-height:100%;'> 79% of enterprise executives agree that companies that do not embrace Big Data will lose their competitive position and face extinction </p>
+    <p style='text-align:right'>Source:<a href='https://www.experian.com/blogs/insights/2018/09/big-data-big-problem/'> Accenture</a></p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <a id="five_vs"></a>
+    <div class='image' style='position:relative;width:100%;height:60%'>
+        <img src="./Assets/background.PNG" >
+        <h2 style ='color:white; font-size: 70px; font-weight:bold; position:absolute; top:60px; left:100px; width:90%'> The Five V's </h2>
+    </div>
+    <a href=#outline> Top </a>
+
+    <p><b>Aim:</b> Understand the characteristics that make up 'Big Data' <p>
+    <hr>
+    <img src="./Assets/Session_1/five_v.PNG">
+    <hr>
+    <br>
+    <p style='font-size:40px;text-align:left;color:#1d98ff'><b>Volume</b> </p>
+    <br>
+    <div>
+        <img src="./Assets/Session_1/volume.PNG" width=320 height=320> 
+        <br>
+        <ul style='display:inline-block'>
+            <li> Relates to how much data there is </li>
+            <li> Whether a dataset is considered 'big' or not is dependent on the volume </li>
+            <li> Data is considered Big when it is too voluminous for traditional data storage methods </li>
+            <li> Big Data platforms provide a way to store incredibly large amounts of data as well the ability to process it efficiently  </li>
+        </ul> 
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p style='font-size:40px;text-align:left;color:#1d98ff'><b>Velocity</b> </p>
+    <br>
+    <div>
+        <img src="./Assets/Session_1/velocity.PNG" width=320 height=320> 
+        <br>
+        <ul style='display:inline-block'>
+            <li> Refers to the speed of data generation </li>
+            <li> For example, how fast data flows in from sources such as application logs, networks and social media sites </li>
+            <li> Typically the flow will be massive and continuous </li>
+            <li> Increasingly companies are looking to stream analytics and data so it available at the right time to make appropriate business decisions </li>
+            <li> Big Data platforms offer solutions to dealing with fast flowing data in terms of storage and processing </li>
+        </ul> 
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p style='font-size:40px;text-align:left;color:#1d98ff'><b>Variety</b> </p>
+    <br>
+    <div>
+        <img src="./Assets/Session_1/variety.PNG" width=320 height=320> 
+        <br>
+        <ul style='display:inline-block'>
+            <li> Refers to the heterogeniety of the data sources </li>
+            <li> In other words, how different the data sources are (unstructured vs structured etc) </li>
+            <li> With large flows of data from several of sources it is possible that there will be a variety of data types and structures</li>
+            <li> Big Data platforms can handle a variety of sources, structures and data types </li>
+            <li> Different types of data require different strategies which you will need to consider as part of your analysis </li>
+        </ul> 
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p style='font-size:40px;text-align:left;color:#1d98ff'><b>Veracity</b> </p>
+    <br>
+    <div>
+        <img src="./Assets/Session_1/Quality.PNG" width=320 height=320> 
+        <br>
+        <ul style='display:inline-block'>
+            <li> Refers to the quality of the data </li>
+            <li> Checking the veracity of data sources is always challenging- <b> never trust data as given </b> </li>
+            <li> Enquire about the data preparation- has it been normalised already? Has it been subject to statistical manipulation (i.e. outliers removed)? </li>
+            <li> Where possible you should always ask to look at raw data </li>
+            <li> Determining veracity can be challenging to an organisations policies as well as externally determining authorship/ownership </li>
+        </ul> 
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p style='font-size:40px;text-align:left;color:#1d98ff'><b>Value</b> </p>
+    <br>
+    <div>
+        <img src="./Assets/Session_1/Value.PNG" width=320 height=320> 
+        <br>
+        <ul style='display:inline-block'>
+            <li> Refers to the business value of the data </li>
+            <li> Having access to vast amounts of fast flowing data is useless unless it can leveraged into something of value </li>
+            <li> How does this data add value to your business? What is the ROI?</li>
+        </ul> 
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <p style = font-size:40px;text-align:left;color:#1d98ff> Activity </p>
+    <br>
+    <ul style='font-size:15px'>
+        <li>Think about some of the data you use regularly, how does it stack up against the 5 V's? </li>
+        <li>Share your thoughts with your group and be prepared to feedback to the rest of the class </li>
+    </ul>
+    <hr>
+    <a id="developing_the_future"></a>
+    <div class='image' style='position:relative;width:100%;height:60%'>
+        <img src="./Assets/background.PNG" >
+        <h2 style ='color:white; font-size: 70px; font-weight:bold; position:absolute; top:50px; left:100px; width:90%'> Developing The Future </h2>
+    </div>
+    <a href=#outline> Top </a>
+
+    <p><b>Aim:</b> Understand the potential Big Data Analysis can have on our industires </p>
+    <hr>
+    <br>
+    <p style='font-size:40px;color:#1d98ff'><b>Medicine</b> </p>
+    <br>
+    <div>
+        <img src="./Assets/Session_1/genetic.PNG">
+        <p> Genetic sequencing and human genome mapping provide a detailed understanding of genetic makeup and lineage. The healthcare industry is looking toward these advances to help predict which illnesses a person is likely to get in their lifetime and take steps to avoid these maladies or reduce their impact through the use of personalised medicine and treatment.
+
+    While data has grown, the cost to perform this work has fallen dramatically. The cost to sequence one human genome fell from <span>&#36;</span>100m in 2001 to <span>&#36;</span>10k in 2011. Today it costs around <span>&#36;</span>1k. 
+
+    Companies are able to leverage the vast amount of new data available to build machine learning tools to predict results based on past experience.
+
+    A 2017 report showed it was possible to train a model to detect tumour in breast cancer patients that either matched or exceeded the performance of a pathologist who had unlimited time to examine the slides.
+
+    </div>    
+    <br>
+    <br>
+    <br>
+    <hr> 
+    <br>
+    <p style='font-size:40px;color:#1d98ff'><b>NLP</b> </p>
+    <br>
+    <div>
+        <img src="./Assets/Session_1/alexa.PNG">
+        <p> Natural Language Processing is a powerful tool that allows teh analysis of text. Companies like Google and Amazon both make use of NLP and other technologies to give us a virtual assisstant experience.</p>
+        <p><b>Activity:</b> In groups discuss and sketch how you think software such as Amazon Alexa produces personalised recommendations</p>
+        <p> <a href='https://towardsdatascience.com/how-amazon-alexa-works-your-guide-to-natural-language-processing-ai-7506004709d3'> Read more about this story </a></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p style='font-size:40px;color:#1d98ff'><b>Alexa</b> </p>
+    <br>
+    <div>
+        <img src="./Assets/Session_1/alexa_demo.PNG">
+        <ul>
+            <li> Your words are recorded</li>
+            <li> The recording is sent to Amazon's server to be analysed (due to interpreting sounds taking up a l ot of computational power </li>
+            <li> Important words are identified and corresponding functions are carried out (e.g. 'basketball' would open a sports app) </li>
+            <li> The server then sends the information back to your device. If Alexa needs to say something it will follow a reverse process (identify the words it wants to give and convert them to the correct sounds) </li>
+       </ul>
+    </div>
+    <br>
+    <br>
+    <div style='text-align:center'>
+    <video class='center' src="./Assets/Session_1/alexa_demo.mp4" controls='controls' width='320' height='420' display='block' ></video>
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <a id="how_it_works"></a>
+    <div class='image' style='position:relative;width:100%;height:60%'>
+        <img src="./Assets/background.PNG" >
+        <h2 style ='color:white; font-size: 70px; font-weight:bold; position:absolute; top:60px; left:100px; width:90%'> How It Works </h2>
+    </div>
+
+    <a href=#outline> Top </a>
+
+
+    <p><b>Aim:</b> Appreciate how Big Data makes data analysis more efficient </p>
+    <hr>
+    <br>
+    <p style='font-size:40px;color:#1d98ff'><b>Divide and Conquer</b> </p>
+    <br>
+    <div>
+        <img src="./Assets/Session_1/divconq.PNG">
+        <p> Most Big Data softwares use an approach called 'Divide and Conquer' where the data will be split into smaller 'chunks' and processed simultaneously across different nodes and the results combined. This process happens over several servers so if one fails the analysis can continue and the remaining can pick up the slack. </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>  
+    <p style='font-size:40px;color:#1d98ff'><b>Which is Faster?</b> </p>
+    <img src="./Assets/Session_1/faster.PNG">
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p style='font-size:40px;color:#1d98ff'><b>Hard Drive</b> </p>
+    <br>
+    <img src="./Assets/Session_1/hardr.PNG">
+    <ul>
+        <li> Moving 1000000MB @ 100MB per second would take 1000 seconds (or 16.7 minutes)</li>
+        <li> Giving time for downloading and uploading, totaltime would be approximately 34 minutes </li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p style='font-size:40px;color:#1d98ff'><b>Ten USB sticks</b> </p>
+    <br>
+    <img src="./Assets/Session_1/flashdr.PNG">
+    <ul>
+        <li> Dividing the process between 10 USB sticks means each has to transfer 100GB (or 100000MB) each </li>
+        <li> @1000MB per second this will take 100 seconds (or 1.7 minutes) </li>
+        <li> Given each drive is downloading and uploading simultaneously, this would take 3.4 minutes approximately </li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <a id="using_big_data"></a>
+    <div class='image' style='position:relative;width:100%;height:60%'>
+        <img src="./Assets/background.PNG" >
+        <h2 style ='color:white; font-size: 70px; font-weight:bold; position:absolute; top:50px; left:100px; width:90%'> Using Big Data In Your Role </h2>
+    </div>
+    <a href=#outline> Top </a>
+
+    <p><b>Aim:</b> Consider how Big Data can be utilised in your role</p>
+    <hr>
+    <br>
+    <p style='font-size:40px;color:#1d98ff'><b>Activity</b> </p>
+    <br>
+    <p> In breakout rooms brainstorm how you think Big Data tehcnology could be utilised in your role or in your company. When back annotate the screen with your ideas.
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <a id="ad_disad"></a>
+    <div class='image' style='position:relative;width:100%;height:60%'>
+        <img src="./Assets/background.PNG" >
+        <h2 style ='color:white; font-size: 70px; font-weight:bold; position:absolute; top:40px; left:100px; width:90%'> Advantages and Disadvantages </h2>
+    </div>
+    <a href=#outline> Top </a>
+
+    <p><b> Aim:</b> Justify the use of Big Data technologies in your analysis by considering the benefits and drawbacks</p>
+    <hr>
+    <br>
+    <p style='font-size:40px;color:#1d98ff'><b>Advantages</b> </p>
+    <br>
+    <ul>
+        <li> Ability to access and process large volumes of data quickly </li>
+        <li> Analysis run on larger datasets will be more reliable, representative and accurate as taking samples from data will not be necessary </li>
+        <li> Faster analysis leads to a reduction in human utilisation, meaning more projects can be undertaken or better resourcing of analysts </li>
+        <li> Projects finished in shorter time frames can lead to increased reputation amongst customers and products being brought to market </li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p style='font-size:40px;color:#1d98ff'><b>Disadvantages</b> </p>
+    <br>
+    <ul>
+        <li> It is expensive </li>
+        <li> Big Data technologies only provide a small amount of free processing before charging and costs can rack up quickly </li>
+        <li> Therefore you do not have time to play around or make mistakes- time is money </li>
+        <li> Big Data still requires a degree of competency from the user, it is not something that can just be picked up by anybody </li>
+        <li> The nature of Big Data means you are exporting data externally, potentially bringing in cybersecurity risks </li>
+        <li> It can be challenging to integrate Big Data output into your system </li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p style='font-size:40px;color:#1d98ff'><b>Activity</b> </p>
+    <br>
+    <p><b> In breakout rooms </b> read and discuss this <a href='https://www.datamation.com/big-data/big-data-pros-and-cons.html'> article </a>.</p>
+    <br>
+    <ul>
+        <li> Do you agree with what has been written?</li>
+        <li> How do you think Big Data will persoanlly affect your role? </li>
+        <li> Can you find other articles which support or argue against the use of Big Data technologies? </li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <a id="big_data_products"></a>
+    <div class='image' style='position:relative;width:100%;height:60%'>
+        <img src="./Assets/background.PNG" >
+        <h2 style ='color:white; font-size: 70px; font-weight:bold; position:absolute; top:60px; left:100px; width:90%'> Big Data Products </h2>
+    </div>
+    <a href=#outline> Top </a>
+
+    <p><b> Aim: </b> Have an awareness of the various Big Data technologies that exist </p>
+    <hr>
+    <br>
+    <img src="./Assets/Session_1/products.PNG">
+    <br>
+    <br>
+    <br>
+    <hr>
+    <a id="platforms"></a>
+    <div class='image' style='position:relative;width:100%;height:60%'>
+        <img src="./Assets/background.PNG" >
+        <h2 style ='color:white; font-size: 70px; font-weight:bold; position:absolute; top:60px; left:100px; width:90%'> Data Platforms </h2>
+    </div>
+    <a href=#outline> Top </a>
+
+    <p><b>Aim: </b> Reflect on the products you use in your role and justify their use </p>
+    <hr>
+    <br>
+    <p style='font-size:40px;color:#1d98ff'><b>Visualisation Platforms</b> </p>
+    <br>
+    <br>
+    <br>
+    <img src="./Assets/Session_1/vizproducts.PNG">
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p style='font-size:40px;color:#1d98ff'><b>Data Management</b> </p>
+    <br>
+    <br>
+    <br>
+    <img src="./Assets/Session_1/excel.PNG">
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p style='font-size:40px;color:#1d98ff'><b>Statistics Platforms</b> </p>
+    <br>
+    <br>
+    <br>
+    <img src="./Assets/Session_1/spss.PNG">
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p style='font-size:40px;color:#1d98ff'><b>Cloud Based Platforms</b> </p>
+    <br>
+    <br>
+    <br>
+    <img src="./Assets/Session_1/azure.PNG">
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p style='font-size:40px;color:#1d98ff'><b>Common Platforms</b> </p>
+    <br>
+    <br>
+    <br>
+    <img src="./Assets/Session_1/otherproducts.PNG">
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p style='font-size:40px;color:#1d98ff'><b>Activity</b> </p>
+    <br>
+    <p><b> In Breakout Rooms:</b></p>
+    <ul>
+        <li> Discuss what software platforms you use in your role and how you use them </li>
+        <li> What are the advantages and disadvantages of using them? </li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <a id="vs_coding"></a>
+    <div class='image' style='position:relative;width:100%;height:60%'>
+        <img src="./Assets/background.PNG" >
+        <h2 style ='color:white; font-size: 70px; font-weight:bold; position:absolute; top:50px; left:80px; width:90%'> Platforms vs <br>Coding Yourself </h2>
+    </div>
+    <a href=#outline> Top </a>
+
+    <p><b> Aim: </b> Justify the use of platforms by comparing them to your own coding </p>
+    <hr>
+    <br>
+    <p style='font-size:40px;color:#1d98ff'><b>Advantages</b> </p>
+    <br>
+    <br>
+    <br>
+    <div id='wrap' style=display:table;clear:both>
+        <div id=left style=float:left;width:50%>
+            <h4 style=color:#1d98ff;font-size:30px> Platforms </h4>
+            <br>
+            <ul>
+                <li> Easy to use and do not require technical knowledge or skills </li>
+                <li> More agile as 'drag and drop' options allow for quicker building of functions/models/visualisations </li>
+                <li> Greater agility leads to lower costs as less time is spent on development </li>
+                <li> Relatively simple to edit what you have built </li>
+                <li> Often tech support available </li>
+            </ul>
+        </div>
+        <div id='right' style=float:right;width:50%>
+            <h4 style=color:#2ee1a1;font-size:30px> Coding </h4>
+            <br>
+            <ul>
+                <li> You have complete control over the whole process and can customise solour scheme and functionality in almost any way imaginable </li>
+                <li> Data entry can be faster and more accurate (particularly when automated) </li>
+                <li> Common coding langauges (R, Python, etc) are free to install and use </li>
+                <li> You own the source code </li>
+                <li> Most languages have active communities where you can ask for help </li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p style='font-size:40px;color:#1d98ff'><b>Disadvantages</b> </p>
+    <br>
+    <br>
+    <br>
+    <div id='wrap' style=display:table;clear:both>
+        <div id=left style=float:left;width:50%>
+            <h4 style=color:#1d98ff;font-size:30px> Platforms </h4>
+            <br>
+            <ul>
+                <li> Can be a steep learning curve and training will be required for each different software you use </li>
+                <li> While platforms often have a wide variety of functions, they are still limited to whatever was built in by the developer </li>
+                <li> Security and reliability issues around you not having complete control over your code/data </li>
+                <li> If you want to change product it can be difficult to migrate your models/visualisations </li>
+                <li> Licenses can be expensive </li>
+                <li> You do not own the source code </li>
+            </ul>
+        </div>
+        <div id='right' style=float:right;width:50% >
+            <h4 style=color:#2ee1a1;font-size:30px> Coding </h4>
+            <br>
+            <ul>
+                <li> You have complete control over the whole process and can customise solour scheme and functionality in almost any way imaginable </li>
+                <li> Learning to code is a daunting and long process </li>
+                <li> Coding is constantly evolving and it is up to you to keep up with trends- which you may not have time to do </li>
+                <li> Complicated codes take a long time to produce and require constant error checking and validation </li>
+                <li> Easy to make mistakes but can be difficult to find the error </li>
+                <li> Making small changes to large scripts not always simple and can lead to side effects </li>
+                <li> Code is harder to understand for non-technical colleagues </li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p style='font-size:40px;color:#1d98ff'><b>Activity</b> </p>
+    <br>
+    <br>
+    <br>
+    <p> Mr Jones works in a data analytics department and has been given a project to complete. He must design a dashboard that displays daily KPIs for his stakeholders.
+
+    In teams you will be each be assigned a different product (Tableau, Python, etc) and will come up with arguments to convince Mr Jones to use your product. 
+
+    Each team will then be given 1 minute to pitch their product.
+    </p>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <a id="setting_up_r"></a>
+    <div class='image' style='position:relative;width:100%;height:60%'>
+        <img src="./Assets/background.PNG" >
+        <h2 style ='color:white; font-size: 70px; font-weight:bold; position:absolute; top:60px; left:100px; width:90%'> Setting Up R </h2>
+    </div>
+    <a href=#outline> Top </a>
+
+    <p><b> Aim: </b> Have the correct software installed to use R </p>
+    <hr>
+    <br>
+    <ol>
+        <li> Open Anaconda </li>
+        <li> Click Environments </li>
+        <li> Click Create </li>
+        <li> Name it R and check the R box </li>
+        <li> Wait a few minutes for the environments to be created </li>
+        <li> Once ready, click on the triangle next to your new environment and select 'Open with Jupyter Notebook' </li>
+        <li> Whenever you want to use R make sure you use this new environment, if you want to use Python make sure you use the environment called base(root)</li>
+        <li> To create a R notebook, select new in the Jupyter navigator and select R </li>
+    </ol>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <a id="recap"></a>
+    <div class='image' style='position:relative;width:100%;height:60%'>
+        <img src="./Assets/background.PNG" >
+        <h2 style ='color:white; font-size: 70px; font-weight:bold; position:absolute; top:60px; left:100px; width:90%'> Recap </h2>
+    </div>
+    <a href=#outline> Top </a>
+
+    <h1> Learning Objectives </h1>
+
+    <ul>
+        <li> Understand fundamental concepts of Big Data </li>
+        <li> Justify the use (or lack of)  Big Data technologies in your analysis</li>
+        <li> Critically evaluate the differences in using a data platform and coding it yourself</li>
+    </ul>
+
+    <h1> Assignment </h1>
+
+    <p><i> Justify the use (or lack of) Big Data technologies in your analysis </i></p>
+    <br>
+    <p><b>Required:</b></p>
+    <br>
+    <p> Written Justification (max 1500 words) </p>
+    <br>
+    <p><b>Things to consider:</b></p>
+    <br>
+    <ul>
+        <li> How does your company make use of Big Data technologies? </li>
+        <li> Do you have opportunities to use them in your role? </li>
+        <li> Do you think you could use these technologies effectively in your role? </li>
+        <li> Do you think your company uses them effectively? </li>
+        <li> What do you think the potential business impact of your companies attitude towards Big Data will be?</li>
+    </ul>
+    
+  </body>
+</html>
