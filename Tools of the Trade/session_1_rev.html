@@ -28,6 +28,15 @@
     <!-- Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#333333">
+		<style>
+			#ClickToReveal {
+				width: 100%;
+				padding: 50px 0;
+				text-align: center;
+				background-color: lightblue;
+				margin-top: 20px;
+			}
+		</style>
 	</head>
 	
 	
@@ -82,7 +91,7 @@
 						</ul>
 					</div>
 					<aside class='notes'>
-						Run through the plan of the day, plan to have a break about half way through (likely after 'how does it work?')s
+						Run through the plan of the day, plan to have a break about half way through (likely after 'how does it work?')
 					</aside>
         </section>
 				<section>
@@ -300,6 +309,9 @@
                 <li>Share your thoughts with your group and be prepared to feedback to the rest of the class </li>
             </ul>
           </div>
+					<aside class='notes'>
+						Give apprentices 10 minutes in breakout rooms to discuss some of the data they use regularly and evaluate it against the five v's. Try to imagine what the data would look like if it was more voluminous or it was of a higher velocity- what challenges would it present? What opportunities would there be? What scope is there for using Big Data  in their role, what would the potential value be?
+					</aside>
         </section>
         <section data-background-image="Assets/background.PNG">
           
@@ -307,12 +319,20 @@
           <div class="wrap aligncenter">
             <span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> Developing the Future </span>       
           </div>
+					<aside class='notes'>
+						Objective: Understand the impact Big Data can have on our industries.
+						<br>
+						In this section you will be examining the effect Big Data has had on the world around us and use it to consider the potential in their own industry.
+					</aside>
         </section>
         <section data-background-image="https://source.unsplash.com/wDxFn_dBEC0/1600x800">
           
           <div class="wrap aligncenter bg-white" style='background-color:rgba(255,255,255,0.75);width:max-content'>
             <span style ='color:#2ee1a1;font-size:60px;font-weight:bold'> How has Big Data affected medical science? </span>
           </div>
+					<aside class='notes'>
+						Big Data has had a huge effect on many industries, not least medical sciences. How do you think leveraging vast amounts of data more efficiently will have helped the development of modern medicine?
+					</aside>
         </section>
         <section>
           <div class="wrap" style='width:max-content'>
@@ -333,6 +353,9 @@
               </div>
             </div>
           </div>
+					<aside class='notes'>
+						The human genome is incredibly complex with a mind boggingly large number of possible combinations. By using Big Data, scientists have been better able to map out the genetic language of the human body which has helped predict and therefore pre-empt genetic conditions saving lives and leading to better standards of living. Better technology allows for quicker analysis and over time we have seen the cost fall dramatically. Other applications include using classification techniques to identify tumours such that they can be identified as malignant or benign much quicker- again saving many lives.
+					</aside>
         </section>
         <section data-background-image="https://source.unsplash.com/db4jrNvZhOQ/1600x800">
         
@@ -344,8 +367,12 @@
             <p><b>Activity:</b> In groups discuss and sketch how you think software such as Amazon Alexa produces personalised recommendations</p>
             <p> <a href='https://towardsdatascience.com/how-amazon-alexa-works-your-guide-to-natural-language-processing-ai-7506004709d3'> Read more about this story </a></p>
           </div>
+					<aside class='notes'>
+						Who has an Alexa (or similar device) in their home? Technology like Alexa utilises Big Data to create personalised experiences for the user, utilising a vast warehouse of data (and the internet) to cross reference and learn about those who use them. Give apprentices 5-10 minutes to sketch out the process they think Alexa follows when coming up wit a recommendtion. This could be done on Google slides, PowerPoint or Lucid Chart. 
+					</aside>
         </section>
-        <section>                                                                                                                                         <div class="wrap">
+        <section>                                                                                                                                         
+					<div class="wrap">
             <div class="grid vertical-align">
               <div class="column">
                 <ol style='display:inline-block;text-align:left'>
@@ -360,6 +387,9 @@
               </div>
             </div>
           </div>
+					<aside class='notes'>
+						Walk through the process. For example, say you wanted help choosing a take away. First your local device would send the recording of your instruction to its server and interpret the sound. Once it has identified the instruction (e.g. 'find takeaway') it would use the internet to find local takeaways to your location. Potentially based on your metadata (for example if you use Just Eat which has an Alexa app) Alexa would be able to predict which cusine you would most likely choose. It would then return these results to you, via the server where it will have worked out what 'sounds' (words) it will need to speak to you. 
+					</aside>
         </section>
         <section data-background-image="Assets/background.PNG">
               
@@ -390,13 +420,16 @@
             <h2 style='color:#1d98ff'><b> One 2TB Harddrive </b></h2>
             <br>
             <img src="./Assets/Session_1/hardr.PNG" alt='Harddrive'>
+						<br>
+						<button onclick="CTR()">Solution</button>
             <br>
-            <br>
-            <ul>
-              <li> Moving 1000000MB @ 100MB per second would take 1000 seconds (or 16.7 minutes)</li>
-              <br>
-              <li> Giving time for downloading and uploading, total time would be approximately 34 minutes </li>
-            </ul>
+						<div id='ClickToReveal'>
+							<ul>
+								<li> Moving 1000000MB @ 100MB per second would take 1000 seconds (or 16.7 minutes)</li>
+								<br>
+								<li> Giving time for downloading and uploading, total time would be approximately 34 minutes </li>
+							</ul>
+						</div>
           </div>
         </section>
         <section data-background-image="https://source.unsplash.com/sb7RUrRMaC4/1600x800">
@@ -406,14 +439,17 @@
             <br>
             <img src="./Assets/Session_1/flashdr.PNG" alt='10 Sticks'>
             <br>
+						<button onclick="CTR()">Solution</button>
             <br>
-            <ul>
-              <li> Dividing the process between 10 USB sticks means each has to transfer 100GB (or 100000MB) each </li>
-              <br>
-              <li> @1000MB per second this will take 100 seconds (or 1.7 minutes) </li>
-              <br>
-              <li> Given each drive is downloading and uploading simultaneously, this would take 3.4 minutes approximately </li>
-            </ul>
+						<div id='ClickToReveal'>
+							<ul>
+								<li> Dividing the process between 10 USB sticks means each has to transfer 100GB (or 100000MB) each </li>
+								<br>
+								<li> @1000MB per second this will take 100 seconds (or 1.7 minutes) </li>
+								<br>
+								<li> Given each drive is downloading and uploading simultaneously, this would take 3.4 minutes approximately </li>
+							</ul>
+						</div>
           </div>
         </section>
         <section data-background-image="Assets/background.PNG">
@@ -656,6 +692,7 @@
 								<ul style='list-style-type:none'> 
 									<li><b>Required:</b></li>         
 									<li> Written Justification (max 1500 words) </li>
+								</ul>
 							</div>
 							<br>
 							<div>
@@ -696,5 +733,15 @@
 		</script>
 		<script src="socket.io/socket.io.js"></script>
 		<script src="node_modules/reveal-notes-server/client.js"></script>
+		<script>
+			function CTR() {
+				var x = document.getElementById("ClickToReveal");
+				if (x.style.display === "none") {
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}
+			}
+		</script>
 	</body>
 </html>
