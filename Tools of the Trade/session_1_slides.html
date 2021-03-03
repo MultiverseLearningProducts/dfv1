@@ -737,6 +737,9 @@
 
       <!-- The Modal -->
       <div id="myModal" class="modal">
+        <div class='modal-header'>
+          <p>Header</p>
+        </div>
 
         <!-- Modal content -->
         <div class="modal-content">
@@ -784,7 +787,9 @@
           modal.style.display = "none";
         }
       }
-      $('#myModal').draggable();
+      $("#myModal").draggable({
+          handle: ".modal-header"
+      });
     </script>
   
    
