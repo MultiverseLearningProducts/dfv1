@@ -36,6 +36,13 @@
 				background-color: lightblue;
 				margin-top: 20px;
 			}
+			#ClickToReveal_2 {
+				width: 100%;
+				padding: 50px 0;
+				text-align: center;
+				background-color: lightblue;
+				margin-top: 20px;
+			}
 		</style>
 	</head>
 	
@@ -439,9 +446,9 @@
             <br>
             <img src="./Assets/Session_1/flashdr.PNG" alt='10 Sticks'>
             <br>
-						<button onclick="CTR()">Solution</button>
+						<button onclick="CTR_2()">Solution</button>
             <br>
-						<div id='ClickToReveal' style='display:none'>
+						<div id='ClickToReveal_2' style='display:none'>
 							<ul>
 								<li> Dividing the process between 10 USB sticks means each has to transfer 100GB (or 100000MB) each </li>
 								<br>
@@ -736,6 +743,14 @@
 		<script>
 			function CTR() {
 				var x = document.getElementById("ClickToReveal");
+				if (x.style.display === "none") {
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}
+			}
+			function CTR_2() {
+				var x = document.getElementById("ClickToReveal_2");
 				if (x.style.display === "none") {
 					x.style.display = "block";
 				} else {
