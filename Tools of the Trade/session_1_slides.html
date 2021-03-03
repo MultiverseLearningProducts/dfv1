@@ -21,6 +21,12 @@
 
     <!-- Optional - CSS SVG Icons (Font Awesome) -->
     <link rel="stylesheet" type="text/css" media="all" href="static/css/svg-icons.css">
+    <!--Reveal -->
+    <link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    <!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
     <!-- Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#333333">
@@ -696,13 +702,20 @@
 
 
     <!-- Required -->
-    <script src="static/js/webslides.js"></script>
-    <script>
-      window.ws = new WebSlides();
-    </script> <!-- Autoslide? window.ws = new WebSlides({ autoslide: 8000 }); -->
+    <script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
 
-    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
-    <script defer src="static/js/svg-icons.js"></script>
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
   
    
    
