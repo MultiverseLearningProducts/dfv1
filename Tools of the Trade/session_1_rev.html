@@ -287,7 +287,7 @@
 						<img src='https://source.unsplash.com/KgLtFCgfC28/800x600' alt='Veracity'>
 					</div>    
 					<aside class='notes'>
-						This refers to the quality of the data. What pitfalls can arise due to poor quality data? These issues are much worse with Big Data as there is so much of it, and any errors can lead to catastrophic failures which can be both expensive and time consuming. You should always have checks then for your incoming data- has it been normalised? Has it been cleaned? Have the structures been checked and processes put in place to deal with them? Never assume data is clean! As Big Data often comes from a disparate variety of sources, this can be challenging- especially when you also have to consider issues around ownership, GDPR and company data policies. 
+						This refers to the quality of the data. What pitfalls can arise due to poor quality data? These issues are much worse with Big Data as there is so much of it, and any errors can lead to catastrophic failures which can be both expensive and time consuming. You should always have checks then for your incoming data- has it been normalised? Has it been cleaned? Have the structures been checked and processes put in place to deal with them? Never assume data is clean! As Big Data often comes from a disparate variety of sources, this can be challenging- especially when you also have to consider issues around ownership, GDPR and company data policies. Considering how expensive it can be to use Big Data, you do not want to find your analysis has been ruined due to issues around data quality- it could be both a frustrating and expensive mistake.
 					</aside>
         </section>
         <section>
@@ -404,6 +404,11 @@
           <div class="wrap aligncenter">
             <span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> How it Works </span>        
           </div>
+					<aside class='notes'>
+						Objective: Understand the principles behind how Big Data technologies aid our analysis.
+						<br>
+						In this section we will be examing how Big Data technology can speed up our analysis. 
+					</aside>
         </section>
         <section data-background-image="https://source.unsplash.com/EibY9ePJP2c/1600x800">
         
@@ -413,6 +418,11 @@
               <p style='color:white'> Most Big Data softwares use an approach called 'Divide and Conquer' where the data will be split into smaller 'chunks' and processed simultaneously across different nodes and the results combined. This process happens over several servers so if one fails the analysis can continue and the remaining can pick up the slack. </p>
             </div>
           </div>
+					<aside class='notes'>
+						Has anyone ever tried to run analysis on a dataset that runs into millions of rows? How long did it take? When using Excel or a Jupyter Notebook the processing is being done by your computer. There are very powerful personal computers you can buy, but these are often optimised for computer games. Most of the computers we use are only powerful enough to handle a few Gigabytes which severly limits how quickly (and how much) data can be processed. 
+						<br>
+						This is where Big Data technologies come to the rescue. Instead of running your algorithm on your computer, you send the data to a remote server (run by a Big Data company) where your algorithm/script will run. The server uses an approach called 'divide and conquer' where it will share the data across several nodes and process them seperately before combining the results and sending them back. When you consider how powerful the processors these servers have you can see how much faster your analysis will be completed when using Big Data technology. This is especially true when the data is in large volume and fast moving, with Big Data servers able to store huge quantities and even have capabilities to deal with different data types and structures. Another advantage of spreading the data across different nodes is that if one fails for whatever reason, the others can pick up the slack. Compare this to running analysis on your computer- if it loses power midway through a large piece of analysis you will lose everything.
+					</aside>
         </section>
          <section data-background-image="https://source.unsplash.com/sb7RUrRMaC4/1600x800">
           
@@ -420,6 +430,9 @@
             <p style='font-size:40px;color:#1d98ff'><b>Which is Faster?</b> </p>
             <img src="./Assets/Session_1/faster.PNG">
           </div>
+					 <aside class='notes'>
+						 Let's illustrate how much quicker processing can be using Divide and Conquer. Imagine you have to transfer 1 Terabyte of data (1000 GB) between two computers. You have access to a 2TB removable hard drive and ten 128 GB USB sticks. Assuming upload/download speeds are constant and both computers have at least 10 USB ports which method will be quicker? Give apprentices a few minutes to attempt before showing the solutions.
+					</aside>
         </section>
         <section data-background-image="https://source.unsplash.com/sb7RUrRMaC4/1600x800">
           
@@ -438,6 +451,9 @@
 							</ul>
 						</div>
           </div>
+					<aside class='notes'>
+						Ask apprentices for their answer before revealing the solution. 
+					</aside>
         </section>
         <section data-background-image="https://source.unsplash.com/sb7RUrRMaC4/1600x800">
          
@@ -456,6 +472,9 @@
 							</ul>
 						</div>
           </div>
+					<aside class='notes'>
+						Ask the apprentices for their answers (can use annotate or chat function) before revealing solution. Note that the second method is 10 times faster. This shows how much quicker dividing your processing up can be when using Big Data technologies. However, sending your data to a Big Data server can be expensive as you are effectively 'renting' someone else's processors. What you need to weigh up is the cost of using the technology against the added value of processing larger amounts of data more quickly and efficiently (again when you consider the capabilities of dealing with different data types). Something else to consider is accuracy- you do not want to make a mistake. Sending some data to the cloud to find that you had made a syntax error or some of the data was corrupt (or not cleaned properly) will not only be frustrating but potentially expensive to your employer as well.
+					</aside>
         </section>
         <section data-background-image="Assets/background.PNG">
             
@@ -464,12 +483,18 @@
             <span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> Using Big Data in your Role </span>       
           </div>
           <!-- .end .wrap -->
+					<aside class='notes'>
+						Objective: Consider how Big Data technologies can be used in your role. 
+					</aside>
         </section>
         <section data-background-image="https://source.unsplash.com/LqKhnDzSF-8/1600x800">
           
           <div class="wrap size-50 aligncenter" style='background-color:rgba(255,255,255,0.5);width:max-content'>
             <span style ='color:#1d98ff;font-size:100px;font-weight:bold'> How can you use Big Data in your role? </span>
           </div>
+					<aside class='notes'>
+						Put apprentices in breakout rooms for 5-10 minutes to discuss how they could potentially use Big Data in their role. What ae the opportunities, scope and business need? Would it be of value to process larger volumes of data, such as using all of your customer data or combining different sources of data? Ask apprentices to feedback their ideas once back. 
+					</aside>
         </section>
         <section data-background-image="Assets/background.PNG">
                
@@ -477,6 +502,11 @@
           <div class="wrap aligncenter">
             <span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> Advantages and Disadvantages</span>        
           </div>
+					<aside class='notes'>
+						Objective: Justify the use of Big Data technologies in analysis by considering the benefits and drawbacks.
+						<br>
+						In this section you will be leading a discussion on the advantages of using (or not using) Big Data. The aim is for apprentices to justify their decision for project write ups in their portfolio. 
+					</aside>
         </section>
         <section>
           <div class="wrap size-50 aligncenter" style='width:max-content'>
@@ -489,6 +519,9 @@
               <li> Projects finished in shorter time frames can lead to increased reputation amongst customers and products being brought to market </li>
             </ul>
           </div>
+					<aside class='notes'>
+						Read through the advantages on the screen. Can apprentices think of any more? Ask them to think about how they could incorporate these justifications in their portfolio in the context of their business problems. Using Big Data technologies can lead to companies leveraging better insights through processing larger quanities of data in a timely manner. This can lead to better products, increased engagement from customers and employees moving onto more interesting projects. The advantages are there, but there are some pitfalls to consider too...
+					</aside>
         </section>
         <section>
           <div class="wrap size-50 aligncenter" style='width:max-content'>
@@ -503,6 +536,9 @@
               <li> It can be challenging to integrate Big Data output into your system </li>
             </ul>
           </div>
+					<aside class='notes'>
+						Can apprentices think of any other drawbacks to using Big Data? The big one is the cost- Big Data is not cheap to run, with many solutions offering small free tier limits before ramping up the cost. The potential benefits will often outweigh the costs, but you will need to be confident that the added value is worth it. This will need to be justified to relevant stakeholders before the technology is used. It is paramount then that you are sure the analysis/algorithm will run smoothly, having quality assured your data and code to ensure there are no syntax errors and that the data is clean. Any mistakes could potentially costly to you and your business. 
+					</aside>
         </section>
         <section>
           <div class="wrap size-50">
@@ -516,6 +552,9 @@
                 <li> Can you find other articles which support or argue against the use of Big Data technologies? </li>
             </ul>
           </div>
+					<aside class='notes'>
+						Put apprentices in breakout rooms for 10 minutes to read and discuss the article. Do they agree? Can they think of up for- and against- arguments, or potentially find other articles to support their opinions? Ask them to feedback to the rest of the group afterwards.
+					</aside>
         </section>
         <section data-background-image="Assets/background.PNG">
                   
@@ -523,6 +562,11 @@
           <div class="wrap aligncenter">
             <span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> Big Data Products </span> 
           </div>
+					<aside class='notes'>
+						Objective: Be aware of the various Big Data technologies that exist
+						<br>
+						In this section you will be going through some of the different technologies that exist. Apprentices can investigate these further after the session.
+					</aside>
         </section>
         <section>
 					<h2 style ='font-size:70px;font-weight:bold;text-align:center'> <b>Which products are you aware of? </b></h2>
@@ -533,6 +577,19 @@
 						<img src="https://www.logo.wine/a/logo/Microsoft_Azure/Microsoft_Azure-Logo.wine.svg" width="400" height="400" class="fragment fade-in-then-out logo">
     				<img src="https://www.vectorlogo.zone/logos/google_bigquery/google_bigquery-icon.svg" width="400" height="400" class="fragment fade-in-then-out logo">
           </div>
+					<aside class='notes'>
+						Ask the group if they are aware (or have used) any technologies already. If they have, ask them to explain how they used it and what the benefit was. Run through some of the examples. Hadoop was one of the first developed (named after the developer's daughter's toy elephant). Licensed by Apache, this software came up with the MapReduce (divide and conquer) method which revolutionised data analysis as we know it. 
+						<br>
+						Also licensed by Apache is Spark, developed by the University of California, Berkeley this technology excels at parallel processing and dealing with faults.
+						<br>
+						AWS (Amazon Web Services) is a cloud based server owned by Amazon which allow users to store and process data, host scripts (such as plotly dashboards) and various analytics. 
+						<br>
+						A recent technology is Microsoft Azure which allows for cloud based computing which integrates well with other Microsoft softwares such as PowerBI
+						<br>
+						BigQuery is owned by Google and is effective at running SQL queries on a large scale.
+						<br>
+						When it comes to Big Data technologies, it is up to you (and your employer) which one to use. Whatever the decision, it is important in your portfolio that you justify why you used that technology (or didn't if it was available).
+					</aside>
         </section>
         <section data-background-image="Assets/background.PNG">
                    
@@ -540,16 +597,16 @@
           <div class="wrap aligncenter">
             <span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> Data Platforms </span>       
           </div>
+					<aside class='notes'>
+						Objective: Consider and justify the various platforms you use in your role
+					</aside>
         </section>
         <section data-background-image='https://source.unsplash.com/5fNmWej4tAA/1600x800'> 
 					<div class="r-stack">
 						<div class="fragment fade-in-then-out">
 							<div class='wrap' style='background-color:rgba(255,255,255,0.5)'>
-								<h2><strong>Visualisation Software</strong></h2>
-								<div class="r-hstack">
-									<img src="https://dev3lop.com/wp-content/uploads/2017/04/tableau-logo-tableau-software-700x263.jpg" width="400" height="400" >
-									<img src="https://static.wikia.nocookie.net/logopedia/images/2/2c/Microsoft_Power_BI_%282020%29.svg/revision/latest/scale-to-width-down/200?cb=20200929195935" width="400" height="400">
-								</div>
+								<h2><strong>Visualisation Software</strong></h2>								
+								<img src="https://dev3lop.com/wp-content/uploads/2017/04/tableau-logo-tableau-software-700x263.jpg" width="400" height="400" >
 							</div>
 						</div>
 						<div class="fragment fade-in-then-out">
@@ -570,6 +627,17 @@
           		</div>
 						</div>						
 					</div>
+					<aside class='notes'>
+						Big Data is not the only technology that you have available to use. Your employers have likely licensed several tools you can use to help you in your analysis. In this section we will discuss a few and consider the advantages they have. The aim is again for you to think about the tools you use and justify their use in your portfolio.
+						<br>
+						First we will consider visualisation suites such as Tableau or PowerBI. Built upon pre exisiting code, these allow you to produce impressive visualisations quickly and without a technical knowledge of coding. Allowing for the incorporation of company branding, it is simple to build dashboards and powerful visuals to support your analysis and presentations. Tableau has capabilities for working with live data as well as analytics tools (PowerBI has these as well) which can help you leverage insights without having to code. Drawbacks include not having complete control over the building process as well as being limited to whatever has been built in. Can anyone think of other pros and cons of using visualisation softwares?
+						<br>
+						Most of us are aware of Microsoft Excel as a tool for managing data. With an intuitive interface and the ability to manipulate data down to the cell level it is often the go to choice for analysing data (especially EDA and calculating aggregates). Excel does have data limits (1 million rows) and searching/filtering can be tedious when compared to Python. Excel does integrate with Jupyter Notebook and Python allowing for a best of both worlds approach.
+						<br>
+						In DS2 we looked at hypothesis testing in Python and in the next session we will start looking into R as a language for statistcal analysis. Both Python and R require a technical coding knowledge, meaning many employers and academic institutions look to software like SPSS (owned by IBM). SPSS uses a tabular approch not too dissimilar to Excel and has a range of inbuilt statistical analysese with simply prensented outputs. However, it is expensive to license and has been around since 1968- and it shows. It is not reactive to the latest developments and again you are limited to what you have built in.
+						<br>
+						Ask apprentices to describe the tools they use, like Knime, Alteryx, Qlikview, Jira, etc. How do they use them? What are the advantages and disadvantages? Encourage them to think in terms of business context. Stress again that they need to justify these reasons in their portfolio. 
+					</aside>
         </section>     
         <section data-background-image="Assets/background.PNG">
                      
@@ -577,12 +645,17 @@
           <div class="wrap aligncenter">
             <span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> Platforms vs Coding Yourself </span> 
           </div>
+					<aside class='notes'>
+						Objective: Justify the use of tools by comparing them to coding
+						<br>
+						Having these tools licensed by your employers is great, but it is not the only way. You have been taught how to use SQL and Python and later on we will be looking at R. When should you code and when should you rely on software? That ultimately is up to you, and whatever you decide it needs to be justified. This section will help you consider the advantages and disadvantages of each.
+					</aside>
         </section>
         <section>
           <div class="wrap" style='width:max-content'>
             <p style='font-size:40px;color:#1d98ff'><b>Advantages</b> </p>
             <div class='r-hstack'>
-							<div>
+							<div class='fragment'>
 								<h4 style=color:#1d98ff;font-size:30px> Platforms </h4>				
 								<ul>
 									<li> Easy to use and do not require technical knowledge or skills </li>
@@ -590,10 +663,11 @@
 									<li> Greater agility leads to lower costs as less time is spent on development </li>
 									<li> Relatively simple to edit what you have built </li>
 									<li> Often tech support available </li>
+									<li> Accessible to stakeholders who do not have technical coding background </li>
 								</ul>
 							</div>
               <br>
-              <div>
+              <div class='fragment'>
                 <h4 style=color:#2ee1a1;font-size:30px> Coding </h4>
                 <ul>
                   <li> You have complete control over the whole process and can customise solour scheme and functionality in almost any way imaginable </li>
@@ -605,12 +679,15 @@
 							</div>
             </div>
           </div>
+					<aside class='notes'>
+						Ask apprentices to suggest some advantages of platforms before revealing them. Draw attention to the ease of use, the tech support and the increased engagement from stakeholders. For coding you can discuss how you have more control over the entire process from data cleaning, analysis to visualisations (and potentially dashboars). Coding also has a supportive community and is also cheap.
+					</aside>
         </section>
         <section>
           <div class="wrap" style='width:max-content'>
             <p style='font-size:40px;color:#1d98ff'><b>Disadvantages</b> </p>
 						<div class='r-hstack'>
-              <div>
+              <div class='fragment'>
                 <h4 style=color:#1d98ff;font-size:30px> Platforms </h4>							
 								<ul>
 									<li> Can be a steep learning curve and training will be required for each different software you use </li>
@@ -621,7 +698,7 @@
 									<li> You do not own the source code </li>
 								</ul>
 							</div>
-							<div>
+							<div class='fragment'>
 								<h4 style=color:#2ee1a1;font-size:30px> Coding </h4>
 								<ul>
 									<li> You have complete control over the whole process and can customise solour scheme and functionality in almost any way imaginable </li>
@@ -635,6 +712,9 @@
               </div>
             </div>
           </div>
+					<aside class='notes'>
+						Again you can ask apprentices to suggest the disadvantages for both before revealing. Platforms are expensive, limited and can be difficult to use. On top of this you have issues around third parties potentially having access to your data as well as complications around switching platforms (upskilling staff, different formats, etc). Coding has a steep learning curve and is a constantly evolving discipline which requires analysts to keep abreast of. Another issue is around the open source nature of languages where importing libraries can potentilly bring in security risks.
+					</aside>
         </section>
         <section>
           <div class="wrap size-50">
@@ -647,6 +727,9 @@
             Each team will then be given 1 minute to pitch their product.
             </p>
           </div>
+					<aside class='notes'>
+						Put apprentices into groups of 3 or 4 and give them 7 minutes to come up with arguments to support their software. They will each be given a minute elevator pitch to convince Mr Jones to use their software (choose Python, Excel, Tableau/PowerBI and a software they use in their role (if closed cohort)). Let each group present their pitch. Remind apprentices again that for their portfolios it is crucial they justify their use of tools or coding by considering the alternative.
+					</aside>
         </section>
         <section data-background-image="Assets/background.PNG">
                   
@@ -654,6 +737,11 @@
           <div class="wrap aligncenter">
             <span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> Setting up R </span>     
           </div>
+					<aside class='notes'>
+						Objective: Ensure apprentices have access to R
+						<br>
+						This can be sent out to apprentices prior to the session, particularly if they have issues around accessing their command line.
+					</aside>
         </section>
         <section>
           <div class="wrap size-50 bg-white" style='width:max-content'>
@@ -668,6 +756,9 @@
               <li> To create a R notebook, select new in the Jupyter navigator and select R </li>
             </ol>
           </div>
+					<aside class='notes'>
+						Demonstrate the instructions on your machine. Although in industry it is more likely you would use RStudio, we are using Jupyter Notebook as apprentices will be familiar with the interface from the DS intensives. You can explain that the syntax between different GUI' is the same, you would just need to learn how to use the software. If time you can show how to open a notebook in R.
+					</aside>
         </section>
         <section data-background-image="Assets/background.PNG">
                
@@ -675,6 +766,9 @@
           <div class="wrap aligncenter">
             <span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> Recap </span>        
           </div>
+					<aside class='notes'>
+						Objective: Review the session
+					</aside>
         </section>
         <section>
           <!--.wrap = container (width: 90%) -->
@@ -686,6 +780,9 @@
               <li> Critically evaluate the differences in using a <b>Data Platform</b> and <b>Coding it Yourself</b></li>
             </ul>          
           </div>
+					<aside class='notes'>
+						Run through the objectives again and stress the importance of justifying decisions in their portfolio. Remind apprentices to update their OTJT tracker and fill out a session attendance log on applied.
+					</aside>
           <!-- .end .wrap -->
         </section>
         <section>
@@ -712,6 +809,9 @@
 							</div>
 						</div>
           </div>
+					<aside class='notes'>
+						Set a deadline of a couple of weeks with a feedback turnaround of two weeks. This assignment should inform apprentices how they can incorporate their justifications in their portfolio.
+					</aside>
         </section>
 			</div>
 		</div>
