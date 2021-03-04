@@ -52,7 +52,7 @@
 		<header role="banner" style='background-image:url(Assets/banner.PNG)'>
       <nav role="navigation" style='align:left'>
         <ul>
-					<li><strong>MultiVerse</strong></li>
+					<li class='contents'><p style='font-family:roboto'><strong>MultiVerse</strong></p></li>
           <li class="contents">
             <a href='#/1' title="Contents">
               <em>Contents</em>
@@ -79,7 +79,7 @@
 						Welcome apprentices to the session and explain that we will be looking at various tools they may wish to use to support their analysis. The aim is for them to understand what tools are available and be able to justify their use (or non use) in their portfolio. First we will cover Big Data and then look at data platforms. Tomorrow we will start to code in R as a final tool. Select a warmup from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here</a>.
 					</aside>
         </section>
-				<section class='present'>
+				<section class='present' data-background-image="Assets/start.PNG">
 					<div class="wrap size-60 bg-white">           
 						<h1> Session Outline </h1>
 						<ul style='list-style-type:none'>
@@ -100,7 +100,7 @@
 						Run through the plan of the day, plan to have a break about half way through (likely after 'how does it work?')
 					</aside>
         </section>
-				<section>
+				<section data-background-image="Assets/start.PNG">
 					<div class="wrap size-60 bg-white" style='width:max-content'>
             <h1> Learning Objectives </h1>
             <ul style='display:inline-block;text-align:left'>
@@ -123,7 +123,7 @@
 						Objective: Define what we mean by 'Big Data.' <br> In this section we will be introducing the concept of Big Data and why it is important to both apprentices and their employers.
 					</aside>
         </section>
-				<section>
+				<section data-background-image="Assets/standard.PNG">
 					<div class="wrap size-50 aligncenter">
             <span style ='color:#2ee1a1;font-size:100px;font-weight:bold;text-align:center'> What is Big Data? </span>
           </div>
@@ -199,7 +199,7 @@
 						Objective: Understand the characteristics that make up 'Big Data.'
 					</aside>
         </section>
-        <section>          
+        <section data-background-image="Assets/standard.PNG">          
 					<figure>
 						<img src="./Assets/Session_1/five_v.PNG" alt="Five Vuys">
 					</figure>
@@ -207,7 +207,7 @@
 						Our current definition of Big Data is that it is too big for your computer, but let's consider a more robust approach to defining it. Industry experts refer to the 5 v's as metrics to evaluate whether data is Big or not. These are volume, velocity, variety, veracity and value. We will go through each of these in turn.
 					</aside>        
         </section>
-        <section>
+        <section data-background-image="Assets/standard.PNG">
 					<h2 style='color:#1d98ff'><b>Volume</b> </h2>
 					<div class='r-hstack'>
 						<ul style='display:inline-block;text-align:left'>
@@ -226,7 +226,7 @@
 						The most obvious metric is its volume- how much data there is. If it is too big for your computer to handle (like Peta or Exa-bytes) then it is Big. 20 years ago Gigabytes would have been considered 'Big.' Ask apprentices to annotate the screen to suggest challenges that can occur due to the size of data (e.g. processing time, storage limits, etc). Also ask them to consider the volume of the data they use regularly.
 					</aside>
         </section>
-        <section>
+        <section data-background-image="Assets/standard.PNG">
 					<h2 style='color:#1d98ff'><b>Velocity</b> </h2>
 					<div class='r-hstack'>
 						<ul style='display:inline-block;text-align:left'>
@@ -247,7 +247,7 @@
 						Velocity refers to the speed of data generation, twitter feeds and stock markets generate data incredibly quickly and what is 'fresh' can go out of data within minutes. 'Big Data' will typically be massive and continuous and will require powerful processors to keep up. What challenges can we think of that arise from the velocity of our data? What are the potential benefits of harnessing fast flowing data?
 					</aside>
         </section>
-        <section>
+        <section data-background-image="Assets/standard.PNG">
 					<h2 style='color:#1d98ff'><b>Variety</b> </h2>
           <div class="r-hstack">
 						<ul style='display:inline-block;text-align:left'>
@@ -268,7 +268,7 @@
 						Variety refers to the different types of data. WHat are the different types we learned way back in module 1? The heterogeneity of data sources is super important with Big Data- what challenges can arise if our incoming data is of different structures? You will need ETL systems that can move the data into warehouses where it can be cross referenced or joined. Fortunately Big Data systems often have methods to deal with these. What use cases can we think of for combining different data sources on a large scale?
 					</aside>
         </section>
-        <section>
+        <section data-background-image="Assets/standard.PNG">
 					<h2 style='color:#1d98ff'><b>Veracity</b> </h2>
 					<div class='r-hstack'>
 						<ul style='display:inline-block;text-align:left'>
@@ -289,7 +289,7 @@
 						This refers to the quality of the data. What pitfalls can arise due to poor quality data? These issues are much worse with Big Data as there is so much of it, and any errors can lead to catastrophic failures which can be both expensive and time consuming. You should always have checks then for your incoming data- has it been normalised? Has it been cleaned? Have the structures been checked and processes put in place to deal with them? Never assume data is clean! As Big Data often comes from a disparate variety of sources, this can be challenging- especially when you also have to consider issues around ownership, GDPR and company data policies. Considering how expensive it can be to use Big Data, you do not want to find your analysis has been ruined due to issues around data quality- it could be both a frustrating and expensive mistake.
 					</aside>
         </section>
-        <section>
+        <section data-background-image="Assets/standard.PNG">
 					<h2 style='color:#1d98ff'><b>Value</b> </h2>
           <div class="r-hstack">    
 						<ul style='display:inline-block;text-align:left'>
@@ -306,7 +306,7 @@
 						Finally the value of the data. It is all well and good to have access to Big Data, but it is pointless if you cannot leverage it into something valuable like making a profit. You should always ask what the added value or return on investment is when considering using Big Data. Consider also that utilising Big Data technologies can be expensive (as unless you own the server you will have to rent it) as well as the environmental impact of these remote servers working at high capacity. Can you justify your use of Big Data when considering how much it will cost?
 					</aside>
         </section>
-        <section>
+        <section data-background-image="Assets/standard.PNG">
           <div class="wrap size-50" style='width:max-content'>
             <h2 style = color:#1d98ff><b> Activity </b></h2>
             <br>
@@ -340,7 +340,7 @@
 						Big Data has had a huge effect on many industries, not least medical sciences. How do you think leveraging vast amounts of data more efficiently will have helped the development of modern medicine?
 					</aside>
         </section>
-        <section>
+        <section data-background-image="Assets/standard.PNG">
           <div class="wrap" style='width:max-content'>
             <div class="grid vertical-align">
               <div class="column">
@@ -377,7 +377,7 @@
 						Who has an Alexa (or similar device) in their home? Technology like Alexa utilises Big Data to create personalised experiences for the user, utilising a vast warehouse of data (and the internet) to cross reference and learn about those who use them. Give apprentices 5-10 minutes to sketch out the process they think Alexa follows when coming up wit a recommendtion. This could be done on Google slides, PowerPoint or Lucid Chart. 
 					</aside>
         </section>
-        <section>                                                                                                                                         
+        <section data-background-image="Assets/standard.PNG">                                                                                                                                         
 					<div class="wrap">
             <div class="grid vertical-align">
               <div class="column">
@@ -507,7 +507,7 @@
 						In this section you will be leading a discussion on the advantages of using (or not using) Big Data. The aim is for apprentices to justify their decision for project write ups in their portfolio. 
 					</aside>
         </section>
-        <section>
+        <section data-background-image="Assets/standard.PNG">
           <div class="wrap size-50 aligncenter" style='width:max-content'>
             <h2 style='color:#1d98ff'><b>Advantages</b></h2>
             <hr>
@@ -522,7 +522,7 @@
 						Read through the advantages on the screen. Can apprentices think of any more? Ask them to think about how they could incorporate these justifications in their portfolio in the context of their business problems. Using Big Data technologies can lead to companies leveraging better insights through processing larger quanities of data in a timely manner. This can lead to better products, increased engagement from customers and employees moving onto more interesting projects. The advantages are there, but there are some pitfalls to consider too...
 					</aside>
         </section>
-        <section>
+        <section data-background-image="Assets/standard.PNG">
           <div class="wrap size-50 aligncenter" style='width:max-content'>
             <h2 style='color:#1d98ff'><b>Disdvantages</b></h2>
             <hr>
@@ -539,7 +539,7 @@
 						Can apprentices think of any other drawbacks to using Big Data? The big one is the cost- Big Data is not cheap to run, with many solutions offering small free tier limits before ramping up the cost. The potential benefits will often outweigh the costs, but you will need to be confident that the added value is worth it. This will need to be justified to relevant stakeholders before the technology is used. It is paramount then that you are sure the analysis/algorithm will run smoothly, having quality assured your data and code to ensure there are no syntax errors and that the data is clean. Any mistakes could potentially costly to you and your business. 
 					</aside>
         </section>
-        <section>
+        <section data-background-image="Assets/standard.PNG">
           <div class="wrap size-50">
             <p style='font-size:40px;color:#1d98ff'><b>Activity</b> </p>
             <br>
@@ -567,7 +567,7 @@
 						In this section you will be going through some of the different technologies that exist. Apprentices can investigate these further after the session.
 					</aside>
         </section>
-        <section>
+        <section data-background-image="Assets/standard.PNG">
 					<h2 style ='font-size:70px;font-weight:bold;text-align:center'> <b>Which products are you aware of? </b></h2>
 					<div class="r-stack">
 						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Hadoop_logo.svg/664px-Hadoop_logo.svg.png" width="450" height="300" class="fragment fade-in-then-out logo">
@@ -650,7 +650,7 @@
 						Having these tools licensed by your employers is great, but it is not the only way. You have been taught how to use SQL and Python and later on we will be looking at R. When should you code and when should you rely on software? That ultimately is up to you, and whatever you decide it needs to be justified. This section will help you consider the advantages and disadvantages of each.
 					</aside>
         </section>
-        <section>
+        <section data-background-image="Assets/standard.PNG">
           <div class="wrap" style='width:max-content'>
             <p style='font-size:40px;color:#1d98ff'><b>Advantages</b> </p>
             <div class='r-hstack'>
@@ -682,7 +682,7 @@
 						Ask apprentices to suggest some advantages of platforms before revealing them. Draw attention to the ease of use, the tech support and the increased engagement from stakeholders. For coding you can discuss how you have more control over the entire process from data cleaning, analysis to visualisations (and potentially dashboars). Coding also has a supportive community and is also cheap.
 					</aside>
         </section>
-        <section>
+        <section data-background-image="Assets/standard.PNG">
           <div class="wrap" style='width:max-content'>
             <p style='font-size:40px;color:#1d98ff'><b>Disadvantages</b> </p>
 						<div class='r-hstack'>
@@ -715,7 +715,7 @@
 						Again you can ask apprentices to suggest the disadvantages for both before revealing. Platforms are expensive, limited and can be difficult to use. On top of this you have issues around third parties potentially having access to your data as well as complications around switching platforms (upskilling staff, different formats, etc). Coding has a steep learning curve and is a constantly evolving discipline which requires analysts to keep abreast of. Another issue is around the open source nature of languages where importing libraries can potentilly bring in security risks.
 					</aside>
         </section>
-        <section>
+        <section data-background-image="Assets/standard.PNG">
           <div class="wrap size-50">
             <p style='font-size:40px;color:#1d98ff'><b>Activity</b> </p>
             <br>
@@ -742,7 +742,7 @@
 						This can be sent out to apprentices prior to the session, particularly if they have issues around accessing their command line.
 					</aside>
         </section>
-        <section>
+        <section data-background-image="Assets/standard.PNG">
           <div class="wrap size-50 bg-white" style='width:max-content'>
             <ol style='display:inline-block;text-align:left'>
               <li> Open Anaconda </li>
@@ -769,7 +769,7 @@
 						Objective: Review the session
 					</aside>
         </section>
-        <section>
+        <section data-background-image="Assets/start.PNG">
           <!--.wrap = container (width: 90%) -->
           <div class="wrap size-50 bg-white" style='width:max-content'>
             <h1> Learning Objectives </h1>
@@ -784,7 +784,7 @@
 					</aside>
           <!-- .end .wrap -->
         </section>
-        <section>
+        <section data-background-image="Assets/start.PNG">
           <div class="wrap bg-white" style='width:max-content'>
 						<h1 > Assignment </h1>
 						<p><i> Justify the use (or lack of) Big Data technologies in your analysis </i></p>
