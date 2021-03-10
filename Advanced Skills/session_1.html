@@ -31,8 +31,10 @@
     <meta name="theme-color" content="#333333">
 		<!-- CSS for click to reveal section -->
 		<style>
-			span.db{color:#ff7d67;font-weight:bold;font-family:roboto}
-			span.dw{color:#59d8a1;font-weight:bold;font-family:roboto}
+			span.db{color:#59d8a1;font-weight:bold;font-family:roboto}
+			span.dw{color:#ff7d67;font-weight:bold;font-family:roboto}
+			div.row {display: flex;}
+			div.col {flex: 1; padding: 1em;}
 		</style>
 	</head>
   <body class='reveal-viewport'>
@@ -173,21 +175,21 @@
 						<h2> Type of Processing </h2>
 						<div class='r-hstack'>
 							<div class='fragment'>
-								<p style='color:#ff7d67;font-size:40px'>OLTP</p>
+								<p style='color:#ff7d67;font-size:40px'>OLAP</p>
 							</div>
 							<div class='fragment'>
-								<p style='color:#59d8a1;font-size:40px'>OLAP</p>
+								<p style='color:#59d8a1;font-size:40px'>OLTP</p>
 							</div>						
 						</div>		
 					</section>
 					<section>					
 						<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
 						<h2> Data Structure </h2>
-						<div class='r-hstack'>
-							<div class='fragment'>
+						<div class='row r-hstack'>
+							<div class='col fragment'>
 								<p style='color:#ff7d67;font-size:40px'>Denormalised table containing repeated data</p>
 							</div>
-							<div class='fragment'>
+							<div class='col fragment'>
 								<p style='color:#59d8a1;font-size:40px'>Highly Normalised with different tables</p>
 							</div>						
 						</div>		
@@ -195,11 +197,11 @@
 					<section>
 						<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
 						<h2> Optimised For </h2>
-						<div class='r-hstack'>
-							<div class='fragment'>
+						<div class='row r-hstack'>
+							<div class='col fragment'>
 								<p style='color:#ff7d67;font-size:40px'>Rapdidly executing a low number of complex queries on lagre multi-dimensional datasets</p>
 							</div>
-							<div class='fragment'>
+							<div class='col fragment'>
 								<p style='color:#59d8a1;font-size:40px'>Updating, deleting and modifying data</p>
 							</div>						
 						</div>		
@@ -207,11 +209,11 @@
 					<section>
 						<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
 						<h2> Data Timeline </h2>
-						<div class='r-hstack'>
-							<div class='fragment'>
+						<div class='row r-hstack'>
+							<div class='col fragment'>
 								<p style='color:#ff7d67;font-size:40px'>Historical Data</p>
 							</div>
-							<div class='fragment'>
+							<div class='col fragment'>
 								<p style='color:#59d8a1;font-size:40px'>Current real-time data</p>
 							</div>						
 						</div>		
@@ -219,11 +221,11 @@
 					<section>
 						<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
 						<h2> Uptime </h2>
-						<div class='r-hstack'>
-							<div class='fragment'>
+						<div class='row r-hstack'>
+							<div class='col fragment'>
 								<p style='color:#ff7d67;font-size:40px'>Regular downtime to allow batch upload</p>
 							</div>
-							<div class='fragment'>
+							<div class='col fragment'>
 								<p style='color:#59d8a1;font-size:40px'>Approx 100%</p>
 							</div>						
 						</div>		
@@ -231,11 +233,11 @@
 					<section>
 						<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
 						<h2> Query Type </h2>
-						<div class='r-hstack'>
-							<div class='fragment'>
+						<div class='row r-hstack'>
+							<div class='col fragment'>
 								<p style='color:#ff7d67;font-size:40px'>Complex queries for in depth analysis</p>
 							</div>
-							<div class='fragment'>
+							<div class='col fragment'>
 								<p style='color:#59d8a1;font-size:40px'>Simple transactional queries</p>
 							</div>						
 						</div>									
