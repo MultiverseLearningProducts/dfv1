@@ -31,8 +31,8 @@
     <meta name="theme-color" content="#333333">
 		<!-- CSS for click to reveal section -->
 		<style>
-			span.db{color:#ff7d67}
-			span.dw{color:#59d8a1}
+			span.db{color:#ff7d67;font-weight:bold;font-family:roboto}
+			span.dw{color:#59d8a1;font-weight:bold;font-family:roboto}
 		</style>
 	</head>
   <body class='reveal-viewport'>
@@ -169,60 +169,124 @@
 						</aside>
 					</section>
 					<section data-background-image="../assets/generic/main.PNG">
-						<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
-						<div class='r-hstack'>
-							<div class='fragment fade-left'>
-								<p style='color:#ff7d67;font-size:40px>OLAP'</p>
+						<div class='r-stack'>
+							<div class='fragment fade-in-then-out'>
+								<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
+								<h2> Type of Processing </h2>
+								<div class='r-hstack'>
+									<div class='fragment fade-left'>
+										<p style='color:#ff7d67;font-size:40px'>OLTP</p>
+									</div>
+									<div class='fragment fade-left'>
+										<p style='color:#59d8a1;font-size:40px'>OLAP</p>
+									</div>						
+								</div>		
 							</div>
-							<div class='fragment fade-left'>
-								<p style='color:#59d8a1;font-size:40px'>OLTP</p>
-							</div>						
+							<div class='fragment fade-in-then-out'>
+								<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
+								<h2> Data Structure </h2>
+								<div class='r-hstack'>
+									<div class='fragment fade-left'>
+										<p style='color:#ff7d67;font-size:40px'>Denormalised table containing repeated data</p>
+									</div>
+									<div class='fragment fade-left'>
+										<p style='color:#59d8a1;font-size:40px'>Highly Normalised with different tables</p>
+									</div>						
+								</div>		
+							</div>
+							<div class='fragment fade-in-then-out'>
+								<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
+								<h2> Optimised For </h2>
+								<div class='r-hstack'>
+									<div class='fragment fade-left'>
+										<p style='color:#ff7d67;font-size:40px'>Rapdidly executing a low number of complex queries on lagre multi-dimensional datasets</p>
+									</div>
+									<div class='fragment fade-left'>
+										<p style='color:#59d8a1;font-size:40px'>Updating, deleting and modifying data</p>
+									</div>						
+								</div>		
+							</div>
+							<div class='fragment fade-in-then-out'>
+								<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
+								<h2> Data Timeline </h2>
+								<div class='r-hstack'>
+									<div class='fragment fade-left'>
+										<p style='color:#ff7d67;font-size:40px'>Historical Data</p>
+									</div>
+									<div class='fragment fade-left'>
+										<p style='color:#59d8a1;font-size:40px'>Current real-time data</p>
+									</div>						
+								</div>		
+							</div>
+							<div class='fragment fade-in-then-out'>
+								<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
+								<h2> Uptime </h2>
+								<div class='r-hstack'>
+									<div class='fragment fade-left'>
+										<p style='color:#ff7d67;font-size:40px'>Regular downtime to allow batch upload</p>
+									</div>
+									<div class='fragment fade-left'>
+										<p style='color:#59d8a1;font-size:40px'>Approx 100%</p>
+									</div>						
+								</div>		
+							</div>
+							<div class='fragment fade-in-then-out'>
+								<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
+								<h2> Query Type </h2>
+								<div class='r-hstack'>
+									<div class='fragment fade-left'>
+										<p style='color:#ff7d67;font-size:40px'>Complex queries for in depth analysis</p>
+									</div>
+									<div class='fragment fade-left'>
+										<p style='color:#59d8a1;font-size:40px'>Simple transactional queries</p>
+									</div>						
+								</div>		
+							</div>
 						</div>
-						<h2> Type of Processing </h2>
 					</section>
-					<section data-background-image="../assets/generic/main.PNG">
-						<h1> Data Warehouse vs Database</h1>
-						<table>
-							<tr>
-								<th> &nbsp;</th>
-								<th> Database </th>
-								<th> Data Warehouse </th>
-							</tr>
-							<tr>
-								<td><b>Processing</b></td>
-								<td> OLTP</td>
-								<td> OLAP </td>
-							</tr>
-							<tr>
-								<td><b>Structure</b></td>
-								<td> Highly normalised with different tables</td>
-								<td> Denormalised table containing repeated data </td>
-							</tr>
-							<tr>
-								<td><b>Optimisation</b></td>
-								<td> Updating, deleting and modifying data</td>
-								<td> Rapidly executing low number of complex queries on large multi-dimensional datasets</td>
-							</tr>
-							<tr>
-								<td><b>Timeline</b></td>
-								<td> Current real-time data</td>
-								<td> Historical Data </td>
-							</tr>
-							<tr>
-								<td><b>Uptime (SLA)</b></td>
-								<td> Appox 100% uptime</td>
-								<td> Regular downtime to allow batch uploads </td>
-							</tr>
-							<tr>
-								<td><b>Query Type</b></td>
-								<td> Simple Transactional</td>
-								<td> Complex Queries for in depth analysis </td>
-							</tr>
-						</table>
-						<!-- Slide 5 Notes -->
-						<aside class='notes'>
-						</aside>
-					</section>
+				</section>
+				<section data-background-image="../assets/generic/main.PNG">
+					<h1> Data Warehouse vs Database</h1>
+					<table>
+						<tr>
+							<th> &nbsp;</th>
+							<th> Database </th>
+							<th> Data Warehouse </th>
+						</tr>
+						<tr>
+							<td><b>Processing</b></td>
+							<td> OLTP</td>
+							<td> OLAP </td>
+						</tr>
+						<tr>
+							<td><b>Structure</b></td>
+							<td> Highly normalised with different tables</td>
+							<td> Denormalised table containing repeated data </td>
+						</tr>
+						<tr>
+							<td><b>Optimisation</b></td>
+							<td> Updating, deleting and modifying data</td>
+							<td> Rapidly executing low number of complex queries on large multi-dimensional datasets</td>
+						</tr>
+						<tr>
+							<td><b>Timeline</b></td>
+							<td> Current real-time data</td>
+							<td> Historical Data </td>
+						</tr>
+						<tr>
+							<td><b>Uptime (SLA)</b></td>
+							<td> Appox 100% uptime</td>
+							<td> Regular downtime to allow batch uploads </td>
+						</tr>
+						<tr>
+							<td><b>Query Type</b></td>
+							<td> Simple Transactional</td>
+							<td> Complex Queries for in depth analysis </td>
+						</tr>
+					</table>
+					<!-- Slide 5 Notes -->
+					<aside class='notes'>
+					</aside>
 				</section>
 				<!-- Slide 5 -->
 				<section data-background-image="../assets/generic/main.PNG">
