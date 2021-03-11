@@ -31,20 +31,20 @@
     <meta name="theme-color" content="#333333">
 		<!-- CSS for click to reveal section -->
 		<style>
-			span.db{color:#59d8a1;font-weight:bold;font-family:roboto}
-			span.dw{color:#ff7d67;font-weight:bold;font-family:roboto}
+			span.db{color:#59d8a1;font-weight:bold;font-family:atlas}
+			span.dw{color:#ff7c66;font-weight:bold;font-family:atlas}
 			div.row {display: flex;}
 			div.col {flex: 1; padding: 1em;}
 		</style>
 	</head>
   <body class='reveal-viewport'>
 		<!-- Page Header -->
-		<header role="banner" style='background-image:url(../assets/generic/header_mv.PNG)'>
+		<header role="banner" style='background-image:url(../assets/generic/Header.PNG)'>
       <nav role="navigation" style='align:left'>
         <ul>
 					<li class="applied">
             <a href="https://platform.multiverse.io" title="Applied" target='_blank'>
-							<p style='font-family:roboto'><strong>MultiVerse</strong></p>
+							<p style='font-family:atlas'><strong>MultiVerse</strong></p>
             </a>
           </li>
           <li class="contents">
@@ -56,7 +56,7 @@
       </nav>
     </header>
  
-		<div class="reveal">
+		<div class="reveal" style='font-family:atlas;color:#f4f4f4'>
 			<div class="slides">
 				<!-- Slide 1 -->
 				<section data-background-image="../assets/generic/title_slide.PNG">
@@ -71,7 +71,7 @@
 					</aside>
 				</section>
 				<!-- Slide 2 -->
-				<section class='present' data-background-image="../assets/generic/main.PNG">
+				<section class='present' data-background-image="../assets/generic/info_yellow.PNG">
 					<div class="wrap size-60 bg-white">           
 						<h1> Session Outline </h1>
 						<ul style='list-style-type:none'>
@@ -96,7 +96,7 @@
 					</aside>
 				</section>
 				<!-- Slide 3 -->
-				<section data-background-image="../assets/generic/main.PNG">
+				<section data-background-image="../assets/generic/info_yellow.PNG">
 					<div class="wrap size-60 bg-white" style='width:max-content'>
 						<h1> Learning Objectives </h1>
 						<ul style='display:inline-block;text-align:left'>
@@ -121,7 +121,7 @@
 				</section>
 				<!-- Slide 5 -->
 				<section data-background-image="https://source.unsplash.com/yqu6tJkSQ_k/1600x800">			
-					<div class="wrap aligncenter fade in" style='background-color:rgba(0,0,0,0.75);width:max-content'>
+					<div class="wrap aligncenter fade in" style='background-color:rgba(36,36,86,0.75);width:max-content'>
 						<span style ='color:white;font-size:50px;font-weight:bold;text-align:center'> 'Data Warehousing' is a practice in <u class='fragment highlight-current-red'>data management</u> whereby data is <u class='fragment highlight-current-red'>copied from various operational systems</u> into a <u class='fragment highlight-current-red'>persistant data store</u> in a <u class='fragment highlight-current-red'>consistent format</u> to be used for <u class='fragment highlight-current-red'>analysis, decision making and reporting</u>. </span>						
 					</div>
 					<!-- Slide 5 Notes -->
@@ -131,7 +131,7 @@
 				</section>
 				<!-- Slide 5 -->
 				<section data-background-image="https://source.unsplash.com/Q1p7bh3SHj8/1600x800">
-					<div class="wrap aligncenter" style='background-color:rgba(0,0,0,0.75);width:max-content'>
+					<div class="wrap aligncenter" style='background-color:rgba(36,36,86,0.75);width:max-content'>
 						<h2 style='color:white'> Online Transactional Processing (OLTP)</h2>
 						<br>
 						<p style='color:white'> OLTP provides transaction orientated applications, administering day to day transcations of an organisation. For example:</p>
@@ -146,7 +146,7 @@
 				</section>
 				<!-- Slide 5 -->
 				<section data-background-image="https://source.unsplash.com/Q1p7bh3SHj8/1600x800">
-					<div class="wrap aligncenter" style='background-color:rgba(0,0,0,0.75);width:max-content'>
+					<div class="wrap aligncenter" style='background-color:rgba(36,36,86,0.75);width:max-content'>
 						<h2 style='color:white'> Online Analytical Processing (OLAP)</h2>
 						<br>
 						<p style='color:white'> OLAP consists of data analytics tools that are used for making business decisions. It provides an environment to leverage insights from multiple database systems at one time. For example:</p>
@@ -162,15 +162,15 @@
 				<!-- Slide 5 -->
 				<section>
 					<!-- Slide 5 -->
-					<section data-background-image="../assets/generic/main.PNG">
+					<section data-background-image="../assets/generic/fun_box.PNG">
 						<div class="wrap aligncenter">
-							<span style ='color:black;font-size:70px;font-weight:bold;text-align:center'> <p class='fragment fade in' style='color:#ff7d67'> Data Warehouse</p> <p>vs</p> <p class='fragment fade in' style='color:#59d8a1'>Database </p></span>
+							<span style ='color:black;font-size:70px;font-weight:bold;text-align:center'> <p class='fragment fade in' style='color:##ff7c66'> Data Warehouse</p> <p>vs</p> <p class='fragment fade in' style='color:#59d8a1'>Database </p></span>
 						</div>
 						<!-- Slide 5 Notes -->
 						<aside class='notes'>
 						</aside>
 					</section>
-					<section data-background-image="../assets/generic/main.PNG">	
+					<section data-background-image="../assets/generic/contrast.PNG">	
 						<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
 						<h2> Type of Processing </h2>
 						<div class='row r-hstack'>
@@ -182,7 +182,7 @@
 							</div>						
 						</div>		
 					</section>
-					<section>					
+					<section data-background-image="../assets/generic/contrast.PNG">					
 						<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
 						<h2> Data Structure </h2>
 						<div class='row r-hstack'>
@@ -194,7 +194,7 @@
 							</div>						
 						</div>		
 					</section>
-					<section>
+					<section data-background-image="../assets/generic/contrast.PNG">
 						<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
 						<h2> Optimised For </h2>
 						<div class='row r-hstack'>
@@ -206,7 +206,7 @@
 							</div>						
 						</div>		
 					</section>
-					<section>
+					<section data-background-image="../assets/generic/contrast.PNG">
 						<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
 						<h2> Data Timeline </h2>
 						<div class='row r-hstack'>
@@ -218,7 +218,7 @@
 							</div>						
 						</div>		
 					</section>
-					<section>
+					<section data-background-image="../assets/generic/contrast.PNG">
 						<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
 						<h2> Uptime </h2>
 						<div class='row r-hstack'>
@@ -230,7 +230,7 @@
 							</div>						
 						</div>		
 					</section>
-					<section>
+					<section data-background-image="../assets/generic/contrast.PNG">
 						<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
 						<h2> Query Type </h2>
 						<div class='row r-hstack'>
@@ -243,7 +243,7 @@
 						</div>									
 					</section>
 				</section>
-				<section data-background-image="../assets/generic/main.PNG">
+				<section data-background-image="../assets/generic/table_back.PNG">
 					<h1> Data Warehouse vs Database</h1>
 					<table>
 						<tr>
