@@ -8,7 +8,7 @@
 		<!-- SEO -->
     <title>Multiverse Tools of the Trade Session 1</title>
     <meta name="description" content="In this session we will be exploring common tools you may use in your role including Big Data technologies and data analytics platforms so you can justify their use in your portfolio.">
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/generic/Multiverse-interim-icon.svg">
+    <link rel="shortcut icon" type="image/x-icon" href="/swe/favicon.svg">
     <!-- URL CANONICAL -->
     <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
 
@@ -30,6 +30,10 @@
     <meta name="theme-color" content="#333333">
 		<!-- CSS for click to reveal section -->
 		<style>
+			span.title{color:#f4f4f4;font-weight:bold;font-size:70px;text-align:center}
+			p.info {color:#f4f4f4}
+			div.row {display: flex;}
+			div.col {flex: 1; padding: 1em;}
 			<!-- URL CANONICAL -->
 			#ClickToReveal {
 				width: 100%;
@@ -45,6 +49,7 @@
 				background-color: lightblue;
 				margin-top: 20px;
 			}
+			p.info {color:#f4f4f4}
 		</style>
 	</head>
 	
@@ -52,12 +57,12 @@
 	
 	<body class='reveal-viewport'>
 		<!-- Page Header -->
-		<header role="banner" style='background-image:url(../assets/generic/header_mv.PNG)'>
+		<header role="banner" style='background-image:url(../assets/generic/Header.PNG)'>
       <nav role="navigation" style='align:left'>
         <ul>
 					<li class="applied">
             <a href="https://platform.multiverse.io" title="Applied" target='_blank'>
-							<p style='font-family:roboto'><strong>MultiVerse</strong></p>
+							<p style='font-family:atlas'><strong>MultiVerse</strong></p>
             </a>
           </li>
           <li class="contents">
@@ -69,14 +74,14 @@
       </nav>
     </header>
 		
-		<div class="reveal">
+		<div class="reveal" style='font-family:atlas;color:#f4f4f4'>
 			<div class="slides">
 				<!-- Slide 1 -->
 				<section data-background-image="../assets/generic/title_slide.PNG">
 
 
 					<div class="wrap aligncenter">
-						<span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> Session 1: Tools of the Trade </span>        
+						<span class='title'> Session 1: Tools of the Trade </span>        
 					</div>
 					<!-- Slide 1 Notes-->
 					<aside class='notes'>
@@ -84,7 +89,7 @@
 					</aside>
 				</section>
 				<!-- Slide 2 -->
-				<section class='present' data-background-image="../assets/generic/main.PNG">
+				<section class='present' data-background-image="../assets/generic/info_yellow.PNG">
 					<div class="wrap size-60 bg-white">           
 						<h1> Session Outline </h1>
 						<ul style='list-style-type:none'>
@@ -107,7 +112,7 @@
 					</aside>
 				</section>
 				<!-- Slide 3 -->
-				<section data-background-image="../assets/generic/main.PNG">
+				<section data-background-image="../assets/generic/info_yellow.PNG">
 					<div class="wrap size-60 bg-white" style='width:max-content'>
 						<h1> Learning Objectives </h1>
 						<ul style='display:inline-block;text-align:left'>
@@ -126,7 +131,7 @@
 
 					<!--.wrap = container (width: 90%) -->
 					<div class="wrap aligncenter">
-						<span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> Understanding Big Data </span>          
+						<span class='title'> Understanding Big Data </span>          
 					</div>
 					<!-- Slide 4 Notes -->
 					<aside class='notes'>
@@ -134,9 +139,9 @@
 					</aside>
 				</section>
 				<!-- Slide 5 -->
-				<section data-background-image="../assets/generic/main.PNG">
+				<section data-background-image="../assets/generic/fun_box.PNG">
 					<div class="wrap size-50 aligncenter">
-						<span style ='color:#2ee1a1;font-size:100px;font-weight:bold;text-align:center'> What is Big Data? </span>
+						<span style ='color:#59d8a1;font-size:100px;font-weight:bold;text-align:center'> What is Big Data? </span>
 					</div>
 					<!-- Slide 5 Notes -->
 					<aside class='notes'>
@@ -146,9 +151,9 @@
 				<!-- Slide 6 -->
 				<section data-background-image="https://source.unsplash.com/466ENaLuhLY/1600x800">
 
-					<div class="wrap aligncenter fadeInUp bg-black">
-						<p style='color:white;font-weight:bold;text-align:center;font-size:50px;line-height:90%;'> Big Data is data whose scale, distribution, diversity and or timeliness require the use of new technical architectures and analytics to enable insights that unlock new sources of business value. </p>
-						<p style='color:white;text-align:right'><i> McKinsey & Co.; Big Data: The Next Frontier for Innovation, Competition, and Productivity </i></p>
+					<div class="wrap aligncenter fadeInUp" style='background-color:rgba(36,36,86,0.9);width:max-content'>
+						<p style='color:#f4f4f4;font-weight:bold;text-align:center;font-size:50px;line-height:90%;'> Big Data is data whose scale, distribution, diversity and or timeliness require the use of new technical architectures and analytics to enable insights that unlock new sources of business value. </p>
+						<p style='color:#f4f4f4;text-align:right'><i> McKinsey & Co.; Big Data: The Next Frontier for Innovation, Competition, and Productivity </i></p>
 					</div>
 					<!-- Slide 6 Notes -->
 					<aside class='notes'>
@@ -165,9 +170,9 @@
 				<section>
 					<section data-background-image="https://source.unsplash.com/mkTqZN1NzhY/1600x800">
 
-						<div class="wrap aligncenter fadeInUp bg-black" style='background-color:rgba(255,255,255,0.5)'>
-							<p style='color:white;font-weight:bold;text-align:center;font-size:50px;line-height:90%;'> Generates 500 million Tweets <b> every day </b> </p>
-							<p style='color:white'> Source: <a href='https://www.internetlivestats.com/twitter-statistics/'> Internet Live Stats </a><p>
+						<div class="wrap aligncenter fadeInUp bg-black" style='background-color:rgba(77,297,244,0.5)'>
+							<p style='color:#f4f4f4;font-weight:bold;text-align:center;font-size:50px;line-height:90%;'> Generates 500 million Tweets <b> every day </b> </p>
+							<p class='info'> Source: <a href='https://www.internetlivestats.com/twitter-statistics/'> Internet Live Stats </a><p>
 						</div>
 						<!-- Slide 7a Notes -->
 						<aside class='notes'>
@@ -179,9 +184,9 @@
 					<!-- Slide 7b -->
 					<section data-background-image="https://source.unsplash.com/uJhgEXPqSPk/1600x800">
 
-						<div class="wrap aligncenter fadeInUp bg-black" style='background-color:rgba(255,255,255,0.5)'>
-							<p style='color:#1d98ff;font-weight:bold;text-align:center;font-size:50px;line-height:90%;'> Generates 1 TeraByte of trading data <b> every day </b> </p>
-							<p style='color:white'> Source: <a href='https://www.nyse.com/data/transactions-statistics-data-library'> New York Stock Exchange </a><p>
+						<div class="wrap aligncenter fadeInUp bg-black" style='background-color:rgba(77,297,244,0.5)'>
+							<p style='color:#242456;font-weight:bold;text-align:center;font-size:50px;line-height:90%;'> Generates 1 TeraByte of trading data <b> every day </b> </p>
+							<p style='color:#f4f4f4'> Source: <a href='https://www.nyse.com/data/transactions-statistics-data-library'> New York Stock Exchange </a><p>
 						</div>
 						<!-- Slide 7b Notes -->
 						<aside class='notes'>
@@ -191,9 +196,9 @@
 					<!-- Slide 7c -->
 					<section data-background-image="https://source.unsplash.com/tWX_ho-328k/1600x800">
 
-						<div class="wrap aligncenter fadeInUp bg-black" style='background-color:rgba(255,255,255,0.5)'>
-							<p style='color:white;font-weight:bold;text-align:center;font-size:50px;line-height:90%;'> Generates 3 PetaBytes of user data <b> every day </b> </p>
-							<p style='color:white'> Source: <a href='https://research.fb.com/blog/2014/10/facebook-s-top-open-data-problems/'> Facebook </a><p>
+						<div class="wrap aligncenter fadeInUp bg-black" style='background-color:rgba(77,297,244,0.5)'>
+							<p style='color:#f4f4f4;font-weight:bold;text-align:center;font-size:50px;line-height:90%;'> Generates 3 PetaBytes of user data <b> every day </b> </p>
+							<p style='color:#f4f4f4'> Source: <a href='https://research.fb.com/blog/2014/10/facebook-s-top-open-data-problems/'> Facebook </a><p>
 						</div>
 						<!-- Slide 7c Notes -->
 						<aside class='notes'>
@@ -204,9 +209,9 @@
 				<!-- Slide 8  -->
 				<section data-background-image="https://source.unsplash.com/GWe0dlVD9e0/1600x800">
 
-					<div class="wrap aligncenter fadeInUp bg-black" style='background-color:rgba(255,255,255,0.5)'>
-					 <p style='color:black;font-weight:bold;text-align:center;font-size:50px;line-height:100%;'> 79% of enterprise executives agree that companies that do not embrace Big Data will lose their competitive position and face extinction </p>
-		<p style='text-align:right'>Source:<a href='https://www.experian.com/blogs/insights/2018/09/big-data-big-problem/'> Accenture</a></p>
+					<div class="wrap aligncenter fadeInUp bg-black" style='background-color:rgba(244,244,244,0.5)'>
+					 <p style='color:#242456;font-weight:bold;text-align:center;font-size:50px;line-height:100%;'> 79% of enterprise executives agree that companies that do not embrace Big Data will lose their competitive position and face extinction </p>
+		<p class='info' style='text-align:right'>Source:<a href='https://www.experian.com/blogs/insights/2018/09/big-data-big-problem/'> Accenture</a></p>
 					</div>
 					<!-- Slide 8 Notes -->
 					<aside class='notes'>
@@ -218,7 +223,7 @@
 
 					<!--.wrap = container (width: 90%) -->
 					<div class="wrap aligncenter">
-						<span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> The Five V's </span>        
+						<span class='title'> The Five V's </span>        
 					</div>
 					<!-- Slide 9 Notes -->
 					<aside class='notes'>
@@ -226,37 +231,41 @@
 					</aside>
 				</section>
 				<!-- Slide 10 Notes -->
-				<section data-background-image="../assets/generic/main.PNG">    
+				<section data-background-image="../assets/generic/fun_box.PNG">    
 					<span class='fragment fade-in'>
-						<p class='fragment grow' style='font-family:roboto;color:#1d98ff;font-size:50px'>Volume</p>
+						<p class='fragment grow' style='font-family:roboto;color:#64abff;font-size:50px'>Volume</p>
 					</span>
 					<br>
 					<br>
 					<br>
-					<p class='fragment fade-right' style='font-family:roboto;color:#2ee1a1;font-size:50px'>Velocity</p>
-					<p class='fragment fade-left' style='font-family:roboto;color:navy;font-size:50px'>Variety</p>
-					<p class='fragment up' style='font-family:roboto;color:#1d98ff;font-size:50px'>Veracity</p>
-					<p class='fragment fade-down' style='font-family:roboto;color:#2ee1a1;font-size:50px'>Value</p>
+					<p class='fragment fade-right' style='font-family:roboto;color:#ff7c66;font-size:50px'>Velocity</p>
+					<p class='fragment fade-left' style='font-family:roboto;color:#4d61f4;font-size:50px'>Variety</p>
+					<p class='fragment up' style='font-family:roboto;color:#59d8a1;font-size:50px'>Veracity</p>
+					<p class='fragment fade-down' style='font-family:roboto;color:#242456;font-size:50px'>Value</p>
 					<!-- Slide 10 Notes -->
 					<aside class='notes'>
 						Our current definition of Big Data is that it is too big for your computer, but let's consider a more robust approach to defining it. Industry experts refer to the 5 v's as metrics to evaluate whether data is Big or not. These are volume, velocity, variety, veracity and value. We will go through each of these in turn.
 					</aside>        
 				</section>
 				<!-- Slide 11 -->
-				<section data-background-image="../assets/generic/main.PNG">
-					<h2 style='color:#1d98ff'><b>Volume</b> </h2>
-					<div class='r-hstack'>
-						<ul style='display:inline-block;text-align:left'>
-							<li> Refers to the size of the data </li>
-							<br>
-							<li> Whether a dataset is considered 'big' or not is dependent on the volume </li>
-							<br>
-							<li> Data is considered Big when it is too voluminous for traditional data storage methods </li>
-							<br>
-							<li> Big Data platforms provide a way to store incredibly large amounts of data as well the ability to process it efficiently  </li>
-						</ul>
-						<br>
-						<img src='https://source.unsplash.com/HjpNeUD8qdw/800x600' alt='Volume'>
+				<section data-background-image="../assets/generic/strike_force.PNG">
+					<h1 style='color:#64abff'><b>Volume</b> </h1>
+					<br>
+					<div class=' row r-hstack'>
+						<div class='col'>
+							<ul style='display:inline-block;text-align:left;color:#f4f4f4'>
+								<li> Refers to the size of the data </li>
+								<br>
+								<li> Whether a dataset is considered 'big' or not is dependent on the volume </li>
+								<br>
+								<li> Data is considered Big when it is too voluminous for traditional data storage methods </li>
+								<br>
+								<li> Big Data platforms provide a way to store incredibly large amounts of data as well the ability to process it efficiently  </li>
+							</ul>
+						</div>
+						<div class='col'>								
+							<img src='https://source.unsplash.com/HjpNeUD8qdw/800x600' alt='Volume'>
+						</div>
 					</div>
 					<!-- Slide 11 Notes -->
 					<aside class='notes'>
@@ -264,22 +273,26 @@
 					</aside>
 				</section>
 				<!-- Slide 12 -->
-				<section data-background-image="../assets/generic/main.PNG">
-					<h2 style='color:#1d98ff'><b>Velocity</b> </h2>
-					<div class='r-hstack'>
-						<ul style='display:inline-block;text-align:left'>
-							<li> Refers to the speed of data generation </li>
-							<br>
-							<li> For example, how fast data flows in from sources such as application logs, networks and social media sites </li>
-							<br>
-							<li> Typically the flow will be massive and continuous </li>
-							<br>
-							<li> Increasingly companies are looking to stream analytics and data so it available at the right time to make appropriate business decisions </li>
-							<br>
-							<li> Big Data platforms offer solutions to dealing with fast flowing data in terms of storage and processing </li>
-						</ul>
-						<br>
-						<img src='https://source.unsplash.com/3HUz8RghGfw/800x600' alt='Velocity'>     
+				<section data-background-image="../assets/generic/strike_force.PNG">
+					<h1 style='color:#64abff'><b>Velocity</b> </h1>
+					<br>
+					<div class='row r-hstack'>
+						<div class='col'>
+							<ul style='display:inline-block;text-align:left;color:#f4f4f4'>
+								<li> Refers to the speed of data generation </li>
+								<br>
+								<li> For example, how fast data flows in from sources such as application logs, networks and social media sites </li>
+								<br>
+								<li> Typically the flow will be massive and continuous </li>
+								<br>
+								<li> Increasingly companies are looking to stream analytics and data so it available at the right time to make appropriate business decisions </li>
+								<br>
+								<li> Big Data platforms offer solutions to dealing with fast flowing data in terms of storage and processing </li>
+							</ul>
+						</div>
+						<div class='col'>
+							<img src='https://source.unsplash.com/3HUz8RghGfw/800x600' alt='Velocity'>    
+						</div>
 					</div>  
 					<!-- Slide 12 Notes -->
 					<aside class='notes'>
@@ -287,22 +300,25 @@
 					</aside>
 				</section>
 				<!-- Slide 13 -->
-				<section data-background-image="../assets/generic/main.PNG">
-					<h2 style='color:#1d98ff'><b>Variety</b> </h2>
-					<div class="r-hstack">
-						<ul style='display:inline-block;text-align:left'>
-							<li> Refers to the heterogeniety of the data sources </li>
-							<br>
-							<li> In other words, how different the data sources are (unstructured vs structured etc) </li>
-							<br>
-							<li> With large flows of data from several of sources it is possible that there will be a variety of data types and structures</li>
-							<br>
-							<li> Big Data platforms can handle a variety of sources, structures and data types </li>
-							<br>
-							<li> Different types of data require different strategies which you will need to consider as part of your analysis </li>                 
-						</ul>
-						<br>
-						<img src='https://source.unsplash.com/2zJhA9RSkys/800x600' alt='Variety'>
+				<section data-background-image="../assets/generic/strike_force.PNG">
+					<h1 style='color:#64abff'><b>Variety</b> </h1>
+					<div class="row r-hstack">
+						<div class='col'>
+							<ul style='display:inline-block;text-align:left;color:#f4f4f4'>
+								<li> Refers to the heterogeniety of the data sources </li>
+								<br>
+								<li> In other words, how different the data sources are (unstructured vs structured etc) </li>
+								<br>
+								<li> With large flows of data from several of sources it is possible that there will be a variety of data types and structures</li>
+								<br>
+								<li> Big Data platforms can handle a variety of sources, structures and data types </li>
+								<br>
+								<li> Different types of data require different strategies which you will need to consider as part of your analysis </li>                 
+							</ul>
+						</div>
+						<div class='col'>
+							<img src='https://source.unsplash.com/2zJhA9RSkys/800x600' alt='Variety'>
+						</div>
 					</div>
 					<!-- Slide 13 Notes -->
 					<aside class='notes'>
@@ -310,22 +326,25 @@
 					</aside>
 					<!-- Slide 14 -->
 				</section>
-				<section data-background-image="../assets/generic/main.PNG">
-					<h2 style='color:#1d98ff'><b>Veracity</b> </h2>
-					<div class='r-hstack'>
-						<ul style='display:inline-block;text-align:left'>
-							<li> Refers to the quality of the data </li>
-							<br>
-							<li> Checking the veracity of data sources is always challenging- <b> never trust data as given </b> </li>
-							<br>
-							<li> Enquire about the data preparation- has it been normalised already? Has it been subject to statistical manipulation (i.e. outliers removed)? </li>
-							<br>
-							<li> Where possible you should always ask to look at raw data </li>
-							<br>
-							<li> Determining veracity can be challenging to an organisations policies as well as externally determining authorship/ownership </li>
-						</ul>
-						<br>
-						<img src='https://source.unsplash.com/KgLtFCgfC28/800x600' alt='Veracity'>
+				<section data-background-image="../assets/generic/strike_force.PNG">
+					<h1 style='color:#64abff'><b>Veracity</b> </h1>
+					<div class='row r-hstack'>
+						<div class='col'>
+							<ul style='display:inline-block;text-align:left;color:#f4f4f4'>
+								<li> Refers to the quality of the data </li>
+								<br>
+								<li> Checking the veracity of data sources is always challenging- <b> never trust data as given </b> </li>
+								<br>
+								<li> Enquire about the data preparation- has it been normalised already? Has it been subject to statistical manipulation (i.e. outliers removed)? </li>
+								<br>
+								<li> Where possible you should always ask to look at raw data </li>
+								<br>
+								<li> Determining veracity can be challenging to an organisations policies as well as externally determining authorship/ownership </li>
+							</ul>
+						</div>
+						<div class='col'>
+							<img src='https://source.unsplash.com/KgLtFCgfC28/800x600' alt='Veracity'>
+						</div>
 					</div>    
 					<!-- Slide 14 Notes -->
 					<aside class='notes'>
@@ -333,18 +352,21 @@
 					</aside>
 				</section>
 				<!-- Slide 15 -->
-				<section data-background-image="../assets/generic/main.PNG">
-					<h2 style='color:#1d98ff'><b>Value</b> </h2>
-					<div class="r-hstack">    
-						<ul style='display:inline-block;text-align:left'>
-							<li> Refers to the business value of the data </li>
-							<br>
-							<li> Having access to vast amounts of fast flowing data is useless unless it can leveraged into something of value </li>
-							<br>
-							<li> How does this data add value to your business? What is the ROI?</li>
-						</ul>
-						<br>
-						<img src='https://source.unsplash.com/LVcjYwuHQlg/800x600' alt='Value'>
+				<section data-background-image="../assets/generic/strike_force.PNG">
+					<h1 style='color:#64abff'><b>Value</b> </h1>
+					<div class="row r-hstack"> 
+						<div class='col'>
+							<ul style='display:inline-block;text-align:left;color:#f4f4f4'>
+								<li> Refers to the business value of the data </li>
+								<br>
+								<li> Having access to vast amounts of fast flowing data is useless unless it can leveraged into something of value </li>
+								<br>
+								<li> How does this data add value to your business? What is the ROI?</li>
+							</ul>
+						</div>
+						<div class='col'>
+							<img src='https://source.unsplash.com/LVcjYwuHQlg/800x600' alt='Value'>
+						</div>
 					</div>
 					<!-- Slide 15 Notes -->
 					<aside class='notes'>
@@ -371,7 +393,7 @@
 
 					<!--.wrap = container (width: 90%) -->
 					<div class="wrap aligncenter">
-						<span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> Developing the Future </span>       
+						<span class='title'> Developing the Future </span>       
 					</div>
 					<!-- Slide 17 Notes -->
 					<aside class='notes'>
@@ -459,7 +481,7 @@
 
 					<!--.wrap = container (width: 90%) -->
 					<div class="wrap aligncenter">
-						<span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> How it Works </span>        
+						<span class='title'> How it Works </span>        
 					</div>
 					<!-- Slide 22 Notes -->
 					<aside class='notes'>
@@ -548,7 +570,7 @@
 
 					<!--.wrap = container (width: 90%) -->
 					<div class="wrap aligncenter" style='width:max-content'>
-						<span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> Using Big Data in your Role </span>       
+						<span class='title'> Using Big Data in your Role </span>       
 					</div>
 					<!-- .end .wrap -->
 					<!-- Slide 26 Notes -->
@@ -572,7 +594,7 @@
 
 					<!--.wrap = container (width: 90%) -->
 					<div class="wrap aligncenter">
-						<span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> Advantages and Disadvantages</span>        
+						<span class='title'> Advantages and Disadvantages</span>        
 					</div>
 					<!-- Slide 28 Notes -->
 					<aside class='notes'>
@@ -640,7 +662,7 @@
 
 					<!--.wrap = container (width: 90%) -->
 					<div class="wrap aligncenter">
-						<span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> Big Data Products </span> 
+						<span class='title'> Big Data Products </span> 
 					</div>
 					<!-- Slide 32 Notes -->
 					<aside class='notes'>
@@ -679,7 +701,7 @@
 
 					<!--.wrap = container (width: 90%) -->
 					<div class="wrap aligncenter">
-						<span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> Data Platforms </span>       
+						<span class='title'> Data Platforms </span>       
 					</div>
 					<aside class='notes'>
 						Objective: Consider and justify the various platforms you use in your role
@@ -729,7 +751,7 @@
 
 					<!--.wrap = container (width: 90%) -->
 					<div class="wrap aligncenter">
-						<span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> Platforms vs Coding Yourself </span> 
+						<span class='title'> Platforms vs Coding Yourself </span> 
 					</div>
 					<!-- Slide 35 Notes -->
 					<aside class='notes'>
@@ -829,7 +851,7 @@
 
 					<!--.wrap = container (width: 90%) -->
 					<div class="wrap aligncenter">
-						<span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> Setting up R </span>     
+						<span class='title'> Setting up R </span>     
 					</div>
 					<!-- Slide 39 Notes -->
 					<aside class='notes'>
@@ -862,7 +884,7 @@
 
 					<!--.wrap = container (width: 90%) -->
 					<div class="wrap aligncenter">
-						<span style ='color:white;font-size:70px;font-weight:bold;text-align:center'> Recap </span>        
+						<span class='title'> Recap </span>        
 					</div>
 					<!-- Slide 41 Notes -->
 					<aside class='notes'>
@@ -870,7 +892,7 @@
 					</aside>
 				</section>
 				<!-- Slide 44 -->
-				<section data-background-image="../assets/generic/main.PNG">
+				<section data-background-image="../assets/generic/info_yellow.PNG">
 					<!--.wrap = container (width: 90%) -->
 					<div class="wrap size-50 bg-white" style='width:max-content'>
 						<h1> Learning Objectives </h1>
@@ -887,7 +909,7 @@
 					<!-- .end .wrap -->
 				</section>
 				<!-- Slide 43-->
-				<section data-background-image="../assets/generic/main.PNG">
+				<section data-background-image="../assets/generic/info_yellow.PNG">
 					<div class="wrap bg-white" style='width:max-content'>
 						<h1 > Assignment </h1>
 						<p><i> Justify the use (or lack of) Big Data technologies in your analysis </i></p>
