@@ -6,7 +6,7 @@
 
 
 		<!-- SEO -->
-    <title>Multiverse Advanced Skills Session 1</title>
+    <title>Multiverse Advanced Techniques Session 1</title>
     <meta name="description" content="In this session we will be examing some of the more advanced topics that will be coming up in your KM1 exam.">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/multiverse_brand/Logo/01_Deep Space/PNG/Multiverse_Symbol_RGB_Navy.png">
     <!-- URL CANONICAL -->
@@ -58,7 +58,7 @@
       </nav>
     </header>
  
-		<div class="reveal">
+		<div class="reveal" style='font-family:atlas;font-size:25px;color:#242456'>
 			<div class="slides">
 				<!-- Slide 1 -->
 				<section data-background-image="../assets/generic/title_slide_alt.PNG">
@@ -76,7 +76,7 @@
 				<section class='present' data-background-image="../assets/generic/info_yellow.PNG">
 					<div class="wrap size-60 bg-white">           
 						<h1> Session Outline </h1>
-						<ul style='list-style-type:none'>
+						<ul style='list-style-type:none;font-size:15px'>
 							<li><a href='#/3'  Data Warehouse </a></li>
 							<li><a href='#/8'> Data Integration </a> </li>
 							<li><a href='#/16'> Types of Data Integration </a> </li>
@@ -135,7 +135,6 @@
 				<section data-background-image="https://source.unsplash.com/Q1p7bh3SHj8/1600x800">
 					<div class="wrap aligncenter" style='background-color:rgba(36,36,86,0.75);width:max-content'>
 						<h2 style='color:white'> Online Transactional Processing (OLTP)</h2>
-						<br>
 						<p class='info'> OLTP provides transaction orientated applications, administering day to day transcations of an organisation. For example:</p>
 						<p class='info fragment fade in' > Supermarkets </p>
 						<p class='info fragment fade in' > Online banking </p>
@@ -150,7 +149,6 @@
 				<section data-background-image="https://source.unsplash.com/Q1p7bh3SHj8/1600x800">
 					<div class="wrap aligncenter" style='background-color:rgba(36,36,86,0.75);width:max-content'>
 						<h2 style='color:white'> Online Analytical Processing (OLAP)</h2>
-						<br>
 						<p style='color:white'> OLAP consists of data analytics tools that are used for making business decisions. It provides an environment to leverage insights from multiple database systems at one time. For example:</p>
 						<p class='fragment fade in' style='color:white'> Recommendation algorithms (e.g. Spotify suggested, Amazon products) </p>
 						<p class='fragment fade in' style='color:white'> Virtual assisstants (e.g. Alexa, Siri)  </p>
@@ -364,21 +362,24 @@
 					</aside>
 				</section>
 				<!-- Slide 5 -->
-				<section data-background-image="../assets/generic/main.PNG">
+				<section data-background-image="../assets/generic/two_square.PNG">
+					<div class='row r-hstack'>
+						<div class='col'>
+							<h2 style='color:#59d8a1'><b> Batch Integration </b></h2>
+							<p class='fragment'> Data transfered from source to target in groups periodically </p>
+							<p class='fragment'> Data formats and layouts must be consistent between source and target </p>
+							<p class='fragment'> Source and target are <b>'asynchronus'</b> (source doesn't wait for target to process data) </p>
+						</div>
+						<div class='col'>
+							<h2 style='color:#ffe352'><b> Real-time Integration </b></h2>
+							<p class='fragment'> Data transfered from source to target instantly </p>
+							<p class='fragment'> Involved a much smaller amount of data and used when it is necessary to complete a single transaction </p>
+							<p class='fragment'> Source and target are <b>'synchronus'</b> (changes in source are reflected in target) </p>
+						</div>
+					</div>
 					<!-- Slide 5 Notes -->
 					<aside class='notes'>
-					</aside>
-				</section>
-				<!-- Slide 5 -->
-				<section data-background-image="../assets/generic/main.PNG">
-					<!-- Slide 5 Notes -->
-					<aside class='notes'>
-					</aside>
-				</section>
-				<!-- Slide 5 -->
-				<section data-background-image="../assets/generic/main.PNG">
-					<!-- Slide 5 Notes -->
-					<aside class='notes'>
+						Batch uploads are mostly used in data warehouses and any changes must be implemented in both source and target. The processing of data is not instantaneous.
 					</aside>
 				</section>
 				<!-- Slide 4 -->
