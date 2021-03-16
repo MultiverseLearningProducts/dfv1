@@ -363,11 +363,11 @@
 					<aside class='notes'>
 					</aside>
 				</section>
-				<section data-background-image='..assets/generic/fun_box.PNG'>
-					<h1> Data Integrations vs Data Migration </h1>
+				<section data-background-image='../assets/generic/fun_box.PNG'>
+					<h1> Data Integration vs Data Migration </h1>
 					<br>
 					<p class='fragment'> Data Migration is an internal process where data is transferred between storage types, formats, data architectures and enterprise systems. <p>
-					<p class='fragment'> Data Integration involves collecting data from sources outside of an organization for analysis </p>
+					<p class='fragment'> Data Integration involves collecting data from sources outside of an organisation for analysis </p>
 					<p class='fragment'> Companies will typically migrate data when implementing a new system or merging to a new environment.</p>
 					<aside class='notes'>
 						migration refers to the movement of data already stored internally to different systems
@@ -814,26 +814,30 @@
 					</aside>
 				</section>
 				<!-- Slide 5 -->
-				<section data-background-image="../assets/generic/main.PNG">
-					<p> You must specifiy security policies (e.g. who has access?) </p>
-					<p> Data integrated should be immutable (unchanging) </p>
-					<p> Validation checks should be carried out during the process </p>
-					<ul style='display:inline-block;text-align:left'>
-						<li> Validate the source and target table structure and data types </li>
-						<li> Validate the column names against a mapping document </li>
-					</ul>					
+				<section data-background-image="../assets/generic/table_back.PNG">
+					<div style='font-size:35px'>
+						<p> You must specifiy security policies (e.g. who has access?) </p>
+						<p> Data integrated should be immutable (unchanging) </p>
+						<p> Validation checks should be carried out during the process </p>
+						<ul style='display:inline-block;text-align:left'>
+							<li> Validate the source and target table structure and data types </li>
+							<li> Validate the column names against a mapping document </li>
+						</ul>			
+					</div>
 					<!-- Slide 5 Notes -->
 					<aside class='notes'>
 					</aside>
 				</section>
 				<!-- Slide 5 -->
-				<section data-background-image="../assets/generic/main.PNG">
-					<p> Verification is also carried out on the Data Warehouse </p>
-					<ul style='display:inline-block;text-align:left'>
-						<li> Verify the data is accurate </li>
-						<li> Verify the data is correct </li>
-						<li> Verify the data has not been duplicated in the Data Warehouse </li>
-				</ul>
+				<section data-background-image="../assets/generic/table_back.PNG">
+					<div style='font-size:35px'>
+						<p> Verification is also carried out on the Data Warehouse </p>
+						<ul style='display:inline-block;text-align:left'>
+							<li> Verify the data is accurate </li>
+							<li> Verify the data is correct </li>
+							<li> Verify the data has not been duplicated in the Data Warehouse </li>
+					</ul>
+					</div>
 					<!-- Slide 5 Notes -->
 					<aside class='notes'>
 					</aside>
@@ -849,13 +853,15 @@
 						<aside class='notes'>
 						</aside>
 					</section>
-					<section data-background-image="../assets/generic/main.PNG">
-						<p> Data owners are given the right to decode who can have access to enterprise data.</p>
-						<p> The process involved may be something like this:</p>
-						<p class='fragment'> A person (staff member, contractor, supplier, etc) requests access to information </p>
-						<p class='fragment'> A business resource (Data owner, manager) will review the request </p>
-						<p class='fragment'> A techinical resources (usually a DBA) physically grants permission to an application, database or other data store containing the data. </p>
-						<p class='fragment'> Often the permission follows a CRUD schema (create, read, update, delete)</p>
+					<section data-background-image="../assets/generic/main.PNG" >
+						<div style='color:#64abff'>
+							<p> Data owners are given the right to decode who can have access to enterprise data.</p>
+							<p> The process involved may be something like this:</p>
+							<p class='fragment'> A person (staff member, contractor, supplier, etc) requests access to information </p>
+							<p class='fragment'> A business resource (Data owner, manager) will review the request </p>
+							<p class='fragment'> A techinical resources (usually a DBA) physically grants permission to an application, database or other data store containing the data. </p>
+							<p class='fragment'> Often the permission follows a CRUD schema (create, read, update, delete)</p>
+						</div>
 						<aside class='notes'>
 							DBA (Database Administrator)
 						</aside>
@@ -890,9 +896,11 @@
 				</section>
 				<!-- Slide 5 -->
 				<section data-background-image="../assets/generic/fun_box.PNG">
-					<p> A process of <u>Data Integration</u> from <u>Multiple Sources</u></p>
-					<p> It allows business the ability to gather data from multiple sources and consolidate into a single, centralised location </p>
-					<p> This can be hard coded or using a licensed product </p>
+					<div style='color:#4d61f4;font-size:35px'>
+						<p> A process of <u>Data Integration</u> from <u>Multiple Sources</u></p>
+						<p> It allows business the ability to gather data from multiple sources and consolidate into a single, centralised location </p>
+						<p> This can be hard coded or using a licensed product </p>
+					</div>
 					<!-- Slide 5 Notes -->
 					<aside class='notes'>
 					</aside>
@@ -1104,7 +1112,7 @@
 					<ul class='fragment' style='display:inline-block;text-align:left'>
 						<li class='fragment'> Download the data onto a secure server </li>
 						<li class='fragment'> Run ETL processes on local files or business/enterprise databases </li>
-						<li> If the data owner has not given you the necessary permissions to write data to the target you will need tohand your script to the development team to implement </li>
+						<li class='fragment'> If the data owner has not given you the necessary permissions to write data to the target you will need tohand your script to the development team to implement </li>
 					</ul>
 					<!-- Slide 5 Notes -->
 					<aside class='notes'>
