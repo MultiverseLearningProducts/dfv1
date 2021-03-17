@@ -974,7 +974,7 @@
 								</ul>
 							</div>
 							<div class='col'>
-								<pre><code id="python_code">
+								<pre><code id="python_code_1">
 								import psycopg2
 								conn= psycopg2.connect(dbname="DB_NAME", user="USERNAME", password="PASSWORD")
 								
@@ -1041,7 +1041,7 @@
 						<div class='row'>
 							<div class='col'>
 								<p><b>Null Values</b></p>
-								<pre><code id="python_code">
+								<pre><code id="python_code_2">
 								data.fillna("Missing", inplace=True)
 								
 								data.dropna(inplace=True, subset=["col_A"])
@@ -1049,7 +1049,7 @@
 							</div>
 							<div class='col'>
 								<p><b> Convert Datatypes</b></p>
-								<pre><code id="python_code">
+								<pre><code id="python_code_3">
 								data['Col_A']= data.col_A.astype('int')
 								data['Col_B']= data.col_A.astype('float')
 								data['Col_C']= data.col_A.astype('bool')
@@ -1062,7 +1062,7 @@
 						<div class='row'>
 							<div class='col'>
 								<p><b>Deduplication</b></p>
-								<pre><code id="python_code">
+								<pre><code id="python_code_4">
 								#Check for duplicates
 								
 								data.duplicated()
@@ -1074,7 +1074,7 @@
 							</div>
 							<div class='col'>
 								<p><b> Rename Fields</b></p>
-								<pre><code id="python_code">
+								<pre><code id="python_code_5">
 								data.rename(columns={'col_a':'Col_A'})
 								</code></pre>
 							</div>
@@ -1121,12 +1121,12 @@
 						<h1> Loading </h1>
 						<div class='row'>
 							<div class='col'>
-								<pre><code id="python_code">
+								<pre><code id="python_code_6">
 								data1.join(data2, on='Col_A', how='left')
 								</code></pre>
 							</div>
 							<div class='row'>
-								<pre><code id="python_code">
+								<pre><code id="python_code_7">
 								import psycopg2
 								
 								# for postgreSQL
@@ -1398,7 +1398,7 @@
 								<p> Run on your command line: <code> python -m unittest </code></p>
 							</div>
 							<div class='col'>
-								<pre><code id="python_code">
+								<pre><code id="python_code_8">
 								import unittest
 								def fun(x):
 								&nbsp;&nbsp;return x+1
@@ -1582,18 +1582,130 @@
 		<script src="../Dependencies/node_modules/socket.io/lib/socket.js"></script>
 		<script src="../Dependencies/node_modules/reveal-notes-server/client.js"></script>
 		<script type="text/javascript">
-        window.onload = function(){
-            var codeElement = document.getElementById('python_code');
-            // Add code mirror class for coloring (default is the theme)
-            codeElement.classList.add( 'cm-s-default' );
-            var code = codeElement.innerText;
+			window.onload = function(){
+					var codeElement = document.getElementById('python_code');
+					// Add code mirror class for coloring (default is the theme)
+					codeElement.classList.add( 'cm-s-default' );
+					var code = codeElement.innerText;
 
-            codeElement.innerHTML = "";
+					codeElement.innerHTML = "";
+
+					CodeMirror.runMode(
+						code,
+						'python',
+						codeElement
+					);
+			};
+			window.onload = function(){
+            var codeElement_1 = document.getElementById('python_code_1');
+            // Add code mirror class for coloring (default is the theme)
+            codeElement_1.classList.add( 'cm-s-default' );
+            var code_1 = codeElement_1.innerText;
+
+            codeElement_1.innerHTML = "";
 
             CodeMirror.runMode(
-              code,
+              code_1,
               'python',
-              codeElement
+              codeElement_1
+            );
+        };
+			window.onload = function(){
+            var codeElement_2 = document.getElementById('python_code_2');
+            // Add code mirror class for coloring (default is the theme)
+            codeElement_2.classList.add( 'cm-s-default' );
+            var code_2 = codeElement_2.innerText;
+
+            codeElement_2.innerHTML = "";
+
+            CodeMirror.runMode(
+              code_2,
+              'python',
+              codeElement_2
+            );
+        };
+			window.onload = function(){
+            var codeElement_3 = document.getElementById('python_code_3');
+            // Add code mirror class for coloring (default is the theme)
+            codeElement_3.classList.add( 'cm-s-default' );
+            var code_3 = codeElement_3.innerText;
+
+            codeElement_3.innerHTML = "";
+
+            CodeMirror.runMode(
+              code_3,
+              'python',
+              codeElement_3
+            );
+        };
+			window.onload = function(){
+            var codeElement_4 = document.getElementById('python_code_4');
+            // Add code mirror class for coloring (default is the theme)
+            codeElement_4.classList.add( 'cm-s-default' );
+            var code_4 = codeElement_4.innerText;
+
+            codeElement_4.innerHTML = "";
+
+            CodeMirror.runMode(
+              code_4,
+              'python',
+              codeElement_4
+            );
+        };
+			window.onload = function(){
+            var codeElement_5 = document.getElementById('python_code_5');
+            // Add code mirror class for coloring (default is the theme)
+            codeElement_5.classList.add( 'cm-s-default' );
+            var code_5 = codeElement_5.innerText;
+
+            codeElement_5.innerHTML = "";
+
+            CodeMirror.runMode(
+              code_5,
+              'python',
+              codeElement_5
+            );
+        };
+			window.onload = function(){
+            var codeElement_6 = document.getElementById('python_code_6');
+            // Add code mirror class for coloring (default is the theme)
+            codeElement_6.classList.add( 'cm-s-default' );
+            var code_6 = codeElement_6.innerText;
+
+            codeElement_6.innerHTML = "";
+
+            CodeMirror.runMode(
+              code_6,
+              'python',
+              codeElement_6
+            );
+        };
+			window.onload = function(){
+            var codeElement_7 = document.getElementById('python_code_7');
+            // Add code mirror class for coloring (default is the theme)
+            codeElement_7.classList.add( 'cm-s-default' );
+            var code_7 = codeElement_7.innerText;
+
+            codeElement_7.innerHTML = "";
+
+            CodeMirror.runMode(
+              code_7,
+              'python',
+              codeElement_7
+            );
+        };
+			window.onload = function(){
+            var codeElement_8 = document.getElementById('python_code_8');
+            // Add code mirror class for coloring (default is the theme)
+            codeElement_8.classList.add( 'cm-s-default' );
+            var code_8 = codeElement_8.innerText;
+
+            codeElement_8.innerHTML = "";
+
+            CodeMirror.runMode(
+              code_8,
+              'python',
+              codeElement_8
             );
         };
     </script>
