@@ -945,7 +945,15 @@
 								</ul>
 							</div>
 							<div class='col'>
-								<img src='assets/session_1/extract.PNG'>
+								<pre><code id="python_code">
+								import pandas as pd
+								
+								data1= pd.read_csv('dataset1.csv')
+								
+								data2=pd.read_json('dataset2.json')
+									
+								data1.info()
+								data2.info()
 							</div>
 						</div>
 						<br>
@@ -965,7 +973,20 @@
 								</ul>
 							</div>
 							<div class='col'>
-								<img src='assets/session_1/extract_2.PNG'>
+								<pre><code id="python_code">
+								import psycopg2
+								conn= psycopg2.connect(dbname="DB_NAME", user="USERNAME", password="PASSWORD")
+								
+								cur= conn.cursor()
+								cur.execute("""SELECT table_name
+								&nbsp;&nbsp;FROM information_schema.tables
+								&nbsp;&nbsp;WHERE table_schema='public'
+								&nbsp;&nbsp;ORDER BY table_name""")
+								
+								query= "SELECT * FROM sales"
+								
+								sales=pd.read_sql_query(query,connection)
+								</code></pre>
 							</div>
 						</div>
 					</section>
@@ -1019,11 +1040,19 @@
 						<div class='row'>
 							<div class='col'>
 								<p><b>Null Values</b></p>
-								<img src='assets/session_1/null.PNG'>
+								<pre><code id="python_code">
+								data.fillna("Missing", inplace=True)
+								
+								data.dropna(inplace=True, subset=["col_A"])
+								</code></pre>
 							</div>
 							<div class='col'>
 								<p><b> Convert Datatypes</b></p>
-								<img src='assets/session_1/convert.PNG'>
+								<pre><code id="python_code">
+								data['Col_A']= data.col_A.astype('int')
+								data['Col_B']= data.col_A.astype('float')
+								data['Col_C']= data.col_A.astype('bool')
+								</code></pre>
 							</div>
 						</div>
 					</section>
@@ -1032,11 +1061,21 @@
 						<div class='row'>
 							<div class='col'>
 								<p><b>Deduplication</b></p>
-								<img src='assets/session_1/duplicate.PNG'>
+								<pre><code id="python_code">
+								#Check for duplicates
+								
+								data.duplicated()
+								
+								# Remove duplicates
+								
+								data.drop_duplicates()
+								</code></pre>
 							</div>
 							<div class='col'>
 								<p><b> Rename Fields</b></p>
-								<img src='assets/session_1/rename.PNG'>
+								<pre><code id="python_code">
+								data.rename(columns={'col_a':'Col_A'})
+								</code></pre>
 							</div>
 						</div>
 					</section>
@@ -1079,7 +1118,30 @@
 					<!-- Slide 5 -->
 					<section data-background-image="../assets/generic/main.PNG">
 						<h1> Loading </h1>
-						<img src='assets/session_1/load.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<pre><code id="python_code">
+								data1.join(data2, on='Col_A', how='left')
+								</code></pre>
+							</div>
+							<div class='row'>
+								<pre><code id="python_code">
+								import psycopg2
+								
+								# for postgreSQL
+								
+								conn= psycopg2.connect(dbname="DB_NAME", user="USERNAME", password="PASSWORD")
+								
+								cur=conn.cursor()
+								
+								cur.execute("INSERT INTO TABLE_NAME(ONE, TWO, THREE) VALUES ('1', '2', '3')")
+								
+								conn.commit()
+								
+								print(name)
+								</code></pre>
+							</div>
+						</div>								
 						<!-- Slide 5 Notes -->
 						<aside class='notes'>
 						</aside>
@@ -1168,7 +1230,7 @@
 					<div class='r-hstack'>
 						<div class='fragment'>
 							<h4 style=color:#ff7c66;font-size:30px> License </h4>				
-							<ul>
+							<ul style='display:inline-block;text-align:left>
 								<li> Company may already have license </li>
 								<li> Friendly GUI </li>
 								<li> Supports various databases and formats </li>
@@ -1179,7 +1241,7 @@
 						<br>
 						<div class='fragment'>
 							<h4 style=color:#59d8a1;font-size:30px> Coding </h4>
-							<ul>
+							<ul style='display:inline-block;text-align:left>
 								<li> Easy to create if database is small</li>
 								<li> Easy to install </li>
 							</ul>
@@ -1195,7 +1257,7 @@
 					<div class='r-hstack'>
 						<div class='fragment'>
 							<h4 style=color:#ff7c66;font-size:30px> License </h4>				
-							<ul>
+							<ul style='display:inline-block;text-align:left>
 								<li> License costs </li>
 								<li> Steep learning curve </li>					
 							</ul>
@@ -1203,7 +1265,7 @@
 						<br>
 						<div class='fragment'>
 							<h4 style=color:#59d8a1;font-size:30px> Coding </h4>
-							<ul>
+							<ul style='display:inline-block;text-align:left>
 								<li> Challenging to create (especially if schema changes frequently)</li>
 								<li> Developing scripts is time consuming </li>
 								<li> Issues around scaling to larger datasets</li>
