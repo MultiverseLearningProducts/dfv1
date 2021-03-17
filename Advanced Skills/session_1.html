@@ -15,10 +15,9 @@
 		<link rel="stylesheet" href="../Dependencies/dist/reveal.css">
 		<link rel="stylesheet" href="../Dependencies/dist/reset.css">
     <link rel="stylesheet" href="../Dependencies/css/mv.css">
-		<link rel="stylesheet" href="//codemirror.net/lib/codemirror.css">
-    <script src="//codemirror.net/addon/runmode/runmode-standalone.js"></script>
-    <script src="//codemirror.net/mode/python/python.js"></script>
-
+		<link rel="stylesheet" href="/path/to/styles/default.css">
+		<script src="/path/to/highlight.min.js"></script>
+		<script>hljs.highlightAll();</script>
 
 		
 		<!-- Google Fonts -->
@@ -1335,7 +1334,7 @@
 								<p> Run on your command line: <code> python -m unittest </code></p>
 							</div>
 							<div class='col'>
-								<pre><code id="python_code">
+								<pre><code class='python'>
 								import unittest
 								def fun(x):
 									return x+1
@@ -1444,25 +1443,7 @@
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
-		</script>
-		<script src="../Dependencies/node_modules/socket.io/lib/socket.js"></script>
-		<script src="../Dependencies/node_modules/reveal-notes-server/client.js"></script>
-		<script type="text/javascript">
-        window.onload = function(){
-            var codeElement = document.getElementById('python_code');
-            // Add code mirror class for coloring (default is the theme)
-            codeElement.classList.add( 'cm-s-default' );
-            var code = codeElement.innerText;
-
-            codeElement.innerHTML = "";
-
-            CodeMirror.runMode(
-              code,
-              'python',
-              codeElement
-            );
-        };
-    </script>
+		
   </body>
   
 </html>
