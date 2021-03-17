@@ -945,16 +945,7 @@
 								</ul>
 							</div>
 							<div class='col'>
-								<pre><code id="python_code">
-								import pandas as pd
-								
-								data1= pd.read_csv('dataset1.csv')
-								
-								data2=pd.read_json('dataset2.json')
-									
-								data1.info()
-								data2.info()
-								</code></pre>
+								<img src='assets/session_1/extract.PNG'>
 							</div>
 						</div>
 						<br>
@@ -974,20 +965,7 @@
 								</ul>
 							</div>
 							<div class='col'>
-								<pre><code id="python_code_1">
-								import psycopg2
-								conn= psycopg2.connect(dbname="DB_NAME", user="USERNAME", password="PASSWORD")
-								
-								cur= conn.cursor()
-								cur.execute("""SELECT table_name
-								&nbsp;&nbsp;FROM information_schema.tables
-								&nbsp;&nbsp;WHERE table_schema='public'
-								&nbsp;&nbsp;ORDER BY table_name""")
-								
-								query= "SELECT * FROM sales"
-								
-								sales=pd.read_sql_query(query,connection)
-								</code></pre>
+								<img src='assets/session_1/extract_2.PNG'>
 							</div>
 						</div>
 					</section>
@@ -1041,19 +1019,11 @@
 						<div class='row'>
 							<div class='col'>
 								<p><b>Null Values</b></p>
-								<pre><code id="python_code_2">
-								data.fillna("Missing", inplace=True)
-								
-								data.dropna(inplace=True, subset=["col_A"])
-								</code></pre>
+								<img src='assets/session_1/null.PNG'>
 							</div>
 							<div class='col'>
 								<p><b> Convert Datatypes</b></p>
-								<pre><code id="python_code_3">
-								data['Col_A']= data.col_A.astype('int')
-								data['Col_B']= data.col_A.astype('float')
-								data['Col_C']= data.col_A.astype('bool')
-								</code></pre>
+								<img src='assets/session_1/convert.PNG'>
 							</div>
 						</div>
 					</section>
@@ -1062,21 +1032,11 @@
 						<div class='row'>
 							<div class='col'>
 								<p><b>Deduplication</b></p>
-								<pre><code id="python_code_4">
-								#Check for duplicates
-								
-								data.duplicated()
-								
-								# Remove duplicates
-								
-								data.drop_duplicates()
-								</code></pre>
+								<img src='assets/session_1/duplicate.PNG'>
 							</div>
 							<div class='col'>
 								<p><b> Rename Fields</b></p>
-								<pre><code id="python_code_5">
-								data.rename(columns={'col_a':'Col_A'})
-								</code></pre>
+								<img src='assets/session_1/rename.PNG'>
 							</div>
 						</div>
 					</section>
@@ -1121,26 +1081,10 @@
 						<h1> Loading </h1>
 						<div class='row'>
 							<div class='col'>
-								<pre><code id="python_code_6">
-								data1.join(data2, on='Col_A', how='left')
-								</code></pre>
+								<img src='assets/session_1/load_1.PNG'>
 							</div>
 							<div class='row'>
-								<pre><code id="python_code_7">
-								import psycopg2
-								
-								# for postgreSQL
-								
-								conn= psycopg2.connect(dbname="DB_NAME", user="USERNAME", password="PASSWORD")
-								
-								cur=conn.cursor()
-								
-								cur.execute("INSERT INTO TABLE_NAME(ONE, TWO, THREE) VALUES ('1', '2', '3')")
-								
-								conn.commit()
-								
-								print(name)
-								</code></pre>
+								<img src='assets/session_1/load.PNG'>
 							</div>
 						</div>								
 						<!-- Slide 5 Notes -->
@@ -1398,7 +1342,7 @@
 								<p> Run on your command line: <code> python -m unittest </code></p>
 							</div>
 							<div class='col'>
-								<pre><code id="python_code_8">
+								<pre><code id="python_code">
 								import unittest
 								def fun(x):
 								&nbsp;&nbsp;return x+1
@@ -1583,7 +1527,7 @@
 		<script src="../Dependencies/node_modules/reveal-notes-server/client.js"></script>
 		<script type="text/javascript">
 			window.onload = function(){
-					var codeElement = document.querySelectorAll('#python_code','#python_code_1','#python_code_2','#python_code_3','#python_code_4','#python_code_5','#python_code_6','#python_code_7','#python_code_8');
+					var codeElement = document.getElementById()('python_code');
 					// Add code mirror class for coloring (default is the theme)
 					codeElement.classList.add( 'cm-s-default' );
 					var code = codeElement.innerText;
