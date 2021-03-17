@@ -1458,10 +1458,15 @@
 
             codeElement.innerHTML = "";
 
-            CodeMirror.runMode(
-              code,
-              'python',
-              codeElement
+            var codeMirror = CodeMirror(
+              codeElement,
+              {
+                value: code,
+                mode: "python",
+                theme: "default",
+                lineNumbers: false,
+                readOnly: true
+              }
             );
         };
     </script>
