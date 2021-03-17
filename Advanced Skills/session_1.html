@@ -19,6 +19,7 @@
     <script src="//codemirror.net/addon/runmode/runmode-standalone.js"></script>
     <script src="//codemirror.net/mode/python/python.js"></script>
 
+
 		
 		<!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
@@ -1371,6 +1372,8 @@
 						</aside>
 					</section>
 				</section>
+				<!-- Slide 5 -->				
+				
 				<!-- Slide 5 -->
 				<section data-background-image="../assets/generic/main.PNG">
 					<!-- Slide 5 Notes -->
@@ -1428,6 +1431,24 @@
 		<script src="../Dependencies/plugin/notes/notes.js"></script>
 		<script src="../Dependencies/plugin/markdown/markdown.js"></script>
 		<script src="../Dependencies/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({				
+				hash: true,
+				mouseWheel:true,
+				controls:true,
+				slideNumber:true,
+				loop:true,
+				
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+		<script src="../Dependencies/node_modules/socket.io/lib/socket.js"></script>
+		<script src="../Dependencies/node_modules/reveal-notes-server/client.js"></script>
 		<script type="text/javascript">
         window.onload = function(){
             var codeElement = document.getElementById('python_code');
@@ -1444,22 +1465,6 @@
             );
         };
     </script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({				
-				hash: true,
-				mouseWheel:true,
-				controls:true,
-				slideNumber:true,
-				loop:true,
-				
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		
   </body>
   
 </html>
