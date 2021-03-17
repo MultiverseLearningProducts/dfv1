@@ -1372,8 +1372,6 @@
 						</aside>
 					</section>
 				</section>
-				<!-- Slide 5 -->				
-				
 				<!-- Slide 5 -->
 				<section data-background-image="../assets/generic/main.PNG">
 					<!-- Slide 5 Notes -->
@@ -1452,19 +1450,16 @@
 		<script type="text/javascript">
         window.onload = function(){
             var codeElement = document.getElementById('python_code');
+            // Add code mirror class for coloring (default is the theme)
+            codeElement.classList.add( 'cm-s-default' );
             var code = codeElement.innerText;
-          
+
             codeElement.innerHTML = "";
-          
-            var codeMirror = CodeMirror(
-              codeElement,
-              {
-                value: code,
-                mode: "python",
-                theme: "default",
-                lineNumbers: false,
-                readOnly: true
-              }
+
+            CodeMirror.runMode(
+              code,
+              'python',
+              codeElement
             );
         };
     </script>
