@@ -1,0 +1,474 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<!-- SEO -->
+    <title>Multiverse Advanced Techniques Session 2</title>
+    <meta name="description" content="In this session we will be exploring the concept of data synchronization.">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/multiverse_brand/Logo/01_Deep Space/PNG/Multiverse_Symbol_RGB_Navy.png">
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+		<link rel="stylesheet" href="../Dependencies/dist/reveal.css">
+		<link rel="stylesheet" href="../Dependencies/dist/reset.css">
+    <link rel="stylesheet" href="../Dependencies/css/mv.css">
+		<link rel="stylesheet" href="//codemirror.net/lib/codemirror.css">
+    <script src="//codemirror.net/addon/runmode/runmode-standalone.js"></script>
+    <script src="//codemirror.net/mode/python/python.js"></script>
+
+
+		
+		<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="../Dependencies/static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../Dependencies/static/css/svg-icons.css">
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+		<!-- CSS for click to reveal section -->
+		<style>
+			span.db{color:#59d8a1;font-weight:bold;font-family:atlas}
+			span.dw{color:#ff7c66;font-weight:bold;font-family:atlas}
+			span.title{color:#f4f4f4;font-weight:bold;font-size:70px;text-align:center}
+			div.row {display: flex;}
+			div.col {flex: 1; padding: 1em;}
+		</style>
+	</head>
+  <body class='reveal-viewport'>
+		<!-- Page Header -->
+		<header role="banner" style='background-image:url(../assets/generic/Header.PNG);width:100%'>
+      <nav role="navigation" style='align:left'>
+        <ul>
+					<li class="applied">
+            <a href="https://platform.multiverse.io" title="Applied" target='_blank'>
+							<p style='font-family:atlas'><strong>MultiVerse</strong></p>
+            </a>
+          </li>
+          <li class="contents">
+            <a href='#/1' title="Contents">
+              <em>Contents</em>
+            </a>
+          </li> 
+        </ul>
+      </nav>
+    </header>
+    
+    <div class="reveal" style='font-family:atlas;font-size:25px;color:#242456'>
+			<div class="slides">
+				<!-- Slide 1 -->
+				<section data-background-image="../assets/generic/title_slide_alt.PNG">
+
+
+					<div class="wrap aligncenter">
+						<span class='title'> Advanced Techniques: Session 2 </span>        
+					</div>
+					<!-- Slide 1 Notes-->
+					<aside class='notes'>
+						Welcome apprentices to the session and select a warmup from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here</a>.
+					</aside>
+				</section>
+				<!-- Slide 2 -->
+				<section class='present' data-background-image="../assets/generic/info_yellow.PNG">
+					<div class="wrap size-60 bg-white">           
+						<h1> Session Outline </h1>
+						<ul style='list-style-type:none;font-size:15px'>
+							<li><a href='#/3'>  Data Synchronization </a></li>
+							<li><a href='#/10'> Benefits of Data Snchronization </a> </li>
+							<li><a href='#/15'> Methods of Data Synchronization </a> </li>
+							<li><a href='#/17'> Challenges of Data Synchronization </a> </li>
+							<li><a href='#/63'> Recap </a> </li>
+              <li><a href='#/63'> What Next? </a> </li>
+              <li><a href='#/63'> Gateway </a> </li>
+              <li><a href='#/63'> Synoptic Project </a> </li>
+              <li><a href='#/63'> Interview </a> </li>
+						</ul>
+					</div>
+					<!-- Slide 2 Notes -->
+					<aside class='notes'>
+						Run through the plan of the day, plan to have a break about half way through
+					</aside>
+				</section>
+				<!-- Slide 3 -->
+				<section data-background-image="../assets/generic/info_yellow.PNG">
+					<div class="wrap size-60 bg-white" style='width:max-content'>
+						<h1> Learning Objectives </h1>
+						<ul style='display:inline-block;text-align:left'>
+              <li> <b>Understand</b> the benefits and challenges of <b> Data Synchronization</b></li>
+              <li> <b>Understand</b> the <b> Gateway process </b></li>
+						</ul>          
+					</div>
+					<!-- Slide 3 Notes -->
+					<aside class='notes'>
+						Run through learning objectives, again explain that the purpose is for apprentices to be able to justify their reasons for using or not using the tools they have available.
+					</aside>
+				</section>
+        <!-- Slide 4 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Data Synchronization</span>          
+					</div>
+					<!-- Slide 4 Notes -->
+					<aside class='notes'>
+					</aside>
+				</section>
+        <section>
+          <section data-background-image='../assets/generic/fun_box.PNG'>
+            <span style ='color:#59d8a1;font-size:100px;font-weight:bold;text-align:center'> What is Data Synchronization? </span>
+            <aside class='notes'>
+					</aside>
+          </section>
+          <section data-background-image='../assets/generic/fun_box.PNG'>
+            <span style ='color:#59d8a1;font-size:60px;font-weight:bold;text-align:center'> Data synchronization is the effort to ensure that, once data leaves a system or storage entity, it does not fall out of harmony with its source, thereby creating inconsistency in the data record. </span>
+             <aside class='notes'>
+					</aside>
+          </section>
+        </section>
+        <!-- Slide 4 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Benefits of Data Synchronization</span>          
+					</div>
+					<!-- Slide 4 Notes -->
+					<aside class='notes'>
+					</aside>
+				</section>
+        <!-- Slide 4 -->
+				<section data-background-image="../assets/generic/strike_force.PNG">
+					<div class="row">    
+            <div class='col'>
+              <h1 style='color:#f4f4f4'>
+                Benefits
+              </h1>
+            </div>
+            <div class='col fragment'>
+              <p class='fragment'> Increased accessibility and availability of data </p>
+              <p class='fragment'> Increased security and regulatory compliance </p>
+              <p class='fragment'> Avoids data conflicts </p>
+              <p class='fragment'> More efficient decision making from using up-to-date data </p>
+					  </div>
+          </div>
+					<!-- Slide 4 Notes -->
+					<aside class='notes'>
+					</aside>
+				</section>
+        <!-- Slide 4 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Methods of Data Synchronization</span>          
+					</div>
+					<!-- Slide 4 Notes -->
+					<aside class='notes'>
+					</aside>
+				</section>
+        <!-- Slide 4 -->
+				<section data-background-image="../assets/generic/strike.PNG">
+          <div class="row">                
+            <div class='col'>
+              <p> File Synchronization </p>
+              <p> Version Control </p>
+              <p> Distributed File System </p>
+              <p> Mirror Computing </p>
+					  </div>
+            <div class='col'>
+              <h1 style='color:#f4f4f4'>
+                Methods
+              </h1>
+            </div>
+          </div>					
+					<!-- Slide 4 Notes -->
+					<aside class='notes'>
+					</aside>
+				</section>
+        <!-- Slide 4 -->
+        <section>
+          <section data-background-image="../assets/generic/box_serious.PNG">
+            <h1> File Synchronization </h1>
+            <p style='color:#242456;font-weight:bold;text-align:center;font-size:50px;line-height:100%;'> The process of ensuring that files in two or more locations are updated via certain rules. It should occur automatically and prevent duplication of data. </p>
+            <!-- Slide 4 Notes -->
+            <aside class='notes'>
+            </aside>
+          </section>
+          <section data-background-image="../assets/generic/pentagon_jr.PNG">
+            <div class='row'>
+              <div class='col'>
+                <h1 style='color:#f4f4f4'> Features </h1>
+              </div>
+              <div class='col'>
+                <p class='fragment' style='color:#4d61f4'> Can be done locally or in the Cloud </p>
+                <p class='fragment' style='color:#4d61f4'> Updates your files in real time </p>
+                <p class='fragment' style='color:#4d61f4'> Two-way synchronization </p>
+                <p class='fragment' style='color:#4d61f4'> Allows for collaboration between developers </p>
+                <p class='fragment' style='color:#4d61f4'> Detects conflicts </p>
+              </div>
+            </div>
+            <!-- Slide 4 Notes -->
+            <aside class='notes'>
+            </aside>
+          </section>
+          <section data-background-image="../assets/generic/main.PNG">
+            <div class="r-stack">
+						  <div class="fragment fade-in-then-out">
+                <img src="assets/session_2/onedrive.PNG" width="400" height="400" >
+              </div>
+              <div class="fragment fade-in-then-out">
+                <img src="assets/session_2/gdrive.PNG" width="400" height="400" >
+              </div>
+              <div class="fragment fade-in-then-out">
+                <img src="assets/session_2/dropbox.PNG" width="400" height="400" >
+              </div>
+              <div class="fragment fade-in-then-out">
+                <img src="assets/session_2/box.PNG" width="400" height="400" >
+              </div>
+              <div class="fragment fade-in-then-out">
+                <img src="assets/session_2/goodsync.PNG" width="400" height="400" >
+              </div>
+            </div>
+            <!-- Slide 4 Notes -->
+            <aside class='notes'>
+            </aside>
+          </section>
+        </section>
+        <!-- Slide 4 -->
+        <section>
+          <section data-background-image="../assets/generic/box_serious.PNG">
+            <h1> Version Control </h1>
+            <p style='color:#242456;font-weight:bold;text-align:center;font-size:50px;line-height:100%;'> Synchronization occurs over multiple devices, allowing multiple users to edit simultaneously and creates versions of every changes. </p>
+            <!-- Slide 4 Notes -->
+            <aside class='notes'>
+            </aside>
+          </section>
+          <section data-background-image="../assets/generic/pentagon_jr.PNG">
+            <div class='row'>
+              <div class='col'>
+                <h1 style='color:#f4f4f4'> Features </h1>
+              </div>
+              <div class='col'>
+                <p class='fragment' style='color:#4d61f4'> Can be version or revision control</p>
+                <p class='fragment' style='color:#4d61f4'> Allows movement between different revisions </p>
+                <p class='fragment' style='color:#4d61f4'> All chages are tracked</p>
+                <p class='fragment' style='color:#4d61f4'> Allows for different team members to develop different aspects of the project </p>
+              </div>
+            </div>
+            <!-- Slide 4 Notes -->
+            <aside class='notes'>
+            </aside>
+          </section>
+          <section data-background-image="../assets/generic/main.PNG">
+            <div class="r-stack">
+						  <div class="fragment fade-in-then-out">
+                <img src="assets/session_2/ghub.PNG" width="400" height="400" >
+              </div>
+              <div class="fragment fade-in-then-out">
+                <img src="assets/session_2/git.PNG" width="400" height="400" >
+              </div>
+              <div class="fragment fade-in-then-out">
+                <img src="assets/session_2/gitlab.PNG" width="400" height="400" >
+              </div>
+            </div>
+            <!-- Slide 4 Notes -->
+            <aside class='notes'>
+            </aside>
+          </section>
+        </section>
+        <section data-background-image='../assets/generic/circle_remix.PNG'>
+          <div class='row'>
+            <div class='col'>
+              <p>File synchronization allows for <u>simultaneous</u> working on a project</p> 
+              <p> i.e. any updates are reflected instantly for all users </p>
+            </div>
+            <div class='col'>
+              <p>Version control allows developers to work independently on a project and then update each other's versions when ready</p> 
+              <p> Most version control tools integrate some form of file synchronization </p>
+            </div>
+          </div>
+        </section>
+        <section data-background-image="../assets/generic/box_serious.PNG">
+          <h1> Distributed File System </h1>
+          <p style='color:#242456;font-weight:bold;text-align:center;font-size:50px;line-height:100%;'> Synchronization occurs over multiple devices, allowing multiple users to edit simultaneously and creates versions of every changes. </p>
+          <!-- Slide 4 Notes -->
+          <aside class='notes'>
+          </aside>
+        </section>
+        <section data-background-image="../assets/generic/box_serious.PNG">
+          <h1> Mirror Computing </h1>
+          <p style='color:#242456;font-weight:bold;text-align:center;font-size:50px;line-height:100%;'> A mirror is an exact copy of a dataset. It is used to provide different sources with an exact copy of a dataset. More useful for backing up data. </p>
+          <!-- Slide 4 Notes -->
+          <aside class='notes'>
+          </aside>
+        </section>
+        <section data-background-image='../assets/generic/tweenies.png'>
+          <div class='row r-hstack'>
+						<div class='col'></div>
+						<div class="col wrap aligncenter" style='width:max-content'>
+							<h2 style = color:#1d98ff><b> Activity </b></h2>
+							<br>
+              <p> Discuss in breakout rooms: </p>
+							<ul>
+								<li>Any data synchrnoization systems you use in your role and organisation</li>
+								<li>Whether you think it is important for your organisation to implement a data synchronization system</li>
+							</ul>
+						</div>
+					</div>
+        </section>
+        <!-- Slide 4 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Challenges of Data Synchronization</span>          
+					</div>
+					<!-- Slide 4 Notes -->
+					<aside class='notes'>
+					</aside>
+				</section>
+        <!-- Slide 4 -->
+				<section data-background-image="../assets/generic/main.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Benefits of Data Synchronization</span>          
+					</div>
+					<!-- Slide 4 Notes -->
+					<aside class='notes'>
+					</aside>
+				</section>
+        <!-- Slide 4 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Recap</span>          
+					</div>
+					<!-- Slide 4 Notes -->
+					<aside class='notes'>
+					</aside>
+				</section>
+        <!-- Slide 4 -->
+				<section data-background-image="../assets/generic/main.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Benefits of Data Synchronization</span>          
+					</div>
+					<!-- Slide 4 Notes -->
+					<aside class='notes'>
+					</aside>
+				</section>
+        <!-- Slide 4 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> What Next?</span>          
+					</div>
+					<!-- Slide 4 Notes -->
+					<aside class='notes'>
+					</aside>
+				</section>
+        <!-- Slide 4 -->
+				<section data-background-image="../assets/generic/main.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Benefits of Data Synchronization</span>          
+					</div>
+					<!-- Slide 4 Notes -->
+					<aside class='notes'>
+					</aside>
+				</section>
+        <!-- Slide 4 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Gateway</span>          
+					</div>
+					<!-- Slide 4 Notes -->
+					<aside class='notes'>
+					</aside>
+				</section>
+        <!-- Slide 4 -->
+				<section data-background-image="../assets/generic/main.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Benefits of Data Synchronization</span>          
+					</div>
+					<!-- Slide 4 Notes -->
+					<aside class='notes'>
+					</aside>
+				</section>
+        <!-- Slide 4 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Synoptic Project</span>          
+					</div>
+					<!-- Slide 4 Notes -->
+					<aside class='notes'>
+					</aside>
+				</section>
+        <!-- Slide 4 -->
+				<section data-background-image="../assets/generic/main.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Benefits of Data Synchronization</span>          
+					</div>
+					<!-- Slide 4 Notes -->
+					<aside class='notes'>
+					</aside>
+				</section>
+        <!-- Slide 4 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Interview</span>          
+					</div>
+					<!-- Slide 4 Notes -->
+					<aside class='notes'>
+					</aside>
+				</section>
+        <!-- Slide 4 -->
+				<section data-background-image="../assets/generic/main.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Benefits of Data Synchronization</span>          
+					</div>
+					<!-- Slide 4 Notes -->
+					<aside class='notes'>
+					</aside>
+				</section>
+      </div>
+    </div>
+    
+    <!-- Scripts -->
+
+		<script src="../Dependencies/dist/reveal.js"></script>
+		<script src="../Dependencies/plugin/notes/notes.js"></script>
+		<script src="../Dependencies/plugin/markdown/markdown.js"></script>
+		<script src="../Dependencies/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({				
+				hash: true,
+				mouseWheel:true,
+				controls:true,
+				slideNumber:true,
+				loop:true,
+				
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+		<script src="../Dependencies/node_modules/socket.io/lib/socket.js"></script>
+		<script src="../Dependencies/node_modules/reveal-notes-server/client.js"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+					var codeElement = document.getElementById('python_code');
+					// Add code mirror class for coloring (default is the theme)
+					codeElement.classList.add( 'cm-s-default' );
+					var code = codeElement.innerText;
+
+					codeElement.innerHTML = "";
+
+					CodeMirror.runMode(
+						code,
+						'python',
+						codeElement
+					);
+			};
+			
+    </script>
+  </body>
+  
+</html>
