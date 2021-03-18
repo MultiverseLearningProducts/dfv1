@@ -80,19 +80,19 @@
 						<h1> Session Outline </h1>
 						<ul style='list-style-type:none;font-size:15px'>
 							<li><a href='#/3'>  Data Warehouse </a></li>
-							<li><a href='#/10'> Data Integration </a> </li>
-							<li><a href='#/15'> Types of Data Integration </a> </li>
-							<li><a href='#/17'> Data Integration Life Cycle </a> </li>
-							<li><a href='#/19'> Data Profile Activity </a> </li>
-							<li><a href='#/23'> Data Integration Techniques </a> </li>
-							<li><a href='#/30'> Rules and Policies </a> </li>
-							<li><a href='#/34'> ETL </a> </li>
-							<li><a href='#/43'> Security </a> </li>
-							<li><a href='#/45'> Automating the Process </a> </li>
-							<li><a href='#/47'> Licenses vs Coding </a></li>
-							<li><a href='#/50'> Master Data Management </a> </li>
-							<li><a href='#/54'> Testing Strategies </a> </li>
-							<li><a href='#/63'> Recap </a> </li>
+							<li><a href='#/11'> Data Integration </a> </li>
+							<li><a href='#/16'> Types of Data Integration </a> </li>
+							<li><a href='#/18'> Data Integration Life Cycle </a> </li>
+							<li><a href='#/20'> Data Profiling </a> </li>
+							<li><a href='#/24'> Data Integration Techniques </a> </li>
+							<li><a href='#/31'> Rules and Policies </a> </li>
+							<li><a href='#/35'> ETL </a> </li>
+							<li><a href='#/44'> Security </a> </li>
+							<li><a href='#/46'> Automating the Process </a> </li>
+							<li><a href='#/48'> Licenses vs Coding </a></li>
+							<li><a href='#/51'> Master Data Management </a> </li>
+							<li><a href='#/55'> Testing Strategies </a> </li>
+							<li><a href='#/64'> Recap </a> </li>
 						</ul>
 					</div>
 					<!-- Slide 2 Notes -->
@@ -122,6 +122,7 @@
 					</div>
 					<!-- Slide 4 Notes -->
 					<aside class='notes'>
+						In today's session we will be considering why companies store data in data warehouses and how they go about doing it. Does anyone know what a data warehouse is?
 					</aside>
 				</section>
 				<!-- Slide 5 -->
@@ -135,10 +136,10 @@
 					</div>
 					<!-- Slide 5 Notes -->
 					<aside class='notes'>
-						For analysis you will need to hold both historical and current data.
+						Read the quote. Essentially enterprises use warehouses to hold the vast amount of data they control in one location allowing for easier access for making data driven business decisions. Point out that for analysis you will need to hold both historical and current data (historical for training and testing, current to  actually make the analysis). 
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 6 -->
 				<section data-background-image="../assets/generic/box_serious.PNG">
 					<div class="wrap aligncenter" style='width:max-content'>
 						<h2 style='color:#64abff'> Online Transactional Processing (OLTP)</h2>
@@ -148,11 +149,12 @@
 						<p class='info fragment fade in' style='color:#242456'> Airline ticket booking </p>
 						<p class='info fragment fade in' style='color:#242456'> Adding items to a shopping cart </p>
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 6 Notes -->
 					<aside class='notes'>
+						A couple of definitions (reminders from Module 2). OLTP is for processing day to day data such as transactions. This is often fast flowing data and better suited to a database such as a RDBMS which is highly structured.
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 7 -->
 				<section data-background-image="../assets/generic/box_serious.PNG">
 					<div class="wrap aligncenter" style='width:max-content'>
 						<h2 style='color:#64abff'> Online Analytical Processing (OLAP)</h2>
@@ -162,21 +164,31 @@
 						<p class='fragment fade in' style='color:#242456'> Targeted Adverts </p>
 						<p class='fragment fade in' style='color:#242456'> Suggested LinekedIn connections </p>
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 7 Notes -->
 					<aside class='notes'>
+						OLAP allows for analytical decisions to be made from pulling together data from a variety of disparate sources. These are better suited to Data Warehouses which hold vast quantities of data in a variety of structures allowing for cross-referencing and powerful analytics. 
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 8 -->
+				<section data-background-image='../assets/generic/main.PNG'>
+					<img src='assets/session_1/star_schema.PNG'>
+					<!-- Slide 8 Notes -->
+					<aside class='notes'>
+						An example of what a data warehouse might look like. In the center is the fact table which holds all the measurements (e.g. price of products, quantity sold, etc) aggregated in various ways. Surrounding it are the dimension tables which provide the basis for aggregating the measurements in the fact table. This format allows you to intuitively understand much of the information around a piece of data, for example, for a given number of order dollars you will be able to find out what products were sold, to what customers and by what salesperson on a certain day.
+					</aside>
+				</section>
 				<section>
-					<!-- Slide 5 -->
+					<!-- Slide 9a -->
 					<section data-background-image="../assets/generic/fun_box.PNG">
 						<div class="wrap aligncenter">
 							<span style ='color:black;font-size:70px;font-weight:bold;text-align:center'> <p class='fragment fade in' style='color:#ff7c66'> Data Warehouse</p> <p class='fragment fade in'>vs</p> <p class='fragment fade in' style='color:#59d8a1'>Database </p></span>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 9a Notes -->
 						<aside class='notes'>
+							For apprentices benefit it will be worth exploring the differences between a data warehouse and a database (which we looked at in module 2). The key things to point out are when it is best to use each one. Press down to go through each difference individually. 
 						</aside>
 					</section>
+					<!-- Slide 9b -->
 					<section data-background-image="../assets/generic/circle_remix.PNG">	
 						<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
 						<h2> Type of Processing </h2>
@@ -187,8 +199,13 @@
 							<div class='col fragment'>
 								<p style='color:#59d8a1;font-size:35px'>OLTP</p>
 							</div>						
-						</div>		
+						</div>
+						<!-- Slide 9b Notes -->
+						<aside class='notes'>
+							Databases (such as a RDBMS) are highly structured and normalised which means they are well suited to the fast flowing transactional data with the ability to cross reference tables using primary and foreign keys. They therefore use an OLTP system. As data warehouses hold all the available data in one source, it gives the potential for powerful analysis to be carried out quickly which is why it uses OLAP.
+						</aside>
 					</section>
+					<!-- Slide 9c -->
 					<section data-background-image="../assets/generic/circle_remix.PNG">					
 						<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
 						<h2> Data Structure </h2>
@@ -199,8 +216,13 @@
 							<div class='col fragment'>
 								<p style='color:#59d8a1;font-size:35px'>Highly normalised with different tables</p>
 							</div>						
-						</div>		
+						</div>	
+						<!-- Slide 9c Notes -->
+						<aside class='notes'>
+							Databases have normalised tables which each contain different information (e.g. reference or transaction). Data warehouses follow a denormalised structure (often Star Schema) where a large central 'fact' table holds measurements (e.g. price and quantity of products) which may be aggregated in various ways. The fact table is surrounded by several 'dimension' tables which tells the fact table how to aggregate the data (e.g. by customer, salesperson, order date, etc). Typically data warehouses only hold structured data (unstructured data goes in a data lake, which is similar to a warehouse but for unstrctured data).
+						</aside>
 					</section>
+					<!-- Slide 9d -->
 					<section data-background-image="../assets/generic/circle_remix.PNG">
 						<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
 						<h2> Optimised For </h2>
@@ -212,7 +234,12 @@
 								<p style='color:#59d8a1;font-size:35px'>Updating, deleting and modifying data</p>
 							</div>						
 						</div>		
+						<!-- Slide 9d Notes -->
+						<aside class='notes'>
+							As databases work with highly normalised tables, it is easy to update or modify the tables as you are only ever going to be editing one table at a time. Data warehouses are more complex and updating will take longer as you will need to consider both fact and dimension tables together. Data warehouses on the other hand are very well suited for rapid execution of queries on large complex datasets as all the data is held in one location.
+						</aside>
 					</section>
+					<!-- Slide 9e -->
 					<section data-background-image="../assets/generic/circle_remix.PNG">
 						<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
 						<h2> Data Timeline </h2>
@@ -223,8 +250,13 @@
 							<div class='col fragment'>
 								<p style='color:#59d8a1;font-size:35px'>Current real-time data</p>
 							</div>						
-						</div>		
+						</div>
+						<!-- Slide 9e Notes -->
+						<aside class='notes'>
+							As databases can be updated quickly and easily they will often hold current data (and can be updated in real time). Data warehouses are more complex and due to the way data is integrated will always be at least a little out of date.
+						</aside>
 					</section>
+					<!-- Slide 9f -->
 					<section data-background-image="../assets/generic/circle_remix.PNG">
 						<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
 						<h2> Uptime </h2>
@@ -235,8 +267,13 @@
 							<div class='col fragment'>
 								<p style='color:#59d8a1;font-size:35px'>Approx 100%</p>
 							</div>						
-						</div>		
+						</div>
+						<!-- Slide 9f Notes -->
+						<aside class='notes'>
+							The consequence of this is that if you want to update a data warehouse you will need to take it down temporarily. It is often a good idea to upload in batches over night when people will not likely need ot use it. As databases are agile and can be updated instantly, they will typically be online 100% of the time (except for maintenance)
+						</aside>
 					</section>
+					<!-- Slide 9g -->
 					<section data-background-image="../assets/generic/circle_remix.PNG">
 						<h1><span class='dw'> Data Warehouse</span> vs <span class='db'>Database</span></h1>
 						<h2> Query Type </h2>
@@ -247,9 +284,14 @@
 							<div class='col fragment'>
 								<p style='color:#59d8a1;font-size:35px'>Simple transactional queries</p>
 							</div>						
-						</div>									
+						</div>	
+						<!-- Slide 9g Notes -->
+						<aside class='notes'>
+							Databases are suited for transactional data with quick references to certain aspects (e.g. product type, store information, etc). Data warehouses contain all relevant historical data aggregated as defined by the schema. This allows for complex queries that give in depth analysis that will help businesses make effective data driven decisions. 
+						</aside>
 					</section>
 				</section>
+				<!-- Slide 10 -->
 				<section data-background-image="../assets/generic/table_back.PNG">
 					<h1> Data Warehouse vs Database</h1>
 					<table style='font-size:15px'>
@@ -289,11 +331,12 @@
 							<td> Simple Transactional</td>
 						</tr>
 					</table>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 10 Notes -->
 					<aside class='notes'>
+						This table summarises all the information from the previous section, use this time to allow apprentices to ask questions.
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 11 -->
 				<section data-background-image="assets/session_1/warehouse.PNG">
 					<div class='row r-hstack' >
 						<div class='col'>
@@ -304,34 +347,37 @@
 							<span style ='color:#242456;font-size:35px;font-weight:bold;text-align:center'> Data Warehouses are examples of Data Integration products</span>
 						</div>
 					</div>						          
-					<!-- Slide 5 Notes -->
+					<!-- Slide 11 Notes -->
 					<aside class='notes'>
+						Much of today's session will be around data integration- how we combine data together for use in analysis. By the way data warehouses are set up, they are an example of how we perform data integration.
 					</aside>
 				</section>
-				<!-- Slide 4 -->
+				<!-- Slide 12 -->
 				<section data-background-image="../assets/generic/section.PNG">
 					<div class="wrap aligncenter">
 						<span class='title'> Data Integration</span>          
 					</div>
-					<!-- Slide 4 Notes -->
+					<!-- Slide 12 Notes -->
 					<aside class='notes'>
+						So what is data integration? Ask if any of the apprentices have a definition for it already. 
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 13 -->
 				<section data-background-image="../assets/generic/fun_box.PNG">
 					<div class=' row r-hstack'>
 						<div class='col'>
-							<span style ='color:#59d8a1;font-size:60px;font-weight:bold;text-align:center'> Data Integration is the process of collecting data from a variety of sources into a single target. </span>
+							<span style ='color:#4d61f4;font-size:60px;font-weight:bold;text-align:center'> Data Integration is the process of collecting data from a variety of sources into a single target. </span>
 					</div>
 						<div class='col'>
 							<img src='assets/session_1/data_integration.PNG'>
 						</div>
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 13 Notes -->
 					<aside class='notes'>
+						Read the quote. Data integration is simply the process of taking our data from our variety of disparate sources and combining them into one target (i.e. a data warehouse). 
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 14 -->
 				<section data-background-image="../assets/generic/strike_force.PNG">
 					<div class='row r-hstack'>
 						<div class='col'>
@@ -344,11 +390,12 @@
 							<p class='fragment' style='color:#242456;font-size:35px'> Applications </p>
 						</div>
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 14 Notes -->
 					<aside class='notes'>
+						Ask the group to annotate the screen with their suggestions of what a source can be. Then show a few examples. A source is anything which holds data (typicaly structured in this case, but can be unstructured). Applications refers to software such as APIs which allow you to connect to databases.
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 15 -->
 				<section data-background-image="../assets/generic/strike.PNG">
 					<div class='row r-hstack'>
 						<div class='col fragment'>
@@ -362,29 +409,34 @@
 							<h1 style='color:#f4f4f4'> Benefits of Data Integration </h1>
 						</div>
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 15 Notes -->
 					<aside class='notes'>
+						Ask the group to suggest the benefits of data integration. By integrating data from different sources into one location (warehouse) you are making your data more available to a wider range of people who need it which will allow for collaboration between different teams, more opportunities for insights and superior analysis. Additionally, with more eyes on the data you can be more confident of the integreity and quality. 
 					</aside>
 				</section>
+				<!-- Slide 16 -->
 				<section data-background-image='../assets/generic/fun_box.PNG'>
 					<h1> Data Integration vs Data Migration </h1>
 					<br>
-					<p class='fragment'> Data Migration is an internal process where data is transferred between storage types, formats, data architectures and enterprise systems. <p>
-					<p class='fragment'> Data Integration involves collecting data from sources outside of an organisation for analysis </p>
+					<p class='fragment'> Data Integration is the process of collecting data from a variety of sources into a unified view for analysis and making data driven business decisions.</p>
+					<p class='fragment'> Data Migration is when the data is simply moved from one source to another. </p>
 					<p class='fragment'> Companies will typically migrate data when implementing a new system or merging to a new environment.</p>
+					<!-- Slide 16 Notes -->
 					<aside class='notes'>
-						migration refers to the movement of data already stored internally to different systems
+						Apprentices need to be aware (especially for their exam) that there is a difference between data migration and integration. Data integration is the process of combining data from different sources (some may be external to the organisation) to create a unified view which allows for analysis and business decisions. Migration is when the information already exists, it is just being moved from one location to another.
 					</aside>
 				</section>
+				<!-- Slide 17 -->
 				<section data-background-image="../assets/generic/section.PNG">
 					<div class="wrap aligncenter">
 						<span class='title'> Types of Data Integration</span>          
 					</div>
-					<!-- Slide 4 Notes -->
+					<!-- Slide 17 Notes -->
 					<aside class='notes'>
+						Now we know what data integration is and why we should do it, how should we do it? There are two methods, batch or real time. Let's consider both.
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 18 -->
 				<section data-background-image="../assets/generic/circle_remix.PNG">
 					<div class='row r-hstack'>
 						<div class='col'>
@@ -403,21 +455,22 @@
 							<p class='fragment'> Source and target are <b>'synchronus'</b> (changes in source are reflected in target) </p>
 						</div>
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 18 Notes -->
 					<aside class='notes'>
-						Batch uploads are mostly used in data warehouses and any changes must be implemented in both source and target. The processing of data is not instantaneous.
+						Batch uploads is the common approach for data warehouses where data is moved from source to target in groups periodically. This means the source and target are asynchronus (not in sync) which allows for the source to be updated at any time, the target will follow suit later. It is advised however that batch uploads happen outside working hours to avoid disruption to people trying to use the target file. Real time integration sees data moved from source to target as it is created. If the source updates, so does the target. This is optimal only for small amounts of data due to the processing time needed (think how slow and unresponsive a dashboard would be if it was integrating constantly terabytes worth of data). 
 					</aside>
 				</section>
-				<!-- Slide 4 -->
+				<!-- Slide 19 -->
 				<section data-background-image="../assets/generic/section.PNG">
 					<div class="wrap aligncenter">
 						<span class='title'> Data Integration Life Cycle</span>          
 					</div>
-					<!-- Slide 4 Notes -->
+					<!-- Slide 19 Notes -->
 					<aside class='notes'>
+						Now we will consider the process that you would follow if you were going to perform data integration from start to finish.
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 20a -->
 				<section style='font-size:35px;width:100%'>
 					<section data-background-image="../assets/generic/strike_force.PNG" style='width:100%'>
 						<div class='row'>
@@ -435,10 +488,12 @@
 								<p> Operational Requirements </p>
 							</div>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 20a Notes -->
 						<aside class='notes'>
+							Introduce the five stages. In the first stage you will need to scope out the requirements for the integration- what technology do you need? Who will need access to the integrated target? What business questions will this integrated target be able to answer? What data/sources will be connected and do they need any work (i.e. cleaning)? This requirements elicitation is a necessary step as it will give you focus onto what you need to do as well as potentially mitigate and avoid costly errors later.  
 						</aside>
 					</section>
+					<!-- Slide 20b -->
 					<section data-background-image="../assets/generic/strike_force.PNG">
 						<div class='row'>
 							<div class='col'>
@@ -459,10 +514,12 @@
 								</ul>
 							</div>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 20b Notes -->
 						<aside class='notes'>
+							Next comes profiling. You have already scoped out the data sources you are going to use, but are they in a useable format? You will need to check and clean the data (potentially writing scripts to automate this process) to ensure the sources will be in a consistent format with the target. You will also need to check if duplicates or nulls will be created as a result of the integration and mitigate for them. 
 						</aside>
 					</section>
+					<!-- Slide 20c -->
 					<section data-background-image="../assets/generic/strike_force.PNG">
 						<div class='row'>
 							<div class='col'>
@@ -476,10 +533,12 @@
 								<p> Decide on the architecture of the data warehouse using business, technical and operational metdata </p>
 							</div>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 20c Notes -->
 						<aside class='notes'>
+							Now you have your sources identified and ready, you will need to decide on the structure of the data warehouse. The most common approach is the star schema, where measurements will be held in a central fact table in various aggregations as defined by the surrounding dimension tables. Based on the business need and technical opportunities you have available you will need to decide what is stored within the fact table and what dimensions you would like/need to include. 
 						</aside>
 					</section>
+					<!-- Slide 20d -->
 					<section data-background-image="../assets/generic/strike_force.PNG">
 						<div class='row'>
 							<div class='col'>
@@ -499,10 +558,12 @@
 								
 							</div>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 20d Notes -->
 						<aside class='notes'>
+							Once you have the database designed and the sources identified and made ready it is time to test that it all works. You will need to validate the process (is the correct data being pulled? Is it joining on the columns I had set?) and verify the output (does it look like how you expected? Is it doing what you want it to?). There are various testing strategies available which we will look into later. If there are any failures, you will need to document them and then fix them. This should all be tested at a local level.
 						</aside>
 					</section>
+					<!-- Slide 20ae -->
 					<section data-background-image="../assets/generic/strike_force.PNG">
 						<div class='row'>
 							<div class='col'>
@@ -516,36 +577,38 @@
 								<p> Implement the process at an operational level </p>
 							</div>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 20e Notes -->
 						<aside class='notes'>
+							Finally, if you are confident that everything works as intended then it is time to implement the process! This may involve training up colleagues or at least amking them aware the data warehouse exists. You should also schedule regular maintenance as well as a batch upload schedule (ideally out of work hours) that will allow the integration process to be updated.
 						</aside>
 					</section>
 				</section>
-				<!-- Slide 4 -->
+				<!-- Slide 21 -->
 				<section data-background-image="../assets/generic/section.PNG">
 					<div class="wrap aligncenter">
-						<span class='title'> Data Profile Activity</span>          
+						<span class='title'> Data Profiling</span>          
 					</div>
-					<!-- Slide 4 Notes -->
+					<!-- Slide 21 Notes -->
 					<aside class='notes'>
+						As mentioned in the previous section, an important aspect of identifying data sources is profiling them to ensure they contain the data you want and in the correct form. We will now look into this in more detail.
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 22 -->
 				<section data-background-image="../assets/generic/fun_box.PNG">
 					<div class=' row r-hstack'>
 						<div class='col'>
-							<span style ='color:#59d8a1;font-size:50px;font-weight:bold;text-align:center'> Data Profliling is the process of reviewing and analysing data to be used in an extract to understand the format and content. </span>
+							<span style ='color:#4d61f4;font-size:50px;font-weight:bold;text-align:center'> Data Profliling is the process of reviewing and analysing data to be used in an extract to understand the format and content. </span>
 					</div>
 						<div class='col'>
 							<img src='assets/session_1/data_profile.PNG'>
 						</div>
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 22 Notes -->
 					<aside class='notes'>
-						The purpose is to assess data quality as well as risks involved in integrating data in new applications. It also allows you to have an overall view of the data for data management and governance.
+						The purpose is to assess data quality as well as risks involved in integrating data in new applications. It also allows you to have an overall view of the data for data management and governance. Ask apprentices if they have any experience of profiling, or what they might expect it to involve. 
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 23a -->
 				<section>
 					<section data-background-image="../assets/generic/main.PNG">
 						<h1> Uses of Data Profiling </h2>
@@ -554,11 +617,12 @@
 						<p class='fragment'> Report data formats, uniqueness, consistency, correctness and null values </p>
 						<p class='fragment'> Compare field names across data stores/tables </p>
 						<p class='fragment'> Can be difficult to arrange if it innvolves personal or sensitive information </p>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 23a Notes -->
 						<aside class='notes'>
-							Something to be aware of: this can sometimes be difficult to arrange if it involves sensitive or personal information. Ask the apprentices what sort of information they think it would be important to include. 
+							Something to be aware of: this can sometimes be difficult to arrange if it involves sensitive or personal information- you cannot publish PII in any form, even when describing the data. Ask the apprentices what sort of information they think it would be important to include. Go down for an example of a data profile.
 						</aside>
 					</section>
+					<!-- Slide 23b -->
 					<section data-background-image="../assets/generic/table_back.PNG">
 						<table style='text-align:center'>
 							<tr>
@@ -595,9 +659,12 @@
 								</tr>
 							</table>
 						</div>
+						<!-- Slide 23b Notes -->
+						<aside class='notes'>
+							You will likely want a table which describes the dataset itself, including what format it is and who the author is. What other information might you want to include? The rest of the profile will be about the fields in the data, what data types they are, how many null values, etc. This information will help give you a clear idea what the data source involves and how you will want to incorporate it during the integration.
 					</section>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 24 -->
 				<section data-background-image="../assets/generic/tweenies.PNG">
 					<div class='row r-hstack'>
 						<div class='col'></div>
@@ -619,8 +686,9 @@
 							</ul>
 						</div>
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 24 Notes -->
 					<aside class='notes'>
+						Now it is your turn. This exercise will take you back to the products table we used back in the SQL bootcamp. In groups (one persion share screen) create a data profile for this dataset. Give 10-15 minutes for this + time for presentations.
 					</aside>
 				</section>
 				<!-- Slide 4 -->
