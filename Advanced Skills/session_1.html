@@ -611,7 +611,7 @@
 				<!-- Slide 23a -->
 				<section>
 					<section data-background-image="../assets/generic/main.PNG">
-						<h1> Uses of Data Profiling </h2>
+						<h1 style='color:#64abff'> Uses of Data Profiling </h2>
 						<br>
 						<p class='fragment'> Develop metadata and documentation </p>
 						<p class='fragment'> Report data formats, uniqueness, consistency, correctness and null values </p>
@@ -691,16 +691,17 @@
 						Now it is your turn. This exercise will take you back to the products table we used back in the SQL bootcamp. In groups (one persion share screen) create a data profile for this dataset. Give 10-15 minutes for this + time for presentations.
 					</aside>
 				</section>
-				<!-- Slide 4 -->
+				<!-- Slide 25 -->
 				<section data-background-image="../assets/generic/section.PNG">
 					<div class="wrap aligncenter">
 						<span class='title'> Data Integration Techniques</span>          
 					</div>
-					<!-- Slide 4 Notes -->
+					<!-- Slide 25 Notes -->
 					<aside class='notes'>
+						So how do you go about integrating data? 
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 26 -->
 				<section data-background-image="../assets/generic/strike_force.PNG">
 					<div class='row r-hstack'>
 						<div class='col'>
@@ -714,12 +715,13 @@
 							<p> Common Storage Integration </p>
 						</div>
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 26 Notes -->
 					<aside class='notes'>
+						For this session we will consider the following five techniques. 
 					</aside>
 				</section>
 				<section>
-					<!-- Slide 5 -->
+					<!-- Slide 27a -->
 					<section data-background-image="../assets/generic/circle_remix.PNG">
 						<div class="wrap" style='width:max-content'>
 							<h2> Manual Data Integration </h2>
@@ -727,7 +729,12 @@
 							<p> Whole process (e.g. data collection and cleaning, connecting sources) done manually by a human </p>
 							<p> Best for one-time instances </p>
 						</div>
+						<!-- Slide 27a Notes -->
+					<aside class='notes'>
+						Manual data integration does exactly as it sounds, a human manually performs the whole process (visually inspecting the data, cleaning it and joining the sources). This takes time and opens up the possibility of human error, so it best used for small and quick updates.
+					</aside>
 					</section>
+					<!-- Slide 27b -->
 					<section data-background-image="../assets/generic/circle_remix.PNG">
 						<h2> Manual Data Integration </h2>
 						<div class='row'>
@@ -745,20 +752,26 @@
 								<p> Less Access </p> 
 							</div>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 27b Notes -->
 						<aside class='notes'>
+							Integrating data manually will be cheaper than using specialised software but it is not an appropriate technique for larger volumes of data, or when it is fast flowing. It will take the user too long to be efficient. Another drawback is that only the one person will have access, which can cause problems if they are not available when the integration needs to happen.
 						</aside>
 					</section>
 				</section>
 				<section>
-					<!-- Slide 5 -->
+					<!-- Slide 28a -->
 					<section data-background-image="../assets/generic/circle_remix.PNG">						
 						<h2> Middleware Data Integration </h2>
 						<br>
 						<p> Using softwares that connect applicatons and transfers between them and databases (no coding) </p>
 						<p> Acts an interpreter between systems and enacts an automatic transfer </p>
 						<p> Examples include Microsoft Dynamic CRM, SAP and Sage </p>
+						<!-- Slide 28a Notes -->
+						<aside class='notes'>
+							Middleware softwares act like a 'middle man' between your various sources and the target. This method requires no coding and allows for automation of the process. Within the software you will need to state the connections and relationships and it will do the rest.
+						</aside>
 					</section>
+					<!-- Slide 28b -->
 					<section data-background-image="../assets/generic/circle_remix.PNG">
 						<h2> Middleware Data Integration </h2>
 						<div class='row'>
@@ -776,20 +789,25 @@
 								<p> Limited Functionality </p>
 							</div>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 28b Notes -->
 						<aside class='notes'>
+							While this method is fast, efficient and scalable you are outsourcing the work which reduces your access to the process and limits you to whatever the software allows.
 						</aside>
 					</section>
 				</section>
 				<section>
-					<!-- Slide 5 -->
-					<section data-background-image="../assets/generic/circle_remix.PNG">
-						
+					<!-- Slide 29a -->
+					<section data-background-image="../assets/generic/circle_remix.PNG">						
 						<h2> Application Based Integration </h2>
 						<br>
 						<p> Specialised softwares that locate, retrieve and integrate data </p>
 						<p> Mostly suited to integrate limited amounts of data and sources </p>
+						<!-- Slide 29a Notes -->
+						<aside class='notes'>
+							Taking it a step further, you have application based integtation which essentially does the whole integration process. This is only suited to smaller amounts of data and sources however. This is due to the increased complexity of adding more data and sources (more room for error) which would result in you spending most of your time troubleshooting (and might as well do it yourself).
+						</aside>
 					</section>
+					<!-- Slide 29b -->
 					<section data-background-image="../assets/generic/circle_remix.PNG">
 						<h2> Application Based Integration </h2>
 						<div class='row'>
@@ -808,20 +826,26 @@
 								<p> Difficult Data Management </p> 
 							</div>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 29b Notes -->
 						<aside class='notes'>
+							While the process is simple and allows for an organisation to devote fewer resources for the process, it does mean that you are reducing access and control to your own data. If you need to change the structure, or want to incorporate new data this process can be difficult as you will need to set up everything up again.
 						</aside>
 					</section>
 				</section>
 				<section>
-					<!-- Slide 5 -->
+					<!-- Slide 30a -->
 					<section data-background-image="../assets/generic/circle_remix.PNG">
 						<h2> Uniform Access Integration </h2>
 						<br>
 						<p> Also known as "Virtual Integration" </p>
 						<p> Data is allowed to stay in its original location when being accessed  </p>
 						<p> Provides a unified view quickly to both customers and across platforms </p>
+						<!-- Slide 30a Notes -->
+						<aside class='notes'>
+							This process inetgrates disparate sources together in such a way that all users have the same unified view. Each user will have direct access to the data locally and when they make an edit to a source the change will be reflected for all others instantly.
+						</aside>
 					</section>
+					<!-- Slide 30b -->
 					<section data-background-image="../assets/generic/circle_remix.PNG">
 						<h2> Uniform Access Integration </h2>
 						<div class='row'>
@@ -839,20 +863,25 @@
 								<p> Data Integrity could be Compromised </p> 
 							</div>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 30b Notes -->
 						<aside class='notes'>
+							This method allows for easy access for a lot of users and provides a simple unified view of the data. However, if that many people have access (and editing rights) it means managing the data and keeping it clean can be difficult. 
 						</aside>
 					</section>
 				</section>
 				<section>
-					<!-- Slide 5 -->
-					<section data-background-image="../assets/generic/circle_remix.PNG">
-						
+					<!-- Slide 31a -->
+					<section data-background-image="../assets/generic/circle_remix.PNG">						
 						<h2> Common Storage Integration <br> (Data Warehouse)</h2>
 						<br>
 						<p> Similar to uniform access except it creates and stores a copy of the data </p>
 						<p> One of the most popular integration methods </p>
+						<!-- Slide 31a Notes -->
+						<aside class='notes'>
+							The most common method is to use a data warehouse. Instead of everyone having access to the unified view directly, a copy is made, so that if one person makes an edit to their source it will not be reflected until the copy is updated.
+						</aside>
 					</section>
+					<!-- Slide 31b -->
 					<section data-background-image="../assets/generic/circle_remix.PNG">
 						<h2> Common Storage Integration <br> (Data Warehouse)</h2>
 						<div class='row'>
@@ -870,21 +899,23 @@
 								<p> Higher Maintenance Costs </p> 
 							</div>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 31b Notes -->
 						<aside class='notes'>
+							The advantage of this is that data integrity can be maintained (and controlled) allowing for enhanced data analytics as users can trust the data is in a useable form. However, this does mean the unfied file has to be stored somewhere (and maintained) which carries more costs than hosting the sources locally.
 						</aside>
 					</section>
 				</section>
-				<!-- Slide 4 -->
+				<!-- Slide 32 -->
 				<section data-background-image="../assets/generic/section.PNG">
 					<div class="wrap aligncenter">
 						<span class='title'> Rules and Policies</span>          
 					</div>
-					<!-- Slide 4 Notes -->
+					<!-- Slide 32 Notes -->
 					<aside class='notes'>
+						Data integration potentially carries a range of risks around security and GDPR. In this section we will discuss how we can mitigate for these. Ask the group: what do  you think the greatest security risks are with data integration?
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 33 -->
 				<section data-background-image="../assets/generic/table_back.PNG">
 					<div style='font-size:35px'>
 						<p> You must specifiy security policies (e.g. who has access?) </p>
@@ -895,11 +926,12 @@
 							<li> Validate the column names against a mapping document </li>
 						</ul>			
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 33 Notes -->
 					<aside class='notes'>
+						With data (particularly PII or insider data) the question has to be, does this person need access? GDPR states that data must be processed in a manner which secures its security and used in a way which is relevant. A way to ensure this is to only give access to those who need it, so having a set of security policies and rules (including how to get access approval and how they data should be used) should be established. To help protect data integrity, the data itself should not be changed once it has been integrated- it should be in the form exactly as you defined it. You should caary out validation checks throughout the process to ensure the source data is in the correct form, the column names are mapping correctly and other errors (such as incorrect data types, null values and outliers) are identified and dealt with. You should also check that there isn't a 'back door' that will allow users (potentially malicious) to gain access.
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 34 -->
 				<section data-background-image="../assets/generic/table_back.PNG">
 					<div style='font-size:35px'>
 						<p> Verification is also carried out on the Data Warehouse </p>
@@ -909,23 +941,26 @@
 							<li> Verify the data has not been duplicated in the Data Warehouse </li>
 					</ul>
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 34 Notes -->
 					<aside class='notes'>
+						You should also verify the data in the warehouse on a regular basis. Make sure it is accurate and up to data and being used exactly as specified (this is a part of GDPR compliance). If the data is no longer relevant it should be removed from the warehouse. 
 					</aside>
 				</section>
-				<!-- Slide 5 -->	
+				<!-- Slide 35a -->	
 				<section>
 					<section data-background-image="../assets/generic/main.PNG">
 						<div class='r-stack'>
 							<h1 class='fragment fade-out' style='color:#4d61f4' data-fragment-index="0"> If you are wanting to use Business Data... </h1>
 							<h1 class='fragment' style='color:#ff7c66' data-fragment-index="0"> Get Permission from the Data Owner! </h1>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 35a Notes -->
 						<aside class='notes'>
+							Something else you will need to consider is if you do not own the data you are trying to integrate...
 						</aside>
 					</section>
+					<!-- Slide 35b -->
 					<section data-background-image="../assets/generic/main.PNG" >
-						<div style='color:#64abff'>
+						<div style='color:#242456'>
 							<p> Data owners are given the right to decode who can have access to enterprise data.</p>
 							<p> The process involved may be something like this:</p>
 							<p class='fragment'> A person (staff member, contractor, supplier, etc) requests access to information </p>
@@ -933,21 +968,23 @@
 							<p class='fragment'> A techinical resources (usually a DBA) physically grants permission to an application, database or other data store containing the data. </p>
 							<p class='fragment'> Often the permission follows a CRUD schema (create, read, update, delete)</p>
 						</div>
+						<!-- Slide 35b Notes -->
 						<aside class='notes'>
-							DBA (Database Administrator)
+							Like any intellectual property, the owner has the right who can have (and not have) access. This will need to be justified in a business context (if internal) and potentially have a contract drawn up (if external) to gain access. Normally the process to request access is as follows: you make the request, someone will review the request (potentially clarifying details), a database administrator (DBA) will grant access (if approved) and provide instructions on how you can retreive or connect the data. Access permission should be reviewed regularly, with permissions updated or removed as necessary.
 						</aside>
 					</section>
 				</section>
-				<!-- Slide 4 -->
+				<!-- Slide 36 -->
 				<section data-background-image="../assets/generic/section.PNG">
 					<div class="wrap aligncenter">
 						<span class='title'> ETL</span>          
 					</div>
-					<!-- Slide 4 Notes -->
+					<!-- Slide 36 Notes -->
 					<aside class='notes'>
+						Back in module 1 we briefly looked at a process called ETL. Does anyone remember what it stands for? This is a process commonly used with data integration.
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 37 -->
 				<section data-background-image="../assets/generic/strike_force.PNG">
 					<div class='row'>
 						<div class='col'> 
@@ -961,23 +998,25 @@
 							<h1 class='fragment' style='color:#4d61f4'> Load </h1>
 						</div>
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 37 Notes -->
 					<aside class='notes'>
+						ETL stands for Extract, Transform, Load and we will review each step in the following slides. 
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 38 -->
 				<section data-background-image="../assets/generic/fun_box.PNG">
 					<div style='color:#4d61f4;font-size:35px'>
 						<p> A process of <u>Data Integration</u> from <u>Multiple Sources</u></p>
 						<p> It allows business the ability to gather data from multiple sources and consolidate into a single, centralised location </p>
 						<p> This can be hard coded or using a licensed product </p>
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 38 Notes -->
 					<aside class='notes'>
+						ETL is the process businesses follow to integrate their data, you can gather data from a multitude of disparate sources into one unified view. As discussed earlier, this can be done manually or by using prebuilt software such as middleware, applications or data warehouses.
 					</aside>
-				</section>
-				<!-- Slide 5 -->
+				</section>				
 				<section>
+					<!-- Slide 39a -->
 					<section data-background-image="../assets/generic/strike.PNG">
 						<div class='row'>
 							<div class='col'>
@@ -989,16 +1028,19 @@
 									<li class='fragment'> Other system comes in and grabs the data </li>
 								</ul>
 								<br>
+								<br>
 								<p class='fragment'> Commonly done with SQL queries if data is in databases </p>
 							</div>
 							<div class='col'>
 								<h1 style='color:#f4f4f4'> Extract </h1>
 							</div>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 39a Notes -->
 						<aside class='notes'>
+							The first stage in the ETL process is to extract the data from the disparate sources. By this point the data profiling will have already been carried out, so the developer would know which columns are being extracted, what their datatypes and formats are as well as other summary statistics. There are two main methods, either the source sends out a copy of the data (keeping a local copy) or the system removes the data from the source directly (no local copy). This is often done using SQL queries.
 						</aside>
 					</section>
+					<!-- Slide 39b -->
 					<section data-background-image="../assets/generic/main.PNG">
 						<h1> Extraction </h1>
 						<br>
@@ -1018,7 +1060,12 @@
 						</div>
 						<br>
 						<h3> Pandas is not just a data analysis library but can also be used for extraction </h3>
+						<!-- Slide 39b Notes -->
+						<aside class='notes'>
+							You have already met a method of extraction- pandas! When you import a dataset into a pandas workspace you are extracting data (the whole ETL process can manually be done in Jupyter Notebook as you will see). 
+						</aside>
 					</section>
+					<!-- Slide 39c -->
 					<section data-background-image="../assets/generic/main.PNG">
 						<h1> Extraction </h1>
 						<br>
@@ -1036,9 +1083,13 @@
 								<img src='assets/session_1/extract_2.PNG'>
 							</div>
 						</div>
+						<!-- Slide 39c Notes -->
+						<aside class='notes'>
+							We will see in a couple of minutes that it is possible to connect a SQL database directly to a python notebook using libraries such as psycopg2. This allows us to write SQL queries in python.
+						</aside>
 					</section>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 40 -->
 				<section data-background-image="../assets/generic/tweenies.PNG">
 					<div class='row'>
 						<div class='col'></div>
@@ -1049,12 +1100,13 @@
 							<p> Complete Section 1: Extraction </p>
 						</div>
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 40 Notes -->
 					<aside class='notes'>
+						Open the notebook and connect the postgres server to the python workbook, demonstrate how to write some queries and run them. Note, extracting the sales table might take a while so you may want to add the LIMIT 100 argument to your query. Then allow apprentices 10 minutes to extract the rest of the data and explore.
 					</aside>
 				</section>
-				<!-- Slide 5 -->
 				<section>
+					<!-- Slide 41a-->
 					<section data-background-image="../assets/generic/strike.PNG">
 						<div class='row'>
 							<div class='col'>
@@ -1067,10 +1119,12 @@
 								<h1 style='color:#f4f4f4'> Transform </h1>
 							</div>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 41a Notes -->
 						<aside class='notes'>
+							Once you have extracted your data you will need to make sure all of it is compatible and in a useable form. This means applying transformations to the data which sometimes can be simple, but sometimes near on impossible (especially with unstructured data). This is why it is important to profile the data at source, verifying it is in a useable form. Ask the apprentices what transformations may be necessary.
 						</aside>
 					</section>
+					<!-- Slide 41b -->
 					<section data-background-image="../assets/generic/main.PNG">
 						<p> Transformations could include:
 						<ul class='fragment' style='display:inline-block;text-align:left'>
@@ -1079,9 +1133,14 @@
 							<li class='fragment'> Aggregation and normalisation </li>
 							<li class='fragment'> Calculations </li>
 							<li class='fragment'> Dealing with duplicate values </li>
-							<li class='fragment'> Data Validation </li>
+							<li class='fragment'> Data validation </li>
 						</ul>
+						<!-- Slide 41b Notes -->
+						<aside class='notes'>
+							Go through the list, ask if any others can be added.
+						</aside>
 					</section>
+					<!-- Slide 41c -->
 					<section data-background-image="../assets/generic/main.PNG">
 						<h1> Transformation </h1>
 						<div class='row'>
@@ -1094,7 +1153,12 @@
 								<img src='assets/session_1/convert.PNG'>
 							</div>
 						</div>
+						<!-- Slide 41c Notes -->
+						<aside class='notes'>
+							We saw back in the EDA python session there is a wide array of funcitons available to transform data. Middleware and application software, as well as data warehouses will also have transformation tools to help with this process. Although, doing it yourself initially is often a worthwhile thing to do so you know what to expect.
+						</aside>
 					</section>
+					<!-- Slide 41d -->
 					<section data-background-image="../assets/generic/main.PNG">
 						<h1> Transformation </h1>
 						<div class='row'>
@@ -1107,9 +1171,13 @@
 								<img src='assets/session_1/rename.PNG'>
 							</div>
 						</div>
+						<!-- Slide 41d Notes -->
+						<aside class='notes'>
+							Ask apprentices why duplicated data is a problem (increased storage costs, redundant information ,etc)
+						</aside>
 					</section>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 42 -->
 				<section data-background-image="../assets/generic/tweenies.PNG">
 					<div class='row'>
 						<div class='col'></div>
@@ -1120,12 +1188,13 @@
 							<p> Complete Section 2: Transformation </p>
 						</div>
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 42 Notes -->
 					<aside class='notes'>
+						Give apprentices 10-15 minutes to work through the transformation questions. Help apprentices appreciate that transforming data is the data cleaning stage and should not be rushed as any errors here could lead to expensive conequences down the line (incorrect analysis, failure to load, etc).
 					</aside>
 				</section>
-				<!-- Slide 5 -->
 				<section>
+					<!-- Slide 43a -->
 					<section data-background-image="../assets/generic/strike.PNG">
 						<div class='row'>
 							<div class='col'>
@@ -1140,24 +1209,22 @@
 								<h1 style='color:#f4f4f4'> Load </h1>
 							</div>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 43a Notes -->
 						<aside class='notes'>
+							The final step in the process is loading, combining these transformed sources into one unified view. The data structure of the target should have been pre definied and the data should join cleanly (if previous steps have been followed properly...). This could loading data into a warehouse, or just creating one table.
 						</aside>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 43b -->
 					<section data-background-image="../assets/generic/main.PNG">
 						<h1> Loading </h1>						
 						<img src='assets/session_1/load_1.PNG'>
-					</section>
-					<section data-background-image="../assets/generic/main.PNG">
-						<h1> Loading </h1>						
-						<img src='assets/session_1/load.PNG'>					
-						<!-- Slide 5 Notes -->
+						<!-- Slide 43b Notes -->
 						<aside class='notes'>
+							Any join is an example of loading (including VLOOKUP) and joins in python or SQL.
 						</aside>
 					</section>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 44 -->
 				<section data-background-image="../assets/generic/tweenies.PNG">
 					<div class='row'>
 						<div class='col'></div>
@@ -1168,73 +1235,83 @@
 							<p> Complete Section 3: Loading </p>
 						</div>
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 44 Notes -->
 					<aside class='notes'>
+						Give 5 minutes for apprentices to load the data into one unified view. If they would like, they can explore doing this in BigQUery but there won't be time to do this in the session itself.
 					</aside>
 				</section>
-				<!-- Slide 4 -->
+				<!-- Slide 45 -->
 				<section data-background-image="../assets/generic/section.PNG">
 					<div class="wrap aligncenter">
 						<span class='title'> Security</span>          
 					</div>
-					<!-- Slide 4 Notes -->
+					<!-- Slide 45 Notes -->
 					<aside class='notes'>
+						ETL is the process being data integration, and as discussed earlier needs to be done in a way which protects the data from being accessed by the wrong people.
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 46 -->
 				<section data-background-image="../assets/generic/box_serious.PNG">
 					<p> Some tips to help you run your ETL processes more securely: </p>
 					<ul class='fragment' style='display:inline-block;text-align:left'>
 						<li class='fragment'> Download the data onto a secure server </li>
 						<li class='fragment'> Run ETL processes on local files or business/enterprise databases </li>
-						<li class='fragment'> If the data owner has not given you the necessary permissions to write data to the target you will need tohand your script to the development team to implement </li>
+						<li class='fragment'> If the data owner has not given you the necessary permissions to write data to the target you will need to hand your script to the development team to implement </li>
 					</ul>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 46 Notes -->
 					<aside class='notes'>
-						Normally scripts will run on business servers and not be connected to the internet (unless your data source is online)
+						Normally scripts will run on business servers and not be connected to the internet (unless your data source is online). Therefore when doing ETL it should be done on your organisation's secure server (with a VPN on your computer). If your company doesn't have a server for this, there are secure commercial options such as AWS. 
 					</aside>
 				</section>
-				<!-- Slide 4 -->
+				<!-- Slide 47 -->
 				<section data-background-image="../assets/generic/section.PNG">
 					<div class="wrap aligncenter">
 						<span class='title'> Automating the Process</span>          
 					</div>
-					<!-- Slide 4 Notes -->
+					<!-- Slide 47 Notes -->
 					<aside class='notes'>
+						Integrating data into a warehouse can be a long process (especially if done manually). If you are looking to do regular batch uploads, it is worth considering automation as a way to save time and costs.
 					</aside>
 				</section>
-				<!-- Slide 5 -->
 				<section>
+					<!-- Slide 48a -->
 					<section data-background-image="../assets/generic/fun_box.PNG">
-						<p style ='color:#64abff;font-size:35px'> If your ETL process is unlikely to be a one off then it may be more efficient to automate the process. 	</p>	
-						<p style ='color:#64abff;font-size:35px'> You will need to assess when new data becomes available to determine how often your scripts need to run.</p>
-						<!-- Slide 5 Notes -->
+						<p style ='color:#4d61f4;font-size:35px'> If your ETL process is unlikely to be a one off then it may be more efficient to automate the process. 	</p>	
+						<p style ='color:#4d61f4;font-size:35px'> You will need to assess when new data becomes available to determine how often your scripts need to run.</p>
+						<!-- Slide 48a Notes -->
 						<aside class='notes'>
+							Read the quote. If you are regularly wanting to integrate then you will want to automate. You will need to assess how often this will be necessary (when would you expect new data to come in?) to know how often the script needs to run.
 						</aside>
 					</section>
+					<!-- Slide 48b -->
 					<section data-background-image="../assets/generic/main.PNG">
 						<h1> Task Scheduling </h1>
 						<div class='row'>
 							<div class='col'>
-								<p> Microsoft has a 'Task Scheduler which can create batch files </p>
+								<p> Microsoft has a 'Task Scheduler' which can create batch files </p>
 								<p> To help with performance, scripts should be run out of hours to ensure performance is not slowed down </p>
 							</div>
 							<div class='col'>
 								<img src='assets/session_1/schedule.PNG'>
 							</div>
 						</div>
+						<!-- Slide 48b Notes -->
+						<aside class='notes'>
+							For example, you could use Microsoft's Task scheduler to plan when batch uploads should happen (and therefore when the scripts should run). Integrating data to a warehouse will often require the warehouse to be offline, so to avoid disruption this should be scheduled for outside normal working hours. 
+						</aside>
 					</section>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 49 -->
 				<section data-background-image="../assets/generic/section.PNG">
 					<div class="wrap aligncenter">
 						<span class='title'> Licenses vs Coding </span>          
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 49 Notes -->
 					<aside class='notes'>
+						As we have discussed, ETL and data integration has a variety of methods which range from coding it yourself manually or using a licensed software. Let's examine both.
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 50 -->
 				<section data-background-image="../assets/generic/circle_remix.PNG">				
 					<div class='wrap' style='width:max-content'>
 						<p style='font-size:40px;color:#4d61f4'><b>Advantages</b> </p>
@@ -1259,11 +1336,12 @@
 							</div>
 						</div>
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 50 Notes -->
 					<aside class='notes'>
+						Ask apprentices to suggest the advantages to using a license and the advantages of coding. Run through the examples on the screen.
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 51 -->
 				<section data-background-image="../assets/generic/circle_remix.PNG">					
 					<div class='wrap' style='width:max-content'>
 						<p style='font-size:40px;color:#4d61f4'><b>Disadvantages</b> </p>
@@ -1287,16 +1365,17 @@
 							</div>
 						</div>
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 51 Notes -->
 					<aside class='notes'>
+						Do the same with the disadvantages
 					</aside>
 				</section>
-				<!-- Slide 4 -->
+				<!-- Slide 52 -->
 				<section data-background-image="../assets/generic/section.PNG">
 					<div class="wrap aligncenter">
 						<span class='title'> Master Data Management</span>          
 					</div>
-					<!-- Slide 4 Notes -->
+					<!-- Slide 52 Notes -->
 					<aside class='notes'>
 					</aside>
 				</section>
