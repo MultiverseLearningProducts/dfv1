@@ -1377,24 +1377,27 @@
 					</div>
 					<!-- Slide 52 Notes -->
 					<aside class='notes'>
+						We have spoken a bit today about data management and why it is important (maintaining integrity, etc). Something you should also be aware of is master data.
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 53 -->
 				<section data-background-image="../assets/generic/fun_box.PNG">
 					<p style ='color:#64abff;font-size:35px'> Important data about items in an organisation is called <u> Master Data </u> 	</p>
 					<p style ='color:#64abff;font-size:35px'> This includes <u>customer and product information</u> as well as <u> organisational structure </u>	</p>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 53 Notes -->
 					<aside class='notes'>
+						Master data is the important data in an organisation such as customer data as well organisational structure. It is the data you need to make key business decisions and should be managed and maintained carefully. 
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 54 -->
 				<section data-background-image="../assets/generic/fun_box.PNG">
 					<p style ='color:#64abff;font-size:35px'> In business, master data management (MDM) <u>comprises the processes, governance, policies, standards and tools</u> that consistently define and <u>manage the critical data of an organisation</u> to provide a single point of reference. 	</p>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 54 Notes -->
 					<aside class='notes'>
+						The process of managing this data is called master data management and relates to all aspects of storing, protecting and using it as defined by the organisation. It means all the relevant information can be accessed from one location for ease.
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 55 -->
 				<section data-background-image="../assets/generic/strike_force.PNG">
 					<div class='row'>
 						<div class='col'>
@@ -1402,34 +1405,38 @@
 						</div>
 						<div class='col'>
 							<p class='fragment'> Redundancy Elimination </p>
-							<p class='fragment'> Master Dara Edits </p>
+							<p class='fragment'> Master Data Edits </p>
 							<p class='fragment'> Data Consistency </p>
 							<p class='fragment'> Access Based on Role </p>
 						</div>
 					</div>
-					<!-- Slide 5 Notes -->
-					<aside>
-					</aside class='notes'>
+					<!-- Slide 55 Notes -->
+					<aside class='notes'>
+						The benefit of having a MDM is that everyone who needs access to this data is clear on what the rules are (or can at least easily reference them) meaning redundancy is eliminated, confidence around the data quality and knowledge about who has access and why they have access. It is important for an organisation to maintain this information for employees to avoid confusion around data useage. 
+					</aside >
 				</section>
-				<!-- Slide 4 -->
+				<!-- Slide 56 -->
 				<section data-background-image="../assets/generic/section.PNG">
 					<div class="wrap aligncenter">
 						<span class='title'> Testing Strategies</span>          
 					</div>
-					<!-- Slide 4 Notes -->
+					<!-- Slide 56 Notes -->
 					<aside class='notes'>
+						The final section of this module covers testing strategies, in other words, how can we check that our process has worked? It is part of the validation and verification process of making sure our ETL and data integration processes have done what we expected. 
 					</aside>
-				</section>
-				<!-- Slide 5 -->
+				</section>				
 				<section>
+					<!-- Slide 57a -->
 					<section data-background-image="../assets/generic/fun_box.PNG">
 						<div class="wrap size-50 aligncenter">
-							<span style ='color:#59d8a1;font-size:100px;font-weight:bold;text-align:center'> Why do we need testing strategies? </span>
+							<span style ='color:#4d61f4;font-size:100px;font-weight:bold;text-align:center'> Why do we need testing strategies? </span>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 57a Notes -->
 						<aside class='notes'>
+							Ask apprentices why they think we need to test our integration processes.
 						</aside>
 					</section>
+					<!-- Slide 57b -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<p style='font-size:35px;color:#4d61f4'> To ensure that unified data sets are:</p>
 						<ul class='fragment' style='display:inline-block;text-align:left;font-size:35px'>
@@ -1437,9 +1444,13 @@
 							<li class='fragment'> Complete </li>
 							<li class='fragment'> Up to Date </li>
 						</ul>
+						<!-- Slide 57b Notes -->
+						<aside class='notes'>
+							By testing our processes we can be confident the data in the unified set is correct, complete (no missing data or redundant values) and up to date (accurate). Keeping in mind that the purpose of integrating our data into one source is so we can perform complex analytics quickly, it is important we know the data is correct and that the processes work as intended.
+						</aside>
 					</section>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 58 -->
 				<section data-background-image="../assets/generic/strike_force.PNG">
 					<div class='row'>
 						<div class='col'>
@@ -1451,11 +1462,12 @@
 							<p class='fragment'> Performance Stress Testing (PST)</p>								
 						</div>
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 58 Notes -->
 					<aside class='notes'>
+						There are three types of testing strategy (anyone remember what they were called when we showed them earlier?). We will cover each in a bit more detail.
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 59 -->
 				<section data-background-image="../assets/generic/strike.PNG">
 					<div class='row'>
 						<div class='col'>
@@ -1474,11 +1486,13 @@
 							<h2 style='color:#f4f4f4'> Technical Acceptance Testing (TAT) </h2>
 						</div>
 					</div>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 59 Notes -->
 					<aside class='notes'>
+						The first is called Technical Acceptance Testing (TAT) which is simply testing our scripts to ensure they work as intended. You will have been doing this already when python coding, as when you write a function or control flow you will have checked to make sure it worked. If anyone has been on CodeWars you will know they run tests against your functions, which is a form of TAT.
 					</aside>
 				</section>
 				<section>
+					<!-- Slide 60a -->
 					<section data-background-image="../assets/generic/main.PNG">
 						<h1 style='color:#4d61f4'> TAT: Unit Tests </h1>
 						<br>
@@ -1501,12 +1515,13 @@
 								</code></pre>
 							</div>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 60a Notes -->
 						<aside class='notes'>
+							A TAT unit test will run through a script and check that everything works as intended. To do this in python we use the unittest library and once we have defined a function we then create a use case where we tell it what the output should be. The unit test will verify that the function works correctly.
 							Demonstrate this with class. In your Jupyter navigator go to New, then select Text File. Write in the code on the screen then name it test_fun.py and then save. Go back to the navigator and then go to New, then select Terminal. Check what folder the terminal is running in, and if necessary navigate to the one you saved test_fun.py in. Then type python -m unittest and run. 
 						</aside>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 60b -->
 					<section data-background-image="../assets/generic/tweenies.PNG">
 						<div class='row'>
 							<div class='col'>
@@ -1523,32 +1538,35 @@
 								</ul>
 							</div>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 60b Notes -->
 						<aside class='notes'>
+							Give apprentices 10 minutes to attempt this section, test_sum.py and test_average.py have already been created for coach useage for when you go through solutions.
 						</aside>
 					</section>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 61 -->
 				<section data-background-image="../assets/generic/main.PNG">
 					<h1 style='color:#4d61f4'> TAT: Integration Tests </h1>
 					<br>
 					<p> Integration tests verify that different modules or services used by your application work well together. </p>
 					<p> For example, it can be testing the interaction with a database, i.e. are you able to write queries? </p>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 61 Notes -->
 					<aside class='notes'>
+						An integration test verifies that the different modules or services work as intended. If you connect two sources together, do they actually integrate? Does the server you connected your Tableau workbook to actually communicate? These sort of tests check the pipeline processes (like a plumber checking piping connections are sealed correctly and won't leak or block when the water flows).
 					</aside>
 				</section>
-				<!-- Slide 5 -->
+				<!-- Slide 62 -->
 				<section data-background-image="../assets/generic/main.PNG">
 					<h1 style='color:#4d61f4'> TAT: Functional Tests </h1>
 					<br>
 					<p> These focus on the business requirements of an application. They <u>only verify the output of an action</u> and do not check the intermediate states of the system when performing that action. </p>
-					<!-- Slide 5 Notes -->
+					<!-- Slide 62 Notes -->
 					<aside class='notes'>
+						A TAT functional test verifies that the process works as intended from a business point of view. They ensure the output is what you wanted from the brief. These can be carried out by the stakeholder themselves to check the output is what they wanted. To recap: unit tests check the code/functions work, integration tests if the different software/sources interact with each other properly and functional tests the process meets the business requirement from the project brief.
 					</aside>
 				</section>
-				<!-- Slide 5 -->
 				<section>
+					<!-- Slide 63a -->
 					<section data-background-image="../assets/generic/strike.PNG">
 						<div class='row'>
 							<div class='col'>
@@ -1558,13 +1576,15 @@
 								<p> Can be done manually or by automation </p>
 							</div>
 							<div class='col'>
-								<h2 style='color:#f4f4f4'> User Acceptance Testing (TAT) </h2>
+								<h2 style='color:#f4f4f4'> User Acceptance Testing (UAT) </h2>
 							</div>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 63a Notes -->
 						<aside class='notes'>
+							A UAT checks if the process meets the business requirements (similar to a TAT functional test). The user checks the process to ensure they are satisfied it works. This can be done manually or automatically (check for key words, reports in the correct format).
 						</aside>
 					</section>
+					<!-- Slide 63b -->
 					<section data-background-image="../assets/generic/strike.PNG">
 						<div class='row'>
 							<div class='col'>
@@ -1576,16 +1596,17 @@
 								</ul>
 							</div>
 							<div class='col'>
-								<h2 style='color:#f4f4f4'> User Acceptance Testing (TAT) </h2>
+								<h2 style='color:#f4f4f4'> User Acceptance Testing (UAT) </h2>
 							</div>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 63b Notes -->
 						<aside class='notes'>
+							Ask the apprentices what value these sort of tests would have. UAT's allow you to confirm you have met the business requirements and also verify the format (font, layout, colours, etc) of the end product.
 						</aside>
 					</section>
 				</section>
-				<!-- Slide 5 -->
 				<section>
+					<!-- Slide 64a -->
 					<section data-background-image="../assets/generic/strike.PNG">
 						<div class='row'>
 							<div class='col'>
@@ -1595,13 +1616,15 @@
 								<p> They check the behaviours of the system when it is under a significant load </p>								
 							</div>
 							<div class='col'>
-								<h2 style='color:#f4f4f4'> Performance Stress Testing (TAT) </h2>
+								<h2 style='color:#f4f4f4'> Performance Stress Testing (PST) </h2>
 							</div>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 64a Notes -->
 						<aside class='notes'>
+							Finally we have performance stress testing which checks if your process can work to scale. If hundreds of users require use of your warehouse, you don't want it breaking when they all try to access it at once. This is the equivalent of seeing how many items you can hold in a shopping bag before it breaks. If you are expecting huge amounts of users you need to ensure the system is robust enough to handle it.
 						</aside>
 					</section>
+					<!-- Slide 64b -->
 					<section data-background-image="../assets/generic/strike.PNG">
 						<div class='row'>
 							<div class='col'>
@@ -1614,24 +1637,26 @@
 								</ul>
 							</div>
 							<div class='col'>
-								<h2 style='color:#f4f4f4'> Performance Stress Testing (TAT) </h2>
+								<h2 style='color:#f4f4f4'> Performance Stress Testing (PST) </h2>
 							</div>
 						</div>
-						<!-- Slide 5 Notes -->
+						<!-- Slide 64b Notes -->
 						<aside class='notes'>
+							Ask the apprentices what else these tests might be checking for. Apart from checking if the process can work to scale, they are also ensuring it will work reliably with little lag time when multiple users are accessing it. They also want to check that data is available quickly when requested.
 						</aside>
 					</section>
 				</section>
-				<!-- Slide 4 -->
+				<!-- Slide 65 -->
 				<section data-background-image="../assets/generic/section.PNG">
 					<div class="wrap aligncenter">
 						<span class='title'> Recap</span>          
 					</div>
-					<!-- Slide 4 Notes -->
+					<!-- Slide 65 Notes -->
 					<aside class='notes'>
+						Time to recap the day
 					</aside>
 				</section>
-				<!-- Slide 3 -->
+				<!-- Slide 66 -->
 				<section data-background-image="../assets/generic/info_yellow.PNG">
 					<div class="wrap size-60 bg-white" style='width:max-content'>
 						<h1> Learning Objectives </h1>
@@ -1641,9 +1666,9 @@
 							<li> <b> Explore </b> different testing strategies for Data Integration</li>
 						</ul>          
 					</div>
-					<!-- Slide 3 Notes -->
+					<!-- Slide 66 Notes -->
 					<aside class='notes'>
-						Run through learning objectives, again explain that the purpose is for apprentices to be able to justify their reasons for using or not using the tools they have available.
+						Run through learning objectives again, state how apprentices now have an understanding of what data integration is, how it works and why it is useful. In the next session you will be covering data synchronization and Gateway
 					</aside>
 				</section>
 			</div>
