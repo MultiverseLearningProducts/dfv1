@@ -1,1 +1,865 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Advanced Skills Lesson Plan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/multiverse_brand/Logo/01_Deep Space/PNG/Multiverse_Symbol_RGB_Navy.png">
 
+    <style>
+      th.ColColor{background-color:#4d61f4;color:#f4f4f4;}
+    </style>
+  </head>
+  <body style='font-family:atlas;font-size:25px;text-align:center;background-color:#f4f4f4;max-width:1000px;margin:auto;color:#242456'>
+    <div style="background-image: url('../assets/generic/banner_im.PNG');background-size: cover; height:480px; padding-top:80px;"></div>
+    <p id='top' style ='font-size: 60px; font-weight:bold'> Tools of the Trade: Lesson Plan </p>
+    <br>
+    <p><i> 6 Hours </i></p>
+    <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    <br>
+    <div id='contents'>
+        <p style ='font-size: 50px'> <i> Contents </i> </p>
+        <br>
+        <div id=table-wrap >
+            <table style='width:100%;border:1px solid black'>
+                <tr style="text-align:left; font-size:15px">
+                    <th class='ColColor'><b>Section</b></th>
+                </tr>
+                <tr>
+                    <td style="text-align:left; font-size:15px"><a href=#overview> Overview</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left; font-size:15px"><a href=#prereqs>Prerequisites</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left; font-size:15px"><a href=#learning_obs> Learning Objectives</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left; font-size:15px"><a href=#tcs> Technical Knowledge</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left; font-size:15px"><a href=#sabs> Skills, Attributes and Behaviours</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left; font-size:15px"><a href=#km1> KM1 Data Anlaysis Tools Syllabus</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left; font-size:15px"><a href=#recording> Recordings</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left; font-size:15px"><a href=#session_outline> Session Outline</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left; font-size:15px"><a href=#add_resource> Additional Resources</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left; font-size:15px"><a href=#coach_notes> Coach Notes</a></td>
+                </tr>
+            </table>
+            <br>
+            <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        </div>
+    </div>
+    <div id='overview'>
+        <p style ='color:black; font-size: 50px'> <i> Overview </i> </p> 
+        <br>
+        <p> In the final MultiVerse delivery module we will be covering advanced skills the apprentices will need to be aware of for their final exam- data integration, ETL nd data synchronization. We will explore each of these in detail, discussing the benefits, uses and drawbacks of each. Apprentices will gain an appreciation for how they can use data more effectively through tools such as data warehouses. </p>
+        <br>
+        <p> The final part of the module will help apprentices prepare for their final exam, Gateway and EPA by telling them what to expect and how to prepare. </p>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        <br>
+    </div>
+    <div id='prereqs'>
+        <p style ='font-size: 50px'> <i> Prerequisites </i> </p>
+        <br>
+        <ul style='display:inline-block;text-align:left'>
+            <li> Apprentices will need to have <a href='https://www.r-project.org/'>R</a> installed on their computer (should have come with Anaconda) </li>  
+            <li> Apprentice OTJT should be at 100% or above </li>
+            <li> Apprentice to have completed DS Immersives </li>
+        </ul>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    </div>
+    <br>
+    <div id= learning_obs>
+        <p style ='font-size: 50px'> <i> Learning Objectives </i> </p>
+        <br>
+        <ul style='display:inline-block;text-align:left'>
+            <li> Understand the fundamental concepts of <b> Big Data </b></li>
+            <li> Justify the use (or lack of) Big Data technologies in <b> your role </b></li>
+            <li> Critically evaluate the difference in using a <b> data platform</b> and <b> coding it yourself </b></li>
+            <li> Understand how <b> R </b> can be utilised in your analysis </li>
+        </ul>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    </div>
+    <br>
+    <div id=assignment>
+        <p style =' font-size: 50px'> <i> Assignment </i> </p>
+        <br>
+        <h2 style ='font-size: 40px'> Part 1 </h2>
+        <br>
+        <p><b> Task </b></p>
+        <br>
+        <p> Justify the use (or lack of) Big Data technologies in your role </p>
+        <br>
+        <p><b> Things to Consider </b></p>
+        <br>
+        <ul style='display:inline-block;text-align:left'>
+            <li> How does your company make use of Big Data technologies? </li>
+            <li> Do you have opportunities to use them in your role? </li>
+            <li> Do you think you could use these technologies effectively in your role? </li>
+            <li> Do you think your company uses them effectively? </li>
+            <li> What do you think the potential business impact of your companies attitude towards Big Data will be?</li>
+        </ul>
+        <br>
+        <h2 style ='font-size: 40px'> Part 2 </h2>
+        <br>
+        <p><b> Task </b></p>
+        <br>
+        <p> Embed R knowledge and skills by building a model to predict species of iris </p>
+        <br>
+        <p><b> Things to Consider </b></p>
+        <br>
+        <p> How can you use these skills in your role? Revisit a previous project and see if you can recreate it using these techniques </p>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    </div>
+    <br>
+    <div id=tcs>
+        <p style ='font-size: 50px'> <i> Technical Knowledge </i> </p>
+        <br>
+        <ul style='display:inline-block;text-align:left'>
+            <li>Identify, collect and migrate data to/from a range of internal and external systems (TC1)</li>
+            <li>Interpret and apply the organisations data and information security standards, policies and procedures to data management activities (TC3)</li>
+            <li>Perform routine statistical analyses and ad-hoc queries (TC6)</li>
+            <li>Use a range of analytical techniques such as data mining, time series forecasting and modelling techniques to identify and predict trends and patterns in data (TC7)</li>
+            <li>Apply the tools and techniques for data analysis, data visualisation and presentation (TC8)</li>
+            <li>Works with organisation’s data architecture (TC11)</li>
+            <li>Assist with data quality checking and cleansing (TC12)</li>
+        </ul>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    </div>
+    <br>
+    <div id=sabs>
+        <p style ='font-size: 50px'> <i> Skills, Attitudes and Behaviours </i> </p>
+        <br>
+        <ul style='display:inline-block;text-align:left'>
+            <li>Logical and creative thinking skills (SAB1)</li>
+            <li>A thorough and organised approach (SAB5)</li>
+            <li>Maintain productive, professional and secure working environment (SAB8)</li>
+        </ul>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    </div>
+    <br>
+    <div id=km1>
+        <p style ='font-size: 50px'> <i> KM1 Data Analysis Tools Syllabus </i> </p>
+        <br>
+        <ul style='display:inline-block;text-align:left'>
+            <li>Explain the nature and challenges of data volumes being process through integration activities and how a programming approach can improve this:
+            <ul>
+                <li> Big Data (1.5)</li>
+                </ul></li>
+            <li> Capabilities and functions of statistical programming language: R (2.1) </li>
+        </ul>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    </div>
+    <br>
+    <div id= recording>
+        <p style ='font-size: 50px'> <i> Recordings (coach use only) </i> </p>
+        <br>
+        <a href='https://drive.google.com/drive/folders/1uXw2RfTfzVR1QEMRoAiX6hvWiZn4xzR8?usp=sharing'> Link </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    </div>
+    <br>
+    <div id='session_outline'>
+        <p style ='font-size: 50px'> <i> Session Outline </i> </p>
+        <br>
+        <table style='width:100%;border:1px solid black;border-collapse:collapse;padding:5px'>
+            <tr>
+                <th class='ColColor' style='text-align:left;font-size:15px;border:1px solid black'> Section </th>
+                <th class='ColColor' style='text-align:left;font-size:15px;border:1px solid black'> Approx. Timing </th>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#intro_1> Class Introduction</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#und_bd> Understanding Big Data</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#5v> Five V's</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 25 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#dev_fut> Developing the Future</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#how_work> How Does It Work?</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <i> Break </i> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#use_bd_role> Using Big Data in Your Role</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#ad_disad> Advantages and Disadvantages</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#bdp> Big Data Products</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 5 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#dat_plat> Data Platforms</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#pvc> Platforms vs Coding Yourself</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#r_set> Setting Up R</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 5 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#recap_1> Session 1 Recap</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 5 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#intro_2> Class Introduction</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#r_feat> Features of R</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 30 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#r_control> Control Flow in R</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 30 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#r_eda> EDA in R</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 35 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <i> Break </i> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 15 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#r_viz> Visualisation in R</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 35 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#r_lm> Linear Modelling in R</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 15 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#rstud> RStudio</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 5 Minutes </td>
+            </tr>
+            <tr>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#recap_2> Session 2 Recap</a> </td>
+                <td style='text-align:left;font-size:15px;border:1px solid black'> 5 Minutes </td>
+            </tr>
+        </table>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    </div>
+    <br>
+    <div id=add_resource>
+        <p style ='font-size: 50px'> <i> Additional Resources </i> </p>
+        <br>
+        <ul style='display:inline-block;text-align:left'>
+            <li><a href='https://www.statmethods.net/r-tutorial/index.html'> Basic R Tutorial </a></li>
+        </ul>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    </div>
+    <br>
+    <div id=coach_notes>
+        <p style ='font-size: 50px'> <i> Coach Notes </i> </p>
+        <br>
+        <table id='intro_1' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th class='ColColor' style=width:15%;text-align:left;font-size:15px > Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th  class='ColColor' style=width:15%;text-align:left;font-size:15px > Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ice breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        <br>
+        <table id='und_bd' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Understanding Big Data </td>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 20 Minutes </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Define what we mean by 'Big Data' </li></ul></td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> In this section we will be introducing the concept of Big Data and why it is important to both the apprentice and their employer.</p>
+                    <br>
+                    <p> Check for apprentice understanding of what Big Data is by asking them to annotate the screen. You can ask some follow up questions like:</p>
+                    <ul>
+                        <li> How would you use it in a working environment? </li>
+                        <li> What types of data do we mean by 'Big Data'? </li>
+                        <li> Does your organisation have a Big Data strategy?</li>
+                    </ul>
+                    <br>
+                    <p> Show apprentices the quote by McKinsey and ask for their opinion. State that organisations will need to continuously adapt to be competitive in their market due to the ever growing amount of data that is being generated. Not only storing this data (from social media, phones, imaging, etc) but analysing it too especially when it is not in usual structures. </p>    
+                    <br>
+                    <p> Lead a discussion around the fact that Big Data is not just about volume, but velocity too. Data is growing exponetially and companies need to keep up. Apart from storage there is no real limit to how big 'Big Data' can be but for it to be considered 'Big Data' it needs to be sufficiently big that traditional processors (like your computer) can not handle it. </p>
+                    <br>
+                    <p> Before showing the examples to apprentices, ask them to guess how much data twitter, NYSE and Facebook generate every day. You can show the apprentices the links (particularly with twitter) to see real time how it is growing.</p>
+                </td>                  
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        <br>
+        <table id='5v' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> The Five V's </td>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 25 Minutes </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Understand the characteristics that make up 'Big Data' </li></ul></td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> 
+                    <p> In this section you will be guiding apprentices through five facets of Big Data that apprentices should consider. These are volume, velocity, variety, veracity and value. For each section explain what these terms mean and are a mental checklist that apprentices should use when evaluating their data</p>
+                    <br>
+                    <p> Most of the notes are on the screen for this section, but take time to ask apprentices to annotate/suggest meaning to each and how they might look in their business. For example, how voluminous is the data they use regularly? What difference would it make to a company if they considered the value of Big Data? Also get them to consider the challenges posed by Big Data against the 5 v's, such as how difficult it is to keep up with fast flowing data, or how agile a dashboard will be if it is using live Big Data. </p>
+                    <br>
+                    <p> Give apprentices 10 minutes to complete the activity- in breakout rooms they should discuss the data they use in their everyday role and evaluate it against the 5 v's- how volumious, how fast, how varied, the data quality and the value to the organisation. They should share these in their room and be prepared to say in front of the whole group. If an open cohort try to make the breakout rooms be employer specific if possible.</p>
+                </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        <br>
+        <table id='dev_fut' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Developing the Future </td>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px>20 Minutes </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Understand the potential Big Data Analysis can have on our industries </li></ul></td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> In this section you will be helping apprentices understand the impact Big Data has had on the world and from there consider how it can impact their business. To start them off, ask how utilising Big Data technologies has impacted medical science.</p>
+                    <br>
+                    <p> Through use of Big Data human genome mapping has provided a detailed understanding of genetic makeup and lineage. The healthcare industry therefore is in a position where it can better predict genetic illnesses and provide interventions much earlier. Although data has grown this has seen a reduction in the cost to sequence one human genome. Are apprentices aware of any other businesses that have been able to leverage Big Data?
+                    </p>
+                    <br>
+                    <p> What about amazon? Alexa uses a combination of NLP and Big Data to provide a huge range of services. Give apprentices 10 minutes in breakout rooms to discuss and map out how they think Alexa makes recomendations. Once back, guide them through an example of how Alexa takes a command and uses NLP and Big Data to give its response. As an illustration there is a video of an alexa being given a command to switch on a light to demonstrate how quickly it works.</p>
+                </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        <br>
+        <table id='how_work' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> How it Works </td>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Understand the principles behind how Big Data technologies work </li></ul></td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> In this section you will be guiding apprentices to understand how Big Data technologies can make their analysis quicker. For example, think about how long it takes to process a few thousand rows of data on your computer, how much longer would this be if the rows numbered tens of millions? Big Data technology will help speed up this process. </p>
+                    <br>
+                    <p> Explain the concept of divide and conquer in the context of data analysis. Draw particular attention to the splitting of processing across several servers to speed up the process and avoid fatal errors from crashing </p>
+                    <br>
+                    <p> Gove apprentices 5 minutes to answer the maths question before discussing the answer. Use this as a platform to discuss how much more quickly their own analysis can be conducted if they use this technology</p>
+                </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        <br>
+        <table id='use_bd_role' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Using Big Data in your Role </td>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Consider how Big Data technology can be utilised in your role </li></ul></td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> In this section apprentices will be considering how they could use Big Data in their role after considering everything they have heard so far. Give them 5-10 minutes in breakout rooms to sound ideas off and then feedback by annotating the screen. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        <br>
+        <table id='ad_disad' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Advantages and Disadvantages </td>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 20 Minutes </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Justify the use of Big Data in analysis by considering the benefits and drawbacks </li></ul></td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> In this section you will lead a discussion on the pros and cons of using Big Data. In particular, get apprentices to consider their portfolio and how they can evidence this discussion. Run throigh the advantages and disadvantages and ask apprentices if they can suggest any others. Also ask how they feel about these and if they are justified. What are their thoughts?</p>
+                    <br>
+                    <p> For the activity give them 10 minutes to read the <a href='https://www.datamation.com/big-data/big-data-pros-and-cons.html'>article</a> and discuss their thoughts. Can they think up other arguments that support or disagree with the writer?</p></td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        <br>
+        <table id='bdp' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Big Data Products </td>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 5 Minutes </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Be aware of the various Big Data technologies that exist </li></ul></td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> This is the final section on Big Data and so far they have considered the theoretical implications of the technology. They have thought about how it works, how they can use it and the advantages and disadvantages. In this section run through the various technologies that exist, for example aws (Amazon), Spark and Hadoop (Apache), BigQuery (Google) and Azure (Microsoft). State that Hadoop was one of the first to come to market and many companies still use it. State that each has a wide array of functionality and integrate well with langauges such as python, git and R. Ask if any apprentices have experience of these softwares adn what they think.   </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        <br>
+        <table id='dat_plat' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Data Platforms </td>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 20 Minutes </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> 
+                    <ul> 
+                        <li> Consider the various platforms that exist </li>
+                        <li> Reflect on and justify the products you use </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> In this section you will guide apprentices through a discussion on the various data platforms that exist. Data analytics is a fast growing industry and many new products that make all aspects of a project (dtaa mining, storage, cleaning, analysis, visualising, modelling, etc) are coming onto the market. Many have been around for a long time and apprentices may have already been using them. It is important that in their portfolio that apprentices explain what software they used and justify why, this section will help them in that thought process.  </p> 
+                    <br>
+                    <p> Go through each of the types of platform and ask what experience the apprentices have of each. Do any make use of visualisation software? What are the pros and cons? Follow similar lines onf enquiry through data management (Excel), statistical analysis (SPSS), cloud based computing and servers (Azure) and general data analytics (Knime, Alteryx, Anaplan, Jira, Qlik). </p>
+                    <br>
+                    <p> Note some advantages and disadvantages for each, such as SPSS being expensive to license but incredibly quick to perform statistical analysis once you know what you are doing. Ask the apprentices to suggest these as well. The next section will discuss these in more detail.</p>
+                </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        <br>
+        <table id='pvc' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Platform vs Coding Yourself </td>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 20 Minutes </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Justify the use of platforms by comparing them to coding </li></ul></td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> 
+                    <p> Apprentices will use many platforms and softwares in their role and it is important they discuss and justify these in their portfolio. A common comparison is coding, why pay out for a license when you can do it yourself? A common example an apprentice might give is that in a time pressure situation it is easier to use something they are familiar with (Excel for example) but will be willing to experiment if they had longer. </p>
+                    <br>
+                    <p> Go through each slide and lead a discussion on each, do they think they are fair? What do they feel about coding? Would they prefer to do it if theyhad the opportunity? You can use opinion polls to understand their feelings. </p>
+                    <br>
+                    <p> For the activity split the apprentices into small groups and give them 7 minutes to defend a software or platform (I would suggest Excel, Python and Tableau/PowerBI). Afterwards they have to nominate one person to give a 1 minute pitch on why their software would be the best to use </p>
+                </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        <br>
+        <table id='r_set' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Setting Up R </td>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 5 Minutes </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Ensure apprentices have access to R </li></ul></td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Follow the on screen instructions to set up an R environment on Jupyter Notebook. Although GUI's like RStudio are more common, we are using Jupyter as apprentices are already familiar with it from the data science immersives and we don't need to spend time explaining a new system. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        <br>
+        <table id='recap_1' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Recap </td>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 5 Minutes </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To recap the day </li></ul></td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Go through the learning objectives again and show apprentices the first part of the assignment and check for their understanding. Remind them to complete session attendance log and update their OTJT. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        <br>
+        <table id='intro_2' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Class Introduction </td>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ice breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        <br>
+        <table id='r_feat' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Features of R </td>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 30 Minutes </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Understand the basic features of R </li></ul></td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px>  
+                    <p> R is a statistical language released in 1995 at the University of Auckland by Ross Ihaka and Robert Gentleman. Explain to apprentices that it is a language built for statistical analysis and is more optimised for tasks like hypothesis testing than python is. Python and R have many similarities, so use this as an introduction to the R syntax (and particularly note the differences). Throughout the session you will be showing different way of achieving what you could in python, so throughout stress how R is more suited to statistical analysis and many analysts do in fact prefer using it. </p>
+                  <br>
+                  <p> For this session you will be using Jupyter Notebook as apprentices will be familiar with it from the DS intensives. </p>
+                  <br>
+                  <p> Moving through this section you will be guiding apprentices through the R basics, such as how to declare variables. Note the use of &#60;- to define variables. You can use = (and they accomplish the same thing) but traditionally the former is used. Also note that R code can be written in one line, just use ; to seperate out the instructions. </p>
+                  <br>
+                  <p> You will spend a lot of time talking through the different types of structures (list, vector, matrix, dataframe). A list in R shares similarities with both lists and dictionaries in python, but the key takeaway is the difference between a list and a vector- draw attention to this. From there, matrices and dataframes are similar (again note the difference, dataframes are tables while matrices are an extension of vectors) and go through the various operations such as how to reference, add and subtract rows & columns. We will cover more advanced manipulation techniques in the following section </p>
+                  <br>
+                  <p> Don't give long for the exercise, 5 minutes max and breakout rooms shouldn't be necessary. This is a good opportunity for apprentices to share their screen and demo their code. </p>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        <br>
+        <table id='r_control' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Control Flow in R </td>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 30 Minutes </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Understand how to set up loops and functions in R </li></ul></td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Depending on the skill level of the group, this can be skipped. </p>
+                    <br>
+                    <p> In this section you will be demonstrating control flow which should be familiar from python (DS1). You are only introducing the syntax for R (as the concepts have been covered previously) so don't spend too much time on this section. Show apprentices the logic syntax (effectively same as python) and how to set up a statement. Note the difference from python, before they used a colon (:) to start a statement, but in python they use curved brackets ({}). Note that R is not as fussy as python when it comes to indenting our code, but we still should as it is best practice and makes our code more readable. </p>
+                  <br>
+                  <p> As you move through the rest of this section (for, while and functions) you should note that the format is similar each time and everything they can do in python, can be done in R.</p>
+                  <br>
+                  <p> For the exercise I would put apprentices in breakout rooms and give 10 minutes plus run through the solutions. Example solutions are embedded into the notebook, but encourage apprentices to give it a go before looking. </p>
+                </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        <br>
+        <table id='r_eda' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Exploratory Data ANalysis in R </td>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 35 Minutes </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Consider how to perform EDA in R </li></ul></td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> 
+                  <p> In this section you will be introducing the concepts of EDA in R. As we have covered the principles of EDA in Excel, SQL, Tableau and Python already there will be no need to go into too much detail here. However, it may be a good idea to ask apprentices what principles they can remember (cleaning data, gathering aggregates to summarise, identify which features will be useful for prediction, etc) </p>
+                  <br>
+                  <p> As many of the functions we will need are built into tidyverse, you are going to have to show apprentices how to install and call the library. Note the similarity with python and again how easy it is to do (and forget to do...). Tidyverse does quite a lot, so encourage apprentices to explore different functions and see how they can help them with their analysis. </p>
+                  <br>
+                  <p> The first thing you will do is show apprentices common functions, explain that each will be demonstrated and discussed shortly. Start with filter and arrange. You can demonstrate how to check for null values using is.na(). Note that to apply more than one function you will need to wrap each new one around the previous and that can get confusing. To counter this, introduce and demonstrate piping as a method to clean our code up and encourage apprentices to try using it. </p>
+                  <br>
+                  <p> Moving on from there demonstrate how to manipulate and rearrange dataframes as wel as how to create new columns and create aggregates. Link back to how they did this in python, its just the syntax that is different. Encourage apprentices to edit the sample code (give time for this) and allow them to ask questions. If time, you can set challenges, such as what is the average price for bottles with proof greater than 40 for example. </p>
+                  <br>
+                  <p> For the exercise I would give 10 or so minutes in breakout rooms before going through the solutions. Again, sample solutions are built into the notebook. </p>
+                </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        <br>
+        <table id='r_viz' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Visualisations in R </td>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 35 Minutes </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Build Visualisations in R </li></ul></td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> 
+                  <p> In this section you will be introducing how to build visualisations using ggplot2 (built into tidyverse). There are other packages available, but we will stick to this one for now. The synatx for building a visualisation is different to python, so it may take apprentices a bit longer to pick this topic up. Encourage apprentices to code along with you and give them time to build the visualisations themselves and ask questions. </p>
+                  <br>
+                  <p> As you move through the section you will demonstrate how to build a scatter graph, bar chart and boxplot. The initial set up is the same each time ggplot(data=, aes=()) (draw attention to this) but show how the next statement changes depending on what you want. Show apprentices how to customise their visualisations by use of colours and sizes (e.g. size=continent). You can demonstrate a line graph by using geom_line(). </p>
+                  <br>
+                  <p> For this exercise I would give at least 15 minutes in breakout rooms. Apprentices may find this section more challenging, so beprepared to walk through code again. As a stretch challenge there is a further exercise where apprentices have to recreate a visualisation. Again solutions are built into notebook. </p>
+                </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        <br>
+        <table id='r_lm' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Linear Modelling in R </td>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 15 Minutes </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Learn about different modelling techniques in R </li></ul></td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> 
+                  <p> In this section you will demonstrate how to build a linear model in R. This is a more advanced topic and can be skipped if running out of time. Explain to apprentices that R is built for this sort of programming and arguably is better suited than python for it. Python is a better all round language and has a much wider array of functionality, R is a narrower in scope but is more powerful in what it does (especially as much ML is prebuilt in). </p>
+                  <br>
+                  <p> Start with showing linear regression and show how it is similar to the statsmodels pakcage from python (funny that...). Show how to build and analyse a model. You can explore coefficients by typing summary(model)$coefficients. Explain that the principles of linear modelling are the exact same as with python (R-Squared, etc).</p>
+                  <br>
+                  <p> For logistic regression show that in R this is called logit and is accessed through generalised linear models. For the example in the notebook show how to build a binary feature using ifelse and then how to build the model. </p>
+                  <br>
+                  <p> Finally (if you have time) show how to perform a t-test. This was explored in DS2, so apprentices may need a refresher on how hypothesis testing works. Explain that normally you would check for assumptions (such as normality) and perform other EDA but for today you are just demonstrating the code. Walk through how to set up the t-test and how to analyse it. Explain that R has a wide array of models built in (chi square test, f tests, ANOVA, etc) and is much better suited for it than python. </p>
+                </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        <br>
+        <table id='rstud' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> RStudio </td>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 5 Minutes </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Be aware that RStudio exists </li></ul></td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> We used Jupyter because apprentices are already familiar with it. In most industry cases they would use RStudio. If you have time, download and bring up RStudio to show how it works and although the GUI is different, the syntax is the same. Otherwise, show the GUI screenshot and point out its differences and similarities to using Jupyter. </p> 
+                </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+        <br>
+        <table id='recap_2' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+            <tr>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+                <td style=width:35%;text-align:left;font-size:15px> Recap </td>
+                <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+                <td style=width:35%;text-align:left;font-size:15px> 5 Minutes </td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Recap the day </li></ul></td>
+            </tr>
+            <tr>
+                <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+            </tr>
+            <tr>
+                <td colspan=4 style=text-align:center;font-size:15px> <p> Go through the learning objectives and take any questions. Show apprentices the R assignment and encourage them to look at a previous project and try and recreate it in R. Remind them to fill out session attendance log and update OTJT. </p> </td>
+            </tr>
+        </table>
+        <a href='#outline'> Contents </a>
+        <br>
+        <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    </div>
+  </body>
+</html>
