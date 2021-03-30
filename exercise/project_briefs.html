@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<!-- SEO -->
+    <title>Multiverse Data Analysis in Industry Session 1</title>
+    <meta name="description" content="In the first MultiVerse session we will be looking at how data analytics can be used to enhance your role">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/multiverse_brand/Logo/01_Deep Space/PNG/Multiverse_Symbol_RGB_Navy.png">
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+		<link rel="stylesheet" href="../Dependencies/dist/reveal.css">
+		<link rel="stylesheet" href="../Dependencies/dist/reset.css">
+    <link rel="stylesheet" href="../Dependencies/css/mv.css">
+		<link rel="stylesheet" href="//codemirror.net/lib/codemirror.css">
+    <script src="//codemirror.net/addon/runmode/runmode-standalone.js"></script>
+    <script src="//codemirror.net/mode/python/python.js"></script>
+
+
+		
+		<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="../Dependencies/static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../Dependencies/static/css/svg-icons.css">
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+		<!-- CSS for click to reveal section -->
+		<style>
+			span.db{color:#59d8a1;font-weight:bold;font-family:atlas}
+			span.dw{color:#ff7c66;font-weight:bold;font-family:atlas}			
+			p.title{color:#f4f4f4;font-weight:bold;font-size:70px;text-align:center}
+			span.title{color:#f4f4f4;font-weight:bold;font-size:70px;text-align:center}
+			b.objective{color:#ff7c66}
+			span.objective {font-size: 70px;margin-top: 0.83em;margin-bottom: 0.83em;margin-left: 0;margin-right: 0;font-weight: bold;}
+			div.row {display: flex;}
+			div.col {flex: 1; padding: 1em;}
+		</style>
+	</head>
+  <body class='reveal-viewport'>
+    <div class="reveal" style='font-family:atlas;font-size:25px;color:#242456'>
+			<div class="slides">
+        <section data-background-image='../../assets/generic/blank.PNG'>
+          <div class="wrap size-50 aligncenter">
+						<img src='../assets/session_1/Example1.PNG' height=600 width=600>
+					</div>
+        </section>
+        <section data-background-image='../../assets/generic/blank.PNG'>
+          <div class="wrap size-50 aligncenter">
+						<img src='../assets/session_1/Example2.jpg' height=600 width=600>
+					</div>
+        </section>
+        <section data-background-image='../../assets/generic/blank.PNG'>
+          <div class="wrap size-50 aligncenter">
+						<img src='../assets/session_1/Example3.PNG' height=600 width=600>
+					</div>
+        </section>
+      </div>
+    </div>
+    <!-- Scripts -->
+
+		<script src="../Dependencies/dist/reveal.js"></script>
+		<script src="../Dependencies/plugin/notes/notes.js"></script>
+		<script src="../Dependencies/plugin/markdown/markdown.js"></script>
+		<script src="../Dependencies/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({				
+				hash: true,
+				mouseWheel:true,
+				controls:true,
+				slideNumber:true,
+				loop:true,
+				
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+		<script src="../Dependencies/node_modules/socket.io/lib/socket.js"></script>
+		<script src="../Dependencies/node_modules/reveal-notes-server/client.js"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+					var codeElement = document.getElementById('python_code');
+					// Add code mirror class for coloring (default is the theme)
+					codeElement.classList.add( 'cm-s-default' );
+					var code = codeElement.innerText;
+
+					codeElement.innerHTML = "";
+
+					CodeMirror.runMode(
+						code,
+						'python',
+						codeElement
+					);
+			};
+			
+    </script>
+  </body>
+</html>
