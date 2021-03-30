@@ -1050,7 +1050,7 @@
 						</div>
 						<!-- Slide 39a Notes -->
 						<aside class='notes'>
-							The first stage in the ETL process is to extract the data from the disparate sources. By this point the data profiling will have already been carried out, so the developer would know which columns are being extracted, what their datatypes and formats are as well as other summary statistics. There are two main methods, either the source sends out a copy of the data (keeping a local copy) or the system removes the data from the source directly (no local copy). This is often done using SQL queries.
+							The first stage in the ETL process is to extract the data from the disparate sources. By this point the data profiling will have already been carried out, so the developer would know which columns are being extracted, what their datatypes and formats are as well as other summary statistics. There are two main methods, either the source sends out a copy of the data (keeping a local copy) or the system removes the data from the source directly (no local copy). This is often done using SQL queries. Validation occurs during this stage to check the sources have the correct structure, format and permissions.
 						</aside>
 					</section>
 					<!-- Slide 39b -->
@@ -1224,7 +1224,7 @@
 						</div>
 						<!-- Slide 43a Notes -->
 						<aside class='notes'>
-							The final step in the process is loading, combining these transformed sources into one unified view. The data structure of the target should have been pre definied and the data should join cleanly (if previous steps have been followed properly...). This could loading data into a warehouse, or just creating one table.
+							The final step in the process is loading, combining these transformed sources into one unified view. The data structure of the target should have been pre definied and the data should join cleanly (if previous steps have been followed properly...). This could loading data into a warehouse, or just creating one table. Verification is undertaken post loading to ensure the data is accurate.
 						</aside>
 					</section>
 					<!-- Slide 43b -->
