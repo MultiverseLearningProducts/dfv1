@@ -7,3 +7,5 @@ span.objective {font-size: 70px;margin-top: 0.83em;margin-bottom: 0.83em;margin-
 span.assignment {font-size: 70px;margin-top: 0.83em;margin-bottom: 0.83em;margin-left: 0;margin-right: 0;font-weight: bold;}
 div.row {display: flex;}
 div.col {flex: 1; padding: 1em;}
+h1.def{color:#f4f4f4}
+h1.current{color:#ff7c66}
