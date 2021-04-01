@@ -836,7 +836,7 @@
 					</section>
 					<!-- Slide 6 -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
-						<table>
+						<table style='text-align:center'>
 							<tr>
 								<th> Year </th>
 								<th> Number of sites (100s) </th>
@@ -928,8 +928,8 @@
 							<br>
 							<p> Discuss whether the data you use regularly is structured on unstructured</p>
 							<p> Further reading:</p>
-							<a href='https://www.guru99.com/data-lake-vs-data-warehouse.html'>Data Lake vs Data Warehouse</a>
-							<a href='https://www.freecodecamp.org/news/nosql-databases-5f6639ed9574/'>SQL vs NoSQL</a>
+							<a href='https://www.guru99.com/data-lake-vs-data-warehouse.html'>Data Lake vs Data Warehouse</a><br>
+							<a href='https://www.freecodecamp.org/news/nosql-databases-5f6639ed9574/'>SQL vs NoSQL</a><br>
 							<a href='https://learn.g2.com/structured-vs-unstructured-data'>Structured vs Unstructured Data</a>
 						</div>
 					</div>
@@ -953,8 +953,8 @@
 						<div class='col'>
 							<h2 style = color:#1d98ff><b> Activity </b></h2>
 							<br>
-							<p> Open each of the <a download='https://github.com/MultiverseLearningProducts/dfv1/raw/main/Data%20Analysis%20in%20Industry/exercise/Exercise-%20File%20Formats.zip'>files</a> and discuss what the defining features are of each</p>
-							<<ul style='display:inline-block;text-align:left'>
+							<p> Open each of the <a href='https://github.com/MultiverseLearningProducts/dfv1/raw/main/Data%20Analysis%20in%20Industry/exercise/Exercise-%20File%20Formats.zip'>files</a> and discuss what the defining features are of each</p>
+							<ul style='display:inline-block;text-align:left'>
 								<li> What do you think the benefits are?</li>
 								<li> What about limitations??</li>
 								<li> Are they structured? </li>
@@ -966,17 +966,133 @@
 					<aside class='notes'>
 					 </aside>
 				</section>
-				<!-- Slide 6 -->
-				<section data-background-image='../assets/generic/main.PNG'>
-					<!-- Slide 5 Notes -->
-					<aside class='notes'>
-					 </aside>
-				</section>
-				<!-- Slide 6 -->
-				<section data-background-image='../assets/generic/main.PNG'>
-					<!-- Slide 5 Notes -->
-					<aside class='notes'>
-					 </aside>
+				<section>
+					<!-- Slide 6 -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table>
+							<tr>
+								<th> File Format </th>
+								<th> Properties </th>
+								<th> Benefits </th>
+								<th> Limitations </th>
+							</tr>
+							<tr>
+								<td> .xml (e<b>X</b>tensible <b>M</b>arkup <b>L</b>anguage) </td>
+								<td> A hierarchy based markup language that uses user defined keywords to tag data </td>
+								<td> 
+									<ul>
+										<li> Easily read by machines </li>
+										<li> Portable to many different systems </li>
+									</ul>
+								</td>
+								<td> 
+									<ul>
+										<li> Hard for humans to read </li>
+										<li> Large size due to repeated markups </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td> .csv (<b>C</b>omma <b>S</b>eparated <b>V</b>alues) </td>
+								<td> Tabular data separated by commas. Is a raw text value </td>
+								<td> 
+									<ul>
+										<li> Lightweight </li>
+										<li> Easily read by many applications </li>
+									</ul>
+								</td>
+								<td> 
+									<ul>
+										<li> If there are commas within the data they need to be ‘text qualified’ so interpreter knows they are not delimiters </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td> .rtf (<b>R</b>ich <b>T</b>ext <b>F</b>ormat) </td>
+								<td> A file that is stored as Raw text but has a markup language to denote basic formatting such as bold, underline etc. </td>
+								<td> 
+									<ul>
+										<li> Fairly lightweight</li>
+										<li> Suitable for holding documents, not actual data </li>
+									</ul>
+								</td>
+								<td> 
+									<ul>
+										<li> Rarely used </li>
+										<li> Hard to read due to markups </li>
+										<li> Used only for wordpad </li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+						<!-- Slide 5 Notes -->
+						<aside class='notes'>
+						 </aside>
+					</section>
+					<!-- Slide 6 -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table>
+							<tr>
+								<th> File Format </th>
+								<th> Properties </th>
+								<th> Benefits </th>
+								<th> Limitations </th>
+							</tr>
+							<tr>
+								<td> .txt (Text) </td>
+								<td> Text-based with no formatting or tags. Can be delimited by anything. </td>
+								<td> 
+									<ul>
+										<li> Flexible </li>
+										<li> Lightweight </li>
+										<li> Easily read </li>
+									</ul>
+								</td>
+								<td> 
+									<ul>
+										<li> Can easily break </li>
+										<li> Needs text qualification </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td> .xlsx (Excel File) </td>
+								<td> Proprietary spreadsheet file format created by Microsoft Excel</td>
+								<td> 
+									<ul>
+										<li> Many users are comfortable with this format </li>
+										<li> Widely used </li>
+									</ul>
+								</td>
+								<td> 
+									<ul>
+										<li> Large file size </li>
+										<li> Specialist software needed to view or edit</li>
+										<li>	Hard for applications to read</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td> .json (<b>J</b>ava<b>S</b>cript <b>O</b>bject <b>N</b>otation </td>
+								<td> Text-based open standard designed for human-readable data interchange.  </td>
+								<td> 
+									<ul>
+										<li> Structure easily read by applications</li>
+										<li> Lightweight </li>
+									</ul>
+								</td>
+								<td> 
+									<ul>
+										<li> No error handling </li>
+										<li> Can leave your machine vulnerable to attacks if taken from an untrusted source </li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+						<!-- Slide 5 Notes -->
+						<aside class='notes'>
+						 </aside>
+					</section>
 				</section>
 				<!-- Slide 4 -->
 				<section data-background-image="../assets/generic/section.PNG">
