@@ -5,6 +5,7 @@
     <title>Data Analysis in Industry Lesson Plan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/multiverse_brand/Logo/01_Deep Space/PNG/Multiverse_Symbol_RGB_Navy.png">
+    <link href="../assets/datastyle.css" rel="stylesheet" type="text/css">
 
     <style>
       th.ColColor{background-color:#4d61f4;color:#f4f4f4;}
@@ -47,7 +48,7 @@
             <td style="text-align:left; font-size:15px"><a href=#sabs> Skills, Attitudes and Behaviours</a></td>
           </tr>
           <tr>
-            <td style="text-align:left; font-size:15px"><a href=#km1> KM1 Data Anlaysis Tools Syllabus</a></td>
+            <td style="text-align:left; font-size:15px"><a href=#km1> KM2 Data Anlaysis Concepts</a></td>
           </tr>
           <tr>
             <td style="text-align:left; font-size:15px"><a href=#recording> Recordings</a></td>
@@ -69,9 +70,7 @@
     <div id='overview'>
       <p style ='font-size: 50px'> <i> Overview </i> </p> 
       <br>
-      <p> In this module we will be covering various tools apprentices will need to enhance their analytics performance in their roles. In the first half of the session we will give an overview of Big Data, considering how it works and what the benefits and drawbacks are of using it. This is followed by a discussion around data analytics platforms and comparing their usage to coding it yourself. </p>
-      <br>
-      <p> In the second part of the module we will be looking into the statistical programming language R, briefly looking at how many of the processes we learned in Python can be performed in R. </p>
+      <p> In the first MultiVerse teaching module we will be helping apprentices to 'think data' as they approach work projects. Focussing mainly on the 'plan' stage of a project, apprentices will consider how to write project briefs, manage stakeholders and assess the data they will be using.  </p>
       <br>
       <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
       <br>
@@ -79,8 +78,8 @@
     <div id='materials'>
       <p style ='font-size: 50px'> <i> Materials </i> </p> 
       <br>
-      <p><a href='https://multiverselearningproducts.github.io/dfv1/Tools%20of%20the%20Trade/session_1_rev.html'> Session 1 Slide Deck </a></p>
-      <p><a href='https://drive.google.com/file/d/1wR2mUF3We5-ZXouqc-L17_c1NgQ5ZZ2v/view?usp=sharing'> Session 2 Data </a></p>
+      <p><a href='https://multiverselearningproducts.github.io/dfv1/Data%20Analysis%20in%20Industry/session_1.html'> Session 1 Slide Deck </a></p>
+      <p><a href='https://multiverselearningproducts.github.io/dfv1/Data%20Analysis%20in%20Industry/session_2.html'> Session 2 Slide Deck </a></p>
       <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
       <br>
     </div>
@@ -88,9 +87,8 @@
       <p style ='font-size: 50px'> <i> Prerequisites </i> </p>
       <br>
       <ul style='display:inline-block;text-align:left'>
-        <li> Apprentices will need to have <a href='https://www.r-project.org/'>R</a> installed on their computer (should have come with Anaconda) </li>  
         <li> Apprentice OTJT should be at 100% or above </li>
-        <li> Apprentice to have completed DS Immersives </li>
+        <li> Apprentices must have attended the Flying Start session </li>
       </ul>
       <br>
       <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
@@ -100,10 +98,12 @@
       <p style ='font-size: 50px'> <i> Learning Objectives </i> </p>
       <br>
       <ul style='display:inline-block;text-align:left'>
-        <li> Understand the fundamental concepts of <b> Big Data </b></li>
-        <li> Justify the use (or lack of) Big Data technologies in <b> your role </b></li>
-        <li> Critically evaluate the difference in using a <b> data platform</b> and <b> coding it yourself </b></li>
-        <li> Understand how <b> R </b> can be utilised in your analysis </li>
+        <li> </li>
+        <li> Describe the <b class='objective'>data analytics lifecycle</b> and set out details, activities and roles at each stage in a real-world example </li>
+        <li> Design effective <b class='objective'>project briefs</b> which <b class='objective'>communicate expectations to stakeholders</b></li>
+        <li> Identify <b class='objective'>business specific rules</b> related to datasets and data characteristics that will influence project design and analysis</li>
+        <li> Identify <b class='objective'> business specific rules </b> related to datasets and data characteristics that will influence project design and analysis</li>
+        <li> Describe the key characteristics of the different <b class='objective'> Data Formats</b> and how to work with them </li>
       </ul>
       <br>
       <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
@@ -116,27 +116,27 @@
       <br>
       <p><b> Task </b></p>
       <br>
-      <p> Justify the use (or lack of) Big Data technologies in your role </p>
+      <p> Use a work-related example to identify the stages of the Data Analytics Lifecycle. Describe what happened in each stage and highlight what was your role in the process. In the end, add a summary of the project/analysis including the main findings, what went well and what could have been improved. </p>
       <br>
       <p><b> Things to Consider </b></p>
       <br>
       <ul style='display:inline-block;text-align:left'>
-        <li> How does your company make use of Big Data technologies? </li>
-        <li> Do you have opportunities to use them in your role? </li>
-        <li> Do you think you could use these technologies effectively in your role? </li>
-        <li> Do you think your company uses them effectively? </li>
-        <li> What do you think the potential business impact of your companies attitude towards Big Data will be?</li>
+        <li> Max 1500 words </li>
+        <li> Deliver as a word document or PowerPoint presentation </li>
       </ul>
       <br>
       <h2 style ='font-size: 40px'> Part 2 </h2>
       <br>
       <p><b> Task </b></p>
       <br>
-      <p> Embed R knowledge and skills by building a model to predict species of iris </p>
+      <p> Use a work-related example to create a project brief. This could be related to a project you are about to start or something new. Your brief should contain a business problem, the wider context of the analysis and a plan of action to solve the problem. </p>
       <br>
       <p><b> Things to Consider </b></p>
       <br>
-      <p> How can you use these skills in your role? Revisit a previous project and see if you can recreate it using these techniques </p>
+      <ul style='display:inline-block;text-align:left'>
+        <li> Max 1500 words </li>
+        <li> Deliver as a word document </li>
+      </ul>
       <br>
       <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
     </div>
@@ -147,11 +147,6 @@
       <ul style='display:inline-block;text-align:left'>
         <li>Identify, collect and migrate data to/from a range of internal and external systems (TC1)</li>
         <li>Interpret and apply the organisations data and information security standards, policies and procedures to data management activities (TC3)</li>
-        <li>Perform routine statistical analyses and ad-hoc queries (TC6)</li>
-        <li>Use a range of analytical techniques such as data mining, time series forecasting and modelling techniques to identify and predict trends and patterns in data (TC7)</li>
-        <li>Apply the tools and techniques for data analysis, data visualisation and presentation (TC8)</li>
-        <li>Works with organisation’s data architecture (TC11)</li>
-        <li>Assist with data quality checking and cleansing (TC12)</li>
       </ul>
       <br>
       <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
@@ -162,22 +157,29 @@
       <br>
       <ul style='display:inline-block;text-align:left'>
         <li>Logical and creative thinking skills (SAB1)</li>
-        <li>A thorough and organised approach (SAB5)</li>
-        <li>Maintain productive, professional and secure working environment (SAB8)</li>
+        <li> Analytical and problem solving skills (SAB2) </li>
+        <li> Ability to work independently and to take responsibility (SAB3) </li>
+        <li> Can use own initiative (SAB4) </li>
+        <li> A thorough and organised approach (SAB5)</li>
+        <li> Ability to work with a range of internal and external people (SAB6) </li>
+        <li> Ability to communicate effectively in a variety of situations (SAB7) </li>
+        <li> Maintain productive, professional and secure working environment (SAB8)</li>
       </ul>
       <br>
       <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
   </div>
   <br>
   <div id=km1>
-      <p style ='font-size: 50px'> <i> KM1 Data Analysis Tools Syllabus </i> </p>
+      <p style ='font-size: 50px'> <i> KM2 Data Analysis Concepts </i> </p>
       <br>
       <ul style='display:inline-block;text-align:left'>
-        <li>Explain the nature and challenges of data volumes being process through integration activities and how a programming approach can improve this:
-        <ul>
-          <li> Big Data (1.5)</li>
-          </ul></li>
-        <li> Capabilities and functions of statistical programming language: R (2.1) </li>
+        <li>Understands the different types of data, including open and public data, administrative data, and research data</li>
+        <li>Understands the data life cycle</li>
+        <li>Understands the differences between structured and unstructured data</li>
+        <li>Understands the importance of clearly defining customer requirements for data analysis</li>
+        <li>Understands the quality issues that can arise with data and how to avoid and/or resolve these </li>
+        <li>Understands the steps involved in carrying out routine data analysis tasks </li>
+        <li>Understands the range of data protection and legal issues</li>
       </ul>
       <br>
       <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
@@ -186,7 +188,7 @@
     <div id= recording>
       <p style ='font-size: 50px'> <i> Recordings (coach use only) </i> </p>
       <br>
-      <a href='https://drive.google.com/drive/folders/1uXw2RfTfzVR1QEMRoAiX6hvWiZn4xzR8?usp=sharing'> Link </a>
+      <a href='https://drive.google.com/drive/folders/1Jq2UalloGvts_5JcnZitRTXmFSPJhJjO?usp=sharing'> Link </a>
       <br>
       <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
     </div>
@@ -204,88 +206,76 @@
           <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
         </tr>
         <tr>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#und_bd> Understanding Big Data</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#data_life> The Data Lifecycle</a> </td>
           <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
         </tr>
         <tr>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#5v> Five V's</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#analytics_life> The Data Analytics Lifecyle</a> </td>
           <td style='text-align:left;font-size:15px;border:1px solid black'> 25 Minutes </td>
         </tr>
         <tr>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#dev_fut> Developing the Future</a> </td>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#id_stake> Identifying Stakeholders</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 15 Minutes </td>
         </tr>
         <tr>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#how_work> How Does It Work?</a> </td>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#deal_steak> Dealing with Stakeholders</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
         </tr>
         <tr>
           <td style='text-align:left;font-size:15px;border:1px solid black'> <i> Break </i> </td>
           <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
         </tr>
         <tr>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#use_bd_role> Using Big Data in Your Role</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#methods> Methods of Communication</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 15 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#briefs> Project Briefs</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 30 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#valver> Validation vs Verification</a> </td>
           <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
         </tr>
         <tr>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#ad_disad> Advantages and Disadvantages</a> </td>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
-        </tr>
-        <tr>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#bdp> Big Data Products</a> </td>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> 5 Minutes </td>
-        </tr>
-        <tr>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#dat_plat> Data Platforms</a> </td>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
-        </tr>
-        <tr>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#pvc> Platforms vs Coding Yourself</a> </td>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
-        </tr>
-        <tr>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#r_set> Setting Up R</a> </td>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> 5 Minutes </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#hypothesis> Setting a Hypothesis</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
         </tr>
         <tr>
           <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#recap_1> Session 1 Recap</a> </td>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> 5 Minutes </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 15 Minutes </td>
         </tr>
         <tr>
           <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#intro_2> Class Introduction</a> </td>
           <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
         </tr>
         <tr>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#r_feat> Features of R</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#d_types> Data Types</a> </td>
           <td style='text-align:left;font-size:15px;border:1px solid black'> 30 Minutes </td>
         </tr>
         <tr>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#r_control> Control Flow in R</a> </td>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> 30 Minutes </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#d_sources> Data Sources</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 40 Minutes </td>
         </tr>
         <tr>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#r_eda> EDA in R</a> </td>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> 35 Minutes </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#d_structures> Data Structures</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 15 Minutes </td>
         </tr>
         <tr>
           <td style='text-align:left;font-size:15px;border:1px solid black'> <i> Break </i> </td>
           <td style='text-align:left;font-size:15px;border:1px solid black'> 15 Minutes </td>
         </tr>
         <tr>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#r_viz> Visualisation in R</a> </td>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> 35 Minutes </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#d_files> Data Files</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 25 Minutes </td>
         </tr>
         <tr>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#r_lm> Linear Modelling in R</a> </td>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> 15 Minutes </td>
-        </tr>
-        <tr>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#rstud> RStudio</a> </td>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> 5 Minutes </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#etl> Extract, Transform, Load</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 30 Minutes </td>
         </tr>
         <tr>
           <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#recap_2> Session 2 Recap</a> </td>
-          <td style='text-align:left;font-size:15px;border:1px solid black'> 5 Minutes </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
         </tr>
       </table>
       <br>
@@ -296,8 +286,6 @@
       <p style ='font-size: 50px'> <i> Additional Resources </i> </p>
       <br>
       <ul style='display:inline-block;text-align:left'>
-      <li><a href='https://www.statmethods.net/r-tutorial/index.html'> Basic R Tutorial </a></li>
-      <li><a href='https://vimeo.com/523723452/525c3257b7'> Big Query Webinar </a></li>
       </ul>
       <br>
       <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
