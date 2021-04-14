@@ -355,7 +355,7 @@
 						<div class='row'>
 							<div class='col'></div>
 							<div class='col'>
-								<h1> The Alternative...</h1>
+								<h1 style='color:#ff7c66'> The Alternative...</h1>
 							</div>
 						</div>
 						<!-- Slide 4 Notes-->
@@ -364,9 +364,11 @@
 					</section>
 					<!-- Slide 4 -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
-						<p class='fragment fade-in-then-out'> Difficult to insert new data </p>
-						<p class='fragment fade-in-then-out'> Cannot modify existing data </p>
-						<p class='fragment fade-in-then-out'> Cannot delete information </p>
+						<div class='r-stack'>
+							<p class='fragment fade-in-then-out'> Difficult to insert new data </p>
+							<p class='fragment fade-in-then-out'> Cannot modify existing data </p>
+							<p class='fragment fade-in-then-out'> Cannot delete information </p>
+						</div>
 						<table style='font-size:10px'>
 							<tr>
 								<th> Coach ID </th>
@@ -467,17 +469,53 @@
               Section title
             </aside>
           </section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
-					</section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
+					<section>
+						<!-- Slide 4 -->
+						<section data-background-image='../assets/generic/main.PNG'>
+							<h1> Primary Key </h1>
+							<h2 style='color:#4d61f4'> A unique identifier for each row in a table </h2>
+							<table>
+								<caption> coach_table </caption>
+								<tr>
+									<th style='background-color:#ffe352'> Coach Id </th>
+									<th> Coach Name </th>
+									<th> No. Cohorts </th>
+									<th> Assistant </th>
+								</tr>
+								<tr>
+									<td style='background-color:#ffe352'> 1 </td>
+									<td> Steph </td>
+									<td> 5 </td>
+									<td> Ashray </td>
+								</tr>
+								<tr>
+									<td style='background-color:#ffe352'> 2 </td>
+									<td> Ben </td>
+									<td> 2 </td>
+									<td> Ashray </td>
+								</tr>
+							</table>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+						<!-- Slide 4 -->
+						<section data-background-image='../assets/generic/pentagon_jr.PNG'>
+							<div class='row'>
+								<div class='col'>
+									<h1 style='color:#f4f4f4'> Primary keys... </h1>
+								</div>
+								<div class='col'>
+									<p> ...cannot be NULL </p>
+									<p> ...must be unique </p>
+									<p> ...should rarely be changed </p>
+									<p> ...given a new value when a new record is created </p>
+								</div>
+							</div>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
 					</section>
 					<!-- Slide 4 -->
 					<section data-background-image='../assets/generic/main.PNG'>
