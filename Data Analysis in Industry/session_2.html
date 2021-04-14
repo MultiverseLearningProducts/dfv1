@@ -80,9 +80,9 @@
 							<li><a href='#/4'>  Data Types </a></li>
 							<li><a href='#/11'> Data Sources </a> </li>
 							<li><a href='#/25'> Data Structures </a> </li>
-							<li><a href='#/30'> Data Files </a> </li>
-							<li><a href='#/33'> Extract, Transform, Load </a> </li>
-							<li><a href='#/41'> Recap </a> </li>
+							<li><a href='#/31'> Data Files </a> </li>
+							<li><a href='#/34'> Extract, Transform, Load </a> </li>
+							<li><a href='#/42'> Recap </a> </li>
 						</ul>
 					</div>
 					<!-- Slide 2 Notes -->
@@ -1156,7 +1156,7 @@
 					</section>
 					<!-- Slide 28b -->
 					<section data-background-image='../assets/generic/box_serious.PNG'>
-						<div class="wrap size-50 aligncenter">
+						<div class="aligncenter">
 							<span style ='color:#242456;font-size:50px;font-weight:bold;text-align:center'> <span style='color:#4f61f4'> Be careful! </span><br> Sometimes data looks structured but isn't. For example, Excel spreadsheets have no rules around usage, so you can have multiple tables or different data types in one column. </span>
 						</div>
 						<!-- Slide 28b Notes -->
@@ -1169,8 +1169,8 @@
 				<section data-background-image='../assets/generic/table_back.PNG'>
 					<table style="table-layout: fixed; width: 100%;">
 						<tr>
-							<th style='width:20%'> Structure </th>
-							<th style='width:80%'> Features </th>
+							<th style='width:20%;text-align:center'> Structure </th>
+							<th style='width:80%;text-align:center'> Features </th>
 						</tr>
 						<tr>
 							<td> File </td>
@@ -1207,12 +1207,12 @@
 						</tr>
 						<tr>
 							<td> Tree </td>
-							<td><ul><li> Hierarchical colelction of data with parent and child nodes </li></ul></td>
+							<td><ul><li> Hierarchical collection of data with parent and child nodes </li></ul></td>
 						</tr>
 					</table>
 					<!-- Slide 29 Notes -->
 					<aside class='notes'>
-						
+						We tend to think of data as being in a row and column format, but that is not the only way it can be given to us. For example, data often comes in files (can anyone think of an example? CSV, XLSX, JSON, etc). The data contained within the file itself can be structured or unstructured depending on what type it is, in a few minutes we will look into file types in more detail. A list is a a 1-dimensional (think a single row) object where all the data is stored and is the basic building block of structured data. When we start to add more dimensions (rows and columns for example) the data becomes an array where we locate the data using indices (think coordinates). Most of the data we use is 2-dimensional (row and column) but it is possible to have more dimensions. A 2-dimensional array becomes a table (the one you will be most familiar with) when the rows and columns are labelled (records and fields), this is your typical structured data. Finally a tree, where data is defined by its relationship to each other. An exmaple of this is folders on your computer.
 					</aside>
 				</section>
 				<!-- Slide 30 -->
@@ -1236,18 +1236,18 @@
 						Give 5-7 minutes for this activity.
 					 </aside>
 				</section>
-				<!-- Slide 30 -->
+				<!-- Slide 31 -->
 				<section data-background-image="../assets/generic/section.PNG">
 					<div class="wrap aligncenter">
 						<span class='title'> Data Files</span>          
 					</div>
-					<!-- Slide 30 Notes -->
+					<!-- Slide 31 Notes -->
 					<aside class='notes'>
-						We have considered where our data has come from and what it might look like, but let's look at this practically. When we recieve a file it will come in a format (like .txt) what file formats are you aware of?
+						A few minutes ago we discussed different data structures, and one was a file. A file is how we store data and allow a computer to process the data stored within. WHat file types are you aware of?
 					</aside>
 				</section>
 				<section>
-					<!-- Slide 31a -->
+					<!-- Slide 32a -->
 					<section data-background-image='../assets/generic/tweenies.PNG'>
 						<div class='row'>
 							<div class='col'></div>
@@ -1263,12 +1263,12 @@
 								</ul>
 							</div>
 						</div>
-						<!-- Slide 31a Notes -->
+						<!-- Slide 32a Notes -->
 						<aside class='notes'>
 							Give 10 minutes for this exercise, the file types can be accessed by scrolling down.
 						</aside>
 					</section>
-					<!-- Slide 31b -->
+					<!-- Slide 32b -->
 					<section data-background-image='../assets/generic/tweenies.PNG'>
 						<div class='row'>
 							<div class='col'></div>
@@ -1295,14 +1295,14 @@
 								</table>
 							</div>
 						</div>
-						<!-- Slide 31b Notes -->
+						<!-- Slide 32b Notes -->
 						<aside class='notes'>
 							The excel file should download automatically. You can download the rtf file and open it in Microsoft Word to show how the processor makes it human readable.
 						</aside>
 					</section>
 				</section>
 				<section>
-					<!-- Slide 32a -->
+					<!-- Slide 33a -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<table style='table-layout: fixed;width:100%;font-size:14px'>
 							<tr>
@@ -1360,12 +1360,12 @@
 								</td>
 							</tr>
 						</table>
-						<!-- Slide 32a Notes -->
+						<!-- Slide 33a Notes -->
 						<aside class='notes'>
 							XML is a markup language, ask if anyone knows about any other markup languages (HTML). If you right click on the page and select inspect you will be able to see the HTML for this presentation. Webscraping tools exist to extract data from this format and can move it into a more structured format. CSV files are very common and when we get to the data science portion of the course we will be importing mostly CSV files as they are easy for python to process (CSV files are structured). RTF is also a markup language and is the basis for Microsoft Word files. Microsoft Office is able to open both CSV and RTF in a human readable format. Click on the hyperlinks to show the CSV is opened as an excel file and RTF is opened as a Word File.
 						 </aside>
 					</section>
-					<!-- Slide 32b -->
+					<!-- Slide 33b -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<table style='table-layout: fixed;width:100%;font-size:14px'>
 							<tr>
@@ -1425,34 +1425,34 @@
 								</td>
 							</tr>
 						</table>
-						<!-- Slide 32b Notes -->
+						<!-- Slide 33b Notes -->
 						<aside class='notes'>
 							Text files are very lightweight and easy to use. When writing scripts for automation you will often use a text file for the computer to process. Excel files are also very common but actually quite difficult for other processors to use. Finally we have JSON, if you ever extract data from an API it is likely it will be in a JSON format. They can be described as nested dictionaries and to extract the information you will need to know which parts to query. Which file types do you commonly use in your role?
 						 </aside>
 					</section>
 				</section>
-				<!-- Slide 33 -->
+				<!-- Slide 34 -->
 				<section data-background-image="../assets/generic/section.PNG">
 					<div class="wrap aligncenter">
 						<span class='title'> Extract, Transform, Load</span>          
 					</div>
-					<!-- Slide 33 Notes -->
+					<!-- Slide 34 Notes -->
 					<aside class='notes'>
 						Earlier one we mentioned that some research data may come from a data warehouse. A common process to create a data warehouse is extract, transform, load (ETL). For your exam you will need to have some awareness of this.
 					</aside>
 				</section>
-				<!-- Slide 34 -->
+				<!-- Slide 35 -->
 				<section data-background-image='../assets/generic/fun_box.PNG'>
 					<div class="wrap size-50 aligncenter">
 						<span style ='color:#4d61f4;font-size:60px;font-weight:bold;text-align:center'> How would you <b class='objective'>count the number of occurrences</b> of each word in all the books found in a library <b class='objective'>using a team of people?</b> </span>
 					</div>
-					<!-- Slide 34 Notes -->
+					<!-- Slide 35 Notes -->
 					<aside class='notes'>
 						Give 2-3 minutes for apprentices to think of a solution.
 					 </aside>
 				</section>
 				<section>
-					<!-- Slide 35a -->
+					<!-- Slide 36a -->
 					<section data-background-image='../assets/generic/strike_force.PNG'>
 						<div class='row'>
 							<div class='col'>
@@ -1464,12 +1464,12 @@
 								<img src='assets/session_2/share.PNG'>
 							</div>
 						</div>
-						<!-- Slide 35a Notes -->
+						<!-- Slide 36a Notes -->
 						<aside class='notes'>
 							First you would divide books amongst all your team members so they can 'extract' the words.
 						 </aside>
 					</section>
-					<!-- Slide 35b -->
+					<!-- Slide 36b -->
 					<section data-background-image='../assets/generic/strike_force.PNG'>
 						<div class='row'>
 							<div class='col'>
@@ -1509,12 +1509,12 @@
 								</table>
 							</div>
 						</div>
-						<!-- Slide 35b Notes -->
+						<!-- Slide 36b Notes -->
 						<aside class='notes'>
 							Next you would have evryone 'transform' their books into a table which has the count of each word.
 						 </aside>
 					</section>
-					<!-- Slide 35c -->
+					<!-- Slide 36c -->
 					<section data-background-image='../assets/generic/strike_force.PNG'>
 						<div class='row'>
 							<div class='col'>
@@ -1539,24 +1539,24 @@
 								</table>
 							</div>
 						</div>
-						<!-- Slide 35c Notes -->
+						<!-- Slide 36c Notes -->
 						<aside class='notes'>
 							Finally, you would 'load' all the different tables together into one unified view which contains all the words in the library.
 						 </aside>
 					</section>
 				</section>
-				<!-- Slide 36 -->
+				<!-- Slide 37 -->
 				<section data-background-image='../assets/generic/main.PNG'>
 					<div class="wrap size-50 aligncenter">
 						<img src='assets/session_2/etl.PNG'>
 					</div>
-					<!-- Slide 36 Notes -->
+					<!-- Slide 37 Notes -->
 					<aside class='notes'>
 						This process is how data is collected from a variety of disparate sources and combined into one unified target view. Consider your organisation, it will likely be split into several teams and divisions, each collecting and storing data relevant to their roles. Sales teams will hold data on customers while the inventory team know how much they have left in stock. For key decision makers in the company, they will want all of this data in one central location so they can get a quick view to understand the situation and make data driven decisions. This is what ETL is for, combing data from across an organisation into one central place (often a data warehouse).
 					 </aside>
 				</section>
 				<section>
-					<!-- Slide 37a -->
+					<!-- Slide 38a -->
 					<section data-background-image='../assets/generic/strike.PNG'>
 						<div class='row'>
 							<div class='col'>
@@ -1571,12 +1571,12 @@
 								<h1 class='def'> Load </h1>
 							</div>
 						</div>
-						<!-- Slide 37a Notes -->
+						<!-- Slide 38a Notes -->
 						<aside class='notes'>
 							The first stage in the process is extraction. This is when you identify and collect the data from all the sources you require. Note, you don't 'take' the data but a copy is made and sent to the warehouse. This means the original source is left untouched. It also means that if any changes are made to the source, these will not be reflected in the warehouse until an update is made. A consequence of this is that warehouses are static (making querying and processing quicker) but potentially out of date if the source changes (fast flowing databases like sales or inventory will change throughout the day, so ETL updates may need to happen regularly). Often when a warehouse is updated it will need to be taken 'offline' so extraction tends to happen outside of working hours to avoid disruption for users. You will validate your sources at this time to ensure they contain the correct information.
 						 </aside>
 					</section>
-					<!-- Slide 37b -->
+					<!-- Slide 38b -->
 					<section data-background-image='../assets/generic/strike.PNG'>
 						<div class='row'>
 							<div class='col'>
@@ -1590,12 +1590,12 @@
 								<h1 class='def'> Load </h1>
 							</div>
 						</div>
-						<!-- Slide 37b Notes -->
+						<!-- Slide 38b Notes -->
 						<aside class='notes'>
 							Once the data has been pulled to the warehouse it is time to transform it. This means all the data needs to be in the same consistent format- data types need to be the same, null values should be removed and column names should be consistent (especially if they appear in more than one source- more on this in our next module). Note, as the data is copied from the source, the original data is unchanged by this process.
 						 </aside>
 					</section>
-					<!-- Slide 37c -->
+					<!-- Slide 38c -->
 					<section data-background-image='../assets/generic/strike.PNG'>
 						<div class='row'>
 							<div class='col'>
@@ -1609,13 +1609,13 @@
 								<h1 class='current'> Load </h1>
 							</div>
 						</div>
-						<!-- Slide 37c Notes -->
+						<!-- Slide 38c Notes -->
 						<aside class='notes'>
 							Finally, once the data is in a consistent format it is time to join it all together into one table. At this point you will verify that the data stored is correct and useful for the purposes you require. A few things to note, with large voluminous (and potentially fast flowing) data this process may be more cost effective to be run using a Big Data technology which uses a form of parallel processing to carry this out. As mentioned earlier, data warehouses are static and can quickly be out of date with the the original sources. It is highly likely then that an ETL process will be carried out regularly to ensure decision makers always have access to the latest data.
 						 </aside>
 					</section>
 				</section>
-				<!-- Slide 38 -->
+				<!-- Slide 39 -->
 				<section data-background-image='../assets/generic/solution.PNG'>
 					<div class='row'>
 						<div class='col'>
@@ -1629,13 +1629,13 @@
 							<p> Better business intelligence and insights for making decisions through greater data availability </p>
 						</div>
 					</div>
-					<!-- Slide 38 Notes -->
+					<!-- Slide 39 Notes -->
 					<aside class='notes'>
 						The benefits of ETL are that data from across a business can be stored in one central location allowing key decision makers to make data driven decisions quickly. It also allows for teams across a business to collaborate and share their data (sales teams acting on the advice of their inventory/data teams). It also means different teams are using consistent formats allowing for errors to be quickly identified and fixed.
 					 </aside>
 				</section>
 				<section>
-				<!-- Slide 39a -->
+				<!-- Slide 40a -->
 					<section data-background-image='../assets/generic/main.PNG'>
 						<h1> Information Structure and Rules </h1>
 						<br>
@@ -1651,12 +1651,12 @@
 								</ul>
 							</li>
 						</ul>
-						<!-- Slide 39a Notes -->
+						<!-- Slide 40a Notes -->
 						<aside class='notes'>
 							With ETL, it is important you follow certain rules to ensure the process runs smoothly and safely- you don't want incorrect data being fed to key decision makers... 
 						 </aside>
 					</section>
-					<!-- Slide 39b -->
+					<!-- Slide 40b -->
 					<section data-background-image='../assets/generic/main.PNG'>
 						<h1> Information Structure and Rules </h1>
 						<br>
@@ -1670,23 +1670,23 @@
 								</ul>
 							</li>
 						</ul>
-						<!-- Slide 39b Notes -->
+						<!-- Slide 40b Notes -->
 						<aside class='notes'>
 							A possible project for your portfolio could be to build a data warehouse or pipeline for someone in your business. If this is the case, make sure you capture the business requirements clearly before beginning. This way you can guide the process precisely and be able to verify at the end if you have met the requirements of the stakeholder.
 						 </aside>
 					</section>
 				</section>
-				<!-- Slide 40 -->
+				<!-- Slide 41 -->
 				<section data-background-image="../assets/generic/section.PNG">
 					<div class="wrap aligncenter">
 						<span class='title'> Recap</span>          
 					</div>
-					<!-- Slide 40 Notes -->
+					<!-- Slide 41 Notes -->
 					<aside class='notes'>
 						We have finished our first module! Let's recap the day.
 					</aside>
 				</section>
-				<!-- Slide 41 -->
+				<!-- Slide 42 -->
 				<section data-background-image="../assets/generic/blank.PNG">
 					<div class="wrap size-60 " style='width:max-content'>
 						<div>
@@ -1698,13 +1698,13 @@
 							<li> Describe the key characteristics of the different <b class='objective'> Data Formats</b> and how to work with them </li>
 						</ul>          
 					</div>
-					<!-- Slide 41 Notes -->
+					<!-- Slide 42 Notes -->
 					<aside class='notes'>
 						Run through learning objectives again, explainining that the purpose of this session was to help apprentices plan out their projects by considering the data they use by looking at data types, structures and file formats. This should help guide them towards what sort of processes and visualisations they can use.
 					</aside>
 				</section>
 				<section>
-					<!-- Slide 42a -->
+					<!-- Slide 43a -->
 					<section data-background-image="../assets/generic/assignment.PNG">
 						<table style='width:100%;border:1px solid black'>
 							<tr>
@@ -1729,12 +1729,12 @@
 								<td> Word Document or PowerPoint presentation </td>
 							</tr>
 						</table>
-						<!-- Slide 42a Notes -->
+						<!-- Slide 43a Notes -->
 						<aside class='notes'>
 							Run through the assignment
 						</aside>
 					</section>
-					<!-- Slide 42b -->
+					<!-- Slide 43b -->
 					<section data-background-image="../assets/generic/assignment.PNG">
 						<table style='width:100%;border:1px solid black'>
 							<tr>
@@ -1759,18 +1759,18 @@
 								<td> Word Document </td>
 							</tr>
 						</table>
-						<!-- Slide 42b Notes -->
+						<!-- Slide 43b Notes -->
 						<aside class='notes'>
 							Run through the assignment
 						</aside>
 					</section>
 				</section>
-				<!-- Slide 43 -->
+				<!-- Slide 44 -->
 				<section data-background-image="../assets/generic/final.PNG">
 					<div class="wrap aligncenter">
 						<span class='title'> Complete <a href='https://platform.whitehat.org.uk/apprentice/attendance-log/81' style='color:#64abff' target='_blank'>Session Attendance Log</a> and Update Your OTJ</span>          
 					</div>
-					<!-- Slide 42a Notes -->
+					<!-- Slide 44 Notes -->
 					<aside class='notes'>
 						Remind apprentices about OTJ and they can click on the link for the SAL
 					</aside>
