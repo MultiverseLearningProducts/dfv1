@@ -67,6 +67,7 @@
 							<li><a href='#/9'> Relational Databases </a> </li>
 							<li><a href='#/13'> Keys </a> </li>
 							<li><a href='#/19'> Normalisation </a> </li>
+							<li><a href='#/19'> NoSQL </a> </li>
 							<li><a href='#/27'> Other Types of Database </a> </li>
 							<li><a href='#/27'> Recap </a> </li>
 						</ul>
@@ -1969,15 +1970,7 @@
 											<th style='text-align:center'> Country </th>
 										</tr>
 										<tr> 
-											<td style='background-color:#64abff'> Coop </td>
-											<td> UK </td>
-										</tr>
-										<tr> 
 											<td style='background-color:#64abff'> Tesco </td>
-											<td> UK </td>
-										</tr>
-										<tr> 
-											<td style='background-color:#64abff'> Sainsburys </td>
 											<td> UK </td>
 										</tr>
 										<tr> 
@@ -2023,117 +2016,583 @@
             <aside class='notes'>
             </aside>
 					</section>
+					<section>
+						<section data-background-image='../assets/generic/circle_remix.PNG'>
+							<h1> Third Normal Form </h1>
+							<p style='color:#ff7c66'> There are no transitive dependencies </p>
+							<div class='row'>
+								<div class='col'>
+									<table style='font-size:12px'>
+										<caption style="caption-side:bottom"> price_table </caption>
+										<tr>
+											<th style='background-color:#64abff'> Chocolate_ID </th>
+											<th style='background-color:#64abff'> Supermarket </th>
+											<th> Price </th>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 101 </td>
+											<td style='background-color:#64abff'> Coop </td>
+											<td> 1.70 </td>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 101 </td>
+											<td style='background-color:#64abff'> Tesco </td>
+											<td> 1.60 </td>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 101 </td>
+											<td style='background-color:#64abff'> Sainsburys </td>
+											<td> 1.60 </td>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 102 </td>
+											<td style='background-color:#64abff'> Walmart </td>
+											<td> 1.30 </td>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 102 </td>
+											<td style='background-color:#64abff'> Tesco </td>
+											<td> 1.20 </td>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 102 </td>
+											<td style='background-color:#64abff'> Sainsburys </td>
+											<td> 1.10 </td>
+										</tr>
+									</table>
+								</div>
+								<div class='col'>
+									<table style='font-size:10px'>
+										<caption style="caption-side:bottom"> chocolate_table </caption>
+										<tr>
+											<th style='background-color:#64abff;'> ID </th>
+											<th> Brand </th>
+											<th> Company </th>
+											<th> Rating_num </th>
+											<th> Rating_Desc </th>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 101 </td>
+											<td> Aero </td>
+											<td> Nestle </td>
+											<td> 10 </td>
+											<td> Excellent </td>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 102 </td>
+											<td> Bounty </td>
+											<td> Mars </td>
+											<td> 2 </td>
+											<td> Bad </td>
+										</tr>
+									</table>
+									<table style='font-size:10px'>
+										<caption style="caption-side:bottom"> supermarket_table </caption>
+										<tr>
+											<th style='background-color:#64abff;text-align:center'> Supermarket </th>
+											<th style='text-align:center'> Country </th>
+										</tr>
+										<tr> 
+											<td style='background-color:#64abff'> Tesco </td>
+											<td> UK </td>
+										</tr>
+										<tr> 
+											<td style='background-color:#64abff'> Walmart </td>
+											<td> USA </td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+						<!-- Slide 4 -->
+						<section data-background-image='../assets/generic/box_serious.PNG'>
+							<div class="aligncenter">
+								<span style ='font-size:60px;font-weight:bold;text-align:center'> Transitive dependencies occur when a field can be inferred from another field that <b class='objective'> not the primary key </b> </span>
+							</div>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+						<section data-background-image='../assets/generic/circle_remix.PNG'>
+							<h1> Third Normal Form </h1>
+							<p style='color:#59d8a1'> There are no transitive dependencies </p>
+							<div class='row'>
+								<div class='col'>
+									<table style='font-size:12px'>
+										<caption style="caption-side:bottom"> price_table </caption>
+										<tr>
+											<th style='background-color:#64abff'> Chocolate_ID </th>
+											<th style='background-color:#64abff'> Supermarket </th>
+											<th> Price </th>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 101 </td>
+											<td style='background-color:#64abff'> Coop </td>
+											<td> 1.70 </td>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 101 </td>
+											<td style='background-color:#64abff'> Tesco </td>
+											<td> 1.60 </td>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 101 </td>
+											<td style='background-color:#64abff'> Sainsburys </td>
+											<td> 1.60 </td>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 102 </td>
+											<td style='background-color:#64abff'> Walmart </td>
+											<td> 1.30 </td>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 102 </td>
+											<td style='background-color:#64abff'> Tesco </td>
+											<td> 1.20 </td>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 102 </td>
+											<td style='background-color:#64abff'> Sainsburys </td>
+											<td> 1.10 </td>
+										</tr>
+									</table>
+								</div>
+								<div class='col'>
+									<table style='font-size:12px'>
+										<caption style="caption-side:bottom"> chocolate_table </caption>
+										<tr>
+											<th style='background-color:#64abff;'> ID </th>
+											<th> Brand </th>
+											<th> Company </th>
+											<th> Rating_Num </th>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 101 </td>
+											<td> Aero </td>
+											<td> Nestle </td>
+											<td> 10 </td>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 102 </td>
+											<td> Bounty </td>
+											<td> Mars </td>
+											<td> 2 </td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+						<section data-background-image='../assets/generic/circle_remix.PNG'>
+							<h1> Third Normal Form </h1>
+							<div class='r-stack'>
+								<p class='fragment fade-out'>style='color:#59d8a1'> There are no transitive dependencies </p>
+								<p class='fragment fade-in'>style='color:#59d8a1'> Compliant with 2NF </p>
+							</div>
+							<div class='row'>
+								<div class='col'>
+									<table style='font-size:12px'>
+										<caption style="caption-side:bottom"> rating_table </caption>
+										<tr>
+											<th style='background-color:#64abff;text-align:center'> Rating_Num </th>
+											<th style='text-align:center'> Rating_Desc </th>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff;'> 10 </td>
+											<td> Excellent </td>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff;'> 2 </td>
+											<td> Bad </td>
+										</tr>
+									</table>
+								</div>
+								<div class='col'>
+									<table style='font-size:10px'>
+										<caption style="caption-side:bottom"> supermarket_table </caption>
+										<tr>
+											<th style='background-color:#64abff;text-align:center'> Supermarket </th>
+											<th style='text-align:center'> Country </th>
+										</tr>
+										<tr> 
+											<td style='background-color:#64abff'> Coop </td>
+											<td> UK </td>
+										</tr>
+										<tr> 
+											<td style='background-color:#64abff'> Tesco </td>
+											<td> UK </td>
+										</tr>
+										<tr> 
+											<td style='background-color:#64abff'> Sainsburys </td>
+											<td> UK </td>
+										</tr>
+										<tr> 
+											<td style='background-color:#64abff'> Walmart </td>
+											<td> USA </td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+					</section>
+					<section>
+						<!-- Slide 4 -->
+						<section data-background-image='../assets/generic/main.PNG'>
+							<h1> Partial vs Transitive Dependency </h1>						
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+						<!-- Slide 4 -->
+						<section data-background-image='../assets/generic/main.PNG'>
+							<div class='row'>
+								<div class='fragment col'>
+									<p> Partial dependency occurs when a table has a <b class='objective'>composite key </b>and a field is dependent on <b class='objective'>one part of it</b> </p>
+									<table style='font-size:12px'>
+										<caption style="caption-side:bottom"> City partially dependent on composite key </caption>
+										<tr>
+											<th style='background-color:#64abff;text-align:center'> item_id </th>
+											<th style='background-color:#64abff;text-align:center'> vendor </th>
+											<th style='text-align:center'> price </th>
+											<th style='text-align:center'> city </th>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 01 </td>
+											<td style='background-color:#64abff'> Tesco </td>
+											<td> 1.70 </td>
+											<td> London </td>
+										</tr>
+									</table>
+								</div>
+								<div class='fragment col'>
+									<p> Transitive Dependency occurs when a field can be inferred from another field that is <b class='objective'>not the primary key</b></p>
+									<table style='font-size:12px'>
+										<caption style="caption-side:bottom"> Category can be inferred from population </caption>
+										<tr>
+											<th style='background-color:#64abff;text-align:center'> county </th>
+											<th style='text-align:center'> population </th>
+											<th style='text-align:center'> category </th>	
+									  </tr>
+										<tr>
+											<td style='background-color:#64abff'> Essex </td>
+											<td style='background-color:#64abff'> 1432000 </td>
+											<td> large </td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+					</section>
 					<!-- Slide 4 -->
 					<section data-background-image='../assets/generic/main.PNG'>
+						<p class='fragment'> Understanding how databases are designed, and why they are designed this way makes the SQL - especially joins - a lot easier to understand! </p>
+						<p class='fragment'> The key is to consider the relationships and then apply normal form </p>
+						<br>
+						<p class='fragment'> You most likely will never need to design a full on database - that’s a very specific career progression. However, understanding the principles that went into the design of the databases you work with will help your understanding of them.</p>
 						<!-- Slide 4 Notes-->
             <aside class='notes'>
             </aside>
 					</section>
 					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
+					<section data-background-image='../assets/generic/tweenies.PNG'>
+						<div class='row'>
+							<div class='col'></div>
+							<div class='col'>
+								<h2 style = color:#1d98ff><b> Activity </b></h2>
+								<br>
+								<p> Convert this <a href='https://multiverselearningproducts.github.io/dfv1/Database%20Fundamentals/data/normalisation_exercise.xlsx' target='_blank'>table</a> step by step so it is in Third Normal Form</p>
+								<br>
+								<p> Also discuss: </p>
+								<p> What are the main benefits of Data Normalisation? </p>
+								<p> How you querying change because of First Normal Form? </p>
+							</div>
+						</div>
 						<!-- Slide 4 Notes-->
             <aside class='notes'>
             </aside>
+					</section>				
+					<!-- Slide 4 -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table style='text-align:center'>
+							<tr>
+								<th> transaction_table </th>
+								<th> product_table </th>
+								<th> store_table </th>
+								<th> county_table </th>
+							</tr>
+							<tr>
+								<td>
+									<ul>
+										<li> id </li>
+										<li> date </li>
+										<li> item_no </li>
+										<li> vendor_id </li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li> item_no </li>
+										<li> item_description </li>
+										<li> case_cost </li>
+										<li> proof </li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li> vendor_id </li>
+										<li> vendor </li>
+										<li> vendor_address </li>
+										<li> county </li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li> county </li>
+										<li> population </li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+						<!-- Slide 4 Notes-->
+						<aside class='notes'>
+							discus difference between transaction and reference table
+						</aside>
+					</section>
+					<!-- Slide 41 -->
+					<section data-background-image="../assets/generic/section.PNG">
+						<div class="wrap aligncenter">
+							<span class='title'> NoSQL</span>          
+						</div>
+						<!-- Slide 41 Notes -->
+						<aside class='notes'>
+							We have finished our first module! Let's recap the day.
+						</aside>
+					</section>
+					<!-- Slide 4 -->
+					<section data-background-image='../assets/generic/fun_box.PNG'>
+						<div class="aligncenter">
+							<span style ='font-size:60px;font-weight:bold;text-align:center'> NoSQL ("<b class='objective'>N</b>ot <b class='objective'>o</b>nly <b class='objective'>SQL</b>") is an alternative to traditional relational databases that can accomodate a wide variety of data models.  </span>
+						</div>
+						<!-- Slide 4 Notes-->
+						<aside class='notes'>
+						</aside>
+					</section>
+					<section>
+						<!-- Slide 4 -->
+						<section data-background-image='../assets/generic/main.PNG'>
+							<h1> Document Orientated Database </h1>
+							<div class='row'>
+								<div class='col'>
+									<p> A common NoSQL database where all instances of an object is stored in one document as opposed to spread across multiple tables. To access the data you reference the internal structure.  <p>
+									<p> Documents are organsied into collections (similar to RDBMS tables) </p>
+									<p> E.g. XML, JSON
+								</div>
+								<div class='col'>
+									<img src='assets/session_1/document.PNG'>
+								</div>
+							</div>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+						<!-- Slide 4 -->
+						<section data-background-image='../assets/generic/main.PNG'>
+							<div class='row'>
+								<div class='col'>
+									<h2> JSON </h2>
+									<code>
+										{
+											"FirstName":"Bob",
+											"Address":"5 Oak St",
+											"Hobby":"Sailing"
+										}
+									</code>
+								</div>
+								<div class='col'>
+									<h2> XML </h2>
+									<code>
+										&#60;contact&#62;
+											&#60;firstname&#62;&#60;Bob&#60;/firstname&#62;
+											&#60;lastname&#62;Smith&#60;/lastname&#62;
+											&#60;adress&#62;5 Oak St&#60;/address&#62;
+											&#60;hobby&#62;Sailing&#60;/hobby&#62;
+										&#60;/contact&#62;
+									</code>
+								</div>
+							</div>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
 					</section>
 					<!-- Slide 4 -->
 					<section data-background-image='../assets/generic/main.PNG'>
+						<h1> Key Value Database </h1>
+						<div class='row'>
+							<div class='col'>
+								<p> The simplest type of NoSQL database, where data (structured or unstructured) is mapped to a key and stored in one location. Data is extracted by referencing the key. </p>
+								<p> Wrapping several keys in a JSON format creates a document </p>
+							</div>
+							<div class='col'>
+								<img src='assets/session_1/key_value.PNG'>
+							</div>
+						</div>
 						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
+						<aside class='notes'>
+						</aside>
 					</section>
 					<!-- Slide 4 -->
 					<section data-background-image='../assets/generic/main.PNG'>
+						<h1> Columnar Database </h1>
+						<div class='row'>
+							<div class='col'>
+								<p> Data is stored in columns instead of rows. SQL can be used to extract data quickly as it will go down the columns for information instead of scanning each row. </p>
+								<p> A column orientated database applies the row key to each item in a column, allowing it to precisely retrieve information from a select group of columns.</p>
+							</div>
+							<div class='col'>
+								<img src='assets/session_1/row.PNG'>
+							</div>
+						</div>
 						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
+						<aside class='notes'>
+						</aside>
+					</section>
+					<section>
+						<!-- Slide 4 -->
+						<section data-background-image='../assets/generic/box_serious.PNG'>
+							<h1> Graph Database </h1>
+							<div class='row'>
+								<div class='col'>
+									<p> Information is stored in nodes with the edges representing the relationships between them. </p>
+									<p> Each node is a datapoint (e.g. a customer, product, group ,etc) and edges define the relationships (e.g. person (node1) is a member of this group (node2).
+									<p> Querying is fast as relationships between nodes have already been defined.</p>
+								</div>
+								<div class='col'>
+									<img src='assets/session_1/graph.PNG'>
+								</div>
+							</div>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+						<!-- Slide 4 -->
+						<section data-background-image='../assets/generic/box_serious.PNG'>
+							<h1> Graph Database </h1>
+							<div class='row'>
+								<div class='col'>
+									<p> A node can contain any type of data (structured or unstructured) including tables </p>
+									<p> As these types of databases do not use indexing, data retrieval is fast as the query follows the edges to obtain the connected information </p>
+									<p> Facebook is an example of this where a user (node) is connected to other users and groups by edges </p>
+								</div>
+								<div class='col'>
+									<img src='assets/session_1/graph.PNG'>
+								</div>
+							</div>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
 					</section>
 					<!-- Slide 4 -->
 					<section data-background-image='../assets/generic/main.PNG'>
+						<h1> Key Features </h1>
+						<p class='fragment'><b class='objective'>No Fixed Schema</b> - They do not have to follow historical rules making them more flexible</p>
+						<p class='fragment'><b class='objective'>No Joins</b> - NoSQL databases tend to store data in one large table, taking advantage of cheaper storage and faster processing where redundant data is no longer such a big issue</p>
+						<p class='fragment'><b class='objective'>Size and Scale</b> - No defined limits allows them to scale according to the resources available</p>
 						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
+						<aside class='notes'>
+						</aside>
 					</section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
+					<!-- Slide 41 -->
+					<section data-background-image="../assets/generic/section.PNG">
+						<div class="wrap aligncenter">
+							<span class='title'> Other Types of Database</span>          
+						</div>
+						<!-- Slide 41 Notes -->
+						<aside class='notes'>
+							We have finished our first module! Let's recap the day.
+						</aside>
 					</section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
-					</section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
-					</section>
-					<!-- Slide 4 -->
-          <section data-background-image='../assets/generic/section.PNG'>
-            <div class="wrap aligncenter">
-              <span class='title'> Other Types of Database</span>          
-            </div>
-            <!-- Slide 4 Notes-->
-            <aside class='notes'>
-              Section title
-            </aside>
-          </section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
-					</section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
-					</section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
-					</section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
-					</section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
-					</section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
-					</section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
-					</section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
-					</section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
+					<section>
+						<!-- Slide 41 -->
+						<section data-background-image="../assets/generic/table_back.PNG">
+							<table>
+								<tr>
+									<th> Type of DB </th>
+									<th> Examples </th>
+									<th> Description </th>
+								</tr>
+								<tr>
+									<td> Relational </td>
+									<td> MsSQL, Postgres, mySQL</td>
+									<td> This is the most common form of database. It contains tables that can be joined to other tables through their relations. Normalisation* is a key part of relational databases. </td>
+								</tr>
+								<tr>
+									<td> Hierarchical </td>
+									<td> IBM Information Management System (IMS), Windows Registry </td>
+									<td> Data is stored in a parent-children relationship nodes, in a tree like structure. The data is stored as a collection of fields where each field contains only one value. The records are linked to each other via links into a parent-children relationship. In a hierarchical database model, each child record has only one parent. A parent can have multiple children. To retrieve a field’s data, we need to traverse through each tree until the record is found. </td>
+								</tr>
+							</table>
+							<!-- Slide 41 Notes -->
+							<aside class='notes'>
+								We have finished our first module! Let's recap the day.
+							</aside>
+						</section>	
+						<!-- Slide 41 -->
+						<section data-background-image="../assets/generic/table_back.PNG">
+							<table>
+								<tr>
+									<th> Type of DB </th>
+									<th> Examples </th>
+									<th> Description </th>
+								</tr>
+								<tr>
+									<td> Network </td>
+									<td> Data Store (IDS), IDMS (Integrated Database Management System), Raima Database Manager, TurboIMAGE</td>
+									<td> Network database management systems (Network DBMSs) use a network structure to create relationship between entities. Network databases are mainly used on large digital computers. Network databases are hierarchical databases but unlike hierarchical databases where one node can have one parent only, a network node can have relationship with multiple entities. A network database looks more like a cobweb or interconnected network of records.
+ </td>
+								</tr>
+								<tr>
+									<td> Object-oriented </td>
+									<td> TORNADO, Gemstone, ObjectStore, GBase </td>
+									<td> Object-oriented databases use small, recyclable separated chunks of data called objects. The objects themselves are stored in the object-oriented database. Each object contains two things: the object itself, and the metadata that explains that object, it’s purpose, what it is and where it fits in </td>
+								</tr>
+							</table>
+							<!-- Slide 41 Notes -->
+							<aside class='notes'>
+								We have finished our first module! Let's recap the day.
+							</aside>
+						</section>	
+						<!-- Slide 41 -->
+						<section data-background-image="../assets/generic/table_back.PNG">
+							<table>
+								<tr>
+									<th> Type of DB </th>
+									<th> Examples </th>
+									<th> Description </th>
+								</tr>
+								<tr>
+									<td> NoSQL </td>
+									<td> &nbsp; </td>
+									<td> The ‘No’ stands for ‘Not Only’ SQL - these database seek to improve on standard SQL based DBMS by enhancing the forms of analytics available and changing the way that data is stored (no longer relational.) These databases are ideal for storing unstructured data.</td>
+								</tr>
+							</table>
+							<!-- Slide 41 Notes -->
+							<aside class='notes'>
+								We have finished our first module! Let's recap the day.
+							</aside>
+						</section>	
 					</section>
 					<!-- Slide 41 -->
 					<section data-background-image="../assets/generic/section.PNG">
@@ -2153,81 +2612,49 @@
 								<img src='../assets/multiverse_brand/Molten/Multiverse_Notations_RGB_Coral-01.png'>
 							</div>
 							<ul style='display:inline-block;text-align:left'>
-								<li> Identify <b class='objective'> business specific rules </b> related to datasets and data characteristics that will influence project design and analysis</li>
-								<li> Describe the key characteristics of the different <b class='objective'> Data Formats</b> and how to work with them </li>
-							</ul>          
+								<li> Explain the concepts and uses of a <b class='objective'> relational database management system </b></li>
+								<li> Identify the different types of <b class='objective'> key </b> in a RDBMS </li>
+								<li> Understand the principles of <b class='objective'> normalisation</b> on a relational database  </li>
+							</ul>           
 						</div>
 						<!-- Slide 42 Notes -->
 						<aside class='notes'>
 							Run through learning objectives again, explainining that the purpose of this session was to help apprentices plan out their projects by considering the data they use by looking at data types, structures and file formats. This should help guide them towards what sort of processes and visualisations they can use.
 						</aside>
 					</section>
-					<section>
-						<!-- Slide 43a -->
-						<section data-background-image="../assets/generic/assignment.PNG">
-							<table style='width:100%;border:1px solid black'>
-								<tr>
-									<th colspan=2 style='color:#ff7c66;text-align:center'> Assignment </th>
-								</tr>
-								<tr>
-									<th style=text-align:center colspan=2> Part 1- Data Analytics Life Cycle </th>
-								</tr>
-								<tr>
-									<td colspan=2> Use a work-related example to identify the stages of the Data Analytics Lifecycle. Describe what happened in each stage and highlight what was your role in the process. In the end, add a summary of the project/analysis including the main findings, what went well and what could have been improved. </td>
-								</tr>
-								<tr>
-									<td> Word Count </td>
-									<td> Max 1500 words </td>
-								</tr>
-								<tr>
-									<td> Deadline </td>
-									<td> 3 weeks </td>
-								</tr>
-								<tr>
-									<td> Deliverables </td>
-									<td> Word Document or PowerPoint presentation </td>
-								</tr>
-							</table>
-							<!-- Slide 43a Notes -->
-							<aside class='notes'>
-								Run through the assignment
-							</aside>
-						</section>
-						<!-- Slide 43b -->
-						<section data-background-image="../assets/generic/assignment.PNG">
-							<table style='width:100%;border:1px solid black'>
-								<tr>
-									<th colspan=2 style='color:#ff7c66;text-align:center'> Assignment </th>
-								</tr>
-								<tr>
-									<th style=text-align:center colspan=2> Part 2- Project Brief </th>
-								</tr>
-								<tr>
-									<td colspan=2> Use a work-related example to create a project brief. This could be related to a project you are about to start or something new. Your brief should contain a business problem, the wider context of the analysis and a plan of action to solve the problem. </td>
-								</tr>
-								<tr>
-									<td> Word Count </td>
-									<td> Max 1500 words </td>
-								</tr>
-								<tr>
-									<td> Deadline </td>
-									<td> 4 weeks </td>
-								</tr>
-								<tr>
-									<td> Deliverables </td>
-									<td> Word Document </td>
-								</tr>
-							</table>
-							<!-- Slide 43b Notes -->
-							<aside class='notes'>
-								Run through the assignment
-							</aside>
-						</section>
+					<section data-background-image="../assets/generic/assignment.PNG">
+						<table style='width:100%;border:1px solid black'>
+							<tr>
+								<th colspan=2 style='color:#ff7c66;text-align:center'> Assignment </th>
+							</tr>
+							<tr>
+								<th style=text-align:center colspan=2> Database Design </th>
+							</tr>
+							<tr>
+								<td colspan=2> Use a work-related dataset to design your own relational database. You should describe the dataset, follow the normalisation steps and create an Entity Relationship Diagram (ERD).  </td>
+							</tr>
+							<tr>
+								<td> Word Count </td>
+								<td> Max 1500 words </td>
+							</tr>
+							<tr>
+								<td> Deadline </td>
+								<td> 3 weeks </td>
+							</tr>
+							<tr>
+								<td> Deliverables </td>
+								<td> Word Document, PowerPoint, Excel File, PDF, Lucid Chart </td>
+							</tr>
+						</table>
+						<!-- Slide 43b Notes -->
+						<aside class='notes'>
+							Run through the assignment
+						</aside>
 					</section>
 					<!-- Slide 44 -->
 					<section data-background-image="../assets/generic/final.PNG">
 						<div class="wrap aligncenter">
-							<span class='title'> Complete <a href='https://platform.whitehat.org.uk/apprentice/attendance-log/81' style='color:#64abff' target='_blank'>Session Attendance Log</a> and Update Your OTJ</span>          
+							<span class='title'> Complete <a href='https://platform.whitehat.org.uk/apprentice/attendance-log/82' style='color:#64abff' target='_blank'>Session Attendance Log</a> and Update Your OTJ</span>          
 						</div>
 						<!-- Slide 44 Notes -->
 						<aside class='notes'>
