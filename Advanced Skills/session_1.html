@@ -1092,11 +1092,11 @@
 							</div>
 							<div class='col'>
 								<div style='background-color:black'>
-									<p style='text-align:left;color:#f4f4f4'>
+									<p style='text-align:left;color:#f4f4f4;font-size:14px'>
 										<span style='color:#64abff'>import</span> psycopg2 <br><br>
 										conn=psycopg2.connect(dbname=<span style='color:#59d8a1'>&#39;DB_NAME&#39;</span>, user=<span style='color:#59d8a1'>&#39;USERNAME&#39;</span>, password=<span style='color:#59d8a1'>&#39;PASSWORD&#39;</span>)<br><br>
 										cur=conn.cursor()<br><br>
-										cur.execute(<span style='color:#59d8a1'>&#34; SELECT table_name<br></span>
+										cur.execute(<span style='color:#59d8a1'>&#34;SELECT table_name<br></span>
 										<span style='color:#59d8a1'>FROM information_schema.tables</span><br>
 										<span style='color:#59d8a1'>WHERE table_schema=&#39;public&#39;</span><br>
 										<span style='color:#59d8a1'>ORDER BY table_name&#34;)</span><br><br>
@@ -1210,8 +1210,8 @@
 							<div class='col'>
 								<p><b> Rename Fields</b></p>
 								<div style='background-color:black'>
-									<p style='text-align:left;color:#f4f4f4'>
-										data.rename(columns={<span style='color:#59d8a1'>&#34;col_A&#34;</span>:<span style='color:#59d8a1'>&#34;col_a&#34;</span>})
+									<p style='text-align:left;color:#f4f4f4;font-size:14px'>
+										data.rename(columns={<span style='color:#59d8a1'>&#34;col_A&#34;</span>:<span style='color:#59d8a1'>&#34;Col_A&#34;</span>})
 									</p>
 								</div>
 							</div>
