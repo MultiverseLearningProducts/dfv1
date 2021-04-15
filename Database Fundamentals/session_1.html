@@ -1560,86 +1560,6 @@
 					<section>
 						<!-- Slide 4 -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
-							<h1> First Normal Form </h1>
-							<p style='color:#ff7c66'> Each table should contain relevant data </p>
-							<table style="table-layout: fixed; width: 100%;font-size:10px">
-								<tr>
-									<th style='background-color:#64abff; text-align:center'> ID </th>
-									<th style='text-align:center'> Brand </th>
-									<th style='text-align:center'> Company </th>
-									<th style='text-align:center'> Supermarket </th>
-									<th style='text-align:center'> Country </th>
-									<th style='text-align:center'> Price </th>
-									<th style='text-align:center'> Rating_num </th>
-									<th style='text-align:center'> Rating_desc </th>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Toffee Crisp </td>
-									<td> Nestle </td>
-									<td> Coop</td>
-									<td> UK </td>
-									<td> 1.70 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Toffee Crisp </td>
-									<td> Nestle </td>
-									<td> Tesco</td>
-									<td> UK </td>
-									<td> 1.70 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Toffee Crisp </td>
-									<td> Nestle </td>
-									<td> Sainsburys </td>
-									<td> UK </td>
-									<td > 1.6 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Walmart </td>
-									<td> USA </td>
-									<td> 1.30 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Tesco </td>
-									<td> UK </td>
-									<td> 1.20 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Sainsburys </td>
-									<td> UK </td>
-									<td> 1.10 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-							</table>
-							<!-- Slide 4 Notes-->
-							<aside class='notes'>
-							</aside>
-						</section>
-						<!-- Slide 4 -->
-						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Second Normal Form </h1>
 							<p style='color:#ff7c66'> Each table contains relevant data </p>
 							<table style="table-layout: fixed; width: 100%;font-size:10px">
@@ -1721,7 +1641,10 @@
 						<!-- Slide 4 -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Second Normal Form </h1>
-							<p style='color:#ff7c66'> Each table contains relevant data </p>
+							<div class='r-stack'>
+								<p class='fragment fade-out'> style='color:#59d8a1'> Each table contains relevant data </p>
+								<p class='fragment fade-in'> style='color:#ff7c66'> Compliant with 1NF
+							</div></p>
 							<div class='row'>
 								<div class='col'>
 									<table style='font-size:12px'>
@@ -1796,7 +1719,7 @@
 						</section>
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Second Normal Form </h1>
-							<p style='color:#59d8a1'> Each table contains relevant data </p>
+							<p style='color:#59d8a1'> Compliant with 1NF </p>
 							<div class='row'>
 								<div class='col'>
 									<table style='font-size:12px'>
@@ -1931,7 +1854,7 @@
 									</table>
 								</div>
 								<div class='col'>
-									<table>
+									<table style='font-size:12px'>
 										<caption style="caption-side:bottom"> chocolate_table </caption>
 										<tr>
 											<th style='background-color:#64abff'> ID </th>
@@ -2015,7 +1938,7 @@
 									</table>
 								</div>
 								<div class='col'>
-									<table>
+									<table style='font-size:12px'>
 										<caption style="caption-side:bottom"> chocolate_table </caption>
 										<tr>
 											<th style='background-color:#64abff'> ID </th>
@@ -2042,8 +1965,8 @@
 									<table style='font-size:12px'>
 										<caption style="caption-side:bottom"> supermarket_table </caption>
 										<tr>
-											<th style='background-color:#64abff'> Supermarket </th>
-											<th> Country </th>
+											<th style='background-color:#64abff;text-align:center'> Supermarket </th>
+											<th style='text-align:center'> Country </th>
 										</tr>
 										<tr> 
 											<td style='background-color:#64abff'> Coop </td>
