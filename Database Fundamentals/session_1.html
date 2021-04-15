@@ -704,67 +704,877 @@
             </aside>
 					</section>
 					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
+					<section data-background-image='../assets/generic/section.PNG'>
+            <div class="wrap aligncenter">
+              <span class='title'> Normalisation</span>          
+            </div>
 						<!-- Slide 4 Notes-->
             <aside class='notes'>
             </aside>
 					</section>
 					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
+					<section data-background-image='../assets/generic/fun_box.PNG'>
+						<div class="aligncenter">
+							<span style ='color:#4d61f4;font-size:60px;font-weight:bold;text-align:center'> 
+								Normalisation is the process of structuring a database to reduce data redundancy and improve data integrity.
+							</span>
+						</div>
 						<!-- Slide 4 Notes-->
             <aside class='notes'>
             </aside>
 					</section>
 					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table style="table-layout: fixed; width: 100%;font-size:10px">
+							<tr>
+								<th> ID </th>
+								<th> Brand </th>
+								<th> Company </th>
+								<th> Supermarket </th>
+								<th> Country </th>
+								<th> Price </th>
+								<th> Rating </th>
+								<th> Rating </th>
+							</tr>
+							<tr>			
+								<td> 101 </td>
+								<td> Toffee Crisp </td>
+								<td> Nestle </td>
+								<td> Coop/Tesco </td>
+								<td> UK </td>
+								<td> 1.70 </td>
+								<td> 10 </td>
+								<td> Excellent </td>
+							</tr>
+							<tr>			
+								<td> 101 </td>
+								<td> Toffee Crisp </td>
+								<td> Nestle </td>
+								<td> Sainsburys </td>
+								<td> UK </td>
+								<td> One Sixty </td>
+								<td> 10 </td>
+								<td> Excellent </td>
+							</tr>
+							<tr>			
+								<td> 102 </td>
+								<td> Bounty </td>
+								<td> Mars </td>
+								<td> Walmart </td>
+								<td> USA </td>
+								<td> 1.30 </td>
+								<td> 2 </td>
+								<td> Bad </td>
+							</tr>
+							<tr>			
+								<td> 102 </td>
+								<td> Bounty </td>
+								<td> Mars </td>
+								<td> Tesco </td>
+								<td> UK </td>
+								<td> 1.20 </td>
+								<td> 2 </td>
+								<td> Bad </td>
+							</tr>
+							<tr>			
+								<td> 102 </td>
+								<td> Bounty </td>
+								<td> Mars </td>
+								<td> Sainsburys </td>
+								<td> UK </td>
+								<td> 1.10 </td>
+								<td> 2 </td>
+								<td> Bad </td>
+							</tr>
+						</table>
+						<!-- Slide 4 Notes-->
+            <aside class='notes'>
+            </aside>
+					</section>	
+					<!-- Slide 4 -->
+					<section data-background-image='../assets/generic/circle_remix.PNG'>
+						<table style="table-layout: fixed; width: 100%;border-collapse: collapse;">
+							<tr>
+								<th style='background-color:#ffe352'> First Normal Form </th>
+								<th> Second Normal Form </th>
+								<th> Third Normal Form </th>
+							</tr>
+							<tr>
+								<th style='background-color:#ffe352'> 
+									<p><span style='color:#ff7c66'>&rarr;</span> Each cell only contains one data point</p>
+									<p><span style='color:#ff7c66'>&rarr;</span> Each column contains only one data subject</p>
+									<p><span style='color:#ff7c66'>&rarr;</span> Columns should each have a unique name</p>
+									<p><span style='color:#ff7c66'>&rarr;</span> Identification should not rely on the way the data is sorted</p>
+								</th>
+								<th>
+									<p><span style='color:#ff7c66'>&rarr;</span> Compliant with 1NF </p>
+									<p><span style='color:#ff7c66'>&rarr;</span> Each table contains relevant data</p>
+									<p><span style='color:#ff7c66'>&rarr;</span> There are no partial dependencies</p>
+								</th>
+								<th> 
+									<p><span style='color:#ff7c66'>&rarr;</span> Compliant with 2NF</p>
+									<p><span style='color:#ff7c66'>&rarr;</span> There are no transitive dependencies</p>
+								</th>
+							</tr>
+						</table>
 						<!-- Slide 4 Notes-->
             <aside class='notes'>
             </aside>
 					</section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
+					<section>
+						<!-- Slide 4 -->
+						<section data-background-image='../assets/generic/circle_remix.PNG'>
+							<h1> First Normal Form </h1>
+							<h2 style='color:#ff7c66'> Each cell only contains one data point </h2>
+							<table style="table-layout: fixed; width: 100%;font-size:10px">
+								<tr>
+									<th> ID </th>
+									<th> Brand </th>
+									<th> Company </th>
+									<th> Supermarket </th>
+									<th> Country </th>
+									<th> Price </th>
+									<th> Rating </th>
+									<th> Rating </th>
+								</tr>
+								<tr>			
+									<td> 101 </td>
+									<td> Toffee Crisp </td>
+									<td> Nestle </td>
+									<td style='background-color:#ff7c66'> Coop/Tesco </td>
+									<td> UK </td>
+									<td> 1.70 </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td> 101 </td>
+									<td> Toffee Crisp </td>
+									<td> Nestle </td>
+									<td> Sainsburys </td>
+									<td> UK </td>
+									<td> One Sixty </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Walmart </td>
+									<td> USA </td>
+									<td> 1.30 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Tesco </td>
+									<td> UK </td>
+									<td> 1.20 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Sainsburys </td>
+									<td> UK </td>
+									<td> 1.10 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+							</table>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+						<!-- Slide 4 -->
+						<section data-background-image='../assets/generic/circle_remix.PNG'>
+							<h1> First Normal Form </h1>
+							<h2 style='color:#59d8a1'> Each cell only contains one data point </h2>
+							<table style="table-layout: fixed; width: 100%;font-size:10px">
+								<tr>
+									<th> ID </th>
+									<th> Brand </th>
+									<th> Company </th>
+									<th> Supermarket </th>
+									<th> Country </th>
+									<th> Price </th>
+									<th> Rating </th>
+									<th> Rating </th>
+								</tr>
+								<tr>			
+									<td> 101 </td>
+									<td> Toffee Crisp </td>
+									<td> Nestle </td>
+									<td> Coop</td>
+									<td> UK </td>
+									<td> 1.70 </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td> 101 </td>
+									<td> Toffee Crisp </td>
+									<td> Nestle </td>
+									<td> Tesco</td>
+									<td> UK </td>
+									<td> 1.70 </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td> 101 </td>
+									<td> Toffee Crisp </td>
+									<td> Nestle </td>
+									<td> Sainsburys </td>
+									<td> UK </td>
+									<td> One Sixty </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Walmart </td>
+									<td> USA </td>
+									<td> 1.30 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Tesco </td>
+									<td> UK </td>
+									<td> 1.20 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Sainsburys </td>
+									<td> UK </td>
+									<td> 1.10 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+							</table>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+					</section>
+					<section>
+						<!-- Slide 4 -->
+						<section data-background-image='../assets/generic/circle_remix.PNG'>
+							<h1> First Normal Form </h1>
+							<h2 style='color:#ff7c66'> Each column contains only one data type </h2>
+							<table style="table-layout: fixed; width: 100%;font-size:10px">
+								<tr>
+									<th> ID </th>
+									<th> Brand </th>
+									<th> Company </th>
+									<th> Supermarket </th>
+									<th> Country </th>
+									<th> Price </th>
+									<th> Rating </th>
+									<th> Rating </th>
+								</tr>
+								<tr>			
+									<td> 101 </td>
+									<td> Toffee Crisp </td>
+									<td> Nestle </td>
+									<td> Coop</td>
+									<td> UK </td>
+									<td> 1.70 </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td> 101 </td>
+									<td> Toffee Crisp </td>
+									<td> Nestle </td>
+									<td> Tesco</td>
+									<td> UK </td>
+									<td> 1.70 </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td> 101 </td>
+									<td> Toffee Crisp </td>
+									<td> Nestle </td>
+									<td> Sainsburys </td>
+									<td> UK </td>
+									<td style='background-color:#ff7c66'> One Sixty </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Walmart </td>
+									<td> USA </td>
+									<td> 1.30 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Tesco </td>
+									<td> UK </td>
+									<td> 1.20 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Sainsburys </td>
+									<td> UK </td>
+									<td> 1.10 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+							</table>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+						<!-- Slide 4 -->
+						<section data-background-image='../assets/generic/table back.PNG'>
+							<div class='row'>
+								<div class='col'>
+									<table>
+										<tr>
+											<th> Student </th>
+											<th> Misc </th>
+										</tr>
+										<tr>
+											<td> Allie </td>
+											<td> Spaghetti </td>
+										</tr>
+										<tr>
+											<td> Bernard </td>
+											<td> Toyota </td>
+										</tr>
+										<tr>
+											<td> Charlotte </td>
+											<td> Blue </td>
+										</tr>
+									</table>
+								</div>
+								<div class='col'>
+									<table>
+										<tr>
+											<th> Student </th>
+											<th> Fav Food </th>
+										</tr>
+										<tr>
+											<td> Allie </td>
+											<td> Spaghetti </td>
+										</tr>
+										<tr>
+											<td> Bernard </td>
+											<td> &nbsp; </td>
+										</tr>
+										<tr>
+											<td> Charlotte </td>
+											<td> &nbsp; </td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+						<!-- Slide 4 -->
+						<section data-background-image='../assets/generic/table_back.PNG'>
+							<div class='row'>
+								<div class='col'>
+									<table>
+										<tr>
+											<th> Student </th>
+											<th> Number </th>
+										</tr>
+										<tr>
+											<td> Allie </td>
+											<td> 07551502613 </td>
+										</tr>
+										<tr>
+											<td> Bernard </td>
+											<td> 07723871451, 07464998651 </td>
+										</tr>
+										<tr>
+											<td> Charlotte </td>
+											<td> 07818771127 </td>
+										</tr>
+									</table>
+								</div>
+								<div class='col'>
+									<table>
+										<tr>
+											<th> Student </th>
+											<th> Number 1 </th>
+											<th> Number 2 </th>
+										</tr>
+										<tr>
+											<td> Allie </td>
+											<td> 07551502613 </td>
+											<td> &nbsp; </td>
+										</tr>
+										<tr>
+											<td> Bernard </td>
+											<td> 07723871451  </td>
+											<td> 07464998651 </td>
+										</tr>
+										<tr>
+											<td> Charlotte </td>
+											<td> 07818771127 </td>
+											<td> &nbsp; </td>
+										</tr>
+									</table>
+									<table>
+										<tr>
+											<th> Student </th>
+											<th> Number </th>
+										</tr>
+										<tr>
+											<td> Allie </td>
+											<td> 07551502613 </td>
+										</tr>
+										<tr>
+											<td> Bernard </td>
+											<td> 07723871451</td>
+										</tr>
+										<tr>
+											<td> Bernard </td>
+											<td> 07464998651 </td>
+										</tr>
+										<tr>
+											<td> Charlotte </td>
+											<td> 07818771127 </td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+						<!-- Slide 4 -->
+						<section data-background-image='../assets/generic/circle_remix.PNG'>
+							<h1> First Normal Form </h1>
+							<h2 style='color:#59d8a1'> Each column contains only one data type </h2>
+							<table style="table-layout: fixed; width: 100%;font-size:10px">
+								<tr>
+									<th> ID </th>
+									<th> Brand </th>
+									<th> Company </th>
+									<th> Supermarket </th>
+									<th> Country </th>
+									<th> Price </th>
+									<th> Rating </th>
+									<th> Rating </th>
+								</tr>
+								<tr>			
+									<td> 101 </td>
+									<td> Toffee Crisp </td>
+									<td> Nestle </td>
+									<td> Coop</td>
+									<td> UK </td>
+									<td> 1.70 </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td> 101 </td>
+									<td> Toffee Crisp </td>
+									<td> Nestle </td>
+									<td> Tesco</td>
+									<td> UK </td>
+									<td> 1.70 </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td> 101 </td>
+									<td> Toffee Crisp </td>
+									<td> Nestle </td>
+									<td> Sainsburys </td>
+									<td> UK </td>
+									<td> 1.6 </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Walmart </td>
+									<td> USA </td>
+									<td> 1.30 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Tesco </td>
+									<td> UK </td>
+									<td> 1.20 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Sainsburys </td>
+									<td> UK </td>
+									<td> 1.10 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+							</table>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+					</section>
+					<section>
+						<!-- Slide 4 -->
+						<section data-background-image='../assets/generic/circle_remix.PNG'>
+							<h1> First Normal Form </h1>
+							<h2 style='color:#ff7c66'> Columns should each have a unique name </h2>
+							<table style="table-layout: fixed; width: 100%;font-size:10px">
+								<tr>
+									<th> ID </th>
+									<th> Brand </th>
+									<th> Company </th>
+									<th> Supermarket </th>
+									<th> Country </th>
+									<th> Price </th>
+									<th style='background-color:#ff7c66'> Rating </th>
+									<th style='background-color:#ff7c66'> Rating </th>
+								</tr>
+								<tr>			
+									<td> 101 </td>
+									<td> Toffee Crisp </td>
+									<td> Nestle </td>
+									<td> Coop</td>
+									<td> UK </td>
+									<td> 1.70 </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td> 101 </td>
+									<td> Toffee Crisp </td>
+									<td> Nestle </td>
+									<td> Tesco</td>
+									<td> UK </td>
+									<td> 1.70 </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td> 101 </td>
+									<td> Toffee Crisp </td>
+									<td> Nestle </td>
+									<td> Sainsburys </td>
+									<td> UK </td>
+									<td > 1.6 </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Walmart </td>
+									<td> USA </td>
+									<td> 1.30 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Tesco </td>
+									<td> UK </td>
+									<td> 1.20 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Sainsburys </td>
+									<td> UK </td>
+									<td> 1.10 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+							</table>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+						<!-- Slide 4 -->
+						<section data-background-image='../assets/generic/circle_remix.PNG'>
+							<h1> First Normal Form </h1>
+							<h2 style='color:#59d8a1'> Columns should each have a unique name </h2>
+							<table style="table-layout: fixed; width: 100%;font-size:10px">
+								<tr>
+									<th> ID </th>
+									<th> Brand </th>
+									<th> Company </th>
+									<th> Supermarket </th>
+									<th> Country </th>
+									<th> Price </th>
+									<th> Rating_num </th>
+									<th> Rating_desc </th>
+								</tr>
+								<tr>			
+									<td> 101 </td>
+									<td> Toffee Crisp </td>
+									<td> Nestle </td>
+									<td> Coop</td>
+									<td> UK </td>
+									<td> 1.70 </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td> 101 </td>
+									<td> Toffee Crisp </td>
+									<td> Nestle </td>
+									<td> Tesco</td>
+									<td> UK </td>
+									<td> 1.70 </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td> 101 </td>
+									<td> Toffee Crisp </td>
+									<td> Nestle </td>
+									<td> Sainsburys </td>
+									<td> UK </td>
+									<td > 1.6 </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Walmart </td>
+									<td> USA </td>
+									<td> 1.30 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Tesco </td>
+									<td> UK </td>
+									<td> 1.20 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Sainsburys </td>
+									<td> UK </td>
+									<td> 1.10 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+							</table>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+					</section>
+					<section>
+						<!-- Slide 4 -->
+						<section data-background-image='../assets/generic/circle_remix.PNG'>
+							<h1> First Normal Form </h1>
+							<h2 style='color:#59d8a1'> Identification should not rely on the way data is sorted </h2>
+							<table style="table-layout: fixed; width: 100%;font-size:10px">
+								<tr>
+									<th> ID </th>
+									<th> Brand </th>
+									<th> Company </th>
+									<th> Supermarket </th>
+									<th> Country </th>
+									<th> Price </th>
+									<th> Rating_num </th>
+									<th> Rating_desc </th>
+								</tr>
+								<tr>			
+									<td> 101 </td>
+									<td> Toffee Crisp </td>
+									<td> Nestle </td>
+									<td> Coop</td>
+									<td> UK </td>
+									<td> 1.70 </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td> 101 </td>
+									<td> Toffee Crisp </td>
+									<td> Nestle </td>
+									<td> Tesco</td>
+									<td> UK </td>
+									<td> 1.70 </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td> 101 </td>
+									<td> Toffee Crisp </td>
+									<td> Nestle </td>
+									<td> Sainsburys </td>
+									<td> UK </td>
+									<td > 1.6 </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Walmart </td>
+									<td> USA </td>
+									<td> 1.30 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Tesco </td>
+									<td> UK </td>
+									<td> 1.20 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+								<tr>			
+									<td> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Sainsburys </td>
+									<td> UK </td>
+									<td> 1.10 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+							</table>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+						<!-- Slide 4 -->
+						<section data-background-image='../assets/generic/table_back.PNG'>
+							<div class='row'>
+								<div class='col'>
+									<table>
+										<tr>
+											<th> Student </th>
+											<th> Favourite Soup </th>
+										</tr>
+										<tr>
+											<td> Allie </td>
+											<td> Tomato </td>
+										</tr>
+										<tr>
+											<td> &nbsp; </td>
+											<td> Mushroom </td>
+										</tr>
+										<tr>
+											<td> Charlotte </td>
+											<td> Pea </td>
+										</tr>
+									</table>
+								</div>
+								<div class='col'>
+									<table>
+										<tr>
+											<th> Student </th>
+											<th> Favourite Soup </th>
+										</tr>
+										<tr>
+											<td> Allie </td>
+											<td> Tomato </td>
+										</tr>
+										<tr>
+											<td> Allie </td>
+											<td> Mushroom </td>
+										</tr>
+										<tr>
+											<td> Charlotte </td>
+											<td> Pea </td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<!-- Slide 4 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
 					</section>
 					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
-					</section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
-					</section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
-					</section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
-					</section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
-					</section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 4 Notes-->
-            <aside class='notes'>
-            </aside>
-					</section>
-					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
+					<section data-background-image='../assets/generic/circle_remix.PNG'>
+						<table style="table-layout: fixed; width: 100%;border-collapse: collapse;">
+							<tr>
+								<th> First Normal Form </th>
+								<th style='background-color:#ffe352'> Second Normal Form </th>
+								<th> Third Normal Form </th>
+							</tr>
+							<tr>
+								<th> 
+									<p><span style='color:#ff7c66'>&rarr;</span> Each cell only contains one data point</p>
+									<p><span style='color:#ff7c66'>&rarr;</span> Each column contains only one data subject</p>
+									<p><span style='color:#ff7c66'>&rarr;</span> Columns should each have a unique name</p>
+									<p><span style='color:#ff7c66'>&rarr;</span> Identification should not rely on the way the data is sorted</p>
+								</th>
+								<th style='background-color:#ffe352'>
+									<p><span style='color:#ff7c66'>&rarr;</span> Compliant with 1NF </p>
+									<p><span style='color:#ff7c66'>&rarr;</span> Each table contains relevant data</p>
+									<p><span style='color:#ff7c66'>&rarr;</span> There are no partial dependencies</p>
+								</th>
+								<th> 
+									<p><span style='color:#ff7c66'>&rarr;</span> Compliant with 2NF</p>
+									<p><span style='color:#ff7c66'>&rarr;</span> There are no transitive dependencies</p>
+								</th>
+							</tr>
+						</table>
 						<!-- Slide 4 Notes-->
             <aside class='notes'>
             </aside>
