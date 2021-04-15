@@ -1643,8 +1643,8 @@
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Second Normal Form </h1>
 							<div class='r-stack'>
-								<p class='fragment fade-out'> style='color:#59d8a1'> Each table contains relevant data </p>
-								<p class='fragment fade-in'> style='color:#ff7c66'> Compliant with 1NF </p>
+								<p class='fragment fade-out' style='color:#59d8a1'> Each table contains relevant data </p>
+								<p class='fragment fade-in' style='color:#ff7c66'> Compliant with 1NF </p>
 							</div>
 							<div class='row'>
 								<div class='col'>
@@ -2191,8 +2191,8 @@
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Third Normal Form </h1>
 							<div class='r-stack'>
-								<p class='fragment fade-out'>style='color:#59d8a1'> There are no transitive dependencies </p>
-								<p class='fragment fade-in'>style='color:#59d8a1'> Compliant with 2NF </p>
+								<p class='fragment fade-out' style='color:#59d8a1'> There are no transitive dependencies </p>
+								<p class='fragment fade-in' style='color:#59d8a1'> Compliant with 2NF </p>
 							</div>
 							<div class='row'>
 								<div class='col'>
@@ -2254,7 +2254,7 @@
 						<!-- Slide 4 -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<div class='row'>
-								<div class='fragment col'>
+								<div class='col'>
 									<p> Partial dependency occurs when a table has a <b class='objective'>composite key </b>and a field is dependent on <b class='objective'>one part of it</b> </p>
 									<table style='font-size:12px'>
 										<caption style="caption-side:bottom"> City partially dependent on composite key </caption>
@@ -2296,7 +2296,7 @@
 					</section>
 					<!-- Slide 4 -->
 					<section data-background-image='../assets/generic/main.PNG'>
-						<p class='fragment'> Understanding how databases are designed, and why they are designed this way makes the SQL - especially joins - a lot easier to understand! </p>
+						<p> Understanding how databases are designed, and why they are designed this way makes the SQL - especially joins - a lot easier to understand! </p>
 						<p class='fragment'> The key is to consider the relationships and then apply normal form </p>
 						<br>
 						<p class='fragment'> You most likely will never need to design a full on database - that’s a very specific career progression. However, understanding the principles that went into the design of the databases you work with will help your understanding of them.</p>
@@ -2423,7 +2423,7 @@
 									<h2> XML </h2>
 									<code>
 										&#60;contact&#62;
-											&#60;firstname&#62;&#60;Bob&#60;/firstname&#62;
+											&#60;firstname&#62;Bob&#60;/firstname&#62;
 											&#60;lastname&#62;Smith&#60;/lastname&#62;
 											&#60;adress&#62;5 Oak St&#60;/address&#62;
 											&#60;hobby&#62;Sailing&#60;/hobby&#62;
@@ -2470,7 +2470,7 @@
 					</section>
 					<section>
 						<!-- Slide 4 -->
-						<section data-background-image='../assets/generic/box_serious.PNG'>
+						<section data-background-image='../assets/generic/main.PNG'>
 							<h1> Graph Database </h1>
 							<div class='row'>
 								<div class='col'>
@@ -2487,7 +2487,7 @@
 							</aside>
 						</section>
 						<!-- Slide 4 -->
-						<section data-background-image='../assets/generic/box_serious.PNG'>
+						<section data-background-image='../assets/generic/main.PNG'>
 							<h1> Graph Database </h1>
 							<div class='row'>
 								<div class='col'>
@@ -2507,6 +2507,7 @@
 					<!-- Slide 4 -->
 					<section data-background-image='../assets/generic/main.PNG'>
 						<h1> Key Features </h1>
+						<br>
 						<p class='fragment'><b class='objective'>No Fixed Schema</b> - They do not have to follow historical rules making them more flexible</p>
 						<p class='fragment'><b class='objective'>No Joins</b> - NoSQL databases tend to store data in one large table, taking advantage of cheaper storage and faster processing where redundant data is no longer such a big issue</p>
 						<p class='fragment'><b class='objective'>Size and Scale</b> - No defined limits allows them to scale according to the resources available</p>
@@ -2536,7 +2537,21 @@
 								<tr>
 									<td> Relational </td>
 									<td> MsSQL, Postgres, mySQL</td>
-									<td> This is the most common form of database. It contains tables that can be joined to other tables through their relations. Normalisation* is a key part of relational databases. </td>
+									<td> This is the most common form of database. It contains tables that can be joined to other tables through their relations. Normalisation is a key part of relational databases. </td>
+								</tr>
+							</table>
+							<!-- Slide 41 Notes -->
+							<aside class='notes'>
+								We have finished our first module! Let's recap the day.
+							</aside>
+						</section>
+						<!-- Slide 41 -->
+						<section data-background-image="../assets/generic/table_back.PNG">
+							<table>
+								<tr>
+									<th> Type of DB </th>
+									<th> Examples </th>
+									<th> Description </th>
 								</tr>
 								<tr>
 									<td> Hierarchical </td>
@@ -2562,6 +2577,20 @@
 									<td> Data Store (IDS), IDMS (Integrated Database Management System), Raima Database Manager, TurboIMAGE</td>
 									<td> Network database management systems (Network DBMSs) use a network structure to create relationship between entities. Network databases are mainly used on large digital computers. Network databases are hierarchical databases but unlike hierarchical databases where one node can have one parent only, a network node can have relationship with multiple entities. A network database looks more like a cobweb or interconnected network of records.
  </td>
+								</tr>
+							</table>
+							<!-- Slide 41 Notes -->
+							<aside class='notes'>
+								We have finished our first module! Let's recap the day.
+							</aside>
+						</section>	
+						<!-- Slide 41 -->
+						<section data-background-image="../assets/generic/table_back.PNG">
+							<table>
+								<tr>
+									<th> Type of DB </th>
+									<th> Examples </th>
+									<th> Description </th>
 								</tr>
 								<tr>
 									<td> Object-oriented </td>
