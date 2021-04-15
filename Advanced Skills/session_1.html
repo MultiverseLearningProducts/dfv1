@@ -1094,13 +1094,13 @@
 								<div style='background-color:black'>
 									<p style='text-align:left;color:#f4f4f4'>
 										<span style='color:#64abff'>import</span> psycopg2 <br><br>
-										conn=psycopg2.connect(dbname=<span style='color:#59d8a1'>&#39;DB_NAME&#39;</span>, user=<span style='color:#59d8a1'>&#39;USERNAME&#39;</span>, password=<span style='color:#59d8a1'>&#39;PASSWORD&#39;</span>)<br>
-										cur=conn.cursor()<br>
+										conn=psycopg2.connect(dbname=<span style='color:#59d8a1'>&#39;DB_NAME&#39;</span>, user=<span style='color:#59d8a1'>&#39;USERNAME&#39;</span>, password=<span style='color:#59d8a1'>&#39;PASSWORD&#39;</span>)<br><br>
+										cur=conn.cursor()<br><br>
 										cur.execute(<span style='color:#59d8a1'>&#34; SELECT table_name<br></span>
 										<span style='color:#59d8a1'>FROM information_schema.tables</span><br>
 										<span style='color:#59d8a1'>WHERE table_schema=&#39;public&#39;</span><br>
-										<span style='color:#59d8a1'>ORDER BY table_name&#34;)</span><br>
-										query=<span style='color:#59d8a1'>&#34;SELECT * FROM SALES LIMIT 100&#34;</span><br>
+										<span style='color:#59d8a1'>ORDER BY table_name&#34;)</span><br><br>
+										query=<span style='color:#59d8a1'>&#34;SELECT * FROM SALES LIMIT 100&#34;</span><br><br>
 										sales=pd.read_sql_query(query,connection)
 									</p>
 								</div>
@@ -1171,7 +1171,7 @@
 								<p><b>Null Values</b></p>
 								<div style='background-color:black'>
 									<p style='text-align:left;color:#f4f4f4'>
-										data.fillna(<span style='color:#59d8a1'>&#34;Missing&#34;</span>,inplace=<span style='color:#4d61f4'>True</span>)<br>
+										data.fillna(<span style='color:#59d8a1'>&#34;Missing&#34;</span>,inplace=<span style='color:#4d61f4'>True</span>)<br><br>
 										data.dropna(inplace=<span style='color:#4d61f4'>True</span>,subset=[<span style='color:#59d8a1'>&#34;col_A&#34;</span>])
 									</p>
 								</div>
@@ -1180,9 +1180,9 @@
 								<p><b> Convert Datatypes</b></p>
 								<div style='background-color:black'>
 									<p style='text-align:left;color:#f4f4f4'>
-										data[<span style='color:#59d8a1'>&#34;col_A&#34;</span>]=data.col_A.astype(<span style='color:#59d8a1'>&#34;int&#34;</span>)
-										data[<span style='color:#59d8a1'>&#34;col_B&#34;</span>]=data.col_A.astype(<span style='color:#59d8a1'>&#34;float&#34;</span>)
-										data[<span style='color:#59d8a1'>&#34;col_C&#34;</span>]=data.col_A.astype(<span style='color:#59d8a1'>&#34;bool&#34;</span>)
+										data[<span style='color:#59d8a1'>&#34;col_A&#34;</span>]=data.col_A.astype(<span style='color:#59d8a1'>&#34;int&#34;</span>)<br>
+										data[<span style='color:#59d8a1'>&#34;col_B&#34;</span>]=data.col_A.astype(<span style='color:#59d8a1'>&#34;float&#34;</span>)<br>
+										data[<span style='color:#59d8a1'>&#34;col_C&#34;</span>]=data.col_A.astype(<span style='color:#59d8a1'>&#34;bool&#34;</span>)<br>
 									</p>
 								</div>
 							</div>
@@ -1200,9 +1200,9 @@
 								<p><b>Deduplication</b></p>
 								<div style='background-color:black'>
 									<p style='text-align:left;color:#f4f4f4'>
-										# check for duplicates <br>
-										data.duplicated <br>
-										# remove duplicates <br>
+										# check for duplicates <br><br>
+										data.duplicated <br><br>
+										# remove duplicates <br><br>
 										data.drop_duplicates(inplace=<span style='color:#4d61f4'>True</span>)
 									</p>
 								</div>
@@ -1211,7 +1211,7 @@
 								<p><b> Rename Fields</b></p>
 								<div style='background-color:black'>
 									<p style='text-align:left;color:#f4f4f4'>
-										data.rename(columns={<span style='color:#59d8a1'>&#34;col_A&#34;</span>:<span style='color:#59d8a1'>&#34;Col_A&#34;</span>})
+										data.rename(columns={<span style='color:#59d8a1'>&#34;col_A&#34;</span>:<span style='color:#59d8a1'>&#34;col_a&#34;</span>})
 									</p>
 								</div>
 							</div>
