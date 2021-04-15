@@ -2424,14 +2424,14 @@
 								</div>
 								<div class='col'>
 									<h2> XML </h2>
-									<code>
-										&#60;contact&#62;
+									<pre><code id="html_code">
+										<span style='color:#59d8a1'>&#60;contact&#62;</span>
 										&nbsp;&nbsp;<span style='color:#59d8a1'>&#60;firstname&#62;</span>Bob<span style='color:#59d8a1'>&#60;/firstname&#62;</span>
 										&nbsp;&nbsp;&#60;<span style='color:#59d8a1'>lastname&#62;</span>Smith<span style='color:#59d8a1'>&#60;/lastname&#62;</span>
 										&nbsp;&nbsp;<span style='color:#59d8a1'>&#60;adress&#62;</span>5 Oak St<span style='color:#59d8a1'>&#60;/address&#62;</span>
 										&nbsp;&nbsp;<span style='color:#59d8a1'>&#60;number&#62;</span>07464998651<span style='color:#59d8a1'>&#60;/hobby&#62;</span>
-										&#60;/contact&#62;
-									</code>
+										<span style='color:#59d8a1'>&#60;/contact&#62;</span>
+									</code></pre>
 								</div>
 							</div>
 							<!-- Slide 4 Notes-->
@@ -2703,6 +2703,23 @@
       <script>
         Reveal.initialize({hash: true, mouseWheel:true, controls:true, slideNumber:true, loop:true, plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]	});
       </script>
+			<script type="text/javascript">
+				window.onload = function(){
+						var codeElement = document.getElementById('html_code');
+						// Add code mirror class for coloring (default is the theme)
+						codeElement.classList.add( 'cm-s-default' );
+						var code = codeElement.innerText;
+
+						codeElement.innerHTML = "";
+
+						CodeMirror.runMode(
+							code,
+							'html',
+							codeElement
+						);
+				};
+
+			</script>
     </body>   
   </head>
 </html>
