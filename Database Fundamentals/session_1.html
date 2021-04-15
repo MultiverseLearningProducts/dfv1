@@ -365,9 +365,9 @@
 					<!-- Slide 4 -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<div class='r-stack'>
-							<p class='fragment fade-in-then-out'> Difficult to insert new data </p>
-							<p class='fragment fade-in-then-out'> Cannot modify existing data </p>
-							<p class='fragment fade-in-then-out'> Cannot delete information </p>
+							<p class='fragment fade-in-then-out' style='color:#ff7c66;font-size:2em;> Difficult to insert new data </p>
+							<p class='fragment fade-in-then-out' style='color:#ff7c66;font-size:2em;> Cannot modify existing data </p>
+							<p class='fragment fade-in-then-out' style='color:#ff7c66;font-size:2em;> Cannot delete information </p>
 						</div>
 						<table style='font-size:10px'>
 							<tr>
@@ -471,11 +471,11 @@
           </section>
 					<section>
 						<!-- Slide 4 -->
-						<section data-background-image='../assets/generic/main.PNG'>
+						<section data-background-image='../assets/generic/table_back.PNG'>
 							<h1> Primary Key </h1>
-							<h2 style='color:#4d61f4'> A unique identifier for each row in a table </h2>
+							<h2> A unique identifier for each row in a table </h2>
 							<table>
-								<caption> coach_table </caption>
+								<caption style="caption-side:bottom"> coach_table </caption>
 								<tr>
 									<th style='background-color:#ffe352'> Coach Id </th>
 									<th> Coach Name </th>
@@ -518,13 +518,105 @@
 						</section>
 					</section>
 					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<h1> Foreign Key </h1>
+						<h2> A field in one table that is a primary key in <b class='objective> another table </b>. These keys enable relationships between tables and allow them to be joined.
+						<div class='row'>
+							<div class='col'>
+								<table>
+									<caption style="caption-side:bottom"> apprentice_table </caption>
+									<tr>
+										<th> app_id </th>
+										<th> name </th>
+										<th> cohort </th>
+										<th> age </th>
+										<th style='background-color:#ffe352'> coach_id </th>
+									</tr>
+									<tr>
+										<td> 16 </td>
+										<td> Adam </td>
+										<td> Standard </td>
+										<td> 20 </td>
+										<td style='background-color:#ffe352'> 1 </td>
+									</tr>
+									<tr>
+										<td> 23 </td>
+										<td> Natasha </td>
+										<td> Outliers </td>
+										<td> 19 </td>
+										<td style='background-color:#ffe352'> 1 </td>
+									</tr>
+									<tr>
+										<td> 20 </td>
+										<td> Kingsley </td>
+										<td> Patch </td>
+										<td> 23 </td>
+										<td style='background-color:#ffe352'> 2 </td>
+									</tr>
+								</table>
+							</div>
+							<div class='col'>
+								<table>
+									<caption style="caption-side:bottom"> coach_table </caption>
+									<tr>
+										<th style='background-color:#ffe352'> coach_id </th>
+										<th> name </th>
+										<th> assistant </th>
+									</tr>
+									<tr>
+										<td style='background-color:#ffe352'> 1 </td>
+										<td> Steph </td>
+										<td> Ashray </td>
+									</tr>
+									<tr>
+										<td style='background-color:#ffe352'> 2 </td>
+										<td> Ben </td>
+										<td> Ashray </td>
+									</tr>
+								</table>
+							</div>
+						</div>
 						<!-- Slide 4 Notes-->
             <aside class='notes'>
             </aside>
 					</section>
 					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<h1> Composite Key </h1>
+						<h2> Two or more columns together acting as a <b class='objective'> primary key </b> </h2>
+						<table>
+							<caption style="caption-side:bottom"> assignment_table </caption>
+							<tr>
+								<th style='background-color:#ffe352'> apprentice_id </th>
+								<th style='background-color:#ffe352'> module_id </th>
+								<th> grade</th>
+								<th> coach_id </th>
+							</tr>
+							<tr>
+								<td style='background-color:#ffe352'> 1 </td>
+								<td style='background-color:#ffe352'> 1 </td>
+								<td> 99 </td>
+								<td> 1 </td>
+							</tr>
+							<tr>
+								<td style='background-color:#ffe352'> 1 </td>
+								<td style='background-color:#ffe352'> 2 </td>
+								<td> 75 </td>
+								<td> 1 </td>
+							</tr>
+							<tr>
+								<td style='background-color:#ffe352'> 2 </td>
+								<td style='background-color:#ffe352'> 1 </td>
+								<td> 80 </td>
+								<td> 2 </td>
+							</tr>
+							<tr>
+								<td style='background-color:#ffe352'> 2 </td>
+								<td style='background-color:#ffe352'> 2 </td>
+								<td> 78 </td>
+								<td> 2 </td>
+							</tr>
+						</table>
 						<!-- Slide 4 Notes-->
             <aside class='notes'>
             </aside>
@@ -552,13 +644,60 @@
             </aside>
           </section>
 					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
+					<section data-background-image='../assets/generic/tweenies.PNG'>
+						<div class='row'>
+							<div class='col'></div>
+							<div class='col'>
+								<h2 style = color:#1d98ff><b> Activity </b></h2>
+								<br>
+								<p> In groups discuss how this <a href='https://multiverselearningproducts.github.io/dfv1/Database%20Fundamentals/data/keys_exercise.pdf' target='_blank'>table</a> can be redesigned into something more useable.</p>
+								<ul style='display:inline-block;text-align:left'>
+									<li> How many tables would you create?</li>
+									<li> What are the primary/foreign keys?</li>
+									<li> What information would be placed in each? </li>
+								</ul>
+							</div>
+						</div>
 						<!-- Slide 4 Notes-->
             <aside class='notes'>
             </aside>
 					</section>
 					<!-- Slide 4 -->
-					<section data-background-image='../assets/generic/main.PNG'>
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table>
+							<tr>
+								<td> coach_table </td>
+								<td> program_table </td>
+								<td> apprentice_table </td>
+							</tr>
+							<tr>
+								<td>
+									<ul style='display:inline-block;text-align:left'>
+										<li style='background-color:#ffe352'> coach_id </li>
+										<li> coach_name </li>
+										<li> no. cohorts </li>
+										<li style='background-color:#59d8a1'> apprenticeship </li>
+									</ul>
+								</td>
+								<td>
+									<ul style='display:inline-block;text-align:left'>
+										<li style='background-color:#ffe352'> apprenticeship </li>
+										<li> TA </li>
+									</ul>
+								</td>
+								<td>
+									<ul style='display:inline-block;text-align:left'>
+										<li style='background-color:#ffe352'> app_name </li>
+										<li style='background-color:#59d8a1'> coach_id </li>
+										<li> age </li>
+										<li> LM </li>
+										<li style='background-color:#59d8a1'> apprenticeship </li>
+										<li> company_name </li>
+										<li> cohort </li>
+									</ul>
+								</td>
+							</tr>
+						</table>
 						<!-- Slide 4 Notes-->
             <aside class='notes'>
             </aside>
