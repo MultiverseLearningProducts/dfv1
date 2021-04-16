@@ -153,6 +153,7 @@
 							<div class='row'>
 								<div class='col'>
 									<h2 style='color:#f4f4f4'> Types of Data Models </h2>
+									<br>
 									<p style='color:#ff7c66'> Conceptual </p>
 									<p style='color:#f4f4f4'> Logical </p>
 									<p style='color:#f4f4f4'> Physical </p>
@@ -185,9 +186,9 @@
 										</tr>
 									</table>
 								</div>
-								<div class='col'>
-									<p> Sale </p>
-									<span style='color:#ff7c66'>&#8594;</span>
+								<div class='col'>									
+									<p style='color:#ff7c66'> Sale </p>
+									<span style='color:#ff7c66;font-size:25px'>&#8594;</span>
 								</div>
 								<div class='col'>
 									<table style='text-align:center'>
@@ -225,6 +226,7 @@
 							<div class='row'>
 								<div class='col'>
 									<h2 style='color:#f4f4f4'> Types of Data Models </h2>
+									<br>
 									<p style='color:#f4f4f4'> Conceptual </p>
 									<p style='color:#ff7c66'> Logical </p>
 									<p style='color:#f4f4f4'> Physical </p>
@@ -257,7 +259,8 @@
 									</table>
 								</div>
 								<div class='col'>
-									<span style='color:#ff7c66'>&#8594;</span>
+									<p style-'color:#f4f4f4'> Sale </p>
+									<span style='color:#ff7c66;font-size:25px'>&#8594;</span>
 								</div>
 								<div class='col'>
 									<table style='text-align:center'>
@@ -296,6 +299,7 @@
 							<div class='row'>
 								<div class='col'>
 									<h2 style='color:#f4f4f4'> Types of Data Models </h2>
+									<br>
 									<p style='color:#f4f4f4'> Conceptual </p>
 									<p style='color:#f4f4f4'> Logical </p>
 									<p style='color:#ff7c66'> Physical </p>
@@ -333,7 +337,8 @@
 									</table>
 								</div>
 								<div class='col'>
-									<span style='color:#ff7c66'>&#8594;</span>
+									<p style-'color:#f4f4f4'> Sale </p>
+									<span style='color:#ff7c66;font-size:25px'>&#8594;</span>
 								</div>
 								<div class='col'>
 									<table style='text-align:center'>
@@ -383,23 +388,191 @@
 						</aside>
 					</section>
 					<!-- Slide 5 -->
-					<section data-background-image='../assets/generic/main.PNG'>
+					<section data-background-image='../assets/generic/fun_box.PNG'>
+						<div class="aligncenter">
+							<span style ='color:#4d61f4;font-size:70px;font-weight:bold;text-align:center'> 
+								An Entitiy Relationship Diagram (ERD) lets you see how different objects (e.g. customers, products) relate to each other in a database.
+							</span>
+						</div>
 						<!-- Slide 5 Notes-->
 						<aside class='notes'>
 						</aside>
 					</section>
 					<!-- Slide 5 -->
-					<section data-background-image='../assets/generic/main.PNG'>
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> Components </h1>
+								<h2 style='color:#f4f4f4'> Entity </h2>
+								<h2 style='color:#f4f4f4'> Relationship </h2>
+								<h2 style='color:#f4f4f4'> Attribute </h2>
+							</div>
+							<div class='col'>
+							</div>
+						</div>
 						<!-- Slide 5 Notes-->
 						<aside class='notes'>
 						</aside>
+					</section>
+					<section>
+						<section data-background-image='../assets/generic/strike_force.PNG'>
+							<div class='row'>
+								<div class='col'>
+									<h1 style='color:#f4f4f4'> Components </h1>
+									<h2 style='color:#ff7c66'> Entity </h2>
+									<h2 style='color:#f4f4f4'> Relationship </h2>
+									<h2 style='color:#f4f4f4'> Attribute </h2>
+								</div>
+								<div class='col'>
+									<p>Where the data is stored (e.g. a table in a RDBMS)</p>
+									<br>
+									<table>
+										<tr>
+											<th style='text-align:center'> Entity </th>
+										</tr>
+										<tr>
+											<td>
+												Attribute1
+												Attribute2
+												Attribute3
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<!-- Slide 5 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+						<!-- Slide 5 -->
+						<section data-background-image='../assets/generic/circle_remix.PNG'>
+							<div class='row'>
+								<div class='col'>
+									<h2 style='color:#ff7c66'> Strong Entitiy</h2>
+									<br>
+									<p> Has a primary key and does not depend on another entity to exist </p>
+									<p> E.g. student information </p>
+								</div>
+								<div class='fragment col'>
+									<h2 style='color:#59d8a1'> Weak Entitiy</h2>
+									<br>
+									<p> Depends on another entity to exist </p>
+									<p> I.e. the primary key is a foreign key in another table</p>
+									<p> E.g. student enrolment information </p>
+								</div>
+							</div>
+							<!-- Slide 5 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+					</section>
+					<section>
+						<section data-background-image='../assets/generic/strike_force.PNG'>
+							<div class='row'>
+								<div class='col'>
+									<h1 style='color:#f4f4f4'> Components </h1>
+									<h2 style='color:#f4f4f4'> Entity </h2>
+									<h2 style='color:#ff7c66'> Relationship </h2>
+									<h2 style='color:#f4f4f4'> Attribute </h2>
+								</div>
+								<div class='col'>
+									<p> Defines how two entities are related to each other </p>
+									<p> Represented as lines with a "cardinality" that explains the number of instances between two entities </p>
+								</div>
+							</div>
+							<!-- Slide 5 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+						<section data-background-image='../assets/generic/table_back.PNG'>
+							<table>
+								<tr>
+									<th style='text-align:center'> Relationship </th>
+									<th style='text-align:center'> Description </th>
+									<th style='text-align:center'> Example </th>
+								</tr>
+								<tr>
+									<td> One to one </td>
+									<td> One record of an entity is directly related to another record of an entitiy </td>
+									<td> <img src='assets/session_2/one_to_one.PNG'></td>
+								</tr>
+								<tr>
+									<td> One to many </td>
+									<td> One record of an entity is related to one or more records of another entity </td>
+									<td><img src='assets/session_2/one_to_many.PNG'></td>
+								</tr>
+								<tr>
+									<td> Many to many </td>
+									<td> Many records of one entity can be related to many records of another entity </td>
+									<td><img src='assets/session_2/many_to_many.PNG'></td>
+								</tr>
+								<tr>
+									<td> One to zero or many</td>
+									<td> One record of an entity is related to zero, one or more records of another entity </td>
+									<td><img src='assets/session_2/one_to_zero_many.PNG'></td>
+								</tr>
+							</table>
+							<!-- Slide 5 Notes-->
+							<aside class='notes'>
+								This the crow foot notation
+							</aside>
+						</section>
+					</section>
+					<section>
+						<section data-background-image='../assets/generic/strike_force.PNG'>
+							<div class='row'>
+								<div class='col'>
+									<h1 style='color:#f4f4f4'> Components </h1>
+									<h2 style='color:#f4f4f4'> Entity </h2>
+									<h2 style='color:#f4f4f4'> Relationship </h2>
+									<h2 style='color:#ff7c66'> Attribute </h2>
+								</div>
+								<div class='col'>
+									<p> A property of an entity or something that can be used to describe an entity</p>
+								</div>
+							</div>
+							<!-- Slide 5 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
+						<!-- Slide 5 -->
+						<section data-background-image='../assets/generic/table_back.PNG'>
+							<table>
+								<tr>
+									<th> Attribute Type </th>
+									<th> Description </th>
+									<th> Example </th>
+								</tr>
+								<tr>
+									<td> Simple </td>
+									<td> Cannot be split into other attributes </td>
+									<td> First name, surname </td>
+								</tr>
+								<tr>
+									<td> Composite </td>
+									<td> Can be split into other attributes </td>
+									<td> Name (can be split into forename, middle name and surname) </td>
+								</tr>
+								<tr>
+									<td> Derived </td>
+									<td> Calculated or determined from another attribute </td>
+									<td> Age of record calculated from creation date </td>
+								</tr>
+							</table>
+							<!-- Slide 5 Notes-->
+							<aside class='notes'>
+								An attribute can also be single-value or multi-value: Single-value: an attribute that is only captured once for , Multi-Value: an attribute that can be captured more than once for an entity, such as multiple phone numbers.
+							</aside>
+						</section>
 					</section>
 					<!-- Slide 5 -->
 					<section data-background-image='../assets/generic/main.PNG'>
+						<img src='assets/session_2/erd_example.PNG'>
 						<!-- Slide 5 Notes-->
 						<aside class='notes'>
 						</aside>
 					</section>
+					
 					<!-- Slide 5 -->
 					<section data-background-image='../assets/generic/main.PNG'>
 						<!-- Slide 5 Notes-->
