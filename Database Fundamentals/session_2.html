@@ -258,6 +258,7 @@
 											</td>
 											<td>
 												string
+												<br>
 												integer	
 											</td>
 										</tr>
@@ -279,6 +280,7 @@
 											</td>
 											<td>
 												string
+												<br>
 												integer	
 											</td>
 										</tr>
@@ -290,6 +292,23 @@
 							</aside>
 						</section>
 						<!-- Slide 5 -->
+						<section data-background-image='../assets/generic/solution.PNG'>
+							<div class='row'>
+								<div class='col'>
+									<h1 style='color:#f4f4f4'> Common Data Types </h1>
+								</div>
+								<div class='col'>
+									<p class='fragment'> string/character/varchar </p>
+									<p class='fragment'> integer </p>
+									<p class='fragment'> number/float/decimal </p>
+									<p class='fragment'> datetime </p>
+									<p class='fragment'> boolean </p>
+								</div>
+							</div>
+							<!-- Slide 5 Notes-->
+							<aside class='notes'>
+							</aside>
+						</section>
 						<section data-background-image='../assets/generic/main.PNG'>
 							<h1> Characteristics of a Logical Data Model </h1>
 							<br>
@@ -329,16 +348,21 @@
 								<div class='col'>
 									<table style='text-align:center'>
 										<tr>
-											<th style='text-align:center'> customer </th>
+											<th colspan=2 style='text-align:center'> customer </th>
 										</tr>
 										<tr>
 											<td>
-												Customer Name (VARCHAR)
-												Customer Number (integer)
+												Customer Name 
+												Customer Number 
+											</td>
+											<td>
+												string
+												<br>
+												integer
 											</td>
 										</tr>
 										<tr>
-											<td>
+											<td colspan=2>
 												<b> Primary Key </b>
 												Customer Number
 											</td>
@@ -352,25 +376,30 @@
 								<div class='col'>
 									<table style='text-align:center'>
 										<tr>
-											<th style='text-align:center'> product </th>
+											<th colspan=2 style='text-align:center'> product </th>
 										</tr>
 										<tr>
 											<td>
-												Product Name (VARCHAR)
-												Product Price (integer)
+												Product Name 
+												Product Price 
 											</td>
+											<td>
+												string
+												<br>
+												int
 										</tr>
 										<tr>
-											<td>
-												<b> Unique Key </b>
+											<td colspan=2>
+												<b> Primary Key </b>
 												Product Name
 											</td>
+										</tr>
 									</table>
 								</div>
 							</div>
 							<!-- Slide 5 Notes-->
 							<aside class='notes'>
-								Unique key and primary key means the same thing
+								May be called unique key
 							</aside>
 						</section>
 						<!-- Slide 5 -->
@@ -593,7 +622,7 @@
 						<section data-background-image='../assets/generic/main.PNG'>
 							<img src='assets/session_2/erd_example.PNG'>
 							<!-- Slide 5 Notes-->
-							<aside class='notes'>
+							<aside class='notes'>								
 							</aside>
 						</section>
 						<!-- Slide 5 -->
@@ -601,6 +630,7 @@
 							<img src='assets/session_2/erd_2.PNG'>
 							<!-- Slide 5 Notes-->
 							<aside class='notes'>
+								Each transaction concerns one product, but a customer can buy several products.
 							</aside>
 						</section>
 						<!-- Slide 5 -->
@@ -613,6 +643,8 @@
 					</section>
 					<!-- Slide 5 -->
 					<section data-background-image='../assets/generic/main.PNG'>
+						<h1> Barker Notation </h1>
+						<img src='assets/session_2/bakers.PNG'>
 						<!-- Slide 5 Notes-->
 						<aside class='notes'>
 						</aside>
@@ -628,7 +660,21 @@
 						</aside>
 					</section>
 					<!-- Slide 5 -->
-					<section data-background-image='../assets/generic/main.PNG'>
+					<section data-background-image='../assets/generic/blank.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#59d8a1'> Spotify </h1>
+								<img src='https://source.unsplash.com/w-qqwn5O-4I/1600x800'>
+							</div>
+							<div class='col'>
+								<p style='#ff7c66'> What is its purpose?</p>
+								<p class='fragment'> Stream music based on artists, albumns, playlists or genres </p>
+								<p style='#ff7c66'> What is the user input?</p>
+								<p class='fragment'> Track title, album title, artist name or playlist title </p>
+								<p style='#ff7c66'> What will the user receive?</p>
+								<p class='fragment'> Music content </p>
+							</div>
+						</div>
 						<!-- Slide 5 Notes-->
 						<aside class='notes'>
 						</aside>
