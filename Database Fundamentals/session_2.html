@@ -915,11 +915,13 @@
 					<!-- Slide 5 -->
 					<section data-background-image='../assets/generic/main.PNG'>
 						<img src='assets/session_2/issues.PNG'>
+						<br>
 						<div class='r-hstack'>
 							<div>
 								<p class='fragment'> Can this problem be solved? </p>
 								<p class='fragment'> Do one thing at a time </p>
 							</div>
+							<div></div>
 							<div>
 								<p class='fragment'> Focus on what you can control </p>
 								<p class='fragment'> Sometimes doing nothing is best </p>
@@ -940,33 +942,230 @@
 						</aside>
 					</section>
 					<!-- Slide 5 -->
-					<section data-background-image='../assets/generic/main.PNG'>
+					<section data-background-image='../assets/generic/problem.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> What issues might we have creating a table with these field names? </h1>
+							</div>
+							<div class='col'>
+								<table>
+									<tr>
+										<th style='text-align:center'> Subscribers </th>
+									</tr>
+									<tr>
+										<td> subID </td>
+									</tr>
+									<tr>
+										<td> firstName </td>
+									</tr>
+									<tr>
+										<td> surname </td>
+									</tr>
+									<tr>
+										<td> email </td>
+									</tr>
+									<tr>
+										<td> birthday </td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<!-- Slide 5 Notes-->
+						<aside class='notes'>
+						</aside>
+					</section>
+					<section>
+						<!-- Slide 5 -->
+						<section data-background-image='../assets/generic/strike_force.PNG'>
+							<div class='row'>
+								<div class='col'>
+									<h2 style='color:#ff7c66'> Truncation </h2>
+									<h2 style='color:#f4f4f4'> Corruption </h2>
+									<h2 style='color:#f4f4f4'> Missing Data </h2>
+									<h2 style='color:#f4f4f4'> Data Types </h2>
+									<h2 style='color:#f4f4f4'> Translation </h2>
+								</div>
+								<div class='col'>
+									<h2 style='color:#f4f4f4'> blank </h2>
+									<p> Precision is lost when the data is stored somewhere too short to hold its entire length </p>
+								</div>
+							</div>
+							<!-- Slide 5 Notes-->
+							<aside class='notes'>
+								What can go wrong when uploading data? Think long strings such as URLS or email addresses in a table cell too narrow to hold it
+							</aside>
+						</section>
+						<!-- Slide 5 -->
+						<section data-background-image='../assets/generic/strike_force.PNG'>
+							<div class='row'>
+								<div class='col'>
+									<h2 style='color:#f4f4f4'> Truncation </h2>
+									<h2 style='color:#fff7c66'> Corruption </h2>
+									<h2 style='color:#f4f4f4'> Missing Data </h2>
+									<h2 style='color:#f4f4f4'> Data Types </h2>
+									<h2 style='color:#f4f4f4'> Translation </h2>
+								</div>
+								<div class='col'>
+									<h2 style='color:#f4f4f4'> blank </h2>
+									<p> Commas, apostrophes and other delimeters are moved/lost maing the table unreadable </p>
+								</div>
+							</div>
+							<!-- Slide 5 Notes-->
+							<aside class='notes'>
+								What can go wrong when uploading data?
+							</aside>
+						</section>
+						<!-- Slide 5 -->
+						<section data-background-image='../assets/generic/strike_force.PNG'>
+							<div class='row'>
+								<div class='col'>
+									<h2 style='color:#f4f4f4'> Truncation </h2>
+									<h2 style='color:#f4f4f4'> Corruption </h2>
+									<h2 style='color:#ff7c66'> Missing Data </h2>
+									<h2 style='color:#f4f4f4'> Data Types </h2>
+									<h2 style='color:#f4f4f4'> Translation </h2>
+								</div>
+								<div class='col'>
+									<h2 style='color:#f4f4f4'> blank </h2>
+									<p> Rows go missing when only a portion of the data is uploaded </p>
+								</div>
+							</div>
+							<!-- Slide 5 Notes-->
+							<aside class='notes'>
+								What can go wrong when uploading data?
+							</aside>
+						</section>
+						<!-- Slide 5 -->
+						<section data-background-image='../assets/generic/strike_force.PNG'>
+							<div class='row'>
+								<div class='col'>
+									<h2 style='color:#f4f4f4'> Truncation </h2>
+									<h2 style='color:#f4f4f4'> Corruption </h2>
+									<h2 style='color:#f4f4f4'> Missing Data </h2>
+									<h2 style='color:#ff7c66'> Data Types </h2>
+									<h2 style='color:#f4f4f4'> Translation </h2>
+								</div>
+								<div class='col'>
+									<h2 style='color:#f4f4f4'> blank </h2>
+									<p> Data mismatch from wrong data types being entered into fields </p>
+								</div>
+							</div>
+							<!-- Slide 5 Notes-->
+							<aside class='notes'>
+								What can go wrong when uploading data?
+							</aside>
+						</section>
+						<!-- Slide 5 -->
+						<section data-background-image='../assets/generic/strike_force.PNG'>
+							<div class='row'>
+								<div class='col'>
+									<h2 style='color:#f4f4f4'> Truncation </h2>
+									<h2 style='color:#f4f4f4'> Corruption </h2>
+									<h2 style='color:#f4f4f4'> Missing Data </h2>
+									<h2 style='color:#f4f4f4'> Data Types </h2>
+									<h2 style='color:#ff7c66'> Translation </h2>
+								</div>
+								<div class='col'>
+									<h2 style='color:#f4f4f4'> blank </h2>
+									<p> Encoding is wrong or symbols or rich characters are lost</p>
+								</div>
+							</div>
+							<!-- Slide 5 Notes-->
+							<aside class='notes'>
+								What can go wrong when uploading data?
+							</aside>
+						</section>
+					</section>
+					<!-- Slide 5 -->
+					<section data-background-image='../assets/generic/solution.PNG'>
+						<div class='row'>
+								<div class='col'>
+									<h1 style='color:#f4f4f4'> Common tools to help us be confident in our data accuracy </h1>
+								</div>
+								<div class='col'>
+									<p class='fragment'> Count the data </p>
+									<p class='fragment'> Spot checks</p>
+									<p class='fragment'> Calculate aggregates </p>
+									<p class='fragment'> Export comparison </p>
+								</div>
+							</div>
+						<!-- Slide 5 Notes-->
+						<aside class='notes'>
+							Most software/tools including python, R, excel, SQL and more have tools that can help with checking our data
+						</aside>
+					</section>
+					<!-- Slide 5 -->
+					<section data-background-image='../assets/generic/tweenies.PNG'>
+						<div class='row'>
+							<div class='col'></div>
+							<div class='col'>
+								<h2 style = color:#1d98ff><b> Activity </b></h2>
+								<br>
+								<p> In groups discuss:</p>
+								<ul style='display:inline-block;text-align:left'>
+									<li> Why is quality control important? </li>
+									<li> Whose responsibility is quality control?</li>
+									<li> When should quality control occur?</li>
+									<li> How should quality control be recorded? </li>
+									<li> What should you if somehting fails quality control?</li>
+								</ul>
+							</div>
+						</div>
 						<!-- Slide 5 Notes-->
 						<aside class='notes'>
 						</aside>
 					</section>
 					<!-- Slide 5 -->
-					<section data-background-image='../assets/generic/main.PNG'>
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table>
+							<tr>
+								<th colspan=2 style='text-align:center'> 6 Core Data Quality Dimensions </th>
+							</tr>
+							<tr>
+								<td><b class='objective'> Completeness </b></td>
+								<td> No missing values </td>
+							</tr>
+							<tr>
+								<td><b class='objective'> Uniqueness </b></td>
+								<td> Data only stored in one place </td>
+							</tr>
+							<tr>
+								<td><b class='objective'> Timeliness </b></td>
+								<td> Data should be reasonably up to date </td>
+							</tr>
+							<tr>
+								<td><b class='objective'> Validity </b></td>
+								<td> Conforms to the correct syntax </td>
+							</tr>
+							<tr>
+								<td><b class='objective'> Accuracy </b></td>
+								<td> Value stored is correct for its occurrence </td>
+							</tr>
+							<tr>
+								<td><b class='objective'> Consistency </b></td>
+								<td> Form and content of field is always the same </td>
+							</tr>
+						</table>
 						<!-- Slide 5 Notes-->
 						<aside class='notes'>
 						</aside>
 					</section>
 					<!-- Slide 5 -->
-					<section data-background-image='../assets/generic/main.PNG'>
+					<section data-background-image='../assets/generic/solution.PNG'>
+						<div class='row'>
+								<div class='col'>
+									<h1 style='color:#f4f4f4'> In summary... </h1>
+								</div>
+								<div class='col'>
+									<p class='fragment'> Quality control gives us confidence in results </p>
+									<p class='fragment'> Simple techniques can be used to check uploads, simple queries can be used to check results</p>
+									<p class='fragment'> Checking the quality as you go is easier and more efficient than doing it at the end </p>
+									<p class='fragment'> Code can be designed to be more robust </p>
+								</div>
+							</div>
 						<!-- Slide 5 Notes-->
 						<aside class='notes'>
-						</aside>
-					</section>
-					<!-- Slide 5 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 5 Notes-->
-						<aside class='notes'>
-						</aside>
-					</section>
-					<!-- Slide 5 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 5 Notes-->
-						<aside class='notes'>
+							Most software/tools including python, R, excel, SQL and more have tools that can help with checking our data
 						</aside>
 					</section>
 					<!-- Slide 4 -->
@@ -976,56 +1175,227 @@
 						</div>
 						<!-- Slide 4 Notes-->
 						<aside class='notes'>
-							Section title
+							How to improve performance
 						</aside>
 					</section>
 					<!-- Slide 5 -->
-					<section data-background-image='../assets/generic/main.PNG'>
+					<section data-background-image='../assets/generic/problem.PNG'>
+						<div class='row'>
+								<div class='col'>
+									<h1 style='color:#f4f4f4'> Performance issues can arise due to... </h1>
+								</div>
+								<div class='col'>
+									<p class='fragment'> Too much data </p>
+									<p class='fragment'> Inefficient queries</p>
+									<p class='fragment'> Over complex queries (too many joins) </p>
+									<p class='fragment'> Database is not normalised properly </p>
+								</div>
+							</div>
+						<!-- Slide 5 Notes-->
+						<aside class='notes'>
+						</aside>
+					</section>
+					<!-- Slide 5 -->
+					<section data-background-image='../assets/generic/pentagon_jr.PNG'>
+						<div class='row'>
+							<div class='col'>
+							</div>
+							<div class='col'>
+								What is the quickest way to find a topic in an encyclopedia? 
+							</div>
 						<!-- Slide 5 Notes-->
 						<aside class='notes'>
 						</aside>
 					</section>
 					<!-- Slide 5 -->
 					<section data-background-image='../assets/generic/main.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<img src='https://source.unsplash.com/o3sl4dhYhZE/1600x800'>
+							</div>
+							<div class='col'>
+								<h1> Indexing </h1>
+								<br>
+								<p> Every record in a database is assigned an index </p>
+								<p> Data is retrieved by referencing the index </p>
+							</div>
+						</div>
+						<!-- Slide 5 Notes-->
+						<aside class='notes'>
+							This is opposed to sorting through the database (querying). This optimises the performance by minimising the number of disk accesses required when a query is processed.
+						</aside>
+					</section>
+					<!-- Slide 5 -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<table>
+									<tr>
+										<th style='text-align:center'> Index </th>
+									</tr>
+									<tr><td>1</td></tr>
+									<tr><td>2</td></tr>
+									<tr><td>3</td></tr>
+									<tr><td>4</td></tr>
+									<tr><td>...</td></tr>
+									<tr><td>25</td></tr>
+									<tr><td>26</td></tr>
+								</table>
+							</div>
+							<div class='col'>
+								<table>
+									<tr>
+										<th style='text-align:center'> Index </th>
+										<th style='text-align:center'> Letter </th>
+										<th style='text-align:center'> Phonetic </th>
+									</tr>
+									<tr><td>1</td><td>A</td><td>Alpha</td></tr>
+									<tr><td>2</td><td>B</td><td>Bravo</td></tr>
+									<tr><td>3</td><td>C</td><td>Charlie</td></tr>
+									<tr><td>4</td><td>D</td><td>Delta</td></tr>
+									<tr><td>...</td><td>...</td><td>...</td></tr>
+									<tr><td>25</td><td>E</td><td>Yankee</td></tr>
+									<tr><td>26</td><td>F</td><td>Zulu</td></tr>
+								</table>
+							</div>
+						</div>
 						<!-- Slide 5 Notes-->
 						<aside class='notes'>
 						</aside>
 					</section>
 					<!-- Slide 5 -->
-					<section data-background-image='../assets/generic/main.PNG'>
+					<section data-background-image='../assets/generic/box_serious.PNG'>
+						<div class="aligncenter">
+							<span style ='font-size:50px;font-weight:bold;text-align:center'> Denormalisation </span> 
+							<br>
+							<p> A database optimisation technique where redundant data is added to one or more tables to help avoid costly joins in a relational database.
+						</div>
+						<!-- Slide 5 Notes-->
+						<aside class='notes'>
+							Note that denormalisation does not mean not doing normalisation. It is an optimisation technique that is applied after doing normalisation.
+						</aside>
+					</section>
+					<!-- Slide 5 -->
+					<section data-background-image='../assets/generic/circle_remix.PNG'>
+						<div class='wrap' style='width:max-content'>
+						<p style='font-size:40px'><b>Denormalisation</b> </p>
+						<div class='r-hstack'>
+							<div class='fragment'>
+								<h4 style=color:#59d8a1;font-size:30px> Pros </h4>				
+								<ul style='display:inline-block;text-align:left'>
+									<li> Data retrieval is faster through fewer joins </li>
+									<li> Queries are simpler through looking at fewer tables </li>			
+								</ul>
+							</div>
+							<br>
+							<div class='fragment'>
+								<h4 style=color:#ff7c66;font-size:30px> Cons </h4>
+								<ul style='display:inline-block;text-align:left'>
+									<li> Updates and inserts are more expensive and harder to write</li>
+									<li> Data may be inconsistent </li>
+									</li> Data redundancy requires more storage
+								</ul>
+							</div>
+						</div>
+					</div>
 						<!-- Slide 5 Notes-->
 						<aside class='notes'>
 						</aside>
 					</section>
-					<!-- Slide 5 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 5 Notes-->
-						<aside class='notes'>
-						</aside>
-					</section>
-					<!-- Slide 5 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 5 Notes-->
-						<aside class='notes'>
-						</aside>
-					</section>
-					<!-- Slide 5 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 5 Notes-->
-						<aside class='notes'>
-						</aside>
-					</section>
-					<!-- Slide 5 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 5 Notes-->
-						<aside class='notes'>
-						</aside>
-					</section>
-					<!-- Slide 5 -->
-					<section data-background-image='../assets/generic/main.PNG'>
-						<!-- Slide 5 Notes-->
-						<aside class='notes'>
-						</aside>
+					<section>
+						<!-- Slide 5 -->
+						<section data-background-image='../assets/generic/table_back.PNG'>
+							<table>
+								<tr>
+									<th style='text-align:center'> date </th>
+									<th style='text-align:center;data-background:#ffe352'> month </th>
+									<th style='text-align:center'> sales </th>
+									<th style='text-align:center'> country </th>
+									<th style='text-align:center;data-background:#ffe352'> code </th>
+									<th style='text-align:center;data-background:#ffe352'> continent </th>
+								</tr>
+								<tr>
+									<td> 08/06/2020 </td>
+									<td style='data-background:#ffe352'> 6 </td>
+									<td> 791 </td>
+									<td> France </td>
+									<td style='data-background:#ffe352'> FR </td>
+									<td style='data-background:#ffe352'> Europe </td>
+								</tr>
+								<tr>
+									<td> 08/06/2020 </td>
+									<td style='data-background:#ffe352'> 6 </td>
+									<td> 582 </td>
+									<td> Canada </td>
+									<td style='data-background:#ffe352'> CA </td>
+									<td style='data-background:#ffe352'> North America </td>
+								</tr>
+								<tr>
+									<td> 08/06/2020 </td>
+									<td style='data-background:#ffe352'> 6 </td>
+									<td> 915 </td>
+									<td> Egypt </td>
+									<td style='data-background:#ffe352'> EG </td>
+									<td style='data-background:#ffe352'> Africa </td>
+								</tr>
+								<tr>
+									<td> 08/06/2020 </td>
+									<td style='data-background:#ffe352'> 6 </td>
+									<td> 787 </td>
+									<td> Norway </td>
+									<td style='data-background:#ffe352'> NO </td>
+									<td style='data-background:#ffe352'> Europe </td>
+								</tr>
+							</table>
+							<!-- Slide 5 Notes-->
+							<aside class='notes'>
+								
+							</aside>
+						</section>
+						<!-- Slide 5 -->
+						<section data-background-image='../assets/generic/table_back.PNG'>
+							<table>
+								<tr>
+									<th style='text-align:center'> country </th>
+									<th style='text-align:center'> wins </th>
+									<th style='text-align:center'> draws </th>
+									<th style='text-align:center'> losses </th>
+									<th style='text-align:center;data-background:#ffe352'> win % </th>
+								</tr>
+								<tr>
+									<td> France </td>
+									<td> 6 </td>
+									<td> 1 </td>
+									<td> 0 </td>
+									<td style='data-background:#ffe352'> 100% </td>
+								</tr>
+								<tr>
+									<td> Croatia </td>
+									<td> 6 </td>
+									<td> 0 </td>
+									<td> 1 </td>
+									<td style='data-background:#ffe352'> 85.7% </td>
+								</tr>
+								<tr>
+									<td> Belgium </td>
+									<td> 6 </td>
+									<td> 0 </td>
+									<td> 1 </td>
+									<td style='data-background:#ffe352'> 85.7% </td>
+								</tr>
+								<tr>
+									<td> England </td>
+									<td> 4 </td>
+									<td> 0 </td>
+									<td> 3 </td>
+									<td style='data-background:#ffe352'> 57.1% </td>
+								</tr>
+							</table>
+							<!-- Slide 5 Notes-->
+							<aside class='notes'>
+								If a calculation is happening every time a query is run, it may be better to create a 'calculated field'
+							</aside>
+						</section>
 					</section>
 					<!-- Slide 4 -->
 					<section data-background-image='../assets/generic/section.PNG'>
