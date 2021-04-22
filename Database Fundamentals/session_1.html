@@ -704,27 +704,29 @@
 							Probably needs to be three tables as shown on the page. Discuss with apprentices if they agree with this, and if not what changes they would make. 
             </aside>
 					</section>
-					<!-- Slide 4 -->
+					<!-- Slide 20 -->
 					<section data-background-image='../assets/generic/section.PNG'>
             <div class="wrap aligncenter">
               <span class='title'> Normalisation</span>          
             </div>
-						<!-- Slide 4 Notes-->
+						<!-- Slide 20 Notes-->
             <aside class='notes'>
+							How do you build a RDBMS? You have your data in one table but it isn't efficient, this section will guide you through the process of normalising a table so it becomes a RDBMS.
             </aside>
 					</section>
-					<!-- Slide 4 -->
+					<!-- Slide 21 -->
 					<section data-background-image='../assets/generic/fun_box.PNG'>
 						<div class="aligncenter">
 							<span style ='color:#4d61f4;font-size:60px;font-weight:bold;text-align:center'> 
 								Normalisation is the process of structuring a database to reduce data redundancy and improve data integrity.
 							</span>
 						</div>
-						<!-- Slide 4 Notes-->
+						<!-- Slide 21 Notes-->
             <aside class='notes'>
+							Essentially, normalisation is how you build a relational deatabase.
             </aside>
 					</section>
-					<!-- Slide 4 -->
+					<!-- Slide 22 -->
 					<section data-background-image='../assets/generic/circle_remix.PNG'>
 						<table style="table-layout: fixed; width: 100%;font-size:10px">
 							<tr>
@@ -788,11 +790,12 @@
 								<td> Bad </td>
 							</tr>
 						</table>
-						<!-- Slide 4 Notes-->
+						<!-- Slide 22 Notes-->
             <aside class='notes'>
+							Ask apprentices to annotate the screen with any potential pain point they see with this table. Draw attention to the duplicated information, non unique primary keys, inconsisten data types and redundant information. This table is not in normal form, let's look at what that means...
             </aside>
 					</section>	
-					<!-- Slide 4 -->
+					<!-- Slide 23 -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<table style='border-collapse: collapse;table-layout: auto;width: 100%;'>
 							<tr>
@@ -818,12 +821,13 @@
 								</td>
 							</tr>
 						</table>
-						<!-- Slide 4 Notes-->
+						<!-- Slide 23 Notes-->
             <aside class='notes'>
+							A table in a RDBMS will be 'normalised' and that comes in three stages. Stage 1 involves sorting out keys and the quality of the data. Stage 2 separates the data out into different tables, and stage 3 validates the process.
             </aside>
 					</section>
 					<section>
-						<!-- Slide 4 -->
+						<!-- Slide 24a -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<h2 style='color:#ff7c66'> Each cell only contains one data point </h2>
@@ -889,11 +893,12 @@
 									<td> Bad </td>
 								</tr>
 							</table>
-							<!-- Slide 4 Notes-->
+							<!-- Slide 24a Notes-->
 							<aside class='notes'>
+								Each record should only be about one piece of information and so we shouldn't see two items in one cell. Ask apprentices what should be done to fix this.
 							</aside>
 						</section>
-						<!-- Slide 4 -->
+						<!-- Slide 24b -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<h2 style='color:#59d8a1'> Each cell only contains one data point </h2>
@@ -969,13 +974,89 @@
 									<td> Bad </td>
 								</tr>
 							</table>
-							<!-- Slide 4 Notes-->
+							<!-- Slide 24b Notes-->
 							<aside class='notes'>
+								Instead, each data point should be given its own record. An example of this would be items scanned in a supermarket shop as each item would need to recorded in its own row to allow the information to be captured efficiently.
+							</aside>
+						</section>
+						<!-- Slide 24c -->
+						<section data-background-image='../assets/generic/table_back.PNG'>
+							<div class='row'>
+								<div class='col'>
+									<table>
+										<tr>
+											<th> Student </th>
+											<th> Number </th>
+										</tr>
+										<tr>
+											<td> Allie </td>
+											<td> 07551502613 </td>
+										</tr>
+										<tr>
+											<td> Bernard </td>
+											<td> 07723871451, 07464998651 </td>
+										</tr>
+										<tr>
+											<td> Charlotte </td>
+											<td> 07818771127 </td>
+										</tr>
+									</table>
+								</div>
+								<div class='col'>
+									<table>
+										<tr>
+											<th> Student </th>
+											<th> Number 1 </th>
+											<th> Number 2 </th>
+										</tr>
+										<tr>
+											<td> Allie </td>
+											<td> 07551502613 </td>
+											<td> &nbsp; </td>
+										</tr>
+										<tr>
+											<td> Bernard </td>
+											<td> 07723871451  </td>
+											<td> 07464998651 </td>
+										</tr>
+										<tr>
+											<td> Charlotte </td>
+											<td> 07818771127 </td>
+											<td> &nbsp; </td>
+										</tr>
+									</table>
+									<table>
+										<tr>
+											<th> Student </th>
+											<th> Number </th>
+										</tr>
+										<tr>
+											<td> Allie </td>
+											<td> 07551502613 </td>
+										</tr>
+										<tr>
+											<td> Bernard </td>
+											<td> 07723871451</td>
+										</tr>
+										<tr>
+											<td> Bernard </td>
+											<td> 07464998651 </td>
+										</tr>
+										<tr>
+											<td> Charlotte </td>
+											<td> 07818771127 </td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<!-- Slide 24c Notes-->
+							<aside class='notes'>
+								Another solution to this would be to create a new field to show that more than one option exists for that record. You need to be careful with this approach though as for each extra field you add you are entering more blank (or null) values to your table which will reduce its efficiency. 
 							</aside>
 						</section>
 					</section>
 					<section>
-						<!-- Slide 4 -->
+						<!-- Slide 25a -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<h2 style='color:#ff7c66'> Each column contains only one data type </h2>
@@ -1051,11 +1132,12 @@
 									<td> Bad </td>
 								</tr>
 							</table>
-							<!-- Slide 4 Notes-->
+							<!-- Slide 25a Notes-->
 							<aside class='notes'>
+								It is essential that in a field, all the records contain the same data type. For example, they all need to be numerical or characters but not a mix of both. This will cause a bigger issue than you might expect, because most softwares (including python, R and SQL) will detect this conflict and will automatically convert every data point to a character (aka string). When you then try to query this column you will not get the output you expected because it is the wrong data type. It is essential then that the field is consistent.
 							</aside>
 						</section>
-						<!-- Slide 4 -->
+						<!-- Slide 25b -->
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -1099,85 +1181,12 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 4 Notes-->
+							<!-- Slide 25b Notes-->
 							<aside class='notes'>
+								An extension of this is when you have an ill defined field such as miscellaneous which can contain all sorts of information. In this case it is far better to create a field for each possible entry and remove any which are redundant.
 							</aside>
 						</section>
-						<!-- Slide 4 -->
-						<section data-background-image='../assets/generic/table_back.PNG'>
-							<div class='row'>
-								<div class='col'>
-									<table>
-										<tr>
-											<th> Student </th>
-											<th> Number </th>
-										</tr>
-										<tr>
-											<td> Allie </td>
-											<td> 07551502613 </td>
-										</tr>
-										<tr>
-											<td> Bernard </td>
-											<td> 07723871451, 07464998651 </td>
-										</tr>
-										<tr>
-											<td> Charlotte </td>
-											<td> 07818771127 </td>
-										</tr>
-									</table>
-								</div>
-								<div class='col'>
-									<table>
-										<tr>
-											<th> Student </th>
-											<th> Number 1 </th>
-											<th> Number 2 </th>
-										</tr>
-										<tr>
-											<td> Allie </td>
-											<td> 07551502613 </td>
-											<td> &nbsp; </td>
-										</tr>
-										<tr>
-											<td> Bernard </td>
-											<td> 07723871451  </td>
-											<td> 07464998651 </td>
-										</tr>
-										<tr>
-											<td> Charlotte </td>
-											<td> 07818771127 </td>
-											<td> &nbsp; </td>
-										</tr>
-									</table>
-									<table>
-										<tr>
-											<th> Student </th>
-											<th> Number </th>
-										</tr>
-										<tr>
-											<td> Allie </td>
-											<td> 07551502613 </td>
-										</tr>
-										<tr>
-											<td> Bernard </td>
-											<td> 07723871451</td>
-										</tr>
-										<tr>
-											<td> Bernard </td>
-											<td> 07464998651 </td>
-										</tr>
-										<tr>
-											<td> Charlotte </td>
-											<td> 07818771127 </td>
-										</tr>
-									</table>
-								</div>
-							</div>
-							<!-- Slide 4 Notes-->
-							<aside class='notes'>
-							</aside>
-						</section>
-						<!-- Slide 4 -->
+						<!-- Slide 25c -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<h2 style='color:#59d8a1'> Each column contains only one data type </h2>
@@ -1253,13 +1262,14 @@
 									<td> Bad </td>
 								</tr>
 							</table>
-							<!-- Slide 4 Notes-->
+							<!-- Slide 25c Notes-->
 							<aside class='notes'>
+								Issue fixed, all values are numerical.
 							</aside>
 						</section>
 					</section>
 					<section>
-						<!-- Slide 4 -->
+						<!-- Slide 26a -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<h2 style='color:#ff7c66'> Columns should each have a unique name </h2>
@@ -1335,11 +1345,12 @@
 									<td> Bad </td>
 								</tr>
 							</table>
-							<!-- Slide 4 Notes-->
+							<!-- Slide 26a Notes-->
 							<aside class='notes'>
+								An obvious issue, but all columns should have unique names (a reason why excel sheets are not structured btw- they allow you to do this...). If several columns in a table have the same name there will be issues with data retrieval and querying as the search won't know which columns to extract. This would be doubly problematic if this was involving primary keys...
 							</aside>
 						</section>
-						<!-- Slide 4 -->
+						<!-- Slide 26b -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<h2 style='color:#59d8a1'> Columns should each have a unique name </h2>
@@ -1415,13 +1426,14 @@
 									<td> Bad </td>
 								</tr>
 							</table>
-							<!-- Slide 4 Notes-->
+							<!-- Slide 26b Notes-->
 							<aside class='notes'>
+								This is a simple fix giving each column its own name. Note that proper naming convention for field names which are more than one word is to use underscore to avoid whitespace. This again saves on memory as the system doesn't have to think about trying to fill in any gaps.
 							</aside>
 						</section>
 					</section>
 					<section>
-						<!-- Slide 4 -->
+						<!-- Slide 27a -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<p style='color:#59d8a1'> Identification should not rely on the way data is sorted </p>
@@ -1497,11 +1509,12 @@
 									<td> Bad </td>
 								</tr>
 							</table>
-							<!-- Slide 4 Notes-->
+							<!-- Slide 27a Notes-->
 							<aside class='notes'>
+								Finally, you should be able to reference any piece of information in a table by looking at its primary or composite key alone. Aother way of putting this, is that if the table was shuffled would the records lose meaning? If so, it is not in normal form.
 							</aside>
 						</section>
-						<!-- Slide 4 -->
+						<!-- Slide 27b -->
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -1545,12 +1558,13 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 4 Notes-->
+							<!-- Slide 27b Notes-->
 							<aside class='notes'>
+								In the left table we can tell Allie also like Mushroom soup but if for whatever reason the table was shuffled that mushroom soup would be out of place and we wouldn't know who it belonged to. In this case, the data's value is dependent on the way it is sorted. To make it normal, we will need to put Allie's name in again.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 4 -->
+					<!-- Slide 28 -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<table style='border-collapse: collapse;table-layout: auto;width: 100%;'>
 							<tr>
@@ -1576,12 +1590,13 @@
 								</td>
 							</tr>
 						</table>
-						<!-- Slide 4 Notes-->
+						<!-- Slide 28 Notes-->
             <aside class='notes'>
+							Following those rules will put a table in first normal form, but it is still not fully normalised. Our example table still has a lot of repeated data which need to be separated out. Let's look at how we take a table from first normal form to second.
             </aside>
 					</section>
 					<section>
-						<!-- Slide 4 -->
+						<!-- Slide 29a -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Second Normal Form </h1>
 							<p style='color:#ff7c66'> Each table contains relevant data </p>
@@ -1657,11 +1672,12 @@
 									<td> Bad </td>
 								</tr>
 							</table>
-							<!-- Slide 4 Notes-->
+							<!-- Slide 29a Notes-->
 							<aside class='notes'>
+								Firstly, each table must only contain relevant data. Ask apprentices to spot which data may not be relevant to each other. For example, the price and rating are not strictly related to each other and could be in separate tables. Some of the information is about the supermarkets, and other is about the company that makes the chocolate. Each of those should be in different tables.
 							</aside>
 						</section>
-						<!-- Slide 4 -->
+						<!-- Slide 29b -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Second Normal Form </h1>
 							<div class='r-stack'>
@@ -1736,10 +1752,12 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 4 Notes-->
+							<!-- Slide 29b Notes-->
 							<aside class='notes'>
+								We have separated the data into two tables, one about the supermarkets selling the chocolate and the other about the chocolate itself. But there is still an issue, can anyone spot what it is? The primary key is not unique so it fails 1NF
 							</aside>
 						</section>
+						<!-- Slide 29c -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Second Normal Form </h1>
 							<p style='color:#59d8a1'> Compliant with 1NF </p>
@@ -1818,13 +1836,14 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 4 Notes-->
+							<!-- Slide 29c Notes-->
 							<aside class='notes'>
+								By adding an id column to the price table (which is the foreign key for the chocolate table) we can create a composite key that uniquely identifies each row. First normal form has now been achieved. 
 							</aside>
 						</section>
 					</section>
 					<section>
-						<!-- Slide 4 -->
+						<!-- Slide 30a -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Second Normal Form </h1>
 							<p style='color:#ff7c66'> There are no partial dependencies </p>
@@ -1903,19 +1922,22 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 4 Notes-->
+							<!-- Slide 30a Notes-->
 							<aside class='notes'>
+								The next issue is that there can be no partial dependencies, in which there is some in this example. Can anyone suggest what a partial dependency means?
 							</aside>
 						</section>
-						<!-- Slide 4 -->
+						<!-- Slide 30b -->
 						<section data-background-image='../assets/generic/box_serious.PNG'>
 							<div class="aligncenter">
 								<span style ='font-size:60px;font-weight:bold;text-align:center'> Partial dependencies occur when a table with a composite key has a field which is only dependent on part of it </span>
 							</div>
-							<!-- Slide 4 Notes-->
+							<!-- Slide 30b Notes-->
 							<aside class='notes'>
+								If you have a field which is only dependent on part of a composite key, you have a partial dependency. 2NF is about only having relevant info in each table and if some of the information is partially relevant it is not good enough. In our example the issue is the price table is the country field. Country relates to the supermarket, but not the chocolate id as the brands are sold in both US and UK
 							</aside>
 						</section>
+						<!-- Slide 30c -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Second Normal Form </h1>
 							<p style='color:#59d8a1'> There are no partial dependencies </p>
@@ -2002,13 +2024,13 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 4 Notes-->
+							<!-- Slide 30c Notes-->
 							<aside class='notes'>
+								So to avoid partial dependencies we need to create a third table which shows what country each supermarket is in (to avoid the table coming off the page I have truncated it...)
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 4 -->
-					<!-- Slide 4 -->
+					<!-- Slide 31 -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<table style='border-collapse: collapse;table-layout: auto;width: 100%;'>
 							<tr>
@@ -2034,11 +2056,13 @@
 								</td>
 							</tr>
 						</table>
-						<!-- Slide 4 Notes-->
+						<!-- Slide 31 Notes-->
             <aside class='notes'>
+							With our table in 2NF it is time to consider third normal form, the stage where we validate the RDBMS is normalised. The main point here is to do with transitive dependencies, does anyone know what these are?
             </aside>
 					</section>
 					<section>
+						<!-- Slide 32a -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Third Normal Form </h1>
 							<p style='color:#ff7c66'> There are no transitive dependencies </p>
@@ -2125,19 +2149,22 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 4 Notes-->
+							<!-- Slide 32a Notes-->
 							<aside class='notes'>
+								Can anyone spot the transitive dependency? What table looks like it holds irrelevant information?
 							</aside>
 						</section>
-						<!-- Slide 4 -->
+						<!-- Slide 32b -->
 						<section data-background-image='../assets/generic/box_serious.PNG'>
 							<div class="aligncenter">
 								<span style ='font-size:60px;font-weight:bold;text-align:center'> Transitive dependencies occur when a field can be inferred from another field that <b class='objective'> not the primary key </b> </span>
 							</div>
-							<!-- Slide 4 Notes-->
+							<!-- Slide 32b Notes-->
 							<aside class='notes'>
+								A transitive dependency occurs when you can gain a piece of information about a field from one which isn't the primary key. In our example it is the two rating columns in the chocolate table. I can understand that a chocolate is excellent because it is rated as 10 and I can get that info without looking at the primary key.
 							</aside>
 						</section>
+						<!-- Slide 32c -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Third Normal Form </h1>
 							<p style='color:#59d8a1'> There are no transitive dependencies </p>
@@ -2206,10 +2233,12 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 4 Notes-->
+							<!-- Slide 32c Notes-->
 							<aside class='notes'>
+								Due to size constraints the example has been spread across two tables. To be compliant with 3NF we have removed the rating description from the chocolate table and created a new table on the next page.
 							</aside>
 						</section>
+						<!-- Slide 32d -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Third Normal Form </h1>
 							<div class='r-stack'>
@@ -2260,20 +2289,22 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 4 Notes-->
+							<!-- Slide 32d Notes-->
 							<aside class='notes'>
+								By doing this we have removed the transitive dependency, ensuring that each table now contains only relevant information that is directly related to its primary key.
 							</aside>
 						</section>
 					</section>
 					<section>
-						<!-- Slide 4 -->
+						<!-- Slide 33a -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<h1> Partial vs Transitive Dependency </h1>						
-							<!-- Slide 4 Notes-->
+							<!-- Slide 33a Notes-->
 							<aside class='notes'>
+								A common source of confusion is understanding the difference between transitive and partial dependency, let's look at both. 
 							</aside>
 						</section>
-						<!-- Slide 4 -->
+						<!-- Slide 33b -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -2311,8 +2342,9 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 4 Notes-->
+							<!-- Slide 33b Notes-->
 							<aside class='notes'>
+								Partial dependency occurs in tables with composite keys where some of the fields are only dependent on part of the key. For example, the city field only relates to the vendor and not the item_id as that value will appear if the product is sold in another city. That is a partial dependency. A transitive dependency occurs when you cna understand a field from another which isn't the primary key. I know Essex has a large population because I can see that from the number. 
 							</aside>
 						</section>
 					</section>
