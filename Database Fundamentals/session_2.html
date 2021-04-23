@@ -43,7 +43,7 @@
           <section data-background-image='../assets/generic/main_title.PNG'>
             <!-- Slide 0 Notes-->
             <aside class='notes'>
-              MultiVerse Title Page
+              Welcome apprentices to the session and choose an ice breaker activity from <a href='https://drive.google.com/drive/folders/1maXFZJqy5CQpqcWYJYHGS7fpPnCtVEfn?usp=sharing' target='_blank'> here </a>
             </aside>
           </section>
           <!-- Slide 1 -->
@@ -55,7 +55,7 @@
             </div>
             <!-- Slide 1 Notes-->
             <aside class='notes'>
-              Session title
+              Following on from the previous session, today we will be looking at how to design a database and then how to identify and fix errors.
             </aside>
           </section>
           <!-- Slide 2 -->
@@ -75,7 +75,7 @@
 						</div>
 						<!-- Slide 2 Notes -->
 						<aside class='notes'>
-							Run through the plan of the day, plan to have a break about half way through
+							Run through the session plan, there will be a break roughly half way through.
 						</aside>
 					</section>
 					<!-- Slide 3 -->
@@ -93,7 +93,7 @@
 						</div>
 						<!-- Slide 3 Notes -->
 						<aside class='notes'>
-							Run through learning objectives, this session is about getting apprentices to 'think data'. How can they approach projects in a way that will allow them to work with stakeholders to deliver data driven insights? 
+							Run through learning objectives, this session will reinforce the principles of database design and then how to maintain a databse.
 						</aside>
 					</section>
 					<!-- Slide 4 -->
@@ -103,34 +103,36 @@
 						</div>
 						<!-- Slide 4 Notes-->
 						<aside class='notes'>
-							Section title
+							Yesterday we saw what a RDBMS is and how it is structured. The purpose of this was to help you with writing queries to retrieve data. However, if you want to get an overview of the database, looking at the tables themselves will be a chore. Data models are a type of metadata that explain how a database is structured, showing the relationships between tables and what is contained in each.
 						</aside>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 5a -->
 						<section data-background-image='../assets/generic/fun_box.PNG'>
 							<div class="aligncenter">
 								<span style ='color:#4d61f4;font-size:70px;font-weight:bold;text-align:center'> 
 									Why use a Data Model?
 								</span>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 5a Notes-->
 							<aside class='notes'>
+								Ask the group to annotate the screen with their ideas
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 5b -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<p> All data objects required by the database are <b class='objective'>accurately represented</b> </p>
 							<p class='fragment'> A data model helps design the database at the <b class='objective'>conceptual, physical and logical levels</b> </p>
 							<p class='fragment'> Data model structure helps define <b class='objective'>relational tables</b>, <b class='objective'>primary and foreign keys</b> as well as <b class='objective'>stored procedures</b> </p>
 							<p class='fragment'> It provides a clear picture of the <b class='objective'>base data</b> <p>
 								<p class='fragment'> It can help identify <b class='objective'>missing or redundant data</b> </p>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 5b Notes-->
 							<aside class='notes'>
+								A data model will ensure that every object (tables) are accurately represented, allowing users to see what information is available and what the relationships are between tables. Having a model will make it easier to design databases (imagine trying to build a house without a blueprint...). Having data models will also help define relationships between tables and help identify where data may be missing. When you create a database you should know what data is being uploaded, and therefore by having an overview model you can see what is missing, or redundant.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 6 -->
 					<section data-background-image='../assets/generic/strike_force.PNG'>
 						<div class='row'>
 							<div class='col'>
@@ -144,12 +146,13 @@
 								<img src='assets/session_2/db_process.PNG'>
 							</div>
 						</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 6 Notes-->
 						<aside class='notes'>
+							When designing a database through data models you will follow three stages. You will start with a conceptual model which will be used as a basis for building a logical model. Adding in other business requirements will see the creation of a physical model where the data will be added and the database implemented.
 						</aside>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 7a -->
 						<section data-background-image='../assets/generic/strike_force.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -166,12 +169,13 @@
 									<p class='fragment'> Relationships </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 7a Notes-->
 							<aside class='notes'>
-								In this data modeling level, there is hardly any detail available on the actual database structure. Business stakeholders and data architects typically create a conceptual data model.
+								Starting with the conceptual model, there is hardly any detail available on the actual database structure. Business stakeholders and data architects typically create a conceptual data model to establish the blue print of the database, defining what the entities (tables), attributes (data) and relationships will be.
+								In this data modeling level, 
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 7b -->
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -205,24 +209,26 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 7b Notes-->
 							<aside class='notes'>
+								An example, you may have two tables showing customers and the products they are buying. The conceptual model states what fields will be in each table and that they are linked by the sale of the product.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 7c -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<h1> Characteristics of a Conceptual Data Model </h1>
 							<br>
 							<p class='fragment'> Offers organisation wide coverage of business concepts </p>
 							<p class='fragment'> Designed and developed for business audiences </p>
 							<p class='fragment'> Developed independently of hardware specifications like storage capacity, or software specifications like DBMS technology. The focus is to represent data as a user would see it in the 'real world' </p>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 7c Notes-->
 							<aside class='notes'>
+								Conceptual models are the basic building blocks of database design which allow users to experiment with different ideas and can be used for a variety of business purposes. An advantage at this early stage of development is that technical requirements such as hardware is not considered, allowing the user to design the system they want and then find a system that will accomodate it.
 							</aside>
 						</section>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 8a -->
 						<section data-background-image='../assets/generic/strike_force.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -239,11 +245,12 @@
 									<p class='fragment'> Does not require keys, you just need to verify the connector details set for earlier relationships </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 8a Notes-->
 							<aside class='notes'>
+								Once the model is conceptually built, it is time to think about how the data may look. At this point you will be aware of what the data is, so you will want to define the data types as this will determine what sort of analysis will become available. At this early development stage the relationships will not be fully definied, so you won't need to think about keys. All you need to state is what tables will ultimately be related to each other.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 8b -->
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -259,6 +266,7 @@
 											<td>
 												string
 												<br>
+												&nbsp; <br>
 												integer	
 											</td>
 										</tr>
@@ -281,17 +289,19 @@
 											<td>
 												string
 												<br>
+												&nbsp; <br>
 												integer	
 											</td>
 										</tr>
 									</table>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 8b Notes-->
 							<aside class='notes'>
+								Adding to the conceptual model we are now looking at what types of data are contained within each entity. This is important, as it will inform how the database will likely be used. For example, numerical data can be aggregated (calculating averages, etc). 
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 8c -->
 						<section data-background-image='../assets/generic/solution.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -305,10 +315,12 @@
 									<p class='fragment'> boolean </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 8c Notes-->
 							<aside class='notes'>
+								What do we mean by data types? In module 1 we thought about quantitative and qualitative and structures, but we can expland on this by looking at how an individual piece of data may be stored. The basic type of data is string (sometimes called a character or variable character) is simply characters, like letters which can be formed into words (or other objects like serial numbers or urls for example). String data types are difficult to analyse of themselves, but can be examined for their length, how often they appear or as a basis for aggregation (average number of drinks sold per shop). Integers are whole numbers whereas if it involves a decimal it will be called (depending on the system) a number, decimal or floating point number (float). Most softwares recognise datetime as a separate data type due to how time behaves differently to most numbers. Finally is boolean, also known as True or False. A binary field which indicates if something is 'on' or 'off'. True often has value 1, and False 0.
 							</aside>
 						</section>
+						<!-- Slide 8d -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<h1> Characteristics of a Logical Data Model </h1>
 							<br>
@@ -316,13 +328,14 @@
 							<p class='fragment'> Designed and developed independently from the DBMS </p>
 							<p class='fragment'> Data attributes will have data types with exact precisions and length </p>
 							<p class='fragment'> Normalisation processes to the model is applied typically till 3NF </p>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 8d Notes-->
 							<aside class='notes'>
+								A logical model is used in the development of a database, but an advantage is that if you want to integrate with an existing database at this stage you can plan out how this will work. As previously mentioned, a logical model is developed before deciding on the database management system- so you can design what you want and decide if a RDBMS, NoSQL or any other database management system is the most appropriate. 
 							</aside>
 						</section>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 9a -->
 						<section data-background-image='../assets/generic/strike_force.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -338,11 +351,12 @@
 									<p class='fragment'> Helps visualise  database structure by replicating column keys, constraints and other RDBMS features </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 9a Notes-->
 							<aside class='notes'>
+								Finally we have the physical model. At this point you are almost ready to implement the database and know which data is going to be uploaded. At this point you will also look at the business and performance requirements of the database and start to incorporate them. This will include looking at hardware requirements (i.e. where will the data be stored?) and software requirements (database management system). A physical model will demonstrate how the data in the database is stored, how different entities are related and what the keys are (if a RDBMS). 
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 9b -->
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -358,6 +372,7 @@
 											<td>
 												string
 												<br>
+												&nbsp; <br>
 												integer
 											</td>
 										</tr>
@@ -386,6 +401,7 @@
 											<td>
 												string
 												<br>
+												&nbsp; <br>
 												int
 										</tr>
 										<tr>
@@ -397,12 +413,12 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 9b Notes-->
 							<aside class='notes'>
-								May be called unique key
+								Building on the logical model we have also designated what the primary keys (sometimes called unique key) are, which will establish the relationships between entities. 
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 9c -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<h1> Characteristics of a Physical Data Model </h1>
 							<br>
@@ -410,33 +426,35 @@
 							<p class='fragment'> Developed for a specific version of a DBMS, location, data storage or technology to be used in a project  </p>
 							<p class='fragment'> Columns should have exact data types, lengths and default values assigned</p>
 							<p class='fragment'> Primary and foreign keys, views, indices, access profiles and authorisations are defined </p>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 9c Notes-->
 							<aside class='notes'>
+								Physical models will display the relationship between tables showing the opportunities for querying which will help users. At this point the developer will have a specific DBMS in mind and so will tailor the design towards it. It is important then that fields should be fully fleshed out, showing what the data types will be, how much data there will be and if there is a default value. 
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 4 -->
+					<!-- Slide 10 -->
 					<section data-background-image='../assets/generic/section.PNG'>
 						<div class="wrap aligncenter">
 							<span class='title'> Entity Relationship Diagrams </span>          
 						</div>
-						<!-- Slide 4 Notes-->
+						<!-- Slide 10 Notes-->
 						<aside class='notes'>
-							Section title
+							We have discussed what a data model is and how they are useful for database designers. Following on from this, we are going to look at entity relationship diagrams which are the highest level of data models that allow users to see how a database is structured so they can plan their queries. 
 						</aside>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 11 -->
 					<section data-background-image='../assets/generic/fun_box.PNG'>
 						<div class="aligncenter">
 							<span style ='color:#4d61f4;font-size:50px;font-weight:bold;text-align:center'> 
 								An Entitiy Relationship Diagram (ERD) lets you see how different objects (e.g. customers, products) relate to each other in a database.
 							</span>
 						</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 11 Notes-->
 						<aside class='notes'>
+							Entity relationship diagrams are the highest level of data models that allow users to see how different objects (such as customers, products, etc) relate to each other in a database. An ERD is what database users will reference when planning out the SQL queries they write in a RDBMS.
 						</aside>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 12 -->
 					<section data-background-image='../assets/generic/strike_force.PNG'>
 						<div class='row'>
 							<div class='col'>
@@ -448,12 +466,13 @@
 							<div class='col'>
 							</div>
 						</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 12 Notes-->
 						<aside class='notes'>
+							An ERD comprises of three components: entities, relationships and attributes. 
 						</aside>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 13a -->
 						<section data-background-image='../assets/generic/strike_force.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -479,11 +498,12 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 13a Notes-->
 							<aside class='notes'>
+								Starting with entities, these are where your data are going to be stored. Think tables in a RDBMS.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 13b -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -500,13 +520,14 @@
 									<p> E.g. student enrolment information </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 13b Notes-->
 							<aside class='notes'>
+								There are two types of entity, strong and weak. Strong entities have primary keys and do not require another entity to exist. Think transactional tables where recent sales are recorded. They are updated whenever a new sale is made and are not reliant on any other table. Weak entities require other entities to exist to make sense, i.e. their primary key is a foreign key in another table. Reference tables like product information are examples of these.
 							</aside>
 						</section>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 14a -->
 						<section data-background-image='../assets/generic/strike_force.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -520,57 +541,58 @@
 									<p> Represented as lines with a "cardinality" that explains the number of instances between two entities </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 14a Notes-->
 							<aside class='notes'>
+								Relationships define how two entities relate to each other, and are often represented as line with some of form of indication of how many instances exist between them. For example, several records in a sales table will relate to one record in a product table and the relationship will reflect this.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 14b -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> One to One Relationship</h1>
 							<br>
 							<p> One record of an entity is directly related to another record of an entitiy </p>
 							<img src='assets/session_2/one_to_one.PNG'>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 14b  Notes-->
 							<aside class='notes'>
-								This the crow foot notation
+								There are different ways of representing an ERD, but we will be using the Crow Foot notation. This is an example of a one to one relationship, where one record in one table relates directly to one record in another. Imagine a table where every row was a person and in the other table was their passport information. Each person should only have one passport so this would be a one-to-one relationship.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 14c -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> One to Many Relationship</h1>
 							<br>
 							<p> One record of an entity is related to one or more records of another entity </p>
 							<img src='assets/session_2/one_to_many.PNG'>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 14c Notes-->
 							<aside class='notes'>
-								This the crow foot notation
+								A one to many relationship exists when one record in a table relates to several tables in another (the opposite many-to-one exists as well). Imagine a table full of customers and another a list of products sold in a single transaction. One person will have bought many (or one) product and so will be a one to many relationship. Can anyone give an example of a many to one relationship (e.g. customers buying the same product)
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 14d -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Many to Many Relationship</h1>
 							<br>
 							<p> Many records of one entity can be related to many records of another entity </p>
 							<img src='assets/session_2/many_to_many.PNG'>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 14d Notes-->
 							<aside class='notes'>
-								This the crow foot notation
+								A many to many relationship occurs when many records in one table relate to many records in another. Imagine a table full of employees and another containing vehicles available for the company to use. Several employees may have access to the same vehicles which would be a many to many relationship.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 14e -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> One or Zero to to Many Relationship</h1>
 							<br>
 							<p> One record of an entity is related to zero, one or more records of another entity </p>
 							<img src='assets/session_2/one_to_zero_many.PNG'>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 14e Notes-->
 							<aside class='notes'>
-								This the crow foot notation
+								It is possible using crow foot notation for a relationship object to demonstrate an 'or' relationship. A circle represents zero (records in one table relate to none in the other). However, you can combine two cardinal entities together (e.g. zero or many). An example of this is a table full of customers and a table full of products available. A customer may buy several products or the may buy none. It is common to see zero or one, zero or many and one or many (although the many symbol by default means one or many).
 							</aside>
 						</section>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 15a -->
 						<section data-background-image='../assets/generic/strike_force.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -583,11 +605,12 @@
 									<p> A property of an entity or something that can be used to describe an entity</p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 15a Notes-->
 							<aside class='notes'>
+								An attribute is whatever is stored inside an entity (fields for example). 
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 15b -->
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<table>
 								<tr>
@@ -611,60 +634,63 @@
 									<td> Age of record calculated from creation date </td>
 								</tr>
 							</table>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 15b Notes-->
 							<aside class='notes'>
-								An attribute can also be single-value or multi-value: Single-value: an attribute that is only captured once for , Multi-Value: an attribute that can be captured more than once for an entity, such as multiple phone numbers.
+								Attributes can be simple (cannot be split) like your forename, composite (can be split) like your fullname or derived (calculated from another field)..
 							</aside>
 						</section>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 16a -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<img src='assets/session_2/erd_example.PNG'>
-							<!-- Slide 5 Notes-->
-							<aside class='notes'>								
+							<!-- Slide 16a Notes-->
+							<aside class='notes'>			
+								Ask an apprentice to explain this ERD. The student_course table holds a record for each course a student is enrolled on, meaning that one student will be referenced several times in that table (hence one to many). Likewise, due to the composite key, each course may also be referenced multiple times (it is possible only one student is enrolled on a course) but will have only one record in the course table. Hence one-or-many to one.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 16b -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<div style="width: 640px; height: 480px; margin: 10px; position: relative;">
 								<iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embeddedchart/c7ff9126-6290-4782-b874-ae699a5f3235" id="j6dvCONcJ32j"></iframe>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 16b Notes-->
 							<aside class='notes'>
-								Each transaction concerns one product, but a customer can buy several products.
+								(You may need to refresh screen if chart doesn't appear) Again ask apprentices to try and read this table. For each item sold in a transaction there will exist a unique row which will be identified by the transaction number, customer id and product id. This means that each customer can be referenced in several records in the transaction table, hence one to one-or-many. Likewise, a product can be sold more than once but will only have one record in the product table. Several products may be sold by the same supplier. If a transaction contains more than one product, they will likely be shipped together (but the shipping information will only appear in one record). However, a customer may choose to pick up the item in store, so it won't have been shipped, hence the one-or-many to zero-or-one relationship (we will ignore the case where a transaction can be shipped seperately). Several shipments may be carried by the same shipper. Finally, a customer may have bought several products across several transactions which is why there is a one-or-many to one relationship.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 16c -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<div style="width: 640px; height: 480px; margin: 10px; position: relative;">
 								<iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embeddedchart/93a0589e-0d29-47ef-91f2-fe40696710ff" id="G9dvOVMdA3bA"></iframe>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 16c Notes-->
 							<aside class='notes'>
+								(You may need to refresh screen if chart doesn't appear) Ask apprentices to describe this table. Several players will play for one team. Many teams will play in the same league. Many to teams may play in an international league.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 17 -->
 					<section data-background-image='../assets/generic/main.PNG'>
 						<h1> Barker Notation </h1>
 						<img src='assets/session_2/bakers.PNG'>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 17 Notes-->
 						<aside class='notes'>
+							Crow's Foot is not the only type of ERD notation, there also exists Barker Notation where relationships are defined as mandatory (solid line) or optional (dashed). Within the table, # shows fields which are the unique identifer (primary key), * shows mandatory fields and O shows optional fields. 
 						</aside>
 					</section>
-					<!-- Slide 4 -->
+					<!-- Slide 18 -->
 					<section data-background-image='../assets/generic/section.PNG'>
 						<div class="wrap aligncenter">
 							<span class='title'> DIY Database Design </span>          
 						</div>
-						<!-- Slide 4 Notes-->
+						<!-- Slide 18 Notes-->
 						<aside class='notes'>
-							Section title
+							Now we have looked at ERDs let's have a go at building one ourselves.
 						</aside>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 19a -->
 						<section data-background-image='../assets/generic/blank.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -680,11 +706,12 @@
 									<p class='fragment'> Music content </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 19a Notes-->
 							<aside class='notes'>
+								Who uses spotify? It is a streaming service that allows users to input what they want to listen to and the service will provide it.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 19b -->
 						<section data-background-image='../assets/generic/blank.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -700,23 +727,24 @@
 									<p class='fragment'> Users </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 19b Notes-->
 							<aside class='notes'>
+								It is likely then for a database there will need to be information on the artists, albums, playlists, tracks and users. But how will these be displayed in an ERD? Give apprentices a couple of minutes to design a sketch.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 20 -->
 					<section data-background-image='../assets/generic/main.PNG'>
 						<div style="width: 704px; height: 528px; margin: 10px; position: relative;">
 							<iframe allowfullscreen frameborder="0" style="width:704px; height:528px; text-align:center" src="https://lucid.app/documents/embeddedchart/54c16a99-ab19-4e3d-9f38-6200596258e6" id="HGdvP1LA2Ozq"></iframe>
 						</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 20 Notes-->
 						<aside class='notes'>
-							Show them how to use lucid chart
+							Maybe something like this where several (or no) users will listen to a playlist where each track is given its own row. Within the playlist there will be links to artist, album and track (which are also interrelated).
 						</aside>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 21a -->
 						<section data-background-image='../assets/generic/tweenies.PNG'>
 							<div class='row'>
 								<div class='col'></div>
@@ -727,11 +755,12 @@
 									<p> Using the information on the following slide, design an ERD to show how how the database should bs structured. </p>
 								</div>
 						</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 21a Notes-->
 							<aside class='notes'>
+								Give 10-15 minutes for this activity. On the previous slide there is an option to open LucidChart, show apprentices how to use the software, although they are welcome to use Excel or any other software to build their ERD.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 21b -->
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<table style="table-layout: fixed; width: 100%;">
 								<tr>
@@ -749,18 +778,20 @@
 									<td> county<br>population</td>
 								</tr>
 							</table>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 21b Notes-->
 							<aside class='notes'>
+								The database must have four relationships with these fields, but how will the ERD look? Apprentices have 10-15 minutes to discuss and design.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 22 -->
 					<section data-background-image='../assets/generic/blank.PNG'>
 						<div style="width: 640px; height: 480px; margin: 10px; position: relative;">
 							<iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embeddedchart/68a3c364-832a-4f98-8386-6745091b0599" id="DMhvfwLMHVMf"></iframe>
 						</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 22 Notes-->
 						<aside class='notes'>
+							You may need to refresh if it doesn't appear. Your ERD may look something like this where each product will appear across several transactions and each transaction will be associated to a particular store. Many stores can appear in the same county.
 						</aside>
 					</section>
 					<!-- Slide 4 -->
