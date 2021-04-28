@@ -43,7 +43,7 @@
           <section data-background-image='../assets/generic/main_title.PNG'>
             <!-- Slide 0 Notes-->
             <aside class='notes'>
-              MultiVerse Title Page
+              Welcome apprentices to the session and choose an ice breaker activity from <a href='https://drive.google.com/drive/folders/1maXFZJqy5CQpqcWYJYHGS7fpPnCtVEfn?usp=sharing' target='_blank'> here </a>
             </aside>
           </section>
           <!-- Slide 1 -->
@@ -55,7 +55,7 @@
             </div>
             <!-- Slide 1 Notes-->
             <aside class='notes'>
-              Session title
+              Following on from the previous session, today we will be looking at how to design a database and then how to identify and fix errors.
             </aside>
           </section>
           <!-- Slide 2 -->
@@ -63,19 +63,19 @@
 						<div class="wrap size-60">           
 							<h1> Session Outline </h1>
 							<ul style='list-style-type:none;font-size:15px'>
-								<li><a href='#/13'> Data Modelling </a> </li>
-								<li><a href='#/19'> Entity Relationship Diagrams </a> </li>
-								<li><a href='#/27'> DIY Database Design </a> </li>
-								<li><a href='#/5'>  Overcoming Problems </a></li>
-								<li><a href='#/9'> Quality Control </a> </li>							
-								<li><a href='#/30'> Performance Techniques </a> </li>
-								<li><a href='#/38'> Database Maintenance </a> </li>
-								<li><a href='#/44'> Recap </a> </li>
+								<li><a href='#/4'> Data Modelling </a> </li>
+								<li><a href='#/10'> Entity Relationship Diagrams </a> </li>
+								<li><a href='#/18'> DIY Database Design </a> </li>
+								<li><a href='#/23'>  Overcoming Problems </a></li>
+								<li><a href='#/30'> Quality Control </a> </li>							
+								<li><a href='#/37'> Performance Techniques </a> </li>
+								<li><a href='#/45'> Database Maintenance </a> </li>
+								<li><a href='#/50'> Recap </a> </li>
 							</ul>
 						</div>
 						<!-- Slide 2 Notes -->
 						<aside class='notes'>
-							Run through the plan of the day, plan to have a break about half way through
+							Run through the session plan, there will be a break roughly half way through.
 						</aside>
 					</section>
 					<!-- Slide 3 -->
@@ -93,7 +93,7 @@
 						</div>
 						<!-- Slide 3 Notes -->
 						<aside class='notes'>
-							Run through learning objectives, this session is about getting apprentices to 'think data'. How can they approach projects in a way that will allow them to work with stakeholders to deliver data driven insights? 
+							Run through learning objectives, this session will reinforce the principles of database design and then how to maintain a databse.
 						</aside>
 					</section>
 					<!-- Slide 4 -->
@@ -103,34 +103,36 @@
 						</div>
 						<!-- Slide 4 Notes-->
 						<aside class='notes'>
-							Section title
+							Yesterday we saw what a RDBMS is and how it is structured. The purpose of this was to help you with writing queries to retrieve data. However, if you want to get an overview of the database, looking at the tables themselves will be a chore. Data models are a type of metadata that explain how a database is structured, showing the relationships between tables and what is contained in each.
 						</aside>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 5a -->
 						<section data-background-image='../assets/generic/fun_box.PNG'>
 							<div class="aligncenter">
 								<span style ='color:#4d61f4;font-size:70px;font-weight:bold;text-align:center'> 
 									Why use a Data Model?
 								</span>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 5a Notes-->
 							<aside class='notes'>
+								Ask the group to annotate the screen with their ideas
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 5b -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<p> All data objects required by the database are <b class='objective'>accurately represented</b> </p>
 							<p class='fragment'> A data model helps design the database at the <b class='objective'>conceptual, physical and logical levels</b> </p>
 							<p class='fragment'> Data model structure helps define <b class='objective'>relational tables</b>, <b class='objective'>primary and foreign keys</b> as well as <b class='objective'>stored procedures</b> </p>
 							<p class='fragment'> It provides a clear picture of the <b class='objective'>base data</b> <p>
 								<p class='fragment'> It can help identify <b class='objective'>missing or redundant data</b> </p>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 5b Notes-->
 							<aside class='notes'>
+								A data model will ensure that every object (tables) are accurately represented, allowing users to see what information is available and what the relationships are between tables. Having a model will make it easier to design databases (imagine trying to build a house without a blueprint...). Having data models will also help define relationships between tables and help identify where data may be missing. When you create a database you should know what data is being uploaded, and therefore by having an overview model you can see what is missing, or redundant.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 6 -->
 					<section data-background-image='../assets/generic/strike_force.PNG'>
 						<div class='row'>
 							<div class='col'>
@@ -144,12 +146,13 @@
 								<img src='assets/session_2/db_process.PNG'>
 							</div>
 						</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 6 Notes-->
 						<aside class='notes'>
+							When designing a database through data models you will follow three stages. You will start with a conceptual model which will be used as a basis for building a logical model. Adding in other business requirements will see the creation of a physical model where the data will be added and the database implemented.
 						</aside>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 7a -->
 						<section data-background-image='../assets/generic/strike_force.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -166,12 +169,13 @@
 									<p class='fragment'> Relationships </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 7a Notes-->
 							<aside class='notes'>
-								In this data modeling level, there is hardly any detail available on the actual database structure. Business stakeholders and data architects typically create a conceptual data model.
+								Starting with the conceptual model, there is hardly any detail available on the actual database structure. Business stakeholders and data architects typically create a conceptual data model to establish the blue print of the database, defining what the entities (tables), attributes (data) and relationships will be.
+								In this data modeling level, 
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 7b -->
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -205,24 +209,26 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 7b Notes-->
 							<aside class='notes'>
+								An example, you may have two tables showing customers and the products they are buying. The conceptual model states what fields will be in each table and that they are linked by the sale of the product.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 7c -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<h1> Characteristics of a Conceptual Data Model </h1>
 							<br>
 							<p class='fragment'> Offers organisation wide coverage of business concepts </p>
 							<p class='fragment'> Designed and developed for business audiences </p>
 							<p class='fragment'> Developed independently of hardware specifications like storage capacity, or software specifications like DBMS technology. The focus is to represent data as a user would see it in the 'real world' </p>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 7c Notes-->
 							<aside class='notes'>
+								Conceptual models are the basic building blocks of database design which allow users to experiment with different ideas and can be used for a variety of business purposes. An advantage at this early stage of development is that technical requirements such as hardware is not considered, allowing the user to design the system they want and then find a system that will accomodate it.
 							</aside>
 						</section>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 8a -->
 						<section data-background-image='../assets/generic/strike_force.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -239,11 +245,12 @@
 									<p class='fragment'> Does not require keys, you just need to verify the connector details set for earlier relationships </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 8a Notes-->
 							<aside class='notes'>
+								Once the model is conceptually built, it is time to think about how the data may look. At this point you will be aware of what the data is, so you will want to define the data types as this will determine what sort of analysis will become available. At this early development stage the relationships will not be fully definied, so you won't need to think about keys. All you need to state is what tables will ultimately be related to each other.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 8b -->
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -259,6 +266,7 @@
 											<td>
 												string
 												<br>
+												&nbsp; <br>
 												integer	
 											</td>
 										</tr>
@@ -281,17 +289,19 @@
 											<td>
 												string
 												<br>
+												&nbsp; <br>
 												integer	
 											</td>
 										</tr>
 									</table>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 8b Notes-->
 							<aside class='notes'>
+								Adding to the conceptual model we are now looking at what types of data are contained within each entity. This is important, as it will inform how the database will likely be used. For example, numerical data can be aggregated (calculating averages, etc). 
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 8c -->
 						<section data-background-image='../assets/generic/solution.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -305,10 +315,12 @@
 									<p class='fragment'> boolean </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 8c Notes-->
 							<aside class='notes'>
+								What do we mean by data types? In module 1 we thought about quantitative and qualitative and structures, but we can expland on this by looking at how an individual piece of data may be stored. The basic type of data is string (sometimes called a character or variable character) is simply characters, like letters which can be formed into words (or other objects like serial numbers or urls for example). String data types are difficult to analyse of themselves, but can be examined for their length, how often they appear or as a basis for aggregation (average number of drinks sold per shop). Integers are whole numbers whereas if it involves a decimal it will be called (depending on the system) a number, decimal or floating point number (float). Most softwares recognise datetime as a separate data type due to how time behaves differently to most numbers. Finally is boolean, also known as True or False. A binary field which indicates if something is 'on' or 'off'. True often has value 1, and False 0.
 							</aside>
 						</section>
+						<!-- Slide 8d -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<h1> Characteristics of a Logical Data Model </h1>
 							<br>
@@ -316,13 +328,14 @@
 							<p class='fragment'> Designed and developed independently from the DBMS </p>
 							<p class='fragment'> Data attributes will have data types with exact precisions and length </p>
 							<p class='fragment'> Normalisation processes to the model is applied typically till 3NF </p>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 8d Notes-->
 							<aside class='notes'>
+								A logical model is used in the development of a database, but an advantage is that if you want to integrate with an existing database at this stage you can plan out how this will work. As previously mentioned, a logical model is developed before deciding on the database management system- so you can design what you want and decide if a RDBMS, NoSQL or any other database management system is the most appropriate. 
 							</aside>
 						</section>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 9a -->
 						<section data-background-image='../assets/generic/strike_force.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -338,11 +351,12 @@
 									<p class='fragment'> Helps visualise  database structure by replicating column keys, constraints and other RDBMS features </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 9a Notes-->
 							<aside class='notes'>
+								Finally we have the physical model. At this point you are almost ready to implement the database and know which data is going to be uploaded. At this point you will also look at the business and performance requirements of the database and start to incorporate them. This will include looking at hardware requirements (i.e. where will the data be stored?) and software requirements (database management system). A physical model will demonstrate how the data in the database is stored, how different entities are related and what the keys are (if a RDBMS). 
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 9b -->
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -358,6 +372,7 @@
 											<td>
 												string
 												<br>
+												&nbsp; <br>
 												integer
 											</td>
 										</tr>
@@ -386,6 +401,7 @@
 											<td>
 												string
 												<br>
+												&nbsp; <br>
 												int
 										</tr>
 										<tr>
@@ -397,12 +413,12 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 9b Notes-->
 							<aside class='notes'>
-								May be called unique key
+								Building on the logical model we have also designated what the primary keys (sometimes called unique key) are, which will establish the relationships between entities. 
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 9c -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<h1> Characteristics of a Physical Data Model </h1>
 							<br>
@@ -410,33 +426,35 @@
 							<p class='fragment'> Developed for a specific version of a DBMS, location, data storage or technology to be used in a project  </p>
 							<p class='fragment'> Columns should have exact data types, lengths and default values assigned</p>
 							<p class='fragment'> Primary and foreign keys, views, indices, access profiles and authorisations are defined </p>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 9c Notes-->
 							<aside class='notes'>
+								Physical models will display the relationship between tables showing the opportunities for querying which will help users. At this point the developer will have a specific DBMS in mind and so will tailor the design towards it. It is important then that fields should be fully fleshed out, showing what the data types will be, how much data there will be and if there is a default value. 
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 4 -->
+					<!-- Slide 10 -->
 					<section data-background-image='../assets/generic/section.PNG'>
 						<div class="wrap aligncenter">
 							<span class='title'> Entity Relationship Diagrams </span>          
 						</div>
-						<!-- Slide 4 Notes-->
+						<!-- Slide 10 Notes-->
 						<aside class='notes'>
-							Section title
+							We have discussed what a data model is and how they are useful for database designers. Following on from this, we are going to look at entity relationship diagrams which are the highest level of data models that allow users to see how a database is structured so they can plan their queries. 
 						</aside>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 11 -->
 					<section data-background-image='../assets/generic/fun_box.PNG'>
 						<div class="aligncenter">
 							<span style ='color:#4d61f4;font-size:50px;font-weight:bold;text-align:center'> 
 								An Entitiy Relationship Diagram (ERD) lets you see how different objects (e.g. customers, products) relate to each other in a database.
 							</span>
 						</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 11 Notes-->
 						<aside class='notes'>
+							Entity relationship diagrams are the highest level of data models that allow users to see how different objects (such as customers, products, etc) relate to each other in a database. An ERD is what database users will reference when planning out the SQL queries they write in a RDBMS.
 						</aside>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 12 -->
 					<section data-background-image='../assets/generic/strike_force.PNG'>
 						<div class='row'>
 							<div class='col'>
@@ -448,12 +466,13 @@
 							<div class='col'>
 							</div>
 						</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 12 Notes-->
 						<aside class='notes'>
+							An ERD comprises of three components: entities, relationships and attributes. 
 						</aside>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 13a -->
 						<section data-background-image='../assets/generic/strike_force.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -479,11 +498,12 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 13a Notes-->
 							<aside class='notes'>
+								Starting with entities, these are where your data are going to be stored. Think tables in a RDBMS.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 13b -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -500,13 +520,14 @@
 									<p> E.g. student enrolment information </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 13b Notes-->
 							<aside class='notes'>
+								There are two types of entity, strong and weak. Strong entities have primary keys and do not require another entity to exist. Think transactional tables where recent sales are recorded. They are updated whenever a new sale is made and are not reliant on any other table. Weak entities require other entities to exist to make sense, i.e. their primary key is a foreign key in another table. Reference tables like product information are examples of these.
 							</aside>
 						</section>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 14a -->
 						<section data-background-image='../assets/generic/strike_force.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -520,57 +541,58 @@
 									<p> Represented as lines with a "cardinality" that explains the number of instances between two entities </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 14a Notes-->
 							<aside class='notes'>
+								Relationships define how two entities relate to each other, and are often represented as line with some of form of indication of how many instances exist between them. For example, several records in a sales table will relate to one record in a product table and the relationship will reflect this.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 14b -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> One to One Relationship</h1>
 							<br>
 							<p> One record of an entity is directly related to another record of an entitiy </p>
 							<img src='assets/session_2/one_to_one.PNG'>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 14b  Notes-->
 							<aside class='notes'>
-								This the crow foot notation
+								There are different ways of representing an ERD, but we will be using the Crow Foot notation. This is an example of a one to one relationship, where one record in one table relates directly to one record in another. Imagine a table where every row was a person and in the other table was their passport information. Each person should only have one passport so this would be a one-to-one relationship.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 14c -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> One to Many Relationship</h1>
 							<br>
 							<p> One record of an entity is related to one or more records of another entity </p>
 							<img src='assets/session_2/one_to_many.PNG'>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 14c Notes-->
 							<aside class='notes'>
-								This the crow foot notation
+								A one to many relationship exists when one record in a table relates to several tables in another (the opposite many-to-one exists as well). Imagine a table full of customers and another a list of products sold in a single transaction. One person will have bought many (or one) product and so will be a one to many relationship. Can anyone give an example of a many to one relationship (e.g. customers buying the same product)
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 14d -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Many to Many Relationship</h1>
 							<br>
 							<p> Many records of one entity can be related to many records of another entity </p>
 							<img src='assets/session_2/many_to_many.PNG'>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 14d Notes-->
 							<aside class='notes'>
-								This the crow foot notation
+								A many to many relationship occurs when many records in one table relate to many records in another. Imagine a table full of employees and another containing vehicles available for the company to use. Several employees may have access to the same vehicles which would be a many to many relationship.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 14e -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> One or Zero to to Many Relationship</h1>
 							<br>
 							<p> One record of an entity is related to zero, one or more records of another entity </p>
 							<img src='assets/session_2/one_to_zero_many.PNG'>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 14e Notes-->
 							<aside class='notes'>
-								This the crow foot notation
+								It is possible using crow foot notation for a relationship object to demonstrate an 'or' relationship. A circle represents zero (records in one table relate to none in the other). However, you can combine two cardinal entities together (e.g. zero or many). An example of this is a table full of customers and a table full of products available. A customer may buy several products or the may buy none. It is common to see zero or one, zero or many and one or many (although the many symbol by default means one or many).
 							</aside>
 						</section>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 15a -->
 						<section data-background-image='../assets/generic/strike_force.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -583,11 +605,12 @@
 									<p> A property of an entity or something that can be used to describe an entity</p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 15a Notes-->
 							<aside class='notes'>
+								An attribute is whatever is stored inside an entity (fields for example). 
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 15b -->
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<table>
 								<tr>
@@ -611,60 +634,63 @@
 									<td> Age of record calculated from creation date </td>
 								</tr>
 							</table>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 15b Notes-->
 							<aside class='notes'>
-								An attribute can also be single-value or multi-value: Single-value: an attribute that is only captured once for , Multi-Value: an attribute that can be captured more than once for an entity, such as multiple phone numbers.
+								Attributes can be simple (cannot be split) like your forename, composite (can be split) like your fullname or derived (calculated from another field)..
 							</aside>
 						</section>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 16a -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<img src='assets/session_2/erd_example.PNG'>
-							<!-- Slide 5 Notes-->
-							<aside class='notes'>								
+							<!-- Slide 16a Notes-->
+							<aside class='notes'>			
+								Ask an apprentice to explain this ERD. The student_course table holds a record for each course a student is enrolled on, meaning that one student will be referenced several times in that table (hence one to many). Likewise, due to the composite key, each course may also be referenced multiple times (it is possible only one student is enrolled on a course) but will have only one record in the course table. Hence one-or-many to one.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 16b -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<div style="width: 640px; height: 480px; margin: 10px; position: relative;">
 								<iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embeddedchart/c7ff9126-6290-4782-b874-ae699a5f3235" id="j6dvCONcJ32j"></iframe>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 16b Notes-->
 							<aside class='notes'>
-								Each transaction concerns one product, but a customer can buy several products.
+								(You may need to refresh screen if chart doesn't appear) Again ask apprentices to try and read this table. For each item sold in a transaction there will exist a unique row which will be identified by the transaction number, customer id and product id. This means that each customer can be referenced in several records in the transaction table, hence one to one-or-many. Likewise, a product can be sold more than once but will only have one record in the product table. Several products may be sold by the same supplier. If a transaction contains more than one product, they will likely be shipped together (but the shipping information will only appear in one record). However, a customer may choose to pick up the item in store, so it won't have been shipped, hence the one-or-many to zero-or-one relationship (we will ignore the case where a transaction can be shipped seperately). Several shipments may be carried by the same shipper. Finally, a customer may have bought several products across several transactions which is why there is a one-or-many to one relationship.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 16c -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<div style="width: 640px; height: 480px; margin: 10px; position: relative;">
 								<iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embeddedchart/93a0589e-0d29-47ef-91f2-fe40696710ff" id="G9dvOVMdA3bA"></iframe>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 16c Notes-->
 							<aside class='notes'>
+								(You may need to refresh screen if chart doesn't appear) Ask apprentices to describe this table. Several players will play for one team. Many teams will play in the same league. Many to teams may play in an international league.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 17 -->
 					<section data-background-image='../assets/generic/main.PNG'>
 						<h1> Barker Notation </h1>
 						<img src='assets/session_2/bakers.PNG'>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 17 Notes-->
 						<aside class='notes'>
+							Crow's Foot is not the only type of ERD notation, there also exists Barker Notation where relationships are defined as mandatory (solid line) or optional (dashed). Within the table, # shows fields which are the unique identifer (primary key), * shows mandatory fields and O shows optional fields. 
 						</aside>
 					</section>
-					<!-- Slide 4 -->
+					<!-- Slide 18 -->
 					<section data-background-image='../assets/generic/section.PNG'>
 						<div class="wrap aligncenter">
 							<span class='title'> DIY Database Design </span>          
 						</div>
-						<!-- Slide 4 Notes-->
+						<!-- Slide 18 Notes-->
 						<aside class='notes'>
-							Section title
+							Now we have looked at ERDs let's have a go at building one ourselves.
 						</aside>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 19a -->
 						<section data-background-image='../assets/generic/blank.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -680,11 +706,12 @@
 									<p class='fragment'> Music content </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 19a Notes-->
 							<aside class='notes'>
+								Who uses spotify? It is a streaming service that allows users to input what they want to listen to and the service will provide it.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 19b -->
 						<section data-background-image='../assets/generic/blank.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -700,23 +727,24 @@
 									<p class='fragment'> Users </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 19b Notes-->
 							<aside class='notes'>
+								It is likely then for a database there will need to be information on the artists, albums, playlists, tracks and users. But how will these be displayed in an ERD? Give apprentices a couple of minutes to design a sketch.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 20 -->
 					<section data-background-image='../assets/generic/main.PNG'>
 						<div style="width: 704px; height: 528px; margin: 10px; position: relative;">
 							<iframe allowfullscreen frameborder="0" style="width:704px; height:528px; text-align:center" src="https://lucid.app/documents/embeddedchart/54c16a99-ab19-4e3d-9f38-6200596258e6" id="HGdvP1LA2Ozq"></iframe>
 						</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 20 Notes-->
 						<aside class='notes'>
-							Show them how to use lucid chart
+							Maybe something like this where several (or no) users will listen to a playlist where each track is given its own row. Within the playlist there will be links to artist, album and track (which are also interrelated).
 						</aside>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 21a -->
 						<section data-background-image='../assets/generic/tweenies.PNG'>
 							<div class='row'>
 								<div class='col'></div>
@@ -727,11 +755,12 @@
 									<p> Using the information on the following slide, design an ERD to show how how the database should bs structured. </p>
 								</div>
 						</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 21a Notes-->
 							<aside class='notes'>
+								Give 10-15 minutes for this activity. On the previous slide there is an option to open LucidChart, show apprentices how to use the software, although they are welcome to use Excel or any other software to build their ERD.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 21b -->
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<table style="table-layout: fixed; width: 100%;">
 								<tr>
@@ -749,31 +778,33 @@
 									<td> county<br>population</td>
 								</tr>
 							</table>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 21b Notes-->
 							<aside class='notes'>
+								The database must have four relationships with these fields, but how will the ERD look? Apprentices have 10-15 minutes to discuss and design.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 22 -->
 					<section data-background-image='../assets/generic/blank.PNG'>
 						<div style="width: 640px; height: 480px; margin: 10px; position: relative;">
 							<iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embeddedchart/68a3c364-832a-4f98-8386-6745091b0599" id="DMhvfwLMHVMf"></iframe>
 						</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 22 Notes-->
 						<aside class='notes'>
+							You may need to refresh if it doesn't appear. Your ERD may look something like this where each product will appear across several transactions and each transaction will be associated to a particular store. Many stores can appear in the same county.
 						</aside>
 					</section>
-					<!-- Slide 4 -->
+					<!-- Slide 23 -->
 					<section data-background-image='../assets/generic/section.PNG'>
 						<div class="wrap aligncenter">
 							<span class='title'> Overcoming Problems </span>          
 						</div>
-						<!-- Slide 4 Notes-->
+						<!-- Slide 23 Notes-->
 						<aside class='notes'>
-							Section title
+							Designing a database is one thing, but how do we maintain one? Issues can happen all the time which can be frustrating, in this section we will discuss some strategies to help deal with issues (which can also be paplied to other parts of your role)
 						</aside>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 24 -->
 					<section data-background-image='../assets/generic/pentagon_jr.PNG'>
 						<div class='row'>
 							<div class='col'>
@@ -784,12 +815,13 @@
 								<p> <b class='objective'> What experience do you have with debugging? </b></p>
 							</div>
 						</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 24 Notes-->
 						<aside class='notes'>
+							Ask the group to annotate the screen with any issues they have faced before (syntax errors, corrupted code, someone else changing it). Ask them if they have any tried and tested solutions. A bit of a history lesson, the term debugging came from Admiral Grace Hopper in the 1940's. While working on a computer at Harvard, her colleagues discovered a moth stuck in the machinery which was slowing down the process. She joked they should 'debug' the system and the phrase stuck around.
 						</aside>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 25a -->
 						<section data-background-image='../assets/generic/strike_force.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -802,11 +834,12 @@
 									<p> Check the error message, what does the software say the problem is? </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 25a Notes-->
 							<aside class='notes'>
+								Broadly we can group our strategies to dealing with problems into 3 categories. The first is read the error message. Python, R, SQL, Excel and more often give you an error message when something goes wrong, telling you what the issue is (and sometimes how to fix it). This is the same in databases or other computer systems. When you have a problem, check for error messages (this may mean retrieving log files) to see what the problem is. If that doesn't help, you can always try Googling the error message to see if someone else has a solution.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 25b -->
 						<section data-background-image='../assets/generic/strike_force.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -819,11 +852,12 @@
 									<p> Go through the code line by line and explain to a 'rubber duck' what is going on and try and spot the error </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 25b Notes-->
 							<aside class='notes'>
+								If that doesn't work, you can try talking to a rubber duck. This means going through each line of code one by one and explaining to a duck (or any object) what is going on, this will allow you to see errors such as spelling mistakes or the incorrect use of a function.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 25c -->
 						<section data-background-image='../assets/generic/strike_force.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -833,25 +867,27 @@
 								</div>
 								<div class='col'>
 									<h1 style='color:#f4f4f4'> blank </h1>
-									<p> Talk to an expert in your organisation, or search for the solution on stackoverflow </p>
+									<p> Talk to an expert in your organisation, or search for the solution on <a href='https://stackoverflow.com/' target='_blank'>StackOverflow</a> </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 25c Notes-->
 							<aside class='notes'>
+								Finally, if you can't spot the issue, somebody else might. Speak to a colleague and ask them to look through your work, or try searching for a solution online like on StackOverflow. The technical world of coding is vast, active and full of experts who are often willing to give you a hand. 
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 26 -->
 					<section data-background-image='../assets/generic/box_serious.PNG'>
 						<div class="aligncenter">
 							<span style ='font-size:60px;font-weight:bold;text-align:center'> To improve accuracy, quality and usefulness any errors should be <b class='objective'>corrected</b>, <b class='objective'>imputed</b> or <b class='objective'>rejected</b>  </span>
 						</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 26 Notes-->
 						<aside class='notes'>
+							A rule of thumb when dealing with errors is that if they cannot be corrected they should either have a new value imputed (for example replacing null values with 0) or rejected (if you cannot find a fix or a natural replacement, get rid of it)
 						</aside>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 27a -->
 						<section data-background-image='../assets/generic/tweenies.PNG'>
 							<div class='row'>
 								<div class='col'></div>
@@ -861,11 +897,12 @@
 									<p> In groups choose a couple of the scenarios on the next slide and discuss how you would mitigate or solve them </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 27a Notes-->
 							<aside class='notes'>
+								Give 5-10 minutes for this exercise and ask apprentices to feedback their discussions.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 27b -->
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<table style='border-collapse: collapse;'>
 								<tr>
@@ -893,12 +930,12 @@
 									<td> Becomes clear you cannot deliver what was promised to client </td>
 								</tr>
 							</table>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 27b Notes-->
 							<aside class='notes'>
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 28 -->
 					<section data-background-image='../assets/generic/blank.PNG'>
 						<h1 style='color:#ff7c66'> Form an Action Plan </h1>
 						<br>
@@ -908,40 +945,43 @@
 						<p class='fragment'> 4. Communicate to stakeholders and confirm desired next steps </p>
 						<p class='fragment'> 5. Adjust plan and circulate </p>
 						<p class='fragment'> 6. Continue to new plan, repeat if necessary</p>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 28 Notes-->
 						<aside class='notes'>
+							Whatever your solution to a problem, it is a good idea to have an action plan. You should think about the impact of any solution (you don't want to make it worse) and be sure to involve stakeholders as well.
 						</aside>
 					</section>
 					<section>
-					<!-- Slide 5 -->
+						<!-- Slide 29a -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<img src='assets/session_2/issues.PNG'>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 29a Notes-->
 							<aside class='notes'>
+								It is possible that you will have more than one possible solution, so write down what they all are. You may want to get ideas from others as well to fill in blind spots you may have. Think logically then, what solutions are the most realistic and (potentially) make best use of available resources. Aim for one solution, and if that doesn't work, pick another.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 29b -->
 						<section data-background-image='../assets/generic/main.PNG'>
-							<h2 class='fragment' style='color:#59d8a1'> Can this problem be solved? </h2>
+							<h2 style='color:#59d8a1'> Can this problem be solved? </h2>
 							<h2 class='fragment' style='color:#59d8a1'> Do one thing at a time </h2>
 							<h2 class='fragment' style='color:#59d8a1'> Focus on what you can control </h2>
 							<h2 class='fragment' style='color:#59d8a1'> Sometimes doing nothing is best </h2>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 29b Notes-->
 							<aside class='notes'>
+								A few more bits of advice, ask if the problem can be solved? If not, it may be better to remove it and replace it with something new. You should consolidate your resources to work on one thing at a time, spreading yourself too thin may make it worse. Focus on what you can control, there are some things you can't, like stakeholders or randommly occuring events. You can however control how you deal with them. Sometimes leaving the problem alone may be best, something that works with a couple of bugs is better than something which is completely broken and doesn't work at all.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 4 -->
+					<!-- Slide 30 -->
 					<section data-background-image='../assets/generic/section.PNG'>
 						<div class="wrap aligncenter">
 							<span class='title'> Quality Control </span>          
 						</div>
-						<!-- Slide 4 Notes-->
+						<!-- Slide 30 Notes-->
 						<aside class='notes'>
-							Section title
+							Now we have considered how to overcome problems, let's look at some which can arise when we build or maintain a database. A key facet of this is quality control.
 						</aside>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 31 -->
 					<section data-background-image='../assets/generic/problem.PNG'>
 						<div class='row'>
 							<div class='col'>
@@ -970,12 +1010,13 @@
 								</table>
 							</div>
 						</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 31 Notes-->
 						<aside class='notes'>
+							Ask the group to annotate the screen with their ideas (birthday data type, consistent formatting, spelling mistakes)
 						</aside>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 32a -->
 						<section data-background-image='../assets/generic/strike_force.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -990,12 +1031,12 @@
 									<p> Precision is lost when the data is stored somewhere too short to hold its entire length </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 32a Notes-->
 							<aside class='notes'>
-								What can go wrong when uploading data? Think long strings such as URLS or email addresses in a table cell too narrow to hold it
+								Some things we enter into a table can be rather long (email addresses, URLs, your full name) and depending on the structure of the table these could be truncated (cut off) if the entity is too short to store the entire value. Some systems will try to fit entire values into their view width which can be heavy on memory. You will need to ensure that your system can deal with long values, for example, if a value is too long for a cell in Microsoft Excel, it hides the parts which are too long while maintaining their value. 
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 32b -->
 						<section data-background-image='../assets/generic/strike_force.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -1010,12 +1051,12 @@
 									<p> Commas, apostrophes and other delimeters are moved/lost maing the table unreadable </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 32b Notes-->
 							<aside class='notes'>
-								What can go wrong when uploading data?
+								CSV files rely on commas to separate their values, so you will need to check this has been maintained when they are uploaded to your database. What if one of your data points has a comma in it? This can really mess up a table, so you will need to find strategies to deal with this. 
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 32c -->
 						<section data-background-image='../assets/generic/strike_force.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -1030,12 +1071,12 @@
 									<p> Rows go missing when only a portion of the data is uploaded </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 32c Notes-->
 							<aside class='notes'>
-								What can go wrong when uploading data?
+								Maybe due to a loss of bandwidth only some of the rows have been uploaded, you should always check the length of your dataset is the same in the target file as it was in the source.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 32d -->
 						<section data-background-image='../assets/generic/strike_force.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -1050,12 +1091,12 @@
 									<p> Data mismatch from wrong data types being entered into fields </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 32d Notes-->
 							<aside class='notes'>
-								What can go wrong when uploading data?
+								Many file types such as CSV or Excel do not demand that every data type must be the same within a field. When you upload to a database this will be enforced, meaning you may have some unexpected issues. For example, if part of your automated analysis involves performing a calculation on a numerical field in a database and that field has been converted to string because of a data mismatch, then your process will break. Be careful to check your data types before uploading. 
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 32e -->
 						<section data-background-image='../assets/generic/strike_force.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -1070,13 +1111,13 @@
 									<p> Encoding is wrong or symbols or rich characters are lost</p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 32e Notes-->
 							<aside class='notes'>
-								What can go wrong when uploading data?
+								Not all databases have access to the same characters which can be lost if you try to upload. For example, you maybe trying to store customer tweets, but your database cannot store emojis. Or the data is written in a language which uses a different character system (i.e. Arabic, Mandarin, even accented letters in French or Spanish). If you are expecting this characters, then ensure your database can handle it. 
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 33 -->
 					<section data-background-image='../assets/generic/solution.PNG'>
 						<div class='row'>
 								<div class='col'>
@@ -1089,12 +1130,12 @@
 									<p class='fragment'> Export comparison </p>
 								</div>
 							</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 33 Notes-->
 						<aside class='notes'>
-							Most software/tools including python, R, excel, SQL and more have tools that can help with checking our data
+							Most software/tools including python, R, excel, SQL and more have tools that can help with checking our data. You can count to make sure the amount of data is what you expect, have error checking (like spellcheck), calculate aggregates (which will show if any pieces of data have been changed) or even export the database to see if it still holds the same format.
 						</aside>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 34 -->
 					<section data-background-image='../assets/generic/tweenies.PNG'>
 						<div class='row'>
 							<div class='col'></div>
@@ -1111,11 +1152,12 @@
 								</ul>
 							</div>
 						</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 34 Notes-->
 						<aside class='notes'>
+							Give 5-10 minutes for discussion and feedback
 						</aside>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 35 -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<table>
 							<tr>
@@ -1146,11 +1188,12 @@
 								<td> Form and content of field is always the same </td>
 							</tr>
 						</table>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 35 Notes-->
 						<aside class='notes'>
+							A summary then of what our data should look like in a database, note how much of this is similar to GDPR which governs how and why we hold data. The rest of it relates to the efficiency of the database, including consistent data types in fields, normalisation and syntax.
 						</aside>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 36 -->
 					<section data-background-image='../assets/generic/solution.PNG'>
 						<div class='row'>
 								<div class='col'>
@@ -1163,22 +1206,22 @@
 									<p class='fragment'> Code can be designed to be more robust </p>
 								</div>
 							</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 36 Notes-->
 						<aside class='notes'>
-							Most software/tools including python, R, excel, SQL and more have tools that can help with checking our data
+							Good quality control with our databases will give us the confidence that the data is accurate with the knock on effect that our analysis is reliable. It isn't difficult to quality control or check, and doing this early will reduce problems later on. It is a good idea to review code regularly to see if it can be made more efficient.
 						</aside>
 					</section>
-					<!-- Slide 4 -->
+					<!-- Slide 37 -->
 					<section data-background-image='../assets/generic/section.PNG'>
 						<div class="wrap aligncenter">
 							<span class='title'> Performance Techniques </span>          
 						</div>
-						<!-- Slide 4 Notes-->
+						<!-- Slide 37 Notes-->
 						<aside class='notes'>
-							How to improve performance
+							We have looked at potential problems that can affect our databases and what we can do to mitigate, but how do we maintain a database so it performs efficiently?
 						</aside>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 38 -->
 					<section data-background-image='../assets/generic/problem.PNG'>
 						<div class='row'>
 								<div class='col'>
@@ -1191,11 +1234,12 @@
 									<p class='fragment'> Database is not normalised properly </p>
 								</div>
 							</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 38 Notes-->
 						<aside class='notes'>
+							Issues can arise when our data sets are too big- not only will they take up lots of memory, but queries will have to search through all the rows to find the information you need which is inefficient. You may want to consider hosting your data on a 'Big Data' server, or use a NoSQL database to deal with this. Sometimes performance issues come about due to the queries themselves, you can apply filters and limits to SQL queries which will reduce the amount of data it has to sort through. Whenever you join tables together time will be added to the query, and finally, if your database has not been normalised properly then there will be redundant data which will slow down your processes.
 						</aside>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 39 -->
 					<section data-background-image='../assets/generic/pentagon_jr.PNG'>
 						<div class='row'>
 							<div class='col'>
@@ -1204,11 +1248,12 @@
 								<p style='font-size:40px;color:#4d61f4'>What is the quickest way to find a topic in an encyclopedia?</p> 
 							</div>
 						</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 39 Notes-->
 						<aside class='notes'>
+							Let's think of some solutions (particularly around large datasets). How would you answer this question?
 						</aside>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 40 -->
 					<section data-background-image='../assets/generic/main.PNG'>
 						<div class='row'>
 							<div class='col'>
@@ -1221,12 +1266,12 @@
 								<p> Data is retrieved by referencing the index </p>
 							</div>
 						</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 40 Notes-->
 						<aside class='notes'>
-							This is opposed to sorting through the database (querying). This optimises the performance by minimising the number of disk accesses required when a query is processed.
+							You would use an index! Assign each record in a database a value then retrieve the data by accessing the indices. This is opposed to sorting through the database (querying). This optimises the performance by minimising the number of disk accesses required when a query is processed. You do however need to know what the indices are for the records you want to access.
 						</aside>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 41 -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<div class='row'>
 							<div class='col'>
@@ -1260,23 +1305,24 @@
 								</table>
 							</div>
 						</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 41 Notes-->
 						<aside class='notes'>
+							An example of indexing, we have a table full of indices which we know refer to values in a data table. Instead of running through the data table itself I can sort through the index table (which is smaller) and then cross reference the indices to retrieve the information I want. 
 						</aside>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 42 -->
 					<section data-background-image='../assets/generic/box_serious.PNG'>
 						<div class="aligncenter">
-							<span style ='font-size:50px;font-weight:bold;text-align:center'> Denormalisation </span> 
+							<h1 style ='font-size:50px;font-weight:bold;text-align:center'> Denormalisation </h1> 
 							<br>
 							<p> A database optimisation technique where redundant data is added to one or more tables to help avoid costly joins in a relational database.
 						</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 42 Notes-->
 						<aside class='notes'>
-							Note that denormalisation does not mean not doing normalisation. It is an optimisation technique that is applied after doing normalisation.
+							Another approach could be to denormalise the database. This does not mean not doing normalisation. It is an optimisation technique that is applied after doing normalisation.
 						</aside>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 43 -->
 					<section data-background-image='../assets/generic/circle_remix.PNG'>
 						<div class='wrap' style='width:max-content'>
 						<p style='font-size:40px'><b>Denormalisation</b> </p>
@@ -1299,12 +1345,13 @@
 							</div>
 						</div>
 					</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 43 Notes-->
 						<aside class='notes'>
+							Denormalising means introducing redundant data to our tables to speed up processes. For example, if there is a join you are always doing, then consider creating a table with all that information combined so for future queries you do not need to join. Or, if there is a calculation you are always doing, then create a calculated field to avoid repeating this calculation. The pros of this process is that querying will be faster and simpler, but the cons are that it will be more difficult to update our tables, there may data inconsistencies and storage requirements will go up.
 						</aside>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 44a -->
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<table>
 								<tr>
@@ -1348,12 +1395,12 @@
 									<td style='background-color:#ffe352'> Europe </td>
 								</tr>
 							</table>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 44a Notes-->
 							<aside class='notes'>
-								
+								A couple of examples, in a normalised table we wouldn't need a column for month (transitive dependency) or the information about the countries (should be stored in a different table). If you are retrieving this information via joins every time you write a query, it will be more efficient to have these redundant data to speed up the data retrieval.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 44b -->
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<table>
 								<tr>
@@ -1392,23 +1439,23 @@
 									<td style='background-color:#ffe352'> 57.1% </td>
 								</tr>
 							</table>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 44b Notes-->
 							<aside class='notes'>
-								If a calculation is happening every time a query is run, it may be better to create a 'calculated field'
+								If a calculation is happening every time a query is run, it may be better to create a 'calculated field'.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 4 -->
+					<!-- Slide 45 -->
 					<section data-background-image='../assets/generic/section.PNG'>
 						<div class="wrap aligncenter">
 							<span class='title'> Database Maintenance </span>          
 						</div>
-						<!-- Slide 4 Notes-->
+						<!-- Slide 45 Notes-->
 						<aside class='notes'>
-							Section title
+							Our final section today will look at some last tips for maintaining a database.
 						</aside>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 46 -->
 					<section data-background-image='../assets/generic/main.PNG'>
 						<h2> Maintaining a database is critical to ensuring a database environment performs reliably and efficiently. We need these tasks to: </h2>
 						<br>
@@ -1416,22 +1463,24 @@
 						<p class='fragment'><b class='objective'>&rarr;</b> Free up disk space </p>
 						<p class='fragment'><b class='objective'>&rarr;</b> Check for data errors </p>
 						<p class='fragment'><b class='objective'>&rarr;</b> Check for hardware faults </p>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 46 Notes-->
 						<aside class='notes'>
+							As we have seen already today, maintaining a database will increase performance, reduce storage, allow us to identify errors more quickly and find issues with hardware (do we need more storage?)
 						</aside>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 47 -->
 					<section data-background-image='../assets/generic/main.PNG'>
-						<h1> Log File Manintenance </h1>
+						<h1> Log File Maintenance </h1>
 						<br>
-						<p> Log files are invaluable for diagnosing problems in your database and should therefore be saved </p>
-						<p class='fragment'> They can however be quite large (especially at high debug levels) and so should be discarded after a reasonable period of time </p>
-						<p class='fragment'> Read more <a href='https://www.postgresql.org/docs/9.1/logfile-maintenance.html' target='_blank'> here </a></p>
-						<!-- Slide 5 Notes-->
+						<p> Log files are invaluable for diagnosing problems in your database and should therefore be saved. </p>
+						<p class='fragment'> They can however be quite large (especially at high debug levels) and so should be discarded after a reasonable period of time. </p>
+						<p class='fragment'> Read more <a href='https://www.postgresql.org/docs/9.1/logfile-maintenance.html' target='_blank'> here. </a></p>
+						<!-- Slide 47 Notes-->
 						<aside class='notes'>
+							Many databases can produce detailed logs when requested which are useful for finding errors, the problem is that logs (and any other metadata) take up space and can reduce performance. You should delete logs after a reasonable amount of time. Some database systems will automatically do this after a few days (or even hours).
 						</aside>
 					</section>
-					<!-- Slide 5 -->
+					<!-- Slide 48 -->
 					<section data-background-image='../assets/generic/main.PNG'>
 						<h1> Fragmentation </h1>
 						<br>
@@ -1508,12 +1557,13 @@
 								</table>
 							</div>
 						</div>
-						<!-- Slide 5 Notes-->
+						<!-- Slide 48 Notes-->
 						<aside class='notes'>
+							Another issue is that as data is inserted, modified or deleted the indices can get fragmented. As you can see in the example, this can result in empty rows (or columns) which take up space and therefore reduce performance. A simple index reset should sort this problem out.
 						</aside>
 					</section>
 					<section>
-						<!-- Slide 5 -->
+						<!-- Slide 49a -->
 						<section data-background-image='../assets/generic/solution.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -1528,11 +1578,12 @@
 									<p> Compress the data so it can be stored more efficiently and quickly </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 49a Notes-->
 							<aside class='notes'>
+								Other ways you can improve your database performance include compressing the data (like in a zip file) so it can be stored more efficiently.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 49b -->
 						<section data-background-image='../assets/generic/solution.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -1547,11 +1598,12 @@
 									<p> Ensure relationships between entities have been observed </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 49b Notes-->
 							<aside class='notes'>
+								Or regularly check the integrity of entities and relationships so issues can be dealt with before they arise.
 							</aside>
 						</section>
-						<!-- Slide 5 -->
+						<!-- Slide 49c -->
 						<section data-background-image='../assets/generic/solution.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -1566,22 +1618,23 @@
 									<p> Regularly back your data up! </p>
 								</div>
 							</div>
-							<!-- Slide 5 Notes-->
+							<!-- Slide 49c Notes-->
 							<aside class='notes'>
+								Finally, always have a back up!
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 4 -->
+					<!-- Slide 50 -->
 					<section data-background-image='../assets/generic/section.PNG'>
 						<div class="wrap aligncenter">
 							<span class='title'> Recap </span>          
 						</div>
-						<!-- Slide 4 Notes-->
+						<!-- Slide 50 Notes-->
 						<aside class='notes'>
-							Section title
+							Time to recap the session
 						</aside>
 					</section>
-					<!-- Slide 3 -->
+					<!-- Slide 51 -->
 					<section data-background-image="../assets/generic/blank.PNG">
 						<div class="wrap size-60 " style='width:max-content'>
 							<div>
@@ -1594,11 +1647,12 @@
 								<li> Implement <b class='objective'> Quality Control</b> measures and know how to assure the quality of <b class='objective'>data uploads</b> and query output</li>
 							</ul>          
 						</div>
-						<!-- Slide 3 Notes -->
+						<!-- Slide 51 Notes -->
 						<aside class='notes'>
-							Run through learning objectives, this session is about getting apprentices to 'think data'. How can they approach projects in a way that will allow them to work with stakeholders to deliver data driven insights? 
+							In this session the aim was to consider how to design a database and then maintain it.
 						</aside>
 					</section>
+					<!-- Slide 52 -->
 					<section data-background-image="../assets/generic/assignment.PNG">
 						<table style='width:100%;border:1px solid black'>
 							<tr>
@@ -1623,19 +1677,19 @@
 								<td> Word Document, PowerPoint, Excel File, PDF, Lucid Chart </td>
 							</tr>
 						</table>
-						<!-- Slide 43b Notes -->
+						<!-- Slide 52 Notes -->
 						<aside class='notes'>
 							Run through the assignment
 						</aside>
 					</section>
-					<!-- Slide 44 -->
+					<!-- Slide 53 -->
 					<section data-background-image="../assets/generic/final.PNG">
 						<div class="wrap aligncenter">
 							<span class='title'> Complete <a href='https://platform.whitehat.org.uk/apprentice/attendance-log/83' style='color:#64abff' target='_blank'>Session Attendance Log</a> and Update Your OTJ</span>          
 						</div>
-						<!-- Slide 44 Notes -->
+						<!-- Slide 53 Notes -->
 						<aside class='notes'>
-							Remind apprentices about OTJ and they can click on the link for the SAL.
+							Remind apprentices about OTJ and they can click on the link for the SAL. You may want to run a Kahoot! quiz.
 						</aside>
 					</section>
         </div>
