@@ -69,7 +69,7 @@
 							<li><a href='#/20'> Normalisation </a> </li>
 							<li><a href='#/37'> NoSQL </a> </li>
 							<li><a href='#/44'> Other Types of Database </a> </li>
-							<li><a href='#/46'> Recap </a> </li>
+							<li><a href='#/47'> Recap </a> </li>
 						</ul>
 					</div>
 					<!-- Slide 2 Notes -->
@@ -271,6 +271,7 @@
 							<!-- Slide 10d Notes-->
 							<aside class='notes'>
 								If all your data is one table then updating becomes a chore. Imagine a table where each row was a family member and included their house number. If several members of the same family were in the table that piece of information would appear multiple times. If that family moved house you would need to update each record. Instead, if you had family information in one table and house information in another you would only have to update one record in one table if the family moved house. Spreading your data across tables makes updating far easier.
+							</aside>
 						</section>
 						<!-- Slide 10e -->
 						<section data-background-image='../assets/generic/pentagon_jr.PNG'>
@@ -2734,17 +2735,74 @@
 							</aside>
 						</section>	
 					</section>
-					<!-- Slide 46 -->
+					<section>
+						<!-- Slide 46a -->
+						<section data-background-image="../assets/generic/box_serious.PNG">
+							<span style ='font-size:35px;width:max-content'> 
+								'Data Warehousing' is a practice in <b class='objective'>data management</b> whereby data is copied from various operational systems into a <b class='objective'>persistant data store</b> in a <b class='objective'>consistent format</b> to be used for <b class='objective'>analysis, decision making and reporting</b>. 
+							</span>	
+							<!-- Slide 46a Notes -->
+							<aside class='notes'>
+								You may also come across Data Watehouses in your role. These are central data repositories where information from across an organisation are stored (combined using data integration processes like ETL) where stakeholders can make data driven business decisions through the advanced analytics that are on offer. Imagine an organisation where each department has its own DBMS for their own purposes. Higher up decision makers in the company will want to see a unified view of data from across departments (compare sales and inventory for example) so they can make powerful decisions. 
+							</aside>
+						</section>
+						<!-- Slide 46b -->
+						<section data-background-image="../assets/generic/table_back.PNG">
+							<div style="width: 640px; height: 480px; margin: 10px; position: relative;">
+								<iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embeddedchart/0b7e7655-f87a-4ada-859f-04df34f64e8f" id="lGfy493MMEW~"></iframe>
+							</div>
+							<!-- Slide 4b Notes -->
+							<aside class='notes'>
+								Unlike a RDBMS, where data is spread across multiple normalised tables, a data warehouse tends to be one central denormalised table, called the fact table. In there all the information from across the organisation is stored in a consistent format. Surrounding the fact table are dimension tables which define how the data should be aggregated. For example, you may want to analyse the data in terms of customers, or sales, or geographical region. By defining the aggregations you can easily retrieve this information and make decisions based off the analysis. 
+							</aside>
+						</section>
+						<!-- Slide 46c -->
+						<section data-background-image="../assets/generic/strike_force.PNG">
+							<div class='row'>
+								<div class='col'>
+									<h1 style='color:#f4f4f4'> Key Features </h1>
+								</div>
+								<div class='col'>
+									<p class='fragment'> Optimised for low number of complex queries </p>
+									<p class='fragment'> Contains historical data </p>
+									<p class='fragment'> Are taken off line when updates are required </p>
+								</div>
+							</div>
+							<!-- Slide 4c Notes -->
+							<aside class='notes'>
+								Data warehouses are primarily used as a platform for advanced analytics such as recommendation algorithms or generating powerful insights, whereas as RDBMS is more used for storing transactional information for quick references and quick snapshots of the data. As such data warehouses are better suited for advanced queries which derive in depth insights through a deep dive into the data. A reason for this is because warehouses generally do not contain 'live' data (a RDBMS does), but recent data that came with the last upload. This allows for the analytics to run without being interupted because new data is coming in. A consequence of this is that if new data is to be added, the warehouse must come offline for the ETL process to happen. Usually this is done outside of working hours to avoid disruption.
+							</aside>
+						</section>
+						<!-- Slide 46d -->
+						<section data-background-image="../assets/generic/strike.PNG">
+							<div class='row r-hstack'>
+								<div class='col fragment'>
+									<p class='fragment' style='color:#242456;font-size:35px'> Increased availability of data </p>
+									<p class='fragment' style='color:#242456;font-size:35px'> Superior quality of data  </p>
+									<p class='fragment' style='color:#242456;font-size:35px'> Collaboration opportunities </p>
+									<p class='fragment' style='color:#242456;font-size:35px'> Greater insights and improvements </p>
+								</div>
+								<div class='col'>
+									<h1 style='color:#f4f4f4'> Benefits </h1>
+								</div>
+							</div>
+							<!-- Slide 4d Notes -->
+							<aside class='notes'>
+								The benefits of using a data wareouse is that more rich data is available to key stakeholders allowing them to make better data driven insights. On top of this, as the data is coming from a variety of sources, the sources themselves have to adhere to a consistent format which means superior quality and consistency for all. Data warehouses allow for collaboration amongst different teams and departments as they are sharing their data and ultimately this will lead to greater insights and improvements in making business decisions. If you have the opportunity to use a data warehouse in your role, you should describe these benefits in your portfolio.
+							</aside>
+						</section>
+					</section>
+					<!-- Slide 47 -->
 					<section data-background-image="../assets/generic/section.PNG">
 						<div class="wrap aligncenter">
 							<span class='title'> Recap</span>          
 						</div>
-						<!-- Slide 46 Notes -->
+						<!-- Slide 47 Notes -->
 						<aside class='notes'>
 							That is us done for the first session, let's recap.
 						</aside>
 					</section>
-					<!-- Slide 47 -->
+					<!-- Slide 48 -->
 					<section data-background-image="../assets/generic/blank.PNG">
 						<div class="wrap size-60 " style='width:max-content'>
 							<div>
@@ -2757,12 +2815,12 @@
 								<li> Understand the principles of <b class='objective'> normalisation</b> on a relational database  </li>
 							</ul>           
 						</div>
-						<!-- Slide 47 Notes -->
+						<!-- Slide 48 Notes -->
 						<aside class='notes'>
 							The aim of this session is to help you understand the different types of database you may use in your role. By understanding how a RDBMS is set up, it will help you write queries to retrieve the information.
 						</aside>
 					</section>
-						<!-- Slide 48 -->
+						<!-- Slide 49 -->
 					<section data-background-image="../assets/generic/assignment.PNG">
 						<table style='width:100%;border:1px solid black'>
 							<tr>
@@ -2787,17 +2845,17 @@
 								<td> Word Document, PowerPoint, Excel File, PDF, Lucid Chart </td>
 							</tr>
 						</table>
-						<!-- Slide 48 Notes -->
+						<!-- Slide 49 Notes -->
 						<aside class='notes'>
 							Using some of the data from your work, transform it into a RDBMS (if it isen't already). Describe the dataset and apply normalisation if necessary. In the next session you will be shown how to construct an ERD.
 						</aside>
 					</section>
-					<!-- Slide 49 -->
+					<!-- Slide 50 -->
 					<section data-background-image="../assets/generic/final.PNG">
 						<div class="wrap aligncenter">
 							<span class='title'> Complete <a href='https://platform.whitehat.org.uk/apprentice/attendance-log/82' style='color:#64abff' target='_blank'>Session Attendance Log</a> and Update Your OTJ</span>          
 						</div>
-						<!-- Slide 49 Notes -->
+						<!-- Slide 50 Notes -->
 						<aside class='notes'>
 							Remind apprentices about OTJ and they can click on the link for the SAL
 						</aside>
