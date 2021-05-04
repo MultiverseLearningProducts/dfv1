@@ -1,0 +1,1437 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<!-- SEO -->
+    <title>Multiverse Data Analysis in Industry Session 1</title>
+    <meta name="description" content="In the first MultiVerse session we will be looking at how data analytics can be used to enhance your role">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/multiverse_brand/Logo/01_Deep Space/PNG/Multiverse_Symbol_RGB_Navy.png">
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+		<link rel="stylesheet" href="../Dependencies/dist/reveal.css">
+		<link rel="stylesheet" href="../Dependencies/dist/reset.css">
+    <link rel="stylesheet" href="../Dependencies/css/mv.css">
+		<link rel="stylesheet" href="//codemirror.net/lib/codemirror.css">
+    <script src="//codemirror.net/addon/runmode/runmode-standalone.js"></script>
+    <script src="//codemirror.net/mode/python/python.js"></script>
+
+
+		
+		<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="../Dependencies/static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../Dependencies/static/css/svg-icons.css">
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+		<!-- CSS for click to reveal section -->
+		<link href="../assets/datastyle.css" rel="stylesheet" type="text/css">
+	</head>
+  <body class='reveal-viewport'>
+		<!-- Page Header -->
+		<header role="banner" style='background-image:url(../assets/generic/header.jpg);background-size: contain;'>
+      <nav role="navigation" style='align:left'>
+        <ul>
+					<li class="applied">
+            <a href="https://platform.multiverse.io" title="Applied" target='_blank'>
+							<p style='font-family:atlas;color:#f4f4f4'><strong>Applied</strong></p>
+            </a>
+          </li>
+          <li class="contents">
+            <a href='#/2' title="Contents">
+              <em style='color:#f4f4f4'>Contents</em>
+            </a>
+          </li> 
+        </ul>
+      </nav>
+    </header>
+    
+    <div class="reveal" style='font-family:atlas;font-size:25px;color:#242456'>
+			<div class="slides">
+				<!-- Slide 0 -->
+				<section data-background-image='../assets/generic/main_title.PNG'>
+				</section>
+				<!-- Slide 1 -->
+				<section data-background-image="../assets/generic/title_slide_alt.PNG">
+					<div class="wrap aligncenter">
+						<p class='title'> Data Analysis in Industry</p> 
+						<br>
+						<p style='color:#f4f4f4'> Session 1 </p>
+					</div>
+					<!-- Slide 1 Notes-->
+					<aside class='notes'>
+						Welcome apprentices to the session and select a warmup from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here</a>.
+					</aside>
+				</section>
+				<!-- Slide 2 -->
+				<section class='present' data-background-image="../assets/generic/info_yellow.PNG">
+					<div class="wrap size-60">           
+						<h1> Session Outline </h1>
+						<ul style='list-style-type:none;font-size:15px'>
+							<li><a href='#/5'>  The Data Lifecycle </a></li>
+							<li><a href='#/9'> The Data Analytics Lifecycle </a> </li>
+							<li><a href='#/13'> Identifying Stakeholders </a> </li>
+							<li><a href='#/19'> Dealing with Stakeholders </a> </li>
+							<li><a href='#/28'> Methods of Communication </a> </li>
+							<li><a href='#/31'> Project Briefs </a> </li>
+							<li><a href='#/39'> Validation vs Verification </a> </li>
+							<li><a href='#/42'> Setting a Hypothesis </a> </li>
+							<li><a href='#/45'> Recap </a> </li>
+						</ul>
+					</div>
+					<!-- Slide 2 Notes -->
+					<aside class='notes'>
+						Run through the plan of the day, plan to have a break about half way through
+					</aside>
+				</section>
+				<!-- Slide 3 -->
+				<section data-background-image="../assets/generic/blank.PNG">
+					<div class="wrap size-60 " style='width:max-content'>
+						<div>
+							<span class='objective'> Learning Objectives </span>
+							<img src='../assets/multiverse_brand/Molten/Multiverse_Notations_RGB_Coral-01.png'>
+						</div>
+						<ul style='display:inline-block;text-align:left'>
+							<li> Describe the <b class='objective'>data analytics lifecycle</b> and set out details, activities and roles at each stage in a real-world example </li>
+							<li> Design effective <b class='objective'>project briefs</b> which <b class='objective'>communicate expectations to stakeholders</b></li>
+							<li> Identify <b class='objective'>business specific rules</b> related to datasets and data characteristics that will influence project design and analysis</li>
+						</ul>          
+					</div>
+					<!-- Slide 3 Notes -->
+					<aside class='notes'>
+						Run through learning objectives, this session is about getting apprentices to 'think data'. How can they approach projects in a way that will allow them to work with stakeholders to deliver data driven insights? 
+					</aside>
+				</section>
+        <!-- Slide 4 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> The Data Lifecycle</span>          
+					</div>
+					<!-- Slide 4 Notes -->
+					<aside class='notes'>
+						The first thing we will be looking at is the data life cycle- what happens to a piece of data from the moment it is created to when it is finally deleted. It is important to have this understanding as it will help you understand the data you are using and assess whether it is relevant or not.
+					</aside>
+				</section>
+				<!-- Slide 5 -->
+				<section data-background-image='../assets/generic/main.PNG'>
+					<div class="wrap size-50 aligncenter">
+						<img src='assets/session_1/data_life_cycle.PNG'>
+					</div>
+					<!-- Slide 5 Notes -->
+					<aside class='notes'>
+						The data life cycle comes in 6 stages (although you only need to know about 5 for your exam, usage is something we add on). The cycle describes the journey from how data is created and stored, to how it is used before being archived and assessing when it becomes obsolete. At that point it should be deleted. Let's go through each stage in detail.
+					</aside>
+				</section>
+				<section>
+					<!-- Slide 6a -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> Data LifeCycle </h1>
+								<br>
+								<p style='color:#f4f4f4'> Is the data structured or unstructured? </p> 
+								<p style='color:#f4f4f4'> Is it quantitative or qualitative? </p> 
+								<p style='color:#f4f4f4'> Where has the data come from? </p> 
+								<p style='color:#f4f4f4'> What size is the dataset? </p> 
+								<p style='color:#f4f4f4'> Is it created continuously or in batches? </p> 
+							</div>
+							<div class='col'>
+								<img src= 'assets/session_1/data_creation.PNG'>
+							</div>
+						</div>
+						<!-- Slide 6a Notes -->
+						<aside class='notes'>
+							First comes Genesis, where has the data come from? Is it data collected by an organisation (such as transaction, client or customer data)? Has it come through research? What is the data type? Is it structured or unstructured? Understanding these facets of your data will inform you what sorts of analysis you can carry out as well as what visualisations you can prepare.
+						</aside>
+					</section>
+					<!-- Slide 6b -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> Data LifeCycle </h1>
+								<br>
+								<p style='color:#f4f4f4'> Where is the data stored? </p> 
+								<p style='color:#f4f4f4'> How many people require access? </p> 
+								<p style='color:#f4f4f4'> What are the access requirements? </p>
+								<p style='color:#f4f4f4'> What rules relate to the data storage? </p> 
+							</div>
+							<div class='col'>
+								<img src= 'assets/session_1/data_storage.PNG'>
+							</div>
+						</div>
+						<!-- Slide 6b Notes -->
+						<aside class='notes'>
+							Once data has been created it needs to be stored somewhere. What type of database (relational, NoSQL, etc)? Is it stored in a data warehouse? There also comes questions around security- who has access? How often is access reviewed? Is the data being stored in a way that complies with GDPR? In your portfolio you will need to demonstrate an understanding of how the data you use is stored, and what protocols you have followed to gain access. Does the data contain PII? If so, what have you done to ensure it is secure?
+						</aside>
+					</section>
+					<!-- Slide 6c -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> Data LifeCycle </h1>
+								<br>
+								<p style='color:#f4f4f4'> How is the data being used? </p> 
+								<p style='color:#f4f4f4'> How often is it being used? </p> 
+								<p style='color:#f4f4f4'> Does anyone external to your organisation have access? </p> 
+								<p style='color:#f4f4f4'> Are there any business rules? </p> 
+							</div>
+							<div class='col'>
+								<img src= 'assets/session_1/data_usage.PNG'>
+							</div>
+						</div>
+						<!-- Slide 6c Notes -->
+						<aside class='notes'>
+							Data usage refers to (obviously) how you use the data. How often do you plan to use it? You might plan to use it once for a piece of statistical analysis, or you might need it continuously for a dashboard. You should also consider who has access, and what your organisation says you can do with it. A lot of this again pertains to GDPR which states you can only use data for relevant purposes.
+						</aside>
+					</section>
+					<!-- Slide 6d -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> Data LifeCycle </h1>
+								<br>
+								<p style='color:#f4f4f4'> Is the data always needed? </p> 
+								<p style='color:#f4f4f4'> What is the working life of the data? </p> 
+								<p style='color:#f4f4f4'> Can it be made available given prior notice? </p> 
+							</div>
+							<div class='col'>
+								<img src= 'assets/session_1/data_archival.PNG'>
+							</div>
+						</div>
+						<!-- Slide 6d Notes -->
+						<aside class='notes'>
+							Something to consider with data is how long it is useful for. GDPR states that you musn't hold data for any longer than is necessary, so if you aren't using it what are you going to do with it? If you think you might need it again in the future (for comparisons) then you may want to archive it.
+						</aside>
+					</section>
+					<!-- Slide 6e -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col' >
+								<h1 style='color:#f4f4f4'> Data LifeCycle </h1>
+								<br>
+								<p style='color:#f4f4f4'> Is the data still being used? </p> 
+								<p style='color:#f4f4f4'> Is the data relevant? </p> 
+								<p style='color:#f4f4f4'> Is the data needed? </p> 
+							</div>
+							<div class='col'>
+								<img src= 'assets/session_1/data_obsolescence.PNG'>
+							</div>
+						</div>
+						<!-- Slide 6e Notes -->
+						<aside class='notes'>
+							You should also consider if the data is in fact relevant. Do you actually need it? All data has a working life and eventually it will become obsolete, you need to ask these questions therefore to help you decide if the data is still useful. In your portfolio you shuld show evidence of your understanding of the working life of data.
+						</aside>
+					</section>
+					<!-- Slide 6f -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> Data LifeCycle </h1>
+								<br>
+								<p style='color:#f4f4f4'> How can the data be securely and permanently removed? </p> 
+							</div>
+							<div class='col'>
+								<img src= 'assets/session_1/data_deletion.PNG'>
+							</div>
+						</div>
+						<!-- Slide 6f Notes -->
+						<aside class='notes'>
+							GDPR states that data must not be kept longer thanis necessary, if you decide your data is obsolete then it must be irreversibly deleted with any backups also removed.
+						</aside>
+					</section>
+				</section>
+				<!-- Slide 7 -->
+				<section data-background-image='../assets/generic/tweenies.PNG'>
+					<div class='row'>
+						<div class='col'></div>
+						<div class='col'>
+							<h2 style = color:#1d98ff><b> Activity </b></h2>
+							<br>
+							<p> In pairs, walk your partner through the data life cycle for a piece of data you have used in your role.</p>
+						</div>
+					</div>
+					<!-- Slide 7 Notes -->
+					<aside class='notes'>
+						Give 5 minutes for this activity
+					</aside>
+				</section>
+        <!-- Slide 8 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> The Data Analytics Lifecycle</span>          
+					</div>
+					<!-- Slide 8 Notes -->
+					<aside class='notes'>
+						We have considered what happens to a piece of data, but what about a project? Today's session is about helping you understand how to plan out a project that will deliver data driven insights. The data analytics lifecycle is a framework which all your projects are based around.
+					</aside>
+				</section>
+				<section>
+					<!-- Slide 9a -->
+					<section data-background-image='../assets/generic/main.PNG'>
+						<div class="wrap">
+							<img src='assets/session_1/data_analytics_lifecycle.PNG' height='600' width='600'>
+						</div>
+						<!-- Slide 9a Notes -->
+						<aside class='notes'>
+							The data analytics life cycle governs every aspect of your project from its genesis to final completion. You should refer to each of these steps throughout (especially when writing up your portfolio). It is important to point out this life cycle flows both ways. It is common to go back a step when you realise something is missing from your data, or you need to readjust your plan due to an unforseen issue. Be flexible in your project and learn from everything you do to optimise your practice.
+						</aside>
+					</section>
+					<!-- Slide 9b -->
+					<section data-background-image='../assets/generic/main.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<img src='assets/session_1/plan.PNG' height='500' width='500'>
+							</div>
+							<div class='col'>
+								<p> What is the context of business problem? </p>
+								<p> Why does the problem matter? </p>
+								<p> Who are the stakeholders? </p>
+								<p> What assumptions have you made about the problem? </p>
+								<p> What is your proposed solution and issues you have considered? </p>
+								<p> What data will you require? </p>
+							</div>
+						</div>
+						<!-- Slide 9b Notes -->
+						<aside class='notes'>
+							The data analytics life cycle begins with planning out your project- what is the business problem that needs to be solved? What is the context of the problem? What is your proposed solution? What data will you need to achieve this? Do you have any other assumptions?							
+						</aside>
+					</section>		
+					<!-- Slide 9c -->
+					<section data-background-image='../assets/generic/main.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<img src='assets/session_1/data_prep.PNG' height='500' width='500'>
+							</div>
+							<div class='col'>
+								<p style='color:#f4f4f4'> blank </p>
+								<p> Does the data require cleaning? </p>
+								<p> How have you summarised the data? </p>
+								<p> Is there any missing data or outliers? </p>
+								<p> What are the data structures? </p>
+								<p> What are the data types? </p>
+								<p> What features are in your data? </p>
+							</div>
+						</div>
+						<!-- Slide 9c Notes -->
+						<aside class='notes'>
+							Next comes data prep. 80% of your time on a data project will be spent on this section, checking for null values, missing values, data types, outliers, errors and more. A project lives or dies on the quality of its data, you need to ensure it is in the optimal shape.
+						</aside>
+					</section>	
+					<!-- Slide 9d -->
+					<section data-background-image='../assets/generic/main.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<img src='assets/session_1/analysis.PNG' height='500' width='500'>
+							</div>
+							<div class='col'>
+								<p style='color:#f4f4f4'> blank </p>
+								<p> What aggregates have you calculated? </p>
+								<p> How have you visualised the data? </p>
+								<p> What trends have you observed? </p>
+								<p> Are there any correlations between features? </p>
+								<p> What insights have you gained from the data? </p>
+							</div>
+						</div>
+						<!-- Slide 9d Notes -->
+						<aside class='notes'>
+							Once you have prepared the data you analyse it. You calculate aggregates (means and medians, counts, maximum and minimums) and visualise the data. You get an understanding of trends, correlations and an understanding of what features will be the most influential when building a predictive model (if that is what you are doing)
+						</aside>
+					</section>	
+					<!-- Slide 9e -->
+					<section data-background-image='../assets/generic/main.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<img src='assets/session_1/modelling.PNG' height='500' width='500'>
+							</div>
+							<div class='col'>
+								<p style='color:#f4f4f4'> blank </p>
+								<p> What is your solution to the business problem? </p>
+								<p> Is it a prototype? </p>
+								<p> Based off your analysis, how have you come to this solution? </p>
+							</div>
+						</div>
+						<!-- Slide 9e Notes -->
+						<aside class='notes'>
+							Next you build your model. This might be a machine learning model, a dashboard or a prototype. Whatever it is, it will be based on your previous analysis and aims to fulfil the business requirements you set out from the planning stage
+						</aside>
+					</section>	
+					<!-- Slide 9f -->
+					<section data-background-image='../assets/generic/main.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<img src='assets/session_1/refine.PNG' height='500' width='500'>
+							</div>
+							<div class='col'>
+								<p style='color:#f4f4f4'> blank </p>
+								<p> Have you considered other solutions? </p>
+								<p> How do you know yours is the best one? </p>
+								<p> How have you optimised your solution? </p>
+								<p> How have you verified that the project requirements have been met? </p>
+							</div>
+						</div>
+						<!-- Slide 9f Notes -->
+						<aside class='notes'>
+							Once the model is built, it is time to refine and compare. When building models it is rare that you would only make one, and you may have considered a variety of visualisations for your dashboard. It is in this stage that you optimise what you have built and decide upon which version meets your project aims best.
+						</aside>
+					</section>	
+					<!-- Slide 9g -->
+					<section data-background-image='../assets/generic/main.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<img src='assets/session_1/communicate.PNG' height='500' width='500'>
+							</div>
+							<div class='col'>
+								<p style='color:#f4f4f4'> blank </p>
+								<p> How have you presented your solution to the stakeholders? </p>
+								<p> What are your recommendations? </p>
+								<p> What are the next steps or future opportunities gained from this project? </p>
+							</div>
+						</div>
+						<!-- Slide 9g Notes -->
+						<aside class='notes'>
+							Finally you communicate your findings. You go back to the key stakeholders and inform them of your data driven insight so they can make the best business decision. All work in your portfolio should demonstrate that your analysis has been communicated to someone, whether it is a model or visualisation. 
+						</aside>
+					</section>	
+				</section>
+				<!-- Slide 10 -->
+				<section data-background-image='../assets/generic/tweenies.PNG'>
+					<div class='row'>
+						<div class='col'></div>
+						<div class='col'>
+							<h2 style = color:#1d98ff><b> Activity </b></h2>
+							<br>
+							<p> You work for a recruiting firm and have been asked to produce a model that predicts the salary of a data analyst from a job board website. The problem is that not all jobs advertised list a salary range, so your line manager wants you to find a way of estimating these salaries based off features such as location, job title and keywords in the description.</p>
+							<p> In groups identify where each of the steps on the following slide would fall into in the data analytics lifecycle.</p>
+						</div>
+					</div>
+					<!-- Slide 10 Notes -->
+					<aside class='notes'>
+						Give 10 minutes for this activity
+					</aside>
+				</section>				
+				<!-- Slide 11 -->
+				<section data-background-image='../assets/generic/table_back.PNG'>
+					<table style="table-layout: fixed; width: 100%;">
+						<tr>
+							<td style='width:33%'> Ensure location data is consistent </td>
+							<td style='width:33%'> Establish project deadline </td>
+							<td style='width:33%'> Build predictive model </td>
+						</tr>
+						<tr>
+							<td> Fine tune model to optimise results </td>
+							<td> Move model to production </td>
+							<td> Understand stakeholder expectations </td>
+						</tr>
+						<tr>
+							<td> Extract keywords from job descriptions </td>
+							<td> Remove currency symbols from data </td>
+							<td> Identify adverts which list salaries </td>
+						</tr>
+						<tr>
+							<td> Plot visualisation of average salary per location </td>
+							<td> Communicate results to stakeholders </td>
+							<td> Aggregate mean salary per location </td>
+						</tr>
+						<tr>
+							<td> Extract location information from job adverts </td>
+							<td> Interpret results </td>
+							<td> Decide whether you are predicting continuous salary values or salary bands</td>
+						</tr>
+					</table>
+					<!-- Slide 11 Notes -->
+					<aside class='notes'>
+						Give 10 minutes for this activity
+					</aside>
+				</section>
+				<section>
+					<!-- Slide 12a -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table style="table-layout: fixed; width: 100%;">
+							<tr>
+								<td style='width:33%'> Ensure location data is consistent </td>
+								<td style="background-color:#4d61f4;width:33%"> Establish project deadline </td>
+								<td style='width:33%'> Build predictive model </td>
+							</tr>
+							<tr>
+								<td > Fine tune model to optimise results </td>
+								<td> Move model to production </td>
+								<td style="background-color:#4d61f4"> Understand stakeholder expectations </td>
+							</tr>
+							<tr>
+								<td > Extract keywords from job descriptions </td>
+								<td > Remove currency symbols from data </td>
+								<td > Identify adverts which list salaries </td>
+							</tr>
+							<tr>
+								<td > Plot visualisation of average salary per location </td>
+								<td > Communicate results to stakeholders </td>
+								<td > Aggregate mean salary per location </td>
+							</tr>
+							<tr>
+								<td > Extract location information from job adverts </td>
+								<td > Interpret results </td>
+								<td style="background-color:#4d61f4"> Decide whether you are predicting continuous salary values or salary bands</td>
+							</tr>
+						</table>
+						<!-- Slide 12a Notes -->
+						<aside class='notes'>
+							The plan stage involves working with stakeholders to establish a project brief (including deadline) and make decisions around how you plan to conduct the analysis.
+						</aside>
+					</section>
+					<!-- Slide 12b -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table style="table-layout: fixed; width: 100%;">
+							<tr>
+								<td style="background-color:#59d8a1;width:33%"> Ensure location data is consistent </td>
+								<td style="background-color:#4d61f4;width:33%"> Establish project deadline </td>
+								<td style='width:33%'> Build predictive model </td>
+							</tr>
+							<tr>
+								<td > Fine tune model to optimise results </td>
+								<td> Move model to production </td>
+								<td style="background-color:#4d61f4"> Understand stakeholder expectations </td>
+							</tr>
+							<tr>
+								<td style="background-color:#59d8a1"> Extract keywords from job descriptions </td>
+								<td style="background-color:#59d8a1"> Remove currency symbols from data </td>
+								<td style="background-color:#59d8a1"> Identify adverts which list salaries </td>
+							</tr>
+							<tr>
+								<td > Plot visualisation of average salary per location </td>
+								<td > Communicate results to stakeholders </td>
+								<td > Aggregate mean salary per location </td>
+							</tr>
+							<tr>
+								<td style="background-color:#59d8a1"> Extract location information from job adverts </td>
+								<td > Interpret results </td>
+								<td style="background-color:#4d61f4"> Decide whether you are predicting continuous salary values or salary bands</td>
+							</tr>
+						</table>
+						<!-- Slide 12b Notes -->
+						<aside class='notes'>
+							Data prep involves preparing your data for analysis, this means identifying the features you wish to use as well as cleaning the data such as removing currency symbols.
+						</aside>
+					</section>
+					<!-- Slide 12c -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table style="table-layout: fixed; width: 100%;">
+							<tr>
+								<td style="background-color:#59d8a1;width:33%"> Ensure location data is consistent </td>
+								<td style="background-color:#4d61f4;width:33%"> Establish project deadline </td>
+								<td style='width:33%'> Build predictive model </td>
+							</tr>
+							<tr>
+								<td > Fine tune model to optimise results </td>
+								<td> Move model to production </td>
+								<td style="background-color:#4d61f4"> Understand stakeholder expectations </td>
+							</tr>
+							<tr>
+								<td style="background-color:#59d8a1"> Extract keywords from job descriptions </td>
+								<td style="background-color:#59d8a1"> Remove currency symbols from data </td>
+								<td style="background-color:#59d8a1"> Identify adverts which list salaries </td>
+							</tr>
+							<tr>
+								<td style="background-color:#64abff"> Plot visualisation of average salary per location </td>
+								<td > Communicate results to stakeholders </td>
+								<td style="background-color:#64abff"> Aggregate mean salary per location </td>
+							</tr>
+							<tr>
+								<td style="background-color:#59d8a1"> Extract location information from job adverts </td>
+								<td > Interpret results </td>
+								<td style="background-color:#4d61f4"> Decide whether you are predicting continuous salary values or salary bands</td>
+							</tr>
+						</table>
+						<!-- Slide 12c Notes -->
+						<aside class='notes'>
+							Analysis means finding patterns and trends in your data, calculating averages and plotting visualisations helps with this. 
+						</aside>
+					</section>
+					<!-- Slide 12d -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table style="table-layout: fixed; width: 100%;">
+							<tr>
+								<td style="background-color:#59d8a1;width:33%"> Ensure location data is consistent </td>
+								<td style="background-color:#4d61f4;width:33%"> Establish project deadline </td>
+								<td style="background-color:#ffe352;width:33%"> Build predictive model </td>
+							</tr>
+							<tr>
+								<td > Fine tune model to optimise results </td>
+								<td> Move model to production </td>
+								<td style="background-color:#4d61f4"> Understand stakeholder expectations </td>
+							</tr>
+							<tr>
+								<td style="background-color:#59d8a1"> Extract keywords from job descriptions </td>
+								<td style="background-color:#59d8a1"> Remove currency symbols from data </td>
+								<td style="background-color:#59d8a1"> Identify adverts which list salaries </td>
+							</tr>
+							<tr>
+								<td style="background-color:#64abff"> Plot visualisation of average salary per location </td>
+								<td > Communicate results to stakeholders </td>
+								<td style="background-color:#64abff"> Aggregate mean salary per location </td>
+							</tr>
+							<tr>
+								<td style="background-color:#59d8a1"> Extract location information from job adverts </td>
+								<td > Interpret results </td>
+								<td style="background-color:#4d61f4"> Decide whether you are predicting continuous salary values or salary bands</td>
+							</tr>
+						</table>
+						<!-- Slide 12d Notes -->
+						<aside class='notes'>
+							Pretty simple, build the model. 
+						</aside>
+					</section>
+					<!-- Slide 12e -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table style="table-layout: fixed; width: 100%;">
+							<tr>
+								<td style="background-color:#59d8a1;width:33%"> Ensure location data is consistent </td>
+								<td style="background-color:#4d61f4;width:33%"> Establish project deadline </td>
+								<td style="background-color:#ffe352;width:33%"> Build predictive model </td>
+							</tr>
+							<tr>
+								<td style="background-color:#242456;color:#f4f4f4"> Fine tune model to optimise results </td>
+								<td> Move model to production </td>
+								<td style="background-color:#4d61f4"> Understand stakeholder expectations </td>
+							</tr>
+							<tr>
+								<td style="background-color:#59d8a1"> Extract keywords from job descriptions </td>
+								<td style="background-color:#59d8a1"> Remove currency symbols from data </td>
+								<td style="background-color:#59d8a1"> Identify adverts which list salaries </td>
+							</tr>
+							<tr>
+								<td style="background-color:#64abff"> Plot visualisation of average salary per location </td>
+								<td > Communicate results to stakeholders </td>
+								<td style="background-color:#64abff"> Aggregate mean salary per location </td>
+							</tr>
+							<tr>
+								<td style="background-color:#59d8a1"> Extract location information from job adverts </td>
+								<td style="background-color:#242456;color:#f4f4f4"> Interpret results </td>
+								<td style="background-color:#4d61f4"> Decide whether you are predicting continuous salary values or salary bands</td>
+							</tr>
+						</table>
+						<!-- Slide 12e Notes -->
+						<aside class='notes'>
+							Optimise your model by trying other features, or even a different type of model. At this stage you should also interpret your results in the context of the business problem.
+						</aside>
+					</section>
+					<!-- Slide 12f -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table style="table-layout: fixed; width: 100%;">
+							<tr>
+								<td style="background-color:#59d8a1;width:33%"> Ensure location data is consistent </td>
+								<td style="background-color:#4d61f4;width:33%"> Establish project deadline </td>
+								<td style="background-color:#ffe352;width:33%"> Build predictive model </td>
+							</tr>
+							<tr>
+								<td style="background-color:#242456;color:#f4f4f4"> Fine tune model to optimise results </td>
+								<td style="background-color:#ff7c66"> Move model to production </td>
+								<td style="background-color:#4d61f4"> Understand stakeholder expectations </td>
+							</tr>
+							<tr>
+								<td style="background-color:#59d8a1"> Extract keywords from job descriptions </td>
+								<td style="background-color:#59d8a1"> Remove currency symbols from data </td>
+								<td style="background-color:#59d8a1"> Identify adverts which list salaries </td>
+							</tr>
+							<tr>
+								<td style="background-color:#64abff"> Plot visualisation of average salary per location </td>
+								<td style="background-color:#ff7c66"> Communicate results to stakeholders </td>
+								<td style="background-color:#64abff"> Aggregate mean salary per location </td>
+							</tr>
+							<tr>
+								<td style="background-color:#59d8a1"> Extract location information from job adverts </td>
+								<td style="background-color:#242456;color:#f4f4f4"> Interpret results </td>
+								<td style="background-color:#4d61f4"> Decide whether you are predicting continuous salary values or salary bands</td>
+							</tr>
+						</table>
+						<!-- Slide 12f Notes -->
+						<aside class='notes'>
+							Once you are happy with the model you go back to your stakeholders to get their approval before sending the model to a development team so it can be moved to a live server where it can be used by other data analysts.
+						</aside>
+					</section>
+				</section>
+        <!-- Slide 13 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Identifying Stakeholders</span>          
+					</div>
+					<!-- Slide 13 Notes -->
+					<aside class='notes'>
+						The remainder of this session will be around planning your project and first we will need to discuss stakeholders.
+					</aside>
+				</section>
+				<!-- Slide 14 -->
+				<section data-background-image="../assets/generic/fun_box.PNG">
+					<div class="wrap size-50 aligncenter">
+						<span style ='color:#4d61f4;font-size:70px;font-weight:bold;text-align:center'> What is a stakeholder? </span>
+					</div>
+					<!-- Slide 14 Notes -->
+					<aside class='notes'>
+						Ask the group to annotate the screen with their ideas. Discuss a few of them.
+					</aside>
+				</section>
+				<!-- Slide 15 -->
+				<section data-background-image="../assets/generic/fun_box.PNG">
+					<div class="wrap size-50 aligncenter">
+						<span style ='color:#4d61f4;font-size:70px;font-weight:bold;text-align:center'> Who could be a stakeholder? </span>
+					</div>
+					<!-- Slide 15 Notes -->
+					<aside class='notes'>
+						Ask the class to suggest their ideas for who can be a stakeholder. Draw on the idea that it could be anyone.
+					</aside>
+				</section>
+				<section>
+					<!-- Slide 16a -->
+					<section data-background-image='../assets/generic/box_serious.PNG'>
+						<h2> Stakeholders are individuals or groups who are involved in your project from whom you require input, or who will be influenced or impacted by the results.</h2>					
+						<!-- Slide 16a Notes -->
+						<aside class='notes'>
+							A stakeholder is anyone who has a say in your project
+						</aside>
+					</section>
+					<!-- Slide 16b -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table style="table-layout: fixed; width: 100%;border-collapse: collapse;">
+							<tr>
+								<td style="width:25%;border: none"><img src='assets/session_1/sponsor.PNG'></td>
+								<td style="width:25%;border: none"><img src='assets/session_1/team.PNG'></td>
+								<td style="width:25%;border: none"><img src='assets/session_1/user.PNG'></td>
+								<td style="width:25%;border: none"><img src='assets/session_1/supplier.PNG'></td>
+							</tr>
+							<tr>
+								<td style="width:25%;border: none"> <b>Sponsor</b></td>
+								<td style="width:25%;border: none"> <b>Team</b></td>
+								<td style="width:25%;border: none"> <b>Users</b></td>
+								<td style="width:25%;border: none"> <b>Suppliers</b></td>
+							</tr>
+							<tr>
+								<td style="width:25%;border: none"><b>Examples:</b> Directors, Senior Leadership, Heads of Department</td>
+								<td style="width:25%;border: none"><b>Examples:</b> Project Managers, Team Leads, Line Managers, Sales Teams</td>
+								<td style="width:25%;border: none"><b>Examples:</b> Customers, Clients, Business Owner</td>
+								<td style="width:25%;border: none"><b>Examples:</b> Contractors, Consultants, Subject Matter Experts</td>
+							</tr>
+						</table>
+						<!-- Slide 16b Notes -->
+						<aside class='notes'>
+							Almost anyone can be a stakeholder but we can simplify them into four groups
+							<ul>
+								<li> Sponsors: those who issue the project, like those who you report into </li>
+								<li> Team: those who are on the same level as you and who you have to collaborate with </li>
+								<li> Users: the clients or customers who will make use of your output. Note a user and a customer may be different- a customer pays for the product whereas a user 'uses' it, for example a company will pay for a service while the employees use it. </li>
+								<li> Suppliers: those whose input is required for the project to be completed (could be an external data source or subject expert) </li>
+							</ul>
+							For each stakeholder you need to consider how involved they will be with your project and therefore what influence they will have, the next few slides will help structure this process.
+						</aside>
+					</section>
+				</section>
+				<!-- Slide 17 -->
+				<section data-background-image='../assets/generic/strike.PNG'>
+					<div class='row'>
+						<div class='col'>
+							<p> 1. What motivates them? </p>
+							<p> 2. How can you influence them? </p>
+							<p> 3. What information would they like to receive?</p>
+							<p> 4. How would they like to receive it? </p>
+							<p> 5. What information do we require from them?</p>
+							<p> 6. What dependencies are they responsible for?</p>
+						</div>
+						<div class='col'>
+							<h1 style='color:#f4f4f4'> Questions to consider in your communications with each stakeholder </h1>
+						</div>
+					</div>
+					<!-- Slide 17 Notes -->
+					<aside class='notes'>
+						When thinking about your stakeholders, as yourself these questions. These will determine how often you should communicate with them as well as how informed they should be (and how much influence they should have).
+					</aside>
+				</section>
+				<!-- Slide 18 -->
+				<section data-background-image='../assets/generic/main.PNG'>
+					<div class="wrap">
+						<img src='assets/session_1/stakeholder_managment.PNG' width='500' height='500'>
+					</div>
+					<!-- Slide 18 Notes -->
+					<aside class='notes'>
+						It may be useful then to visualise your stakeholders on this chart. All stakeholders can be modelled on how much power (influence) they have over your project and how interested they are. For example, your line manager will have high power and interest so will need to be managed closely whereas your line manager's boss will have high power but low interest which means you just need to keep them happy. Ask the apprentices to suggest other people who could fall into each category. Note, throughout the life cycle of a project someone's position on the chart may change. A member of the sales team will be in the 'monitor' box in the initial stages of a project but will need to be managed closely as it moves close to production.
+					</aside>
+				</section>
+        <!-- Slide 19 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Dealing with Stakeholders</span>          
+					</div>
+					<!-- Slide 19 Notes -->
+					<aside class='notes'>
+						Let's think a bit more closely how we deal with stakeholders, how should we communicate with them?
+					</aside>
+				</section>
+				<!-- Slide 20 -->
+				<section data-background-image='../assets/generic/pentagon_jr.PNG'>
+					<div class='row'>
+						<div class='col'></div>
+						<div class='col'>
+							<p> Do you have enough information to draft a project brief to share with stakeholders?</p>
+							<p> Are you accurately capturing the necessary information through effective questioning?</p>
+						</div>
+					</div>
+					<!-- Slide 20 Notes -->
+					<aside class='notes'>
+						The first thing to consider is if we understand their requirements. Requirements elicitation is a key aspect of a project where you capture their needs so you can draw up a project brief (will be discussed in more detail later). A key aspect of this is the questions you ask.
+					</aside>
+				</section>
+				<section>
+					<!-- Slide 21a -->
+					<section data-background-image='../assets/generic/fun_box.PNG'>
+						<div class="wrap size-50 aligncenter">
+							<span style ='color:#4d61f4;font-size:50px;font-weight:bold;text-align:center'> A good question is one that lets you obtain the <b style='color:#ff7c66'>type</b>, <b style='color:#ff7c66'>quality</b> and <b style='color:#ff7c66'>quantity</b> of the information you need </span>
+						</div>
+						<!-- Slide 21a Notes -->
+						<aside class='notes'>
+							Effective questionning will allow you to understand precisely what the stakeholder wants and therefore what you need to deliver. It will also help you determine how involved they will need to be and what tools you will likely need to use. A competently led interview will also assure the stakeholder of your expertise.
+						</aside>
+					</section>
+					<!-- Slide 21b -->
+					<section data-background-image='../assets/generic/fun_box.PNG'>
+						<div class="wrap size-50 aligncenter">
+							<span style ='color:#4d61f4;font-size:50px;font-weight:bold;text-align:center'> Open ended questions encourage people to reflect and reveal what is important to them </span>
+						</div>
+						<!-- Slide 21b Notes -->
+						<aside class='notes'>
+							When asking questions it is better to ask open ended questions to encourage reflection. Closed questions can be useful in guiding someone towards a response so if a stakeholder does not know what they want then you should mix your closed and open questions to stimulate discussion.
+						</aside>
+					</section>
+				</section>
+				<!-- Slide 22 -->
+				<section data-background-image='../assets/generic/table_back.PNG'>
+					<table>
+						<tr>
+							<th> Type </th>
+							<th> Desired Outcome </th>
+							<th> Example </th>
+						</tr>
+						<tr>
+							<td> Explorative </td>
+							<td> Expand on new points of view and uncovered areas </td>
+							<td> Have you thought of...?</td>
+						</tr>
+						<tr>
+							<td> Affective </td>
+							<td> Reveal stakeholder's feelings about something </td>
+							<td> How do you feel about...?</td>
+						</tr>
+						<tr>
+							<td> Reflective </td>
+							<td> Encourage elaboration </td>
+							<td> What do you think causes...?</td>
+						</tr>
+						<tr>
+							<td> Probing </td>
+							<td> Invite a deeper examination </td>
+							<td> Can you describe how...?</td>
+						</tr>
+						<tr>
+							<td> Analytical </td>
+							<td> Find the root of a problem </td>
+							<td> What are the causes of...?</td>
+						</tr>
+						<tr>
+							<td> Clarifying </td>
+							<td> Help align and avoid misunderstandings </td>
+							<td> You mean that...?</td>
+						</tr>
+					</table>
+					<!-- Slide 22 Notes -->
+					<aside class='notes'>
+						You should also mix up the types of questions you are asking. Plan out your questions in advance, thinking about what you want to achieve. Stakeholders may be  busy and not be able to devote a lot of time to thinking about your project. Your questions then will help elicit the required information. Go through each type of question giving examples.
+					</aside>
+				</section>
+				<!-- Slide 23 -->
+				<section data-background-image='../assets/generic/pentagon_jr.PNG'>
+					<div class='row'>
+						<div class='col'>
+							<h1 style='color:#f4f4f4'> Other things to consider </h1>
+						</div>
+						<div class='col'>
+							<p> What return do they get? </p>
+							<p> What do they need? </p>
+							<p> What do you need?</p>
+							<p> What's their opinion of you?</p>
+							<p> What is their strategy?</p>
+						</div>
+					</div>
+					<!-- Slide 23 Notes -->
+					<aside class='notes'>
+						When constructing your questions you should also consider these things to help you plan out your project. Run through each and ask apprentices for input why they think they might be important.
+					</aside>
+				</section>
+				<!-- Slide 24 -->
+				<section data-background-image='../assets/generic/tweenies.PNG'>
+					<div class='row'>
+						<div class='col'></div>
+						<div class='col'>
+							<h2 style = color:#1d98ff><b> Activity </b></h2>
+							<br>
+							<p> In groups you will be assigned a business case.</p>
+							<p> Brainstorm a list of questions you would ask to get more insight into the problem</p>
+							<p> Think who else might be a stakeholder in the situation </p>
+						</div>
+					</div>
+					<!-- Slide 24 Notes -->
+					<aside class='notes'>
+						Give 10 minutes for this activity. Divide the apprentices into groups and give them one scenario each (on the next slide). Ask apprentices to nominate one person to feedback to the group.
+					</aside>
+				</section>
+				<section>
+					<!-- Slide 25a -->
+					<section data-background-image='../assets/generic/circle_remix.PNG'>
+						<h1> Scenario 1 </h1>
+						<br>
+						<p> Yusef owns an online shoe e-commerce website. He isn’t happy with how sales are going, especially the beachwear section of his store. He has contracted you to create an analysis to help him with this issue. </p>
+						<br>
+						<p><i>I want you to look at the day-on-day sales to see where this is going wrong. I want moving averages, and a linear regression of the shopping baskets! I spent a lot of money buying 20,000 pairs of flip flops. They need to sell.</i></p>
+						<!-- Slide 25a Notes -->
+						<aside class='notes'>
+						</aside>
+					</section>
+					<!-- Slide 25b -->
+					<section data-background-image='../assets/generic/circle_remix.PNG'>
+						<h1> Scenario 2 </h1>
+						<br>
+						<p> Danielle runs a DJ store selling vinyl records and cassette tapes. Recently, she has found that she is running out of stock of certain albums and songs. Customers are asking for them but all her copies are gone! She’s contracted you to help. </p>
+						<br>
+						<p><i>I’ve got a list of the ages of my customers. I want you to explore who the customers are, how old are they? What is their vibe like?</i></p>
+						<!-- Slide 25b Notes -->
+						<aside class='notes'>
+						</aside>
+					</section>
+					<!-- Slide 25c -->
+					<section data-background-image='../assets/generic/circle_remix.PNG'>
+						<h1> Scenario 3 </h1>
+						<br>
+						<p> You are the data analyst at an advertising firm and have just implemented a new strategy to boost the ROI of a client’s advertising campaign, with the sign-off of both the account manager and your line-manager. However, later in the day, you receive an angry email from someone at the client company. It turns out they are temporarily in charge of the campaigns and don’t like your changes, asking you to immediately revert them. It seems they are unaware of how you usually operate.</p>
+						<!-- Slide 25c Notes -->
+						<aside class='notes'>
+						</aside>
+					</section>
+				</section>
+				<section>
+					<!-- Slide 26a -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h2 style='color:#f4f4f4'> Communication Plan </h2>
+							</div>
+							<div class='col'>
+								<p> To help keep track of stakeholders you should maintain a communication plan to help you: </p>
+								<ul style='display:inline-block;text-align:left'> 
+									<li> Determine how often you will be in contact with stakeholders </li>
+									<li> Decide on your messages (ignore, follow, inform, consult, involve, etc)</li>
+									<li> Decide on the medium of contact (email, phone call, etc)</li>
+									<li> Assign a responsible project member </li>
+								</ul>
+							</div>
+						</div>
+						<!-- Slide 26a Notes -->
+						<aside class='notes'>
+							Something you will need to decide with your stakeholders is how often you intend to communicate with them. Major stakeholders will require regular updates, while others can be informed once the project is complete. A communication plan can help you keep track of this.
+						</aside>
+					</section>
+					<!-- Slide 26b -->
+					<section data-background-image='../assets/generic/main.PNG'>
+						<div class="wrap">
+							<img src='assets/session_1/comm_plan.PNG'>
+						</div>
+						<!-- Slide 26b Notes -->
+						<aside class='notes'>
+							An example of a communication plan. 
+						</aside>
+					</section>
+				</section>
+        <!-- Slide 27 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Methods of Communication</span>          
+					</div>
+					<!-- Slide 27 Notes -->
+					<aside class='notes'>
+						Communication problems can lead to all sorts of issues on your project, in this section it will be over to you to discuss examples of communication (good and bad) you have experienced.
+					</aside>
+				</section>
+				<!-- Slide 28 -->
+				<section data-background-image='../assets/generic/tweenies.PNG'>
+					<div class='row'>
+						<div class='col'></div>
+						<div class='col'>
+							<h2 style = color:#1d98ff><b> Activity </b></h2>
+							<br>
+							<p>Communication problems lead to delays, misunderstandings, frustration, workplace conflicts and a mismatch in stakeholder expectations. </p>
+							<ul style='display:inline-block;text-align:left'> 
+									<li> What are some examples of effective communication methods?</li>
+									<li> In which context and with what type of audience are those effective?</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Slide 28 Notes -->
+					<aside class='notes'>
+						Breakout rooms for 5-7 minutes then feedback to rest of group.
+					</aside>
+				</section>
+        <section>
+          <!-- Slide 29a -->
+          <section data-background-image='../assets/generic/circle_remix.PNG'>
+            <h1> Two types of Communication </h1>
+            <div class='row'>
+              <div class='fragment col'>
+                <h2 style='color:#ff7c66'> Verbal </h2>
+                <p> No Actions </p>
+              </div>
+              <div class='fragment col'>
+                <h2 style='color:#59d8a1'> Non-Verbal </h2>
+                <p> Actions </p>
+              </div>
+            </div>
+            <!-- Slide 29a Notes -->
+            <aside class='notes'>
+              Communication is not as simple as just talking to someone; to elicit information from someone there is a whole range of methods you should consider. For example, a lot of communication is verbal (speaking) but that also includes emails and memos. What sort of things should you try to keep in mind when communicating verbally? (Grammar, appropriate use of language, tone, saying what you mean, etc). What is often overlooked however is non verbal communication. Humans are generally quite good at picking up body language, even subconsciously, which can create problems if you are not thinking about it. For example, if you are trying to win a client, looking at your phone will not go down very well. What other types of non verbal communication should we be considering when communicating with stakeholders?
+            </aside>
+          </section>
+          <!-- Slide 29b -->
+          <section data-background-image='../assets/generic/circle_remix.PNG'>
+            <div class='row'>
+              <div class='col'>
+                <h2 style='color:#ff7c66'> Email </h2>
+                <img src='assets/session_1/email.PNG' width=500 height=500>
+              </div>
+              <div class='fragment col'>
+                <h2 style='color:#59d8a1'> Face to Face </h2>
+                <img src='assets/session_1/f2f.PNG' width=500 height=500>
+              </div>
+            </div>
+            <!-- Slide 29b Notes -->
+            <aside class='notes'>
+              One of the more common methods of communication with stakeholders is the humble email, does anyone have any advice from their experience with writing emails to stakeholders? What should you consider? A lot depends on the stakeholder itself, you can be a lot less formal with a peer than a senior manager. If in doubt, it always better to be formal and succinct, giving enough detail so they understand without overloading them. What sort of things should we consider with face to face meeting (whether in person or over Zoom/Teams)? Body language, how we look and speak, being clear and concise and knowing our subject material. When communicating with stakeholders it is important we have a flexible and adaptive style. How you communicate with your manager will be different with someone on your level and again different to someone who is external. What you will be assessed on in your portfolio is your ability to adapt your communication style to different audiences and situations.   
+            </aside>
+          </section>
+          <!-- Slide 29c -->
+          <section data-background-image='../assets/generic/teamwork.PNG'>
+            <!-- Slide 29c Notes -->
+            <aside class='notes'>
+              Something else you will be assessed on is how you work both independently and within a team. You are never alone on a project and will often have stakeholders you rely on (data engineers or database managers for example). It is important to consider how you work and communicate with these stakeholders as they will have an impact on the outcome of your project. When writing up project reports, or communicating to primary stakeholdersit is important to detail exactly what you did on the project and how effective that contribution was.
+            </aside>
+          </section>
+        </section>
+				<!-- Slide 30 -->
+				<section data-background-image='../assets/generic/box_serious.PNG'>
+					<div class="wrap size-50 aligncenter">
+						<span style ='font-size:50px;font-weight:bold;text-align:center'>A good data analyst will accurately <b class='objective'>frame a problem</b> to be solved and <b class='objective'>share it with key stakeholders</b></span>
+					</div>
+					<!-- Slide 30 Notes -->
+					<aside class='notes'>
+						As we have said, communication is key and a good analyst will capture all the information and convert it into a business problem that needs to be solved and share it with the stakeholders.
+					</aside>
+				</section>
+        <!-- Slide 31 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Project Briefs</span>          
+					</div>
+					<!-- Slide 31 Notes -->
+					<aside class='notes'>
+						When you start to build your portfolio you will need to consider the business impact of your projects. Part of this is the writing of project briefs, this section will help you think about how they are written and what they should contain.
+					</aside>
+				</section>
+				<!-- Slide 32 -->
+					<section data-background-image='../assets/generic/box_serious.PNG'>
+						<div class="wrap size-50 aligncenter">
+						<span style ='font-size:50px;font-weight:bold;text-align:center'> A project brief is the document that sets out the <b class='objective'>requirements for a piece of analysis</b></span>
+					</div>
+						<!-- Slide 32 Notes -->
+						<aside class='notes'>
+							Ask the apprentices if they have any experience of writing project briefs, or what they might be called in their organization (project scope, etc).
+						</aside>
+					</section>
+				<section>
+					<!-- Slide 33a -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h2 style='color:#f4f4f4'> Who </h2>
+								<h2 style='color:#f4f4f4'> What </h2>
+								<h2 style='color:#f4f4f4'> When </h2>
+								<h2 style='color:#f4f4f4'> Why </h2>
+							</div>
+							<div class='col'>
+							</div>
+						</div>
+						<!-- Slide 33a Notes -->
+						<aside class='notes'>
+							When writing a brief it is important to consider the who, what, when and why of your project. All this information needs to be captured and shared within your brief.
+						</aside>
+					</section>
+					<!-- Slide 33b -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h2 style='color:#ff7c66'> Who </h2>
+								<h2 style='color:#f4f4f4'> What </h2>
+								<h2 style='color:#f4f4f4'> When </h2>
+								<h2 style='color:#f4f4f4'> Why </h2>
+							</div>
+							<div class='col'>
+								<h2> Project Sponsors </h2>
+								<br>
+								<p> Those who set the analytical requirements and decides if your work has fulfilled their needs:</p>
+								<ul style='display:inline-block;text-align:left'>
+									<li> What questions do you need to ask them?</li>
+									<li> What do you need to produce for them?</li>
+									<li> What format are they expecting?</li>
+									<li> Do they understand the limitations of their data?</li>
+								</ul>
+							</div>
+						</div>
+						<!-- Slide 33b Notes -->
+						<aside class='notes'>
+							Who are the key decision makers? Who do you need to report back to and what are they expecting? These are the people whose approval you will need to carry out the project so it is important the right information is captured in your brief. You should also consider other stakeholders and their involvement as well.
+						</aside>
+					</section>
+					<!-- Slide 33c -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h2 style='color:#f4f4f4'> Who </h2>
+								<h2 style='color:#ff7c66'> What </h2>
+								<h2 style='color:#f4f4f4'> When </h2>
+								<h2 style='color:#f4f4f4'> Why </h2>
+							</div>
+							<div class='col'>
+								<h2> Metrics, Outputs and Format </h2>
+								<br>
+								<p> What are the key pieces of information you need to agree on? </p>
+								<ul style='display:inline-block;text-align:left'>
+									<li> What will you be delivering? </li>
+									<li> What tools do you intend to use? </li>
+									<li> What will the final product look like? </li>
+									<li> How will you know that you have been successful? </li>
+								</ul>
+							</div>
+						</div>
+						<!-- Slide 33c Notes -->
+						<aside class='notes'>
+							Next you should consider what the stakeholders should expect to see. What will your final product look like? Will they be able to access it? This will determine what tools/software you can use.
+						</aside>
+					</section>
+					<!-- Slide 33d -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h2 style='color:#f4f4f4'> Who </h2>
+								<h2 style='color:#f4f4f4'> What </h2>
+								<h2 style='color:#ff7c66'> When </h2>
+								<h2 style='color:#f4f4f4'> Why </h2>
+							</div>
+							<div class='col'>
+								<h2> Deadlines </h2>
+								<br>
+								<p> What is the timeline for completion on your project? </p>
+								<ul style='display:inline-block;text-align:left'>
+									<li> When will your project be completed ?</li>
+									<li> What will be the check-in dates where you will give updates? </li>
+									<li> How often do you intend to communicate with stakeholders? </li>
+								</ul>
+							</div>
+						</div>
+						<!-- Slide 33d Notes -->
+						<aside class='notes'>
+							One of the most important success metrics in a project is timely completion, so you need to state when the project will be finished by. You should also include interim dates where you will feedback on updates and milestones.
+						</aside>
+					</section>
+					<!-- Slide 33e -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h2 style='color:#f4f4f4'> Who </h2>
+								<h2 style='color:#f4f4f4'> What </h2>
+								<h2 style='color:#f4f4f4'> When </h2>
+								<h2 style='color:#ff7c66'> Why </h2>
+							</div>
+							<div class='col'>
+								<h2> Context </h2>
+								<br>
+								<p> Why does your project matter? </p>
+								<ul style='display:inline-block;text-align:left'>
+									<li> What is the business problem? </li>
+									<li> What will happen if the problem is left unchecked?</li>
+									<li> How will your solution fix this problem?</li>
+								</ul>
+							</div>
+						</div>
+						<!-- Slide 33e Notes -->
+						<aside class='notes'>
+							Finally you should consider the context of the problem, why does it matter? What are the consequences if the problem isn't fixed? How will your solution be an improvement on what already exists? This information will help key stakeholders buy into your project and will help gain approval.
+						</aside>
+					</section>
+					<!-- Slide 33f -->
+					<section data-background-image='../assets/generic/box_serious.PNG'>
+						<div class="wrap size-50 aligncenter">
+							<span style ='font-size:50px;font-weight:bold;text-align:center'> Does your industry have additional requirements?</span>
+						</div>
+						<!-- Slide 33f Notes -->
+						<aside class='notes'>
+							Ask apprentices for anything they think may have been missed.
+						</aside>
+					</section>
+				</section>
+				<!-- Slide 34 -->
+				<section data-background-image='../assets/generic/tweenies.PNG'>
+					<div class='row'>
+						<div class='col'></div>
+						<div class='col'>
+							<h2 style = color:#1d98ff><b> Activity </b></h2>
+							<br>
+							<p>Review these <a href='https://multiverselearningproducts.github.io/dfv1/Data%20Analysis%20in%20Industry/exercise/project_briefs.html' target='_blank'>project briefs</a> </p>
+							<ul style='display:inline-block;text-align:left'> 
+								<li> What is good or bad and why?</li>
+								<li> Is there any missing information?</li>
+								<li> What would you always want to see in a brief?</li>
+								<li> Who should supply the brief information? </li>
+								<li> hat other questions should you be asking of these briefs?</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Slide 34 Notes -->
+					<aside class='notes'>
+						Give 10 minutes for this activity and ask each group to feedback their thoughts.
+					</aside>
+				</section>
+        <!-- Slide 35 -->
+        <section data-background-image='../assets/generic/main.PNG'>
+          <img src='assets/session_1/project_brief.PNG'>
+          <!-- Slide 35 Notes -->
+          <aside class='notes'>
+            When writing a project brief you will need to consider user experience. How will it look, feel and be useable for them? For example, if you are building a dashboard then you will need to think about if it is accessible- can they read it to make actionable insights? Will it conform to company policy on design and colour scheme? Will it be easy to use and look 'polished'? Understanding how the user will experience your project output is a key part of the requirements elicitation process. 
+          </aside>
+        </section>
+        <!-- Slide 36 -->
+        <section data-background-image='../assets/generic/domain.PNG'>
+          <div class='row'>
+            <div class='col'>
+              <h1 style='color:#f4f4f4'> Domain Context </h1>
+              <p class='fragment' style='color:#f4f4f4'> What are the industry requirements? </p>
+              <p class='fragment' style='color:#f4f4f4'> How does it fit into the wider business structure? </p>
+              <p class='fragment' style='color:#f4f4f4'> What will be the commercial impact? </p>
+          <!-- Slide 36 Notes -->
+          <aside class='notes'>
+            An important part of the requirements elicitation process in understanding the context of the domain you are working in. Data analysis is never done in isolation, but always with reference to the industry and business it is in. What works for the automobile industry may not apply to cosmetics or the tech industry. When starting a project you will need to consider how your project fits into the wider business structure and the commercial (or business) impact it will have. When communicating your insights, you should put them in the context of the industry you are in. In your portfolio, you will be assessed on how you explain/consider domain context in your analysis.
+          </aside>
+				<!-- Slide 37 -->
+				<section data-background-image='../assets/generic/main.PNG'>
+					<h1 style='color:#59d8a1'> Good Project Briefs:</h1>
+					<br>
+					<p class='fragment'> Are concise and clear</p>
+					<p class='fragment'> Set time expectations clearly</p>
+					<p class='fragment'> Explicitly state the intended outputs</p>
+					<p class='fragment'> State the scope and purpose of the analysis</p>
+					<p class='fragment'> Are agreed and signed off by all parties</p>
+					<!-- Slide 37 Notes -->
+					<aside class='notes'>
+						Run through the list, is there anything else apprentices think should be added?
+					</aside>
+				</section>
+				<!-- Slide 38 -->
+				<section data-background-image='../assets/generic/table_back.PNG'>
+					<table>
+						<tr>
+							<th style='text-align:center'> Brief Title </th>
+              <th style='text-align:center'> <i>Come up with a project name</i> </th>
+						</tr>
+						<tr>
+              <td> <b>Situation</b> </td>
+							<td> <i>Share a brief description of what you hope to achieve during your project - what is the problem you are trying to solve? (max 400 words)</i> </td>
+						</tr>
+						<tr>
+              <td> <b>Relevance</b> </td>
+							<td> <i>How is the problem relevant to your role? Is the project relevant in the context of your day-to-day work? What impact could this project potentially have on your role/team/organisation? (max 400 words)</i> </td>
+						</tr>
+						<tr>
+              <td> <b>Tasks</b> </td>
+							<td> <i>What is your approach? Have you identified an existing source of data or are you going to create a new one? (max 400 words)</i> </td>
+						</tr>
+						<tr>
+              <td> <b>Challenges</b> </td>
+							<td> <i>What challenges have you identified going into this project? Is it access to data? Data protection? Anonymisation? IT? How do you envisage overcoming them, and what is your backup plan? (max 400 words)</i> </td>
+						</tr>
+					</table>						
+					<!-- Slide 38 Notes -->
+					<aside class='notes'>
+						An example of a project brief, remember to include key dates as well as deliverables.
+					</aside>
+				</section>
+        <!-- Slide 39 -->
+				<section data-background-image='../assets/generic/tweenies.PNG'>
+					<div class='row'>
+						<div class='col'></div>
+						<div class='col'>
+							<h2 style = color:#1d98ff><b> Activity </b></h2>
+							<br>
+              <p> Draft a project brief for the following stakeholder: </p>
+              <p> A senior manager at your firm needs to access KPIs quickly, but the current process takes too long. You have been asked to make a dashbaord in PowerBI.
+						</div>
+					</div>
+					<!-- Slide 39 Notes -->
+					<aside class='notes'>
+						Give 10-15 minutes for this activity, and encourage apprentices to discuss the 'questions' they would need to ask and what should be captured in the project brief.
+					</aside>
+				</section>
+        <!-- Slide 40 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Recap</span>          
+					</div>
+					<!-- Slide 40 Notes -->
+					<aside class='notes'>
+						We're at the end of the session and it is time to recap the day.
+					</aside>
+				</section>
+				<!-- Slide 41 -->
+				<section data-background-image="../assets/generic/blank.PNG">
+					<div class="wrap size-60 " style='width:max-content'>
+						<div>
+							<span class='objective'> Learning Objectives </span>
+							<img src='../assets/multiverse_brand/Molten/Multiverse_Notations_RGB_Coral-01.png'>
+						</div>
+						<ul style='display:inline-block;text-align:left'>
+							<li> Describe the <b class='objective'>data analytics lifecycle</b> and set out details, activities and roles at each stage in a real-world example </li>
+							<li> Design effective <b class='objective'>project briefs</b> which <b class='objective'>communicate expectations to stakeholders</b></li>
+							<li> Identify <b class='objective'>business specific rules</b> related to datasets and data characteristics that will influence project design and analysis</li>
+						</ul>          
+					</div>
+					<!-- Slide 41 Notes -->
+					<aside class='notes'>
+						Run through learning objectives again. You may want to run a <a href='https://create.kahoot.it/my-library/kahoots/all' target='_blank'>kahoot quiz</a> to embed the information.
+					</aside>
+				</section>
+				<section>
+					<!-- Slide 42a -->
+					<section data-background-image="../assets/generic/assignment.PNG">
+						<table style='width:100%;border:1px solid black'>
+							<tr>
+								<th colspan=2 style='color:#ff7c66;text-align:center'> Assignment </th>
+							</tr>
+							<tr>
+								<th style=text-align:center colspan=2> Part 1- Data Analytics Life Cycle </th>
+							</tr>
+							<tr>
+								<td colspan=2> Use a work-related example to identify the stages of the Data Analytics Lifecycle. Describe what happened in each stage and highlight what was your role in the process. In the end, add a summary of the project/analysis including the main findings, what went well and what could have been improved. </td>
+							</tr>
+							<tr>
+								<td> Word Count </td>
+								<td> Max 1500 words </td>
+							</tr>
+							<tr>
+								<td> Deadline </td>
+								<td> 3 weeks </td>
+							</tr>
+							<tr>
+								<td> Deliverables </td>
+								<td> Word Document or PowerPoint presentation </td>
+							</tr>
+						</table>
+						<!-- Slide 42a Notes -->
+						<aside class='notes'>
+							Show where the assignment can be submitted on applied.
+						</aside>
+					</section>
+					<!-- Slide 42b -->
+					<section data-background-image="../assets/generic/assignment.PNG">
+						<table style='width:100%;border:1px solid black'>
+							<tr>
+								<th colspan=2 style='color:#ff7c66;text-align:center'> Assignment </th>
+							</tr>
+							<tr>
+								<th style=text-align:center colspan=2> Part 2- Project Brief </th>
+							</tr>
+							<tr>
+								<td colspan=2> Use a work-related example to create a project brief. This could be related to a project you are about to start or something new. Your brief should contain a business problem, the wider context of the analysis and a plan of action to solve the problem. </td>
+							</tr>
+							<tr>
+								<td> Word Count </td>
+								<td> Max 1500 words </td>
+							</tr>
+							<tr>
+								<td> Deadline </td>
+								<td> 4 weeks </td>
+							</tr>
+							<tr>
+								<td> Deliverables </td>
+								<td> Word Document </td>
+							</tr>
+						</table>
+						<!-- Slide 42b Notes -->
+						<aside class='notes'>
+							These assignments will form the basis for some of the portfolio pieces you will develop later in the course.
+						</aside>
+					</section>
+				</section>
+				<!-- Slide 43 -->	
+				<section data-background-image="../assets/generic/final.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Complete <a href='https://platform.whitehat.org.uk/apprentice/attendance-log/80' style='color:#64abff' target='_blank'>Session Attendance Log</a> and Update Your OTJ</span>          
+					</div>
+					<!-- Slide 43 Notes -->
+					<aside class='notes'>
+						Ask apprentices to update their OTJ tracker for the time today on applied. They can click on the link to the session attendance log.
+					</aside>
+				</section>
+      </div>
+		</div>
+ 
+    <!-- Scripts -->
+
+		<script src="../Dependencies/dist/reveal.js"></script>
+		<script src="../Dependencies/plugin/notes/notes.js"></script>
+		<script src="../Dependencies/plugin/markdown/markdown.js"></script>
+		<script src="../Dependencies/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({				
+				hash: true,
+				mouseWheel:true,
+				controls:true,
+				slideNumber:true,
+				loop:true,
+				
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+		<script src="../Dependencies/node_modules/socket.io/lib/socket.js"></script>
+		<script src="../Dependencies/node_modules/reveal-notes-server/client.js"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+					var codeElement = document.getElementById('python_code');
+					// Add code mirror class for coloring (default is the theme)
+					codeElement.classList.add( 'cm-s-default' );
+					var code = codeElement.innerText;
+
+					codeElement.innerHTML = "";
+
+					CodeMirror.runMode(
+						code,
+						'python',
+						codeElement
+					);
+			};
+			
+    </script>
+  </body>
+  
+</html>
