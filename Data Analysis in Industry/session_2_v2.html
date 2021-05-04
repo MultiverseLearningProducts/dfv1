@@ -1,0 +1,1867 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<!-- SEO -->
+    <title>Multiverse Data Analysis in Industry Session 2</title>
+    <meta name="description" content="In the first MultiVerse session we will be looking at how data analytics can be used to enhance your role">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/multiverse_brand/Logo/01_Deep Space/PNG/Multiverse_Symbol_RGB_Navy.png">
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+		<link rel="stylesheet" href="../Dependencies/dist/reveal.css">
+		<link rel="stylesheet" href="../Dependencies/dist/reset.css">
+    <link rel="stylesheet" href="../Dependencies/css/mv.css">
+		<link rel="stylesheet" href="//codemirror.net/lib/codemirror.css">
+    <script src="//codemirror.net/addon/runmode/runmode-standalone.js"></script>
+    <script src="//codemirror.net/mode/python/python.js"></script>
+
+
+		
+		<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="../Dependencies/static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../Dependencies/static/css/svg-icons.css">
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+		<!-- CSS for click to reveal section -->
+		<link href="../assets/datastyle.css" rel="stylesheet" type="text/css">
+		
+	</head>
+  <body class='reveal-viewport'>
+		<!-- Page Header -->
+		<header role="banner" style='background-image:url(../assets/generic/header.jpg);background-size: contain;'>
+      <nav role="navigation" style='align:left'>
+        <ul>
+					<li class="applied">
+            <a href="https://platform.multiverse.io" title="Applied" target='_blank'>
+							<p style='font-family:atlas;color:#f4f4f4'><strong>Applied</strong></p>
+            </a>
+          </li>
+          <li class="contents">
+            <a href='#/2' title="Contents">
+              <em style='color:#f4f4f4'>Contents</em>
+            </a>
+          </li> 
+        </ul>
+      </nav>
+    </header>
+    
+    <div class="reveal" style='font-family:atlas;font-size:25px;color:#242456'>
+			<div class="slides">
+				<!-- Slide 0 -->
+				<section data-background-image='../assets/generic/main_title.PNG'>
+				</section>
+				<!-- Slide 1 -->
+				<section data-background-image="../assets/generic/title_slide_alt.PNG">
+					<div class="wrap aligncenter">
+						<p class='title'> Data Analysis in Industry</p> 
+						<br>
+						<p style='color:#f4f4f4'> Session 2 </p>
+					</div>
+					<!-- Slide 1 Notes-->
+					<aside class='notes'>
+						Welcome apprentices to the session and select a warmup from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here</a>.
+					</aside>
+				</section>
+				<!-- Slide 2 -->
+				<section class='present' data-background-image="../assets/generic/info_yellow.PNG">
+					<div class="wrap size-60">           
+						<h1> Session Outline </h1>
+						<ul style='list-style-type:none;font-size:15px'>
+              <li><a href='#/4'> Principles of Data Classification </a></li>
+							<li><a href='#/4'>  Data Types </a></li>
+							<li><a href='#/11'> Data Structures </a> </li>
+							<li><a href='#/25'> Data Sources </a> </li>
+							<li><a href='#/31'> Data Storage </a> </li>
+							<li><a href='#/34'> Data Quality </a> </li>
+              <li><a href='#/34'> Data Usage </a> </li>
+              <li><a href='#/34'> Project Write Up </a> </li>
+							<li><a href='#/42'> Recap </a> </li>
+						</ul>
+					</div>
+					<!-- Slide 2 Notes -->
+					<aside class='notes'>
+						Run through the plan of the day, plan to have a break about half way through
+					</aside>
+				</section>
+				<!-- Slide 3 -->
+				<section data-background-image="../assets/generic/blank.PNG">
+					<div class="wrap size-60 " style='width:max-content'>
+						<div>
+							<span class='objective'> Learning Objectives </span>
+							<img src='../assets/multiverse_brand/Molten/Multiverse_Notations_RGB_Coral-01.png'>
+						</div>
+						<ul style='display:inline-block;text-align:left'>
+							<li> Identify <b class='objective'> business specific rules </b> related to datasets and data characteristics that will influence project design and analysis</li>
+							<li> Describe the key characteristics of the different <b class='objective'> Data Formats</b> and how to work with them </li>
+						</ul>          
+					</div>
+					<!-- Slide 3 Notes -->
+					<aside class='notes'>
+						Run through learning objectives, following on from the previous session we will be considering how to plan our projects by thinking about the types of data we are likely to work with and what we need to consider.
+					</aside>
+				</section>
+        <!-- Slide 4 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Principles of Data Classification</span>          
+					</div>
+					<!-- Slide 4 Notes -->
+					<aside class='notes'>
+            The focus on the previous session was identifying and managing stakeholders to ensure success in our projects. However, we alo need to consider the data we are going to use. The process of categorising our data so it can be efficiently and effectively protected is called data classification. It is an important and necessary step in the data analytics life cycle due to issues relating to compliance and regulation. You must demonstrate this process in your portfolio.
+					</aside>
+				</section>
+        <!-- Slide 5 -->
+				<section data-background-image="../assets/generic/pentagon_jr.PNG">
+					<div class="row">
+            <div class='col'>
+              <h1 style='color:#f4f4f4'> Things to consider </h1>
+            </div>
+            <div class='col'>
+              <p class='fragment'> What are the data types?</p>
+              <p class='fragment'> Where is the data stored?</p>
+              <p class='fragment'> Where did the data come from?</p>
+              <p class='fragment'> Is any data sensitive?</p>
+              <p class='fragment'> Who has access to the data?</p>
+              <p class='fragment'> How is the data protected?</p>
+              <p class='fragment'> How are you going to comply with GDPR?</p>
+            </div>
+          </div>
+					<!-- Slide 5 Notes -->
+					<aside class='notes'>
+						What should we consider as part of the data classification process? We should consider data types and storage as this will help us identify how the data can be used. We should think about its source as that will determine what we can do with it and how much we can trust it. We also need to consider if we are handling any sensitive data, how we are protecting it and controlling access. The rest of the session will help us answer these questions. Do you think there is anything else that should be included? In your portfolio you will need to demonstrate a reasoned application of data classification, including describing any flexibilities you have applied and its purpose (e.g. how your handling of PII complied with GDPR).
+					</aside>
+				</section>
+        <!-- Slide 6 -->
+        <section data-background-image='../assets/generic/table_back.PNG'>
+          <table style="table-layout: fixed; width: 100%;border-collapse: collapse;">
+            <tr>
+              <td style="width:25%;border: none"><img src='assets/session_2/content.PNG'></td>
+              <td style="width:25%;border: none"><img src='assets/session_2/context.PNG'></td>
+              <td style="width:25%;border: none"><img src='assets/session_2/user.PNG'></td>
+            </tr>
+            <tr>
+              <td style="width:25%;border: none"> <b>Content</b></td>
+              <td style="width:25%;border: none"> <b>Context</b></td>
+              <td style="width:25%;border: none"> <b>User</b></td>
+            </tr>
+          </table>
+          <!-- Slide 6 Notes -->
+          <aside class='notes'>
+            Anything to do with data classification can be summarised into these three areas:
+            <ul>
+              <li> Content- what is in our data? This includes checking for sensitive data such as PII, key performance indicators and other information that company would rather not be made publically available. </li>
+              <li> Context- Check the application, location and owners of the data. How is it being used? Who has access? When are the accessing it? </li>
+              <li> USer- What do you know about the data? Using your knowledge and discretion, go through and flag anything that could be sensitive.
+            </ul>
+          </aside>
+        </section>
+        <!-- Slide 7 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Data Types</span>          
+					</div>
+					<!-- Slide 7 Notes -->
+					<aside class='notes'>
+						The first part of data classification is looking at the data itself. Data can come in a variety of formats and could contain many different things. Let's look at the different types of data we can encounter. [Note, we are talking high level quantitative vs qualitative at this point, try to avoid specific programming data types like strings for now- we will cover them later].
+					</aside>
+				</section>
+				<!-- Slide 8 -->
+				<section data-background-image='../assets/generic/circle_remix.PNG'>
+					<div class='row r-hstack'>
+						<div class='col fragment'>
+							<h1 style='color:#ff7c66'> Quantitative </h1>
+							<br>
+							<p class='fragment'> Discrete </p>
+							<p class='fragment'> Continuous </p>
+							<p style='color:#f4f4f4'> Continuous </p>
+						</div>
+						<div class='col fragment'>
+							<h1 style='color:#59d8a1'> Qualitative </h1>
+							<br>
+							<p class='fragment'> Binomial</p>
+							<p class='fragment'> Nominal </p>
+							<p class='fragment'> Ordinal </p>
+						</div>
+					</div>
+					<!-- Slide 8 Notes -->
+					<aside class='notes'>
+						Data can described in one of two ways- quantitative or qualitative. Quantitative data is numerical (think quantities) and can be subdivided into discrete and continuous. Qualitative data is categorical (qualities) and is broken down into binomial, nominal and ordinal.
+					 </aside>
+				</section>
+				<section>
+					<!-- Slide 9a -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> Quantitative </h1>
+								<br>
+								<h2 style='color:#ff7c66'> Discrete </h2>
+								<h2 style='color:#f4f4f4'> Continuous </h2>
+							</div>
+							<div class='col'>
+								<img src='https://source.unsplash.com/1kZzV02D2hM/1600x800' width='500' height='500'>
+								<p> Numerical data that can be 'counted' </p>
+								<p> e.g. number of marbles, siblings, customers, etc </p>
+							</div>
+						</div>
+						<!-- Slide 9a Notes -->
+						<aside class='notes'>
+							Quantitative data is numerical from which we can calculate aggregates such as mean, median, range and standard deviation. Most visualisations require this type of data (bar charts, box plots, scatter graphs, etc) as we can visualise amounts. The first subset is discrete data, and this is numerical data you can count (or you can think of it as the count of qualitative data) for example, number of marbles in a bag, number of customers in an hour, etc.
+						 </aside>
+					</section>
+					<!-- Slide 9b -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> Quantitative </h1>
+								<h2 style='color:#f4f4f4'> Discrete </h2>
+								<h2 style='color:#ff7c66'> Continuous </h2>
+							</div>
+							<div class='col'>
+								<img src='https://source.unsplash.com/4zvnt60-pak' width='500' height='500'>
+								<p> Numerical data that can be 'measured' </p>
+								<p> e.g. temperature, weight, height </p>
+							</div>
+						</div>
+						<!-- Slide 9b Notes -->
+						<aside class='notes'>
+							Continuous data can be measured, like temperature, weight or heights. Often you can treat discrete data as continuous when there are too many 'options' (e.g. money). Ask the group if they think age is continuous or discrete.
+						 </aside>
+					</section>
+				</section>
+				<section>
+					<!-- Slide 10a -->
+					<section data-background-image='../assets/generic/strike.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<img src='https://source.unsplash.com/4Gd4JAtYAn4' width='500' height='500'>
+								<p> Categorical data that has two options </p>
+								<p> e.g. true or false, heads or tails, yes or no </p>
+							</div>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> Qualitative </h1>
+								<h2 style='color:#ff7c66'> Binomial </h2>
+								<h2 style='color:#f4f4f4'> Nominal </h2>
+								<h2 style='color:#f4f4f4'> Ordinal </h2>
+							</div>
+						</div>
+						<!-- Slide 10a Notes -->
+						<aside class='notes'>
+							With qualitative data we are looking at information that describes the quality of something. Some visualisations do exist for this data type (word clouds for example) but often the best way to visualise it is to take the discrete count of each possible category. Binomial data occurs when there are only two options.
+						 </aside>
+					</section>
+					<!-- Slide 10b -->
+					<section data-background-image='../assets/generic/strike.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<img src='https://source.unsplash.com/l3N9Q27zULw' style="width:500;height:500">
+								<p> Categorical data that has multiple options but no implied order </p>
+								<p> e.g. colour, job title, error type, etc  </p>
+							</div>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> Qualitative </h1>
+								<h2 style='color:#f4f4f4'> Binomial </h2>
+								<h2 style='color:#ff7c66'> Nominal </h2>
+								<h2 style='color:#f4f4f4'> Ordinal </h2>
+							</div>
+						</div>
+						<!-- Slide 10b Notes -->
+						<aside class='notes'>
+							Nominal data is categorical with no implied order. For example, car colour is categorical but red is not greater than blue. Most qualitative data will fall under this category. 
+						 </aside>
+					</section>
+					<!-- Slide 10c -->
+					<section data-background-image='../assets/generic/strike.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<img src='https://source.unsplash.com/QYa9pWGLajs' width="500" height="500">
+								<p> Categorical data that multiple options and an implied order </p>
+								<p> e.g. likert scale, coffee cup size, salary band, etc </p>
+							</div>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> Qualitative </h1>
+								<h2 style='color:#f4f4f4'> Binomial </h2>
+								<h2 style='color:#f4f4f4'> Nominal </h2>
+								<h2 style='color:#ff7c66'> Ordinal </h2>
+							</div>
+						</div>
+						<!-- Slide 10c Notes -->
+						<aside class='notes'>
+							When nominal data has order then it becomes ordinal. For example, when given a scale from extremely unhappy to extremely happy (likert scale) it becomes ordinal. Ordinal data may be numeric (on a scale from 1 to 5). In this case you have discrete labels (which can be analysed), but the scale itself is qualitative (for example, on a scale from 1 to 5, '3' is a label indicating 'average') 
+						 </aside>
+					</section>
+				</section>
+				<section>
+					<!-- Slide 11a -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<h1> Identify the Qualitative Data</h1>
+						<table style='width:100%;border:1px solid black'>
+							<tr>
+								<td style='width:33%'> Weight of a baby </td>
+								<td style='width:33%'> Emotional state </td>
+								<td style='width:33%'> Colour of a bottled drink</td>
+							</tr>
+							<tr>
+								<td> Political opinion </td>
+								<td> Your height </td>
+								<td> Number of shoes you own</td>
+							</tr>
+							<tr>
+								<td> Car type </td>
+								<td> Holiday destination </td>
+								<td> Distance to your nearest shop</td>
+							</tr>
+							<tr>
+								<td> Number of classes on a timetable </td>
+								<td> Movie rating </td>
+								<td> IQ score</td>
+							</tr>
+						</table>
+						<!-- Slide 11a Notes -->
+						<aside class='notes'>
+							Give 5 minutes for this task, apprentices can annotate the screen with what they think is qualitative data
+						 </aside>
+					</section>
+					<!-- Slide 11b -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<h1> Identify the Qualitative Data</h1>
+						<table style='width:100%;border:1px solid black'>
+							<tr>
+								<td style='width:33%'> Weight of a baby </td>
+								<td style='width:33%;background-color:#ffe352'> Emotional state </td>
+								<td style='width:33%;background-color:#ffe352'> Colour of a bottled drink</td>
+							</tr>
+							<tr>
+								<td style='background-color:#ffe352'> Political opinion </td>
+								<td> Your height </td>
+								<td> Number of shoes you own</td>
+							</tr>
+							<tr>
+								<td style='background-color:#ffe352'> Car type </td>
+								<td style='background-color:#ffe352'> Holiday destination </td>
+								<td> Distance to your nearest shop</td>
+							</tr>
+							<tr>
+								<td> Number of classes on a timetable </td>
+								<td style='background-color:#59d8a1'> Movie rating </td>
+								<td> IQ score</td>
+							</tr>
+						</table>
+						<!-- Slide 11b Notes -->
+						<aside class='notes'>
+							Yellow is qualitative. Movie rating could be either depending on the scale you use (excellent= qualitative, 5/5 would be quantitative)
+						 </aside>
+					</section>
+				</section>
+				<!-- Slide 12 -->
+				<section data-background-image='../assets/generic/tweenies.PNG'>
+					<div class='row'>
+						<div class='col'></div>
+						<div class='col'>
+							<h2 style = color:#1d98ff><b> Activity </b></h2>
+							<br>
+							<p> In groups discuss data you use regularly and whether it is quantitative or qualitative</p>
+							<ul style='display:inline-block;text-align:left'>
+								<li> What subdivision does it fall under?</li>
+								<li> How do you visualise it?</li>
+								<li> How do you use it? </li>
+							</ul>
+						</div>
+					</div>
+					<!-- Slide 12 Notes -->
+					<aside class='notes'>
+						Give 5-7 minutes for this activity, ask one apprentices from each group to feedback to the class on their discussion.
+					 </aside>
+				</section>
+        <!-- Slide 13 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Data Structures</span>          
+					</div>
+					<!-- Slide 13 Notes -->
+					<aside class='notes'>
+						Now we know our data types, we should also think about how it is structured. Knowing the structure of our data will tell us how it can be stored and what sort of tools can be used to analyse it. 
+					</aside>
+				</section>
+				<section>
+					<!-- Slide 14a -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table>
+							<tr>
+								<th> &nbsp;</th>
+								<th> Structured Data </th>
+								<th> Unstructured Data </th>
+							</tr>
+							<tr>    
+								<th> Characteristics: </th>
+								<td> 
+									<ul>
+										<li> Pre-defined data models </li>
+										<li> Usually text only </li>
+										<li> Easy to search </li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li> No pred-defined data model </li>
+										<li> May be text, images, audio, video or other formats </li>
+										<li> Difficult to search </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>    
+								<th> Stored in: </th>
+								<td> 
+									<ul>
+										<li> Relational databases </li>
+										<li> Data warehouses </li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li> Applications </li>
+										<li> NoSQL databases </li>
+										<li> Data lakes </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>    
+								<th> Generated by: </th>
+								<td> 
+									<ul>
+										<li> Humans or machines</li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li> Humans or machines </li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+						<!-- Slide 14a Notes -->
+						<aside class='notes'>
+							Data can either be structured or unstructured. Structured data is your typical rows and columns and is usually stored in databases or data warehouses. They are easy to query and build models out of. Unstructured data is anything else, for example pictures, audio or video files and word documents. These types of data are typically stoed in data lakes or NoSQL databases and are difficult to analyse and extract information from using a machine. 
+						 </aside>
+					</section>
+					<!-- Slide 14b -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table>
+							<tr>
+								<th> &nbsp;</th>
+								<th> Structured Data </th>
+								<th> Unstructured Data </th>
+							</tr>
+							<tr>    
+								<th> Application examples: </th>
+								<td> 
+									<ul>
+										<li> Online reservation system </li>
+										<li> Inventory control </li>
+										<li> CRM systems </li>
+										<li> ERP systems </li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li> Word processing </li>
+										<li> Presentation software </li>
+										<li> Email clients </li>
+										<li> Media editing tools </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>    
+								<th> Data examples: </th>
+								<td> 
+									<ul>
+										<li> Dates </li>
+										<li> Product names and numbers </li>
+										<li> Customer name </li>
+										<li> Error code </li>
+										<li> Transaction information </li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li> Text files</li>
+										<li> Audio files </li>
+										<li> Video files </li>
+										<li> Images </li>
+										<li> Emails and reports </li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+						<!-- Slide 14b Notes -->
+						<aside class='notes'>
+							You will use structured and unstructured data regularly throughout your role and life. For example, structured data is used in reservation systems, inventory or client control and other systems where the data is in a simple row and column structure. Every day processes like emails, word processing, presentations and more are examples of unstructured data. Most of the data you receive in life is unstructured, yet you are able to process it (think about all the sensory information your brain processes every minute- you integrate audio, video, oratory and physical information without even realising!). The challenge then is building machine processes to analyse this data as well, which is a major area of research within data science. What sort of things do you do to analyse unstructured data in your role? 
+						 </aside>
+					</section>
+				</section>
+				<section>
+					<!-- Slide 15a -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 class='current'> Structured </h1>
+								<h1 class='def'> Unstructured </h1>
+							</div>
+							<div class='col'>
+								<h2> Highly organised </h2>
+								<h2> Easily read by machines </h2>
+							</div>
+						</div>
+						<!-- Slide 15a Notes -->
+						<aside class='notes'>
+							To summarise then, unstructured data is your typical row and column data which is highly organised and easy for machines to read and analyse. I would anticipate most of your portfolio data will be structured.
+						 </aside>
+					</section>
+					<!-- Slide 15b -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table style="table-layout: fixed; width: 100%;">
+							<tr>
+								<th style='text-align:center'> Year </th>
+								<th style='text-align:center'> Sites </th>
+								<th style='text-align:center'> Participation </th>
+								<th style='text-align:center'> Meals served </th>
+							</tr>
+							<tr>
+								<td> 1968 </td>
+								<td> 0.9 </td>
+								<td> 56  </td>
+								<td> 0.2 </td>
+							</tr>
+							<tr>
+								<td> 1969 </td>
+								<td> 1.2 </td>
+								<td> 99 </td>
+								<td> 0.3 </td>
+							</tr>
+							<tr>
+								<td> 1970 </td>
+								<td> 1.9 </td>
+								<td> 227  </td>
+								<td> 1.8 </td>
+							</tr>
+							<tr>
+								<td> 1971 </td>
+								<td> 3.2 </td>
+								<td> 569  </td>
+								<td> 8.2 </td>
+							</tr>
+							<tr>
+								<td> 1972 </td>
+								<td> 6.5 </td>
+								<td> 1080  </td>
+								<td> 21.9 </td>
+							</tr>
+							<tr>
+								<td> 1973 </td>
+								<td> 11.2 </td>
+								<td> 1437  </td>
+								<td> 26.6 </td>
+							</tr>
+							<tr>
+								<td> 1974 </td>
+								<td> 10.6 </td>
+								<td> 1403  </td>
+								<td> 33.6 </td>
+							</tr>
+							<tr>
+								<td> 1975 </td>
+								<td> 12.0 </td>
+								<td> 1785  </td>
+								<td> 50.3 </td>
+							</tr>
+							<tr>
+								<td> 1976 </td>
+								<td> 16.0 </td>
+								<td> 2453  </td>
+								<td> 73.4 </td>
+							</tr>
+						</table>
+						<!-- Slide 15b Notes -->
+						<aside class='notes'>
+							An example of a structured data set
+						 </aside>
+					</section>
+					<!-- Slide 15c -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table style="table-layout: fixed; width: 100%;">
+							<tr>
+								<th style='text-align:center'> Year </th>
+								<th style='text-align:center;background-color:#ffe352'> Sites </th>
+								<th style='text-align:center'> Participation </th>
+								<th style='text-align:center'> Meals served </th>
+							</tr>
+							<tr>
+								<td> 1968 </td>
+								<td style='background-color:#ffe352'> 0.9 </td>
+								<td> 56  </td>
+								<td> 0.2 </td>
+							</tr>
+							<tr>
+								<td> 1969 </td>
+								<td style='background-color:#ffe352'> 1.2 </td>
+								<td> 99 </td>
+								<td> 0.3 </td>
+							</tr>
+							<tr>
+								<td> 1970 </td>
+								<td style='background-color:#ffe352'> 1.9 </td>
+								<td> 227  </td>
+								<td> 1.8 </td>
+							</tr>
+							<tr>
+								<td> 1971 </td>
+								<td style='background-color:#ffe352'> 3.2 </td>
+								<td> 569  </td>
+								<td> 8.2 </td>
+							</tr>
+							<tr>
+								<td> 1972 </td>
+								<td style='background-color:#ffe352'> 6.5 </td>
+								<td> 1080  </td>
+								<td> 21.9 </td>
+							</tr>
+							<tr>
+								<td> 1973 </td>
+								<td style='background-color:#ffe352'> 11.2 </td>
+								<td> 1437  </td>
+								<td> 26.6 </td>
+							</tr>
+							<tr>
+								<td> 1974 </td>
+								<td style='background-color:#ffe352'> 10.6 </td>
+								<td> 1403  </td>
+								<td> 33.6 </td>
+							</tr>
+							<tr>
+								<td> 1975 </td>
+								<td style='background-color:#ffe352'> 12.0 </td>
+								<td> 1785  </td>
+								<td> 50.3 </td>
+							</tr>
+							<tr>
+								<td> 1976 </td>
+								<td style='background-color:#ffe352'> 16.0 </td>
+								<td> 2453  </td>
+								<td> 73.4 </td>
+							</tr>
+						</table>
+						<!-- Slide 15c Notes -->
+						<aside class='notes'>
+							To be clear on some definitions, when talking about structured data we refer to columns as 'fields.' A field is a piece of information we have on a some data. 
+						 </aside>
+					</section>
+					<!-- Slide 15d -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table style="table-layout: fixed; width: 100%;">
+							<tr>
+								<th style='text-align:center'> Year </th>
+								<th style='text-align:center'> Sites </th>
+								<th style='text-align:center'> Participation </th>
+								<th style='text-align:center'> Meals served </th>
+							</tr>
+							<tr>
+								<td style='background-color:#ffe352'> 1968 </td>
+								<td style='background-color:#ffe352'> 0.9 </td>
+								<td style='background-color:#ffe352'> 56  </td>
+								<td style='background-color:#ffe352'> 0.2 </td>
+							</tr>
+							<tr>
+								<td> 1969 </td>
+								<td> 1.2 </td>
+								<td> 99 </td>
+								<td> 0.3 </td>
+							</tr>
+							<tr>
+								<td> 1970 </td>
+								<td> 1.9 </td>
+								<td> 227  </td>
+								<td> 1.8 </td>
+							</tr>
+							<tr>
+								<td> 1971 </td>
+								<td> 3.2 </td>
+								<td> 569  </td>
+								<td> 8.2 </td>
+							</tr>
+							<tr>
+								<td> 1972 </td>
+								<td> 6.5 </td>
+								<td> 1080  </td>
+								<td> 21.9 </td>
+							</tr>
+							<tr>
+								<td> 1973 </td>
+								<td> 11.2 </td>
+								<td> 1437  </td>
+								<td> 26.6 </td>
+							</tr>
+							<tr>
+								<td> 1974 </td>
+								<td> 10.6 </td>
+								<td> 1403  </td>
+								<td> 33.6 </td>
+							</tr>
+							<tr>
+								<td> 1975 </td>
+								<td> 12.0 </td>
+								<td> 1785  </td>
+								<td> 50.3 </td>
+							</tr>
+							<tr>
+								<td> 1976 </td>
+								<td> 16.0 </td>
+								<td> 2453  </td>
+								<td> 73.4 </td>
+							</tr>
+						</table>
+						<!-- Slide 15d Notes -->
+						<aside class='notes'>
+							A row is called a record, which is composed of several fields and contains all the information from one piece of data.
+						 </aside>
+					</section>
+				</section>
+				<section>
+					<!-- Slide 16a -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 class='def'> Structured </h1>
+								<h1 class='current'> Unstructured </h1>
+							</div>
+							<div class='col'>
+								<h2> Cannot be processed using conventional tools</h2>
+							</div>
+						</div>
+						<!-- Slide 16a Notes -->
+						<aside class='notes'>
+							Unstructured data is anything that isn't in a structured format like audio files, emails and reports. Most of the data you use will be unstructured in your role, but the data you analyse will likely be structured. This sort of data is difficult to analyse and therefore you need to be aware of this when starting your project- if you know it is going to be unstructured you need to plan for how you will deal with it (where is it coming from? How will you store and process it?). This should be stated in your project brief and in your portfolio when describing how you planned out your project.
+						 </aside>
+					</section>
+					<!-- Slide 16b -->
+					<section data-background-image='../assets/generic/box_serious.PNG'>
+						<div class="aligncenter">
+							<span style ='color:#242456;font-size:50px;font-weight:bold;text-align:center'> <span style='color:#4f61f4'> Be careful! </span><br> Sometimes data looks structured but isn't. For example, Excel spreadsheets have no rules around usage, so you can have multiple tables or different data types in one column. </span>
+						</div>
+						<!-- Slide 16b Notes -->
+						<aside class='notes'>
+							A quick note, data may look structured but isn't. For example, an Excel spreadsheet is <b> unstructured </b>. The data within may be in a structured format which you can analyse, but the sheet itself isn't. This is because Excel doesn't have to conform to structured rules- you don't need column names, columns don't need to have the same amount of information, you can have multiple tables in a single sheet. So while the data within the spreadsheet can be structured, the sheet itself isn't.
+						 </aside>
+					</section>
+				</section>
+				<!-- Slide 17 -->
+				<section data-background-image='../assets/generic/table_back.PNG'>
+					<table style="table-layout: fixed; width: 100%;">
+						<tr>
+							<th style='width:20%;text-align:center'> Structure </th>
+							<th style='width:80%;text-align:center'> Features </th>
+						</tr>
+						<tr>
+							<td> File </td>
+							<td> 
+								<ul>
+									<li> Used to store information </li>
+									<li> Used by computers to read and write information that needs to be processed </li>
+									<li> Organised into record </li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> List </td>
+							<td>
+								<ul>
+									<li> Contains elements of different data types </li>
+									<li> E.g. ('John', 10, 7.2, True) </li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> Array </td>
+							<td>
+								<ul>
+									<li> Data can be identified by their index position </li>
+									<li> Similar to a list but can have multiple dimensions </li>
+									<li> A 2 dimensional array is a matrix </li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> Table </td>
+							<td> <ul><li> Typical data files with labelled columns (fields) and rows (records) </li></ul></td>
+						</tr>
+						<tr>
+							<td> Tree </td>
+							<td><ul><li> Hierarchical collection of data with parent and child nodes </li></ul></td>
+						</tr>
+					</table>
+					<!-- Slide 17 Notes -->
+					<aside class='notes'>
+						We tend to think of data as being in a row and column format, but that is not the only way it can be given to us. For example, data often comes in files (can anyone think of an example? CSV, XLSX, JSON, etc). The data contained within the file itself can be structured or unstructured depending on what type it is, in a few minutes we will look into file types in more detail. A list is a a 1-dimensional (think a single row) object where all the data is stored and is the basic building block of structured data. When we start to add more dimensions (rows and columns for example) the data becomes an array where we locate the data using indices (think coordinates). Most of the data we use is 2-dimensional (row and column) but it is possible to have more dimensions. A 2-dimensional array becomes a table (the one you will be most familiar with) when the rows and columns are labelled (records and fields), this is your typical structured data. Finally a tree, where data is defined by its relationship to each other. An exmaple of this is folders on your computer.
+					</aside>
+				</section>
+				<!-- Slide 18 -->
+				<section data-background-image='../assets/generic/tweenies.PNG'>
+					<div class='row'>
+						<div class='col'></div>
+						<div class='col'>
+							<h2 style = color:#1d98ff><b> Activity </b></h2>
+							<br>
+							<p> Discuss whether the data you use regularly is structured on unstructured</p>
+							<p> Further reading:</p>
+							<a href='https://www.guru99.com/data-lake-vs-data-warehouse.html'>Data Lake vs Data Warehouse</a>
+							<br>
+							<a href='https://www.freecodecamp.org/news/nosql-databases-5f6639ed9574/'>SQL vs NoSQL</a>
+							<br>
+							<a href='https://learn.g2.com/structured-vs-unstructured-data'>Structured vs Unstructured Data</a>
+						</div>
+					</div>
+					<!-- Slide 18 Notes -->
+					<aside class='notes'>
+						Give 5-7 minutes for this activity.
+					 </aside>
+				</section>
+        <!-- Slide 19 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Data Sources</span>          
+					</div>
+					<!-- Slide 19 Notes -->
+					<aside class='notes'>
+						With our data it is important to know where it comes from and how it is given to us. When classifying data you will need to be able to describe how you obtained it, what you can do with it and discuss any issues you came across. 
+					</aside>
+				</section>
+				<!-- Slide 20 -->
+				<section data-background-image='../assets/generic/main.PNG'>
+					<div class='row'>
+						<div class='col'>
+							<figure>
+								<img src='assets/session_2/public.PNG'>
+								<figcaption> Public Data </figcaption>
+							</figure>
+							<br>
+							<br>
+							<figure>
+								<img src='assets/session_2/internal.PNG'>
+								<figcaption> Proprietary Data </figcaption>
+							</figure>
+						</div>
+						<div class='col'>
+							<figure>
+								<img src='assets/session_2/client.PNG'>
+								<figcaption> Client Data </figcaption>
+							</figure>
+							<br>
+							<br>
+							<figure>
+								<img src='assets/session_2/third.PNG'>
+								<figcaption> Research Data </figcaption>
+							</figure>
+						</div>
+					</div>
+					<!-- Slide 20 Notes -->
+					<aside class='notes'>
+						A data source is the location from where we collect it from. Sources can typically be broken down into one of four categories- public, proprietary, client and research. Can anyone think of an example of a data source for any of them? We will go through each in more detail.
+					 </aside>
+				</section>
+				<section>
+				<!-- Slide 21a -->
+					<section data-background-image='../assets/generic/pentagon_jr.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#ff7c66'> Public Data </h1>
+								<h2 style='color:#f4f4f4'> Open Data </h2>
+							</div>
+							<div class='col'>
+								<p> Data that can be moved freely, reused and redistributed, although hard to change or modify </p>
+							</div>
+						</div>
+						<!-- Slide 21a Notes -->
+						<aside class='notes'>
+							Public data is any data that is available to the general public and can be freely used. Typically it will be found on the internet and you can use it in any way you want. Naturally, there are risks with public data, for example security and data cleanliness. 
+						 </aside>
+					</section>
+					<!-- Slide 21b -->
+					<section data-background-image='../assets/generic/pentagon_jr.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> Public Data </h1>
+								<h2 style='color:#ff7c66'> Open Data </h2>
+							</div>
+							<div class='col'>
+								<p> A subset of public data but: </p>
+								<ul style='display:inline-block;text-align:left'>
+									<li> Smaller in volume </li>
+									<li> More likely to be structured </li>
+									<li> More likely to be open licensed </li>
+									<li> Better maintained and more reliable through sanctioned portals </li>
+									<li> May require a nominal fee to be used </li>
+								</ul>
+							</div>
+						</div>
+						<!-- Slide 21b Notes -->
+						<aside class='notes'>
+							A subset of public data is open data. Open data is far more reliable as it will typically be found on approved and regulated repositories (e.g.Kaggle, UK Government, etc). This type of data will be smaller in volume but will be maintained properly and therefore more reliable and safe. Sometimes you may need to pay a fee to the repository to access their data (monthly subscriptions, etc) but the data itself can still be used as you would like.
+						 </aside>
+					</section>
+					<!-- Slide 21c -->
+					<section data-background-image='../assets/generic/box_serious.PNG'>
+						<div class="wrap size-50 aligncenter">
+							<span style ='font-size:50px;font-weight:bold;text-align:center'> According to the Open Knowledge Foundation:<br> <b><i>“Open data and content can be freely used, modified, and shared by anyone and for any purpose.”</i></b> </span>
+						</div>
+						<!-- Slide 21c Notes -->
+						<aside class='notes'>
+							Even though open data is more reliable than public data, it can still be used by you for whatever purpose you would like.
+						 </aside>
+					</section>
+					<!-- Slide 21d -->
+					<section data-background-image='../assets/generic/main.PNG'>
+						<div class="wrap size-50 aligncenter">
+							<img src='assets/session_2/openvpublic.PNG'>
+						</div>
+						<!-- Slide 21d Notes -->
+						<aside class='notes'>
+							Public data can be defined as all information in the public domain, encompassing anything from a monthly updating dataset on a government data portal to PDF files that are only accessible via Freedom of Information requests (and everything in between).
+						 </aside>
+					</section>
+				</section>
+				<section>
+					<!-- Slide 22a -->
+					<section data-background-image='../assets/generic/pentagon_jr.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#ff7c66'> Proprietary </h1>
+								<h2 style='color:#f4f4f4'> Operational </h2>
+								<h2 style='color:#f4f4f4'> Administrative </h2>
+							</div>
+							<div class='col'>
+								<p> Data that is owned and stored within an organisation. Proprietary data may be protected by patents, copyrights/trademarks or trade laws. </p>
+							</div>
+						</div>
+						<!-- Slide 22a Notes -->
+						<aside class='notes'>
+							Proprietary data is data owned by an organisation, so much of the data you will use in your role. There are much stricter rules around proprietary data as often it will contain sensitive information about the organisation and/or its customers/clients. When using this sort of data you need to adhere to the rules set and only use it for the reason you said you would.
+						 </aside>
+					</section>
+					<!-- Slide 22b -->
+					<section data-background-image='../assets/generic/pentagon_jr.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> Proprietary </h1>
+								<h2 style='color:#ff7c66'> Operational </h2>
+								<h2 style='color:#f4f4f4'> Administrative </h2>
+							</div>
+							<div class='col'>
+								<p> Proprietary data that is produced by your organisations day to day operations. </p>
+								<p> E.g. customer, inventory or purchase data </p>
+							</div>
+						</div>
+						<!-- Slide 22b Notes -->
+						<aside class='notes'>
+							Proprietary data can be subset into either operational or administrative data. Operational data is anything the organisation needs to run its day to day business operations (customer info, transactions, inventory, etc)
+						 </aside>
+					</section>
+					<!-- Slide 22c -->
+					<section data-background-image='../assets/generic/pentagon_jr.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> Proprietary </h1>
+								<h2 style='color:#f4f4f4'> Operational </h2>
+								<h2 style='color:#ff7c66'> Administrative </h2>
+							</div>
+							<div class='col'>
+								<p> Required to run an organisations day to day operations </p>
+								<p> E.g. HR, payroll, admin </p>
+							</div>
+						</div>
+						<!-- Slide 22c Notes -->
+						<aside class='notes'>
+							Administrative data is anything an organisation needs to run itself, for example payroll, utilisation and employee capacity.
+						 </aside>
+					</section>
+				</section>
+				<!-- Slide 23 -->
+				<section data-background-image='../assets/generic/pentagon_jr.PNG'>
+					<div class='row'>
+						<div class='col'>
+							<h1 style='color:#ff7c66'> Client </h1>
+						</div>
+						<div class='col'>
+							<p> Proprietary data provided by a client</p>
+							<p> E.g. data provided by a consultancy firm </p>
+						</div>
+					</div>
+					<!-- Slide 23 Notes -->
+					<aside class='notes'>
+						Client data is proprietary data not owned by your organisation, but given to you by a client. This will be more common among consultancy firms or accountants where they work with other organisation's data to provide insights (or check compliance). Again, this data will be sensitive so must be kept secure and used only for its intended purpose. A breach of this will lead to a loss in confidence from the client which could result in the severing of the business relationship.
+					 </aside>
+				</section>
+				<section>
+					<!-- Slide 24a -->
+					<section data-background-image='../assets/generic/pentagon_jr.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#ff7c66'> Research </h1>
+								<h2 style='color:#f4f4f4'> Observational </h2>
+								<h2 style='color:#f4f4f4'> Simulation </h2>
+								<h2 style='color:#f4f4f4'> Derived </h2>
+							</div>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> blank </h1>
+								<p> Data from a third party that is made available to you under a licence agreement or  has been collected, generated or created to validate original research findings.</p>
+							</div>
+						</div>
+						<!-- Slide 24a Notes -->
+						<aside class='notes'>
+							Research data is also proprietary, but owned by an organisation you are purchasing it from. This data could be sensitive (although companies should not be selling PII...) but you cannot use it as freely as open/public data. You can use it how you want, but cannot redistribute it. 
+						 </aside>
+					</section>
+					<!-- Slide 24b -->
+					<section data-background-image='../assets/generic/pentagon_jr.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> Research </h1>
+								<h2 style='color:#ff7c66'> Observational </h2>
+								<h2 style='color:#f4f4f4'> Simulation </h2>
+								<h2 style='color:#f4f4f4'> Derived </h2>
+							</div>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> blank </h1>
+								<p> Data gathered from observing trends in the population or from experiments</p>
+								<p> For example, are shoppers more likely to buy items at eye level? </p>
+							</div>
+						</div>
+						<!-- Slide 24b Notes -->
+						<aside class='notes'>
+							Researched data can come from an experiment or invesitgation, for example watching customer behaviour or seeing how something reacts to a change in environment (how has changing the ticket price affected the number of customers?). Organisations can use this data to inform policy changes or create new products based on what the market is doing.
+						 </aside>
+					</section>
+					<!-- Slide 24c -->
+					<section data-background-image='../assets/generic/pentagon_jr.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> Research </h1>
+								<h2 style='color:#f4f4f4'> Observational </h2>
+								<h2 style='color:#ff7c66'> Simulation </h2>
+								<h2 style='color:#f4f4f4'> Derived </h2>
+							</div>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> blank </h1>
+								<p> Data gathered from a theoretical experiment based on past information</p>
+								<p> For example, simulating what will happen to the housing market if interest rates rise.</p>
+							</div>
+						</div>
+						<!-- Slide 24c Notes -->
+						<aside class='notes'>
+							Simulated data comes from predictions, for example, if I change interest rates how will the market likely change? Organisations can use this data to prepare for potential market changes and have procedures in place if they do arise.
+						 </aside>
+					</section>
+					<!-- Slide 24d -->
+					<section data-background-image='../assets/generic/pentagon_jr.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> Research </h1>
+								<h2 style='color:#f4f4f4'> Observational </h2>
+								<h2 style='color:#f4f4f4'> Simulation </h2>
+								<h2 style='color:#ff7c66'> Derived </h2>
+							</div>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> blank </h1>
+								<p> Data that has been created from other sources</p>
+								<p> For example, a data warehouse created with ETL </p>
+							</div>
+						</div>
+						<!-- Slide 24d Notes -->
+						<aside class='notes'>
+							Finally, researched data could come from an integration. Often data is sourced from a wide variety of disparate places and will find the most value when integrated together in one central location such as a data warehouse. An organisation may want to make use of this data repository to help them make data driven decisions. Often accessed using an API.
+						 </aside>
+					</section>
+				</section>
+        <!-- Slide 25 -->
+        <section data-background-image='../assets/generic/table_back.PNG'>
+          <table style="table-layout: fixed; width: 100%;border-collapse: collapse;">
+            <tr>
+              <td style="width:25%;border: none"><img src='assets/session_2/identify.PNG'></td>
+              <td style="width:25%;border: none"><img src='assets/session_2/sense.PNG'></td>
+              <td style="width:25%;border: none"><img src='assets/session_2/access.PNG'></td>
+            </tr>
+            <tr>
+              <td style="width:25%;border: none"> <b>Identifiability</b></td>
+              <td style="width:25%;border: none"> <b>Sensitivity</b></td>
+              <td style="width:25%;border: none"> <b>Availability</b></td>
+            </tr>
+            <tr>
+              <td style="width:25%;border: none"> <b>Can someone be identified?</b></td>
+              <td style="width:25%;border: none"> <b>What damage can be done?</b></td>
+              <td style="width:25%;border: none"> <b>How readily available is the data?</b></td>
+            </tr>
+          </table>
+          <!-- Slide 25 Notes -->
+          <aside class='notes'>
+            When considering data from your own organisation you will need to consider how it is classified so you do not run the risk of breaching company data policies or GDPR. The three questions you should ask yourself are, how easily can this data be used to identify an individual? How much damage could be done if it is leaked (both financially and to reputation)? How readily available is the data? If your answers to these three questions do not give you cause to panic, then you can treat the data as open source. If however, any do create a cause for concern then you should consider the data restricted to everyone but those who have been given access.
+          </aside>
+        </section>
+				<!-- Slide 26 -->
+				<section data-background-image='../assets/generic/main.PNG'>
+					<h1> Things to consider:</h1>
+					<br>
+					<p class='fragment'> <b class='objective'>Data Accuracy</b> - Can we trust this data? Is it up to date? Is it relevant?</p>
+					<p class='fragment'> <b class='objective'>Limitations of Data</b> - Are things excluded? </p>
+					<p class='fragment'> <b class='objective'>Compatibility with other data sources</b> - Can we join this to our data?</p>
+					<p class='fragment'> <b class='objective'>Legal & regulatory rights to data</b> - Are we allowed to use this data? </p>
+					<p class='fragment'> <b class='objective'>Business Context</b> - Do we understand the quirks of this data?</p>
+					<!-- Slide 26 Notes -->
+					<aside class='notes'>
+						When extracting data from sources (particularly public) we should also consider some of these issues- is the data accurate or reliable? With public data we should also ask if it safe. What are the limitations of the data? Is it able to help us solve our business problems? Will we be able to connect it to our current infrastructure? Do we understand everything we need to about the data? Are we even allowed to use it? If the data is proprietary to someone else and you don't have their permission, you cannot use it.
+					 </aside>
+				</section>
+				<section>
+					<!-- Slide 27a -->
+					<section data-background-image='../assets/generic/tweenies.PNG'>
+						<div class='row'>
+							<div class='col'></div>
+							<div class='col'>
+								<h2 style = color:#1d98ff><b> Activity </b></h2>
+								<br>
+								<p> Open each of the files and discuss what the defining features are of each</p>
+								<ul style='display:inline-block;text-align:left'>
+									<li> What do you think the benefits are?</li>
+									<li> What about limitations?</li>
+									<li> Do you think they are easier for a human or computer to read? </li>
+									<li> Which tools/software can you use with each? </li>
+								</ul>
+							</div>
+						</div>
+						<!-- Slide 27a Notes -->
+						<aside class='notes'>
+							When considering our data sources we should also consider how it is given to us. In this exercise you will explore 6 different file types, in groups, examine each and discuss defining features, benefits, limitations, how easily read they are and what software could be used with them. Scroll down to access the files.
+						</aside>
+					</section>
+					<!-- Slide 27b -->
+					<section data-background-image='../assets/generic/tweenies.PNG'>
+						<div class='row'>
+							<div class='col'></div>
+							<div class='col'>
+								<table style='table-layout: fixed;width:100%'>
+									<tr>
+										<td><a href='https://multiverselearningproducts.github.io/dfv1/Data%20Analysis%20in%20Industry/exercise/Exercise-%20File%20Formats/YummyFood_xml.txt' target='_blank'>Extensible Markup Language</a></td>
+									</tr>
+									<tr>
+										<td><a href='https://multiverselearningproducts.github.io/dfv1/Data%20Analysis%20in%20Industry/exercise/Exercise-%20File%20Formats/YummyFood_csv.txt' target='_blank'>Comma Separated Values</a></td>
+									</tr>
+									<tr>
+										<td><a href='https://multiverselearningproducts.github.io/dfv1/Data%20Analysis%20in%20Industry/exercise/Exercise-%20File%20Formats/YummyFood.txt' target='_blank'>Text File</a></td>
+									</tr>
+									<tr>
+										<td><a href='https://multiverselearningproducts.github.io/dfv1/Data%20Analysis%20in%20Industry/exercise/Exercise-%20File%20Formats/YummyFood_rtf.txt' target='_blank'>Rich Text Format</a></td>
+									</tr>
+									<tr>
+										<td><a href='https://multiverselearningproducts.github.io/dfv1/Data%20Analysis%20in%20Industry/exercise/Exercise-%20File%20Formats/YummyFood.xlsx'>Excel</a></td>
+									</tr>
+									<tr>
+										<td><a href='https://multiverselearningproducts.github.io/dfv1/Data%20Analysis%20in%20Industry/exercise/Exercise-%20File%20Formats/YummyFood_json.txt' target='_blank'>JavaScript Object Notation</a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<!-- Slide 27b Notes -->
+						<aside class='notes'>
+							The excel file should download automatically. You can download the rtf file and open it in Microsoft Word to show how the processor makes it human readable.
+						</aside>
+					</section>
+				</section>
+				<section>
+					<!-- Slide 28a -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table style='table-layout: fixed;width:100%;font-size:14px'>
+							<tr>
+								<th> File Format </th>
+								<th> Properties </th>
+								<th> Benefits </th>
+								<th> Limitations </th>
+							</tr>
+							<tr>
+								<td> .xml (e<b>X</b>tensible <b>M</b>arkup <b>L</b>anguage) </td>
+								<td> A hierarchy based markup language that uses user defined keywords to tag data </td>
+								<td> 
+									<ul>
+										<li> Easily read by machines </li>
+										<li> Portable to many different systems </li>
+									</ul>
+								</td>
+								<td> 
+									<ul>
+										<li> Hard for humans to read </li>
+										<li> Large size due to repeated markups </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td> <a href='https://multiverselearningproducts.github.io/dfv1/Data%20Analysis%20in%20Industry/exercise/Exercise-%20File%20Formats/YummyFood_csv.csv' target='_blank'>.csv</a> (<b>C</b>omma <b>S</b>eparated <b>V</b>alues) </td>
+								<td> Tabular data separated by commas. Is a raw text value </td>
+								<td> 
+									<ul>
+										<li> Lightweight </li>
+										<li> Easily read by many applications </li>
+									</ul>
+								</td>
+								<td> 
+									<ul>
+										<li> If there are commas within the data they need to be ‘text qualified’ so interpreter knows they are not delimiters </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td> <a href='https://multiverselearningproducts.github.io/dfv1/Data%20Analysis%20in%20Industry/exercise/Exercise-%20File%20Formats/YummyFood_rtf.rtf' target='_blank'>.rtf</a> (<b>R</b>ich <b>T</b>ext <b>F</b>ormat) </td>
+								<td> A file that is stored as Raw text but has a markup language to denote basic formatting such as bold, underline etc. </td>
+								<td> 
+									<ul>
+										<li> Fairly lightweight</li>
+										<li> Suitable for holding documents, not actual data </li>
+									</ul>
+								</td>
+								<td> 
+									<ul>
+										<li> Rarely used </li>
+										<li> Hard to read due to markups </li>
+										<li> Used only for wordpad </li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+						<!-- Slide 28a Notes -->
+						<aside class='notes'>
+							XML is a markup language, ask if anyone knows about any other markup languages (HTML). If you right click on the page and select inspect you will be able to see the HTML for this presentation. Webscraping tools exist to extract data from this format and can move it into a more structured format. CSV files are very common and when we get to the data science portion of the course we will be importing mostly CSV files as they are easy for python to process (CSV files are structured). RTF is also a markup language and is the basis for Microsoft Word files. Microsoft Office is able to open both CSV and RTF in a human readable format. Click on the hyperlinks to show the CSV is opened as an excel file and RTF is opened as a Word File.
+						 </aside>
+					</section>
+					<!-- Slide 28b -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table style='table-layout: fixed;width:100%;font-size:14px'>
+							<tr>
+								<th> File Format </th>
+								<th> Properties </th>
+								<th> Benefits </th>
+								<th> Limitations </th>
+							</tr>
+							<tr>
+								<td> .txt (Text) </td>
+								<td> Text-based with no formatting or tags. Can be delimited by anything. </td>
+								<td> 
+									<ul>
+										<li> Flexible </li>
+										<li> Lightweight </li>
+										<li> Easily read </li>
+									</ul>
+								</td>
+								<td> 
+									<ul>
+										<li> Can easily break </li>
+										<li> Needs text qualification </li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td> .xlsx (Excel File) </td>
+								<td> Proprietary spreadsheet file format created by Microsoft Excel</td>
+								<td> 
+									<ul>
+										<li> Many users are comfortable with this format </li>
+										<li> Widely used </li>
+									</ul>
+								</td>
+								<td> 
+									<ul>
+										<li> Large file size </li>
+										<li> Specialist software needed to view or edit</li>
+										<li>	Hard for applications to read</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td> .json (<b>J</b>ava<b>S</b>cript <b>O</b>bject <b>N</b>otation </td>
+								<td> Text-based open standard designed for human-readable data interchange.  </td>
+								<td> 
+									<ul>
+										<li> Structure easily read by applications</li>
+										<li> Lightweight </li>
+									</ul>
+								</td>
+								<td> 
+									<ul>
+										<li> No error handling </li>
+										<li> Can leave your machine vulnerable to attacks if taken from an untrusted source </li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+						<!-- Slide 28b Notes -->
+						<aside class='notes'>
+							Text files are very lightweight and easy to use. When writing scripts for automation you will often use a text file for the computer to process. Excel files are also very common but actually quite difficult for other processors to use. Finally we have JSON, if you ever extract data from an API it is likely it will be in a JSON format. They can be described as nested dictionaries and to extract the information you will need to know which parts to query. Which file types do you commonly use in your role?
+						 </aside>
+					</section>
+				</section>				
+				<!-- Slide 20 -->
+				<section data-background-image='../assets/generic/table_back.PNG'>
+					<h2> Data Protection Act (DPA 1998) </h2>
+					<table style="table-layout: fixed; width: 100%;">
+						<tr>
+							<th style='width:20%'> 1 </th>
+							<td style='width:80%'> Data must be kept secure </td>
+						</tr>
+						<tr>
+							<th style='width:20%'> 2 </th>
+							<td style='width:80%'> Data stored must be relevant </td>
+						</tr>
+						<tr>
+							<th style='width:20%'> 3 </th>
+							<td style='width:80%'> Data stored must be kept no longer than necessary </td>
+						</tr>
+						<tr>
+							<th style='width:20%'> 4 </th>
+							<td style='width:80%'> Data stored must be kept accurate and up to date </td>
+						</tr>
+						<tr>
+							<th style='width:20%'> 5 </th>
+							<td style='width:80%'> Data must be obtained and processed lawfully </td>
+						</tr>
+						<tr>
+							<th style='width:20%'> 6 </th>
+							<td style='width:80%'> Data must be processed within the data subject rights </td>
+						</tr>
+						<tr>
+							<th style='width:20%'> 7 </th>
+							<td style='width:80%'> Data must be obtained and specified for lawful purposes </td>
+						</tr>
+						<tr>
+							<th style='width:20%'> 8 </th>
+							<td style='width:80%'> Data must not be transferred to countries without adequate data protection laws </td>
+						</tr>
+					</table>
+					<!-- Slide 20 Notes -->
+					<aside class='notes'>
+						Speaking of legal issues, we also need to consider the law when it comes to data. The data protection act (1998) was set out by the UK government to ensure all data is processed and used lawfully. For your exam you will need to be aware of what is in the DPA.
+					 </aside>
+				</section>
+				<!-- Slide 21 -->
+				<section data-background-image='../assets/generic/table_back.PNG'>
+					<h2> General Data Protection Regulation <br> (GDPR 2018) </h2>
+					<table style="table-layout: fixed; width: 100%;">
+						<tr>
+							<th style='width:20%'> 1 </th>
+							<td style='width:80%'> Data must be processed <b class='objective'> lawfully, fairly and transparently</b> </td>
+						</tr>
+						<tr>
+							<th style='width:20%'> 2 </th>
+							<td style='width:80%'> Data must be collected for <b class='objective'> specified, explicit and legitimate purposes</b> </td>
+						</tr>
+						<tr>
+							<th style='width:20%'> 3 </th>
+							<td style='width:80%'> Data must be <b class='objective'> adequate, relevant and limited to what is necessary </b> for processing </td>
+						</tr>
+						<tr>
+							<th style='width:20%'> 4 </th>
+							<td style='width:80%'> Data must be <b class='objective'> accurate and kept up to date </b> </td>
+						</tr>
+						<tr>
+							<th style='width:20%'> 5 </th>
+							<td style='width:80%'> Data must be <b class='objective'> kept only for as long as is necessary </b> for processing </td>
+						</tr>
+						<tr>
+							<th style='width:20%'> 6 </th>
+							<td style='width:80%'> Data must be processed in a manner that <b class='objective'> ensures its security</b> </td>
+						</tr>
+					</table>
+					<!-- Slide 21 Notes -->
+					<aside class='notes'>
+						In 2018 the General Data Protection Regulation was introduced for all companies that operate in the European Economic Area. This supersedes the DPA and it is important in your portfolio that you demonstrate that you are aware of it and have complied. Even though the UK has left the EU, most organisations still work with EU based clients and therefore still have to adhere. The penalities for non compliance can be severe with harsh fines, loss of customer confidence and poor market reputation if any breaches occur. GDPR (and the DPA) exist to protect personal data (such as name, contact information, IP address, personal information, political preferences and more). It is esnetial then if you are working with this sort of data that you demonstrate compliance and explicitly state what you have done to protect it.
+					 </aside>
+				</section>
+				<!-- Slide 22 -->
+				<section data-background-image='../assets/generic/tweenies.PNG'>
+					<div class='row'>
+						<div class='col'></div>
+						<div class='col'>
+							<h2 style = color:#1d98ff><b> Activity </b></h2>
+							<br>
+							<p> Compare the DPA and GDPR</p>
+							<ul style='display:inline-block;text-align:left'>
+								<li> What is similar?</li>
+								<li> What is different?</li>
+								<li> How does your organisation ensure compliance? </li>
+								<li> How does it affect your role? </li>
+							</ul>
+						</div>
+					</div>
+					<!-- Slide 22 Notes -->
+					<aside class='notes'>
+						Give 5-10 minutes for this activity and ask someone from each group to feedback to the class
+					 </aside>
+				</section>
+				<!-- Slide 23 -->
+				<section data-background-image='../assets/generic/box_serious.PNG'>
+					<h1> In Summary </h1>
+					<br>
+					<p> For data protection you should consider:</p>
+					<p class='fragment'> You have a lawful basis for processing </p>
+					<p class='fragment'> You are being transparent </p>
+					<p class='fragment'> You are processing it properly </p>
+					<!-- Slide 23 Notes -->
+					<aside class='notes'>
+						Data protection is incredibly important and any breaches can have serious consequences for your organisation. It is your responsbility an an analyst to ensure your compliance to keep the data safe.
+					 </aside>
+				</section>
+				<section>
+					<!-- Slide 24a -->
+					<section data-background-image='../assets/generic/box_serious.PNG'>
+						<div class="wrap size-50 aligncenter">
+							<span style ='font-size:50px;font-weight:bold;text-align:center'> When things go wrong... </span>
+						</div>
+						<!-- Slide 24a Notes -->
+						<aside class='notes'>
+							Scroll down to see a couple of examples of when this went wrong.
+						 </aside>
+					</section>
+					<!-- Slide 24b -->
+					<section data-background-image='../assets/generic/problem.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#ff7c66'> a </h1>
+								<a href='https://www.bbc.co.uk/news/technology-45686890' target='_blank' style='color:#f4f4f4'> Facebook Data Breach </a>
+								<br>
+								<p style='color:#f4f4f4'> July 2017-September 2018 </p>
+								<p style='color:#f4f4f4'> 29 Million people affected </p>
+							</div>
+							<div class='col'>
+								<img src='https://source.unsplash.com/tWX_ho-328k' width="500" height="500">
+							</div>
+						</div>
+						<!-- Slide 24b Notes -->
+						<aside class='notes'>
+							A few years ago 29 million people had their emails and passwords leaked in a Facebook breach. Speaking of Facebook, keep in mind the trouble they had when it had emerged they were giving user's information to advertising groups for targeted campaigning during the US elections...
+						 </aside>
+					</section>
+					<!-- Slide 24c -->
+					<section data-background-image='../assets/generic/problem.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#ff7c66'> a </h1>
+								<a href='https://www.bbc.co.uk/news/business-48905907' target='_blank' style='color:#f4f4f4'> British Airways Hack </a>
+								<br>
+								<p style='color:#f4f4f4'> August 2018 - September 2018 </p>
+								<p style='color:#f4f4f4'> 380,000 people affected </p>
+							</div>
+							<div class='col'>
+								<img src='https://source.unsplash.com/mrD1522aQW0' width="500" height="500">
+							</div>
+						</div>
+						<!-- Slide 24c Notes -->
+						<aside class='notes'>
+							A data breach can happen to any company at any time, it is important that you ensure the work you are doing is secure. Ask the group what sort of things they can do to ensure a secure environment (using a VPN, password management, etc).
+						</aside>
+					</section>
+				</section>
+				
+				<!-- Slide 34 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Extract, Transform, Load</span>          
+					</div>
+					<!-- Slide 34 Notes -->
+					<aside class='notes'>
+						Earlier one we mentioned that some research data may come from a data warehouse. A common process to create a data warehouse is extract, transform, load (ETL). For your exam you will need to have some awareness of this.
+					</aside>
+				</section>
+				<!-- Slide 35 -->
+				<section data-background-image='../assets/generic/fun_box.PNG'>
+					<div class="wrap size-50 aligncenter">
+						<span style ='color:#4d61f4;font-size:60px;font-weight:bold;text-align:center'> How would you <b class='objective'>count the number of occurrences</b> of each word in all the books found in a library <b class='objective'>using a team of people?</b> </span>
+					</div>
+					<!-- Slide 35 Notes -->
+					<aside class='notes'>
+						Give 2-3 minutes for apprentices to think of a solution.
+					 </aside>
+				</section>
+				<section>
+					<!-- Slide 36a -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 class='def'> Step 1 </h1>
+								<br>
+								<p style='color:#f4f4f4'> Divide the books among the team so every person has an allocation </p>
+							</div>
+							<div class='col'>
+								<img src='assets/session_2/share.PNG'>
+							</div>
+						</div>
+						<!-- Slide 36a Notes -->
+						<aside class='notes'>
+							First you would divide books amongst all your team members so they can 'extract' the words.
+						 </aside>
+					</section>
+					<!-- Slide 36b -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 class='def'> Step 2 </h1>
+								<br>
+								<p style='color:#f4f4f4'> Each person will keep a record of the occurrences of each word in their allocation </p>
+							</div>
+							<div class='col'>
+								<table style='table-layout: fixed;width:100%;text-align:center'>
+									<tr>
+										<th style='width:65%'> Word </th>
+										<th style='width:35%'> Count </th>
+									</tr>
+									<tr>
+										<td> Apple </td>
+										<td> 2 </td>
+									</tr>
+									<tr>
+										<td> Bird </td>
+										<td> 7 </td>
+									</tr>
+								</table>
+								<br>
+								<table style='table-layout: fixed;width:100%;text-align:center'>
+									<tr>
+										<th style='width:65%'> Word </th>
+										<th style='width:35%'> Count </th>
+									</tr>
+									<tr>
+										<td> Apple </td>
+										<td> 5 </td>
+									</tr>
+									<tr>
+										<td> Bird </td>
+										<td> 1 </td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<!-- Slide 36b Notes -->
+						<aside class='notes'>
+							Next you would have evryone 'transform' their books into a table which has the count of each word.
+						 </aside>
+					</section>
+					<!-- Slide 36c -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 class='def'> Step 3 </h1>
+								<br>
+								<p style='color:#f4f4f4'> Finally combine the different records into one unified view which contains each word in the library. </p>
+							</div>
+							<div class='col'>
+								<table style='table-layout: fixed;width:100%;text-align:center'>
+									<tr>
+										<th style='width:65%'> Word </th>
+										<th style='width:35%'> Count </th>
+									</tr>
+									<tr>
+										<td> Apple </td>
+										<td> 7 </td>
+									</tr>
+									<tr>
+										<td> Bird </td>
+										<td> 8 </td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<!-- Slide 36c Notes -->
+						<aside class='notes'>
+							Finally, you would 'load' all the different tables together into one unified view which contains all the words in the library.
+						 </aside>
+					</section>
+				</section>
+				<!-- Slide 37 -->
+				<section data-background-image='../assets/generic/main.PNG'>
+					<div class="wrap size-50 aligncenter">
+						<img src='assets/session_2/etl.PNG'>
+					</div>
+					<!-- Slide 37 Notes -->
+					<aside class='notes'>
+						This process is how data is collected from a variety of disparate sources and combined into one unified target view. Consider your organisation, it will likely be split into several teams and divisions, each collecting and storing data relevant to their roles. Sales teams will hold data on customers while the inventory team know how much they have left in stock. For key decision makers in the company, they will want all of this data in one central location so they can get a quick view to understand the situation and make data driven decisions. This is what ETL is for, combing data from across an organisation into one central place (often a data warehouse).
+					 </aside>
+				</section>
+				<section>
+					<!-- Slide 38a -->
+					<section data-background-image='../assets/generic/strike.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<p> Extraction is the process of gathering data from a variety of disparate sources</p>
+								<p> The extracted data is usually copied from the source, not moved </p>
+								<p> Validation occurs at this stage to ensure the data is in the correct structure and format, as well as ensuring necessary permissions have been given</p>
+								<p> The process can be continuous or done in batches </p>
+							</div>
+							<div class='col'>
+								<h1 class='current'> Extract </h1>
+								<h1 class='def'> Transform </h1>
+								<h1 class='def'> Load </h1>
+							</div>
+						</div>
+						<!-- Slide 38a Notes -->
+						<aside class='notes'>
+							The first stage in the process is extraction. This is when you identify and collect the data from all the sources you require. Note, you don't 'take' the data but a copy is made and sent to the warehouse. This means the original source is left untouched. It also means that if any changes are made to the source, these will not be reflected in the warehouse until an update is made. A consequence of this is that warehouses are static (making querying and processing quicker) but potentially out of date if the source changes (fast flowing databases like sales or inventory will change throughout the day, so ETL updates may need to happen regularly). Often when a warehouse is updated it will need to be taken 'offline' so extraction tends to happen outside of working hours to avoid disruption for users. You will validate your sources at this time to ensure they contain the correct information.
+						 </aside>
+					</section>
+					<!-- Slide 38b -->
+					<section data-background-image='../assets/generic/strike.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<p> Transformation is the process of ensuring the extracted data is in a consistent format</p>
+								<p> This can include removing null values, changing data types and ensuring field names are the same </p>
+								<p> As the extracted data is a copy, the original will remian unchanged </p>
+							</div>
+							<div class='col'>
+								<h1 class='def'> Extract </h1>
+								<h1 class='current'> Transform </h1>
+								<h1 class='def'> Load </h1>
+							</div>
+						</div>
+						<!-- Slide 38b Notes -->
+						<aside class='notes'>
+							Once the data has been pulled to the warehouse it is time to transform it. This means all the data needs to be in the same consistent format- data types need to be the same, null values should be removed and column names should be consistent (especially if they appear in more than one source- more on this in our next module). Note, as the data is copied from the source, the original data is unchanged by this process.
+						 </aside>
+					</section>
+					<!-- Slide 38c -->
+					<section data-background-image='../assets/generic/strike.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<p> Loading is the process of joining the transformed data together into a single unified view (called the target) </p>
+								<p> Data verification is undertaken post loading to ensure the combined data is accurate and fulfils the necessary business requirements </p>
+								<p> With 'Big Data' this process is done using parallel processing to manage the large volume of data being written to the system </p>
+							</div>
+							<div class='col'>
+								<h1 class='def'> Extract </h1>
+								<h1 class='def'> Transform </h1>
+								<h1 class='current'> Load </h1>
+							</div>
+						</div>
+						<!-- Slide 38c Notes -->
+						<aside class='notes'>
+							Finally, once the data is in a consistent format it is time to join it all together into one table. At this point you will verify that the data stored is correct and useful for the purposes you require. A few things to note, with large voluminous (and potentially fast flowing) data this process may be more cost effective to be run using a Big Data technology which uses a form of parallel processing to carry this out. As mentioned earlier, data warehouses are static and can quickly be out of date with the the original sources. It is highly likely then that an ETL process will be carried out regularly to ensure decision makers always have access to the latest data.
+						 </aside>
+					</section>
+				</section>
+				<!-- Slide 39 -->
+				<section data-background-image='../assets/generic/solution.PNG'>
+					<div class='row'>
+						<div class='col'>
+							<h1 style='color:#59d8a1'> a </h1>
+							<h1 class='def'> Benefits </h1>
+						</div>
+						<div class='col'>
+							<p> Allows for a unified view of data that is otherwise spread out across an organisation <p>
+							<p> Ensures data consistency across an organisation allowing for missing data and errors to be identified throughout a pipeline </p>
+							<p> Encourages collaboration across teams </p>
+							<p> Better business intelligence and insights for making decisions through greater data availability </p>
+						</div>
+					</div>
+					<!-- Slide 39 Notes -->
+					<aside class='notes'>
+						The benefits of ETL are that data from across a business can be stored in one central location allowing key decision makers to make data driven decisions quickly. It also allows for teams across a business to collaborate and share their data (sales teams acting on the advice of their inventory/data teams). It also means different teams are using consistent formats allowing for errors to be quickly identified and fixed.
+					 </aside>
+				</section>
+				<section>
+				<!-- Slide 40a -->
+					<section data-background-image='../assets/generic/main.PNG'>
+						<h1> Information Structure and Rules </h1>
+						<br>
+						<p> Data integration activities for data warehouses requires that you follow some basic rules:
+						<ul style='display:inline-block;text-align:left'>
+							<li> Security policies must be specified by organisations providing data sources to <b class='objective'>prevent data leakage and unauthorised access</b></li>
+							<li> <b class='objective'>Access layers</b> (e.g. networks, firewalls, servers, etc) between sources and targets should be properly configured (especially of data is sourced externally)</li>
+							<li> Integrated data should be <b class='objective'>immutable</b>- you should not be able to change the data once it is stored in the unified view</li>
+							<li> <b class='objective'>Validation checks</b> should be carried out during ETL:
+								<ul style='display:inline-block;text-align:left'>
+									<li> Source and target table structures and data types should be <b class='objective'>consistent</b></li>
+									<li> <b class='objective'>Column names</b> should be the same as defined by a mapping document </li>
+								</ul>
+							</li>
+						</ul>
+						<!-- Slide 40a Notes -->
+						<aside class='notes'>
+							With ETL, it is important you follow certain rules to ensure the process runs smoothly and safely- you don't want incorrect data being fed to key decision makers... 
+						 </aside>
+					</section>
+					<!-- Slide 40b -->
+					<section data-background-image='../assets/generic/main.PNG'>
+						<h1> Information Structure and Rules </h1>
+						<br>
+						<p> Data integration activities for data warehouses requires that you follow some basic rules:
+						<ul style='display:inline-block;text-align:left'>
+							<li> <b class='objective'>Verification</b> is also carried out on the target:
+								<ul style='display:inline-block;text-align:left'>
+									<li> Verify that the data is <b class='objective'>accurate</b></li>
+									<li> Verify the data is the <b class='objective'>'right' data</b> to be stored in the target</li>
+									<li> Verify the data has <b class='objective'>not been duplicated</b></li>
+								</ul>
+							</li>
+						</ul>
+						<!-- Slide 40b Notes -->
+						<aside class='notes'>
+							A possible project for your portfolio could be to build a data warehouse or pipeline for someone in your business. If this is the case, make sure you capture the business requirements clearly before beginning. This way you can guide the process precisely and be able to verify at the end if you have met the requirements of the stakeholder.
+						 </aside>
+					</section>
+				</section>
+				<!-- Slide 41 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Recap</span>          
+					</div>
+					<!-- Slide 41 Notes -->
+					<aside class='notes'>
+						We have finished our first module! Let's recap the day.
+					</aside>
+				</section>
+				<!-- Slide 42 -->
+				<section data-background-image="../assets/generic/blank.PNG">
+					<div class="wrap size-60 " style='width:max-content'>
+						<div>
+							<span class='objective'> Learning Objectives </span>
+							<img src='../assets/multiverse_brand/Molten/Multiverse_Notations_RGB_Coral-01.png'>
+						</div>
+						<ul style='display:inline-block;text-align:left'>
+							<li> Identify <b class='objective'> business specific rules </b> related to datasets and data characteristics that will influence project design and analysis</li>
+							<li> Describe the key characteristics of the different <b class='objective'> Data Formats</b> and how to work with them </li>
+						</ul>          
+					</div>
+					<!-- Slide 42 Notes -->
+					<aside class='notes'>
+						Run through learning objectives again, explainining that the purpose of this session was to help apprentices plan out their projects by considering the data they use by looking at data types, structures and file formats. This should help guide them towards what sort of processes and visualisations they can use.
+					</aside>
+				</section>
+				<section>
+					<!-- Slide 43a -->
+					<section data-background-image="../assets/generic/assignment.PNG">
+						<table style='width:100%;border:1px solid black'>
+							<tr>
+								<th colspan=2 style='color:#ff7c66;text-align:center'> Assignment </th>
+							</tr>
+							<tr>
+								<th style=text-align:center colspan=2> Part 1- Data Analytics Life Cycle </th>
+							</tr>
+							<tr>
+								<td colspan=2> Use a work-related example to identify the stages of the Data Analytics Lifecycle. Describe what happened in each stage and highlight what was your role in the process. In the end, add a summary of the project/analysis including the main findings, what went well and what could have been improved. </td>
+							</tr>
+							<tr>
+								<td> Word Count </td>
+								<td> Max 1500 words </td>
+							</tr>
+							<tr>
+								<td> Deadline </td>
+								<td> 3 weeks </td>
+							</tr>
+							<tr>
+								<td> Deliverables </td>
+								<td> Word Document or PowerPoint presentation </td>
+							</tr>
+						</table>
+						<!-- Slide 43a Notes -->
+						<aside class='notes'>
+							Run through the assignment
+						</aside>
+					</section>
+					<!-- Slide 43b -->
+					<section data-background-image="../assets/generic/assignment.PNG">
+						<table style='width:100%;border:1px solid black'>
+							<tr>
+								<th colspan=2 style='color:#ff7c66;text-align:center'> Assignment </th>
+							</tr>
+							<tr>
+								<th style=text-align:center colspan=2> Part 2- Project Brief </th>
+							</tr>
+							<tr>
+								<td colspan=2> Use a work-related example to create a project brief. This could be related to a project you are about to start or something new. Your brief should contain a business problem, the wider context of the analysis and a plan of action to solve the problem. </td>
+							</tr>
+							<tr>
+								<td> Word Count </td>
+								<td> Max 1500 words </td>
+							</tr>
+							<tr>
+								<td> Deadline </td>
+								<td> 4 weeks </td>
+							</tr>
+							<tr>
+								<td> Deliverables </td>
+								<td> Word Document </td>
+							</tr>
+						</table>
+						<!-- Slide 43b Notes -->
+						<aside class='notes'>
+							Run through the assignment
+						</aside>
+					</section>
+				</section>
+				<!-- Slide 44 -->
+				<section data-background-image="../assets/generic/final.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Complete <a href='https://platform.whitehat.org.uk/apprentice/attendance-log/81' style='color:#64abff' target='_blank'>Session Attendance Log</a> and Update Your OTJ</span>          
+					</div>
+					<!-- Slide 44 Notes -->
+					<aside class='notes'>
+						Remind apprentices about OTJ and they can click on the link for the SAL
+					</aside>
+				</section>
+      </div>
+		</div>
+ 
+    <!-- Scripts -->
+
+		<script src="../Dependencies/dist/reveal.js"></script>
+		<script src="../Dependencies/plugin/notes/notes.js"></script>
+		<script src="../Dependencies/plugin/markdown/markdown.js"></script>
+		<script src="../Dependencies/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({				
+				hash: true,
+				mouseWheel:true,
+				controls:true,
+				slideNumber:true,
+				loop:true,
+				
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+		<script src="../Dependencies/node_modules/socket.io/lib/socket.js"></script>
+		<script src="../Dependencies/node_modules/reveal-notes-server/client.js"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+					var codeElement = document.getElementById('python_code');
+					// Add code mirror class for coloring (default is the theme)
+					codeElement.classList.add( 'cm-s-default' );
+					var code = codeElement.innerText;
+
+					codeElement.innerHTML = "";
+
+					CodeMirror.runMode(
+						code,
+						'python',
+						codeElement
+					);
+			};
+			
+    </script>
+  </body>
+  
+</html>
