@@ -1312,50 +1312,156 @@
 							Text files are very lightweight and easy to use. When writing scripts for automation you will often use a text file for the computer to process. Excel files are also very common but actually quite difficult for other processors to use. Finally we have JSON, if you ever extract data from an API it is likely it will be in a JSON format. They can be described as nested dictionaries and to extract the information you will need to know which parts to query. Which file types do you commonly use in your role?
 						 </aside>
 					</section>
-				</section>				
-				<!-- Slide 20 -->
-				<section data-background-image='../assets/generic/table_back.PNG'>
-					<h2> Data Protection Act (DPA 1998) </h2>
-					<table style="table-layout: fixed; width: 100%;">
-						<tr>
-							<th style='width:20%'> 1 </th>
-							<td style='width:80%'> Data must be kept secure </td>
-						</tr>
-						<tr>
-							<th style='width:20%'> 2 </th>
-							<td style='width:80%'> Data stored must be relevant </td>
-						</tr>
-						<tr>
-							<th style='width:20%'> 3 </th>
-							<td style='width:80%'> Data stored must be kept no longer than necessary </td>
-						</tr>
-						<tr>
-							<th style='width:20%'> 4 </th>
-							<td style='width:80%'> Data stored must be kept accurate and up to date </td>
-						</tr>
-						<tr>
-							<th style='width:20%'> 5 </th>
-							<td style='width:80%'> Data must be obtained and processed lawfully </td>
-						</tr>
-						<tr>
-							<th style='width:20%'> 6 </th>
-							<td style='width:80%'> Data must be processed within the data subject rights </td>
-						</tr>
-						<tr>
-							<th style='width:20%'> 7 </th>
-							<td style='width:80%'> Data must be obtained and specified for lawful purposes </td>
-						</tr>
-						<tr>
-							<th style='width:20%'> 8 </th>
-							<td style='width:80%'> Data must not be transferred to countries without adequate data protection laws </td>
-						</tr>
-					</table>
-					<!-- Slide 20 Notes -->
+				</section>
+				<!-- Slide 29 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Data Storage</span>          
+					</div>
+					<!-- Slide 29 Notes -->
 					<aside class='notes'>
-						Speaking of legal issues, we also need to consider the law when it comes to data. The data protection act (1998) was set out by the UK government to ensure all data is processed and used lawfully. For your exam you will need to be aware of what is in the DPA.
+						We have identified where our data comes from, but you also need to consider how it is stored. When writing up your portfolio you will need to explain where your data is stored, what type of database it is and what steps are taken to ensure it is protected (specifically how you gained access and ensured it was safe). In a couple of months we will have our Database fundamentals module which will cover this topic in more detail. 
+					</aside>
+				</section>
+				<!-- Slide 30 -->
+				<section data-background-image="../assets/generic/pentagon_jr.PNG">
+					<div class="row">
+						<div class='col'>
+							<h1 style='color:#f4f4f4'> Common Types of Database Management System (DBMS) </h1>
+						</div>
+						<div class='col'>
+							<p class='fragment'> Relational Database Management System (RDBMS) </p>
+							<p class#'fragment'> Not Only SQL (NoSQL) </p>
+						</div>
+					</div>
+					<!-- Slide 30 Notes -->
+					<aside class='notes'>
+						There are many different types of database management system that can be used to store data, but the two most common are the relational database and NoSQL. Both allow for easy access to data for users with proper clearance. It is likely the data you use will be stored in such a database as it allows multiple users to access the data simultaneously, and so it can be monitored centrally. Imagine if the data you wanted was stored on one person's computer, accessing it would be a nightmare and security risks would be greater due to the possibility of the computer being lost/stolen and that it is not being supervised.
+					</aside>
+				</section>
+				<section>
+					<!-- Slide 31a -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#ff7c66'> Access </h1>
+								<h1 style='color:#f4f4f4'> Security </h1>
+							</div>
+							<div class='col'>
+								<img src='assets/session_2/access_ppl.PNG'>
+							</div>
+						</div>
+						<!-- Slide 31a Notes -->
+						<aside class='notes'>
+							When writing about how you accessed the data, you must demonstrate an awareness of who else has access and how it is protected. Your organisation should have clear guidelines on how private, internal data should be used which you can cite and refer to. 
+						</aside>
+					</section>
+					<!-- Slide 31b -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#f4f4f4'> Access </h1>
+								<h1 style='color:#ff7c66'> Security </h1>
+							</div>
+							<div class='col'>
+								<img src='assets/session_2/security.PNG'>
+								<p> <a href='http://news.bbc.co.uk/1/hi/uk/7449255.stm' target='_blank'> When it goes wrong </a></p>
+							</div>
+						</div>
+						<!-- Slide 31b Notes -->
+						<aside class='notes'>
+							You will also need to show your understanding of how the data is kept secure, and your role in this. For example, you may need to use passwords or two-factor authentication. You may have to access the data using a company VPN and have some sort of firewall technology installed. Can anybody share some of the data security policies they are aware of in their organisation?  
+						</aside>
+					</section>
+				</section>
+				<!-- Slide 32 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Data Quality</span>          
+					</div>
+					<!-- Slide 32 Notes -->
+					<aside class='notes'>
+						We have discussed what our data might look like, where it is stored and how we can access it. The next part of data classification is checking its quality- how useful, clean and truthful it is. Can anyone think of factors that might lower our quality of data?
+					</aside>
+				</section>
+				<!-- Slide 33 -->
+        <section data-background-image='../assets/generic/table_back.PNG'>
+          <table style="table-layout: fixed; width: 100%;border-collapse: collapse;">
+            <tr>
+              <td style="width:25%;border: none"><img src='assets/session_2/accuracy.PNG'></td>
+              <td style="width:25%;border: none"><img src='assets/session_2/completeness.PNG'></td>
+              <td style="width:25%;border: none"><img src='assets/session_2/consistency.PNG'></td>
+							<td style="width:25%;border: none"><img src='assets/session_2/uniqueness.PNG'></td>
+							<td style="width:25%;border: none"><img src='assets/session_2/timeliness.PNG'></td>
+            </tr>
+            <tr>
+              <td style="width:25%;border: none"> <b>Accuracy</b></td>
+              <td style="width:25%;border: none"> <b>Completeness</b></td>
+              <td style="width:25%;border: none"> <b>Consistency</b></td>
+							<td style="width:25%;border: none"> <b>Uniqueness</b></td>
+							<td style="width:25%;border: none"> <b>Timeliness</b></td>
+            </tr>
+          </table>
+          <!-- Slide 33 Notes -->
+          <aside class='notes'>
+            When talking about data quality we think of these five areas:<br>
+						<ul>
+							<li> Accuracy- how accurate (correct) is your data? Are names spelled correctly? Are values accurate? </li>
+							<li> Completeness- Is all the data present? Are there missing values? Do the field names make sense? </li>
+							<li> Consistency- Is there a consistent format throughout? Including, currency, data types, units, etc. Are there any outliers? </li>
+							<li> Uniqueness- Is each record unique? Are there any duplicate values? Are real world entities represented more than once (e.g. apple and Apple)?</li>
+							<li> Timeliness- Is the data up to date? Your data should be current with respect to the needs of the business </li>
+						</ul>
+						<br>
+						When writing up your portfolio you must demonstrate and discuss the steps you took to inspect and if necessary, clean the data to ensure it was of the highest quality for your analysis. We will cover practical examples of this in our technical bootcamps.
+          </aside>
+        </section>
+				<!-- Slide 34 -->
+				<section data-background-image='../assets/generic/problem.PNG'>
+					<div class='row'>
+						<div class='col'>
+							<h1> What are the consequences of poor data quality? </h1>
+						</div>
+						<div class='col'>
+							<p class='fragment'> <b class='objective'>&rarr</b> Bad Business Decisions </p>
+							<p class='fragment'> <b class='objective'>&rarr</b> Inefficient Business Practices </p>
+							<p class='fragment'> <b class='objective'>&rarr</b> Lost Market Reputation </p>
+							<p class='fragment'> <b class='objective'>&rarr</b> Missed Opportunities </p>
+							<p class='fragment'> <b class='objective'>&rarr</b> Lost Revenue </p>
+							<p class='fragment'> <b class='objective'>&rarr</b> Breach of Data Protection Laws </p>
+						</div>
+					</div>
+					<!-- Slide 34 Notes -->
+					<aside class='notes'>
+						Ask the group to annotate the screen with potential consequences of poor data quality. The consequences of poor data quality can be severe to an organisation and can include losing out on clients, getting fined, loss of market reputation and more. It can result in the wrong decisions being made and the whole business working inefficiently. Data quality is the responsibility of everyone who works with it and when writing up your portfolio you must demonstrate how you verified the quality of your data.
 					 </aside>
 				</section>
-				<!-- Slide 21 -->
+				<!-- Slide 35 -->
+				<section data-background-image='../assets/generic/tweenies.PNG'>
+					<div class='row'>
+						<div class='col'></div>
+						<div class='col'>
+							<h2 style = color:#1d98ff><b> Activity </b></h2>
+							<br>
+							<p> Examine this <a href='https://multiverselearningproducts.github.io/dfv1/Data%20Analysis%20in%20Industry/exercise/rock.csv' target='_blank'>file</a> and write down any problems you find with the data </p>
+						</div>
+					</div>
+					<!-- Slide 35 Notes -->
+					<aside class='notes'>
+						Give 5-10 minutes and get the groups feedback. Problems include: missing values, dubious field names, potentially redundant data and inconsistent formatting.
+					 </aside>
+				</section>
+				<!-- Slide 36 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Data Usage</span>          
+					</div>
+					<!-- Slide 36 Notes -->
+					<aside class='notes'>
+						The final part of data classification is stating how the data will be used,and for how long. For example, what will happen to older data in a live dashboard? When will it be archived or deleted? How do you plan to use the data in a way which contributes to a safe and secure environment? Throughout this session we have beek skirting around a piece of legislsation that guides us on how to use data...
+					</aside>
+				</section>
+				<!-- Slide 37 -->
 				<section data-background-image='../assets/generic/table_back.PNG'>
 					<h2> General Data Protection Regulation <br> (GDPR 2018) </h2>
 					<table style="table-layout: fixed; width: 100%;">
@@ -1384,31 +1490,60 @@
 							<td style='width:80%'> Data must be processed in a manner that <b class='objective'> ensures its security</b> </td>
 						</tr>
 					</table>
-					<!-- Slide 21 Notes -->
+					<!-- Slide 37 Notes -->
 					<aside class='notes'>
-						In 2018 the General Data Protection Regulation was introduced for all companies that operate in the European Economic Area. This supersedes the DPA and it is important in your portfolio that you demonstrate that you are aware of it and have complied. Even though the UK has left the EU, most organisations still work with EU based clients and therefore still have to adhere. The penalities for non compliance can be severe with harsh fines, loss of customer confidence and poor market reputation if any breaches occur. GDPR (and the DPA) exist to protect personal data (such as name, contact information, IP address, personal information, political preferences and more). It is esnetial then if you are working with this sort of data that you demonstrate compliance and explicitly state what you have done to protect it.
+						In 2018 the General Data Protection Regulation was introduced for all companies that operate in the European Economic Area. It is important in your portfolio that you demonstrate that you are aware of it and how you have complied. Even though the UK has left the EU, most organisations still work with EU based clients and therefore still have to adhere. The penalities for non compliance can be severe with harsh fines, loss of customer confidence and poor market reputation if any breaches occur. GDPR (and the DPA) exist to protect personal data (such as name, contact information, IP address, personal information, political preferences and more). It is esnetial then if you are working with this sort of data that you demonstrate compliance and explicitly state what you have done to protect it. GDPR governs the ethical use of data, so let's dive a bit more deeply into it.
 					 </aside>
 				</section>
-				<!-- Slide 22 -->
-				<section data-background-image='../assets/generic/tweenies.PNG'>
-					<div class='row'>
-						<div class='col'></div>
-						<div class='col'>
-							<h2 style = color:#1d98ff><b> Activity </b></h2>
-							<br>
-							<p> Compare the DPA and GDPR</p>
-							<ul style='display:inline-block;text-align:left'>
-								<li> What is similar?</li>
-								<li> What is different?</li>
-								<li> How does your organisation ensure compliance? </li>
-								<li> How does it affect your role? </li>
-							</ul>
+				<section>
+					<!-- Slide 38a -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#ff7c66'> Why? </h1>
+								<h1 style='color:#ff7c66'> What? </h1>
+								<h1 style='color:#ff7c66'> When? </h1>
+								<h1 style='color:#ff7c66'> Where? </h1>
+								<h1 style='color:#ff7c66'> how? </h1>
+							</div>
+							<div class='col'>
+								<p> Everyone has a right to be informed...</p>
+								<p class='fragment'> &#8226; How their data will be used </p>
+								<p class='fragment'> &#8226; How long their data will be kept </p>
+								<p class='fragment'> &#8226; Where it will be processed </p>	
+								<p class='fragment'> &#8226; Who else will have access </p>							
+								<p class='fragment'> &#8226; How they can access their data </p>
+								<p class='fragment'> &#8226; How they can correct any information </p>
+								<p class='fragment'> &#8226; How they can delete their information </p>
+								<p class='fragment'> &#8226; How they can prevent their data being processed any further </p>
+							</div>
 						</div>
-					</div>
-					<!-- Slide 22 Notes -->
-					<aside class='notes'>
-						Give 5-10 minutes for this activity and ask someone from each group to feedback to the class
-					 </aside>
+						<!-- Slide 38a Notes -->
+						<aside class='notes'>
+							Ask the group to annotate the screen with what rights they think someone has to their data. GDPR dictates that everyone has the right to know how their data will be used and for what purpose. They can also ask for it to be deleted, edited or stopped being used. If you are using personal data in your work projects you need to demonstrate your awareness of these rights.
+						 </aside>
+					</section>
+					<!-- Slide 38b -->
+					<section data-background-image='../assets/generic/pentagon_jr.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 style='color:#ff7c66'> What counts as PII? </h1>
+							</div>
+							<div class='col'>
+								<p class='fragment'> &#8226; Name </p>
+								<p class='fragment'> &#8226; Address </p>
+								<p class='fragment'> &#8226; Contact Details </p>	
+								<p class='fragment'> &#8226; Bank Details </p>							
+								<p class='fragment'> &#8226; Driving License </p>
+								<p class='fragment'> &#8226; Passport Number </p>
+								<p class='fragment'> &#8226; IP address </p>
+							</div>
+						</div>
+						<!-- Slide 38b Notes -->
+						<aside class='notes'>
+							Let's define what we mean by personable information. PII stands for personable identifiable information and it is anything that can be used to identify someone. What do you think counts as PII? The list here is not exhaustive, can you think of any more examples. PII also includes data that can be reasonably put together to find something out about someone (e.g. house number + street name, where either on their own won't identify someone). Some of the data you use in your role may contain PII, whether it is internal (payroll) or on external clients or customers. When using PII, your organisation much follow the rules on the previous slide. In your portfolio you should state if you are using PII and what you are doing to protect it. Can anyone think of ways we can mask PII? You could anonymuse it or use pseudonames (id names) to change the way data is linked to a person. 
+						 </aside>
+					</section>
 				</section>
 				<!-- Slide 23 -->
 				<section data-background-image='../assets/generic/box_serious.PNG'>
