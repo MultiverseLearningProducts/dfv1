@@ -1,0 +1,245 @@
+<!-- Slide 34 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Extract, Transform, Load</span>          
+					</div>
+					<!-- Slide 34 Notes -->
+					<aside class='notes'>
+						Earlier one we mentioned that some research data may come from a data warehouse. A common process to create a data warehouse is extract, transform, load (ETL). For your exam you will need to have some awareness of this.
+					</aside>
+				</section>
+				<!-- Slide 35 -->
+				<section data-background-image='../assets/generic/fun_box.PNG'>
+					<div class="wrap size-50 aligncenter">
+						<span style ='color:#4d61f4;font-size:60px;font-weight:bold;text-align:center'> How would you <b class='objective'>count the number of occurrences</b> of each word in all the books found in a library <b class='objective'>using a team of people?</b> </span>
+					</div>
+					<!-- Slide 35 Notes -->
+					<aside class='notes'>
+						Give 2-3 minutes for apprentices to think of a solution.
+					 </aside>
+				</section>
+				<section>
+					<!-- Slide 36a -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 class='def'> Step 1 </h1>
+								<br>
+								<p style='color:#f4f4f4'> Divide the books among the team so every person has an allocation </p>
+							</div>
+							<div class='col'>
+								<img src='assets/session_2/share.PNG'>
+							</div>
+						</div>
+						<!-- Slide 36a Notes -->
+						<aside class='notes'>
+							First you would divide books amongst all your team members so they can 'extract' the words.
+						 </aside>
+					</section>
+					<!-- Slide 36b -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 class='def'> Step 2 </h1>
+								<br>
+								<p style='color:#f4f4f4'> Each person will keep a record of the occurrences of each word in their allocation </p>
+							</div>
+							<div class='col'>
+								<table style='table-layout: fixed;width:100%;text-align:center'>
+									<tr>
+										<th style='width:65%'> Word </th>
+										<th style='width:35%'> Count </th>
+									</tr>
+									<tr>
+										<td> Apple </td>
+										<td> 2 </td>
+									</tr>
+									<tr>
+										<td> Bird </td>
+										<td> 7 </td>
+									</tr>
+								</table>
+								<br>
+								<table style='table-layout: fixed;width:100%;text-align:center'>
+									<tr>
+										<th style='width:65%'> Word </th>
+										<th style='width:35%'> Count </th>
+									</tr>
+									<tr>
+										<td> Apple </td>
+										<td> 5 </td>
+									</tr>
+									<tr>
+										<td> Bird </td>
+										<td> 1 </td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<!-- Slide 36b Notes -->
+						<aside class='notes'>
+							Next you would have evryone 'transform' their books into a table which has the count of each word.
+						 </aside>
+					</section>
+					<!-- Slide 36c -->
+					<section data-background-image='../assets/generic/strike_force.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1 class='def'> Step 3 </h1>
+								<br>
+								<p style='color:#f4f4f4'> Finally combine the different records into one unified view which contains each word in the library. </p>
+							</div>
+							<div class='col'>
+								<table style='table-layout: fixed;width:100%;text-align:center'>
+									<tr>
+										<th style='width:65%'> Word </th>
+										<th style='width:35%'> Count </th>
+									</tr>
+									<tr>
+										<td> Apple </td>
+										<td> 7 </td>
+									</tr>
+									<tr>
+										<td> Bird </td>
+										<td> 8 </td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<!-- Slide 36c Notes -->
+						<aside class='notes'>
+							Finally, you would 'load' all the different tables together into one unified view which contains all the words in the library.
+						 </aside>
+					</section>
+				</section>
+				<!-- Slide 37 -->
+				<section data-background-image='../assets/generic/main.PNG'>
+					<div class="wrap size-50 aligncenter">
+						<img src='assets/session_2/etl.PNG'>
+					</div>
+					<!-- Slide 37 Notes -->
+					<aside class='notes'>
+						This process is how data is collected from a variety of disparate sources and combined into one unified target view. Consider your organisation, it will likely be split into several teams and divisions, each collecting and storing data relevant to their roles. Sales teams will hold data on customers while the inventory team know how much they have left in stock. For key decision makers in the company, they will want all of this data in one central location so they can get a quick view to understand the situation and make data driven decisions. This is what ETL is for, combing data from across an organisation into one central place (often a data warehouse).
+					 </aside>
+				</section>
+				<section>
+					<!-- Slide 38a -->
+					<section data-background-image='../assets/generic/strike.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<p> Extraction is the process of gathering data from a variety of disparate sources</p>
+								<p> The extracted data is usually copied from the source, not moved </p>
+								<p> Validation occurs at this stage to ensure the data is in the correct structure and format, as well as ensuring necessary permissions have been given</p>
+								<p> The process can be continuous or done in batches </p>
+							</div>
+							<div class='col'>
+								<h1 class='current'> Extract </h1>
+								<h1 class='def'> Transform </h1>
+								<h1 class='def'> Load </h1>
+							</div>
+						</div>
+						<!-- Slide 38a Notes -->
+						<aside class='notes'>
+							The first stage in the process is extraction. This is when you identify and collect the data from all the sources you require. Note, you don't 'take' the data but a copy is made and sent to the warehouse. This means the original source is left untouched. It also means that if any changes are made to the source, these will not be reflected in the warehouse until an update is made. A consequence of this is that warehouses are static (making querying and processing quicker) but potentially out of date if the source changes (fast flowing databases like sales or inventory will change throughout the day, so ETL updates may need to happen regularly). Often when a warehouse is updated it will need to be taken 'offline' so extraction tends to happen outside of working hours to avoid disruption for users. You will validate your sources at this time to ensure they contain the correct information.
+						 </aside>
+					</section>
+					<!-- Slide 38b -->
+					<section data-background-image='../assets/generic/strike.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<p> Transformation is the process of ensuring the extracted data is in a consistent format</p>
+								<p> This can include removing null values, changing data types and ensuring field names are the same </p>
+								<p> As the extracted data is a copy, the original will remian unchanged </p>
+							</div>
+							<div class='col'>
+								<h1 class='def'> Extract </h1>
+								<h1 class='current'> Transform </h1>
+								<h1 class='def'> Load </h1>
+							</div>
+						</div>
+						<!-- Slide 38b Notes -->
+						<aside class='notes'>
+							Once the data has been pulled to the warehouse it is time to transform it. This means all the data needs to be in the same consistent format- data types need to be the same, null values should be removed and column names should be consistent (especially if they appear in more than one source- more on this in our next module). Note, as the data is copied from the source, the original data is unchanged by this process.
+						 </aside>
+					</section>
+					<!-- Slide 38c -->
+					<section data-background-image='../assets/generic/strike.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<p> Loading is the process of joining the transformed data together into a single unified view (called the target) </p>
+								<p> Data verification is undertaken post loading to ensure the combined data is accurate and fulfils the necessary business requirements </p>
+								<p> With 'Big Data' this process is done using parallel processing to manage the large volume of data being written to the system </p>
+							</div>
+							<div class='col'>
+								<h1 class='def'> Extract </h1>
+								<h1 class='def'> Transform </h1>
+								<h1 class='current'> Load </h1>
+							</div>
+						</div>
+						<!-- Slide 38c Notes -->
+						<aside class='notes'>
+							Finally, once the data is in a consistent format it is time to join it all together into one table. At this point you will verify that the data stored is correct and useful for the purposes you require. A few things to note, with large voluminous (and potentially fast flowing) data this process may be more cost effective to be run using a Big Data technology which uses a form of parallel processing to carry this out. As mentioned earlier, data warehouses are static and can quickly be out of date with the the original sources. It is highly likely then that an ETL process will be carried out regularly to ensure decision makers always have access to the latest data.
+						 </aside>
+					</section>
+				</section>
+				<!-- Slide 39 -->
+				<section data-background-image='../assets/generic/solution.PNG'>
+					<div class='row'>
+						<div class='col'>
+							<h1 style='color:#59d8a1'> a </h1>
+							<h1 class='def'> Benefits </h1>
+						</div>
+						<div class='col'>
+							<p> Allows for a unified view of data that is otherwise spread out across an organisation <p>
+							<p> Ensures data consistency across an organisation allowing for missing data and errors to be identified throughout a pipeline </p>
+							<p> Encourages collaboration across teams </p>
+							<p> Better business intelligence and insights for making decisions through greater data availability </p>
+						</div>
+					</div>
+					<!-- Slide 39 Notes -->
+					<aside class='notes'>
+						The benefits of ETL are that data from across a business can be stored in one central location allowing key decision makers to make data driven decisions quickly. It also allows for teams across a business to collaborate and share their data (sales teams acting on the advice of their inventory/data teams). It also means different teams are using consistent formats allowing for errors to be quickly identified and fixed.
+					 </aside>
+				</section>
+				<section>
+				<!-- Slide 40a -->
+					<section data-background-image='../assets/generic/main.PNG'>
+						<h1> Information Structure and Rules </h1>
+						<br>
+						<p> Data integration activities for data warehouses requires that you follow some basic rules:
+						<ul style='display:inline-block;text-align:left'>
+							<li> Security policies must be specified by organisations providing data sources to <b class='objective'>prevent data leakage and unauthorised access</b></li>
+							<li> <b class='objective'>Access layers</b> (e.g. networks, firewalls, servers, etc) between sources and targets should be properly configured (especially of data is sourced externally)</li>
+							<li> Integrated data should be <b class='objective'>immutable</b>- you should not be able to change the data once it is stored in the unified view</li>
+							<li> <b class='objective'>Validation checks</b> should be carried out during ETL:
+								<ul style='display:inline-block;text-align:left'>
+									<li> Source and target table structures and data types should be <b class='objective'>consistent</b></li>
+									<li> <b class='objective'>Column names</b> should be the same as defined by a mapping document </li>
+								</ul>
+							</li>
+						</ul>
+						<!-- Slide 40a Notes -->
+						<aside class='notes'>
+							With ETL, it is important you follow certain rules to ensure the process runs smoothly and safely- you don't want incorrect data being fed to key decision makers... 
+						 </aside>
+					</section>
+					<!-- Slide 40b -->
+					<section data-background-image='../assets/generic/main.PNG'>
+						<h1> Information Structure and Rules </h1>
+						<br>
+						<p> Data integration activities for data warehouses requires that you follow some basic rules:
+						<ul style='display:inline-block;text-align:left'>
+							<li> <b class='objective'>Verification</b> is also carried out on the target:
+								<ul style='display:inline-block;text-align:left'>
+									<li> Verify that the data is <b class='objective'>accurate</b></li>
+									<li> Verify the data is the <b class='objective'>'right' data</b> to be stored in the target</li>
+									<li> Verify the data has <b class='objective'>not been duplicated</b></li>
+								</ul>
+							</li>
+						</ul>
+						<!-- Slide 40b Notes -->
+						<aside class='notes'>
+							A possible project for your portfolio could be to build a data warehouse or pipeline for someone in your business. If this is the case, make sure you capture the business requirements clearly before beginning. This way you can guide the process precisely and be able to verify at the end if you have met the requirements of the stakeholder.
+						 </aside>
+					</section>
+				</section>
