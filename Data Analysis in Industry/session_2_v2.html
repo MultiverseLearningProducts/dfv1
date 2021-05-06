@@ -1400,38 +1400,69 @@
 						We have discussed what our data might look like, where it is stored and how we can access it. The next part of data classification is checking its quality- how useful, clean and truthful it is. Can anyone think of factors that might lower our quality of data?
 					</aside>
 				</section>
-				<!-- Slide 34 -->
-        <section data-background-image='../assets/generic/table_back.PNG'>
-          <table style="table-layout: fixed; width: 100%;border-collapse: collapse;">
-            <tr>
-              <td style="width:25%;border: none"><img src='assets/session_2/accuracy.PNG'></td>
-              <td style="width:25%;border: none"><img src='assets/session_2/completeness.PNG'></td>
-              <td style="width:25%;border: none"><img src='assets/session_2/consistency.PNG'></td>
-							<td style="width:25%;border: none"><img src='assets/session_2/uniqueness.PNG'></td>
-							<td style="width:25%;border: none"><img src='assets/session_2/timeliness.PNG'></td>
-            </tr>
-            <tr>
-              <td style="width:25%;border: none"> <b>Accuracy</b></td>
-              <td style="width:25%;border: none"> <b>Complete</b></td>
-              <td style="width:25%;border: none"> <b>Consistency</b></td>
-							<td style="width:25%;border: none"> <b>Uniqueness</b></td>
-							<td style="width:25%;border: none"> <b>Timeliness</b></td>
-            </tr>
-          </table>
-          <!-- Slide 34 Notes -->
-          <aside class='notes'>
-            When talking about data quality we think of these five areas:<br>
-						<ul>
-							<li> Accuracy- how accurate (correct) is your data? Are names spelled correctly? Are values accurate? </li>
-							<li> Completeness- Is all the data present? Are there missing values? Do the field names make sense? </li>
-							<li> Consistency- Is there a consistent format throughout? Including, currency, data types, units, etc. Are there any outliers? </li>
-							<li> Uniqueness- Is each record unique? Are there any duplicate values? Are real world entities represented more than once (e.g. apple and Apple)?</li>
-							<li> Timeliness- Is the data up to date? Your data should be current with respect to the needs of the business </li>
-						</ul>
-						<br>
-						When writing up your portfolio you must demonstrate and discuss the steps you took to inspect and if necessary, clean the data to ensure it was of the highest quality for your analysis. We will cover practical examples of this in our technical bootcamps.
-          </aside>
-        </section>
+				<section>
+					<!-- Slide 34a -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<table style="table-layout: fixed; width: 100%;border-collapse: collapse;">
+							<tr>
+								<td style="width:25%;border: none"><img src='assets/session_2/accuracy.PNG'></td>
+								<td style="width:25%;border: none"><img src='assets/session_2/completeness.PNG'></td>
+								<td style="width:25%;border: none"><img src='assets/session_2/consistency.PNG'></td>
+								<td style="width:25%;border: none"><img src='assets/session_2/uniqueness.PNG'></td>
+								<td style="width:25%;border: none"><img src='assets/session_2/timeliness.PNG'></td>
+							</tr>
+							<tr>
+								<td style="width:25%;border: none"> <b>Accuracy</b></td>
+								<td style="width:25%;border: none"> <b>Complete</b></td>
+								<td style="width:25%;border: none"> <b>Consistency</b></td>
+								<td style="width:25%;border: none"> <b>Uniqueness</b></td>
+								<td style="width:25%;border: none"> <b>Timeliness</b></td>
+							</tr>
+						</table>
+						<!-- Slide 34a Notes -->
+						<aside class='notes'>
+							When talking about data quality we think of these five areas:<br>
+							<ul>
+								<li> Accuracy- how accurate (correct) is your data? Are names spelled correctly? Are values accurate? </li>
+								<li> Completeness- Is all the data present? Are there missing values? Do the field names make sense? </li>
+								<li> Consistency- Is there a consistent format throughout? Including, currency, data types, units, etc. Are there any outliers? </li>
+								<li> Uniqueness- Is each record unique? Are there any duplicate values? Are real world entities represented more than once (e.g. apple and Apple)?</li>
+								<li> Timeliness- Is the data up to date? Your data should be current with respect to the needs of the business </li>
+							</ul>
+							<br>
+							When writing up your portfolio you must demonstrate and discuss the steps you took to inspect and if necessary, clean the data to ensure it was of the highest quality for your analysis. We will cover practical examples of this in our technical bootcamps.
+						</aside>
+					</section>
+					<!-- Slide 34b -->
+					<section data-background-image='../assets/generic/pentagon_jr.PNG'>
+						<div class='row'>
+							<div class='col'>
+								<h1> If you find an error... </h1>
+							</div>
+							<div class='col'>
+								<p> You should either...
+								<p class='fragment'> <b class='objective'>&rarr;</b> Correct it </p>
+								<p class='fragment'> <b class='objective'>&rarr;</b> Impute a new value </p>
+								<p class='fragment'> <b class='objective'>&rarr;</b> Remove it </p>
+								<p class='fragment'> <b class='objective'>&rarr;</b> Ignore it </p>
+							</div>
+						</div>
+						<!-- Slide 34b Notes -->
+						<aside class='notes'>
+							Often the data we recieve will not be clean, and there could be errors. What sort of errors might we come across? Missing values, corrupted data, outliers, incorrect values, wrong data types, etc. Generally when we come across a problem there three things we can do. We can correct the error, finding the correct value or fixing the mistake. We could impute a new value (replace the erroneous data with 0, or with the mean/median value for that field). If we cannot correct the mistake, or find a suitable value to replace it, you could remove the data point but this should only be done with caution as this could be difficult to undo. Another option would be to ignore the problem if you feel it won't affect your work, or if the error means something which should be investigated
+						 </aside>
+					</section>
+					<!-- Slide 34c -->
+					<section data-background-image='../assets/generic/box_serious.PNG'>
+						<div class="wrap size-50 aligncenter">
+							<span style ='font-size:50px;font-weight:bold;text-align:center'> Whatever the issue, you must ensure that a <b class='objective'>solution for the true root cause</b> is identified to <b class='objective'>prevent recurrence</b> </span>
+						</div>
+						<!-- Slide 34c Notes -->
+						<aside class='notes'>
+							Whatever the issue is, whether it is unclean data, or a failure in the database itself, you must demonstrate that you have found a solution to the true root cause. For example, if the data is corrupted when you receive it, it is possible there is something wrong in the database. You should contact the database administrator so they can fix it. If you are collecting the data yourself and feeding it into a pipeline, you need to put into place checks to ensure high data quality and put in safeguards to protect corruption or erroneous data.
+						 </aside>
+					</section>
+				</section>
 				<!-- Slide 35 -->
 				<section data-background-image='../assets/generic/problem.PNG'>
 					<div class='row'>
