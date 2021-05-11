@@ -324,11 +324,262 @@
 					</section>
 					<section>
 						<!-- Slide 11a -->
-						<section data-background-image='../assets/generic/main.PNG'>
-							<img src='assets/session_1/rdbms_ex.PNG'>						
+						<section data-background-image='../assets/generic/table_back.PNG'>
+							<h1> The Relational Model </h1>
+							<div class='row'>
+								<div class='col'>
+									<table style='text-align:center'>
+										<caption style="caption-side:bottom"> Employee </caption>
+										<tr>
+											<th style='text-align:center'> emp_id </th>
+											<th style='text-align:center'> emp_name </th>
+											<th style='text-align:center'> dpt_id </th>
+										</tr>
+										<tr>
+											<td> 111 </td>
+											<td> Alex </td>
+											<td> 10 </td>
+										</tr>
+										<tr>
+											<td> 112 </td>
+											<td> Liz </td>
+											<td> 20 </td>
+										</tr>
+										<tr>
+											<td> 113 </td>
+											<td> Joshua </td>
+											<td> 10 </td>
+										</tr>
+										<tr>
+											<td> 114 </td>
+											<td> Zoe </td>
+											<td> NULL </td>
+										</tr>
+									</table>
+								</div>
+								<div class='col'>
+									<table style='text-align:center'>
+										<caption style="caption-side:bottom"> Department </caption>
+										<tr>
+											<th style='text-align:center'> dpt_id </th>
+											<th style='text-align:center'> dpt_name </th>
+										</tr>
+										<tr>
+											<td> 10 </td>
+											<td> Sales </td>
+										</tr>
+										<tr>
+											<td> 20 </td>
+											<td> HR </td>
+										</tr>
+										<tr>
+											<td> 30 </td>
+											<td> Operations </td>
+										</tr>
+									</table>
+								</div>
+							</div>
 							<!-- Slide 11a Notes-->
 							<aside class='notes'>
-								An example of a RDBMS- each table holds relevant information to itself while related info is stored in a different table as defined by the relationships. For each linked table there is a field that is common to both (point out a few examples). Note, a common field may have different names in the two tables (shipVia in Orders will be the same as companyName in Shippers).
+								The relational model starts with named 'relations', which are sometimes referred to as tables. Each relation holds only relevant information. In this example we have two relations- a list of employees and the departments they work in.
+							</aside>
+						</section>
+						<!-- Slide 11b -->
+						<section data-background-image='../assets/generic/table_back.PNG'>
+							<h1> The Relational Model </h1>
+							<div class='row'>
+								<div class='col'>
+									<table style='text-align:center'>
+										<caption style="caption-side:bottom"> Employee </caption>
+										<tr>
+											<th style='text-align:center'> emp_id </th>
+											<th style='text-align:center;background-color:#ffe352'> emp_name </th>
+											<th style='text-align:center'> dpt_id </th>
+										</tr>
+										<tr>
+											<td> 111 </td>
+											<td style='background-color:#ffe352'> Alex </td>
+											<td> 10 </td>
+										</tr>
+										<tr>
+											<td> 112 </td>
+											<td style='background-color:#ffe352'> Liz </td>
+											<td> 20 </td>
+										</tr>
+										<tr>
+											<td> 113 </td>
+											<td style='background-color:#ffe352'> Joshua </td>
+											<td> 10 </td>
+										</tr>
+										<tr>
+											<td> 114 </td>
+											<td style='background-color:#ffe352'> Zoe </td>
+											<td> NULL </td>
+										</tr>
+									</table>
+								</div>
+								<div class='col'>
+									<table style='text-align:center'>
+										<caption style="caption-side:bottom"> Department </caption>
+										<tr>
+											<th style='text-align:center'> dpt_id </th>
+											<th style='text-align:center;background-color:#ffe352'> dpt_name </th>
+										</tr>
+										<tr>
+											<td> 10 </td>
+											<td style='background-color:#ffe352'> Sales </td>
+										</tr>
+										<tr>
+											<td> 20 </td>
+											<td style='background-color:#ffe352'> HR </td>
+										</tr>
+										<tr>
+											<td> 30 </td>
+											<td style='background-color:#ffe352'> Operations </td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<!-- Slide 11b Notes-->
+							<aside class='notes'>
+								Each relation has a set of named attributes, or columns, which tells us what is contained within each record of the table (name, address, size, id, etc). Each attribute has a type (or domain) which tells us what sort of data it is (string/character, number, boolean, etc). In this example we know the name, id and department for every employee and also what each department is. 
+							</aside>
+						</section>
+						<!-- Slide 11c -->
+						<section data-background-image='../assets/generic/table_back.PNG'>
+							<h1> The Relational Model </h1>
+							<div class='row'>
+								<div class='col'>
+									<table style='text-align:center'>
+										<caption style="caption-side:bottom"> Employee </caption>
+										<tr>
+											<th style='text-align:center'> emp_id </th>
+											<th style='text-align:center'> emp_name </th>
+											<th style='text-align:center'> dpt_id </th>
+										</tr>
+										<tr>
+											<td style='background-color:#ffe352'> 111 </td>
+											<td style='background-color:#ffe352'> Alex </td>
+											<td style='background-color:#ffe352'> 10 </td>
+										</tr>
+										<tr>
+											<td> 112 </td>
+											<td> Liz </td>
+											<td> 20 </td>
+										</tr>
+										<tr>
+											<td> 113 </td>
+											<td> Joshua </td>
+											<td> 10 </td>
+										</tr>
+										<tr>
+											<td> 114 </td>
+											<td> Zoe </td>
+											<td> NULL </td>
+										</tr>
+									</table>
+								</div>
+								<div class='col'>
+									<table style='text-align:center'>
+										<caption style="caption-side:bottom"> Department </caption>
+										<tr>
+											<th style='text-align:center'> dpt_id </th>
+											<th style='text-align:center'> dpt_name </th>
+										</tr>
+										<tr>
+											<td> 10 </td>
+											<td> Sales </td>
+										</tr>
+										<tr>
+											<td style='background-color:#ffe352'> 20 </td>
+											<td style='background-color:#ffe352'> HR </td>
+										</tr>
+										<tr>
+											<td> 30 </td>
+											<td> Operations </td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<!-- Slide 11c Notes-->
+							<aside class='notes'>
+								Each tuple (or row) is a record, which shows the values for each attribute. Each row contains information about a different data point (employee, department, product, etc). In this example we know who several of our employees are and where they work. Typically a table will store hundreds, if not thousands, of tuples with one for each instance.
+							</aside>
+						</section>
+						<!-- Slide 11d -->
+						<section data-background-image='../assets/generic/table_back.PNG'>
+							<h1> The Relational Model </h1>
+							<div class= 'r-stack'>
+								<p class='fragment fade-out'> <b class='objective'> Schema: </b> A Structural description of relations in a database </p>
+								<p class='fragment fade-in-then-out'> <b class='objective'> Instance: </b> Actual contents at a given point in time </p>
+								<p class='fragment'> <b class='objective'> NULL: </b> A special value for "unknown" or "undefined" </p>
+							</div>
+							<div class='row'>
+								<div class='col'>
+									<table style='text-align:center'>
+										<caption style="caption-side:bottom"> Employee </caption>
+										<tr>
+											<th style='text-align:center'> emp_id </th>
+											<th style='text-align:center'> emp_name </th>
+											<th style='text-align:center'> dpt_id </th>
+										</tr>
+										<tr>
+											<td> 111 </td>
+											<td> Alex </td>
+											<td> 10 </td>
+										</tr>
+										<tr>
+											<td> 112 </td>
+											<td> Liz </td>
+											<td> 20 </td>
+										</tr>
+										<tr>
+											<td> 113 </td>
+											<td> Joshua </td>
+											<td> 10 </td>
+										</tr>
+										<tr>
+											<td> 114 </td>
+											<td> Zoe </td>
+											<td> NULL </td>
+										</tr>
+									</table>
+								</div>
+								<div class='col'>
+									<table style='text-align:center'>
+										<caption style="caption-side:bottom"> Department </caption>
+										<tr>
+											<th style='text-align:center'> dpt_id </th>
+											<th style='text-align:center'> dpt_name </th>
+										</tr>
+										<tr>
+											<td> 10 </td>
+											<td> Sales </td>
+										</tr>
+										<tr>
+											<td> 20 </td>
+											<td> HR </td>
+										</tr>
+										<tr>
+											<td> 30 </td>
+											<td> Operations </td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<!-- Slide 11d Notes-->
+							<aside class='notes'>
+								A few more bits of termninology you may come across. A schema describes the overall structure of a database, telling us what the relations are and what attributes are contained. An instance is the actual contents of a table at a given point in time. Some relations in a RDBMS are updated constantly, so an instance is a snapshot for when you want to do some analysis. Finally, you may come across null values. We will explain how to deal with these in our analysis in future sessions, but for now, understand that if there is a null present it is because the value is unknown- either because it was not entered or it does not exist (or it was corrupted).
+							</aside>
+						</section>
+					</section>
+					<section>
+						<!-- Slide 12a -->
+						<section data-background-image='../assets/generic/main.PNG'>
+							<img src='assets/session_1/rdbms_ex.PNG'>						
+							<!-- Slide 12a Notes-->
+							<aside class='notes'>
+								This is a visual representation of a database where you can see all the different relations and what their attributes are. You can also see how the different tables relate to each other (i.e. where they are connected).
 							</aside>
 						</section>
 						<!-- Slide 11b -->
@@ -361,13 +612,13 @@
 									<td> 01302339188 </td>
 								</tr>
 							</table>		
-							<!-- Slide 11b Notes-->
+							<!-- Slide 12b Notes-->
 							<aside class='notes'>
-								Within each table are the records and so for the shippers table you can see each company used and the contact information for them. This is essentially how a RDBMS works, several interlinked tables containing relevant information. The defined relationships allow the tables to be joined (via SQL queries, VLOOKUP, pandas, etc) so information can be combined to leverage useful insights.
+								Within each table are the records, for the shippers table you can see each company used and their contact information. This is essentially how a RDBMS works, several interlinked tables containing relevant information. The defined relationships allow the tables to be joined (via SQL queries, VLOOKUP, pandas, etc) so information can be combined to leverage useful insights.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 12 -->
+					<!-- Slide 13 -->
 					<section data-background-image='../assets/generic/problem.PNG'>
 						<div class='row'>
 							<div class='col'></div>
@@ -375,17 +626,17 @@
 								<h1 style='color:#ff7c66'> The Alternative...</h1>
 							</div>
 						</div>
-						<!-- Slide 12 Notes-->
+						<!-- Slide 13 Notes-->
             <aside class='notes'>
 							Let's imagine what a world without RDBMS looks like...
             </aside>
 					</section>
-					<!-- Slide 13 -->
+					<!-- Slide 14 -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<div class='r-stack'>
 							<p class='fragment fade-in-then-out' style='color:#ff7c66;font-size:2em;'> Difficult to insert new data </p>
 							<p class='fragment fade-in-then-out' style='color:#ff7c66;font-size:2em;'> Cannot modify existing data </p>
-							<p class='fragment fade-in-then-out' style='color:#ff7c66;font-size:2em;'> Cannot delete information </p>
+							<p class='fragment' style='color:#ff7c66;font-size:2em;'> Cannot delete information </p>
 						</div>
 						<table style='font-size:10px'>
 							<tr>
@@ -473,23 +724,23 @@
 								<td> Facebook </td>
 							</tr>
 						</table>
-						<!-- Slide 13 Notes-->
+						<!-- Slide 14 Notes-->
 						<aside class='notes'>
-							A table showing information on coaches and their apprentices would be huge with lots of repeated and redundant information. Ask the apprentices to spot issues and potential pain points. Note how many times each coach is mentioned and the information specific to them (like the number of cohorts they have or who their assisstant is). You know that Steph has 5 cohorts and works with Ashray from the first row, you don't need that information in subsequent rows. But because it is, that is memory space being used which will slow down your queries and hold up your analysis. Also, imagine Steph's assistant changed- you would have to search through the whole table to find where updates are needed. If the assisstant info was stored in a different table then it would be much easier to update. Other difficulties include adding new data (you would need an apprentice to be assigned a cohort and coach before they can be added), difficulty editing info (imagine having to change a coach for thousands of rows...) and deleting information (if there is only one instance of an employer and that apprentice leaves before another is enrolled, you would lose that info when the row is deleted).
+							A table showing information on coaches and their apprentices would be huge with lots of repeated and redundant information. Ask the apprentices to spot issues and potential pain points. Note how many times each coach is mentioned and the information specific to them (like the number of cohorts they have or who their assisstant is). You know that Steph has 5 cohorts and works with Ashray from the first row, you don't need that information in subsequent rows. But because it is, that is memory space being used which will slow down your queries and hold up your analysis. Also, imagine Steph's assistant changed- you would have to search through the whole table to find where updates are needed. If the assisstant info was stored in a different table then it would be much easier to update. Other difficulties include adding new data (you would need an apprentice to be assigned a cohort and coach before they can be added), difficulty editing info (imagine having to change a coach for thousands of rows...) and deleting information (if there is only one instance of an employer and that apprentice leaves before another is enrolled, you would lose that info when the row is deleted). 
 						</aside>
 					</section>
-					<!-- Slide 14 -->
+					<!-- Slide 15 -->
           <section data-background-image='../assets/generic/section.PNG'>
             <div class="wrap aligncenter">
               <span class='title'> Keys</span>          
             </div>
-            <!-- Slide 14 Notes-->
+            <!-- Slide 15 Notes-->
             <aside class='notes'>
               We have discussed what a RDBMS is and that for the tables stored within there are defined relationships between them. But how are these relationships defined, the 'key' is keys...
             </aside>
           </section>
 					<section>
-						<!-- Slide 15a -->
+						<!-- Slide 16a -->
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<h1> Primary Key </h1>
 						  <p> A unique identifier for each <b class='objective'>row in a table </b></p>
@@ -514,12 +765,12 @@
 									<td> Ashray </td>
 								</tr>
 							</table>
-							<!-- Slide 15a Notes-->
+							<!-- Slide 16a Notes-->
 							<aside class='notes'>
 								Keys are how relationships are defined between tables and there exists a few different types. The first is the primary key which is a unique identifier for each row in a table such that you can access any record by referencing this value. A key cannot be repeated and must be unique for each record. Often this will be the first column and will be an integer (but not always...). Every table in a RDBMS must have a primary key.
 							</aside>
 						</section>
-						<!-- Slide 15b -->
+						<!-- Slide 16b -->
 						<section data-background-image='../assets/generic/pentagon_jr.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -532,13 +783,13 @@
 									<p> ...given a new value when a new record is created </p>
 								</div>
 							</div>
-							<!-- Slide 15b Notes-->
+							<!-- Slide 16b Notes-->
 							<aside class='notes'>
 								A few rules about primary keys, they must hold a value (not null), each value must be unique to each record, they should rarely be changed and whenever a new record is added a key should be assigned.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 16 -->
+					<!-- Slide 17 -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<h1> Foreign Key </h1>
 						<p> A field in one table that is a primary key in <b class='objective'> another table </b>. These keys enable relationships between tables and allow them to be joined.</p>
@@ -597,12 +848,12 @@
 								</table>
 							</div>
 						</div>
-						<!-- Slide 16 Notes-->
+						<!-- Slide 17 Notes-->
             <aside class='notes'>
 							A foreign key is a field that points to a primary key in another table. In this example each apprentice is assigned a coach who is identified by their ID. This value is the primary key for the coach in the coach_table. The foreign key establishes the relationship between the two tables.
             </aside>
 					</section>
-					<!-- Slide 17 -->
+					<!-- Slide 18 -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<h1> Composite Key </h1>
 						<p> Two or more columns together acting as a <b class='objective'> primary key </b> </p>
@@ -639,12 +890,12 @@
 								<td> 2 </td>
 							</tr>
 						</table>
-						<!-- Slide 17 Notes-->
+						<!-- Slide 18 Notes-->
             <aside class='notes'>
 							What happens though if it is impossible to give each row in a table a unique identifier? For example, when scanning items through a checkout at a supermarket, each item will require its own row in a table (to record price and other product info) but will be part of the same transaction, so will have the same ID. This is where a composite key is used. When two fields together uniquely identify a record, you have a composite key. In this example, each apprentice and module will appear several times, but the combination of each will be unique to each row. 
             </aside>
 					</section>
-					<!-- Slide 18 -->
+					<!-- Slide 19 -->
 					<section data-background-image='../assets/generic/tweenies.PNG'>
 						<div class='row'>
 							<div class='col'></div>
@@ -659,12 +910,12 @@
 								</ul>
 							</div>
 						</div>
-						<!-- Slide 18 Notes-->
+						<!-- Slide 19 Notes-->
             <aside class='notes'>
 							Apprentices should click on the link to see the table. They don't need to build tables but identify how many are needed and what the keys would be. Give 5-8 minutes for the activity and 2 for feedback
             </aside>
 					</section>
-					<!-- Slide 19 -->
+					<!-- Slide 20 -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<table>
 							<tr>
@@ -700,32 +951,34 @@
 								</td>
 							</tr>
 						</table>
-						<!-- Slide 19 Notes-->
+						<!-- Slide 20 Notes-->
             <aside class='notes'>
 							Probably needs to be three tables as shown on the page. Discuss with apprentices if they agree with this, and if not what changes they would make. 
             </aside>
 					</section>
-					<!-- Slide 20 -->
+					<!-- Slide 21 -->
 					<section data-background-image='../assets/generic/section.PNG'>
             <div class="wrap aligncenter">
               <span class='title'> Normalisation</span>          
             </div>
-						<!-- Slide 20 Notes-->
+						<!-- Slide 21 Notes-->
             <aside class='notes'>
 							How do you build a RDBMS? You have your data in one table but it isn't efficient, this section will guide you through the process of normalising a table so it becomes a RDBMS.
             </aside>
 					</section>
-					<!-- Slide 21 -->
-					<section data-background-image='../assets/generic/fun_box.PNG'>
-						<div class="aligncenter">
-							<span style ='color:#4d61f4;font-size:60px;font-weight:bold;text-align:center'> 
-								Normalisation is the process of structuring a database to reduce data redundancy and improve data integrity.
-							</span>
-						</div>
-						<!-- Slide 21 Notes-->
-            <aside class='notes'>
-							Essentially, normalisation is how you build a relational deatabase.
-            </aside>
+					<section>
+						<!-- Slide 22a -->
+						<section data-background-image='../assets/generic/fun_box.PNG'>
+							<div class="aligncenter">
+								<span style ='color:#4d61f4;font-size:60px;font-weight:bold;text-align:center'> 
+									Normalisation is the process of structuring a database to reduce data redundancy and improve data integrity.
+								</span>
+							</div>
+							<!-- Slide 22a Notes-->
+							<aside class='notes'>
+								Normalising a database is the process we use to create a relational database.
+							</aside>
+						</section>
 					</section>
 					<!-- Slide 22 -->
 					<section data-background-image='../assets/generic/circle_remix.PNG'>
