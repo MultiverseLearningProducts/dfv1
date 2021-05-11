@@ -26,7 +26,7 @@
         <nav role="navigation" style='align:left'>
           <ul>
             <li class="applied">
-              <a href="https://platform.multiverse.io" title="Applied" target='_blank'>
+              <a href="https://applied.multiverse.io/totara/dashboard/index.php" title="Applied" target='_blank'>
                 <p style='font-family:atlas;color:#f4f4f4'><strong>Applied</strong></p>
               </a>
             </li>
@@ -66,11 +66,11 @@
 						<ul style='list-style-type:none;font-size:15px'>
 							<li><a href='#/4'> Introduction to Databases </a></li>
 							<li><a href='#/9'> Relational Databases </a> </li>
-							<li><a href='#/14'> Keys </a> </li>
-							<li><a href='#/20'> Normalisation </a> </li>
-							<li><a href='#/37'> NoSQL </a> </li>
-							<li><a href='#/44'> Other Types of Database </a> </li>
-							<li><a href='#/47'> Recap </a> </li>
+							<li><a href='#/15'> Keys </a> </li>
+							<li><a href='#/21'> Normalisation </a> </li>
+							<li><a href='#/38'> NoSQL </a> </li>
+							<li><a href='#/45'> Other Types of Database </a> </li>
+							<li><a href='#/48'> Recap </a> </li>
 						</ul>
 					</div>
 					<!-- Slide 2 Notes -->
@@ -2754,41 +2754,41 @@
 								There are 4 types of NoSQL database we will be looking at today. The first is the DOD, one of the most common types. Instead of storing the information across multiple tables like a RDBMS, you wrap the data in a document and reference the internal structure to access the data you want. The documents themselves are stored in collections (a collection is like a table where similar documents are stored together). A document can contain any type of data. Instead of using SQL, you would use languages like XML or JSON to retreive the information through an API. To access information from a DOD you just need to reference the document, as opposed to a RDBMS where you have to reference the keys.
 							</aside>
 						</section>
-						<!-- Slide 39b -->
+						<!-- Slide 40b -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<div class='row'>
 								<div class='col'>
 									<h2> JSON </h2>
-									<pre><code data-trim data-noescape>
-									{
-										contact{
-											"firstname":"Bob",
-											"lastname":"Smith",
-											"address":"5 Oak St",
-											"number":"07464998651"
-											}
+									<p style='text-align:left'>
+										{<br>
+										&nbsp;&nbsp;contact{<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;"firstname":"Bob",<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;"lastname":"Smith",<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;"address":"5 Oak St",<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;"number":"07464998651"<br><br>
+										&nbsp;&nbsp;}<br>
 										}
-									</code></pre>
+									</p>
 								</div>
 								<div class='col'>
 									<h2> XML </h2>
-									<pre><code data-trim data-noescape>
-									<contact>
-										<firstname> Bob </firstname>
-										<lastname> Smith </lastname>
-										<address> 5 Oak St </address>
-										<number> 07464998651 </number>
-									</contac>
-									</code></pre>
+									<p style='text-align:left'>
+										<span style='color:#59d8a1'>&#60;contact&#62;</span><br>
+										&nbsp;&nbsp;<span style='color:#59d8a1'>&#60;firstname&#62;</span>Bob<span style='color:#59d8a1'>&#60;/firstname&#62;</span><br>
+										&nbsp;&nbsp;<span style='color:#59d8a1'>&#60;lastname&#62;</span>Smith<span style='color:#59d8a1'>&#60;/lastname&#62;</span><br>
+										&nbsp;&nbsp;<span style='color:#59d8a1'>&#60;adress&#62;</span>5 Oak St<span style='color:#59d8a1'>&#60;/address&#62;</span><br>
+										&nbsp;&nbsp;<span style='color:#59d8a1'>&#60;number&#62;</span>07464998651<span style='color:#59d8a1'>&#60;/hobby&#62;</span><br>
+										<span style='color:#59d8a1'>&#60;/contact&#62;</span>
+									</p>
 								</div>
 							</div>
-							<!-- Slide 39b Notes-->
+							<!-- Slide 40b Notes-->
 							<aside class='notes'>
 								A JSON can be thought of as a dictionary of dictionaries (dictionaries are represented by curly brackets). You can see the contact document is wrapped in the bigger collection. XML is a markup language where the data is tagged. You can see the contact document wraps all the information for Mr Smith. The advnatged of a DOD over a RDBMS is that all the information is stored in one place (a document) reducing the need for mapping or joins allowing you to process the data faster.  
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 40 -->
+					<!-- Slide 41 -->
 					<section data-background-image='../assets/generic/main.PNG'>
 						<h1> Key Value Database </h1>
 						<div class='row'>
@@ -2800,12 +2800,12 @@
 								<img src='assets/session_1/key_value.PNG'>
 							</div>
 						</div>
-						<!-- Slide 40 Notes-->
+						<!-- Slide 41 Notes-->
 						<aside class='notes'>
 							The simplest type of NoSQL (and a DOD is actually a subset of this) where the information is mapped to a key (like a RDBMS). To retrieve the information, all you need is the key. All the data is stored in one central location (unlike a DOD where it is stored in collections) and any type of data can be stored. Think of Spotify, where all the music will be held in a database and if you want to listen to something you just select the key (which the software will do for you). As these databases do not use SQL, key management is very important and many key value databases incorporate search functions to help you find keys. 
 						</aside>
 					</section>
-					<!-- Slide 41 -->
+					<!-- Slide 42 -->
 					<section data-background-image='../assets/generic/main.PNG'>
 						<h1> Columnar Database </h1>
 						<div class='row'>
@@ -2817,13 +2817,13 @@
 								<img src='assets/session_1/row.PNG'>
 							</div>
 						</div>
-						<!-- Slide 41 Notes-->
+						<!-- Slide 42 Notes-->
 						<aside class='notes'>
 							A columnar database stores data in columns, not rows but in many ways function like a RDBMS. They often can be queried using SQL but the difference is that the data can be accessed more precisely as you are only referencing the columns, not scanning through each row. In a row orientated database (like a RDBMS) you assign a row an id (primary key), and when you query, you scan through each row sequentially until you retrieve the information you need. However, this can be inefficient as it will scan each field in each record as well, even when you are applying a filter. A column orientated database applies a key to each item in a row, so when you write a query, it will only scan through the columns you have selected and retrieve the relevant information. This can drastically reduce the amount of time it takes a query to run. Note however, that this process runs each column seperately, so if you are wanting to query multiple columns it may be quicker to use a row orientated database.
 						</aside>
 					</section>
 					<section>
-						<!-- Slide 42a -->
+						<!-- Slide 43a -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<h1> Graph Database </h1>
 							<div class='row'>
@@ -2836,12 +2836,12 @@
 									<img src='assets/session_1/graph.PNG'>
 								</div>
 							</div>
-							<!-- Slide 42a Notes-->
+							<!-- Slide 43a Notes-->
 							<aside class='notes'>
 								A graph database uses graph structures (nodes, edges and properties) to query data. In these types of databases, information is stored in nodes where each node is a datapoint (a customer, product, group, etc- basically a record in a RDBMS). The edges define the relationships between nodes (customer A bought these products, client B is a member of these groups, etc). Relationships are considered top priority, whereas in a RDBMS the relationships are only defined when a JOIN is made. Querying is fast because the relationships have already been defined. An advantage of these types of databases is that data can be interpreted differently depending on how you utilise the edges (retrieve info per product, salesperson, company, date, etc). To retrieve information, you select a node and it will return all the associated information through its pre defined relationships.
 							</aside>
 						</section>
-						<!-- Slide 42b -->
+						<!-- Slide 43b -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<h1> Graph Database </h1>
 							<div class='row'>
@@ -2854,36 +2854,36 @@
 									<img src='assets/session_1/graph.PNG'>
 								</div>
 							</div>
-							<!-- Slide 42b Notes-->
+							<!-- Slide 43b Notes-->
 							<aside class='notes'>
 								There is no one language for these types of databases as each software will likely use their own. Crucially, a node can hold any type of data, structured on unstructured. Consider Spotify again, each node may be a song which is related to albums, artists and playlists (all of which will be nodes as well). When you want to know all of the songs by a particular artist, you select that node and all the connected songs will be retrieved as well. As there is no need for indexing, there is no need for the software to search and will just pull anything that is already connected making data retrieval faster. Another example is Facebook where each user is a node, connected to other users (friends) and groups they are members of.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 43 -->
+					<!-- Slide 44 -->
 					<section data-background-image='../assets/generic/main.PNG'>
 						<h1> Key Features </h1>
 						<br>
 						<p class='fragment'><b class='objective'>No Fixed Schema</b> - They do not have to follow historical rules making them more flexible</p>
 						<p class='fragment'><b class='objective'>No Joins</b> - NoSQL databases tend to store data in one large table, taking advantage of cheaper storage and faster processing where redundant data is no longer such a big issue</p>
 						<p class='fragment'><b class='objective'>Size and Scale</b> - No defined limits allows them to scale according to the resources available</p>
-						<!-- Slide 43 Notes-->
+						<!-- Slide 44 Notes-->
 						<aside class='notes'>
 							The key features of a NoSQL database is that they do not have to conform to strict design structures (a RDBMS has to be a tabular format with keys), they do not require joins as either the data is held in one location or the relationships have been pre defined. This removed redundant data, making storage cheaper and processing faster. And with no limits, there are better opportunities to build larger databases.
 						</aside>
 					</section>
-					<!-- Slide 44 -->
+					<!-- Slide 45 -->
 					<section data-background-image="../assets/generic/section.PNG">
 						<div class="wrap aligncenter">
 							<span class='title'> Other Types of Database</span>          
 						</div>
-						<!-- Slide 44 Notes -->
+						<!-- Slide 45 Notes -->
 						<aside class='notes'>
 							Before we wrap up, let's look briefly at other types of database you may come across. RDBMS and NoSQL are the msot common, but there are others...
 						</aside>
 					</section>
 					<section>
-						<!-- Slide 45a -->
+						<!-- Slide 46a -->
 						<section data-background-image="../assets/generic/table_back.PNG">
 							<table>
 								<tr>
@@ -2897,12 +2897,12 @@
 									<td> This is the most common form of database. It contains tables that can be joined to other tables through their relations. Normalisation is a key part of relational databases. </td>
 								</tr>
 							</table>
-							<!-- Slide 45a Notes -->
+							<!-- Slide 46a Notes -->
 							<aside class='notes'>
 								We have already seen the RDBMS today, where data is stored across multiple tables and joined together by referencing the keys. A very common database type which you will likely use in your role with SQL.
 							</aside>
 						</section>
-						<!-- Slide 45b -->
+						<!-- Slide 46b -->
 						<section data-background-image="../assets/generic/table_back.PNG">
 							<table>
 								<tr>
@@ -2916,20 +2916,20 @@
 									<td> Data is stored in a parent-children relationship nodes, in a tree like structure. The data is stored as a collection of fields where each field contains only one value. The records are linked to each other via a parent-children relationship. In a hierarchical database model, each child record has only one parent. A parent can have multiple children. To retrieve a field’s data, we need to traverse through each tree until the record is found. </td>
 								</tr>
 							</table>
-							<!-- Slide 45b Notes -->
+							<!-- Slide 46b Notes -->
 							<aside class='notes'>
 								The oldest type of database structure. Imagine folders on your computer, to access the information you need, you traverse through the folders going from parent to child each time. That is a hierarchical database. They are slow to traverse and are very limited.
 							</aside>
 						</section>	
-						<!-- Slide 45c -->
+						<!-- Slide 46c -->
 						<section data-background-image="../assets/generic/table_back.PNG">
 							<img src='assets/session_1/hierarchical.PNG'>
-							<!-- Slide 45c Notes -->
+							<!-- Slide 46c Notes -->
 							<aside class='notes'>
 								An example of a hierarchical database
 							</aside>
 						</section>
-						<!-- Slide 45d -->
+						<!-- Slide 46d -->
 						<section data-background-image="../assets/generic/table_back.PNG">
 							<table>
 								<tr>
@@ -2944,20 +2944,20 @@
  </td>
 								</tr>
 							</table>
-							<!-- Slide 45d Notes -->
+							<!-- Slide 46d Notes -->
 							<aside class='notes'>
 								A network database looks like a spiders web, where you will have multiple entities in a tree like structure (like hierarchical), but where children can have more than one parent. Information is still retrieved in a similar way by traversing through the network from the root. 
 							</aside>
 						</section>	
-						<!-- Slide 45e -->
+						<!-- Slide 46e -->
 						<section data-background-image="../assets/generic/table_back.PNG">
 							<img src='assets/session_1/network.PNG'>
-							<!-- Slide 45e Notes -->
+							<!-- Slide 46e Notes -->
 							<aside class='notes'>
 								An example of a network database
 							</aside>
 						</section>
-						<!-- Slide 45f -->
+						<!-- Slide 46f -->
 						<section data-background-image="../assets/generic/table_back.PNG">
 							<table>
 								<tr>
@@ -2972,20 +2972,20 @@
 									</td>
 								</tr>
 							</table>
-							<!-- Slide 45f Notes -->
+							<!-- Slide 46f Notes -->
 							<aside class='notes'>
 								A multidimensional database will look like a cube. Imagine a traditional table, but inside a cell is a wholelist of information (a 3rd dimension). These types of databases allow for very complex queries and advanced analytics as you can store and retrieve data in 3 or more dimensions. 
 							</aside>
 						</section>	
-						<!-- Slide 45g -->
+						<!-- Slide 46g -->
 						<section data-background-image="../assets/generic/table_back.PNG">
 							<img src='assets/session_1/multi.PNG'>
-							<!-- Slide 45g Notes -->
+							<!-- Slide 46g Notes -->
 							<aside class='notes'>
 								An example of a multidimensional database
 							</aside>
 						</section>
-						<!-- Slide 45h -->
+						<!-- Slide 46h -->
 						<section data-background-image="../assets/generic/table_back.PNG">
 							<table>
 								<tr>
@@ -2999,12 +2999,12 @@
 									<td> Object-oriented databases use small, recyclable separated chunks of data called objects. The objects themselves are stored in the object-oriented database. Each object contains two things: the object itself, and the metadata that explains that object, it’s purpose, what it is and where it fits in </td>
 								</tr>
 							</table>
-							<!-- Slide 45h Notes -->
+							<!-- Slide 46h Notes -->
 							<aside class='notes'>
 								Object orientated databases simply store the data in objects and information around what it is and how it is used. Python/R libraries are object orientated where you retrieve blocks of pre-written code that you can import into your workspace.
 							</aside>
 						</section>	
-						<!-- Slide 45i -->
+						<!-- Slide 46i -->
 						<section data-background-image="../assets/generic/table_back.PNG">
 							<table>
 								<tr>
@@ -3018,34 +3018,34 @@
 									<td> The ‘No’ stands for ‘Not Only’ SQL - these database seek to improve on standard SQL based DBMS by enhancing the forms of analytics available and changing the way that data is stored (no longer relational.) These databases are ideal for storing unstructured data.</td>
 								</tr>
 							</table>
-							<!-- Slide 45i Notes -->
+							<!-- Slide 46i Notes -->
 							<aside class='notes'>
 								Finally, we have NoSQL which allow for faster processing and more advanced analytics of data by storing it in different ways that remove the need for index referencing. These are ideal for unstructured data.
 							</aside>
 						</section>	
 					</section>
 					<section>
-						<!-- Slide 46a -->
+						<!-- Slide 47a -->
 						<section data-background-image="../assets/generic/box_serious.PNG">
 							<span style ='font-size:50px;width:max-content'> 
 								'Data Warehousing' is a practice in <b class='objective'>data management</b> whereby data is copied from various operational systems into a <b class='objective'>persistant data store</b> in a <b class='objective'>consistent format</b> to be used for <b class='objective'>analysis, decision making and reporting</b>. 
 							</span>	
-							<!-- Slide 46a Notes -->
+							<!-- Slide 47a Notes -->
 							<aside class='notes'>
 								You may also come across Data Watehouses in your role. These are central data repositories where information from across an organisation are stored (combined using data integration processes like ETL) where stakeholders can make data driven business decisions through the advanced analytics that are on offer. Imagine an organisation where each department has its own DBMS for their own purposes. Higher up decision makers in the company will want to see a unified view of data from across departments (compare sales and inventory for example) so they can make powerful decisions. 
 							</aside>
 						</section>
-						<!-- Slide 46b -->
+						<!-- Slide 47b -->
 						<section data-background-image="../assets/generic/main.PNG">
 							<div style="width: 640px; height: 480px; margin: 10px; position: relative;">
 								<iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embeddedchart/0b7e7655-f87a-4ada-859f-04df34f64e8f" id="lGfy493MMEW~"></iframe>
 							</div>
-							<!-- Slide 4b Notes -->
+							<!-- Slide 47b Notes -->
 							<aside class='notes'>
 								Unlike a RDBMS, where data is spread across multiple normalised tables, a data warehouse tends to be one central denormalised table, called the fact table. In there all the information from across the organisation is stored in a consistent format. Surrounding the fact table are dimension tables which define how the data should be aggregated. For example, you may want to analyse the data in terms of customers, or sales, or geographical region. By defining the aggregations you can easily retrieve this information and make decisions based off the analysis. 
 							</aside>
 						</section>
-						<!-- Slide 46c -->
+						<!-- Slide 47c -->
 						<section data-background-image="../assets/generic/strike_force.PNG">
 							<div class='row'>
 								<div class='col'>
@@ -3057,12 +3057,12 @@
 									<p class='fragment'> Are taken off line when updates are required </p>
 								</div>
 							</div>
-							<!-- Slide 4c Notes -->
+							<!-- Slide 47c Notes -->
 							<aside class='notes'>
 								Data warehouses are primarily used as a platform for advanced analytics such as recommendation algorithms or generating powerful insights, whereas as RDBMS is more used for storing transactional information for quick references and quick snapshots of the data. As such data warehouses are better suited for advanced queries which derive in depth insights through a deep dive into the data. A reason for this is because warehouses generally do not contain 'live' data (a RDBMS does), but recent data that came with the last upload. This allows for the analytics to run without being interupted because new data is coming in. A consequence of this is that if new data is to be added, the warehouse must come offline for the ETL process to happen. Usually this is done outside of working hours to avoid disruption.
 							</aside>
 						</section>
-						<!-- Slide 46d -->
+						<!-- Slide 47d -->
 						<section data-background-image="../assets/generic/strike.PNG">
 							<div class='row r-hstack'>
 								<div class='col'>
@@ -3075,23 +3075,23 @@
 									<h1 style='color:#f4f4f4'> Benefits </h1>
 								</div>
 							</div>
-							<!-- Slide 4d Notes -->
+							<!-- Slide 47d Notes -->
 							<aside class='notes'>
 								The benefits of using a data wareouse is that more rich data is available to key stakeholders allowing them to make better data driven insights. On top of this, as the data is coming from a variety of sources, the sources themselves have to adhere to a consistent format which means superior quality and consistency for all. Data warehouses allow for collaboration amongst different teams and departments as they are sharing their data and ultimately this will lead to greater insights and improvements in making business decisions. If you have the opportunity to use a data warehouse in your role, you should describe these benefits in your portfolio.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 47 -->
+					<!-- Slide 48 -->
 					<section data-background-image="../assets/generic/section.PNG">
 						<div class="wrap aligncenter">
 							<span class='title'> Recap</span>          
 						</div>
-						<!-- Slide 47 Notes -->
+						<!-- Slide 48 Notes -->
 						<aside class='notes'>
 							That is us done for the first session, let's recap.
 						</aside>
 					</section>
-					<!-- Slide 48 -->
+					<!-- Slide 49 -->
 					<section data-background-image="../assets/generic/blank.PNG">
 						<div class="wrap size-60 " style='width:max-content'>
 							<div>
@@ -3104,12 +3104,12 @@
 								<li> Understand the principles of <b class='objective'> normalisation</b> on a relational database  </li>
 							</ul>           
 						</div>
-						<!-- Slide 48 Notes -->
+						<!-- Slide 49 Notes -->
 						<aside class='notes'>
 							The aim of this session is to help you understand the different types of database you may use in your role. By understanding how a RDBMS is set up, it will help you write queries to retrieve the information.
 						</aside>
 					</section>
-						<!-- Slide 49 -->
+						<!-- Slide 50 -->
 					<section data-background-image="../assets/generic/assignment.PNG">
 						<table style='width:100%;border:1px solid black'>
 							<tr>
@@ -3134,17 +3134,17 @@
 								<td> Word Document, PowerPoint, Excel File, PDF, Lucid Chart </td>
 							</tr>
 						</table>
-						<!-- Slide 49 Notes -->
+						<!-- Slide 50 Notes -->
 						<aside class='notes'>
 							Using some of the data from your work, transform it into a RDBMS (if it isen't already). Describe the dataset and apply normalisation if necessary. In the next session you will be shown how to construct an ERD.
 						</aside>
 					</section>
-					<!-- Slide 50 -->
+					<!-- Slide 51 -->
 					<section data-background-image="../assets/generic/final.PNG">
 						<div class="wrap aligncenter">
 							<span class='title'> Complete <a href='https://platform.whitehat.org.uk/apprentice/attendance-log/82' style='color:#64abff' target='_blank'>Session Attendance Log</a> and Update Your OTJ</span>          
 						</div>
-						<!-- Slide 50 Notes -->
+						<!-- Slide 51 Notes -->
 						<aside class='notes'>
 							Remind apprentices about OTJ and they can click on the link for the SAL
 						</aside>
