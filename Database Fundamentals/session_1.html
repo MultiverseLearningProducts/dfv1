@@ -477,7 +477,8 @@
 						</div>
 						<!-- Slide 13 Notes-->
 						<aside class='notes'>
-							A table showing information on coaches and their apprentices would be huge with lots of repeated and redundant information. Ask the apprentices to spot issues and potential pain points. Note how many times each coach is mentioned and the information specific to them (like the number of cohorts they have or who their assisstant is). You know that Steph has 5 cohorts and works with Ashray from the first row, you don't need that information in subsequent rows. But because it is, that is memory space being used which will slow down your queries and hold up your analysis. Also, imagine Steph's assistant changed- you would have to search through the whole table to find where updates are needed. If the assisstant info was stored in a different table then it would be much easier to update. Other difficulties include adding new data (you would need an apprentice to be assigned a cohort and coach before they can be added), difficulty editing info (imagine having to change a coach for thousands of rows...) and deleting information (if there is only one instance of an employer and that apprentice leaves before another is enrolled, you would lose that info when the row is deleted).
+							<b> First </b><br>
+							A table showing information on coaches and their apprentices would be huge with lots of repeated and redundant information. Ask the apprentices to spot issues and potential pain points. <br><b> Second </b><br>Note how many times each coach is mentioned and the information specific to them (like the number of cohorts they have or who their assisstant is). You know that Steph has 5 cohorts and works with Ashray from the first row, you don't need that information in subsequent rows. But because it is, that is memory space being used which will slow down your queries and hold up your analysis.<br> <b> Third </b><br> Also, imagine Steph's assistant changed- you would have to search through the whole table to find where updates are needed. If the assisstant info was stored in a different table then it would be much easier to update. <br> <b> Fourth</b><br>Other difficulties include adding new data (you would need an apprentice to be assigned a cohort and coach before they can be added), difficulty editing info (imagine having to change a coach for thousands of rows...) and deleting information (if there is only one instance of an employer and that apprentice leaves before another is enrolled, you would lose that info when the row is deleted).
 						</aside>
 					</section>
 					<!-- Slide 14 -->
@@ -737,68 +738,70 @@
 					</section>
 					<!-- Slide 22 -->
 					<section data-background-image='../assets/generic/circle_remix.PNG'>
-						<table style="table-layout: fixed; width: 100%;font-size:10px">
-							<tr>
-									<th style='background-color:#64abff; text-align:center'> ID </th>
-									<th style='text-align:center'> Brand </th>
-									<th style='text-align:center'> Company </th>
-									<th style='text-align:center'> Supermarket </th>
-									<th style='text-align:center'> Country </th>
-									<th style='text-align:center'> Price </th>
-									<th style='text-align:center'> Rating </th>
-									<th style='text-align:center'> Rating </th>
+						<div style="overflow-x:auto;">
+							<table style="table-layout: fixed; width: 100%">
+								<tr>
+										<th style='background-color:#64abff; text-align:center'> ID </th>
+										<th style='text-align:center'> Brand </th>
+										<th style='text-align:center'> Company </th>
+										<th style='text-align:center'> Supermarket </th>
+										<th style='text-align:center'> Country </th>
+										<th style='text-align:center'> Price </th>
+										<th style='text-align:center'> Rating </th>
+										<th style='text-align:center'> Rating </th>
+									</tr>
+								<tr>			
+									<td style='background-color:#64abff'> 101 </td>
+									<td> Aero </td>
+									<td> Nestle </td>
+									<td> Coop/Tesco </td>
+									<td> UK </td>
+									<td> 1.70 </td>
+									<td> 10 </td>
+									<td> Excellent </td>
 								</tr>
-							<tr>			
-								<td style='background-color:#64abff'> 101 </td>
-								<td> Aero </td>
-								<td> Nestle </td>
-								<td> Coop/Tesco </td>
-								<td> UK </td>
-								<td> 1.70 </td>
-								<td> 10 </td>
-								<td> Excellent </td>
-							</tr>
-							<tr>			
-								<td style='background-color:#64abff'> 101 </td>
-								<td> Aero </td>
-								<td> Nestle </td>
-								<td> Sainsburys </td>
-								<td> UK </td>
-								<td> One Sixty </td>
-								<td> 10 </td>
-								<td> Excellent </td>
-							</tr>
-							<tr>			
-								<td style='background-color:#64abff'> 102 </td>
-								<td> Bounty </td>
-								<td> Mars </td>
-								<td> Walmart </td>
-								<td> USA </td>
-								<td> 1.30 </td>
-								<td> 2 </td>
-								<td> Bad </td>
-							</tr>
-							<tr>			
-								<td style='background-color:#64abff'> 102 </td>
-								<td> Bounty </td>
-								<td> Mars </td>
-								<td> Tesco </td>
-								<td> UK </td>
-								<td> 1.20 </td>
-								<td> 2 </td>
-								<td> Bad </td>
-							</tr>
-							<tr>			
-								<td style='background-color:#64abff'> 102 </td>
-								<td> Bounty </td>
-								<td> Mars </td>
-								<td> Sainsburys </td>
-								<td> UK </td>
-								<td> 1.10 </td>
-								<td> 2 </td>
-								<td> Bad </td>
-							</tr>
-						</table>
+								<tr>			
+									<td style='background-color:#64abff'> 101 </td>
+									<td> Aero </td>
+									<td> Nestle </td>
+									<td> Sainsburys </td>
+									<td> UK </td>
+									<td> One Sixty </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>			
+									<td style='background-color:#64abff'> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Walmart </td>
+									<td> USA </td>
+									<td> 1.30 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+								<tr>			
+									<td style='background-color:#64abff'> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Tesco </td>
+									<td> UK </td>
+									<td> 1.20 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+								<tr>			
+									<td style='background-color:#64abff'> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> Sainsburys </td>
+									<td> UK </td>
+									<td> 1.10 </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+							</table>
+						</div>
 						<!-- Slide 22 Notes-->
             <aside class='notes'>
 							Ask apprentices to annotate the screen with any potential pain point they see with this table. Draw attention to the duplicated information, non unique primary keys, inconsisten data types and redundant information. This table is not in normal form, let's look at what that means...
@@ -840,68 +843,70 @@
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<h2 style='color:#ff7c66'> Each cell only contains one data point </h2>
-							<table style="table-layout: fixed; width: 100%;font-size:10px">
-								<tr>
-									<th style='background-color:#64abff; text-align:center'> ID </th>
-									<th style='text-align:center'> Brand </th>
-									<th style='text-align:center'> Company </th>
-									<th style='text-align:center'> Supermarket </th>
-									<th style='text-align:center'> Country </th>
-									<th style='text-align:center'> Price </th>
-									<th style='text-align:center'> Rating </th>
-									<th style='text-align:center'> Rating </th>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td style='background-color:#ff7c66'> Coop/Tesco </td>
-									<td> UK </td>
-									<td> 1.70 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td> Sainsburys </td>
-									<td> UK </td>
-									<td> One Sixty </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Walmart </td>
-									<td> USA </td>
-									<td> 1.30 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Tesco </td>
-									<td> UK </td>
-									<td> 1.20 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Sainsburys </td>
-									<td> UK </td>
-									<td> 1.10 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-							</table>
+							<div style="overflow-x:auto;">
+								<table style="table-layout: fixed; width: 100%">
+									<tr>
+										<th style='background-color:#64abff; text-align:center'> ID </th>
+										<th style='text-align:center'> Brand </th>
+										<th style='text-align:center'> Company </th>
+										<th style='text-align:center'> Supermarket </th>
+										<th style='text-align:center'> Country </th>
+										<th style='text-align:center'> Price </th>
+										<th style='text-align:center'> Rating </th>
+										<th style='text-align:center'> Rating </th>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td style='background-color:#ff7c66'> Coop/Tesco </td>
+										<td> UK </td>
+										<td> 1.70 </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td> Sainsburys </td>
+										<td> UK </td>
+										<td> One Sixty </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Walmart </td>
+										<td> USA </td>
+										<td> 1.30 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Tesco </td>
+										<td> UK </td>
+										<td> 1.20 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Sainsburys </td>
+										<td> UK </td>
+										<td> 1.10 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+								</table>
+							</div>
 							<!-- Slide 24a Notes-->
 							<aside class='notes'>
 								Each record should only be about one piece of information and so we shouldn't see two items in one cell. Ask apprentices what should be done to fix this.
@@ -911,78 +916,80 @@
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<h2 style='color:#59d8a1'> Each cell only contains one data point </h2>
-							<table style="table-layout: fixed; width: 100%;font-size:10px">
-								<tr>
-									<th style='background-color:#64abff; text-align:center'> ID </th>
-									<th style='text-align:center'> Brand </th>
-									<th style='text-align:center'> Company </th>
-									<th style='text-align:center'> Supermarket </th>
-									<th style='text-align:center'> Country </th>
-									<th style='text-align:center'> Price </th>
-									<th style='text-align:center'> Rating </th>
-									<th style='text-align:center'> Rating </th>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td style='background-color:#59d8a1'> Coop</td>
-									<td> UK </td>
-									<td> 1.70 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td style='background-color:#59d8a1'> Tesco</td>
-									<td> UK </td>
-									<td> 1.70 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td> Sainsburys </td>
-									<td> UK </td>
-									<td> One Sixty </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Walmart </td>
-									<td> USA </td>
-									<td> 1.30 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Tesco </td>
-									<td> UK </td>
-									<td> 1.20 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Sainsburys </td>
-									<td> UK </td>
-									<td> 1.10 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-							</table>
+							<div style="overflow-x:auto;">
+								<table style="table-layout: fixed; width: 100%">
+									<tr>
+										<th style='background-color:#64abff; text-align:center'> ID </th>
+										<th style='text-align:center'> Brand </th>
+										<th style='text-align:center'> Company </th>
+										<th style='text-align:center'> Supermarket </th>
+										<th style='text-align:center'> Country </th>
+										<th style='text-align:center'> Price </th>
+										<th style='text-align:center'> Rating </th>
+										<th style='text-align:center'> Rating </th>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td style='background-color:#59d8a1'> Coop</td>
+										<td> UK </td>
+										<td> 1.70 </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td style='background-color:#59d8a1'> Tesco</td>
+										<td> UK </td>
+										<td> 1.70 </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td> Sainsburys </td>
+										<td> UK </td>
+										<td> One Sixty </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Walmart </td>
+										<td> USA </td>
+										<td> 1.30 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Tesco </td>
+										<td> UK </td>
+										<td> 1.20 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Sainsburys </td>
+										<td> UK </td>
+										<td> 1.10 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+								</table>
+							</div>
 							<!-- Slide 24b Notes-->
 							<aside class='notes'>
 								Instead, each data point should be given its own record. An example of this would be items scanned in a supermarket shop as each item would need to recorded in its own row to allow the information to be captured efficiently.
@@ -1069,78 +1076,80 @@
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<h2 style='color:#ff7c66'> Each column contains only one data type </h2>
-							<table style="table-layout: fixed; width: 100%;font-size:10px">
-								<tr>
-									<th style='background-color:#64abff; text-align:center'> ID </th>
-									<th style='text-align:center'> Brand </th>
-									<th style='text-align:center'> Company </th>
-									<th style='text-align:center'> Supermarket </th>
-									<th style='text-align:center'> Country </th>
-									<th style='text-align:center'> Price </th>
-									<th style='text-align:center'> Rating </th>
-									<th style='text-align:center'> Rating </th>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td> Coop</td>
-									<td> UK </td>
-									<td> 1.70 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td> Tesco</td>
-									<td> UK </td>
-									<td> 1.70 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td> Sainsburys </td>
-									<td> UK </td>
-									<td style='background-color:#ff7c66'> One Sixty </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Walmart </td>
-									<td> USA </td>
-									<td> 1.30 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Tesco </td>
-									<td> UK </td>
-									<td> 1.20 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Sainsburys </td>
-									<td> UK </td>
-									<td> 1.10 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-							</table>
+							<div style="overflow-x:auto;">
+								<table style="table-layout: fixed; width: 100%">
+									<tr>
+										<th style='background-color:#64abff; text-align:center'> ID </th>
+										<th style='text-align:center'> Brand </th>
+										<th style='text-align:center'> Company </th>
+										<th style='text-align:center'> Supermarket </th>
+										<th style='text-align:center'> Country </th>
+										<th style='text-align:center'> Price </th>
+										<th style='text-align:center'> Rating </th>
+										<th style='text-align:center'> Rating </th>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td> Coop</td>
+										<td> UK </td>
+										<td> 1.70 </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td> Tesco</td>
+										<td> UK </td>
+										<td> 1.70 </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td> Sainsburys </td>
+										<td> UK </td>
+										<td style='background-color:#ff7c66'> One Sixty </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Walmart </td>
+										<td> USA </td>
+										<td> 1.30 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Tesco </td>
+										<td> UK </td>
+										<td> 1.20 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Sainsburys </td>
+										<td> UK </td>
+										<td> 1.10 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+								</table>
+							</div>
 							<!-- Slide 25a Notes-->
 							<aside class='notes'>
 								It is essential that in a field, all the records contain the same data type. For example, they all need to be numerical or characters but not a mix of both. This will cause a bigger issue than you might expect, because most softwares (including python, R and SQL) will detect this conflict and will automatically convert every data point to a character (aka string). When you then try to query this column you will not get the output you expected because it is the wrong data type. It is essential then that the field is consistent.
@@ -1199,78 +1208,80 @@
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<h2 style='color:#59d8a1'> Each column contains only one data type </h2>
-							<table style="table-layout: fixed; width: 100%;font-size:10px">
-								<tr>
-									<th style='background-color:#64abff; text-align:center'> ID </th>
-									<th style='text-align:center'> Brand </th>
-									<th style='text-align:center'> Company </th>
-									<th style='text-align:center'> Supermarket </th>
-									<th style='text-align:center'> Country </th>
-									<th style='text-align:center'> Price </th>
-									<th style='text-align:center'> Rating </th>
-									<th style='text-align:center'> Rating </th>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td> Coop</td>
-									<td> UK </td>
-									<td> 1.70 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td> Tesco</td>
-									<td> UK </td>
-									<td> 1.70 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td> Sainsburys </td>
-									<td> UK </td>
-									<td style='background-color:#59d8a1'> 1.60 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Walmart </td>
-									<td> USA </td>
-									<td> 1.30 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Tesco </td>
-									<td> UK </td>
-									<td> 1.20 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Sainsburys </td>
-									<td> UK </td>
-									<td> 1.10 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-							</table>
+							<div style="overflow-x:auto;">
+								<table style="table-layout: fixed; width: 100%">
+									<tr>
+										<th style='background-color:#64abff; text-align:center'> ID </th>
+										<th style='text-align:center'> Brand </th>
+										<th style='text-align:center'> Company </th>
+										<th style='text-align:center'> Supermarket </th>
+										<th style='text-align:center'> Country </th>
+										<th style='text-align:center'> Price </th>
+										<th style='text-align:center'> Rating </th>
+										<th style='text-align:center'> Rating </th>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td> Coop</td>
+										<td> UK </td>
+										<td> 1.70 </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td> Tesco</td>
+										<td> UK </td>
+										<td> 1.70 </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td> Sainsburys </td>
+										<td> UK </td>
+										<td style='background-color:#59d8a1'> 1.60 </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Walmart </td>
+										<td> USA </td>
+										<td> 1.30 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Tesco </td>
+										<td> UK </td>
+										<td> 1.20 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Sainsburys </td>
+										<td> UK </td>
+										<td> 1.10 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+								</table>
+							</div>
 							<!-- Slide 25c Notes-->
 							<aside class='notes'>
 								Issue fixed, all values are numerical.
@@ -1282,78 +1293,80 @@
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<h2 style='color:#ff7c66'> Columns should each have a unique name </h2>
-							<table style="table-layout: fixed; width: 100%;font-size:10px">
-								<tr>
-									<th style='background-color:#64abff; text-align:center'> ID </th>
-									<th style='text-align:center'> Brand </th>
-									<th style='text-align:center'> Company </th>
-									<th style='text-align:center'> Supermarket </th>
-									<th style='text-align:center'> Country </th>
-									<th style='text-align:center'> Price </th>
-									<th style='background-color:#ff7c66;text-align:center'> Rating </th>
-									<th style='background-color:#ff7c66;text-align:center'> Rating </th>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td> Coop</td>
-									<td> UK </td>
-									<td> 1.70 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td> Tesco</td>
-									<td> UK </td>
-									<td> 1.70 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td> Sainsburys </td>
-									<td> UK </td>
-									<td > 1.6 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Walmart </td>
-									<td> USA </td>
-									<td> 1.30 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Tesco </td>
-									<td> UK </td>
-									<td> 1.20 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Sainsburys </td>
-									<td> UK </td>
-									<td> 1.10 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-							</table>
+							<div style="overflow-x:auto;">
+								<table style="table-layout: fixed; width: 100%">
+									<tr>
+										<th style='background-color:#64abff; text-align:center'> ID </th>
+										<th style='text-align:center'> Brand </th>
+										<th style='text-align:center'> Company </th>
+										<th style='text-align:center'> Supermarket </th>
+										<th style='text-align:center'> Country </th>
+										<th style='text-align:center'> Price </th>
+										<th style='background-color:#ff7c66;text-align:center'> Rating </th>
+										<th style='background-color:#ff7c66;text-align:center'> Rating </th>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td> Coop</td>
+										<td> UK </td>
+										<td> 1.70 </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td> Tesco</td>
+										<td> UK </td>
+										<td> 1.70 </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td> Sainsburys </td>
+										<td> UK </td>
+										<td > 1.6 </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Walmart </td>
+										<td> USA </td>
+										<td> 1.30 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Tesco </td>
+										<td> UK </td>
+										<td> 1.20 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Sainsburys </td>
+										<td> UK </td>
+										<td> 1.10 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+								</table>
+							</div>
 							<!-- Slide 26a Notes-->
 							<aside class='notes'>
 								An obvious issue, but all columns should have unique names (a reason why excel sheets are not structured btw- they allow you to do this...). If several columns in a table have the same name there will be issues with data retrieval and querying as the search won't know which columns to extract. This would be doubly problematic if this was involving primary keys...
@@ -1363,78 +1376,80 @@
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<h2 style='color:#59d8a1'> Columns should each have a unique name </h2>
-							<table style="table-layout: fixed; width: 100%;font-size:10px">
-								<tr>
-									<th style='background-color:#64abff; text-align:center'> ID </th>
-									<th style='text-align:center'> Brand </th>
-									<th style='text-align:center'> Company </th>
-									<th style='text-align:center'> Supermarket </th>
-									<th style='text-align:center'> Country </th>
-									<th style='text-align:center'> Price </th>
-									<th style='background-color:#59d8a1;text-align:center'> Rating_num </th>
-									<th style='background-color:#59d8a1;text-align:center'> Rating_desc </th>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td> Coop</td>
-									<td> UK </td>
-									<td> 1.70 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td> Tesco</td>
-									<td> UK </td>
-									<td> 1.70 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td> Sainsburys </td>
-									<td> UK </td>
-									<td > 1.6 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Walmart </td>
-									<td> USA </td>
-									<td> 1.30 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Tesco </td>
-									<td> UK </td>
-									<td> 1.20 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Sainsburys </td>
-									<td> UK </td>
-									<td> 1.10 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-							</table>
+							<div style="overflow-x:auto;">
+								<table style="table-layout: fixed; width: 100%">
+									<tr>
+										<th style='background-color:#64abff; text-align:center'> ID </th>
+										<th style='text-align:center'> Brand </th>
+										<th style='text-align:center'> Company </th>
+										<th style='text-align:center'> Supermarket </th>
+										<th style='text-align:center'> Country </th>
+										<th style='text-align:center'> Price </th>
+										<th style='background-color:#59d8a1;text-align:center'> Rating_num </th>
+										<th style='background-color:#59d8a1;text-align:center'> Rating_desc </th>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td> Coop</td>
+										<td> UK </td>
+										<td> 1.70 </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td> Tesco</td>
+										<td> UK </td>
+										<td> 1.70 </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td> Sainsburys </td>
+										<td> UK </td>
+										<td > 1.6 </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Walmart </td>
+										<td> USA </td>
+										<td> 1.30 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Tesco </td>
+										<td> UK </td>
+										<td> 1.20 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Sainsburys </td>
+										<td> UK </td>
+										<td> 1.10 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+								</table>
+							</div>
 							<!-- Slide 26b Notes-->
 							<aside class='notes'>
 								This is a simple fix giving each column its own name. Note that proper naming convention for field names which are more than one word is to use underscore to avoid whitespace. This again saves on memory as the system doesn't have to think about trying to fill in any gaps.
@@ -1446,78 +1461,80 @@
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<p style='color:#59d8a1'> Identification should not rely on the way data is sorted </p>
-							<table style="table-layout: fixed; width: 100%;font-size:10px">
-								<tr>
-									<th style='background-color:#64abff; text-align:center'> ID </th>
-									<th style='text-align:center'> Brand </th>
-									<th style='text-align:center'> Company </th>
-									<th style='text-align:center'> Supermarket </th>
-									<th style='text-align:center'> Country </th>
-									<th style='text-align:center'> Price </th>
-									<th style='text-align:center'> Rating_num </th>
-									<th style='text-align:center'> Rating_desc </th>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td> Coop</td>
-									<td> UK </td>
-									<td> 1.70 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td> Tesco</td>
-									<td> UK </td>
-									<td> 1.70 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td> Sainsburys </td>
-									<td> UK </td>
-									<td > 1.6 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Walmart </td>
-									<td> USA </td>
-									<td> 1.30 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Tesco </td>
-									<td> UK </td>
-									<td> 1.20 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Sainsburys </td>
-									<td> UK </td>
-									<td> 1.10 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-							</table>
+							<div style="overflow-x:auto;">
+								<table style="table-layout: fixed; width: 100%">
+									<tr>
+										<th style='background-color:#64abff; text-align:center'> ID </th>
+										<th style='text-align:center'> Brand </th>
+										<th style='text-align:center'> Company </th>
+										<th style='text-align:center'> Supermarket </th>
+										<th style='text-align:center'> Country </th>
+										<th style='text-align:center'> Price </th>
+										<th style='text-align:center'> Rating_num </th>
+										<th style='text-align:center'> Rating_desc </th>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td> Coop</td>
+										<td> UK </td>
+										<td> 1.70 </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td> Tesco</td>
+										<td> UK </td>
+										<td> 1.70 </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td> Sainsburys </td>
+										<td> UK </td>
+										<td > 1.6 </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Walmart </td>
+										<td> USA </td>
+										<td> 1.30 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Tesco </td>
+										<td> UK </td>
+										<td> 1.20 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Sainsburys </td>
+										<td> UK </td>
+										<td> 1.10 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+								</table>
+							</div>
 							<!-- Slide 27a Notes-->
 							<aside class='notes'>
 								Finally, you should be able to reference any piece of information in a table by looking at its primary or composite key alone. Aother way of putting this, is that if the table was shuffled would the records lose meaning? If so, it is not in normal form.
@@ -1609,78 +1626,80 @@
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Second Normal Form </h1>
 							<p style='color:#ff7c66'> Each table contains relevant data </p>
-							<table style="table-layout: fixed; width: 100%;font-size:10px">
-								<tr>
-									<th style='background-color:#64abff'> ID </th>
-									<th> Brand </th>
-									<th> Company </th>
-									<th> Supermarket </th>
-									<th> Country </th>
-									<th> Price </th>
-									<th> Rating_num </th>
-									<th> Rating_desc </th>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td> Coop</td>
-									<td> UK </td>
-									<td> 1.70 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td> Tesco</td>
-									<td> UK </td>
-									<td> 1.70 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 101 </td>
-									<td> Aero </td>
-									<td> Nestle </td>
-									<td> Sainsburys </td>
-									<td> UK </td>
-									<td > 1.6 </td>
-									<td> 10 </td>
-									<td> Excellent </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Walmart </td>
-									<td> USA </td>
-									<td> 1.30 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Tesco </td>
-									<td> UK </td>
-									<td> 1.20 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-								<tr>			
-									<td style='background-color:#64abff'> 102 </td>
-									<td> Bounty </td>
-									<td> Mars </td>
-									<td> Sainsburys </td>
-									<td> UK </td>
-									<td> 1.10 </td>
-									<td> 2 </td>
-									<td> Bad </td>
-								</tr>
-							</table>
+							<div style="overflow-x:auto;">
+								<table style="table-layout: fixed; width: 100%">
+									<tr>
+										<th style='background-color:#64abff'> ID </th>
+										<th> Brand </th>
+										<th> Company </th>
+										<th> Supermarket </th>
+										<th> Country </th>
+										<th> Price </th>
+										<th> Rating_num </th>
+										<th> Rating_desc </th>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td> Coop</td>
+										<td> UK </td>
+										<td> 1.70 </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td> Tesco</td>
+										<td> UK </td>
+										<td> 1.70 </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 101 </td>
+										<td> Aero </td>
+										<td> Nestle </td>
+										<td> Sainsburys </td>
+										<td> UK </td>
+										<td > 1.6 </td>
+										<td> 10 </td>
+										<td> Excellent </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Walmart </td>
+										<td> USA </td>
+										<td> 1.30 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Tesco </td>
+										<td> UK </td>
+										<td> 1.20 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+									<tr>			
+										<td style='background-color:#64abff'> 102 </td>
+										<td> Bounty </td>
+										<td> Mars </td>
+										<td> Sainsburys </td>
+										<td> UK </td>
+										<td> 1.10 </td>
+										<td> 2 </td>
+										<td> Bad </td>
+									</tr>
+								</table>
+							</div>
 							<!-- Slide 29a Notes-->
 							<aside class='notes'>
 								Firstly, each table must only contain relevant data. Ask apprentices to spot which data may not be relevant to each other. For example, the price and rating are not strictly related to each other and could be in separate tables. Some of the information is about the supermarkets, and other is about the company that makes the chocolate. Each of those should be in different tables.
@@ -1689,13 +1708,95 @@
 						<!-- Slide 29b -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Second Normal Form </h1>
-							<div class='r-stack'>
-								<p class='fragment fade-out' style='color:#59d8a1'> Each table contains relevant data </p>
-								<p class='fragment fade-in' style='color:#ff7c66'> Compliant with 1NF </p>
+							<div style="overflow-x:auto;">
+								<div class='r-stack'>
+									<p class='fragment fade-out' style='color:#59d8a1'> Each table contains relevant data </p>
+									<p class='fragment fade-in' style='color:#ff7c66'> Compliant with 1NF </p>
+								</div>
+								<div class='row'>
+									<div class='col'>
+										<table style='font-size:12px'>
+											<caption style="caption-side:bottom"> price_table </caption>
+											<tr>
+												<th style='background-color:#64abff'> Supermarket </th>
+												<th> Price </th>
+												<th> Country </th>
+											</tr>
+											<tr>
+												<td style='background-color:#64abff'> Coop </td>
+												<td> 1.70 </td>
+												<td> UK </td>
+											</tr>
+											<tr>
+												<td style='background-color:#64abff'> Tesco </td>
+												<td> 1.60 </td>
+												<td> UK </td>
+											</tr>
+											<tr>
+												<td style='background-color:#64abff'> Sainsburys </td>
+												<td> 1.60 </td>
+												<td> UK </td>
+											</tr>
+											<tr>
+												<td style='background-color:#64abff'> Walmart </td>
+												<td> 1.30 </td>
+												<td> USA </td>
+											</tr>
+											<tr>
+												<td style='background-color:#64abff'> Tesco </td>
+												<td> 1.20 </td>
+												<td> UK </td>
+											</tr>
+											<tr>
+												<td style='background-color:#64abff'> Sainsburys </td>
+												<td> 1.10 </td>
+												<td> UK </td>
+											</tr>
+										</table>
+									</div>
+									<div class='col'>
+										<table style='font-size:12px'>
+											<caption style="caption-side:bottom"> chocolate_table </caption>
+											<tr>
+												<th style='background-color:#64abff'> ID </th>
+												<th> Brand </th>
+												<th> Company </th>
+												<th> Rating_num </th>
+												<th> Rating_Desc </th>
+											</tr>
+											<tr>
+												<td style='background-color:#64abff'> 101 </td>
+												<td> Aero </td>
+												<td> Nestle </td>
+												<td> 10 </td>
+												<td> Excellent </td>
+											</tr>
+											<tr>
+												<td style='background-color:#64abff'> 102 </td>
+												<td> Bounty </td>
+												<td> Mars </td>
+												<td> 2 </td>
+												<td> Bad </td>
+											</tr>
+										</table>
+									</div>
+								</div>
 							</div>
-							<div class='row'>
-								<div class='col'>
-									<table style='font-size:12px'>
+							<!-- Slide 29b Notes-->
+							<aside class='notes'>
+								We have separated the data into two tables, one about the supermarkets selling the chocolate and the other about the chocolate itself. But there is still an issue, can anyone spot what it is? The primary key on the price_table is not unique so it fails 1NF
+							</aside>
+						</section>
+						<!-- Slide 29c -->
+						<section data-background-image='../assets/generic/circle_remix.PNG'>
+							<h1> Second Normal Form </h1>
+							<div class='r-stack'>
+								<p class='fragment fade-out' data-fragment-index="1" style='color:#ff7c66'> Compliant with 1NF </p>
+								<p class='fragment fade-in' data-fragment-index="2" style='color:#59d8a1'> Compliant with 1NF </p>
+							</div>
+							<div class='r-stack'>
+								<div class='fragment fade-out data-fragment-index="1"'>
+									<table>
 										<caption style="caption-side:bottom"> price_table </caption>
 										<tr>
 											<th style='background-color:#64abff'> Supermarket </th>
@@ -1734,45 +1835,8 @@
 										</tr>
 									</table>
 								</div>
-								<div class='col'>
-									<table style='font-size:12px'>
-										<caption style="caption-side:bottom"> chocolate_table </caption>
-										<tr>
-											<th style='background-color:#64abff'> ID </th>
-											<th> Brand </th>
-											<th> Company </th>
-											<th> Rating_num </th>
-											<th> Rating_Desc </th>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 101 </td>
-											<td> Aero </td>
-											<td> Nestle </td>
-											<td> 10 </td>
-											<td> Excellent </td>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 102 </td>
-											<td> Bounty </td>
-											<td> Mars </td>
-											<td> 2 </td>
-											<td> Bad </td>
-										</tr>
-									</table>
-								</div>
-							</div>
-							<!-- Slide 29b Notes-->
-							<aside class='notes'>
-								We have separated the data into two tables, one about the supermarkets selling the chocolate and the other about the chocolate itself. But there is still an issue, can anyone spot what it is? The primary key is not unique so it fails 1NF
-							</aside>
-						</section>
-						<!-- Slide 29c -->
-						<section data-background-image='../assets/generic/circle_remix.PNG'>
-							<h1> Second Normal Form </h1>
-							<p style='color:#59d8a1'> Compliant with 1NF </p>
-							<div class='row'>
-								<div class='col'>
-									<table style='font-size:12px'>
+								<div class='fragment fade-in data-fragment-index="2"'>
+									<table>
 										<caption style="caption-side:bottom"> price_table </caption>
 										<tr>
 											<th style='background-color:#64abff'> Chocolate_ID </th>
@@ -1815,32 +1879,6 @@
 											<td style='background-color:#64abff'> Sainsburys </td>
 											<td> 1.10 </td>
 											<td> UK </td>
-										</tr>
-									</table>
-								</div>
-								<div class='col'>
-									<table style='font-size:12px'>
-										<caption style="caption-side:bottom"> chocolate_table </caption>
-										<tr>
-											<th style='background-color:#64abff'> ID </th>
-											<th> Brand </th>
-											<th> Company </th>
-											<th> Rating_num </th>
-											<th> Rating_Desc </th>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 101 </td>
-											<td> Aero </td>
-											<td> Nestle </td>
-											<td> 10 </td>
-											<td> Excellent </td>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 102 </td>
-											<td> Bounty </td>
-											<td> Mars </td>
-											<td> 2 </td>
-											<td> Bad </td>
 										</tr>
 									</table>
 								</div>
@@ -1856,81 +1894,51 @@
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Second Normal Form </h1>
 							<p style='color:#ff7c66'> There are no partial dependencies </p>
-							<div class='row'>
-								<div class='col'>
-									<table style='font-size:12px'>
-										<caption style="caption-side:bottom"> price_table </caption>
-										<tr>
-											<th style='background-color:#64abff'> Chocolate_ID </th>
-											<th style='background-color:#64abff'> Supermarket </th>
-											<th> Price </th>
-											<th> Country </th>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 101 </td>
-											<td style='background-color:#64abff'> Coop </td>
-											<td> 1.70 </td>
-											<td> UK </td>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 101 </td>
-											<td style='background-color:#64abff'> Tesco </td>
-											<td> 1.60 </td>
-											<td> UK </td>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 101 </td>
-											<td style='background-color:#64abff'> Sainsburys </td>
-											<td> 1.60 </td>
-											<td> UK </td>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 102 </td>
-											<td style='background-color:#64abff'> Walmart </td>
-											<td> 1.30 </td>
-											<td> USA </td>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 102 </td>
-											<td style='background-color:#64abff'> Tesco </td>
-											<td> 1.20 </td>
-											<td> UK </td>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 102 </td>
-											<td style='background-color:#64abff'> Sainsburys </td>
-											<td> 1.10 </td>
-											<td> UK </td>
-										</tr>
-									</table>
-								</div>
-								<div class='col'>
-									<table style='font-size:12px'>
-										<caption style="caption-side:bottom"> chocolate_table </caption>
-										<tr>
-											<th style='background-color:#64abff'> ID </th>
-											<th> Brand </th>
-											<th> Company </th>
-											<th> Rating_num </th>
-											<th> Rating_Desc </th>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 101 </td>
-											<td> Aero </td>
-											<td> Nestle </td>
-											<td> 10 </td>
-											<td> Excellent </td>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 102 </td>
-											<td> Bounty </td>
-											<td> Mars </td>
-											<td> 2 </td>
-											<td> Bad </td>
-										</tr>
-									</table>
-								</div>
-							</div>
+							<table>
+								<caption style="caption-side:bottom"> price_table </caption>
+								<tr>
+									<th style='background-color:#64abff'> Chocolate_ID </th>
+									<th style='background-color:#64abff'> Supermarket </th>
+									<th> Price </th>
+									<th> Country </th>
+								</tr>
+								<tr>
+									<td style='background-color:#64abff'> 101 </td>
+									<td style='background-color:#64abff'> Coop </td>
+									<td> 1.70 </td>
+									<td> UK </td>
+								</tr>
+								<tr>
+									<td style='background-color:#64abff'> 101 </td>
+									<td style='background-color:#64abff'> Tesco </td>
+									<td> 1.60 </td>
+									<td> UK </td>
+								</tr>
+								<tr>
+									<td style='background-color:#64abff'> 101 </td>
+									<td style='background-color:#64abff'> Sainsburys </td>
+									<td> 1.60 </td>
+									<td> UK </td>
+								</tr>
+								<tr>
+									<td style='background-color:#64abff'> 102 </td>
+									<td style='background-color:#64abff'> Walmart </td>
+									<td> 1.30 </td>
+									<td> USA </td>
+								</tr>
+								<tr>
+									<td style='background-color:#64abff'> 102 </td>
+									<td style='background-color:#64abff'> Tesco </td>
+									<td> 1.20 </td>
+									<td> UK </td>
+								</tr>
+								<tr>
+									<td style='background-color:#64abff'> 102 </td>
+									<td style='background-color:#64abff'> Sainsburys </td>
+									<td> 1.10 </td>
+									<td> UK </td>
+								</tr>
+							</table>
 							<!-- Slide 30a Notes-->
 							<aside class='notes'>
 								The next issue is that there can be no partial dependencies, in which there is some in this example. Can anyone suggest what a partial dependency means?
@@ -1949,10 +1957,60 @@
 						<!-- Slide 30c -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Second Normal Form </h1>
-							<p style='color:#59d8a1'> There are no partial dependencies </p>
-							<div class='row'>
-								<div class='col'>
-									<table style='font-size:12px'>
+							<div class='r-stack'>
+								<p class='fragment fade-out' data-fragment-index="1" style='color:#ff7c66'> There are no partial dependencies </p>
+								<p class='fragment fade-in' data-fragment-index="2" style='color:#59d8a1'> There are no partial dependencies </p>
+							</div>
+							<div class='r-stack'>
+								<div class='fragment fade-out' data-fragment-index="1">
+									<table>
+										<caption style="caption-side:bottom"> price_table </caption>
+										<tr>
+											<th style='background-color:#64abff'> Chocolate_ID </th>
+											<th style='background-color:#64abff'> Supermarket </th>
+											<th> Price </th>
+											<th> Country </th>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 101 </td>
+											<td style='background-color:#64abff'> Coop </td>
+											<td> 1.70 </td>
+											<td> UK </td>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 101 </td>
+											<td style='background-color:#64abff'> Tesco </td>
+											<td> 1.60 </td>
+											<td> UK </td>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 101 </td>
+											<td style='background-color:#64abff'> Sainsburys </td>
+											<td> 1.60 </td>
+											<td> UK </td>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 102 </td>
+											<td style='background-color:#64abff'> Walmart </td>
+											<td> 1.30 </td>
+											<td> USA </td>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 102 </td>
+											<td style='background-color:#64abff'> Tesco </td>
+											<td> 1.20 </td>
+											<td> UK </td>
+										</tr>
+										<tr>
+											<td style='background-color:#64abff'> 102 </td>
+											<td style='background-color:#64abff'> Sainsburys </td>
+											<td> 1.10 </td>
+											<td> UK </td>
+										</tr>
+									</table>
+								</div>
+								<div class='fragment fade-in' data-fragment-index="2">
+									<table>
 										<caption style="caption-side:bottom"> price_table </caption>
 										<tr>
 											<th style='background-color:#64abff'> Chocolate_ID </th>
@@ -1991,51 +2049,34 @@
 										</tr>
 									</table>
 								</div>
-								<div class='col'>
-									<table style='font-size:10px'>
-										<caption style="caption-side:bottom"> chocolate_table </caption>
-										<tr>
-											<th style='background-color:#64abff;width:'> ID </th>
-											<th> Brand </th>
-											<th> Company </th>
-											<th> Rating_num </th>
-											<th> Rating_Desc </th>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 101 </td>
-											<td> Aero </td>
-											<td> Nestle </td>
-											<td> 10 </td>
-											<td> Excellent </td>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 102 </td>
-											<td> Bounty </td>
-											<td> Mars </td>
-											<td> 2 </td>
-											<td> Bad </td>
-										</tr>
-									</table>
-									<table style='font-size:10px'>
-										<caption style="caption-side:bottom"> supermarket_table </caption>
-										<tr>
-											<th style='background-color:#64abff;text-align:center'> Supermarket </th>
-											<th style='text-align:center'> Country </th>
-										</tr>
-										<tr> 
-											<td style='background-color:#64abff'> Tesco </td>
-											<td> UK </td>
-										</tr>
-										<tr> 
-											<td style='background-color:#64abff'> Walmart </td>
-											<td> USA </td>
-										</tr>
-									</table>
-								</div>
 							</div>
 							<!-- Slide 30c Notes-->
 							<aside class='notes'>
-								So to avoid partial dependencies we need to create a third table which shows what country each supermarket is in (to avoid the table coming off the page I have truncated it...)
+								So to avoid partial dependencies we need to create a third table which shows what country each supermarket is in. So the price table will now only show the prices at the supermarkets...
+							</aside>
+						</section>
+						<!-- Slide 30d -->
+						<section data-background-image='../assets/generic/circle_remix.PNG'>
+							<h1> Second Normal Form </h1>
+							<p style='color:#59d8a1'> There are no partial dependencies </p>
+							<table>
+								<caption style="caption-side:bottom"> supermarket_table </caption>
+								<tr>
+									<th style='background-color:#64abff;text-align:center'> Supermarket </th>
+									<th style='text-align:center'> Country </th>
+								</tr>
+								<tr> 
+									<td style='background-color:#64abff'> Tesco </td>
+									<td> UK </td>
+								</tr>
+								<tr> 
+									<td style='background-color:#64abff'> Walmart </td>
+									<td> USA </td>
+								</tr>
+							</table>
+							<!-- Slide 30d Notes-->
+							<aside class='notes'>
+								While a new supermarket_table will show the country information.
 							</aside>
 						</section>
 					</section>
@@ -2074,90 +2115,31 @@
 						<!-- Slide 32a -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Third Normal Form </h1>
-							<p style='color:#ff7c66'> There are no transitive dependencies </p>
-							<div class='row'>
-								<div class='col'>
-									<table style='font-size:12px'>
-										<caption style="caption-side:bottom"> price_table </caption>
-										<tr>
-											<th style='background-color:#64abff'> Chocolate_ID </th>
-											<th style='background-color:#64abff'> Supermarket </th>
-											<th> Price </th>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 101 </td>
-											<td style='background-color:#64abff'> Coop </td>
-											<td> 1.70 </td>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 101 </td>
-											<td style='background-color:#64abff'> Tesco </td>
-											<td> 1.60 </td>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 101 </td>
-											<td style='background-color:#64abff'> Sainsburys </td>
-											<td> 1.60 </td>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 102 </td>
-											<td style='background-color:#64abff'> Walmart </td>
-											<td> 1.30 </td>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 102 </td>
-											<td style='background-color:#64abff'> Tesco </td>
-											<td> 1.20 </td>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 102 </td>
-											<td style='background-color:#64abff'> Sainsburys </td>
-											<td> 1.10 </td>
-										</tr>
-									</table>
-								</div>
-								<div class='col'>
-									<table style='font-size:10px'>
-										<caption style="caption-side:bottom"> chocolate_table </caption>
-										<tr>
-											<th style='background-color:#64abff;'> ID </th>
-											<th> Brand </th>
-											<th> Company </th>
-											<th> Rating_num </th>
-											<th> Rating_Desc </th>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 101 </td>
-											<td> Aero </td>
-											<td> Nestle </td>
-											<td> 10 </td>
-											<td> Excellent </td>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 102 </td>
-											<td> Bounty </td>
-											<td> Mars </td>
-											<td> 2 </td>
-											<td> Bad </td>
-										</tr>
-									</table>
-									<table style='font-size:10px'>
-										<caption style="caption-side:bottom"> supermarket_table </caption>
-										<tr>
-											<th style='background-color:#64abff;text-align:center'> Supermarket </th>
-											<th style='text-align:center'> Country </th>
-										</tr>
-										<tr> 
-											<td style='background-color:#64abff'> Tesco </td>
-											<td> UK </td>
-										</tr>
-										<tr> 
-											<td style='background-color:#64abff'> Walmart </td>
-											<td> USA </td>
-										</tr>
-									</table>
-								</div>
-							</div>
+							<p style='color:#ff7c66'> There are no transitive dependencies </p>							
+							<table>
+								<caption style="caption-side:bottom"> chocolate_table </caption>
+								<tr>
+									<th style='background-color:#64abff;'> ID </th>
+									<th> Brand </th>
+									<th> Company </th>
+									<th> Rating_num </th>
+									<th> Rating_Desc </th>
+								</tr>
+								<tr>
+									<td style='background-color:#64abff'> 101 </td>
+									<td> Aero </td>
+									<td> Nestle </td>
+									<td> 10 </td>
+									<td> Excellent </td>
+								</tr>
+								<tr>
+									<td style='background-color:#64abff'> 102 </td>
+									<td> Bounty </td>
+									<td> Mars </td>
+									<td> 2 </td>
+									<td> Bad </td>
+								</tr>
+							</table>
 							<!-- Slide 32a Notes-->
 							<aside class='notes'>
 								Can anyone spot the transitive dependency? What table looks like it holds irrelevant information?
@@ -2176,50 +2158,13 @@
 						<!-- Slide 32c -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Third Normal Form </h1>
-							<p style='color:#59d8a1'> There are no transitive dependencies </p>
-							<div class='row'>
-								<div class='col'>
-									<table style='font-size:12px'>
-										<caption style="caption-side:bottom"> price_table </caption>
-										<tr>
-											<th style='background-color:#64abff'> Chocolate_ID </th>
-											<th style='background-color:#64abff'> Supermarket </th>
-											<th> Price </th>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 101 </td>
-											<td style='background-color:#64abff'> Coop </td>
-											<td> 1.70 </td>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 101 </td>
-											<td style='background-color:#64abff'> Tesco </td>
-											<td> 1.60 </td>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 101 </td>
-											<td style='background-color:#64abff'> Sainsburys </td>
-											<td> 1.60 </td>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 102 </td>
-											<td style='background-color:#64abff'> Walmart </td>
-											<td> 1.30 </td>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 102 </td>
-											<td style='background-color:#64abff'> Tesco </td>
-											<td> 1.20 </td>
-										</tr>
-										<tr>
-											<td style='background-color:#64abff'> 102 </td>
-											<td style='background-color:#64abff'> Sainsburys </td>
-											<td> 1.10 </td>
-										</tr>
-									</table>
-								</div>
-								<div class='col'>
-									<table style='font-size:12px'>
+							<div class='r-stack'>
+								<p class='fragment fade-out' style='color:#59d8a1'> There are no transitive dependencies </p>
+								<p class='fragment fade-in' style='color:#59d8a1' data-fragment-index="3"> Compliant with 2NF </p>
+							</div>
+							<div class='r-stack'>
+								<div class='fragment fade-out' data-fragment-index="1">
+									<table>
 										<caption style="caption-side:bottom"> chocolate_table </caption>
 										<tr>
 											<th style='background-color:#64abff;'> ID </th>
@@ -2241,22 +2186,8 @@
 										</tr>
 									</table>
 								</div>
-							</div>
-							<!-- Slide 32c Notes-->
-							<aside class='notes'>
-								Due to size constraints the example has been spread across two tables. To be compliant with 3NF we have removed the rating description from the chocolate table and created a new table on the next page.
-							</aside>
-						</section>
-						<!-- Slide 32d -->
-						<section data-background-image='../assets/generic/circle_remix.PNG'>
-							<h1> Third Normal Form </h1>
-							<div class='r-stack'>
-								<p class='fragment fade-out' style='color:#59d8a1'> There are no transitive dependencies </p>
-								<p class='fragment fade-in' style='color:#59d8a1'> Compliant with 2NF </p>
-							</div>
-							<div class='row'>
-								<div class='col'>
-									<table style='font-size:12px'>
+								<div class='fragment fade-in' data-fragment-index="2">
+									<table>
 										<caption style="caption-side:bottom"> rating_table </caption>
 										<tr>
 											<th style='background-color:#64abff;text-align:center'> Rating_Num </th>
@@ -2272,35 +2203,10 @@
 										</tr>
 									</table>
 								</div>
-								<div class='col'>
-									<table style='font-size:10px'>
-										<caption style="caption-side:bottom"> supermarket_table </caption>
-										<tr>
-											<th style='background-color:#64abff;text-align:center'> Supermarket </th>
-											<th style='text-align:center'> Country </th>
-										</tr>
-										<tr> 
-											<td style='background-color:#64abff'> Coop </td>
-											<td> UK </td>
-										</tr>
-										<tr> 
-											<td style='background-color:#64abff'> Tesco </td>
-											<td> UK </td>
-										</tr>
-										<tr> 
-											<td style='background-color:#64abff'> Sainsburys </td>
-											<td> UK </td>
-										</tr>
-										<tr> 
-											<td style='background-color:#64abff'> Walmart </td>
-											<td> USA </td>
-										</tr>
-									</table>
-								</div>
 							</div>
-							<!-- Slide 32d Notes-->
+							<!-- Slide 32c Notes-->
 							<aside class='notes'>
-								By doing this we have removed the transitive dependency, ensuring that each table now contains only relevant information that is directly related to its primary key.
+								
 							</aside>
 						</section>
 					</section>
@@ -2315,10 +2221,10 @@
 						</section>
 						<!-- Slide 33b -->
 						<section data-background-image='../assets/generic/main.PNG'>
-							<div class='row'>
-								<div class='col'>
+							<div class='r-stack'>
+								<div class='fragment fade-out'>
 									<p> Partial dependency occurs when a table has a <b class='objective'>composite key </b>and a field is dependent on <b class='objective'>one part of it</b> </p>
-									<table style='font-size:12px'>
+									<table>
 										<caption style="caption-side:bottom"> City partially dependent on composite key </caption>
 										<tr>
 											<th style='background-color:#64abff;text-align:center'> item_id </th>
@@ -2334,9 +2240,9 @@
 										</tr>
 									</table>
 								</div>
-								<div class='fragment col'>
+								<div class='fragment fade-out'>
 									<p> Transitive Dependency occurs when a field can be inferred from another field that is <b class='objective'>not the primary key</b></p>
-									<table style='font-size:12px'>
+									<table>
 										<caption style="caption-side:bottom"> Category can be inferred from population </caption>
 										<tr>
 											<th style='background-color:#64abff;text-align:center'> county </th>
