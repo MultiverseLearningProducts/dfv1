@@ -10,15 +10,4 @@ div.col {flex: 1; padding: 1em;}
 h1.def{color:#f4f4f4}
 h1.current{color:#ff7c66}
 section{data-background-opacity:1}
-.zoom {
-  padding: 50px;
-  background-color: green;
-  transition: transform .2s; /* Animation */
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-}
 
-.zoom:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
