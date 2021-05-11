@@ -1582,7 +1582,7 @@ form[class*='bg-'] {
   [class*='background-'] {
     -webkit-animation: fadeIn ease-in .2;
             animation: fadeIn ease-in .2;
-    opacity: .2; }
+    opacity: 1; }
   .background-video {
     opacity: .8; } }
 
