@@ -1,15 +1,15 @@
 <body style='font-family:atlas;font-size:25px;text-align:center;background-color:#f4f4f4;max-width:1000px;margin:auto;color:#242456'>
-  <div style="background-image: url('../assets/generic/banner_im.PNG');background-size: cover; height:480px; padding-top:80px;">
+  <div style="background-image: url('assets/generic/banner_im.PNG');background-size: cover; height:480px; padding-top:80px;">
   </div>
   <p style='color:#4d61f4; font-size: 60px; font-weight:bold'> Data Fellowship Curriculum Level 4  </p>
-  <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
+  <img src='assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
   <p>Skip to <a href=#contents> resources. </a></p>
   <div id='intent'>
     <h2 style='color:#4d61f4'><b> Intent</b> </h2>
     <p> At Multiverse we aim to enable apprentices to be professionally competent Data Analysts through teaching them tools and concepts they will need to use everyday. At the heart of our curriculum is the data analytics lifecycle, a north star principle which helps apprentices to 'think data' and guide them throughout all aspects of their role and projects. </p>
     <br>
     <div style='text-align:center'>
-      <img src="../Data%20Analysis%20in%20Industry/assets/session_1/data_analytics_lifecycle.PNG" style='display: block;margin-left: auto;margin-right: auto;'>
+      <img src="Data%20Analysis%20in%20Industry/assets/session_1/data_analytics_lifecycle.PNG" style='display: block;margin-left: auto;margin-right: auto;'>
     </div>
     <br>
     <p>Learning is not a straight path, but a spiral where we continually build on and extend prior learning to help apprentices gain new insights and fresh perspectives on how they can conduct their analysis. Throoughout the course we will return to techniques such as extracting, preparing, analysing, manipulating and visualising data through different tools and softwares such as Microsoft Excel, SQL, PowerBI, Python and R. At all stages we will review concepts and engage apprentices to consider which tools would be best used in their role to support their analysis, and justify this decision in their portfolio.</p>
@@ -17,7 +17,7 @@
     <p> In the latter stages of the course we will visit data science concepts such as machine learning and encourage apprentices to build their own predictive models to leverage better insights from their data. Throughout the course we will be increasing the complexity of the tools apprentices will be using so they can apply their knowledge to increasingly complex situations. </p>
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Ultraviolet/Multiverse_Notations_RGB_Indigo-03.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
+  <img src='assets/multiverse_brand/Ultraviolet/Multiverse_Notations_RGB_Indigo-03.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
   <br>
   <div id='implement'>
     <h2 style='color:#4d61f4'><b> Implementation</b> </h2>
@@ -30,7 +30,7 @@
     <p> Note, for all cohorts launched <b> after June 2021 </b> will be on the revised standard. Make sure you are using the newer resources for 'Data Analytics in Industry' and 'Database Fundamentals'. Also, these cohorts will not be using either exam or the module 'Advanced Skills.' 
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Ultraviolet/Multiverse_Notations_RGB_Indigo-03.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
+  <img src='assets/multiverse_brand/Ultraviolet/Multiverse_Notations_RGB_Indigo-03.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
   <br>
   <div id='impact'>
     <h2 style='color:#4d61f4'><b> Impact</b> </h2>
@@ -39,7 +39,7 @@
     <p> From month 3 we want apprentices to start thinking about their portfolio, showcasing the projects they have been working on and how they have applied skills from the course. Encourage apprentices to start taking on projects which allow them to extract, prepare, analyse, manipulate and visualise data and think about how these can be written up. </p>
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Ultraviolet/Multiverse_Notations_RGB_Indigo-03.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
+  <img src='assets/multiverse_brand/Ultraviolet/Multiverse_Notations_RGB_Indigo-03.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
   <br>
   <div id='overview'>
     <h2 style='color:#4d61f4'><b> Curriculum Overview </b></h2>
@@ -125,7 +125,7 @@
     </div>
   </div> 
   <br>
-  <img src='../assets/multiverse_brand/Ultraviolet/Multiverse_Notations_RGB_Indigo-03.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
+  <img src='assets/multiverse_brand/Ultraviolet/Multiverse_Notations_RGB_Indigo-03.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
   <br>
   <div id ='other resource'>
     <h3 style='color:#4d61f4'> Other Resources </h3>
@@ -139,7 +139,7 @@
     <p> Note: On all embedded slide decks, you can bring up coach notes by pressing 's' on your keyboard.</p>
   </div>
     <br>
-  <img src='../assets/multiverse_brand/Ultraviolet/Multiverse_Notations_RGB_Indigo-03.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
+  <img src='assets/multiverse_brand/Ultraviolet/Multiverse_Notations_RGB_Indigo-03.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
   <br>
   <div id= 'data_industry'>        
     <h3 style='color:#59d8a1'> Data Analysis in Industry </h3>
@@ -178,7 +178,7 @@
     <a href=#contents> Top </a>
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
+  <img src='assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
   <br>
   <div id= 'da_excel'>
     <h3 style='color:#59d8a1'> DA: Excel </h3>
@@ -191,7 +191,7 @@
     <a href=#contents> Top </a>
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
+  <img src='assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
   <br>
   <div id= 'database_fund'>
     <h3 style='color:#59d8a1'> Database Fundamentals </h3> 
@@ -228,7 +228,7 @@
     <a href=#contents> Top </a>
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
+  <img src='assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
   <br>
   <div id= 'da_sql'>
     <h3 style='color:#59d8a1'> DA: SQL </h3>
@@ -241,7 +241,7 @@
     <a href=#contents> Top </a>
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
+  <img src='assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
   <br>
   <div id= 'da_power'>
     <h3 style='color:#59d8a1'> DA: PowerBI </h3>
@@ -254,7 +254,7 @@
     <a href=#contents> Top </a>
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
+  <img src='assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
   <br>
   <div id= 'da_tableau'>
     <h3 style='color:#59d8a1'> DA: Tableau </h3>
@@ -267,7 +267,7 @@
     <a href=#contents> Top </a>
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
+  <img src='assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
   <br>
   <div id= 'km2'>
     <h3 style='color:#59d8a1'> KM2 Data Analysis Concepts </h3> 
@@ -280,7 +280,7 @@
     <a href=#contents> Top </a>
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
+  <img src='assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
   <br>
   <div id= 'hack_1'>
     <h3 style='color:#59d8a1'> Hackathon 1 </h3> 
@@ -294,7 +294,7 @@
     <a href=#contents> Top </a>
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'> 
+  <img src='assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'> 
   <br>
   <div id= 'epa_2'>
     <h3 style='color:#59d8a1'> EPA Prep  </h3>
@@ -308,7 +308,7 @@
     <a href=#contents> Top </a>
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
+  <img src='assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
   <br>
   <div id= 'ds_found'>
     <h3 style='color:#59d8a1'> DS: Python Foundations </h3> 
@@ -321,7 +321,7 @@
     <a href=#contents> Top </a>
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'> 
+  <img src='assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'> 
   <br>
   <div id= 'ds_eda'>
     <h3 style='color:#59d8a1'> DS: Exploratory Data Analysis </h3> 
@@ -334,7 +334,7 @@
     <a href=#contents> Top </a>
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'> 
+  <img src='assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'> 
   <br>
   <div id= 'ds_model'>
     <h3 style='color:#59d8a1'> DS: Modelling Basics </h3> 
@@ -347,7 +347,7 @@
     <a href=#contents> Top </a>
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'> 
+  <img src='assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'> 
   <br>
   <div id= 'ds_machine'>
     <h3 style='color:#59d8a1'> DS: Machine Learning </h3> 
@@ -360,7 +360,7 @@
     <a href=#contents> Top </a>
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'> 
+  <img src='assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'> 
   <br>
   <div id= 'hack_2'>
     <h3 style='color:#59d8a1'> Hackathon 2 </h3>
@@ -374,7 +374,7 @@
     <a href=#contents> Top </a>
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
+  <img src='assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
   <br>
   <div id= 'tools_of_trade'>
     <h3 style='color:#59d8a1'> Tools of the Trade </h3>
@@ -391,7 +391,7 @@
     <a href=#contents> Top </a>
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
+  <img src='assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
   <br>
   <div id= 'advanced_tech'>
     <h3 style='color:#59d8a1'> Advanced Techniques </h3>
@@ -407,7 +407,7 @@
     <a href=#contents> Top </a>
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
+  <img src='assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
   <br>
   <div id= 'km1'>
     <h3 style='color:#59d8a1'> KM1 Data Analysis Tools </h3>
@@ -420,7 +420,7 @@
     <a href=#contents> Top </a>
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
+  <img src='assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
   <br>
   <div id= 'gateway'>
     <h3 style='color:#59d8a1'> Gateway </h3> 
@@ -435,7 +435,7 @@
     <a href=#contents> Top </a>
   </div>
   <br>
-  <img src='../assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
+  <img src='assets/multiverse_brand/Aurora/Multiverse_Notations_RGB_Teal-04.png' style='max-width:1000px;margin:auto;max-height:250px;text-align:center'>
   <br>                             
 </body>
 
