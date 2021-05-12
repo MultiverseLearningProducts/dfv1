@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- SEO -->
+    <title>Database Fundamentals Session 2</title>
+    <meta name="description" content="In this session we will looking at how to design a database and troubleshoot erros">
+    <!-- Tab icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/multiverse_brand/Logo/01_Deep Space/PNG/Multiverse_Symbol_RGB_Navy.png">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../Dependencies/dist/reveal.css">
+    <link rel="stylesheet" href="../Dependencies/dist/reset.css">
+    <link rel="stylesheet" href="../Dependencies/css/mv.css">
+    <link rel="stylesheet" type="text/css" media="all" href="../Dependencies/static/css/svg-icons.css">
+    <link rel="stylesheet" href="//codemirror.net/lib/codemirror.css">
+    <link rel="stylesheet" type='text/css' media='all' href="../Dependencies/static/css/webslides.css">
+    <link href="../assets/datastyle.css" rel="stylesheet" type="text/css">
+    <!-- Scripts -->
+    <script src="//codemirror.net/addon/runmode/runmode-standalone.js"></script>
+    <script src="//codemirror.net/mode/python/python.js"></script>
+    <body class='reveal-viewport'>
+      <!-- Page Header -->
+      <header role="banner" style='background-image:url(../assets/generic/header.jpg);background-size: contain;'>
+        <nav role="navigation" style='align:left'>
+          <ul>
+            <li class="applied">
+              <a href="https://applied.multiverse.io/totara/dashboard/index.php" title="Applied" target='_blank'>
+                <p style='font-family:atlas;color:#f4f4f4'><strong>Applied</strong></p>
+              </a>
+            </li>
+            <li class="contents">
+              <a href='#/2' title="Contents">
+                <em style='color:#f4f4f4'>Contents</em>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="reveal" style='font-family:atlas;font-size:25px;color:#242456'>
+        <div class="slides">
+          <!-- Slide 57 -->
+				<section data-background-image="../assets/generic/section.PNG">
+					<div class="wrap aligncenter">
+						<span class='title'> Testing Strategies</span>          
+					</div>
+					<!-- Slide 57 Notes -->
+					<aside class='notes'>
+						The final section of this module covers testing strategies, in other words, how can we check that our process has worked? It is part of the validation and verification process of making sure our ETL and data integration processes have done what we expected. 
+					</aside>
+				</section>				
+				<section>
+					<!-- Slide 58a -->
+					<section data-background-image="../assets/generic/fun_box.PNG">
+						<div class="wrap size-50 aligncenter">
+							<span style ='color:#4d61f4;font-size:100px;font-weight:bold;text-align:center'> Why do we need testing strategies? </span>
+						</div>
+						<!-- Slide 58a Notes -->
+						<aside class='notes'>
+							Ask apprentices why they think we need to test our integration processes.
+						</aside>
+					</section>
+					<!-- Slide 58b -->
+					<section data-background-image='../assets/generic/table_back.PNG'>
+						<p style='font-size:35px;color:#4d61f4'> To ensure that unified data sets are:</p>
+						<ul class='fragment' style='display:inline-block;text-align:left;font-size:35px'>
+							<li class='fragment'> Correct </li>
+							<li class='fragment'> Complete </li>
+							<li class='fragment'> Up to Date </li>
+						</ul>
+						<!-- Slide 58b Notes -->
+						<aside class='notes'>
+							By testing our processes we can be confident the data in the unified set is correct, complete (no missing data or redundant values) and up to date (accurate). Keeping in mind that the purpose of integrating our data into one source is so we can perform complex analytics quickly, it is important we know the data is correct and that the processes work as intended. You may not have time for this exercise so suggest apprentices do it on their own.
+						</aside>
+					</section>
+				</section>
+				<!-- Slide 59 -->
+				<section data-background-image="../assets/generic/strike_force.PNG">
+					<div class='row'>
+						<div class='col'>
+							<h1 style='color:#f4f4f4'> Types of Testing Strategies </h1>
+						</div>
+						<div class='col'>
+							<p class='fragment'> Technical Acceptance Testing (TAT) </p>
+							<p class='fragment'> User Acceptance Testing (UAT) </p>								
+							<p class='fragment'> Performance Stress Testing (PST)</p>								
+						</div>
+					</div>
+					<!-- Slide 59 Notes -->
+					<aside class='notes'>
+						There are three types of testing strategy (anyone remember what they were called when we showed them earlier?). We will cover each in a bit more detail.
+					</aside>
+				</section>
+				<!-- Slide 60 -->
+				<section data-background-image="../assets/generic/strike.PNG">
+					<div class='row'>
+						<div class='col'>
+							<img src='assets/session_1/tat.PNG'>
+							<br>
+							<p> Testing scripts to ensure they produce the correct output </p>
+							<p> Can be done manually or by automation </p>
+							<p> There are three strategies:</p>
+							<ul class='fragment' style='display:inline-block;text-align:left'>
+								<li class='fragment'> Unit tests </li>
+								<li class='fragment'> Integration tests </li>
+								<li class='fragment'> Functional tests </li>
+							</ul>
+						</div>
+						<div class='col'>
+							<h2 style='color:#f4f4f4'> Technical Acceptance Testing (TAT) </h2>
+						</div>
+					</div>
+					<!-- Slide 60 Notes -->
+					<aside class='notes'>
+						The first is called Technical Acceptance Testing (TAT) which is simply testing our scripts to ensure they work as intended. You will have been doing this already when python coding, as when you write a function or control flow you will have checked to make sure it worked. If anyone has been on CodeWars you will know they run tests against your functions, which is a form of TAT.
+					</aside>
+				</section>
+				<section>
+					<!-- Slide 61a -->
+					<section data-background-image="../assets/generic/main.PNG">
+						<h1 style='color:#4d61f4'> TAT: Unit Tests </h1>
+						<br>
+						<div class='row'>
+							<div class='col'>
+								<p> Testing individual functions or lines of code </p>
+								<p> Uses python library unittest </p>
+								<p> Naming convention <code>test_xxx.py </code></p>
+								<p> Run on your command line: <code> python -m unittest </code></p>
+							</div>
+							<div class='col'>
+								<pre><code id="python_code">
+								import unittest
+								def fun(x):
+								&nbsp;&nbsp;return x+1
+									
+								class MyTest(unittest.TestCase):
+								&nbsp;&nbsp;def test(self):
+								&nbsp;&nbsp;&nbsp;&nbsp;self.assertEqual(fun(3),4)
+								</code></pre>
+							</div>
+						</div>
+						<!-- Slide 61a Notes -->
+						<aside class='notes'>
+							A TAT unit test will run through a script and check that everything works as intended. To do this in python we use the unittest library and once we have defined a function we then create a use case where we tell it what the output should be. The unit test will verify that the function works correctly.
+							Demonstrate this with class. In your Jupyter navigator go to New, then select Text File. Write in the code on the screen then name it test_fun.py and then save. Go back to the navigator and then go to New, then select Terminal. Check what folder the terminal is running in, and if necessary navigate to the one you saved test_fun.py in. Then type python -m unittest and run. 
+						</aside>
+					</section>
+					<!-- Slide 61b -->
+					<section data-background-image="../assets/generic/tweenies.PNG">
+						<div class='row'>
+							<div class='col'>
+							</div>
+							<div class='col'>
+								<h2 style='color:#64abff'> Activity </h2>
+								<br>
+								<ul style='display:inline-block;text-align:left'>
+									<li> Open a file in Jupyter Notebook and write a function that sums of a list of numbers </li>
+									<li> Write a test case for the function in the same script and name it <code> test_sum.py</code></li>
+									<li> Write a new function in a different file that averages a list of numbers </li>
+									<li> Write a test case for the function in the same script and name it <code> test_average.py</code></li>
+									<li> Open a terminal and run <code> python -m unittest </code></li>
+								</ul>
+							</div>
+						</div>
+						<!-- Slide 61b Notes -->
+						<aside class='notes'>
+							Give apprentices 10 minutes to attempt this section, test_sum.py and test_average.py have already been created for coach useage for when you go through solutions.
+						</aside>
+					</section>
+				</section>
+				<!-- Slide 62 -->
+				<section data-background-image="../assets/generic/main.PNG">
+					<h1 style='color:#4d61f4'> TAT: Integration Tests </h1>
+					<br>
+					<p> Integration tests verify that different modules or services used by your application work well together. </p>
+					<p> For example, it can be testing the interaction with a database, i.e. are you able to write queries? </p>
+					<!-- Slide 62 Notes -->
+					<aside class='notes'>
+						An integration test verifies that the different modules or services work as intended. If you connect two sources together, do they actually integrate? Does the server you connected your Tableau workbook to actually communicate? These sort of tests check the pipeline processes (like a plumber checking piping connections are sealed correctly and won't leak or block when the water flows).
+					</aside>
+				</section>
+				<!-- Slide 63 -->
+				<section data-background-image="../assets/generic/main.PNG">
+					<h1 style='color:#4d61f4'> TAT: Functional Tests </h1>
+					<br>
+					<p> These focus on the business requirements of an application. They <u>only verify the output of an action</u> and do not check the intermediate states of the system when performing that action. </p>
+					<!-- Slide 63 Notes -->
+					<aside class='notes'>
+						A TAT functional test verifies that the process works as intended from a business point of view. They ensure the output is what you wanted from the brief. These can be carried out by the stakeholder themselves to check the output is what they wanted. To recap: unit tests check the code/functions work, integration tests if the different software/sources interact with each other properly and functional tests the process meets the business requirement from the project brief.
+					</aside>
+				</section>
+				<section>
+					<!-- Slide 64a -->
+					<section data-background-image="../assets/generic/strike.PNG">
+						<div class='row'>
+							<div class='col'>
+								<img src='assets/session_1/uat.PNG'>
+								<br>
+								<p> Formal tests to verify if a report or system statisfies its business requirements </p>
+								<p> Can be done manually or by automation </p>
+							</div>
+							<div class='col'>
+								<h2 style='color:#f4f4f4'> User Acceptance Testing (UAT) </h2>
+							</div>
+						</div>
+						<!-- Slide 64a Notes -->
+						<aside class='notes'>
+							A UAT checks if the process meets the business requirements (similar to a TAT functional test). The user checks the process to ensure they are satisfied it works. This can be done manually or automatically (check for key words, reports in the correct format).
+						</aside>
+					</section>
+					<!-- Slide 64b -->
+					<section data-background-image="../assets/generic/strike.PNG">
+						<div class='row'>
+							<div class='col'>
+								<p> Answers questions like:</p>
+								<ul class='fragment' style='display:inline-block;text-align:left'>
+									<li class='fragment'> Does the report meet the original requirements? </li>
+									<li class='fragment'> Does the report produce sensible information? </li>
+									<li class='fragment'> Is the design and layout acceptable? </li>
+								</ul>
+							</div>
+							<div class='col'>
+								<h2 style='color:#f4f4f4'> User Acceptance Testing (UAT) </h2>
+							</div>
+						</div>
+						<!-- Slide 64b Notes -->
+						<aside class='notes'>
+							Ask the apprentices what value these sort of tests would have. UAT's allow you to confirm you have met the business requirements and also verify the format (font, layout, colours, etc) of the end product.
+						</aside>
+					</section>
+				</section>
+				<section>
+					<!-- Slide 65a -->
+					<section data-background-image="../assets/generic/strike.PNG">
+						<div class='row'>
+							<div class='col'>
+								<img src='assets/session_1/pst.PNG'>
+								<br>
+								<p> Focusses on validating performance characteristics of the product such as scalability and reliability </p>
+								<p> They check the behaviours of the system when it is under a significant load </p>								
+							</div>
+							<div class='col'>
+								<h2 style='color:#f4f4f4'> Performance Stress Testing (PST) </h2>
+							</div>
+						</div>
+						<!-- Slide 65a Notes -->
+						<aside class='notes'>
+							Finally we have performance stress testing which checks if your process can work to scale. If hundreds of users require use of your warehouse, you don't want it breaking when they all try to access it at once. This is the equivalent of seeing how many items you can hold in a shopping bag before it breaks. If you are expecting huge amounts of users you need to ensure the system is robust enough to handle it.
+						</aside>
+					</section>
+					<!-- Slide 65b -->
+					<section data-background-image="../assets/generic/strike.PNG">
+						<div class='row'>
+							<div class='col'>
+								<p> Tests are based on non functional requirements:</p>
+								<ul class='fragment' style='display:inline-block;text-align:left'>
+									<li class='fragment'> Scalability </li>
+									<li class='fragment'> Reliability </li>
+									<li class='fragment'> Stability </li>
+									<li class='fragment'> Availability </li>
+								</ul>
+							</div>
+							<div class='col'>
+								<h2 style='color:#f4f4f4'> Performance Stress Testing (PST) </h2>
+							</div>
+						</div>
+						<!-- Slide 65b Notes -->
+						<aside class='notes'>
+							Ask the apprentices what else these tests might be checking for. Apart from checking if the process can work to scale, they are also ensuring it will work reliably with little lag time when multiple users are accessing it. They also want to check that data is available quickly when requested.
+						</aside>
+					</section>
+				</section>
+        </div>
+      </div>
+      <!-- Scripts -->
+      <script src="../Dependencies/dist/reveal.js"></script>
+      <script src="../Dependencies/plugin/notes/notes.js"></script>
+      <script src="../Dependencies/plugin/markdown/markdown.js"></script>
+      <script src="../Dependencies/plugin/highlight/highlight.js"></script>
+      <script>
+        Reveal.initialize({hash: true, mouseWheel:true, controls:true, slideNumber:true, loop:true, plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]	});
+      </script>
+    </body>   
+  </head>
+</html>
