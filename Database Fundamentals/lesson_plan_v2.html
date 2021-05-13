@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Database Fundamentals Lesson Plan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/multiverse_brand/Logo/01_Deep Space/PNG/Multiverse_Symbol_RGB_Navy.png">
+    <link href="../assets/datastyle.css" rel="stylesheet" type="text/css">
+
+    <style>
+      th.ColColor{background-color:#4d61f4;color:#f4f4f4;}
+    </style>
+  </head>
+  <body style='font-family:atlas;font-size:25px;text-align:center;background-color:#f4f4f4;max-width:1000px;margin:auto;color:#242456'>
+    <div style="background-image: url('../assets/generic/banner_im.PNG');background-size: cover; height:480px; padding-top:80px;"></div>
+    <p id='top' style ='font-size: 60px; font-weight:bold'> Data Analysis in Industry: Lesson Plan </p>
+    <br>
+    <p><i> 6 Hours </i></p>
+    <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    <br>
+    <div id='contents'>
+      <p style ='font-size: 50px'> <i> Contents </i> </p>
+      <br>
+      <div id=table-wrap >
+        <table style='width:100%;border:1px solid black'>
+          <tr style="text-align:left; font-size:15px">
+            <th class='ColColor'><b>Section</b></th>
+          </tr>
+          <tr>
+            <td style="text-align:left; font-size:15px"><a href=#overview> Overview</a></td>
+          </tr>
+          <tr>
+            <td style="text-align:left; font-size:15px"><a href=#materials> Session Materials</a></td>
+          </tr>
+          <tr>
+            <td style="text-align:left; font-size:15px"><a href=#prereqs>Prerequisites</a></td>
+          </tr>
+          <tr>
+            <td style="text-align:left; font-size:15px"><a href=#learning_obs> Learning Objectives</a></td>
+          </tr>
+          <tr>
+            <td style="text-align:left; font-size:15px"><a href=#assignment> Assignment </a></td>
+          </tr>
+          <tr>
+            <td style="text-align:left; font-size:15px"><a href=#tcs> Standards Covered</a></td>
+          </tr>
+          <tr>
+            <td style="text-align:left; font-size:15px"><a href=#km1> KM2 Data Anlaysis Concepts</a></td>
+          </tr>
+          <tr>
+            <td style="text-align:left; font-size:15px"><a href=#recording> Recordings</a></td>
+          </tr>
+          <tr>
+            <td style="text-align:left; font-size:15px"><a href=#session_outline> Session Outline</a></td>
+          </tr>
+          <tr>
+            <td style="text-align:left; font-size:15px"><a href=#add_resource> Additional Resources</a></td>
+          </tr>
+          <tr>
+            <td style="text-align:left; font-size:15px"><a href=#coach_notes> Coach Notes</a></td>
+          </tr>
+        </table>       
+      </div>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    </div>
+    <div id='overview'>
+      <p style ='font-size: 50px'> <i> Overview </i> </p> 
+      <br>
+      <p> This module introduces the concepts of relational databases and how they should be designed and maintained. There is also discussion around other common database types, chiefly NoSQL. In the second half we will focus on data integration and data warehouses to explore how they can be used in our analysis.  </p>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+    </div>
+    <div id='materials'>
+      <p style ='font-size: 50px'> <i> Materials </i> </p> 
+      <br>
+      <p><a href='https://multiverselearningproducts.github.io/dfv1/Database%20Fundamentals/session_1_v2.html'> Session 1 Slide Deck </a></p>
+      <p><a href='https://multiverselearningproducts.github.io/dfv1/Database%20Fundamentals/session_2_v2.html'> Session 2 Slide Deck </a></p>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+    </div>
+    <div id='prereqs'>
+      <p style ='font-size: 50px'> <i> Prerequisites </i> </p>
+      <br>
+      <ul style='display:inline-block;text-align:left'>
+        <li> Apprentice OTJT should be at 100% or above </li>
+        <li> Apprentices must have completed module 1 and submitted all parts of their assignment </li>
+        <li> Apprentices must have completed DA: Excel </li>
+      </ul>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    </div>
+    <br>
+    <div id= learning_obs>
+      <p style ='font-size: 50px'> <i> Learning Objectives </i> </p>
+      <br>
+      <ul style='display:inline-block;text-align:left'>
+        <li> Explain the concepts and uses of a <b class='objective'> relational database management system </b></li>
+        <li> Identify the different types of <b class='objective'> key </b> in a RDBMS </li>
+        <li> Understand the principles of <b class='objective'> normalisation</b> on a relational database  </li>
+        <li> Design and visualise an <b class='objective'> entity relationship diagram </b> for a database </li>
+        <li> Understand the principles of <b class='objective'> data integration </b> and how it is used to help our analysis ></li>
+        <li> Describe the <b class='objective'>ETL process</b> and how it is used to in data integration</li>
+      </ul>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    </div>
+    <br>
+    <div id=assignment>
+       <p style =' font-size: 50px'> <i> Assignment </i> </p>
+      <br>
+      <p><b> Task </b></p>
+      <br>
+      <p> Use a work-related dataset to design your own relational database. You should describe the dataset, follow the normalisation steps and create an Entity Relationship Diagram (ERD).</p>
+      <br>
+      <p><b> Things to Consider </b></p>
+      <br>
+      <ul style='display:inline-block;text-align:left'>
+        <li> Max 1500 words </li>
+        <li> Deliver as a word document or PowerPoint presentation, and make use of LucidChart to design the ERD</li>
+      </ul>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    </div>
+    <br>
+    <div id=tcs>
+      <p style ='font-size: 50px'> <i> Standards Covered </i> </p>
+      <br>
+      <ul style='display:inline-block;text-align:left'>
+        <li>Demonstrates how data from different sources is combined and prepared for data analysis setting out how they identified the risks and challenges inherent in combining data within the project. (S8)</li>
+        <li> Analyses data sets taking account of different data structures and database designs. (S4) </li>
+        <li> Outlines the choice of organisational data architecture. (K12) </li>
+        <li> Demonstrates the use of data sets with different data structures and database designs to solve problems or improve the accuracy or efficiency of data analysis. (S4) </li>
+        <li> Describes the fundamentals of data structures and database system design and explains how they are implemented and maintained. (K6) </li>
+        <li> Explains approaches to combining data from different sources to improve accuracy and / or efficiency and / or maximise benefits to the organisation and / or customer. (K10) </li>
+        <li> Describes the relevant tools or techniques used for working with the data systems architecture in their organisation. (S9) </li>
+        <li> Evaluates the benefits and risks inherent in combining data from different sources. (K10) </li>
+      </ul>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    </div>
+    <br>
+    <div id= recording>
+      <p style ='font-size: 50px'> <i> Recordings (coach use only) </i> </p>
+      <br>
+      <a href='https://drive.google.com/drive/folders/1bQtvxHXqLM6o21fvmYmNmYMDVFCap-je?usp=sharing'> Link </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    </div>
+    <br>
+    <div id='outline'>
+      <p style ='font-size: 50px'> <i> Session Outline </i> </p>
+      <br>
+      <table style='width:100%;border:1px solid black;border-collapse:collapse;padding:5px'>
+        <tr>
+          <th class='ColColor' style='text-align:left;font-size:15px;border:1px solid black'> Section </th>
+          <th class='ColColor' style='text-align:left;font-size:15px;border:1px solid black'> Approx. Timing </th>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#intro_1> Class Introduction</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#intro_d> Introduction to Databases</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#relate_to_me> Relational Databases</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 15 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#lost_my> Keys</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <i> Break </i> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 15 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#normal> Normalisation</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 60 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#nosql> NoSQL</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#the_others> Other Types of Database</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#recap_1> Session 1 Recap</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#intro_2> Class Introduction</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#on_da_runway> Data Modelling</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 15 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#erds> Entity Relationship Diagrams</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#nick_knowles> DIY Database Design</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 25 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <i> Break </i> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#warehouse> Data Warehouse</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 15 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#integration> Data Integration</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#types> Types of Data Integration</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 5 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#life_cycle> Data Integration Life Cycle</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#rules> Rules and Policies</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 5 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#ETL> Extract, Transform, Load</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 25 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#comb_by_ya> Combining Data</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 10 Minutes </td>
+        </tr>
+        <tr>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> <a href=#recap_2> Session 2 Recap</a> </td>
+          <td style='text-align:left;font-size:15px;border:1px solid black'> 20 Minutes </td>
+        </tr>
+      </table>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    </div>
+    <br>
+    <div id=add_resource>
+      <p style ='font-size: 50px'> <i> Additional Resources </i> </p>
+      <br>
+      <ul style='display:inline-block;text-align:left'>
+        <li> <a href='https://multiverselearningproducts.github.io/dfv1/Database%20Fundamentals/testing_strategies.html' target='_blank'> Testing Strategies </a></li>
+        <li> <a href='https://multiverselearningproducts.github.io/dfv1/Database%20Fundamentals/dealing_with_problems.html' target='_blank'> Dealing with Problems </a></li>
+      </ul>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    </div>
+    <br>
+    <div id=coach_notes>
+      <p style ='font-size: 50px'> <i> Coach Notes </i> </p>
+      <br>
+      <table id='intro_1' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+        <tr>
+          <th class='ColColor' style=width:15%;text-align:left;font-size:15px > Topic </th>
+          <td style=width:35%;text-align:left;font-size:15px> <a href='https://multiverselearningproducts.github.io/dfv1/Database%20Fundamentals/session_1.html#/1' target='_blank'>Class Introduction</a> </td>
+          <th  class='ColColor' style=width:15%;text-align:left;font-size:15px > Duration </th>
+          <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ice breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+        </tr>
+      </table>
+      <a href=#outline> Contents </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+      <table id='intro_d' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+        <tr>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+          <td style=width:35%;text-align:left;font-size:15px> <a href='https://multiverselearningproducts.github.io/dfv1/Database%20Fundamentals/session_1.html#/4' target='_blank'>Introduction to Databases</a> </td>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+          <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Understand basic concepts of a database </li></ul></td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> 
+            <p> In a module about databases it is important apprentices understand the basic concepts. In this section you will be guiding apprentices through the basic definition of a database management system, the key concepts and key people involved in building and maintaining them. Ask apprentices what experience they have with databases to assess baseline understanding. In this module they will be learning primarily about relational databases but we will also have a short amount of time for NoSQL databases too.  </p>
+          </td>                  
+        </tr>
+      </table>
+      <a href=#outline> Contents </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+      <table id='relate_to_me' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+        <tr>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+          <td style=width:35%;text-align:left;font-size:15px> <a href='https://multiverselearningproducts.github.io/dfv1/Database%20Fundamentals/session_1.html#/9' target='_blank'>Relational Databases</a> </td>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+          <td style=width:35%;text-align:left;font-size:15px> 15 Minutes </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Understand the basic concepts of a RDBMS </li></ul></td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> 
+            <p> Most of the data that apprentices will use will likely come from a RDBMS, it is structured, efficient and allows for improved analytics by providing opportunities for querying. Often SQL will be used to access the information, but that is not always true. Later on in the session we will discuss how to normalise a database, but in this section it is important apprentices are aware of key terms such as keys, normalisation, relationships and data redundancy. Use the 'bad example' to assess apprentices ability to spot pain points which will be discussed later.</p>
+          </td>
+        </tr>
+      </table>
+      <a href=#outline> Contents </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+      <table id='lost_my' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+        <tr>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+          <td style=width:35%;text-align:left;font-size:15px> <a href='https://multiverselearningproducts.github.io/dfv1/Database%20Fundamentals/session_1.html#/14' target='_blank'>Keys</a> </td>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+          <td style=width:35%;text-align:left;font-size:15px> 20 Minutes </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Describe the different types of key in a RDBMS </li></ul></td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> 
+            <p> Keys are how relationships are defined between tables in a RDBMS and are important for apprentices to identify when thinking about joins. The three types of key we will be looking at are primary (unique identifiers for each record), foreign (a primary key in another table, establishes the relationship) and composite (when two or more fields are combined to make a primary key). In the exercise apprentices will look at a table and try and identify the logical keys, use this to reinforce that primary keys must be unique and sometimes you may need to add a new field (e/g/ rowID) to create this key. Issues around normalisation can be explored at this point, for example, are the apprentices introducing redundant data?  </p>
+          </td>
+        </tr>
+      </table>
+      <a href=#outline> Contents </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+      <table id='normal' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+        <tr>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+          <td style=width:35%;text-align:left;font-size:15px> <a href='https://multiverselearningproducts.github.io/dfv1/Database%20Fundamentals/session_1.html#/20' target='_blank'>Normalisation </a></td>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+          <td style=width:35%;text-align:left;font-size:15px> 50 Minutes </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> 
+            <ul> 
+              <li> Understand the principles behind normalisation  </li>
+              <li> Modify a table so it is in 3NF </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> 
+            <p> A RDBMS is efficient because it optimises storage through creating several smaller tables with defined relationships, rather than one large table where information is repeated or missing (which takes up storage space). Make sure apprentices are aware of what happens at each stage and why it is important in the context of optimising the database- lower storage leads to quicker querying which leads to faster insights. Go through the example slowly, asking apprentices to spot non compliance with NF and what they think can be done to fix it. Examples are interspersed of redudant data and how they can be sorted. Apprentices often get confused with the difference between transitive and partial dependency, there is a slide later in the section to address this. Partial occurs only when there is a composite key and transitive indicates redundant data. Give a good 15 minutes at least for the exercise so apprentices can discuss and experiment, understanding what constitutes normal form.  </p>
+          </td>
+        </tr>
+      </table>
+      <a href=#outline> Contents </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+      <table id='nosql' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+      <tr>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+          <td style=width:35%;text-align:left;font-size:15px> <a href='https://multiverselearningproducts.github.io/dfv1/Database%20Fundamentals/session_1.html#/37' target='_blank'>NoSQL</a> </td>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+          <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Understand the different types of NoSQL database </li></ul></td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> 
+            <p> The RDBMS may be the most common database type, but NoSQL is becoming more and more popular. In this section you will help apprentices understand four common types of database, how they are used and why they are useful. They key takeaway is that NoSQL databases can store unstructured data and also (sometimes) remove the need for joins which speeds up data retrieval. It is possible some organisations we work with have started to implement NoSQL databases, so encourage apprentices to share their experience or research them more.
+            </p>
+          </td>
+        </tr>
+      </table>
+      <a href=#outline> Contents </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+      <table id='the_others' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+        <tr>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+          <td style=width:35%;text-align:left;font-size:15px> <a href='https://multiverselearningproducts.github.io/dfv1/Database%20Fundamentals/session_1.html#/44' target='_blank'>Other Types of Database </a></td>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+          <td style=width:35%;text-align:left;font-size:15px> 20 Minutes </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Justify the use of Big Data in analysis by considering the benefits and drawbacks </li></ul></td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> 
+            <p> Other than RDBMS and NoSQL, there are other ways data may be stored in an organisation that apprentices need to be aware of. If their organisation does use them, they need to be able to describe what they are used for and why they are useful in their portfolio. First you will go through historical types of database (network, hierarchical, multi-dimensional and object orientated) to explain key features and why they may be useful. You will then follow this up with a brief introdution to data warehouses. Do not spend too much time on this, as it is covered again in module 4. The key take away is that data warehouses allow for advanced analytics to be carried out on a unified data source within an organisation.</p>
+          </td>
+        </tr>
+      </table>
+      <a href=#outline> Contents </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+      <table id='recap_1' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+        <tr>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+          <td style=width:35%;text-align:left;font-size:15px> <a href='https://multiverselearningproducts.github.io/dfv1/Database%20Fundamentals/session_1.html#/47' target='_blank'>Recap</a> </td>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+          <td style=width:35%;text-align:left;font-size:15px> 15 Minutes </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To recap the day </li></ul></td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> <p> Go through the learning objectives again and show apprentices the assignments and check for their understanding. You may want to create a <a href='https://create.kahoot.it/my-library/kahoots/all'>kahoot</a> quiz, but if you do please make sure you have submitted a create resource request first. Remind apprentices to complete session attendance log and update their OTJT. </p> </td>
+        </tr>
+      </table>
+      <a href=#outline> Contents </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+      <table id='intro_2' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+        <tr>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+          <td style=width:35%;text-align:left;font-size:15px> <a href='https://multiverselearningproducts.github.io/dfv1/Database%20Fundamentals/session_2.html#/1' target='_blank'>Class Introduction</a> </td>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+          <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px Objectives </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> To provide an overview of the class agenda and the expected learning objectives </li></ul></td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px Notes </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> <p> Coach welcome apprentices to lesson and run through the session outline and learning objectives. Coach can run an ice breaker from <a href='https://docs.google.com/presentation/d/1jrSQya9EVyTf0t5e1FTP0g-jJOz6Lzw0g7xjJoixojk/edit?usp=sharing'> here </a>. </p> </td>
+        </tr>
+      </table>
+      <a href=#outline> Contents </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+      <table id='on_da_runway' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+        <tr>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+          <td style=width:35%;text-align:left;font-size:15px> <a href='https://multiverselearningproducts.github.io/dfv1/Database%20Fundamentals/session_2.html#/4' target='_blank'>Data Modelling</a> </td>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+          <td style=width:35%;text-align:left;font-size:15px> 15 Minutes </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Explain the difference between a conceptual, logical and physical model </li></ul></td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px>  
+            <p> Session 2 focusses more on the design and maintenance of a DBMS after the previous introduction to them. In this section you will be guiding apprentices through the basic design process, from concept to fleshing them out logically and finally considering what the final DBMS will look like. Each stage has its own requirements and considerations which you should go through. There is a brief introduction to common data types, keep this low level as it will be explored in more detail during the SQL bootcamp. Apprentices just need to know what we mean by 'string', not anything more detailed like how they used or analysed.</p>
+          </td>
+        </tr>
+      </table>
+      <a href=#outline> Contents </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+      <table id='erds' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+        <tr>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+          <td style=width:35%;text-align:left;font-size:15px> <a href='https://multiverselearningproducts.github.io/dfv1/Database%20Fundamentals/session_2.html#/10' target='_blank'>Entity Relationship Diagrams</a> </td>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+          <td style=width:35%;text-align:left;font-size:15px> 20 Minutes </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Explain why ERDs are useful </li></ul></td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px>
+            <p> The final form of any data model is the ERD, as it shows within the DBMS the different entities (tables) and how they are related. Go through the key features of an ERD and discuss with apprentices examples. The crow foot notation can be confusing, so make sure you are clear on the relationships in the examples and what they mean. The examples are built in Lucid Chart and embedded, they may be slow to load, so refresh the page if this happens. Give apprentices time to explain each ERD example so they are clear on the steps involved and how to define relationship.s  </p>
+          </td>
+        </tr>
+      </table>
+      <a href=#outline> Contents </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+      <table id='nick_knowles' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+          <tr>
+            <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+            <td style=width:35%;text-align:left;font-size:15px> <a href='https://multiverselearningproducts.github.io/dfv1/Database%20Fundamentals/session_2.html#/18' target='_blank'>DIY Database Design</a> </td>
+            <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+            <td style=width:35%;text-align:left;font-size:15px> 25 Minutes </td>
+          </tr>
+          <tr>
+            <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+          </tr>
+          <tr>
+            <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Design an ERD for a database</li></ul></td>
+          </tr>
+          <tr>
+            <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+          </tr>
+          <tr>
+            <td colspan=4 style=text-align:center;font-size:15px> 
+              <p> Don't spend too much time on the Spotify example, but use it to reinforce the process of building an ERD. Give apprentices 15 minutes to design the ERD from the example and time for feedback and discussion.  </p>
+            </td>
+          </tr>
+      </table>
+      <a href=#outline> Contents </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+      <table id='warehouse' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+        <tr>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+          <td style=width:35%;text-align:left;font-size:15px><a href='https://multiverselearningproducts.github.io/dfv1/Advanced%20Skills/session_1.html#/4' target='_blank'> Data Warehouse</a> </td>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+          <td style=width:35%;text-align:left;font-size:15px> 15 Minutes </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> 
+            <ul>
+              <li> Introduce Data Warehouses </li>
+              <li> Understand the difference between a Data Warehouse and a Database</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> 
+            <p> This module has been about using databases to help with our analysis. Apprentices also need to be aware of data warehouses and how they are used in analysis. In this section, apprentices will be introduced to the concept of warehouses, their benefits and how they differ from a database. Terms such as OLAP and OLTP will be defined. If apprentices use warehouses currently, find out what they use them for and what they think the advantages are.</p>
+          </td>                  
+        </tr>
+      </table>
+      <a href='#outline'> Contents </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+      <table id='integration' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+        <tr>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+          <td style=width:35%;text-align:left;font-size:15px> <a href='https://multiverselearningproducts.github.io/dfv1/Advanced%20Skills/session_1.html#/12' target='_blank'>Data Integration</a> </td>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+          <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Define Data Integration </li></ul></td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> 
+            <p> In this section you will be defining what data integration means and leading a discussion around why it is important in data management. These concepts will be appearing in the KM1 exam as well. You will also be showing apprentices examples of data sources as well as discussing the benefits of data integration.</p>
+          </td>
+        </tr>
+      </table>
+      <a href='#outline'> Contents </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+      <table id='types' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+        <tr>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+          <td style=width:35%;text-align:left;font-size:15px> <a href='https://multiverselearningproducts.github.io/dfv1/Advanced%20Skills/session_1.html#/17' target='_blank'>Types of Data Integration</a> </td>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+          <td style=width:35%;text-align:left;font-size:15px>5 Minutes </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px>
+            <ul>
+              <li> Understand the difference between batch and real time integration </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> 
+            <p> In this short section you will be showing the difference between batch and real time integration so apprentices can appreciate the processes and imagine benefits and challenges of each.</p>
+          </td>
+        </tr>
+      </table>
+      <a href='#outline'> Contents </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+      <table id='life_cycke' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+        <tr>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+          <td style=width:35%;text-align:left;font-size:15px> <a href='https://multiverselearningproducts.github.io/dfv1/Advanced%20Skills/session_1.html#/19' target='_blank'>Data Integration Life Cycle</a> </td>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+          <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px>
+            <ul>
+              <li> Understand and explain the data integration life cycle </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> 
+            <p> In this section you will be explaining the end to end process of how someone might carry out data integration, from selecting and profiling the data, understanding various requirements and designing the system to testing to make sure it works. This section incorporates vertical slides so you can lead discussions around each stage.  </p>
+          </td>
+        </tr>
+      </table>
+      <a href='#outline'> Contents </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+      <br>
+      <table id='rules' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+        <tr>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+          <td style=width:35%;text-align:left;font-size:15px> <a href='https://multiverselearningproducts.github.io/dfv1/Advanced%20Skills/session_1.html#/32' target='_blank'>Rules and Policies</a> </td>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+          <td style=width:35%;text-align:left;font-size:15px> 5 Minutes </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> 
+            <ul> 
+              <li> Consider methods to follow for keeping data integration accurate and safe </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> 
+            <p> When using a data integration process it is important to consider rules and policies to ensure it works and is safe. Guide apprentices to consider what sort of rules around access, ensuring clean data and that the process has worked should be put into place. Link this back to GDPR and why data security is essential.  </p> 
+          </td>
+        </tr>
+      </table>
+      <a href='#outline'> Contents </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+      <table id='ETL' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+        <tr>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+          <td style=width:35%;text-align:left;font-size:15px><a href='https://multiverselearningproducts.github.io/dfv1/Advanced%20Skills/session_1.html#/36' target='_blank'> ETL</a> </td>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+          <td style=width:35%;text-align:left;font-size:15px> 25 Minutes </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> 
+            <ul> 
+              <li> Understand the ETL process </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> 
+            <p> Extract, Transform, Load is an important process which is followed when unifying data into a warehouse. In this section you will guide apprentices through the process by first aksing them to consider how to count up all the words in a library. This is to get them to think about the difficulties in doing analysis when your data is spread across multiple locations. You will then explain the concept of ETL and how it works. Important things to point out- data is never removed or changed in ETL, the extracted data is always a copy. Also, apprentices may get confused about verification and validation. Verification is an internal process where you are checking the accuracy of your dataset (i.e. does your warehouse contain what it should?). Validation is an external process where you check against requirements of other systems (i.e. does the source files conform to what the target warehouse needs?). Validation happens during te extraction process and verification happens post loading.  </p>
+          </td>
+        </tr>
+      </table>
+      <a href='#outline'> Contents </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+      <table id='comb_by_ya' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+        <tr>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+          <td style=width:35%;text-align:left;font-size:15px><a href='https://multiverselearningproducts.github.io/dfv1/Advanced%20Skills/session_1.html#/36' target='_blank'> Combining Data</a> </td>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+          <td style=width:35%;text-align:left;font-size:15px> 10 Minutes </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> 
+            <ul> 
+              <li> Explain how to combine data in your portfolio </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> 
+            <p> This section is aimed to help apprentices think about their portfolio. If they ever combined data (through integration, joins, ETL, etc) they need to explain what they did, why they did it and any problems they encountered. You could run a pop quiz, and ask apprentices what they would include if they are asked to describe a particular process.    </p>
+          </td>
+        </tr>
+      </table>
+      <a href='#outline'> Contents </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+      <br>
+      <table id='recap_2' style='width:100%;border:1px solid black;border-collapse:separate;border-spacing:1em'>
+        <tr>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Topic </th>
+          <td style=width:35%;text-align:left;font-size:15px> <a href='https://multiverselearningproducts.github.io/dfv1/Database%20Fundamentals/session_2.html#/50' target='_blank'>Recap</a> </td>
+          <th style=width:15%;text-align:left;font-size:15px class='ColColor'> Duration </th>
+          <td style=width:35%;text-align:left;font-size:15px> 20 Minutes </td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Objectives </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> <ul> <li> Recap the day </li></ul></td>
+        </tr>
+        <tr>
+          <th class='ColColor' colspan=4 style=text-align:center;font-size:15px> Notes </th>
+        </tr>
+        <tr>
+          <td colspan=4 style=text-align:center;font-size:15px> <p> Go through the learning objectives and assignments and clarify anything apprentices may still not understand. Go to <a href='https://create.kahoot.it/my-library/kahoots/all' target='_blank'> Kahoot! </a> and run the module 1 Kahoot quiz (apprentices can download the app on their phone, or just use their browser). Make sure apprentices update tehir OTJ and complete the SAL. </p> </td>
+        </tr>
+      </table>
+      <a href=#outline> Contents </a>
+      <br>
+      <img src='../assets/multiverse_brand/Deep Space/Multiverse_Notations_RGB_Navy-02.png' style='max-width:1000px;margin:auto;max-height:100px;text-align:center'>
+    </div>
+  </body>
+</html>
