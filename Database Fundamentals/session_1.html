@@ -39,45 +39,45 @@
       </header>
       <div class="reveal" style='font-family:atlas;font-size:25px;color:#242456'>
         <div class="slides">
-          <!-- Slide 0 -->
+          <!-- Slide 1 -->
           <section data-background-image='../assets/generic/main_title.PNG'>
-            <!-- Slide 0 Notes-->
+            <!-- Slide 1 Notes-->
             <aside class='notes'>
               Welcome apprentices to the session and choose an ice breaker activity from <a href='https://drive.google.com/drive/folders/1maXFZJqy5CQpqcWYJYHGS7fpPnCtVEfn?usp=sharing' target='_blank'> here </a>
             </aside>
           </section>
-          <!-- Slide 1 -->
+          <!-- Slide 2 -->
           <section data-background-image='../assets/generic/title_slide_alt.PNG'>
             <div class="wrap aligncenter">
               <p class='title'> Database Fundamentals</p> 
               <br>
               <p style='color:#f4f4f4'> Session 1 </p>
             </div>
-            <!-- Slide 1 Notes-->
+            <!-- Slide 2 Notes-->
             <aside class='notes'>
               In today's session we will be looking through how to build and maintain a relational database. We will see why they are useful in our roles and how they can help us with our analysis. For your portfolio you will need to describe how you accessed the data for your projects and briefly summarise the advantages of the databases your organisation uses.
             </aside>
           </section>
-          <!-- Slide 2 -->
+          <!-- Slide 3 -->
 				<section class='present' data-background-image="../assets/generic/info_yellow.PNG">
 					<div class="wrap size-60">           
 						<h1> Session Outline </h1>
 						<ul style='list-style-type:none;font-size:15px'>
-							<li><a href='#/4'> Introduction to Databases </a></li>
-							<li><a href='#/9'> Relational Databases </a> </li>
-							<li><a href='#/14'> Keys </a> </li>
-							<li><a href='#/20'> Normalisation </a> </li>
-							<li><a href='#/37'> NoSQL </a> </li>
-							<li><a href='#/44'> Other Types of Database </a> </li>
-							<li><a href='#/47'> Recap </a> </li>
+							<li><a href='#/5'> Introduction to Databases </a></li>
+							<li><a href='#/10'> Relational Databases </a> </li>
+							<li><a href='#/15'> Keys </a> </li>
+							<li><a href='#/21'> Normalisation </a> </li>
+							<li><a href='#/38'> NoSQL </a> </li>
+							<li><a href='#/45'> Other Types of Database </a> </li>
+							<li><a href='#/48'> Recap </a> </li>
 						</ul>
 					</div>
-					<!-- Slide 2 Notes -->
+					<!-- Slide 3 Notes -->
 					<aside class='notes'>
 						Run through the plan of the day, plan to have a break about half way through
 					</aside>
 				</section>
-				<!-- Slide 3 -->
+				<!-- Slide 4 -->
 				<section data-background-image="../assets/generic/blank.PNG">
 					<div class="wrap size-60 " style='width:max-content'>
 						<div>
@@ -90,44 +90,44 @@
 							<li> Understand the principles of <b class='objective'> normalisation</b> on a relational database  </li>
 						</ul>          
 					</div>
-					<!-- Slide 3 Notes -->
+					<!-- Slide 4 Notes -->
 					<aside class='notes'>
 						Run through learning objectives, this session is about understanding databases and how they are used for analytics.
 					</aside>
 				</section>
-          <!-- Slide 4 -->
+          <!-- Slide 5 -->
           <section data-background-image='../assets/generic/section.PNG'>
             <div class="wrap aligncenter">
               <span class='title'> Introduction to Databases</span>          
             </div>
-            <!-- Slide 4 Notes-->
+            <!-- Slide 5 Notes-->
             <aside class='notes'>
               Ask the group what their understanding of databases is. How do they use them in their role? What does their organisation use? In this section you will be guiding apprentices through the basics of a database to show how they are useful in analytics
             </aside>
           </section>
 					<section>
-						<!-- Slide 5a -->
+						<!-- Slide 6a -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<div class="aligncenter">
 								<span style ='color:#4d61f4;font-size:70px;font-weight:bold;text-align:center'> A Database Management System (DBMS) provides... </span>
 							</div>
-							<!-- Slide 5a Notes-->
+							<!-- Slide 6a Notes-->
 							<aside class='notes'>
 								Most of the data we use in our organisations are stored in databases which are carefully regulated and maintained to allow users ease of access to the data they require for their role. Imagine if all the data was stored in a 'soup' where you had to extract what you needed, imagine how challenging it would be to retrieve the information you need, let alone join it with other data to leverage useful insights.
 							</aside>
 						</section>
-						<!-- Slide 5b -->
+						<!-- Slide 6b -->
 						<section data-background-image='../assets/generic/fun_box.PNG'>
 							<div class="aligncenter">
 								<span style ='color:#4d61f4;font-size:50px;font-weight:bold;text-align:center'> ...an efficient, reliable, convenient and safe multi-user storage and access to massive amounts of persistant data. </span>
 							</div>
-							<!-- Slide 5b Notes-->
+							<!-- Slide 6b Notes-->
 							<aside class='notes'>
 								Databases offer a convenient and efficient way to retrieve data and structure in a logical way which makes joining much simpler. As they are hosted centrally in an organisation, multiple users can gain access allowing for collaboration among teams.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 6 -->
+					<!-- Slide 7 -->
 					<section data-background-image='../assets/generic/strike_force.PNG'>
 						<div class='row'>
 							<div class='col'>
@@ -143,12 +143,12 @@
 								<p><span style='color:#ff7c66'>&rarr;</span> Reliable </p>
 							</div>
 						</div>
-						<!-- Slide 6 Notes-->
+						<!-- Slide 7 Notes-->
             <aside class='notes'>
 							To summarise, a database can hold large amounts of persistant (readily available) data in a way which keeps it safe and secure while also allowing multiple users from an organisation to access it. Accessing data is convenient, efficient and reliable helping analysts leverage data simply to gain powerful business insights.
             </aside>
 					</section>
-					<!-- Slide 7 -->
+					<!-- Slide 8 -->
 					<section data-background-image='../assets/generic/strike.PNG'>
 						<div class='row'>
 							<div class='col'>
@@ -163,12 +163,12 @@
 								<p style='color:#f4f4f4'><span style='color:#f4f4f4'>&rarr;</span> Data Manipulation Language (DML) </p>
 							</div>
 						</div>
-						<!-- Slide 7 Notes-->
+						<!-- Slide 8 Notes-->
             <aside class='notes'>
 							A few things to be aware of. Throughout the session we will refer to data models, these are how our databases are structured according to a schema. For example, how different tables in a database relate to each other. A schema is the blueprint for this database whhich holds the data within (a schema is an example of metadata). We will also speak about how data is defined in a database as well as how it is maniuplated using queries like SQL.
             </aside>
 					</section>
-					<!-- Slide 8 -->
+					<!-- Slide 9 -->
 					<section data-background-image='../assets/generic/strike.PNG'>
 						<div class='row'>
 							<div class='col'>
@@ -183,23 +183,23 @@
 								<p style='color:#f4f4f4'><span style='color:#f4f4f4'>&rarr;</span> Database Administrator </p>
 							</div>
 						</div>
-						<!-- Slide 8 Notes-->
+						<!-- Slide 9 Notes-->
             <aside class='notes'>
 							An important thing to consider is that for most apprentices they will not be designing or maintaining databases but will be using them. It is important they have an understanding of how a database works so they can talk about it in their portfolios. They also need to be able to talk about key stakeholders such as those who have a responsibility over maintaining databases, including the implementer, the designer, the application developer (who helps users access the data) and administrator who will grant access and resolve conflicts.
             </aside>
 					</section>
-					<!-- Slide 9 -->
+					<!-- Slide 10 -->
           <section data-background-image='../assets/generic/section.PNG'>
             <div class="wrap aligncenter">
               <span class='title'> Relational Databases</span>          
             </div>
-            <!-- Slide 9 Notes-->
+            <!-- Slide 10 Notes-->
             <aside class='notes'>
 							There are several types of database that organisations use, but one of the most common is the relational database which we will be focussing on today. We will see some of the others towards the end of the session.
             </aside>
           </section>
 					<section>
-						<!-- Slide 10a-->
+						<!-- Slide 11a-->
 						<section data-background-image='../assets/generic/fun_box.PNG'>
 							<div class="aligncenter">
 								<span style ='color:#4d61f4;font-size:50px;font-weight:bold;text-align:center'> 
@@ -208,12 +208,12 @@
 									A database where data is organised into tables with defined relationships between them 
 								</span>
 							</div>
-							<!-- Slide 10a Notes-->
+							<!-- Slide 11a Notes-->
 							<aside class='notes'>
 								A RDBMS is your typical database structure where data is stored across various tables depending on their use. For example, when selling a product you may have a table showing sales with another holding product information. There will be a defined relationship between the two by both having a common field. Most of the data you use will likely be stored in a RDBMS. Let's look at some typical characteristics.
 							</aside>
 						</section>
-						<!-- Slide 10b -->
+						<!-- Slide 11b -->
 						<section data-background-image='../assets/generic/pentagon_jr.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -228,12 +228,12 @@
 									<h2> Increased speed and storage </h2>
 								</div>
 							</div>
-							<!-- Slide 10b Notes-->
+							<!-- Slide 11b Notes-->
 							<aside class='notes'>
 								A key part of a RDBMS is that each table only holds relevant information. This reduces the number of fields in each table, therefore reducing memory usage and storage space leading to faster querying. Several small tables will be more efficient than one large table with a huge number of fields.
 							</aside>
 						</section>
-						<!-- Slide 10c -->
+						<!-- Slide 11c -->
 						<section data-background-image='../assets/generic/pentagon_jr.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -248,12 +248,12 @@
 									<h2> Less redundant and duplicated data </h2>
 								</div>
 							</div>
-							<!-- Slide 10c Notes-->
+							<!-- Slide 11c Notes-->
 							<aside class='notes'>
 								Having only relevant data in each table means all the information is useful which as previously mentioned lowers storage requirements and increases efficiency
 							</aside>
 						</section>
-						<!-- Slide 10d -->
+						<!-- Slide 11d -->
 						<section data-background-image='../assets/generic/pentagon_jr.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -268,12 +268,12 @@
 									<h2> Fewer problems updating data </h2>
 								</div>
 							</div>
-							<!-- Slide 10d Notes-->
+							<!-- Slide 11d Notes-->
 							<aside class='notes'>
 								If all your data is one table then updating becomes a chore. Imagine a table where each row was a family member and included their house number. If several members of the same family were in the table that piece of information would appear multiple times. If that family moved house you would need to update each record. Instead, if you had family information in one table and house information in another you would only have to update one record in one table if the family moved house. Spreading your data across tables makes updating far easier.
 							</aside>
 						</section>
-						<!-- Slide 10e -->
+						<!-- Slide 11e -->
 						<section data-background-image='../assets/generic/pentagon_jr.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -288,12 +288,12 @@
 									<h2> Less chance of deleting important data </h2>
 								</div>
 							</div>
-							<!-- Slide 10e Notes-->
+							<!-- Slide 11e Notes-->
 							<aside class='notes'>
 								On the other side of the coin, deleting data becomes much easier too. For example, you may want to archive older transactions but preserve the product information for reference. If the product info is in a different table, you can remove the older transactions without deleting what you want to keep.
 							</aside>
 						</section>
-						<!-- Slide 10f -->
+						<!-- Slide 11f -->
 						<section data-background-image='../assets/generic/pentagon_jr.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -308,12 +308,12 @@
 									<h2> Design follows consistent principles </h2>
 								</div>
 							</div>
-							<!-- Slide 10f Notes-->
+							<!-- Slide 11f Notes-->
 							<aside class='notes'>
 								All tables in a RDBMS will conform to predesigned structures allowing a consistent approach to querying which will redue chances of making mistakes or retrieving the wrong information.
 							</aside>
 						</section>
-						<!-- Slide 10g -->
+						<!-- Slide 11g -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<img src='assets/session_1/dr_codd.PNG' width=500 height=700> 
 							<!-- Slide 10g Notes-->
@@ -323,15 +323,15 @@
 						</section>
 					</section>
 					<section>
-						<!-- Slide 11a -->
+						<!-- Slide 12a -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<img src='assets/session_1/rdbms_ex.PNG'>						
-							<!-- Slide 11a Notes-->
+							<!-- Slide 12a Notes-->
 							<aside class='notes'>
 								An example of a RDBMS- each table holds relevant information to itself while related info is stored in a different table as defined by the relationships. For each linked table there is a field that is common to both (point out a few examples). Note, a common field may have different names in the two tables (shipVia in Orders will be the same as companyName in Shippers).
 							</aside>
 						</section>
-						<!-- Slide 11b -->
+						<!-- Slide 12b -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<table style='text-align:center'>
 								<caption style="caption-side:bottom"> shippers_table </caption>
@@ -361,13 +361,13 @@
 									<td> 01302339188 </td>
 								</tr>
 							</table>		
-							<!-- Slide 11b Notes-->
+							<!-- Slide 12b Notes-->
 							<aside class='notes'>
 								Within each table are the records and so for the shippers table you can see each company used and the contact information for them. This is essentially how a RDBMS works, several interlinked tables containing relevant information. The defined relationships allow the tables to be joined (via SQL queries, VLOOKUP, pandas, etc) so information can be combined to leverage useful insights.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 12 -->
+					<!-- Slide 13 -->
 					<section data-background-image='../assets/generic/problem.PNG'>
 						<div class='row'>
 							<div class='col'></div>
@@ -375,12 +375,12 @@
 								<h1 style='color:#ff7c66'> The Alternative...</h1>
 							</div>
 						</div>
-						<!-- Slide 12 Notes-->
+						<!-- Slide 13 Notes-->
             <aside class='notes'>
 							Let's imagine what a world without RDBMS looks like...
             </aside>
 					</section>
-					<!-- Slide 13 -->
+					<!-- Slide 14 -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<div class='r-stack'>
 							<p class='fragment fade-in-then-out' style='color:#ff7c66;font-size:2em;'> Difficult to insert new data </p>
@@ -475,24 +475,24 @@
 								</tr>
 							</table>
 						</div>
-						<!-- Slide 13 Notes-->
+						<!-- Slide 14 Notes-->
 						<aside class='notes'>
 							<b> First </b><br>
 							A table showing information on coaches and their apprentices would be huge with lots of repeated and redundant information. Ask the apprentices to spot issues and potential pain points. <br><b> Second </b><br>Note how many times each coach is mentioned and the information specific to them (like the number of cohorts they have or who their assisstant is). You know that Steph has 5 cohorts and works with Ashray from the first row, you don't need that information in subsequent rows. But because it is, that is memory space being used which will slow down your queries and hold up your analysis.<br> <b> Third </b><br> Also, imagine Steph's assistant changed- you would have to search through the whole table to find where updates are needed. If the assisstant info was stored in a different table then it would be much easier to update. <br> <b> Fourth</b><br>Other difficulties include adding new data (you would need an apprentice to be assigned a cohort and coach before they can be added), difficulty editing info (imagine having to change a coach for thousands of rows...) and deleting information (if there is only one instance of an employer and that apprentice leaves before another is enrolled, you would lose that info when the row is deleted).
 						</aside>
 					</section>
-					<!-- Slide 14 -->
+					<!-- Slide 15 -->
           <section data-background-image='../assets/generic/section.PNG'>
             <div class="wrap aligncenter">
               <span class='title'> Keys</span>          
             </div>
-            <!-- Slide 14 Notes-->
+            <!-- Slide 15 Notes-->
             <aside class='notes'>
               We have discussed what a RDBMS is and that for the tables stored within there are defined relationships between them. But how are these relationships defined, the 'key' is keys...
             </aside>
           </section>
 					<section>
-						<!-- Slide 15a -->
+						<!-- Slide 16a -->
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<h1> Primary Key </h1>
 						  <p> A unique identifier for each <b class='objective'>row in a table </b></p>
@@ -517,12 +517,12 @@
 									<td> Ashray </td>
 								</tr>
 							</table>
-							<!-- Slide 15a Notes-->
+							<!-- Slide 16a Notes-->
 							<aside class='notes'>
 								Keys are how relationships are defined between tables and there exists a few different types. The first is the primary key which is a unique identifier for each row in a table such that you can access any record by referencing this value. A key cannot be repeated and must be unique for each record. Often this will be the first column and will be an integer (but not always...). Every table in a RDBMS must have a primary key.
 							</aside>
 						</section>
-						<!-- Slide 15b -->
+						<!-- Slide 16b -->
 						<section data-background-image='../assets/generic/pentagon_jr.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -535,13 +535,13 @@
 									<p> ...given a new value when a new record is created </p>
 								</div>
 							</div>
-							<!-- Slide 15b Notes-->
+							<!-- Slide 16b Notes-->
 							<aside class='notes'>
 								A few rules about primary keys, they must hold a value (not null), each value must be unique to each record, they should rarely be changed and whenever a new record is added a key should be assigned.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 16 -->
+					<!-- Slide 17 -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<h1> Foreign Key </h1>
 						<p> A field in one table that is a primary key in <b class='objective'> another table </b>. These keys enable relationships between tables and allow them to be joined.</p>
@@ -594,12 +594,12 @@
 								</div>
 							</div>
 						</div>
-						<!-- Slide 16 Notes-->
+						<!-- Slide 17 Notes-->
             <aside class='notes'>
 							A foreign key is a field that points to a primary key in another table. In this example each apprentice is assigned a coach who is identified by their ID. This value is the primary key for the coach in the coach_table. The foreign key establishes the relationship between the two tables.
             </aside>
 					</section>
-					<!-- Slide 17 -->
+					<!-- Slide 18 -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<h1> Composite Key </h1>
 						<p> Two or more columns together acting as a <b class='objective'> primary key </b> </p>
@@ -636,12 +636,12 @@
 								<td> 2 </td>
 							</tr>
 						</table>
-						<!-- Slide 17 Notes-->
+						<!-- Slide 18 Notes-->
             <aside class='notes'>
 							What happens though if it is impossible to give each row in a table a unique identifier? For example, when scanning items through a checkout at a supermarket, each item will require its own row in a table (to record price and other product info) but will be part of the same transaction, so will have the same ID. This is where a composite key is used. When two fields together uniquely identify a record, you have a composite key. In this example, each apprentice and module will appear several times, but the combination of each will be unique to each row. 
             </aside>
 					</section>
-					<!-- Slide 18 -->
+					<!-- Slide 19 -->
 					<section data-background-image='../assets/generic/tweenies.PNG'>
 						<div class='row'>
 							<div class='col'></div>
@@ -656,12 +656,12 @@
 								</ul>
 							</div>
 						</div>
-						<!-- Slide 18 Notes-->
+						<!-- Slide 19 Notes-->
             <aside class='notes'>
 							Apprentices should click on the link to see the table. They don't need to build tables but identify how many are needed and what the keys would be. Give 5-8 minutes for the activity and 2 for feedback
             </aside>
 					</section>
-					<!-- Slide 19 -->
+					<!-- Slide 20 -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<table>
 							<tr>
@@ -703,34 +703,34 @@
 								</td>
 							</tr>
 						</table>
-						<!-- Slide 19 Notes-->
+						<!-- Slide 20 Notes-->
             <aside class='notes'>
 							Probably needs to be three tables as shown on the page. Discuss with apprentices if they agree with this, and if not what changes they would make. 
             </aside>
 					</section>
-					<!-- Slide 20 -->
+					<!-- Slide 21 -->
 					<section data-background-image='../assets/generic/section.PNG'>
             <div class="wrap aligncenter">
               <span class='title'> Normalisation</span>          
             </div>
-						<!-- Slide 20 Notes-->
+						<!-- Slide 21 Notes-->
             <aside class='notes'>
 							How do you build a RDBMS? You have your data in one table but it isn't efficient, this section will guide you through the process of normalising a table so it becomes a RDBMS.
             </aside>
 					</section>
-					<!-- Slide 21 -->
+					<!-- Slide 22 -->
 					<section data-background-image='../assets/generic/fun_box.PNG'>
 						<div class="aligncenter">
 							<span style ='color:#4d61f4;font-size:60px;font-weight:bold;text-align:center'> 
 								Normalisation is the process of structuring a database to reduce data redundancy and improve data integrity.
 							</span>
 						</div>
-						<!-- Slide 21 Notes-->
+						<!-- Slide 22 Notes-->
             <aside class='notes'>
 							Essentially, normalisation is how you build a relational deatabase.
             </aside>
 					</section>
-					<!-- Slide 22 -->
+					<!-- Slide 23 -->
 					<section data-background-image='../assets/generic/circle_remix.PNG'>
 						<div style="overflow-x:auto;">
 							<table style="table-layout: auto; width: 100%">
@@ -796,12 +796,12 @@
 								</tr>
 							</table>
 						</div>
-						<!-- Slide 22 Notes-->
+						<!-- Slide 23 Notes-->
             <aside class='notes'>
 							Ask apprentices to annotate the screen with any potential pain point they see with this table. Draw attention to the duplicated information, non unique primary keys, inconsisten data types and redundant information. This table is not in normal form, let's look at what that means...
             </aside>
 					</section>	
-					<!-- Slide 23 -->
+					<!-- Slide 24 -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<table style='border-collapse: collapse;table-layout: auto;width: 100%;'>
 							<tr>
@@ -827,13 +827,13 @@
 								</td>
 							</tr>
 						</table>
-						<!-- Slide 23 Notes-->
+						<!-- Slide 24 Notes-->
             <aside class='notes'>
 							A table in a RDBMS will be 'normalised' and that comes in three stages. Stage 1 involves sorting out keys and the quality of the data. Stage 2 separates the data out into different tables, and stage 3 validates the process.
             </aside>
 					</section>
 					<section>
-						<!-- Slide 24a -->
+						<!-- Slide 25a -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<h2 style='color:#ff7c66'> Each cell only contains one data point </h2>
@@ -901,12 +901,12 @@
 									</tr>
 								</table>
 							</div>
-							<!-- Slide 24a Notes-->
+							<!-- Slide 25a Notes-->
 							<aside class='notes'>
 								Each record should only be about one piece of information and so we shouldn't see two items in one cell. Ask apprentices what should be done to fix this.
 							</aside>
 						</section>
-						<!-- Slide 24b -->
+						<!-- Slide 25b -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<h2 style='color:#59d8a1'> Each cell only contains one data point </h2>
@@ -984,12 +984,12 @@
 									</tr>
 								</table>
 							</div>
-							<!-- Slide 24b Notes-->
+							<!-- Slide 25b Notes-->
 							<aside class='notes'>
 								Instead, each data point should be given its own record. An example of this would be items scanned in a supermarket shop as each item would need to recorded in its own row to allow the information to be captured efficiently.
 							</aside>
 						</section>
-						<!-- Slide 24c -->
+						<!-- Slide 25c -->
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -1059,14 +1059,14 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 24c Notes-->
+							<!-- Slide 25c Notes-->
 							<aside class='notes'>
 								Another solution to this would be to create a new field to show that more than one option exists for that record. You need to be careful with this approach though as for each extra field you add you are entering more blank (or null) values to your table which will reduce its efficiency. 
 							</aside>
 						</section>
 					</section>
 					<section>
-						<!-- Slide 25a -->
+						<!-- Slide 26a -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<h2 style='color:#ff7c66'> Each column contains only one data type </h2>
@@ -1144,12 +1144,12 @@
 									</tr>
 								</table>
 							</div>
-							<!-- Slide 25a Notes-->
+							<!-- Slide 26a Notes-->
 							<aside class='notes'>
 								It is essential that in a field, all the records contain the same data type. For example, they all need to be numerical or characters but not a mix of both. This will cause a bigger issue than you might expect, because most softwares (including python, R and SQL) will detect this conflict and will automatically convert every data point to a character (aka string). When you then try to query this column you will not get the output you expected because it is the wrong data type. It is essential then that the field is consistent.
 							</aside>
 						</section>
-						<!-- Slide 25b -->
+						<!-- Slide 26b -->
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -1193,12 +1193,12 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 25b Notes-->
+							<!-- Slide 26b Notes-->
 							<aside class='notes'>
 								An extension of this is when you have an ill defined field such as miscellaneous which can contain all sorts of information. In this case it is far better to create a field for each possible entry and remove any which are redundant.
 							</aside>
 						</section>
-						<!-- Slide 25c -->
+						<!-- Slide 26c -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<h2 style='color:#59d8a1'> Each column contains only one data type </h2>
@@ -1276,14 +1276,14 @@
 									</tr>
 								</table>
 							</div>
-							<!-- Slide 25c Notes-->
+							<!-- Slide 26c Notes-->
 							<aside class='notes'>
 								Issue fixed, all values are numerical.
 							</aside>
 						</section>
 					</section>
 					<section>
-						<!-- Slide 26a -->
+						<!-- Slide 27a -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<h2 style='color:#ff7c66'> Columns should each have a unique name </h2>
@@ -1361,12 +1361,12 @@
 									</tr>
 								</table>
 							</div>
-							<!-- Slide 26a Notes-->
+							<!-- Slide 27a Notes-->
 							<aside class='notes'>
 								An obvious issue, but all columns should have unique names (a reason why excel sheets are not structured btw- they allow you to do this...). If several columns in a table have the same name there will be issues with data retrieval and querying as the search won't know which columns to extract. This would be doubly problematic if this was involving primary keys...
 							</aside>
 						</section>
-						<!-- Slide 26b -->
+						<!-- Slide 27b -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<h2 style='color:#59d8a1'> Columns should each have a unique name </h2>
@@ -1444,14 +1444,14 @@
 									</tr>
 								</table>
 							</div>
-							<!-- Slide 26b Notes-->
+							<!-- Slide 27b Notes-->
 							<aside class='notes'>
 								This is a simple fix giving each column its own name. Note that proper naming convention for field names which are more than one word is to use underscore to avoid whitespace. This again saves on memory as the system doesn't have to think about trying to fill in any gaps.
 							</aside>
 						</section>
 					</section>
 					<section>
-						<!-- Slide 27a -->
+						<!-- Slide 28a -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> First Normal Form </h1>
 							<p style='color:#59d8a1'> Identification should not rely on the way data is sorted </p>
@@ -1529,12 +1529,12 @@
 									</tr>
 								</table>
 							</div>
-							<!-- Slide 27a Notes-->
+							<!-- Slide 28a Notes-->
 							<aside class='notes'>
 								Finally, you should be able to reference any piece of information in a table by looking at its primary or composite key alone. Aother way of putting this, is that if the table was shuffled would the records lose meaning? If so, it is not in normal form.
 							</aside>
 						</section>
-						<!-- Slide 27b -->
+						<!-- Slide 28b -->
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -1578,13 +1578,13 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 27b Notes-->
+							<!-- Slide 28b Notes-->
 							<aside class='notes'>
 								In the left table we can tell Allie also like Mushroom soup but if for whatever reason the table was shuffled that mushroom soup would be out of place and we wouldn't know who it belonged to. In this case, the data's value is dependent on the way it is sorted. To make it normal, we will need to put Allie's name in again.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 28 -->
+					<!-- Slide 29 -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<table style='border-collapse: collapse;table-layout: auto;width: 100%;'>
 							<tr>
@@ -1610,13 +1610,13 @@
 								</td>
 							</tr>
 						</table>
-						<!-- Slide 28 Notes-->
+						<!-- Slide 29 Notes-->
             <aside class='notes'>
 							Following those rules will put a table in first normal form, but it is still not fully normalised. Our example table still has a lot of repeated data which need to be separated out. Let's look at how we take a table from first normal form to second.
             </aside>
 					</section>
 					<section>
-						<!-- Slide 29a -->
+						<!-- Slide 30a -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Second Normal Form </h1>
 							<p style='color:#ff7c66'> Each table contains relevant data </p>
@@ -1694,12 +1694,12 @@
 									</tr>
 								</table>
 							</div>
-							<!-- Slide 29a Notes-->
+							<!-- Slide 30a Notes-->
 							<aside class='notes'>
 								Firstly, each table must only contain relevant data. Ask apprentices to spot which data may not be relevant to each other. For example, the price and rating are not strictly related to each other and could be in separate tables. Some of the information is about the supermarkets, and other is about the company that makes the chocolate. Each of those should be in different tables.
 							</aside>
 						</section>
-						<!-- Slide 29b -->
+						<!-- Slide 30b -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Second Normal Form </h1>
 							<div style="overflow-x:auto;">
@@ -1776,12 +1776,12 @@
 									</div>
 								</div>
 							</div>
-							<!-- Slide 29b Notes-->
+							<!-- Slide 30b Notes-->
 							<aside class='notes'>
 								We have separated the data into two tables, one about the supermarkets selling the chocolate and the other about the chocolate itself. But there is still an issue, can anyone spot what it is? The primary key on the price_table is not unique so it fails 1NF
 							</aside>
 						</section>
-						<!-- Slide 29c -->
+						<!-- Slide 30c -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Second Normal Form </h1>						
 								
@@ -1876,14 +1876,14 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 29c Notes-->
+							<!-- Slide 30c Notes-->
 							<aside class='notes'>
 								By adding an id column to the price table (which is the foreign key for the chocolate table) we can create a composite key that uniquely identifies each row. First normal form has now been achieved. 
 							</aside>
 						</section>
 					</section>
 					<section>
-						<!-- Slide 30a -->
+						<!-- Slide 31a -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Second Normal Form </h1>
 							<p style='color:#ff7c66'> There are no partial dependencies </p>
@@ -1932,22 +1932,22 @@
 									<td> UK </td>
 								</tr>
 							</table>
-							<!-- Slide 30a Notes-->
+							<!-- Slide 31a Notes-->
 							<aside class='notes'>
 								The next issue is that there can be no partial dependencies, in which there is some in this example. Can anyone suggest what a partial dependency means?
 							</aside>
 						</section>
-						<!-- Slide 30b -->
+						<!-- Slide 31b -->
 						<section data-background-image='../assets/generic/box_serious.PNG'>
 							<div class="aligncenter">
 								<span style ='font-size:60px;font-weight:bold;text-align:center'> Partial dependencies occur when a table with a composite key has a field which is only dependent on part of it </span>
 							</div>
-							<!-- Slide 30b Notes-->
+							<!-- Slide 31b Notes-->
 							<aside class='notes'>
 								If you have a field which is only dependent on part of a composite key, you have a partial dependency. 2NF is about only having relevant info in each table and if some of the information is partially relevant it is not good enough. In our example the issue is the price table is the country field. Country relates to the supermarket, but not the chocolate id as the brands are sold in both US and UK
 							</aside>
 						</section>
-						<!-- Slide 30c -->
+						<!-- Slide 31c -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Second Normal Form </h1>
 							<div class='r-stack'>
@@ -2043,12 +2043,12 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 30c Notes-->
+							<!-- Slide 31c Notes-->
 							<aside class='notes'>
 								So to avoid partial dependencies we need to create a third table which shows what country each supermarket is in. So the price table will now only show the prices at the supermarkets...
 							</aside>
 						</section>
-						<!-- Slide 30d -->
+						<!-- Slide 31d -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Second Normal Form </h1>
 							<p style='color:#59d8a1'> There are no partial dependencies </p>
@@ -2067,13 +2067,13 @@
 									<td> USA </td>
 								</tr>
 							</table>
-							<!-- Slide 30d Notes-->
+							<!-- Slide 31d Notes-->
 							<aside class='notes'>
 								While a new supermarket_table will show the country information.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 31 -->
+					<!-- Slide 32 -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<table style='border-collapse: collapse;table-layout: auto;width: 100%;'>
 							<tr>
@@ -2099,13 +2099,13 @@
 								</td>
 							</tr>
 						</table>
-						<!-- Slide 31 Notes-->
+						<!-- Slide 32 Notes-->
             <aside class='notes'>
 							With our table in 2NF it is time to consider third normal form, the stage where we validate the RDBMS is normalised. The main point here is to do with transitive dependencies, does anyone know what these are?
             </aside>
 					</section>
 					<section>
-						<!-- Slide 32a -->
+						<!-- Slide 33a -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Third Normal Form </h1>
 							<p style='color:#ff7c66'> There are no transitive dependencies </p>							
@@ -2133,22 +2133,22 @@
 									<td> Bad </td>
 								</tr>
 							</table>
-							<!-- Slide 32a Notes-->
+							<!-- Slide 33a Notes-->
 							<aside class='notes'>
 								Can anyone spot the transitive dependency? What table looks like it holds irrelevant information?
 							</aside>
 						</section>
-						<!-- Slide 32b -->
+						<!-- Slide 33b -->
 						<section data-background-image='../assets/generic/box_serious.PNG'>
 							<div class="aligncenter">
 								<span style ='font-size:60px;font-weight:bold;text-align:center'> Transitive dependencies occur when a field can be inferred from another field that <b class='objective'> not the primary key </b> </span>
 							</div>
-							<!-- Slide 32b Notes-->
+							<!-- Slide 33b Notes-->
 							<aside class='notes'>
 								A transitive dependency occurs when you can gain a piece of information about a field from one which isn't the primary key. In our example it is the two rating columns in the chocolate table. I can understand that a chocolate is excellent because it is rated as 10 and I can get that info without looking at the primary key.
 							</aside>
 						</section>
-						<!-- Slide 32c -->
+						<!-- Slide 33c -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Third Normal Form </h1>
 							<div class='r-stack'>
@@ -2196,34 +2196,34 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 32c Notes-->
+							<!-- Slide 33c Notes-->
 							<aside class='notes'>
 								By creating a new table which maps description to rating score we remove the transitive dependency in this database.
 							</aside>
 						</section>
-						<!-- Slide 32d -->
+						<!-- Slide 33d -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
 							<h1> Third Normal Form </h1>							
 							<p  style='color:#59d8a1'> Compliant with 2NF </p>
 							<div style="width: 960px; height: 720px; margin: 10px; position: relative;">
 								<iframe allowfullscreen frameborder="0" style="width:960px; height:720px" src="https://lucid.app/documents/embeddedchart/7db45792-3a1c-48ae-9326-8f59228a4709" id="T0FBcfZ.p9IY"></iframe>
 							</div>
-							<!-- Slide 32d Notes-->
+							<!-- Slide 33d Notes-->
 							<aside class='notes'>
 								By following the normalisation process we have taken an unwieldy table with redundant information and formed something which is more efficient and easy to query.
 							</aside>
 						</section>
 					</section>
 					<section>
-						<!-- Slide 33a -->
+						<!-- Slide 34a -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<h1> Partial vs Transitive Dependency </h1>						
-							<!-- Slide 33a Notes-->
+							<!-- Slide 34a Notes-->
 							<aside class='notes'>
 								A common source of confusion is understanding the difference between transitive and partial dependency, let's look at both. 
 							</aside>
 						</section>
-						<!-- Slide 33b -->
+						<!-- Slide 34b -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<div class='r-stack'>
 								<div class='fragment fade-out' data-fragment-index="1">
@@ -2261,24 +2261,24 @@
 									</table>
 								</div>
 							</div>
-							<!-- Slide 33b Notes-->
+							<!-- Slide 34b Notes-->
 							<aside class='notes'>
 								Partial dependency occurs in tables with composite keys where some of the fields are only dependent on part of the key. For example, the city field only relates to the vendor and not the item_id as that value will appear if the product is sold in another city. That is a partial dependency. A transitive dependency occurs when you cna understand a field from another which isn't the primary key. I know Essex has a large population because I can see that from the number. 
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 34 -->
+					<!-- Slide 35 -->
 					<section data-background-image='../assets/generic/main.PNG'>
 						<p> Understanding how databases are designed, and why they are designed this way makes the SQL - especially joins - a lot easier to understand! </p>
 						<p class='fragment'> The key is to consider the relationships and then apply normal form </p>
 						<br>
 						<p class='fragment'> You most likely will never need to design a full on database - that’s a very specific career progression. However, understanding the principles that went into the design of the databases you work with will help your understanding of them.</p>
-						<!-- Slide 34 Notes-->
+						<!-- Slide 35 Notes-->
             <aside class='notes'>
 							The main way we query a RDBMS is using a language such as Structured Query Language or SQL, we will be looking at this in an upcoming bootcamp. Understanding how a database is designed will make your querying much more efficient. It is unlikely you will ever design a database, but you may have to query one. 
             </aside>
 					</section>
-					<!-- Slide 35 -->
+					<!-- Slide 36 -->
 					<section data-background-image='../assets/generic/tweenies.PNG'>
 						<div class='row'>
 							<div class='col'></div>
@@ -2292,12 +2292,12 @@
 								<p> How does querying change because of First Normal Form? </p>
 							</div>
 						</div>
-						<!-- Slide 35 Notes-->
+						<!-- Slide 36 Notes-->
             <aside class='notes'>
 							Time to put this into practice. Download the excel file and convert the table to a 3NF database. Give 10-15 minutes for this exercise
             </aside>
 					</section>				
-					<!-- Slide 36 -->
+					<!-- Slide 37 -->
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<table style='text-align:center'>
 							<tr>
@@ -2339,33 +2339,33 @@
 								</td>
 							</tr>
 						</table>
-						<!-- Slide 36 Notes-->
+						<!-- Slide 37 Notes-->
 						<aside class='notes'>
 							Ask apprentices to share their designs and ask about what types of keys they used. It is likely they will have structured the tables as shown on the screen. Also discuss with apprentices the difference between a reference (product, store & county) and a transactional (transaction) table. Reference tables are fairly static and therefore rarely updated. A transactional table is often updated but therefore harder to analyse as the information will regularly change.
 						</aside>
 					</section>
-					<!-- Slide 37 -->
+					<!-- Slide 38 -->
 					<section data-background-image="../assets/generic/section.PNG">
 						<div class="wrap aligncenter">
 							<span class='title'> NoSQL</span>          
 						</div>
-						<!-- Slide 37 Notes -->
+						<!-- Slide 38 Notes -->
 						<aside class='notes'>
 							Before we finish for the day, let's discuss another common database type- Not Only SQL (or NoSQL).
 						</aside>
 					</section>
-					<!-- Slide 38 -->
+					<!-- Slide 39 -->
 					<section data-background-image='../assets/generic/fun_box.PNG'>
 						<div class="aligncenter">
 							<span style ='font-size:60px;font-weight:bold;text-align:center'> NoSQL ("<b class='objective'>N</b>ot <b class='objective'>o</b>nly <b class='objective'>SQL</b>") is an alternative to traditional relational databases that can accomodate a wide variety of data models.  </span>
 						</div>
-						<!-- Slide 38 Notes-->
+						<!-- Slide 39 Notes-->
 						<aside class='notes'>
 							A RDBMS is well suited for structured data in tabular formats, but as we know from the previous module, not all data is structured. You can have emails, videos, audio files, reports and more which all come under the unstructured umbrella. NoSQL databases provide a way of retrieving this sort of data.
 						</aside>
 					</section>
 					<section>
-						<!-- Slide 39a -->
+						<!-- Slide 40a -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<h1> Document Orientated Database </h1>
 							<div class='row'>
@@ -2378,12 +2378,12 @@
 									<img src='assets/session_1/document.PNG'>
 								</div>
 							</div>
-							<!-- Slide 39a Notes-->
+							<!-- Slide 40a Notes-->
 							<aside class='notes'>
 								There are 4 types of NoSQL database we will be looking at today. The first is the DOD, one of the most common types. Instead of storing the information across multiple tables like a RDBMS, you wrap the data in a document and reference the internal structure to access the data you want. The documents themselves are stored in collections (a collection is like a table where similar documents are stored together). A document can contain any type of data. Instead of using SQL, you would use languages like XML or JSON to retreive the information through an API. To access information from a DOD you just need to reference the document, as opposed to a RDBMS where you have to reference the keys.
 							</aside>
 						</section>
-						<!-- Slide 39b -->
+						<!-- Slide 40b -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<div class='row'>
 								<div class='col'>
@@ -2411,13 +2411,13 @@
 									</p>
 								</div>
 							</div>
-							<!-- Slide 39b Notes-->
+							<!-- Slide 40b Notes-->
 							<aside class='notes'>
 								A JSON can be thought of as a dictionary of dictionaries (dictionaries are represented by curly brackets). You can see the contact document is wrapped in the bigger collection. XML is a markup language where the data is tagged. You can see the contact document wraps all the information for Mr Smith. The advnatged of a DOD over a RDBMS is that all the information is stored in one place (a document) reducing the need for mapping or joins allowing you to process the data faster.  
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 40 -->
+					<!-- Slide 41 -->
 					<section data-background-image='../assets/generic/main.PNG'>
 						<h1> Key Value Database </h1>
 						<div class='row'>
@@ -2429,12 +2429,12 @@
 								<img src='assets/session_1/key_value.PNG'>
 							</div>
 						</div>
-						<!-- Slide 40 Notes-->
+						<!-- Slide 41 Notes-->
 						<aside class='notes'>
 							The simplest type of NoSQL (and a DOD is actually a subset of this) where the information is mapped to a key (like a RDBMS). To retrieve the information, all you need is the key. All the data is stored in one central location (unlike a DOD where it is stored in collections) and any type of data can be stored. Think of Spotify, where all the music will be held in a database and if you want to listen to something you just select the key (which the software will do for you). As these databases do not use SQL, key management is very important and many key value databases incorporate search functions to help you find keys. 
 						</aside>
 					</section>
-					<!-- Slide 41 -->
+					<!-- Slide 42 -->
 					<section data-background-image='../assets/generic/main.PNG'>
 						<h1> Columnar Database </h1>
 						<div class='row'>
@@ -2446,13 +2446,13 @@
 								<img src='assets/session_1/row.PNG'>
 							</div>
 						</div>
-						<!-- Slide 41 Notes-->
+						<!-- Slide 42 Notes-->
 						<aside class='notes'>
 							A columnar database stores data in columns, not rows but in many ways function like a RDBMS. They often can be queried using SQL but the difference is that the data can be accessed more precisely as you are only referencing the columns, not scanning through each row. In a row orientated database (like a RDBMS) you assign a row an id (primary key), and when you query, you scan through each row sequentially until you retrieve the information you need. However, this can be inefficient as it will scan each field in each record as well, even when you are applying a filter. A column orientated database applies a key to each item in a row, so when you write a query, it will only scan through the columns you have selected and retrieve the relevant information. This can drastically reduce the amount of time it takes a query to run. Note however, that this process runs each column seperately, so if you are wanting to query multiple columns it may be quicker to use a row orientated database.
 						</aside>
 					</section>
 					<section>
-						<!-- Slide 42a -->
+						<!-- Slide 43a -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<h1> Graph Database </h1>
 							<div class='row'>
@@ -2465,12 +2465,12 @@
 									<img src='assets/session_1/graph.PNG'>
 								</div>
 							</div>
-							<!-- Slide 42a Notes-->
+							<!-- Slide 43a Notes-->
 							<aside class='notes'>
 								A graph database uses graph structures (nodes, edges and properties) to query data. In these types of databases, information is stored in nodes where each node is a datapoint (a customer, product, group, etc- basically a record in a RDBMS). The edges define the relationships between nodes (customer A bought these products, client B is a member of these groups, etc). Relationships are considered top priority, whereas in a RDBMS the relationships are only defined when a JOIN is made. Querying is fast because the relationships have already been defined. An advantage of these types of databases is that data can be interpreted differently depending on how you utilise the edges (retrieve info per product, salesperson, company, date, etc). To retrieve information, you select a node and it will return all the associated information through its pre defined relationships.
 							</aside>
 						</section>
-						<!-- Slide 42b -->
+						<!-- Slide 43b -->
 						<section data-background-image='../assets/generic/main.PNG'>
 							<h1> Graph Database </h1>
 							<div class='row'>
@@ -2483,36 +2483,36 @@
 									<img src='assets/session_1/graph.PNG'>
 								</div>
 							</div>
-							<!-- Slide 42b Notes-->
+							<!-- Slide 43b Notes-->
 							<aside class='notes'>
 								There is no one language for these types of databases as each software will likely use their own. Crucially, a node can hold any type of data, structured on unstructured. Consider Spotify again, each node may be a song which is related to albums, artists and playlists (all of which will be nodes as well). When you want to know all of the songs by a particular artist, you select that node and all the connected songs will be retrieved as well. As there is no need for indexing, there is no need for the software to search and will just pull anything that is already connected making data retrieval faster. Another example is Facebook where each user is a node, connected to other users (friends) and groups they are members of.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 43 -->
+					<!-- Slide 44 -->
 					<section data-background-image='../assets/generic/main.PNG'>
 						<h1> Key Features </h1>
 						<br>
 						<p class='fragment'><b class='objective'>No Fixed Schema</b> - They do not have to follow historical rules making them more flexible</p>
 						<p class='fragment'><b class='objective'>No Joins</b> - NoSQL databases tend to store data in one large table, taking advantage of cheaper storage and faster processing where redundant data is no longer such a big issue</p>
 						<p class='fragment'><b class='objective'>Size and Scale</b> - No defined limits allows them to scale according to the resources available</p>
-						<!-- Slide 43 Notes-->
+						<!-- Slide 44 Notes-->
 						<aside class='notes'>
 							The key features of a NoSQL database is that they do not have to conform to strict design structures (a RDBMS has to be a tabular format with keys), they do not require joins as either the data is held in one location or the relationships have been pre defined. This removed redundant data, making storage cheaper and processing faster. And with no limits, there are better opportunities to build larger databases.
 						</aside>
 					</section>
-					<!-- Slide 44 -->
+					<!-- Slide 45 -->
 					<section data-background-image="../assets/generic/section.PNG">
 						<div class="wrap aligncenter">
 							<span class='title'> Other Types of Database</span>          
 						</div>
-						<!-- Slide 44 Notes -->
+						<!-- Slide 45 Notes -->
 						<aside class='notes'>
 							Before we wrap up, let's look briefly at other types of database you may come across. RDBMS and NoSQL are the msot common, but there are others...
 						</aside>
 					</section>
 					<section>
-						<!-- Slide 45a -->
+						<!-- Slide 46a -->
 						<section data-background-image="../assets/generic/table_back.PNG">
 							<table>
 								<tr>
@@ -2526,12 +2526,12 @@
 									<td> This is the most common form of database. It contains tables that can be joined to other tables through their relations. Normalisation is a key part of relational databases. </td>
 								</tr>
 							</table>
-							<!-- Slide 45a Notes -->
+							<!-- Slide 46a Notes -->
 							<aside class='notes'>
 								We have already seen the RDBMS today, where data is stored across multiple tables and joined together by referencing the keys. A very common database type which you will likely use in your role with SQL.
 							</aside>
 						</section>
-						<!-- Slide 45b -->
+						<!-- Slide 46b -->
 						<section data-background-image="../assets/generic/table_back.PNG">
 							<table>
 								<tr>
@@ -2545,20 +2545,20 @@
 									<td> Data is stored in a parent-children relationship nodes, in a tree like structure. The data is stored as a collection of fields where each field contains only one value. The records are linked to each other via a parent-children relationship. In a hierarchical database model, each child record has only one parent. A parent can have multiple children. To retrieve a field’s data, we need to traverse through each tree until the record is found. </td>
 								</tr>
 							</table>
-							<!-- Slide 45b Notes -->
+							<!-- Slide 46b Notes -->
 							<aside class='notes'>
 								The oldest type of database structure. Imagine folders on your computer, to access the information you need, you traverse through the folders going from parent to child each time. That is a hierarchical database. They are slow to traverse and are very limited.
 							</aside>
 						</section>	
-						<!-- Slide 45c -->
+						<!-- Slide 46c -->
 						<section data-background-image="../assets/generic/table_back.PNG">
 							<img src='assets/session_1/hierarchical.PNG'>
-							<!-- Slide 45c Notes -->
+							<!-- Slide 46c Notes -->
 							<aside class='notes'>
 								An example of a hierarchical database
 							</aside>
 						</section>
-						<!-- Slide 45d -->
+						<!-- Slide 46d -->
 						<section data-background-image="../assets/generic/table_back.PNG">
 							<table>
 								<tr>
@@ -2573,20 +2573,20 @@
  </td>
 								</tr>
 							</table>
-							<!-- Slide 45d Notes -->
+							<!-- Slide 46d Notes -->
 							<aside class='notes'>
 								A network database looks like a spiders web, where you will have multiple entities in a tree like structure (like hierarchical), but where children can have more than one parent. Information is still retrieved in a similar way by traversing through the network from the root. 
 							</aside>
 						</section>	
-						<!-- Slide 45e -->
+						<!-- Slide 46e -->
 						<section data-background-image="../assets/generic/table_back.PNG">
 							<img src='assets/session_1/network.PNG'>
-							<!-- Slide 45e Notes -->
+							<!-- Slide 46e Notes -->
 							<aside class='notes'>
 								An example of a network database
 							</aside>
 						</section>
-						<!-- Slide 45f -->
+						<!-- Slide 46f -->
 						<section data-background-image="../assets/generic/table_back.PNG">
 							<table>
 								<tr>
@@ -2601,20 +2601,20 @@
 									</td>
 								</tr>
 							</table>
-							<!-- Slide 45f Notes -->
+							<!-- Slide 456 Notes -->
 							<aside class='notes'>
 								A multidimensional database will look like a cube. Imagine a traditional table, but inside a cell is a wholelist of information (a 3rd dimension). These types of databases allow for very complex queries and advanced analytics as you can store and retrieve data in 3 or more dimensions. 
 							</aside>
 						</section>	
-						<!-- Slide 45g -->
+						<!-- Slide 46g -->
 						<section data-background-image="../assets/generic/table_back.PNG">
 							<img src='assets/session_1/multi.PNG'>
-							<!-- Slide 45g Notes -->
+							<!-- Slide 46g Notes -->
 							<aside class='notes'>
 								An example of a multidimensional database
 							</aside>
 						</section>
-						<!-- Slide 45h -->
+						<!-- Slide 46h -->
 						<section data-background-image="../assets/generic/table_back.PNG">
 							<table>
 								<tr>
@@ -2628,12 +2628,12 @@
 									<td> Object-oriented databases use small, recyclable separated chunks of data called objects. The objects themselves are stored in the object-oriented database. Each object contains two things: the object itself, and the metadata that explains that object, it’s purpose, what it is and where it fits in </td>
 								</tr>
 							</table>
-							<!-- Slide 45h Notes -->
+							<!-- Slide 46h Notes -->
 							<aside class='notes'>
 								Object orientated databases simply store the data in objects and information around what it is and how it is used. Python/R libraries are object orientated where you retrieve blocks of pre-written code that you can import into your workspace.
 							</aside>
 						</section>	
-						<!-- Slide 45i -->
+						<!-- Slide 46i -->
 						<section data-background-image="../assets/generic/table_back.PNG">
 							<table>
 								<tr>
@@ -2647,34 +2647,34 @@
 									<td> The ‘No’ stands for ‘Not Only’ SQL - these database seek to improve on standard SQL based DBMS by enhancing the forms of analytics available and changing the way that data is stored (no longer relational.) These databases are ideal for storing unstructured data.</td>
 								</tr>
 							</table>
-							<!-- Slide 45i Notes -->
+							<!-- Slide 46i Notes -->
 							<aside class='notes'>
 								Finally, we have NoSQL which allow for faster processing and more advanced analytics of data by storing it in different ways that remove the need for index referencing. These are ideal for unstructured data.
 							</aside>
 						</section>	
 					</section>
 					<section>
-						<!-- Slide 46a -->
+						<!-- Slide 47a -->
 						<section data-background-image="../assets/generic/box_serious.PNG">
 							<span style ='font-size:50px;width:max-content'> 
 								'Data Warehousing' is a practice in <b class='objective'>data management</b> whereby data is copied from various operational systems into a <b class='objective'>persistant data store</b> in a <b class='objective'>consistent format</b> to be used for <b class='objective'>analysis, decision making and reporting</b>. 
 							</span>	
-							<!-- Slide 46a Notes -->
+							<!-- Slide 47a Notes -->
 							<aside class='notes'>
 								You may also come across Data Watehouses in your role. These are central data repositories where information from across an organisation are stored (combined using data integration processes like ETL) where stakeholders can make data driven business decisions through the advanced analytics that are on offer. Imagine an organisation where each department has its own DBMS for their own purposes. Higher up decision makers in the company will want to see a unified view of data from across departments (compare sales and inventory for example) so they can make powerful decisions. 
 							</aside>
 						</section>
-						<!-- Slide 46b -->
+						<!-- Slide 47b -->
 						<section data-background-image="../assets/generic/main.PNG">
 							<div style="width: 640px; height: 480px; margin: 10px; position: relative;">
 								<iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embeddedchart/0b7e7655-f87a-4ada-859f-04df34f64e8f" id="lGfy493MMEW~"></iframe>
 							</div>
-							<!-- Slide 4b Notes -->
+							<!-- Slide 47b Notes -->
 							<aside class='notes'>
 								Unlike a RDBMS, where data is spread across multiple normalised tables, a data warehouse tends to be one central denormalised table, called the fact table. In there all the information from across the organisation is stored in a consistent format. Surrounding the fact table are dimension tables which define how the data should be aggregated. For example, you may want to analyse the data in terms of customers, or sales, or geographical region. By defining the aggregations you can easily retrieve this information and make decisions based off the analysis. 
 							</aside>
 						</section>
-						<!-- Slide 46c -->
+						<!-- Slide 47c -->
 						<section data-background-image="../assets/generic/strike_force.PNG">
 							<div class='row'>
 								<div class='col'>
@@ -2686,12 +2686,12 @@
 									<p class='fragment'> Are taken off line when updates are required </p>
 								</div>
 							</div>
-							<!-- Slide 4c Notes -->
+							<!-- Slide 47c Notes -->
 							<aside class='notes'>
 								Data warehouses are primarily used as a platform for advanced analytics such as recommendation algorithms or generating powerful insights, whereas as RDBMS is more used for storing transactional information for quick references and quick snapshots of the data. As such data warehouses are better suited for advanced queries which derive in depth insights through a deep dive into the data. A reason for this is because warehouses generally do not contain 'live' data (a RDBMS does), but recent data that came with the last upload. This allows for the analytics to run without being interupted because new data is coming in. A consequence of this is that if new data is to be added, the warehouse must come offline for the ETL process to happen. Usually this is done outside of working hours to avoid disruption.
 							</aside>
 						</section>
-						<!-- Slide 46d -->
+						<!-- Slide 47d -->
 						<section data-background-image="../assets/generic/strike.PNG">
 							<div class='row r-hstack'>
 								<div class='col'>
@@ -2704,23 +2704,23 @@
 									<h1 style='color:#f4f4f4'> Benefits </h1>
 								</div>
 							</div>
-							<!-- Slide 4d Notes -->
+							<!-- Slide 47d Notes -->
 							<aside class='notes'>
 								The benefits of using a data wareouse is that more rich data is available to key stakeholders allowing them to make better data driven insights. On top of this, as the data is coming from a variety of sources, the sources themselves have to adhere to a consistent format which means superior quality and consistency for all. Data warehouses allow for collaboration amongst different teams and departments as they are sharing their data and ultimately this will lead to greater insights and improvements in making business decisions. If you have the opportunity to use a data warehouse in your role, you should describe these benefits in your portfolio.
 							</aside>
 						</section>
 					</section>
-					<!-- Slide 47 -->
+					<!-- Slide 48 -->
 					<section data-background-image="../assets/generic/section.PNG">
 						<div class="wrap aligncenter">
 							<span class='title'> Recap</span>          
 						</div>
-						<!-- Slide 47 Notes -->
+						<!-- Slide 48 Notes -->
 						<aside class='notes'>
 							That is us done for the first session, let's recap.
 						</aside>
 					</section>
-					<!-- Slide 48 -->
+					<!-- Slide 49 -->
 					<section data-background-image="../assets/generic/blank.PNG">
 						<div class="wrap size-60 " style='width:max-content'>
 							<div>
@@ -2733,12 +2733,12 @@
 								<li> Understand the principles of <b class='objective'> normalisation</b> on a relational database  </li>
 							</ul>           
 						</div>
-						<!-- Slide 48 Notes -->
+						<!-- Slide 49 Notes -->
 						<aside class='notes'>
 							The aim of this session is to help you understand the different types of database you may use in your role. By understanding how a RDBMS is set up, it will help you write queries to retrieve the information.
 						</aside>
 					</section>
-						<!-- Slide 49 -->
+						<!-- Slide 50 -->
 					<section data-background-image="../assets/generic/assignment.PNG">
 						<table style='width:100%;border:1px solid black'>
 							<tr>
@@ -2763,17 +2763,17 @@
 								<td> Word Document, PowerPoint, Excel File, PDF, Lucid Chart </td>
 							</tr>
 						</table>
-						<!-- Slide 49 Notes -->
+						<!-- Slide 50 Notes -->
 						<aside class='notes'>
 							Using some of the data from your work, transform it into a RDBMS (if it isen't already). Describe the dataset and apply normalisation if necessary. In the next session you will be shown how to construct an ERD.
 						</aside>
 					</section>
-					<!-- Slide 50 -->
+					<!-- Slide 51 -->
 					<section data-background-image="../assets/generic/final.PNG">
 						<div class="wrap aligncenter">
 							<span class='title'> Complete <a href='https://platform.whitehat.org.uk/apprentice/attendance-log/82' style='color:#64abff' target='_blank'>Session Attendance Log</a> and Update Your OTJ</span>          
 						</div>
-						<!-- Slide 50 Notes -->
+						<!-- Slide 51 Notes -->
 						<aside class='notes'>
 							Remind apprentices about OTJ and they can click on the link for the SAL
 						</aside>
