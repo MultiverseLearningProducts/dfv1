@@ -109,7 +109,7 @@
 					<section>
 						<!-- Slide 6a -->
 						<section data-background-image='../assets/generic/fun_box.PNG'>
-							<div class="aligncenter">
+							<div class="aligncenter" style='width:960px'>
 								<span style ='color:#4d61f4;font-size:70px;font-weight:bold;text-align:center'> 
 									Why use a Data Model?
 								</span>
@@ -443,7 +443,7 @@
 					</section>
 					<!-- Slide 12 -->
 					<section data-background-image='../assets/generic/fun_box.PNG'>
-						<div class="aligncenter">
+						<div class="aligncenter" style='width:960px'>
 							<span style ='color:#4d61f4;font-size:50px;font-weight:bold;text-align:center'> 
 								An Entity Relationship Diagram (ERD) lets you see how different objects (e.g. customers, products) relate to each other in a database.
 							</span>
@@ -878,7 +878,7 @@
 					</section>
 					<!-- Slide 27 -->
 					<section data-background-image='../assets/generic/box_serious.PNG'>
-						<div class="aligncenter">
+						<div class="aligncenter" style='width:960px'>
 							<span style ='font-size:60px;font-weight:bold;text-align:center'> To improve accuracy, quality and usefulness any errors should be <b class='objective'>corrected</b>, <b class='objective'>imputed</b> or <b class='objective'>rejected</b>  </span>
 						</div>
 						<!-- Slide 27 Notes-->
@@ -1312,7 +1312,7 @@
 					</section>
 					<!-- Slide 43 -->
 					<section data-background-image='../assets/generic/box_serious.PNG'>
-						<div class="aligncenter">
+						<div class="aligncenter" style='width:960px'>
 							<h1 style ='font-size:50px;font-weight:bold;text-align:center'> Denormalisation </h1> 
 							<br>
 							<p> A database optimisation technique where redundant data is added to one or more tables to help avoid costly joins in a relational database.
@@ -1322,7 +1322,7 @@
 							Another approach could be to denormalise the database. This does not mean not doing normalisation. It is an optimisation technique that is applied after doing normalisation.
 						</aside>
 					</section>
-					<!-- Slide 41 -->
+					<!-- Slide 44 -->
 					<section data-background-image='../assets/generic/circle_remix.PNG'>
 						<div class='wrap' style='width:max-content'>
 						<p style='font-size:40px'><b>Denormalisation</b> </p>
@@ -1345,7 +1345,7 @@
 							</div>
 						</div>
 					</div>
-						<!-- Slide 41 Notes-->
+						<!-- Slide 44 Notes-->
 						<aside class='notes'>
 							Denormalising means introducing redundant data to our tables to speed up processes. For example, if there is a join you are always doing, then consider creating a table with all that information combined so for future queries you do not need to join. Or, if there is a calculation you are always doing, then create a calculated field to avoid repeating this calculation. The pros of this process is that querying will be faster and simpler, but the cons are that it will be more difficult to update our tables, there may data inconsistencies and storage requirements will go up.
 						</aside>
@@ -1710,7 +1710,7 @@
       <script src="../Dependencies/plugin/markdown/markdown.js"></script>
       <script src="../Dependencies/plugin/highlight/highlight.js"></script>
       <script>
-        Reveal.initialize({hash: true, mouseWheel:true, controls:true, slideNumber:true, loop:true,hashOneBasedIndex: true, plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]	});
+        Reveal.initialize({width:1380,hash: true, mouseWheel:true, pdfSeparateFragments: false,controls:true, slideNumber:true, loop:true,hashOneBasedIndex: true, plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]	});
       </script>
     </body>   
   </head>
