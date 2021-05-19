@@ -102,7 +102,9 @@ html.print-pdf {
 
 
 	/* Slide backgrounds are placed inside of their slide when exporting to PDF */
-	
+	.reveal .backgrounds {
+		display: none;
+	}
 	.reveal .slide-background {
 		display: block !important;
 		position: absolute;
