@@ -11,8 +11,8 @@ h1.def{color:#f4f4f4}
 h1.current{color:#ff7c66}
 section{data-background-opacity:1}
 @media print {
-* {
-    -webkit-print-color-adjust: exact !important; /*Chrome, Safari */
-    color-adjust: exact !important;  /*Firefox*/
-  }
+    .slide-background {
+
+        -webkit-print-color-adjust: exact; 
+    }
 }
