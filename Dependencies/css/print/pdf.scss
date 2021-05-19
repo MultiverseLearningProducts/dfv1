@@ -7,7 +7,7 @@
 
 html.print-pdf {
 	* {
-		-webkit-print-color-adjust: exact;
+		-webkit-print-color-adjust: exact !important;
 	}
 
 	& {
@@ -36,7 +36,7 @@ html.print-pdf {
 
 	.reveal pre code {
 		overflow: hidden !important;
-		font-family: Courier, 'Courier New', monospace !important;
+		font-family: Atlas, 'Courier New', monospace !important;
 	}
 
 	.reveal {
@@ -102,9 +102,7 @@ html.print-pdf {
 
 
 	/* Slide backgrounds are placed inside of their slide when exporting to PDF */
-	.reveal .backgrounds {
-		display: none;
-	}
+	
 	.reveal .slide-background {
 		display: block !important;
 		position: absolute;
