@@ -441,7 +441,8 @@ footer nav {
 .aligncenter {
   margin-left: auto;
   margin-right: auto;
-  text-align: center; }
+  text-align: center;
+	width:960px}
 
 img.aligncenter,
 figure.aligncenter {
