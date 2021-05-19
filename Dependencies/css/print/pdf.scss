@@ -154,3 +154,8 @@ html.print-pdf {
 		display: none;
 	}
 }
+@media print {
+    .slide-background {
+        -webkit-print-color-adjust: exact; 
+    }
+}
