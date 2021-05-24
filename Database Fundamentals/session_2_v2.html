@@ -245,7 +245,7 @@
 									<p> Used to define the structure of data elements and set relationships between them. This type of model:</p>
 									<p class='fragment'> Adds further information to the conceptual data model </p>
 									<p class='fragment'> Provides a foundation for a physical model (yet retains a generic structure) </p>
-									<p class='fragment'> Does not require keys, you just need to verify the connector details set for earlier relationships </p>
+									<p class='fragment'> Does not require keys,  just need to verify the connector details set for earlier relationships </p>
 								</div>
 							</div>
 							<!-- Slide 9a Notes-->
@@ -268,16 +268,15 @@
 											</td>
 											<td>
 												string
-												<br>
-												&nbsp; <br>
+												&nbsp;
 												integer	
 											</td>
 										</tr>
 									</table>
 								</div>
 								<div class='col'>
-									<p style='color:#ff7c66'> Sale </p>
-									<span style='color:#ff7c66;font-size:25px'>&#8594;</span>
+									<h1 style='color:#ff7c66'> Sale </h1>
+									<h1 style='color:#ff7c66;font-size:25px'>&#8594;</h1>
 								</div>
 								<div class='col'>
 									<table style='text-align:center'>
@@ -291,9 +290,8 @@
 											</td>
 											<td>
 												string
-												<br>
-												&nbsp; <br>
-												integer	
+												&nbsp;
+												decimal	
 											</td>
 										</tr>
 									</table>
@@ -375,7 +373,7 @@
 											<td>
 												string
 												<br>
-												&nbsp; <br>
+												&nbsp; 
 												integer
 											</td>
 										</tr>
@@ -388,8 +386,8 @@
 									</table>
 								</div>
 								<div class='col'>
-									<p style='color:#ff7c66'> Sale </p>
-									<span style='color:#ff7c66;font-size:25px'>&#8594;</span>
+									<h1 style='color:#ff7c66'> Sale </h1>
+									<h1 style='color:#ff7c66;font-size:25px'>&#8594;</h1>
 								</div>
 								<div class='col'>
 									<table style='text-align:center'>
@@ -398,14 +396,14 @@
 										</tr>
 										<tr>
 											<td>
-												Product Name 
+												Product Name <br>
 												Product Price 
 											</td>
 											<td>
 												string
 												<br>
-												&nbsp; <br>
-												int
+												&nbsp; 
+												decimal
 										</tr>
 										<tr>
 											<td colspan=2>
@@ -447,9 +445,9 @@
 					</section>
 					<!-- Slide 12 -->
 					<section data-background-image='../assets/generic/fun_box.PNG'>
-						<div class="aligncenter">
+						<div class="aligncenter" style='width:960px'>
 							<span style ='color:#4d61f4;font-size:50px;font-weight:bold;text-align:center'> 
-								An Entitiy Relationship Diagram (ERD) lets you see how different objects (e.g. customers, products) relate to each other in a database.
+								An Entitiy Relationship Diagram (ERD) lets you see how different entities (e.g. customers, products) relate to each other in a database.
 							</span>
 						</div>
 						<!-- Slide 12 Notes-->
@@ -584,7 +582,7 @@
 						</section>
 						<!-- Slide 15e -->
 						<section data-background-image='../assets/generic/circle_remix.PNG'>
-							<h1> One or Zero to to Many Relationship</h1>
+							<h1> One or Zero to Many Relationship</h1>
 							<br>
 							<p> One record of an entity is related to zero, one or more records of another entity </p>
 							<img src='assets/session_2/one_to_zero_many.PNG'>
@@ -605,7 +603,7 @@
 									<h2 style='color:#ff7c66'> Attribute </h2>
 								</div>
 								<div class='col'>
-									<p> A property of an entity or something that can be used to describe an entity</p>
+									<p> A property of an entity</p>
 								</div>
 							</div>
 							<!-- Slide 16a Notes-->
@@ -704,7 +702,7 @@
 								</div>
 								<div class='col'>
 									<p style='color:#ff7c66'> What is its purpose?</p>
-									<p class='fragment'> Stream music based on artists, albumns, playlists or genres </p>
+									<p class='fragment'> Stream music based on artists, albums, playlists or genres </p>
 									<p style='color:#ff7c66'> What is the user input?</p>
 									<p class='fragment'> Track title, album title, artist name or playlist title </p>
 									<p style='color:#ff7c66'> What will the user receive?</p>
@@ -812,9 +810,11 @@
           <section>
 						<!-- Slide 25a -->
 						<section data-background-image="../assets/generic/box_serious.PNG">
-							<span style ='font-size:50px;width:max-content'> 
+							<div class="aligncenter" style='width:960px'>
+								<span style ='font-size:50px;width:max-content'> 
 								'Data Warehousing' is a practice in <b class='objective'>data management</b> whereby data is copied from various operational systems into a <b class='objective'>persistant data store</b> in a <b class='objective'>consistent format</b> to be used for <b class='objective'>analysis, decision making and reporting</b>. 
-							</span>	
+								</span>	
+							</div>
 							<!-- Slide 25a Notes -->
 							<aside class='notes'>
 								You may also come across Data Watehouses in your role. These are central data repositories where information from across an organisation are stored (combined using data integration processes like ETL) where stakeholders can make data driven business decisions through the advanced analytics that are on offer. Imagine an organisation where each department has its own DBMS for their own purposes. Higher up decision makers in the company will want to see a unified view of data from across departments (compare sales and inventory for example) so they can make powerful decisions. 
@@ -892,18 +892,18 @@
               </tr>
               <tr>
                 <td><b>Timeline</b></td>							
-                <td> Historical Data </td>
+                <td> Historical data </td>
                 <td> Current real-time data</td>
               </tr>
               <tr>
                 <td><b>Uptime (SLA)</b></td>							
                 <td> Regular downtime to allow batch uploads </td>
-                <td> Appox 100% uptime</td>
+                <td> Approx 100% uptime</td>
               </tr>
               <tr>
                 <td><b>Query Type</b></td>							
-                <td> Complex Queries for in depth analysis </td>
-                <td> Simple Transactional</td>
+                <td> Complex queries for in depth analysis </td>
+                <td> Simple transactional</td>
               </tr>
             </table>
             <!-- Slide 26 Notes -->
@@ -917,7 +917,7 @@
           </section>
           <!-- Slide 27 -->
           <section data-background-image="../assets/generic/box_serious.PNG">
-            <div class="wrap aligncenter" style='width:max-content'>
+            <div class="wrap aligncenter" style='width:960px'>
               <h2 style='color:#64abff'> Online Transactional Processing (OLTP)</h2>
               <p class='info' style='color:#242456'> OLTP provides transaction orientated applications, administering day to day transcations of an organisation. For example:</p>
               <p class='info fragment fade in' style='color:#242456'> Supermarkets </p>
@@ -932,7 +932,7 @@
           </section>
           <!-- Slide 28 -->
           <section data-background-image="../assets/generic/box_serious.PNG">
-            <div class="wrap aligncenter" style='width:max-content'>
+            <div class="wrap aligncenter" style='width:960px'>
               <h2 style='color:#64abff'> Online Analytical Processing (OLAP)</h2>
               <p style='color:#242456'> OLAP consists of data analytics tools that are used for making business decisions. It provides an environment to leverage insights from multiple database systems at one time. For example:</p>
               <p class='fragment fade in' style='color:#242456'> Recommendation algorithms (e.g. Spotify suggested, Amazon products) </p>
@@ -945,17 +945,17 @@
               OLAP allows for analytical decisions to be made from pulling together data from a variety of disparate sources. These are better suited to Data Warehouses which hold vast quantities of data in a variety of structures allowing for cross-referencing and powerful analytics. 
             </aside>
           </section>
-          <!-- Slide 30 -->
+          <!-- Slide 29 -->
           <section data-background-image="../assets/generic/section.PNG">
-            <div class="wrap aligncenter">
+            <div class="wrap aligncenter" style='width:960px'>
               <span class='title'> Data Integration</span>          
             </div>
-            <!-- Slide 30 Notes -->
+            <!-- Slide 29 Notes -->
             <aside class='notes'>
               So what is data integration? Ask if any of the apprentices have a definition for it already. 
             </aside>
           </section>
-          <!-- Slide 31 -->
+          <!-- Slide 30 -->
           <section data-background-image="../assets/generic/fun_box.PNG">
             <div class=' row r-hstack'>
               <div class='col'>
@@ -965,12 +965,12 @@
                 <img src='../Advanced%20Skills/assets/session_1/data_integration.PNG'>
               </div>
             </div>
-            <!-- Slide 31 Notes -->
+            <!-- Slide 30 Notes -->
             <aside class='notes'>
               Read the quote. Data integration is simply the process of taking our data from our variety of disparate sources and combining them into one target (i.e. a data warehouse). 
             </aside>
           </section>
-          <!-- Slide 32 -->
+          <!-- Slide 31 -->
           <section data-background-image="../assets/generic/strike_force.PNG">
             <div class='row r-hstack'>
               <div class='col'>
@@ -983,12 +983,12 @@
                 <p class='fragment' style='color:#242456;font-size:35px'> Applications </p>
               </div>
             </div>
-            <!-- Slide 32 Notes -->
+            <!-- Slide 31 Notes -->
             <aside class='notes'>
               Ask the group to annotate the screen with their suggestions of what a source can be. Then show a few examples. A source is anything which holds data (typicaly structured in this case, but can be unstructured). Applications refers to software such as APIs which allow you to connect to databases.
             </aside>
           </section>
-          <!-- Slide 33 -->
+          <!-- Slide 32 -->
           <section data-background-image="../assets/generic/strike.PNG">
             <div class='row r-hstack'>
               <div class='col fragment'>
@@ -1002,22 +1002,22 @@
                 <h1 style='color:#f4f4f4'> Benefits of Data Integration </h1>
               </div>
             </div>
-            <!-- Slide 33 Notes -->
+            <!-- Slide 32 Notes -->
             <aside class='notes'>
               Ask the group to suggest the benefits of data integration. By integrating data from different sources into one location (warehouse) you are making your data more available to a wider range of people who need it which will allow for collaboration between different teams, more opportunities for insights and superior analysis. Additionally, with more eyes on the data you can be more confident of the integreity and quality. 
             </aside>
           </section>
-          <!-- Slide 34 -->
+          <!-- Slide 33 -->
           <section data-background-image="../assets/generic/section.PNG">
             <div class="wrap aligncenter">
               <span class='title'> Types of Data Integration</span>          
             </div>
-            <!-- Slide 34 Notes -->
+            <!-- Slide 33 Notes -->
             <aside class='notes'>
               Now we know what data integration is and why we should do it, how should we do it? There are two methods, batch or real time. Let's consider both.
             </aside>
           </section>
-          <!-- Slide 35 -->
+          <!-- Slide 34 -->
           <section data-background-image="../assets/generic/circle_remix.PNG">
             <div class='row r-hstack'>
               <div class='col'>
@@ -1036,22 +1036,22 @@
                 <p class='fragment'> Source and target are <b>'synchronus'</b> (changes in source are reflected in target) </p>
               </div>
             </div>
-            <!-- Slide 35 Notes -->
+            <!-- Slide 34 Notes -->
             <aside class='notes'>
               Batch uploads is the common approach for data warehouses where data is moved from source to target in groups periodically. This means the source and target are asynchronus (not in sync) which allows for the source to be updated at any time, the target will follow suit later. It is advised however that batch uploads happen outside working hours to avoid disruption to people trying to use the target file. Real time integration sees data moved from source to target as it is created. If the source updates, so does the target. This is optimal only for small amounts of data due to the processing time needed (think how slow and unresponsive a dashboard would be if it was integrating constantly terabytes worth of data). 
             </aside>
           </section>
-          <!-- Slide 36 -->
+          <!-- Slide 35 -->
           <section data-background-image="../assets/generic/section.PNG">
             <div class="wrap aligncenter">
               <span class='title'> Data Integration Life Cycle</span>          
             </div>
-            <!-- Slide 36 Notes -->
+            <!-- Slide 35 Notes -->
             <aside class='notes'>
               Now we will consider the process that you would follow if you were going to perform data integration from start to finish.
             </aside>
           </section>
-          <!-- Slide 37a -->
+          <!-- Slide 36a -->
           <section style='font-size:35px;width:100%'>
             <section data-background-image="../assets/generic/strike_force.PNG" style='width:100%'>
               <div class='row'>
@@ -1069,12 +1069,12 @@
                   <p> Operational Requirements </p>
                 </div>
               </div>
-              <!-- Slide 37a Notes -->
+              <!-- Slide 36a Notes -->
               <aside class='notes'>
                 Introduce the five stages. In the first stage you will need to scope out the requirements for the integration- what technology do you need? Who will need access to the integrated target? What business questions will this integrated target be able to answer? What data/sources will be connected and do they need any work (i.e. cleaning)? This requirements elicitation is a necessary step as it will give you focus onto what you need to do as well as potentially mitigate and avoid costly errors later.  
               </aside>
             </section>
-            <!-- Slide 37b -->
+            <!-- Slide 36b -->
             <section data-background-image="../assets/generic/strike_force.PNG">
               <div class='row'>
                 <div class='col'>
@@ -1095,12 +1095,12 @@
                   </ul>
                 </div>
               </div>
-              <!-- Slide 37b Notes -->
+              <!-- Slide 36b Notes -->
               <aside class='notes'>
                 Next comes profiling. You have already scoped out the data sources you are going to use, but are they in a useable format? You will need to check and clean the data (potentially writing scripts to automate this process) to ensure the sources will be in a consistent format with the target. You will also need to check if duplicates or nulls will be created as a result of the integration and mitigate for them. 
               </aside>
             </section>
-            <!-- Slide 37c -->
+            <!-- Slide 36c -->
             <section data-background-image="../assets/generic/strike_force.PNG">
               <div class='row'>
                 <div class='col'>
@@ -1114,12 +1114,12 @@
                   <p> Decide on the architecture of the data warehouse using business, technical and operational metadata </p>
                 </div>
               </div>
-              <!-- Slide 37c Notes -->
+              <!-- Slide 36c Notes -->
               <aside class='notes'>
                 Now you have your sources identified and ready, you will need to decide on the structure of the data warehouse. The most common approach is the star schema, where measurements will be held in a central fact table in various aggregations as defined by the surrounding dimension tables. Based on the business need and technical opportunities you have available you will need to decide what is stored within the fact table and what dimensions you would like/need to include. 
               </aside>
             </section>
-            <!-- Slide 37d -->
+            <!-- Slide 36d -->
             <section data-background-image="../assets/generic/strike_force.PNG">
               <div class='row'>
                 <div class='col'>
@@ -1139,12 +1139,12 @@
 
                 </div>
               </div>
-              <!-- Slide 37d Notes -->
+              <!-- Slide 36d Notes -->
               <aside class='notes'>
                 Once you have the database designed and the sources identified and made ready it is time to test that it all works. You will need to validate the process (is the correct data being pulled? Is it joining on the columns I had set?) and verify the output (does it look like how you expected? Is it doing what you want it to?). There are various testing strategies available which we will look into later. If there are any failures, you will need to document them and then fix them. This should all be tested at a local level.
               </aside>
             </section>
-            <!-- Slide 37e -->
+            <!-- Slide 36e -->
             <section data-background-image="../assets/generic/strike_force.PNG">
               <div class='row'>
                 <div class='col'>
@@ -1158,23 +1158,23 @@
                   <p> Implement the process at an operational level </p>
                 </div>
               </div>
-              <!-- Slide 37e Notes -->
+              <!-- Slide 36e Notes -->
               <aside class='notes'>
                 Finally, if you are confident that everything works as intended then it is time to implement the process! This may involve training up colleagues or at least amking them aware the data warehouse exists. You should also schedule regular maintenance as well as a batch upload schedule (ideally out of work hours) that will allow the integration process to be updated.
               </aside>
             </section>
           </section>
-          <!-- Slide 38 -->
+          <!-- Slide 37 -->
           <section data-background-image="../assets/generic/section.PNG">
             <div class="wrap aligncenter">
               <span class='title'> Rules and Policies</span>          
             </div>
-            <!-- Slide 38 Notes -->
+            <!-- Slide 37 Notes -->
             <aside class='notes'>
               Data integration potentially carries a range of risks around security and GDPR. In this section we will discuss how we can mitigate for these. Ask the group: what do  you think the greatest security risks are with data integration?
             </aside>
           </section>
-          <!-- Slide 39 -->
+          <!-- Slide 38 -->
           <section data-background-image="../assets/generic/table_back.PNG">
             <div style='font-size:35px'>
               <p> You must specifiy security policies (e.g. who has access?) </p>
@@ -1187,12 +1187,12 @@
                 <li> Validate the column names against a mapping document </li>
               </ul>			
             </div>
-            <!-- Slide 39 Notes -->
+            <!-- Slide 38 Notes -->
             <aside class='notes'>
               With data (particularly PII or insider data) the question has to be, does this person need access? GDPR states that data must be processed in a manner which secures its security and used in a way which is relevant. A way to ensure this is to only give access to those who need it, so having a set of security policies and rules (including how to get access approval and how they data should be used) should be established. To help protect data integrity, the data itself should not be changed once it has been integrated- it should be in the form exactly as you defined it. You should caary out validation checks throughout the process to ensure the source data is in the correct form, the column names are mapping correctly and other errors (such as incorrect data types, null values and outliers) are identified and dealt with. You should also check that there isn't a 'back door' that will allow users (potentially malicious) to gain access.
             </aside>
           </section>
-          <!-- Slide 40 -->
+          <!-- Slide 39 -->
           <section data-background-image="../assets/generic/table_back.PNG">
             <div style='font-size:35px'>
               <p> Verification is also carried out on the Data Warehouse </p>
@@ -1205,61 +1205,61 @@
                 <li> Verify the data has not been duplicated in the Data Warehouse </li>
             </ul>
             </div>
-            <!-- Slide 40 Notes -->
+            <!-- Slide 39 Notes -->
             <aside class='notes'>
               You should also verify the data in the warehouse on a regular basis. Make sure it is accurate and up to data and being used exactly as specified (this is a part of GDPR compliance). If the data is no longer relevant it should be removed from the warehouse. 
             </aside>
           </section>
-          <!-- Slide 41a -->	
+          <!-- Slide 40a -->	
           <section>
             <section data-background-image="../assets/generic/main.PNG">
               <div class='r-stack'>
                 <h1 class='fragment fade-out' style='color:#4d61f4' data-fragment-index="0"> If you are wanting to use Business Data... </h1>
                 <h1 class='fragment' style='color:#ff7c66' data-fragment-index="0"> Get Permission from the Data Owner! </h1>
               </div>
-              <!-- Slide 41a Notes -->
+              <!-- Slide 40a Notes -->
               <aside class='notes'>
                 Something else you will need to consider is if you do not own the data you are trying to integrate...
               </aside>
             </section>
-            <!-- Slide 41b -->
+            <!-- Slide 40b -->
             <section data-background-image="../assets/generic/main.PNG" >
               <div style='color:#242456'>
-                <p> Data owners are given the right to decide who can have access to enterprise data.</p>
+                <p> Data owners are given the right to decide who can have access to enterprise data</p>
                 <p> The process involved may be something like this:</p>
                 <p class='fragment'> A person (staff member, contractor, supplier, etc) requests access to information </p>
                 <p class='fragment'> A business resource (Data owner, manager) will review the request </p>
-                <p class='fragment'> A techinical resources (usually a DBA) physically grants permission to an application, database or other data store containing the data. </p>
+                <p class='fragment'> A techinical resources (usually a DBA) physically grants permission to an application, database or other data store containing the data </p>
                 <p class='fragment'> Often the permission follows a CRUD schema (create, read, update, delete)</p>
               </div>
-              <!-- Slide 41b Notes -->
+              <!-- Slide 40b Notes -->
               <aside class='notes'>
                 Like any intellectual property, the owner has the right who can have (and not have) access. This will need to be justified in a business context (if internal) and potentially have a contract drawn up (if external) to gain access. Normally the process to request access is as follows: you make the request, someone will review the request (potentially clarifying details), a database administrator (DBA) will grant access (if approved) and provide instructions on how you can retreive or connect the data. Access permission should be reviewed regularly, with permissions updated or removed as necessary.
               </aside>
             </section>
           </section>
-          <!-- Slide 42 -->
+          <!-- Slide 41 -->
           <section data-background-image="../assets/generic/section.PNG">
             <div class="wrap aligncenter">
               <span class='title'> Extract, Transform, Load</span>          
             </div>
-            <!-- Slide 42 Notes -->
+            <!-- Slide 41 Notes -->
             <aside class='notes'>
               Earlier one we mentioned that some research data may come from a data warehouse. A common process to create a data warehouse is extract, transform, load (ETL). For your exam you will need to have some awareness of this.
             </aside>
           </section>
-          <!-- Slide 43 -->
+          <!-- Slide 42 -->
           <section data-background-image='../assets/generic/fun_box.PNG'>
             <div class="wrap size-50 aligncenter">
               <span style ='color:#4d61f4;font-size:60px;font-weight:bold;text-align:center'> How would you <b class='objective'>count the number of occurrences</b> of each word in all the books found in a library <b class='objective'>using a team of people?</b> </span>
             </div>
-            <!-- Slide 43 Notes -->
+            <!-- Slide 42 Notes -->
             <aside class='notes'>
               Give 2-3 minutes for apprentices to think of a solution.
              </aside>
           </section>
           <section>
-            <!-- Slide 44a -->
+            <!-- Slide 43a -->
             <section data-background-image='../assets/generic/strike_force.PNG'>
               <div class='row'>
                 <div class='col'>
@@ -1271,12 +1271,12 @@
                   <img src='../Data%20Analysis%20in%20Industry/assets/session_2/share.PNG'>
                 </div>
               </div>
-              <!-- Slide 44a Notes -->
+              <!-- Slide 43a Notes -->
               <aside class='notes'>
                 First you would divide books amongst all your team members so they can 'extract' the words.
                </aside>
             </section>
-            <!-- Slide 45b -->
+            <!-- Slide 43b -->
             <section data-background-image='../assets/generic/strike_force.PNG'>
               <div class='row'>
                 <div class='col'>
@@ -1287,8 +1287,8 @@
                 <div class='col'>
                   <table style='table-layout: fixed;width:100%;text-align:center'>
                     <tr>
-                      <th style='width:65%'> Word </th>
-                      <th style='width:35%'> Count </th>
+                      <th style='width:65%;text-align:center'> Word </th>
+                      <th style='width:35%;text-align:center'> Count </th>
                     </tr>
                     <tr>
                       <td> Apple </td>
@@ -1302,8 +1302,8 @@
                   <br>
                   <table style='table-layout: fixed;width:100%;text-align:center'>
                     <tr>
-                      <th style='width:65%'> Word </th>
-                      <th style='width:35%'> Count </th>
+                      <th style='width:65%;text-align:center'> Word </th>
+                      <th style='width:35%;text-align:center'> Count </th>
                     </tr>
                     <tr>
                       <td> Apple </td>
@@ -1316,12 +1316,12 @@
                   </table>
                 </div>
               </div>
-              <!-- Slide 45b Notes -->
+              <!-- Slide 43b Notes -->
               <aside class='notes'>
                 Next you would have evryone 'transform' their books into a table which has the count of each word.
                </aside>
             </section>
-            <!-- Slide 45c -->
+            <!-- Slide 43c -->
             <section data-background-image='../assets/generic/strike_force.PNG'>
               <div class='row'>
                 <div class='col'>
@@ -1332,8 +1332,8 @@
                 <div class='col'>
                   <table style='table-layout: fixed;width:100%;text-align:center'>
                     <tr>
-                      <th style='width:65%'> Word </th>
-                      <th style='width:35%'> Count </th>
+                      <th style='width:65%;text-align:center'> Word </th>
+                      <th style='width:35%;text-align:center'> Count </th>
                     </tr>
                     <tr>
                       <td> Apple </td>
@@ -1346,24 +1346,24 @@
                   </table>
                 </div>
               </div>
-              <!-- Slide 45c Notes -->
+              <!-- Slide 43c Notes -->
               <aside class='notes'>
                 Finally, you would 'load' all the different tables together into one unified view which contains all the words in the library.
                </aside>
             </section>
           </section>
-          <!-- Slide 46 -->
+          <!-- Slide 44 -->
           <section data-background-image='../assets/generic/main.PNG'>
-            <div class="wrap size-50 aligncenter">
+            <div class="wrap aligncenter" style='width:960px;height:700px'>
               <img src='../Data%20Analysis%20in%20Industry/assets/session_2/etl.PNG'>
             </div>
-            <!-- Slide 46 Notes -->
+            <!-- Slide 44 Notes -->
             <aside class='notes'>
               This process is how data is collected from a variety of disparate sources and combined into one unified target view. Consider your organisation, it will likely be split into several teams and divisions, each collecting and storing data relevant to their roles. Sales teams will hold data on customers while the inventory team know how much they have left in stock. For key decision makers in the company, they will want all of this data in one central location so they can get a quick view to understand the situation and make data driven decisions. This is what ETL is for, combing data from across an organisation into one central place (often a data warehouse).
              </aside>
           </section>
           <section>
-            <!-- Slide 47a -->
+            <!-- Slide 45a -->
             <section data-background-image='../assets/generic/strike.PNG'>
               <div class='row'>
                 <div class='col'>
@@ -1378,12 +1378,12 @@
                   <h1 class='def'> Load </h1>
                 </div>
               </div>
-              <!-- Slide 47a Notes -->
+              <!-- Slide 45a Notes -->
               <aside class='notes'>
                 The first stage in the process is extraction. This is when you identify and collect the data from all the sources you require. Note, you don't 'take' the data but a copy is made and sent to the warehouse. This means the original source is left untouched. It also means that if any changes are made to the source, these will not be reflected in the warehouse until an update is made. A consequence of this is that warehouses are static (making querying and processing quicker) but potentially out of date if the source changes (fast flowing databases like sales or inventory will change throughout the day, so ETL updates may need to happen regularly). Often when a warehouse is updated it will need to be taken 'offline' so extraction tends to happen outside of working hours to avoid disruption for users. You will validate your sources at this time to ensure they contain the correct information.
                </aside>
             </section>
-            <!-- Slide 47b -->
+            <!-- Slide 45b -->
             <section data-background-image='../assets/generic/strike.PNG'>
               <div class='row'>
                 <div class='col'>
@@ -1397,12 +1397,12 @@
                   <h1 class='def'> Load </h1>
                 </div>
               </div>
-              <!-- Slide 47b Notes -->
+              <!-- Slide 45b Notes -->
               <aside class='notes'>
                 Once the data has been pulled to the warehouse it is time to transform it. This means all the data needs to be in the same consistent format- data types need to be the same, null values should be removed and column names should be consistent (especially if they appear in more than one source- more on this in our next module). Note, as the data is copied from the source, the original data is unchanged by this process.
                </aside>
             </section>
-            <!-- Slide 47c -->
+            <!-- Slide 45c -->
             <section data-background-image='../assets/generic/strike.PNG'>
               <div class='row'>
                 <div class='col'>
@@ -1416,13 +1416,13 @@
                   <h1 class='current'> Load </h1>
                 </div>
               </div>
-              <!-- Slide 47c Notes -->
+              <!-- Slide 45c Notes -->
               <aside class='notes'>
                 Finally, once the data is in a consistent format it is time to join it all together into one table. At this point you will verify that the data stored is correct and useful for the purposes you require. A few things to note, with large voluminous (and potentially fast flowing) data this process may be more cost effective to be run using a Big Data technology which uses a form of parallel processing to carry this out. As mentioned earlier, data warehouses are static and can quickly be out of date with the the original sources. It is highly likely then that an ETL process will be carried out regularly to ensure decision makers always have access to the latest data.
                </aside>
             </section>
           </section>
-          <!-- Slide 48 -->
+          <!-- Slide 46 -->
           <section data-background-image='../assets/generic/solution.PNG'>
             <div class='row'>
               <div class='col'>
@@ -1436,13 +1436,13 @@
                 <p> Better business intelligence and insights for making decisions through greater data availability </p>
               </div>
             </div>
-            <!-- Slide 48 Notes -->
+            <!-- Slide 46 Notes -->
             <aside class='notes'>
               The benefits of ETL are that data from across a business can be stored in one central location allowing key decision makers to make data driven decisions quickly. It also allows for teams across a business to collaborate and share their data (sales teams acting on the advice of their inventory/data teams). It also means different teams are using consistent formats allowing for errors to be quickly identified and fixed.
              </aside>
           </section>
           <section>
-          <!-- Slide 49a -->
+          <!-- Slide 47a -->
             <section data-background-image='../assets/generic/main.PNG'>
               <h1> Information Structure and Rules </h1>
               <br>
@@ -1451,49 +1451,44 @@
                 <li> Security policies must be specified by organisations providing data sources to <b class='objective'>prevent data leakage and unauthorised access</b></li>
                 <li> <b class='objective'>Access layers</b> (e.g. networks, firewalls, servers, etc) between sources and targets should be properly configured (especially of data is sourced externally)</li>
                 <li> Integrated data should be <b class='objective'>immutable</b>- you should not be able to change the data once it is stored in the unified view</li>
-                <li> <b class='objective'>Validation checks</b> should be carried out during ETL:
-                  <ul style='display:inline-block;text-align:left'>
-                    <li> Source and target table structures and data types should be <b class='objective'>consistent</b></li>
-                    <li> <b class='objective'>Column names</b> should be the same as defined by a mapping document </li>
-                  </ul>
+                <li> <b class='objective'>Validation checks</b> should be carried out during ETL:</li>
+								<li> Source and target table structures and data types should be <b class='objective'>consistent</b></li>
+								<li> <b class='objective'>Column names</b> should be the same as defined by a mapping document </li>
                 </li>
               </ul>
-              <!-- Slide 49a Notes -->
+              <!-- Slide 47a Notes -->
               <aside class='notes'>
                 With ETL, it is important you follow certain rules to ensure the process runs smoothly and safely- you don't want incorrect data being fed to key decision makers... 
                </aside>
             </section>
-            <!-- Slide 49b -->
+            <!-- Slide 47b -->
             <section data-background-image='../assets/generic/main.PNG'>
               <h1> Information Structure and Rules </h1>
               <br>
               <p> Data integration activities for data warehouses requires that you follow some basic rules:
               <ul style='display:inline-block;text-align:left'>
-                <li> <b class='objective'>Verification</b> is also carried out on the target:
-                  <ul style='display:inline-block;text-align:left'>
-                    <li> Verify that the data is <b class='objective'>accurate</b></li>
-                    <li> Verify the data is the <b class='objective'>'right' data</b> to be stored in the target</li>
-                    <li> Verify the data has <b class='objective'>not been duplicated</b></li>
-                  </ul>
-                </li>
+								<li> <b class='objective'>Verification</b> is also carried out on the target:</li>
+								<li> Verify that the data is <b class='objective'>accurate</b></li>
+								<li> Verify the data is the <b class='objective'>'right' data</b> to be stored in the target</li>
+								<li> Verify the data has <b class='objective'>not been duplicated</b></li>
               </ul>
-              <!-- Slide 49b Notes -->
+              <!-- Slide 47b Notes -->
               <aside class='notes'>
                 A possible project for your portfolio could be to build a data warehouse or pipeline for someone in your business. If this is the case, make sure you capture the business requirements clearly before beginning. This way you can guide the process precisely and be able to verify at the end if you have met the requirements of the stakeholder.
                </aside>
             </section>
           </section>
-          <!-- Slide 50 -->
+          <!-- Slide 48 -->
 					<section data-background-image='../assets/generic/section.PNG'>
 						<div class="wrap aligncenter">
 							<span class='title'> Combining Data </span>          
 						</div>
-						<!-- Slide 50 Notes-->
+						<!-- Slide 48 Notes-->
 						<aside class='notes'>
 							Before we wrap up the session, let's think about what should go inside your portfolio when talking about data integration.
 						</aside>
 					</section>
-          <!-- Slide 51 -->
+          <!-- Slide 49 -->
 					<section data-background-image='../assets/generic/pentagon_jr.PNG'>
 						<div class="row">
 							<div class='col'>
@@ -1508,7 +1503,7 @@
                 <p class='fragment'> What was the benefit of combining your data? </p>
               </div>
 						</div>
-						<!-- Slide 51 Notes-->
+						<!-- Slide 49 Notes-->
 						<aside class='notes'>
 							When writing up your portfolio, you should consider these questions:<br>
               <ol>
@@ -1521,17 +1516,17 @@
               </ol>
 						</aside>
 					</section>
-					<!-- Slide 52 -->
+					<!-- Slide 50 -->
 					<section data-background-image='../assets/generic/section.PNG'>
 						<div class="wrap aligncenter">
 							<span class='title'> Recap </span>          
 						</div>
-						<!-- Slide 52 Notes-->
+						<!-- Slide 50 Notes-->
 						<aside class='notes'>
 							Time to recap the session
 						</aside>
 					</section>
-					<!-- Slide 53 -->
+					<!-- Slide 51 -->
 					<section data-background-image="../assets/generic/blank.PNG">
 						<div class="wrap size-60 " style='width:max-content'>
 							<div>
@@ -1544,12 +1539,12 @@
 								<li> Implement <b class='objective'> Quality Control</b> measures and know how to assure the quality of <b class='objective'>data uploads</b> and query output</li>
 							</ul>          
 						</div>
-						<!-- Slide 53 Notes -->
+						<!-- Slide 51 Notes -->
 						<aside class='notes'>
 							In this session the aim was to consider how to design a database and then maintain it.
 						</aside>
 					</section>
-					<!-- Slide 54 -->
+					<!-- Slide 52 -->
 					<section data-background-image="../assets/generic/assignment.PNG">
 						<table style='width:100%;border:1px solid black'>
 							<tr>
@@ -1574,12 +1569,12 @@
 								<td> Word Document, PowerPoint, Excel File, PDF, Lucid Chart </td>
 							</tr>
 						</table>
-						<!-- Slide 54 Notes -->
+						<!-- Slide 52 Notes -->
 						<aside class='notes'>
 							Run through the assignment
 						</aside>
 					</section>
-          <!-- Slide 55-->
+          <!-- Slide 53-->
           <section data-background-image="../assets/generic/pentagon_jr.PNG">
             <div class='row'>
               <div class='col'></div>
@@ -1590,17 +1585,17 @@
                 <p><a href='https://multiverselearningproducts.github.io/dfv1/Database%20Fundamentals/dealing_with_problems.html' target='_blank'> Dealing with Problems </a></p>
               </div>
             </div>
-            <!-- Slide 55 Notes -->
+            <!-- Slide 53 Notes -->
             <aside class='notes'>
               In our old curriculum we covered the types of tests we would run on our projects and how to handle errors. If you have time you can run through these decks, or allow apprentices to read through them in their own time.
             </aside>
           </section>
-					<!-- Slide 56 -->
+					<!-- Slide 54 -->
 					<section data-background-image="../assets/generic/final.PNG">
 						<div class="wrap aligncenter">
 							<span class='title'> Complete <a href='https://platform.whitehat.org.uk/apprentice/attendance-log/83' style='color:#64abff' target='_blank'>Session Attendance Log</a> and Update Your OTJ</span>          
 						</div>
-						<!-- Slide 56 Notes -->
+						<!-- Slide 54 Notes -->
 						<aside class='notes'>
 							Remind apprentices about OTJ and they can click on the link for the SAL. You may want to run a Kahoot! quiz.
 						</aside>
