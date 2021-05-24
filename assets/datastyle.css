@@ -16,3 +16,7 @@ section{data-background-opacity:1}
         -webkit-print-color-adjust: exact; 
     }
 }
+@page    {
+  size: auto;  
+  margin: 0;  
+ }
