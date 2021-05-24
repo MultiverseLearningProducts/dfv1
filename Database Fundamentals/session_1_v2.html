@@ -204,7 +204,7 @@
 						<section data-background-image='../assets/generic/fun_box.PNG'>
 							<div class="aligncenter">
 								<span style ='color:#4d61f4;font-size:50px;font-weight:bold;text-align:center'> 
-									Relational Database Manaagement System (RDBMS):
+									Relational Database Management System (RDBMS):
 									<br>
 									A database where data is organised into tables with defined relationships between them 
 								</span>
@@ -511,9 +511,9 @@
 						<section data-background-image='../assets/generic/table_back.PNG'>
 							<h1> The Relational Model </h1>
 							<div class= 'r-stack'>
-								<p class='fragment fade-out' data-fragment-index="1"> <b class='objective'> Schema: </b> A Structural description of relations in a database </p>
-								<p class='fragment fade-in-then-out' data-fragment-index="1"> <b class='objective'> Instance: </b> Actual contents at a given point in time </p>
-								<p class='fragment'> <b class='objective'> NULL: </b> A special value for "unknown" or "undefined" </p>
+								<p class='fragment fade-out' data-fragment-index="1"> <b class='objective'> Schema: </b> A structural description of relations in a database </p>
+								<p class='fragment fade-in-then-out' data-fragment-index="1"> <b class='objective'> Instance: </b> Data stored in database at a given point in time </p>
+								<p class='fragment'> <b class='objective'> NULL: </b> the absence of a value </p>
 							</div>
 							<div class='row'>
 								<div class='col'>
@@ -590,13 +590,13 @@
 							<table style='text-align:center'>
 								<caption style="caption-side:bottom"> shippers_table </caption>
 								<tr>
-									<th> shipperID </th>
-									<th> companyName </th>
-									<th> phone </th>
+									<th style='text-align:center'> shipperID </th>
+									<th style='text-align:center'> companyName </th>
+									<th style='text-align:center'> phone </th>
 								</tr>
 								<tr>
 									<td> 234 </td>
-									<td> Big Shippers </td>
+									<td> BigShippers </td>
 									<td> 01302858888 </td>
 								</tr>
 								<tr>
@@ -929,7 +929,7 @@
 									<ul>
 										<li style='background-color:#ffe352'> coach_id </li>
 										<li> coach_name </li>
-										<li> no. cohorts </li>
+										<li> no_cohorts </li>
 										<li style='background-color:#59d8a1'> apprenticeship </li>
 									</ul>
 								</td>
@@ -1012,12 +1012,11 @@
 								<div class='col'>
 									<p> Data is more accurate </p>
 									<p class='fragment'> Storage space is reduced </p>
-									<p class='fragment'> Queries run as fast as possible </p>
 								</div>
 							</div>
 							<!-- Slide 23c Notes-->
 							<aside class='notes'>
-								The consequence of this is that our data is more accurate, as we know all the information is relevant, not duplicated and up to date. Storage space is reduced through efficient use of tables which means queries (typically SQL) will run faster as they are sorting through less data.
+								The consequence of this is that our data is more accurate, as we know all the information is relevant, not duplicated and up to date. Storage space is reduced through efficient use of tables.
 							</aside>
 						</section>
 					</section>
@@ -1286,8 +1285,8 @@
 								<div class='col'>
 									<table>
 										<tr>
-											<th> Student </th>
-											<th> Number </th>
+											<th style='text-align:center'> Student </th>
+											<th style='text-align:center'> Number </th>
 										</tr>
 										<tr>
 											<td> Allie </td>
@@ -1306,9 +1305,9 @@
 								<div class='col'>
 									<table>
 										<tr>
-											<th> Student </th>
-											<th> Number 1 </th>
-											<th> Number 2 </th>
+											<th style='text-align:center'> Student </th>
+											<th style='text-align:center'> Number 1 </th>
+											<th style='text-align:center'> Number 2 </th>
 										</tr>
 										<tr>
 											<td> Allie </td>
@@ -1328,8 +1327,8 @@
 									</table>
 									<table>
 										<tr>
-											<th> Student </th>
-											<th> Number </th>
+											<th style='text-align:center'> Student </th>
+											<th style='text-align:center'> Number </th>
 										</tr>
 										<tr>
 											<td> Allie </td>
@@ -1446,8 +1445,8 @@
 								<div class='col'>
 									<table>
 										<tr>
-											<th> Student </th>
-											<th> Misc </th>
+											<th style='text-align:center'> Student </th>
+											<th style='text-align:center'> Misc </th>
 										</tr>
 										<tr>
 											<td> Allie </td>
@@ -1466,8 +1465,8 @@
 								<div class='col'>
 									<table>
 										<tr>
-											<th> Student </th>
-											<th> Fav Food </th>
+											<th style='text-align:center'> Student </th>
+											<th style='text-align:center'> Fav Food </th>
 										</tr>
 										<tr>
 											<td> Allie </td>
@@ -2560,13 +2559,11 @@
 					</section>
 					<!-- Slide 36 -->
 					<section data-background-image='../assets/generic/main.PNG'>
-						<p> Understanding how databases are designed, and why they are designed this way makes the SQL - especially joins - a lot easier to understand! </p>
-						<p class='fragment'> The key is to consider the relationships and then apply normal form </p>
-						<br>
+						<p> Understanding how databases are designed, and why they are designed this way can make SQL - especially joins - easier to understand </p>
 						<p class='fragment'> You most likely will never need to design a full on database - that’s a very specific career progression. However, understanding the principles that went into the design of the databases you work with will help your understanding of them.</p>
 						<!-- Slide 36 Notes-->
             <aside class='notes'>
-							The main way we query a RDBMS is using a language such as Structured Query Language or SQL, we will be looking at this in an upcoming bootcamp. Understanding how a database is designed will make your querying much more efficient. It is unlikely you will ever design a database, but you may have to query one. 
+							The main way we query a RDBMS is using a language such as Structured Query Language or SQL, we will be looking at this in an upcoming bootcamp. Understanding how a database is designed will make your querying much more efficient. It is unlikely you will ever design a database, but you may have to query one
             </aside>
 					</section>
 					<!-- Slide 37 -->
@@ -2592,14 +2589,14 @@
 					<section data-background-image='../assets/generic/table_back.PNG'>
 						<table style='text-align:center'>
 							<tr>
-								<th> transaction_table </th>
-								<th> product_table </th>
-								<th> store_table </th>
-								<th> county_table </th>
+								<th style='text-align:center'> transaction_table </th>
+								<th style='text-align:center'> product_table </th>
+								<th style='text-align:center'> store_table </th>
+								<th style='text-align:center'> county_table </th>
 							</tr>
 							<tr>
 								<td>
-									<ul>
+									<ul style='list-style-type: none;'>
 										<li> id </li>
 										<li> date </li>
 										<li> item_no </li>
@@ -2607,7 +2604,7 @@
 									</ul>
 								</td>
 								<td>
-									<ul>
+									<ul style='list-style-type: none;'>
 										<li> item_no </li>
 										<li> item_description </li>
 										<li> case_cost </li>
@@ -2615,7 +2612,7 @@
 									</ul>
 								</td>
 								<td>
-									<ul>
+									<ul style='list-style-type: none;'>
 										<li> store_id </li>
 										<li> store </li>
 										<li> store_address </li>
@@ -2623,7 +2620,7 @@
 									</ul>
 								</td>
 								<td>
-									<ul>
+									<ul style='list-style-type: none;'>
 										<li> county </li>
 										<li> population </li>
 									</ul>
@@ -2661,12 +2658,12 @@
 							<h1> Document Orientated Database </h1>
 							<div class='row'>
 								<div class='col'>
-									<p> A common NoSQL database where all instances of an object is stored in one document as opposed to spread across multiple tables. To access the data you reference the internal structure.  <p>
+									<p> A common NoSQL database where all instances of an object is stored in one document as opposed to spread across multiple tables. To access the data you reference the internal structure <p>
 									<p> Documents are organsied into collections (similar to RDBMS tables) </p>
 									<p> E.g. XML, JSON
 								</div>
 								<div class='col'>
-									<img src='assets/session_1/document.PNG'>
+									<img src='assets/session_1/document.PNG' width="310.5px" height="202.5px">
 								</div>
 							</div>
 							<!-- Slide 41a Notes-->
@@ -2713,11 +2710,11 @@
 						<h1> Key Value Database </h1>
 						<div class='row'>
 							<div class='col'>
-								<p> The simplest type of NoSQL database, where data (structured or unstructured) is mapped to a key and stored in one location. Data is extracted by referencing the key. </p>
+								<p> The simplest type of NoSQL database, where data (structured or unstructured) is mapped to a key and stored in one location. Data is extracted by referencing the key </p>
 								<p> Wrapping several keys in a JSON format creates a document </p>
 							</div>
 							<div class='col'>
-								<img src='assets/session_1/key_value.PNG'>
+								<img src='assets/session_1/key_value.PNG' width="310.5px" height="202.5px">
 							</div>
 						</div>
 						<!-- Slide 42 Notes-->
@@ -2734,7 +2731,7 @@
 								<p> A column orientated database applies the row key to each item in a column, allowing it to precisely retrieve information from a select group of columns.</p>
 							</div>
 							<div class='col'>
-								<img src='assets/session_1/row.PNG'>
+								<img src='assets/session_1/row.PNG' width="310.5px" height="202.5px">
 							</div>
 						</div>
 						<!-- Slide 43 Notes-->
@@ -2749,11 +2746,11 @@
 							<div class='row'>
 								<div class='col'>
 									<p> Information is stored in nodes with the edges representing the relationships between them. </p>
-									<p> Each node is a datapoint (e.g. a customer, product, group ,etc) and edges define the relationships (e.g. person (node1) is a member of this group (node2).
+									<p> Each node is a datapoint (e.g. a customer, product, group, etc) and edges define the relationships (e.g. person (node1) is a member of this group (node2).
 									<p> Querying is fast as relationships between nodes have already been defined.</p>
 								</div>
 								<div class='col'>
-									<img src='assets/session_1/graph.PNG'>
+									<img src='assets/session_1/graph.PNG' width="310.5px" height="202.5px">
 								</div>
 							</div>
 							<!-- Slide 44a Notes-->
@@ -2771,7 +2768,7 @@
 									<p> Facebook is an example of this where a user (node) is connected to other users and groups by edges </p>
 								</div>
 								<div class='col'>
-									<img src='assets/session_1/graph.PNG'>
+									<img src='assets/session_1/graph.PNG' width="310.5px" height="202.5px">
 								</div>
 							</div>
 							<!-- Slide 44b Notes-->
@@ -2813,8 +2810,8 @@
 								</tr>
 								<tr>
 									<td> Relational </td>
-									<td> MsSQL, Postgres, mySQL</td>
-									<td> This is the most common form of database. It contains tables that can be joined to other tables through their relations. Normalisation is a key part of relational databases. </td>
+									<td> MSSQL, Postgres, mySQL</td>
+									<td> A very common way of managing data. It contains tables that can be joined to other tables through their relations.  </td>
 								</tr>
 							</table>
 							<!-- Slide 47a Notes -->
@@ -2916,7 +2913,7 @@
 								<tr>
 									<td> Object-oriented </td>
 									<td> TORNADO, Gemstone, ObjectStore, GBase </td>
-									<td> Object-oriented databases use small, recyclable separated chunks of data called objects. The objects themselves are stored in the object-oriented database. Each object contains two things: the object itself, and the metadata that explains that object, it’s purpose, what it is and where it fits in </td>
+									<td> Object-oriented databases use small, recyclable separated chunks of data called objects. The objects themselves are stored in the object-oriented database. Each object contains two things: the object itself, and the metadata that explains that object (i.e. it’s purpose, what it is and where it fits in). </td>
 								</tr>
 							</table>
 							<!-- Slide 47h Notes -->
