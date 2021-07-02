@@ -89,7 +89,7 @@ vec3[-3]
 
 # Proof that everything is a vector
 (vec <- 5[1]) # 5 gets made as a vector of length 1
-is.vector(vec) # n.b: is.vector is similar to saying is_vector in Python
+is.vector(vec) # n.b: is.vector is similar to saying is_vector in Python (. is used instead of _ in R)
 ################################
 
 # Factor
