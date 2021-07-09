@@ -160,7 +160,7 @@
         <td>
           <ul style='display:inline-block;text-align:left'>
             <li><a href='https://multiverselearningproducts.github.io/dfv1/Data%20Analysis%20in%20Industry/lesson_plan.html' target='_blank'>Lesson Plan</a> </li>
-            <li><a href='https://github.com/MultiverseLearningProducts/dfv1/blob/204b496165a8bbbb623dd2c6d8ca9cf6b4b24354/Data%20Analysis%20in%20Industry/session_1.html' target='_blank'> Session 1 </a></li>
+            <li><a href='Data Analysis in Industry/session_1.html' target='_blank'> Session 1 </a></li>
             <li><a href='https://multiverselearningproducts.github.io/dfv1/Data%20Analysis%20in%20Industry/session_2.html' target='_blank'> Session 2 </a></li>
           </ul>
         </td>
