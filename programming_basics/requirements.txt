@@ -1,0 +1,16 @@
+# Run `pip install -r requirements.txt` on Anaconda Powershell Prompt
+# This will install all libraries in one go
+# math and random modules are built in and therefore excluded
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+sklearn
+statsmodels
+nltk
+textblob
+beautifulsoup4
+requests
+datetime
+
