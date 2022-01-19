@@ -96,3 +96,12 @@ body{
 background-color:#303674;
 color:white;
 }
+
+.asino{
+  font-size:2vmin;
+  border-style:solid;
+  padding:1px;
+  border-color:red;
+  background-color:white;
+  width:10vmin;
+}
