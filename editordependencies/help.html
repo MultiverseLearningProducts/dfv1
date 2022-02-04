@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<!-- SEO -->
+    <title>Editor window Help</title>
+    <meta name="description" content="In the first MultiVerse session we will be looking at how data analytics can be used to enhance your role">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/multiverse_brand/Logo/01_Deep Space/PNG/Multiverse_Symbol_RGB_Navy.png">
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+		<link rel="stylesheet" href="../Dependencies/dist/reveal.css">
+		
+		<link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+ <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+		
+    <style>
+	  
+	    h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corben', Georgia, Times, serif;
+}
+p, div {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+}
+	    
+      h1 {
+	      color:white;
+		      font-size:6vmin;
+	    }
+      
+      .feature{
+                    background-color:#DAFAFF;
+                    color:black;
+	            width: 80vw;
+	            margin-top: 5vh;
+	      font-size: 3vmin;
+	            margin-left:10vh;
+	            padding:30px;
+      }
+	    img{
+		    width:auto;
+		    max-height:50vh;
+		    display:block;
+		    margin:auto;
+		    margin-bottom: 20px;
+	    }
+	    
+	   .zoomable:hover{
+		    width:60vw;
+		    max-height:100vh;
+	    }
+	    
+	    body{
+		    background-image: url('./editorbackground.png');
+		    background-repeat: repeat-y;
+		    background-position:center;
+		    background-size: auto;
+		    background-colour: #303674;
+		    background-size: 100vw 60vw;
+	    }
+    </style>
+		
+		
+    <body>
+	    <h1> Speaker notes editor 1.0 </h1>
+	  
+      <!-- How it works-->
+	    <div class = 'feature'>
+        <h2> How it works </h2>
+		     <hr style="width:100%;height:10px;border-width:0;color:gray;background-color:#303674">
+		    <p> The plugin works by taking all the elements in a normal reveal.js presentation and adding in extra code to them, this generates all the functions used to run the plugin.
+		    The addition of this code happens as the presentation is loaded in the browser.
+		    When you save edits they are sent to your computer's memory, specifically the part that is accessed by your browser.<br>
+		    When you load a presentation that has been editted, The plugin finds that stored data in your browser memory, and adds it in to the presentation when it loads.
+		    This flow chart roughly shows the processes that are going on when the editor plugin is used.</p>
+		    <hr style="width:100%;height:10px;border-width:0;color:gray;background-color:#303674">
+		    
+		    <img class='zoomable' src='../editordependencies/help screen shots/process flow2.png'>
+		    
+		    <h2> Limitations</h2>
+		    <hr style="width:100%;height:10px;border-width:0;color:gray;background-color:#303674">
+		    <h3>You must close the speaker notes and refresh after an editing session</h3>
+		    
+		    <p> It helps in understanding the limitations/requirements of the plugin. Because it requires a page load to start up th whole process, when you have saved your edits you MUST
+		    close down the editor window the speaker notes and then refresh the presentation. Otherwise your edits will not be loaded properly and won't appear in the speaker notes.
+		    When you click the save button the editor window will close itself but you MUST close speaker ntoes and refresh.</p>
+		    
+		   
+		    
+		    <h3> Edits are only recoverable on the browser that they were made </h3>
+		    
+		    <p> The second limitation of the plugin is that because it is linked to browser memory, you cannot share your edits between different browsers. If you edit in chrome
+			    the changes you made will only appear in chrome.</p>
+		    
+	
+		    
+		    <h3> edits are personal</h3
+			    
+		    <p> When you make edits they are saved to your machine ONLY, this means that your edits cannot influence the centrally approved notes or any other user's notes.</p>
+		    
+		 <hr style="width:100%;height:10px;border-width:0;color:gray;background-color:#303674">
+   
+	    </div>
+	    
+	    
+	    
+	    
+	    
+	   
+      <!--accessing the editor mode -->
+	<div class = 'feature'>
+        <h2> Accessing the editor mode </h2>
+		 <hr style="width:100%;height:10px;border-width:0;color:gray;background-color:#303674">
+		
+        <p> First access the speaker notes on your presentation by pressing 'S'.<br>
+	In the notes section click the edit mode button to open a new editor session. <br>
+	The editor window should track to wherever you are in the speaker notes, if this 
+		doesn't happen simply move the peaker notes 1 slide to the left or right using the arrow keys and the editor will track to that location.</p>
+        <img  src = '../editordependencies/help screen shots/editmodebutton.png'>
+		<p> Once you have started the editor mode you will have a window that looks like this.
+		You may get an alert telling you that the popup is being blocked, you can remedy this by 
+			copying the domain name that is shown in the alert to your browsers accepted popup list. </p>
+		<img class='zoomable' src = '../editordependencies/help screen shots/editor window full.png'>
+	 <hr style="width:100%;height:10px;border-width:0;color:gray;background-color:#303674">
+      </div>    
+	 
+	    
+	    
+	    
+      <!-- section to show buttons and tracker dots -->
+      <div class = 'feature'>
+        <h2> Button functions explained </h2>
+        <p> There are 5 basic features you will use</p>
+	       <hr style="width:100%;height:10px;border-width:0;color:gray;background-color:#303674">
+	      
+	<img src = '../editordependencies/help screen shots/main buttons.png'>
+        <ul>
+          <li>Save and close: Saves your changes and stores them in your browser memory, ready to be loaded when speaker notes is re-opened</li>
+          <li>Reset notes: Wipes all previously edited notes on THIS presentation, once you click save and close this will be permanent, to undo this (if you haven't saved yet) close down editor  and speaker notes and then refresh the presentation</li>
+          <li>Reset reminders: Removes all reminders set on THIS presentation, once you click save and close this will be permanent, to undo this (if you haven't saved yet) close down editor  and speaker notes and then refresh the presentation </li>
+          <li>Clear presentation: Clears all additions to THIS presentation, once you click save and close this will be permanent, to undo this (if you haven't saved yet) close down editor  and speaker notes and then refresh the presentation </li>
+	  <li> Tracker dots: You may have noticed there are no slide numbers in the editor window, it automatically 
+		  tracks the speaker notes window and keeps the current slide at the bottom of the window. </li>
+        </ul>
+      <hr style="width:100%;height:40px;border-width:0;color:gray;background-color:#303674">
+      </div>
+      
+	    
+	    
+	    
+        <!-- section to show how to edit text -->
+      <div class = 'feature'>
+        <h2> How to edit the notes </h2>
+	  <hr style="width:100%;height:10px;border-width:0;color:gray;background-color:#303674">
+        <p>To edit text open the editor window and select the pale blue sections you can 
+        type freely in these sections and linebreaks and formatting will be saved. The notes preset in the presentation are not editable.</p>
+	
+        <img src = '../editordependencies/help screen shots/edittable text boxes.png'>
+	      <hr style="width:100%;height:10px;border-width:0;color:gray;background-color:#303674">
+      </div>
+      
+	    
+	    
+	    
+	    
+	    
+         <!-- section to add reminders -->
+      <div class = 'feature'>
+        <h2> Adding a reminder </h2>
+	       <hr style="width:100%;height:10px;border-width:0;color:gray;background-color:#303674">
+        <p>To add a reminder in your session click the add reminder button in the editor window, you will be prompted to input a text reminder for yourself, 
+        when you run the presentation your reminder will pop up on your speaker notes and will have to be dismissed before your can proceed. 
+          These are good for key reminders, and must complete actions.</p>
+        <img src = '../editordependencies/help screen shots/reminder button.png'>
+	 
+	 <p> When you click the reminder button you will be prompted to add text for your reminder cancelling or leaving this 
+		 box blank will not add a reminder to the presentation.</p>
+	      
+ <hr style="width:100%;height:10px;border-width:0;color:gray;background-color:#303674">
+      </div>
+      
+	    
+	    
+	    
+	    
+        <!-- section to show how to save and have changes and have them shown -->
+      <div class = 'feature'>
+        <h2> Making your edits appear in your speaker notes </h2>
+	       <hr style="width:100%;height:10px;border-width:0;color:gray;background-color:#303674">
+        <p>To make your edits appear on your next session you must use close down the speaker notes and refresh the lesson</p>
+        <img src = '../editordependencies/help screen shots/important reminder.png'>
+	      
+	  <hr style="width:100%;height:40px;border-width:0;color:gray;background-color:#303674">
+      </div>
+      
+	    
+	    
+	    
+	    
+	    <!-- section on skull button and questionmark -->
+      <div class = 'feature'>
+        <h2> The skull and questionmark </h2>
+	       <hr style="width:100%;height:10px;border-width:0;color:gray;background-color:#303674">
+        <p>Double clicking the skull will start a process to destroy all editor data saved on your browser this means all presentations! 
+           The only reason for using this would be to clear memory if it is full. Don't worry if you accidentally click this as you must 
+		confirm that you want all data deleted before it will proceed</p>
+	    <img src = '../editordependencies/help screen shots/skull button.png'>
+	      
+	      <p> The question mark will open up this readme page, you already worked that out</p> 
+	      <img src = '../editordependencies/help screen shots/help button.png'>
+      <hr style="width:100%;height:10px;border-width:0;color:gray;background-color:#303674">
+      </div>
+	    
+	    
+	    <!-- set up on GITHUB -->
+      <div class = 'feature'>
+        <h2> Adding speaker notes editor to GITHUB </h2>
+	       <hr style="width:100%;height:10px;border-width:0;color:gray;background-color:#303674">
+        <p>To add to GITHUB repo take the editor dependencies and add it to the root of your repo, then add a script file with <i>src= path to editor.js </i> 
+	   to any presentation you want the plugin to be accessible for. </p>
+        <img src = '../editordependencies/help screen shots/where to put editordependencies.png'>
+	      
+	    <hr style="width:100%;height:10px;border-width:0;color:gray;background-color:#303674">
+      </div>
+     
+	        <!-- Credit to sources -->
+      <div class = 'feature'>
+        <h2> Open source assets used in this project </h2>
+	       <hr style="width:100%;height:10px;border-width:0;color:gray;background-color:#303674">
+	      <ul>
+		      <li> Built on to https://revealjs.com MIT licensed Copyright (C) 2020 Hakim El Hattab, https://hakim.se</li>
+		      <li> Skull icon: created by Abuk SABUK, used under  Creative Commons Attribution-Share Alike 4.0 International https://commons.wikimedia.org/wiki/File:Black_skull.svg</li>
+		      <li> Question mark icon: created by AliWijaya, used under Creative Commons Attribution-Share Alike 3.0 Unported https://commons.wikimedia.org/wiki/File:Noun_Project_question_mark_icon_1101884_cc.svg</li>
+		      <li> Alarm icon: created by SVG Repo, used un CCO license https://www.svgrepo.com/svg/17980/big-alarm-clock</li>
+		      <li> Author: N.Griffiths Multiverse.io </li>
+	      </ul>
+    <hr style="width:100%;height:10px;border-width:0;color:gray;background-color:#303674">
+	     
+      </div>
+    </body>
+    
+    <script>
+    
+    </script>

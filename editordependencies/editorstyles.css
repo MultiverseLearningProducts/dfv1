@@ -1,0 +1,107 @@
+/* contains the styles used for the editor window*/
+
+#buffer {
+  height:16vh;
+}
+
+#bottom_buffer
+{
+  height: 6vh;
+}
+
+#user_controls{
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100vw;
+  height:12vh;
+  background-color:#002b66;
+}
+
+.bottom{
+  background-color:#002b66;
+  color:white;
+  position:fixed;
+  top:95vh;
+  left:0;
+  width:100vw;
+  height:6vh; 
+}
+
+.bottom p {
+  font-size: 2vmin;
+}
+
+.top{
+  position: fixed;
+  top:12.1vh;
+  height:5vh;
+  background-color:white;
+  border-style:solid;
+  border-color:black;
+  }
+  
+.top img{
+  height:4vh; 
+  width:4vh
+}
+
+.normal{
+  background-color:#2c2d74;
+  color:white;
+  width: 46vw;
+  font-size: 3vmin;
+  margin:1vmin 1vmin 1vmin 1vmin;
+  height: 4vh;
+}
+
+.danger{
+  background-color:#990000;
+  color:white;
+  width: 46vw;
+  font-size: 3vmin;
+  margin:1vmin 1vmin 1vmin 1vmin;
+  height: 4vh;
+}
+
+.reminder{
+  height:3vh;
+  width:3vh;
+}
+
+.notes{
+font-size:3.5vmin;
+background-color:white;
+margin:1vmin;
+min-height: 20vh;
+width:90vw;
+color:black;
+}
+
+.editable{
+  font-size:3.5vmin;
+  color:black;
+  background-color:#e7feff;
+  width:89vw;
+  margin: 1vmin;
+  display:inline-block;
+}
+
+
+.reminder{
+  color:red;
+}
+
+body{
+background-color:#303674;
+color:white;
+}
+
+.asino{
+  font-size:2vmin;
+  border-style:solid;
+  padding:1px;
+  border-color:red;
+  background-color:white;
+  width:10vmin;
+}
