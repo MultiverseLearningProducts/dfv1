@@ -72,7 +72,7 @@ function add_reminder(el){
   to_strip2[0].remove();
   }
   };
-
+//
 // function ot save and close the editor window.
 // split in to two one for save on for save and close
 
