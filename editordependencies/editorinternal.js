@@ -66,6 +66,11 @@ function add_reminder(el){
   while(to_strip.length!=0){
   to_strip[0].remove();
   }
+   //strip out aside tagging removes the numbered tgs to stop them duplicating?
+  var to_strip2 = document.getElementsByClassName('asino');
+  while(to_strip2.length!=0){
+  to_strip2[0].remove();
+  }
   };
 
 // function ot save and close the editor window.
